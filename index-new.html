@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuyue Media Gateway | Your Single Point of Access to China's Digital Ad Market</title>
+  <meta name="description" content="The unified media interface for international agencies entering China's $100B digital advertising market. One connection, all platforms, zero complexity.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='22' font-size='24' font-weight='bold'>TMG</text></svg>">
+  <style>
+    :root {
+      --color-bg: #080c14;
+      --color-bg-alt: #0d1220;
+      --color-bg-card: #111827;
+      --color-text-primary: #f0f4ff;
+      --color-text-secondary: #94a3b8;
+      --color-text-muted: #64748b;
+      --color-primary: #2d6be4;
+      --color-accent: #c9a84c;
+      --color-accent-light: #e8c87a;
+      --color-border: #1e2d45;
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --font-size-base: 1rem;
+      --space-4: 1rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+    }
+    
+    body {
+      font-family: var(--font-family);
+      background-color: var(--color-bg);
+      color: var(--color-text-primary);
+      line-height: 1.6;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 var(--space-4);
+    }
+    
+    .header {
+      background-color: rgba(8, 12, 20, 0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--color-border);
+      padding: var(--space-4) 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+    }
+    
+    .header__logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+    }
+    
+    .hero {
+      padding-top: 140px;
+      padding-bottom: var(--space-8);
+    }
+    
+    .hero__title {
+      font-size: 3.75rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: var(--space-6);
+    }
+    
+    .hero__title span {
+      background: linear-gradient(135deg, #5b8ef0 0%, #c9a84c 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .hero__description {
+      font-size: 1.25rem;
+      color: var(--color-text-secondary);
+      max-width: 700px;
+      margin-bottom: var(--space-8);
+    }
+    
+    .hero__trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-6);
+      align-items: center;
+      padding-top: var(--space-8);
+      border-top: 1px solid var(--color-border);
+    }
+    
+    .hero__trust-label {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    
+    .hero__platforms {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-6);
+      align-items: center;
+    }
+    
+    .hero__platform {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--color-text-secondary);
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--color-border);
+      border-radius: 24px;
+      background: rgba(255,255,255,0.03);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 48px;
+    }
+    
+    .hero__platform:hover {
+      border-color: var(--color-accent);
+      color: var(--color-accent-light);
+      background: rgba(201, 168, 76, 0.15);
+      transform: translateY(-2px);
+    }
+    
+    .hero__platform-logo {
+      width: 32px;
+      height: 32px;
+      opacity: 0.85;
+      object-fit: contain;
+    }
+    
+    .hero__platform svg {
+      width: 32px;
+      height: 32px;
+      opacity: 0.85;
+      transition: opacity 0.15s ease;
+    }
+    
+    .hero__platform:hover svg,
+    .hero__platform:hover .hero__platform-logo {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="#" class="header__logo">TMG</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero__title">
+        Your Single Point of Access to<br>
+        <span>China's Digital Ad Market</span>
+      </h1>
+      <p class="hero__description">
+        One interface, all platforms, zero complexity. We help international agencies navigate China's $100B digital advertising landscape without headache.
+      </p>
+      <div class="hero__trust">
+        <span class="hero__trust-label">Direct access to</span>
+        <div class="hero__platforms">
+          <div class="hero__platform" title="WeChat">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 00.167-.054l1.903-1.114a.864.864 0 01.717-.098 10.16 10.16 0 002.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178A1.17 1.17 0 014.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178 1.17 1.17 0 01-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 01.598.082l1.584.926a.272.272 0 00.14.045c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 01-.023-.156.49.49 0 01.201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088V8.89c-.135-.01-.27-.027-.407-.03zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.969-.982z"/>
+            </svg>
+          </div>
+          
+          <div class="hero__platform" title="Douyin (抖音)">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.53 0C11.78 0 11.17 0.61 11.17 1.36V10.53C10.59 10.28 9.95 10.14 9.27 10.14C6.37 10.14 4 12.51 4 15.41C4 18.31 6.37 20.68 9.27 20.68C12.17 20.68 14.54 18.31 14.54 15.41V5.91C15.84 6.68 17.36 7.14 19 7.14V4.77C17.36 4.77 15.84 4.32 14.54 3.55V1.36C14.54 0.61 13.93 0 13.18 0H12.53Z"/>
+            </svg>
+          </div>
+          
+          <div class="hero__platform" title="Baidu (百度)">
+            <!-- 新的百度logo SVG -->
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <rect x="2" y="8" width="14" height="6" rx="3" fill="#2932E1"/>
+              <path d="M12 4v24" stroke="#2932E1" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="22" cy="11" r="4" fill="#2932E1"/>
+              <circle cx="22" cy="21" r="4" fill="#2932E1"/>
+            </svg>
+          </div>
+          
+          <div class="hero__platform" title="Xiaohongshu (小红书)">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3 7h18a1 1 0 011 1v8a1 1 0 01-1 1H3a1 1 0 01-1-1V8a1 1 0 011-1z"/>
+              <text x="12" y="15.5" text-anchor="middle" font-size="5.5" font-weight="bold" fill="white">小红书</text>
+            </svg>
+          </div>
+          
+          <div class="hero__platform" title="Bilibili (哔哩哔哩)">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 010-1.766c.46-.489 1.174-.536 1.638-.095l1.349 1.286v-.622c-.004-.066-.011-.132-.011-.199 0-.635.506-1.153 1.138-1.198a1.15 1.15 0 011.271 1.198v1.086c1.324.277 2.662.265 3.996-.038v-1.048c0-.681.548-1.22 1.228-1.243a1.234 1.234 0 011.313 1.243v.628l1.312-1.286c.493-.459 1.21-.4 1.671.095.461.494.446 1.253.095 1.766l-1.174 1.12h.853z"/>
+              <text x="12" y="16" text-anchor="middle" font-size="4" font-weight="bold" fill="white">b站</text>
+            </svg>
+          </div>
+          
+          <div class="hero__platform hero__platform--more">
+            <span>+ 6 more</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

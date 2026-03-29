@@ -1,0 +1,2532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuyue Media Gateway | Your Single Point of Access to China's Digital Ad Market</title>
+  <meta name="description" content="The unified media interface for international agencies entering China's $100B digital advertising market. One connection, all platforms, zero complexity.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='22' font-size='24' font-weight='bold'>TMG</text></svg>">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Tuyue Media Gateway | Access China's Digital Ad Market">
+  <meta property="og:description" content="One interface, all platforms, zero complexity. Help international agencies navigate China's $100B digital advertising landscape.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tuyue-gateway.com">
+  <meta property="og:image" content="https://tuyue-gateway.com/assets/og-image.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tuyue Media Gateway | Access China's Digital Ad Market">
+  <meta name="twitter:description" content="One interface, all platforms, zero complexity. Help international agencies navigate China's $100B digital advertising landscape.">
+  <meta name="twitter:image" content="https://tuyue-gateway.com/assets/twitter-card.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Design Tokens */
+      --color-bg: #080c14;
+      --color-bg-alt: #0d1220;
+      --color-bg-card: #111827;
+      --color-text-primary: #f0f4ff;
+      --color-text-secondary: #94a3b8;
+      --color-text-muted: #64748b;
+      --color-primary: #2d6be4;
+      --color-primary-hover: #1e55c4;
+      --color-primary-light: #5b8ef0;
+      --color-accent: #c9a84c;
+      --color-accent-light: #e8c87a;
+      --color-accent-glow: rgba(201, 168, 76, 0.15);
+      --color-border: #1e2d45;
+      --color-border-hover: #2d4060;
+      --color-glow-blue: rgba(45, 107, 228, 0.2);
+      --color-glow-gold: rgba(201, 168, 76, 0.12);
+
+      /* Typography */
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --font-size-xs: 0.75rem;
+      --font-size-sm: 0.875rem;
+      --font-size-base: 1rem;
+      --font-size-lg: 1.125rem;
+      --font-size-xl: 1.25rem;
+      --font-size-2xl: 1.5rem;
+      --font-size-3xl: 1.875rem;
+      --font-size-4xl: 2.25rem;
+      --font-size-5xl: 3rem;
+      --font-size-6xl: 3.75rem;
+
+      /* Spacing */
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --space-24: 6rem;
+
+      /* Layout */
+      --max-width-container: 1280px;
+      --max-width-narrow: 800px;
+
+      /* Transitions */
+      --transition-fast: 150ms ease;
+      --transition-normal: 300ms ease;
+      --transition-slow: 500ms ease;
+
+      /* Shadows */
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.5);
+    }
+
+    /* Reset & Base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--color-bg);
+      background-image: 
+        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(45, 107, 228, 0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 30% at 85% 20%, rgba(201, 168, 76, 0.06) 0%, transparent 50%);
+      color: var(--color-text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    img.lazy {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    img.lazy.loaded {
+      opacity: 1;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: var(--max-width-container);
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: var(--space-4);
+      padding-right: var(--space-4);
+    }
+
+    .container--narrow {
+      max-width: var(--max-width-narrow);
+    }
+
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background-color: rgba(8, 12, 20, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--color-border);
+      padding: var(--space-4) 0;
+      transition: border-color var(--transition-normal);
+    }
+
+    .header::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201, 168, 76, 0.4) 40%, rgba(45, 107, 228, 0.4) 60%, transparent);
+      opacity: 0.6;
+    }
+
+    .header__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header__logo {
+      font-size: var(--font-size-xl);
+      font-weight: 700;
+      color: var(--color-text-primary);
+      letter-spacing: -0.02em;
+    }
+
+    .header__logo span {
+      color: var(--color-accent);
+    }
+
+    .header__nav {
+      display: none;
+      gap: var(--space-8);
+    }
+
+    .header__nav-link {
+      font-size: var(--font-size-sm);
+      font-weight: 500;
+      color: var(--color-text-secondary);
+      transition: color var(--transition-fast);
+    }
+
+    .header__nav-link:hover {
+      color: var(--color-text-primary);
+    }
+
+    .header__toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    .header__toggle span {
+      width: 24px;
+      height: 2px;
+      background-color: var(--color-text-primary);
+      transition: all var(--transition-normal);
+    }
+
+    .header__toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .header__toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .header__toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .header__cta {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .header__toggle {
+        display: none;
+      }
+      .header__nav {
+        display: flex;
+      }
+      .header__nav.active {
+        display: flex;
+      }
+      .header__cta {
+        display: block;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .header__nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--color-bg-card);
+        border: 1px solid var(--color-border);
+        border-top: none;
+        padding: var(--space-4) 0;
+        gap: var(--space-2);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .header__nav.active {
+        display: flex;
+      }
+
+      .header__nav-link {
+        width: 100%;
+        padding: var(--space-3) var(--space-4);
+      }
+
+      .header__inner {
+        position: relative;
+      }
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--font-size-sm);
+      font-weight: 500;
+      padding: var(--space-3) var(--space-6);
+      border-radius: 6px;
+      transition: all var(--transition-fast);
+      gap: var(--space-2);
+      cursor: pointer;
+    }
+
+    .btn:focus-visible {
+      outline: 3px solid var(--color-primary);
+      outline-offset: 3px;
+      box-shadow: 0 0 0 6px rgba(45, 107, 228, 0.2);
+    }
+
+    .btn--primary {
+      background: linear-gradient(135deg, #c9a84c 0%, #e8c87a 50%, #c9a84c 100%);
+      background-size: 200% 200%;
+      color: #0d1220;
+      font-weight: 600;
+      box-shadow: 0 2px 12px rgba(201, 168, 76, 0.25);
+      transition: all var(--transition-fast);
+    }
+
+    .btn--primary:hover {
+      background-position: right center;
+      box-shadow: 0 4px 20px rgba(201, 168, 76, 0.4);
+      transform: translateY(-1px);
+    }
+
+    .btn--secondary {
+      background-color: transparent;
+      color: var(--color-text-primary);
+      border: 1px solid var(--color-border);
+    }
+
+    .btn--secondary:hover {
+      border-color: var(--color-border-hover);
+      background-color: var(--color-bg-alt);
+    }
+
+    .btn--whatsapp {
+      background-color: #25D366;
+      color: white;
+    }
+
+    .btn--whatsapp:hover {
+      background-color: #128C7E;
+    }
+
+    .btn--lg {
+      font-size: var(--font-size-base);
+      padding: var(--space-4) var(--space-8);
+    }
+
+    /* Sections */
+    .section {
+      padding: var(--space-16) 0;
+    }
+
+    .section__header {
+      text-align: center;
+      margin-bottom: var(--space-12);
+    }
+
+    .section__eyebrow {
+      display: inline-block;
+      font-size: var(--font-size-sm);
+      font-weight: 600;
+      color: var(--color-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: var(--space-3);
+    }
+
+    .section__title {
+      font-size: var(--font-size-4xl);
+      font-weight: 700;
+      color: var(--color-text-primary);
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: var(--space-4);
+    }
+
+    .section__description {
+      font-size: var(--font-size-lg);
+      color: var(--color-text-secondary);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      .section__title {
+        font-size: var(--font-size-3xl);
+      }
+    }
+
+    /* Hero */
+    .hero {
+      padding-top: 140px;
+      padding-bottom: var(--space-20);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -20%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 900px;
+      height: 600px;
+      background: radial-gradient(ellipse, rgba(45, 107, 228, 0.18) 0%, rgba(45, 107, 228, 0.06) 40%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 10%;
+      right: -10%;
+      width: 500px;
+      height: 400px;
+      background: radial-gradient(ellipse, rgba(201, 168, 76, 0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    /* Additional glow layer for enhanced effect */
+    .hero__glow {
+      position: absolute;
+      top: -10%;
+      left: -20%;
+      width: 60%;
+      height: 80%;
+      background: radial-gradient(ellipse, rgba(45, 107, 228, 0.1) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .hero__title {
+      font-size: var(--font-size-5xl);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: var(--space-6);
+      position: relative;
+    }
+
+    .hero__title span {
+      background: linear-gradient(135deg, #5b8ef0 0%, #c9a84c 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero__description {
+      font-size: var(--font-size-xl);
+      color: var(--color-text-secondary);
+      max-width: 700px;
+      margin-bottom: var(--space-8);
+      line-height: 1.6;
+    }
+
+    .hero__cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-4);
+      margin-bottom: var(--space-12);
+    }
+
+    .hero__trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-8);
+      align-items: center;
+      padding-top: var(--space-8);
+      border-top: 1px solid var(--color-border);
+    }
+
+    .hero__trust-label {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .hero__platforms {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-6);
+      align-items: center;
+    }
+
+    .hero__platform {
+      font-size: var(--font-size-sm);
+      font-weight: 600;
+      color: var(--color-text-secondary);
+      padding: var(--space-2) var(--space-4);
+      border: 1px solid var(--color-border);
+      border-radius: 24px;
+      background: rgba(255,255,255,0.03);
+      transition: all var(--transition-normal);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 48px;
+    }
+
+    .hero__platform svg {
+      width: 100%;
+      height: 100%;
+      opacity: 0.85;
+      transition: opacity var(--transition-fast);
+    }
+
+    .hero__platform:hover {
+      border-color: var(--color-accent);
+      color: var(--color-accent-light);
+      background: var(--color-accent-glow);
+      transform: translateY(-2px);
+    }
+
+    .hero__platform:hover svg {
+      opacity: 1;
+    }
+
+    .hero__platform--more {
+      min-width: 90px;
+      color: var(--color-accent);
+      border-color: rgba(201, 168, 76, 0.3);
+    }
+
+    @media (max-width: 768px) {
+      .hero__title {
+        font-size: var(--font-size-4xl);
+      }
+      .hero__description {
+        font-size: var(--font-size-lg);
+      }
+      .hero__cta {
+        width: 100%;
+      }
+      .hero__platforms {
+        flex-wrap: wrap;
+        gap: var(--space-3);
+      }
+      .hero__platform {
+        flex: 1 1 auto;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero__platforms {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .team__grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Problem/Solution */
+    .problem-solution {
+      background-color: var(--color-bg-alt);
+    }
+
+    .problem-solution__comparison {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-12);
+    }
+
+    .problem-solution__side {
+      padding: var(--space-8);
+      border-radius: 12px;
+      border: 1px solid var(--color-border);
+    }
+
+    .problem-solution__side--before {
+      background-color: var(--color-bg-card);
+    }
+
+    .problem-solution__side--after {
+      background-color: rgba(59, 130, 246, 0.1);
+      border-color: var(--color-primary);
+    }
+
+    .problem-solution__side-title {
+      font-size: var(--font-size-xl);
+      font-weight: 600;
+      margin-bottom: var(--space-4);
+    }
+
+    .problem-solution__side-title--before {
+      color: var(--color-text-secondary);
+    }
+
+    .problem-solution__side-title--after {
+      color: var(--color-primary-light);
+    }
+
+    .problem-solution__list {
+      list-style: none;
+    }
+
+    .problem-solution__item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-3);
+      padding: var(--space-3) 0;
+      color: var(--color-text-secondary);
+    }
+
+    .problem-solution__item--before::before {
+      content: "✕";
+      color: #ef4444;
+      font-weight: 700;
+    }
+
+    .problem-solution__item--after::before {
+      content: "✓";
+      color: var(--color-accent);
+      font-weight: 700;
+    }
+
+    @media (min-width: 768px) {
+      .problem-solution__comparison {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* Services */
+    .services__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+    }
+
+    .service-card {
+      background: linear-gradient(145deg, rgba(17, 24, 39, 0.9) 0%, rgba(13, 18, 32, 0.95) 100%);
+      border: 1px solid var(--color-border);
+      border-radius: 16px;
+      padding: var(--space-8);
+      transition: all var(--transition-normal);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+      opacity: 0;
+      transition: opacity var(--transition-normal);
+    }
+
+    .service-card:hover {
+      border-color: rgba(201, 168, 76, 0.3);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 30px rgba(201, 168, 76, 0.06);
+    }
+
+    .service-card:hover::before {
+      opacity: 1;
+    }
+
+    .service-card__icon {
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(201, 168, 76, 0.15), rgba(45, 107, 228, 0.1));
+      border: 1px solid rgba(201, 168, 76, 0.2);
+      border-radius: 12px;
+      margin-bottom: var(--space-5);
+      font-size: var(--font-size-xl);
+    }
+
+    .service-card__title {
+      font-size: var(--font-size-2xl);
+      font-weight: 600;
+      margin-bottom: var(--space-3);
+    }
+
+    .service-card__description {
+      color: var(--color-text-secondary);
+      margin-bottom: var(--space-5);
+    }
+
+    .service-card__features {
+      list-style: none;
+    }
+
+    .service-card__feature {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-2);
+      padding: var(--space-2) 0;
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+    }
+
+    .service-card__feature::before {
+      content: "→";
+      color: var(--color-accent);
+      font-weight: 700;
+    }
+
+    .service-card__highlight {
+      color: var(--color-accent-light);
+      font-weight: 500;
+      margin-top: var(--space-2);
+      font-size: var(--font-size-sm);
+    }
+
+    @media (min-width: 768px) {
+      .services__grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* Value Props */
+    .value-props {
+      background: linear-gradient(180deg, var(--color-bg-alt) 0%, rgba(13, 18, 32, 0.8) 100%);
+      position: relative;
+    }
+
+    .value-props__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+    }
+
+    .value-prop {
+      text-align: center;
+      padding: var(--space-8) var(--space-6);
+      position: relative;
+    }
+
+    .value-prop + .value-prop::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 20%;
+      bottom: 20%;
+      width: 1px;
+      background: linear-gradient(180deg, transparent, var(--color-border), transparent);
+      display: none;
+    }
+
+    .value-prop__number {
+      font-size: var(--font-size-6xl);
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+      margin-bottom: var(--space-2);
+    }
+
+    .value-prop__label {
+      font-size: var(--font-size-lg);
+      font-weight: 600;
+      margin-bottom: var(--space-2);
+    }
+
+    .value-prop__description {
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+    }
+
+    @media (min-width: 768px) {
+      .value-props__grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .value-prop + .value-prop::before {
+        display: block;
+      }
+    }
+
+    /* Pricing */
+    .pricing__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+    }
+
+    .pricing-card {
+      background: linear-gradient(145deg, rgba(17, 24, 39, 0.9), rgba(13, 18, 32, 0.95));
+      border: 1px solid var(--color-border);
+      border-radius: 16px;
+      padding: var(--space-8);
+      transition: all var(--transition-normal);
+    }
+
+    .pricing-card:hover {
+      border-color: var(--color-border-hover);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 32px rgba(0,0,0,0.3);
+    }
+
+    .pricing-card--featured {
+      border-color: rgba(201, 168, 76, 0.5);
+      background: linear-gradient(145deg, rgba(17, 24, 39, 0.95), rgba(20, 16, 8, 0.9));
+      position: relative;
+      box-shadow: 0 0 40px rgba(201, 168, 76, 0.08), inset 0 1px 0 rgba(201, 168, 76, 0.1);
+    }
+
+    .pricing-card--featured:hover {
+      border-color: rgba(201, 168, 76, 0.7);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 50px rgba(201, 168, 76, 0.12);
+    }
+
+    .pricing-card__badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #c9a84c, #e8c87a);
+      color: #0d1220;
+      font-size: var(--font-size-xs);
+      font-weight: 700;
+      padding: var(--space-1) var(--space-4);
+      border-radius: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      white-space: nowrap;
+    }
+
+    .pricing-card__title {
+      font-size: var(--font-size-xl);
+      font-weight: 600;
+      margin-bottom: var(--space-2);
+    }
+
+    .pricing-card__price {
+      font-size: var(--font-size-5xl);
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: var(--space-2);
+    }
+
+    .pricing-card__price span {
+      font-size: var(--font-size-lg);
+      font-weight: 400;
+      -webkit-text-fill-color: var(--color-text-muted);
+    }
+
+    .pricing-card__description {
+      color: var(--color-text-secondary);
+      margin-bottom: var(--space-6);
+      font-size: var(--font-size-sm);
+    }
+
+    .pricing-card__setup-fee {
+      color: var(--color-accent);
+      font-size: var(--font-size-sm);
+      font-weight: 500;
+      margin-bottom: var(--space-4);
+    }
+
+    .pricing-card__contact-note {
+      color: var(--color-text-muted);
+      font-size: var(--font-size-xs);
+      margin-bottom: var(--space-4);
+      font-style: italic;
+    }
+
+    .pricing-card__features {
+      list-style: none;
+      margin-bottom: var(--space-6);
+    }
+
+    .pricing-card__feature {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-2);
+      padding: var(--space-2) 0;
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+    }
+
+    .pricing-card__feature::before {
+      content: "✓";
+      color: var(--color-accent);
+      font-weight: 700;
+    }
+
+    .pricing-card__cta {
+      width: 100%;
+    }
+
+    @media (min-width: 768px) {
+      .pricing__grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* Team */
+    .team {
+      background-color: var(--color-bg-alt);
+    }
+
+    .team__header {
+      text-align: center;
+      margin-bottom: var(--space-12);
+    }
+
+    .team__title {
+      font-size: var(--font-size-4xl);
+      font-weight: 700;
+      color: var(--color-text-primary);
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: var(--space-4);
+    }
+
+    .team__description {
+      font-size: var(--font-size-lg);
+      color: var(--color-text-secondary);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .team__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--space-8);
+    }
+
+    .team-card {
+      background-color: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all var(--transition-normal);
+    }
+
+    .team-card:hover {
+      border-color: var(--color-border-hover);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .team-card {
+      background-color: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all var(--transition-normal);
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (min-width: 768px) {
+      .team-card {
+        flex-direction: row;
+      }
+    }
+
+    .team-card:hover {
+      border-color: var(--color-border-hover);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .team-card__photo {
+      width: 100%;
+      height: 250px;
+      background-color: var(--color-bg-alt);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    @media (min-width: 768px) {
+      .team-card__photo {
+        width: 280px;
+        height: auto;
+        min-height: 320px;
+      }
+    }
+
+    .team-card__photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      transition: transform var(--transition-normal);
+    }
+
+    .team-card__photo--yan img {
+      object-position: center 35%;
+    }
+
+    .team-card__photo--benny img {
+      object-position: center 15%;
+    }
+
+    .team-card:hover .team-card__photo img {
+      transform: scale(1.05);
+    }
+
+    .team-card__content {
+      padding: var(--space-6);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .team-card__name {
+      font-size: var(--font-size-xl);
+      font-weight: 600;
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-2);
+    }
+
+    .team-card__role {
+      font-size: var(--font-size-sm);
+      color: var(--color-primary);
+      margin-bottom: var(--space-3);
+    }
+
+    .team-card__bio {
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .team__title {
+        font-size: var(--font-size-3xl);
+      }
+    }
+
+    /* Case Study */
+    .case-study {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .case-study__header {
+      padding: var(--space-8);
+      background: linear-gradient(135deg, var(--color-primary) 0%, #4f46e5 100%);
+      color: white;
+    }
+
+    .case-study__client {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      margin-bottom: var(--space-4);
+    }
+
+    .case-study__logo {
+      width: 64px;
+      height: 64px;
+      background-color: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .case-study__logo-img {
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+    }
+
+    .case-study__client-info {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+
+    .case-study__client-name {
+      font-size: var(--font-size-2xl);
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .case-study__client-badge {
+      background-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(8px);
+      padding: var(--space-2) var(--space-3);
+      border-radius: 20px;
+      font-size: var(--font-size-sm);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .case-study__headline {
+      font-size: var(--font-size-xl);
+      font-weight: 600;
+      line-height: 1.4;
+      margin: 0;
+      opacity: 0.95;
+    }
+
+    .case-study__content {
+      padding: var(--space-8);
+    }
+
+    .case-study__chapter {
+      margin-bottom: var(--space-8);
+    }
+
+    .case-study__chapter:last-child {
+      margin-bottom: 0;
+    }
+
+    .case-study__chapter-title {
+      font-size: var(--font-size-xl);
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin: 0 0 var(--space-4) 0;
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+    }
+
+    .case-study__chapter-title::before {
+      content: '';
+      width: 4px;
+      height: 28px;
+      background: linear-gradient(180deg, var(--color-primary) 0%, #4f46e5 100%);
+      border-radius: 2px;
+    }
+
+    .case-study__chapter-text {
+      color: var(--color-text-secondary);
+      line-height: 1.8;
+      margin-bottom: var(--space-4);
+      font-size: var(--font-size-base);
+    }
+
+    .case-study__chapter-text:last-child {
+      margin-bottom: 0;
+    }
+
+    .case-study__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .case-study__list li {
+      color: var(--color-text-secondary);
+      line-height: 1.8;
+      margin-bottom: var(--space-3);
+      padding-left: var(--space-5);
+      position: relative;
+      font-size: var(--font-size-base);
+    }
+
+    .case-study__list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--color-primary);
+      font-weight: 700;
+    }
+
+    .case-study__list li strong {
+      color: var(--color-text-primary);
+      font-weight: 600;
+    }
+
+    .case-study__cta {
+      padding: var(--space-8);
+      background-color: var(--color-bg-alt);
+      text-align: center;
+      border-top: 1px solid var(--color-border);
+      position: relative;
+      z-index: 1;
+    }
+
+    .case-study__cta .btn {
+      position: relative;
+      z-index: 2;
+    }
+
+    @media (max-width: 768px) {
+      .case-study__header {
+        padding: var(--space-6);
+      }
+
+      .case-study__client-name {
+        font-size: var(--font-size-xl);
+      }
+
+      .case-study__headline {
+        font-size: var(--font-size-lg);
+      }
+
+      .case-study__content {
+        padding: var(--space-6);
+      }
+
+      .case-study__chapter-title {
+        font-size: var(--font-size-lg);
+      }
+
+      .case-study__chapter-title::before {
+        height: 24px;
+      }
+    }
+
+    /* About */
+    .about {
+      background-color: var(--color-bg-alt);
+    }
+
+    .about__content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .about__text {
+      color: var(--color-text-secondary);
+      margin-bottom: var(--space-6);
+      line-height: 1.8;
+    }
+
+    .about__company-name {
+      font-size: var(--font-size-lg);
+      font-weight: 600;
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-4);
+    }
+
+    /* Contact Form */
+    .contact {
+      padding: var(--space-20) 0;
+    }
+
+    .contact__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-12);
+    }
+
+    @media (min-width: 900px) {
+      .contact__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .contact__info {
+      background-color: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: var(--space-10);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .contact__title {
+      font-size: var(--font-size-3xl);
+      font-weight: 700;
+      margin-bottom: var(--space-4);
+    }
+
+    .contact__description {
+      color: var(--color-text-secondary);
+      margin-bottom: var(--space-6);
+    }
+
+    .contact__email {
+      font-size: var(--font-size-2xl);
+      font-weight: 600;
+      color: var(--color-primary);
+      margin-bottom: var(--space-6);
+    }
+
+    .contact__details {
+      margin-bottom: var(--space-8);
+    }
+
+    .contact__detail-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      margin-bottom: var(--space-4);
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+    }
+
+    .contact__detail-icon {
+      width: 20px;
+      height: 20px;
+      color: var(--color-primary);
+    }
+
+    /* Map Section */
+    .contact__map {
+      margin-bottom: var(--space-8);
+    }
+
+    .contact__map-title {
+      font-size: var(--font-size-lg);
+      font-weight: 600;
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-4);
+    }
+
+    .contact__map-embed {
+      width: 100%;
+      height: 200px;
+      background-color: var(--color-bg-alt);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+    }
+
+    .contact__map-iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .contact__address {
+      margin-bottom: var(--space-6);
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+      line-height: 1.6;
+    }
+
+    .contact__address-text {
+      font-weight: 500;
+      color: var(--color-text-primary);
+    }
+
+    /* Trust Badges */
+    .contact__trust {
+      margin-bottom: var(--space-8);
+    }
+
+    .contact__trust-title {
+      font-size: var(--font-size-sm);
+      font-weight: 600;
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-4);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .contact__license {
+      background-color: var(--color-bg-alt);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: var(--space-4);
+      text-align: center;
+    }
+
+    .contact__license-label {
+      font-size: var(--font-size-xs);
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-2);
+    }
+
+    .contact__license-text {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-secondary);
+      font-weight: 500;
+    }
+
+    .contact__license-number {
+      color: var(--color-primary);
+    }
+
+    .contact__cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-4);
+    }
+
+    .contact__form {
+      background-color: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: var(--space-8);
+    }
+
+    .form__group {
+      margin-bottom: var(--space-5);
+    }
+
+    .form__label {
+      display: block;
+      font-size: var(--font-size-sm);
+      font-weight: 500;
+      color: var(--color-text-secondary);
+      margin-bottom: var(--space-2);
+    }
+
+    .form__input,
+    .form__textarea,
+    .form__select {
+      width: 100%;
+      padding: var(--space-3);
+      background-color: var(--color-bg-alt);
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      color: var(--color-text-primary);
+      font-size: var(--font-size-base);
+      font-family: var(--font-family);
+      transition: border-color var(--transition-fast);
+    }
+
+
+    .form__input:focus,
+    .form__textarea:focus,
+    .form__select:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(45, 107, 228, 0.15);
+    }
+
+    .form__input.error,
+    .form__select.error,
+    .form__textarea.error {
+      border-color: #ef4444;
+      background-color: rgba(239, 68, 68, 0.05);
+    }
+
+    .form__error {
+      color: #ef4444;
+      font-size: var(--font-size-xs);
+      margin-top: var(--space-1);
+      animation: slideDown 0.3s ease;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .form__input::placeholder,
+    .form__textarea::placeholder {
+      color: var(--color-text-muted);
+    }
+
+    .form__textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .form__required {
+      color: #ef4444;
+      margin-left: 2px;
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid var(--color-border);
+      padding: var(--space-12) 0 var(--space-8);
+      position: relative;
+      background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
+    }
+
+    .footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 300px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+      opacity: 0.6;
+    }
+
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-8);
+      margin-bottom: var(--space-10);
+    }
+
+    @media (min-width: 768px) {
+      .footer__grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .footer__section {
+      text-align: left;
+    }
+
+    .footer__title {
+      font-size: var(--font-size-base);
+      font-weight: 600;
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-4);
+      position: relative;
+      padding-bottom: var(--space-2);
+    }
+
+    .footer__title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--color-accent), transparent);
+      opacity: 0.8;
+    }
+
+    .footer__description {
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    .footer__links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer__links li {
+      margin-bottom: var(--space-3);
+    }
+
+    .footer__link {
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+      transition: color var(--transition-fast);
+      display: inline-block;
+    }
+
+    .footer__link:hover {
+      color: var(--color-accent-light);
+      transform: translateX(4px);
+    }
+
+    .footer__link--email {
+      color: var(--color-primary);
+      font-weight: 500;
+    }
+
+    .footer__license {
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+      margin-bottom: var(--space-2);
+    }
+
+    .footer__company-short {
+      color: var(--color-text-muted);
+      font-size: var(--font-size-xs);
+    }
+
+    .footer__bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-4);
+      padding-top: var(--space-8);
+      border-top: 1px solid var(--color-border);
+    }
+
+    @media (min-width: 768px) {
+      .footer__bottom {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    .footer__copyright {
+      color: var(--color-text-muted);
+      font-size: var(--font-size-sm);
+      margin: 0;
+    }
+
+    .footer__platforms {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      justify-content: center;
+    }
+
+    .footer__platform-badge {
+      display: inline-block;
+      padding: var(--space-1) var(--space-3);
+      background-color: rgba(201, 168, 76, 0.1);
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      border-radius: 4px;
+      color: var(--color-accent-light);
+      font-size: var(--font-size-xs);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all var(--transition-fast);
+    }
+
+    .footer__platform-badge:hover {
+      background-color: rgba(201, 168, 76, 0.2);
+      border-color: var(--color-accent);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="header__logo">TMG<span>.</span></a>
+        <button class="header__toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="header__nav">
+          <a href="#services" class="header__nav-link">Services</a>
+          <a href="#pricing" class="header__nav-link">Pricing</a>
+          <a href="#client-stories" class="header__nav-link">Client Stories</a>
+          <a href="#team" class="header__nav-link">Who We Are</a>
+          <a href="#about" class="header__nav-link">About</a>
+        </nav>
+        <div class="header__cta">
+          <a href="#contact" class="btn btn--primary">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__glow"></div>
+    <div class="container">
+      <h1 class="hero__title">
+        Your Single Point of Access to<br>
+        <span>China's Digital Ad Market</span>
+      </h1>
+      <p class="hero__description">
+        One interface, all platforms, zero complexity. We help international agencies navigate China's $100B digital advertising landscape without headache.
+      </p>
+      <div class="hero__cta">
+        <a href="#contact" class="btn btn--primary btn--lg">Start Your Journey</a>
+        <a href="#services" class="btn btn--secondary btn--lg">Explore Services</a>
+      </div>
+      <div class="hero__trust">
+        <span class="hero__trust-label">Direct access to</span>
+        <div class="hero__platforms">
+          <div class="hero__platform" title="WeChat (微信)">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 0 1-.023-.156.49.49 0 0 1 .201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088V8.89c-.135-.01-.27-.027-.407-.03zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.969-.982z"/>
+            </svg>
+          </div>
+          <div class="hero__platform" title="Douyin (抖音)">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+            </svg>
+          </div>
+          <div class="hero__platform" title="Baidu (百度)">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9.154 0C7.71 0 6.54 1.658 6.54 3.707c0 2.051 1.171 3.71 2.615 3.71 1.446 0 2.614-1.659 2.614-3.71C11.768 1.658 10.6 0 9.154 0zm7.025.594C14.86.58 13.347 2.589 13.2 3.927c-.187 1.745.25 3.487 2.179 3.735 1.933.25 3.175-1.806 3.422-3.364.252-1.555-.995-3.364-2.362-3.674a1.218 1.218 0 0 0-.261-.03zM3.582 5.535a2.811 2.811 0 0 0-.156.008c-2.118.19-2.428 3.24-2.428 3.24-.287 1.41.686 4.425 3.297 3.864 2.617-.561 2.262-3.68 2.183-4.362-.125-1.018-1.292-2.773-2.896-2.75zm16.534 1.753c-2.308 0-2.617 2.119-2.617 3.616 0 1.43.121 3.425 2.988 3.362 2.867-.063 2.553-3.238 2.553-3.988 0-.745-.62-2.99-2.924-2.99zm-8.264 2.478c-1.424.014-2.708.925-3.323 1.947-1.118 1.868-2.863 3.05-3.112 3.363-.25.309-3.61 2.116-2.864 5.42.746 3.301 3.365 3.237 3.365 3.237s1.93.19 4.171-.31c2.24-.495 4.17.123 4.17.123s5.233 1.748 6.665-1.616c1.43-3.364-.808-5.109-.808-5.109s-2.99-2.306-4.736-4.798c-1.072-1.665-2.348-2.268-3.528-2.257zm-2.234 3.84l1.542.024v8.197H7.758c-1.47-.291-2.055-1.292-2.13-1.462-.072-.173-.488-.976-.268-2.343.635-2.049 2.447-2.196 2.447-2.196h1.81zm3.964 2.39v3.881c.096.413.612.488.612.488h1.614v-4.343h1.689v5.782h-3.915c-1.517-.39-1.59-1.465-1.59-1.465v-4.317zm-5.458 1.147c-.66.197-.978.708-1.05.928-.076.22-.247.78-.1 1.269.294 1.095 1.248 1.144 1.248 1.144h1.37v-3.34z"/>
+            </svg>
+          </div>
+          <div class="hero__platform" title="Xiaohongshu (小红书)">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22.405 9.879c.002.016.01.02.07.019h.725a.797.797 0 0 0 .78-.972.794.794 0 0 0-.884-.618.795.795 0 0 0-.692.794c0 .101-.002.666.001.777zm-11.509 4.808c-.203.001-1.353.004-1.685.003a2.528 2.528 0 0 1-.766-.126.025.025 0 0 0-.03.014L7.7 16.127a.025.025 0 0 0 .01.032c.111.06.336.124.495.124.66.01 1.32.002 1.981 0 .01 0 .02-.006.023-.015l.712-1.545a.025.025 0 0 0-.024-.036zM.477 9.91c-.071 0-.076.002-.076.01a.834.834 0 0 0-.01.08c-.027.397-.038.495-.234 3.06-.012.24-.034.389-.135.607-.026.057-.033.042.003.112.046.092.681 1.523.787 1.74.008.015.011.02.017.02.008 0 .033-.026.047-.044.147-.187.268-.391.371-.606.306-.635.44-1.325.486-1.706.014-.11.021-.22.03-.33l.204-2.616.022-.293c.003-.029 0-.033-.03-.034zm7.203 3.757a1.427 1.427 0 0 1-.135-.607c-.004-.084-.031-.39-.235-3.06a.443.443 0 0 0-.01-.082c-.004-.011-.052-.008-.076-.008h-1.48c-.03.001-.034.005-.03.034l.021.293c.076.982.153 1.964.233 2.946.05.4.186 1.085.487 1.706.103.215.223.419.37.606.015.018.037.051.048.049.02-.003.742-1.642.804-1.765.036-.07.03-.055.003-.112zm3.861-.913h-.872a.126.126 0 0 1-.116-.178l1.178-2.625a.025.025 0 0 0-.023-.035l-1.318-.003a.148.148 0 0 1-.135-.21l.876-1.954a.025.025 0 0 0-.023-.035h-1.56c-.01 0-.02.006-.024.015l-.926 2.068c-.085.169-.314.634-.399.938a.534.534 0 0 0-.02.191.46.46 0 0 0 .23.378.981.981 0 0 0 .46.119h.59c.041 0-.688 1.482-.834 1.972a.53.53 0 0 0-.023.172.465.465 0 0 0 .23.398c.15.092.342.12.475.12l1.66-.001c.01 0 .02-.006.023-.015l.575-1.28a.025.025 0 0 0-.024-.035zm-6.93-4.937H3.1a.032.032 0 0 0-.034.033c0 1.048-.01 2.795-.01 6.829 0 .288-.269.262-.28.262h-.74c-.04.001-.044.004-.04.047.001.037.465 1.064.555 1.263.01.02.03.033.051.033.157.003.767.009.938-.014.153-.02.3-.06.438-.132.3-.156.49-.419.595-.765.052-.172.075-.353.075-.533.002-2.33 0-4.66-.007-6.991a.032.032 0 0 0-.032-.032zm11.784 6.896c0-.014-.01-.021-.024-.022h-1.465c-.048-.001-.049-.002-.05-.049v-4.66c0-.072-.005-.07.07-.07h.863c.08 0 .075.004.075-.074V8.393c0-.082.006-.076-.08-.076h-3.5c-.064 0-.075-.006-.075.073v1.445c0 .083-.006.077.08.077h.854c.075 0 .07-.004.07.07v4.624c0 .095.008.084-.085.084-.37 0-1.11-.002-1.304 0-.048.001-.06.03-.06.03l-.697 1.519s-.014.025-.008.036c.006.01.013.008.058.008 1.748.003 3.495.002 5.243.002.03-.001.034-.006.035-.033v-1.539zm4.177-3.43c0 .013-.007.023-.02.024-.346.006-.692.004-1.037.004-.014-.002-.022-.01-.022-.024-.005-.434-.007-.869-.01-1.303 0-.072-.006-.071.07-.07l.733-.003c.041 0 .081.002.12.015.093.025.16.107.165.204.006.431.002 1.153.001 1.153zm2.67.244a1.953 1.953 0 0 0-.883-.222h-.18c-.04-.001-.04-.003-.042-.04V10.21c0-.132-.007-.263-.025-.394a1.823 1.823 0 0 0-.153-.53 1.533 1.533 0 0 0-.677-.71 2.167 2.167 0 0 0-1-.258c-.153-.003-.567 0-.72 0-.07 0-.068.004-.068-.065V7.76c0-.031-.01-.041-.046-.039H17.93s-.016 0-.023.007c-.006.006-.008.012-.008.023v.546c-.008.036-.057.015-.082.022h-.95c-.022.002-.028.008-.03.032v1.481c0 .09-.004.082.082.082h.913c.082 0 .072.128.072.128V11.19s.003.117-.06.117h-1.482c-.068 0-.06.082-.06.082v1.445s-.01.068.064.068h1.457c.082 0 .076-.006.076.079v3.225c0 .088-.007.081.082.081h1.43c.09 0 .082.007.082-.08v-3.27c0-.029.006-.035.033-.035l2.323-.003c.098 0 .191.02.28.061a.46.46 0 0 1 .274.407c.008.395.003.79.003 1.185 0 .259-.107.367-.33.367h-1.218c-.023.002-.029.008-.028.033.184.437.374.871.57 1.303a.045.045 0 0 0 .04.026c.17.005.34.002.51.003.15-.002.517.004.666-.01a2.03 2.03 0 0 0 .408-.075c.59-.18.975-.698.976-1.313v-1.981c0-.128-.01-.254-.034-.38 0 .078-.029-.641-.724-.998z"/>
+            </svg>
+          </div>
+          <div class="hero__platform" title="Bilibili (哔哩哔哩)">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .355-.124.657-.373.906zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.786 1.894v7.52c.017.764.28 1.395.786 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.786-1.893v-7.52c-.017-.765-.28-1.396-.786-1.894-.507-.497-1.134-.755-1.88-.773zM8 11.107c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c0-.373.129-.689.386-.947.258-.257.574-.386.947-.386zm8 0c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373Z"/>
+            </svg>
+          </div>
+          <div class="hero__platform hero__platform--more">
+            <span>+ 6 more</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem/Solution -->
+  <section class="section problem-solution">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__eyebrow">The Challenge</span>
+        <h2 class="section__title">From Complexity to Simplicity</h2>
+        <p class="section__description">
+          Managing multiple Chinese media platforms shouldn't be this hard.
+        </p>
+      </div>
+      <div class="problem-solution__comparison">
+        <div class="problem-solution__side problem-solution__side--before">
+          <h3 class="problem-solution__side-title problem-solution__side-title--before">Before</h3>
+          <ul class="problem-solution__list">
+            <li class="problem-solution__item problem-solution__item--before">5-7 different agencies to manage</li>
+            <li class="problem-solution__item problem-solution__item--before">Time zone & language barriers</li>
+            <li class="problem-solution__item problem-solution__item--before">2-3 months to get started</li>
+            <li class="problem-solution__item problem-solution__item--before">Scattered data & inconsistent reports</li>
+            <li class="problem-solution__item problem-solution__item--before">Policy changes = blind spots</li>
+          </ul>
+        </div>
+        <div class="problem-solution__side problem-solution__side--after">
+          <h3 class="problem-solution__side-title problem-solution__side-title--after">With TMG</h3>
+          <ul class="problem-solution__list">
+            <li class="problem-solution__item problem-solution__item--after">One dedicated point of contact</li>
+            <li class="problem-solution__item problem-solution__item--after">Trilingual team, 7×12 response</li>
+            <li class="problem-solution__item problem-solution__item--after">Launch in 1-2 weeks</li>
+            <li class="problem-solution__item problem-solution__item--after">Unified dashboard & reports</li>
+            <li class="problem-solution__item problem-solution__item--after">Proactive policy alerts</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__eyebrow">Our Services</span>
+        <h2 class="section__title">Everything You Need in One Place</h2>
+        <p class="section__description">
+          Three integrated modules designed to eliminate complexity and maximize efficiency.
+        </p>
+      </div>
+      <div class="services__grid">
+        <div class="service-card">
+          <div class="service-card__icon">💰</div>
+          <h3 class="service-card__title">Ad Recharge</h3>
+          <p class="service-card__description">
+            Quick and secure recharge to all major Chinese media platforms.
+          </p>
+          <ul class="service-card__features">
+            <li class="service-card__feature">All major platforms supported</li>
+            <li class="service-card__feature">Multi-currency payment</li>
+            <li class="service-card__feature">Transparent transaction</li>
+            <li class="service-card__feature">Fast processing 2-3 business days</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">🔐</div>
+          <h3 class="service-card__title">Account Setup</h3>
+          <p class="service-card__description">
+            One-time account opening with full documentation support.
+          </p>
+          <ul class="service-card__features">
+            <li class="service-card__feature">Platform registration</li>
+            <li class="service-card__feature">Blue V certification</li>
+            <li class="service-card__feature">Industry qualifications</li>
+            <li class="service-card__feature">Document preparation</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">🚀</div>
+          <h3 class="service-card__title">Account Management</h3>
+          <p class="service-card__description">
+            China-based. No handoff after the contract. We run campaigns with AI-assisted workflows to keep costs low and results sharp.
+          </p>
+          <ul class="service-card__features">
+            <li class="service-card__feature">Direct access — no middlemen, no markup chain</li>
+            <li class="service-card__feature">AI-assisted optimization to cut wasted spend</li>
+            <li class="service-card__feature">Performance reporting in plain English</li>
+            <li class="service-card__feature">One contact who actually picks up</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Props -->
+  <section class="section value-props">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__eyebrow">Results You Can Count On</span>
+        <h2 class="section__title">The TMG Difference</h2>
+      </div>
+      <div class="value-props__grid">
+        <div class="value-prop">
+          <div class="value-prop__number">80%</div>
+          <div class="value-prop__label">Less Communication Time</div>
+          <div class="value-prop__description">One point of contact vs. managing 5-7 agencies</div>
+        </div>
+        <div class="value-prop">
+          <div class="value-prop__number">50%</div>
+          <div class="value-prop__label">Lower Trial Costs</div>
+          <div class="value-prop__description">We handle the learning curve for you</div>
+        </div>
+        <div class="value-prop">
+          <div class="value-prop__number">60%</div>
+          <div class="value-prop__label">Faster Launch</div>
+          <div class="value-prop__description">Launch in 1-2 weeks instead of months</div>
+        </div>
+        <div class="value-prop">
+          <div class="value-prop__number">30%</div>
+          <div class="value-prop__label">Higher Efficiency</div>
+          <div class="value-prop__description">Optimized through centralized operations</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__eyebrow">Pricing</span>
+        <h2 class="section__title">Simple, Transparent Pricing</h2>
+        <p class="section__description">
+          Choose the plan that fits your needs.
+        </p>
+      </div>
+      <div class="pricing__grid">
+        <div class="pricing-card">
+          <h3 class="pricing-card__title">Recharge Only</h3>
+          <div class="pricing-card__price">2.5%<span>+</span></div>
+          <p class="pricing-card__description">
+            Starts from 2.5% of ad spend
+          </p>
+          <ul class="pricing-card__features">
+            <li class="pricing-card__feature">Ad recharge only</li>
+            <li class="pricing-card__feature">All platforms supported</li>
+            <li class="pricing-card__feature">No setup fee</li>
+            <li class="pricing-card__feature">No account management</li>
+            <li class="pricing-card__feature">Below industry average rates</li>
+          </ul>
+          <a href="#contact" class="btn btn--secondary pricing-card__cta">Get Started</a>
+        </div>
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-card__badge">Most Popular</div>
+          <h3 class="pricing-card__title">Setup + Recharge</h3>
+          <div class="pricing-card__price">2.5%<span>+</span></div>
+          <p class="pricing-card__description">
+            Starts from 2.5% of ad spend + one-time setup fee
+          </p>
+          <div class="pricing-card__setup-fee">Setup Fee: Starts from $100+ (one-time)</div>
+          <div class="pricing-card__contact-note">Contact us for platform-specific pricing</div>
+          <ul class="pricing-card__features">
+            <li class="pricing-card__feature">Ad recharge</li>
+            <li class="pricing-card__feature">Account opening</li>
+            <li class="pricing-card__feature">Documentation support</li>
+            <li class="pricing-card__feature">All platforms included</li>
+            <li class="pricing-card__feature">Low setup fee with minimal commitment</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary pricing-card__cta">Get Started</a>
+        </div>
+        <div class="pricing-card">
+          <h3 class="pricing-card__title">AI Powered Full Service</h3>
+          <div class="pricing-card__price">6%<span>+</span></div>
+          <p class="pricing-card__description">
+            Starts from 6% of ad spend + setup fee
+          </p>
+          <div class="pricing-card__setup-fee">Setup Fee: Starts from $100+ (one-time)</div>
+          <div class="pricing-card__contact-note">Contact us for platform-specific pricing</div>
+          <ul class="pricing-card__features">
+            <li class="pricing-card__feature">Everything in Setup + Recharge</li>
+            <li class="pricing-card__feature">Account management</li>
+            <li class="pricing-card__feature">Campaign optimization</li>
+            <li class="pricing-card__feature">Reporting & analytics</li>
+            <li class="pricing-card__feature">Competitive full-service rate</li>
+          </ul>
+          <a href="#contact" class="btn btn--secondary pricing-card__cta">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="section team" id="team">
+    <div class="container">
+      <div class="team__header">
+        <h2 class="team__title">Who We Are</h2>
+        <p class="team__description">
+          Late to the international market — but not new to the game. We've been running domestic campaigns in China for over 10 years. We're a Tier-2 reseller of China's major media platforms, which means fewer layers between you and the inventory, and lower fees because we don't have to sell you a full-service retainer to stay profitable.
+        </p>
+        <p class="team__description" style="margin-top: 1rem;">
+          You keep full ownership of your ad accounts. You run them yourself if you want — we're here to open the doors, advise on strategy, and let AI handle the heavy lifting. No international account manager who disappears after the contract is signed. We're China-based, available, and built for agencies that want a real partner, not another layer of overhead.
+        </p>
+      </div>
+      <div class="team__grid">
+        <div class="team-card">
+          <div class="team-card__photo team-card__photo--benny">
+            <img src="assets/微信图片_2026-03-28_134105_321.jpg" alt="Benny Cheuk" loading="lazy">
+          </div>
+          <div class="team-card__content">
+            <h3 class="team-card__name">Benny Cheuk</h3>
+            <p class="team-card__role">DSP Expert, Trilingual</p>
+            <p class="team-card__bio">12+ years in programmatic advertising, specializing in DSP technology. Trilingual in English, Mandarin, and Cantonese, he bridges European and Chinese markets, helping international companies navigate China's programmatic buying with practical, culturally-aware strategies.</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-card__photo team-card__photo--yan">
+            <img src="assets/11a0d3e1-2289-416f-bb5f-ea228a0037a6.jpg" alt="Yan Huo" loading="lazy">
+          </div>
+          <div class="team-card__content">
+            <h3 class="team-card__name">Yan Huo</h3>
+            <p class="team-card__role">Account Manager</p>
+            <p class="team-card__bio">15+ years helping international companies navigate China's digital advertising landscape. Fluent English, expert at bridging cultural and technical gaps between global brands and Chinese platforms.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Stories -->
+  <section class="section" id="client-stories">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__eyebrow">Client Stories</span>
+        <h2 class="section__title">Real Success Stories</h2>
+        <p class="section__subtitle">See how we've helped global companies navigate and succeed in China's digital advertising market</p>
+      </div>
+
+      <div class="case-study">
+        <div class="case-study__header">
+          <div class="case-study__client">
+            <div class="case-study__logo">
+              <img src="assets/farmskins-logo.jpg" alt="Farmskins" class="case-study__logo-img">
+            </div>
+            <div class="case-study__client-info">
+              <h3 class="case-study__client-name">Farmskins</h3>
+              <span class="case-study__client-badge">Case Study</span>
+            </div>
+          </div>
+          <p class="case-study__headline">How a Global CS:GO Platform Found Its Footing in China</p>
+        </div>
+
+        <div class="case-study__content">
+          <div class="case-study__chapter">
+            <h4 class="case-study__chapter-title">When "No" Was Only Answer</h4>
+            <p class="case-study__chapter-text">
+              When Farmskins first approached us, they were running into a wall that many international companies hit in China: platform rejection. As a global CS:GO skins trading platform, they had identified China as a massive, untapped market opportunity—but every major Chinese advertising platform turned them away.
+            </p>
+            <p class="case-study__chapter-text">
+              Gaming-related advertising is heavily regulated in China. The platforms cited policy violations and told Farmskins that their business model simply wasn't compatible with Chinese advertising standards. No matter how they adjusted their messaging or how much budget they committed, the answer was always the same: "No."
+            </p>
+          </div>
+
+          <div class="case-study__chapter">
+            <h4 class="case-study__chapter-title">What Actually Happened</h4>
+            <p class="case-study__chapter-text">
+              That's when we stepped in. Unlike most agencies that would simply pass along the rejection or suggest abandoning the market, we took a different approach. We leveraged our deep understanding of Chinese platform policies, gaming regulations, and the nuances of platform approval processes.
+            </p>
+            <p class="case-study__chapter-text">
+              We worked directly with platform teams, presented Farmskins' business model through a lens that aligned with Chinese gaming market expectations, and helped them navigate the complex compliance landscape. Where other agencies saw policy roadblocks, we saw pathways—ones that only become visible with years of experience and established relationships.
+            </p>
+          </div>
+
+          <div class="case-study__chapter">
+            <h4 class="case-study__chapter-title">Six Years Later</h4>
+            <p class="case-study__chapter-text">
+              The partnership that began with rejection has now spanned six years and counting. Farmskins didn't just get approved—they built a thriving advertising operation in China that continues to grow year after year.
+            </p>
+            <p class="case-study__chapter-text">
+              What started as "impossible" became routine. Farmskins now runs ongoing campaigns across multiple Chinese platforms, accessing a market that once seemed completely closed to them. They've achieved sustained growth in China, proving that with the right partner, even the most regulated markets can be successfully navigated.
+            </p>
+          </div>
+
+          <div class="case-study__chapter">
+            <h4 class="case-study__chapter-title">Why It Worked</h4>
+            <p class="case-study__chapter-text">
+              The Farmskins success story wasn't luck—it was the result of our unique approach to China market entry:
+            </p>
+            <ul class="case-study__list">
+              <li><strong>Deep Platform Relationships:</strong> We don't just submit applications—we know the people reviewing them and understand their priorities.</li>
+              <li><strong>Regulatory Expertise:</strong> Gaming advertising has complex rules in China. We know where the lines are drawn and how to operate within them.</li>
+              <li><strong>Persistence & Strategy:</strong> Initial rejection doesn't mean impossibility. We found alternative pathways that others missed.</li>
+              <li><strong>Long-term Partnership:</strong> Six years of ongoing support means Farmskins isn't just in the market—they're thriving in it.</li>
+            </ul>
+          </div>
+
+          <div class="case-study__chapter">
+            <h4 class="case-study__chapter-title">For Other Companies Looking at China</h4>
+            <p class="case-study__chapter-text">
+              If you're facing platform rejection or regulatory roadblocks in China, the Farmskins story shows there's often a way forward—if you have the right partner. We've helped companies in gaming, fintech, e-commerce, and other regulated industries find their path into the Chinese market.
+            </p>
+            <p class="case-study__chapter-text">
+              Don't let "no" from a platform be your final answer. With Tuyue Media Gateway, we help you discover what's actually possible.
+            </p>
+          </div>
+        </div>
+
+        <div class="case-study__cta">
+          <a href="#contact" class="btn btn--primary">Start Your Success Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__eyebrow">About Us</span>
+        <h2 class="section__title">Built by People Who Get It</h2>
+      </div>
+      <div class="about__content">
+        <p class="about__company-name">TUYUE SOUXIN (SHANGHAI) INFORMATION TECHNOLOGY CO., LTD.</p>
+        <p class="about__text">
+          Tuyue Media Gateway was founded by professionals who lived the problem firsthand. We've seen international agencies struggle with fragmented communications, opaque processes, and cultural barriers when trying to access China's digital advertising market.
+        </p>
+        <p class="about__text">
+          We built TMG to be the bridge we wished we had—one unified interface, transparent operations, and a team that speaks your language and understands China's digital landscape inside out.
+        </p>
+        <p class="about__text">
+          Today, we help agencies and brands from Europe, North America, and APAC navigate China's $100B+ digital advertising ecosystem with confidence. Our mission is simple: make accessing China's market as easy as any other market.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info">
+          <div>
+            <h2 class="contact__title">Ready to Expand to China?</h2>
+            <p class="contact__description">
+              Let's discuss how TMG can help your agency access China's digital advertising market.
+            </p>
+            <a href="mailto:ty@tuyuesouxin.cn" class="contact__email">ty@tuyuesouxin.cn</a>
+
+            <div class="contact__details">
+              <div class="contact__detail-item">
+                <svg class="contact__detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                Response time: Within 24 hours (weekdays)
+              </div>
+              <div class="contact__detail-item">
+                <svg class="contact__detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                Languages: English, Mandarin, Cantonese
+              </div>
+              <div class="contact__detail-item">
+                <svg class="contact__detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                Transparent pricing, no hidden fees
+              </div>
+              <div class="contact__detail-item">
+                <svg class="contact__detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                Secure SWIFT transfers
+              </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="contact__map">
+              <div class="contact__map-embed">
+                <iframe
+                  class="contact__map-iframe"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.7!2d121.24!3d31.26!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDE1JzM2LjAiTiAxMjHCsDE0JzI0LjAiRQ!5e0!3m2!1sen!2scn!4v1625097600000!5m2!1sen!2scn"
+                  allowfullscreen=""
+                  loading="lazy">
+                </iframe>
+              </div>
+              <div class="contact__address">
+                <span class="contact__address-text">NO. 599 WANZHEN ROAD, SHANGHAI, CHINA</span>
+              </div>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="contact__trust">
+              <h3 class="contact__trust-title">Our Office</h3>
+              <div class="contact__license">
+                <div class="contact__license-label">Business License</div>
+                <div class="contact__license-text">TUYUE SOUXIN (SHANGHAI) INFORMATION TECHNOLOGY CO., LTD.</div>
+                <div class="contact__license-number">License No. 91310114MADKG4UF0G</div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="contact__cta">
+            <a href="mailto:ty@tuyuesouxin.cn" class="btn btn--primary btn--lg">Send Email</a>
+            <a href="https://wa.me/8613800138000" class="btn btn--whatsapp btn--lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__form">
+          <form id="contactForm" action="mailto:ty@tuyuesouxin.cn" method="post" enctype="text/plain">
+            <div class="form__group">
+              <label class="form__label" for="salutation">Salutation<span class="form__required">*</span></label>
+              <select class="form__select" id="salutation" name="Salutation" required>
+                <option value="">Select your title</option>
+                <option value="Mr.">Mr.</option>
+                <option value="Ms.">Ms.</option>
+                <option value="Mrs.">Mrs.</option>
+                <option value="Dr.">Dr.</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="fullName">Full Name<span class="form__required">*</span></label>
+              <input class="form__input" type="text" id="fullName" name="Full Name" required placeholder="Your full name">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="company">Company Name<span class="form__required">*</span></label>
+              <input class="form__input" type="text" id="company" name="Company Name" required placeholder="Your company name">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="type">Identity<span class="form__required">*</span></label>
+              <select class="form__select" id="type" name="Type" required>
+                <option value="">Select your type</option>
+                <option value="Advertiser">Advertiser (Direct Client)</option>
+                <option value="Agency">Agency (Service Provider)</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="email">Email Address<span class="form__required">*</span></label>
+              <input class="form__input" type="email" id="email" name="Email" required placeholder="your@email.com">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="service">Service Needed<span class="form__required">*</span></label>
+              <select class="form__select" id="service" name="Service" required>
+                <option value="">Select service type</option>
+                <option value="Recharge Only">Recharge Only</option>
+                <option value="Account Setup">Account Setup</option>
+                <option value="Full Service">Full Service</option>
+                <option value="Other">Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="needs">Your Needs<span class="form__required">*</span></label>
+              <textarea class="form__textarea" id="needs" name="Needs" required placeholder="Tell us about your requirements, goals, and any questions you have..."></textarea>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="comments">Comments (Optional)</label>
+              <textarea class="form__textarea" id="comments" name="Comments" placeholder="Any additional information..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">Submit Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__section">
+          <h4 class="footer__title">About TMG</h4>
+          <p class="footer__description">
+            Your single point of access to China's $100B digital advertising market. We help international agencies navigate Chinese platforms with ease.
+          </p>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="#services" class="footer__link">Services</a></li>
+            <li><a href="#pricing" class="footer__link">Pricing</a></li>
+            <li><a href="#team" class="footer__link">Who We Are</a></li>
+            <li><a href="#client-stories" class="footer__link">Client Stories</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Contact</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="mailto:ty@tuyuesouxin.cn" class="footer__link footer__link--email">ty@tuyuesouxin.cn</a>
+            </li>
+            <li>
+              <a href="https://wa.me/8613800138000" class="footer__link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: text-bottom; margin-right: 4px;">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp: +86 138 0013 8000
+              </a>
+            </li>
+            <li>Shanghai, China</li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Legal</h4>
+          <ul class="footer__links">
+            <li class="footer__license">License No. 91310114MADKG4UF0G</li>
+            <li class="footer__company-short">TUYUE SOUXIN (SHANGHAI)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2026 Tuyue Media Gateway. All rights reserved.
+        </p>
+        <div class="footer__platforms">
+          <span class="footer__platform-badge">WeChat</span>
+          <span class="footer__platform-badge">Douyin</span>
+          <span class="footer__platform-badge">Baidu</span>
+          <span class="footer__platform-badge">Xiaohongshu</span>
+          <span class="footer__platform-badge">Bilibili</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    /* Scroll Animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1),
+                  transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .reveal.reveal--visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal--delay-1 { transition-delay: 0.1s; }
+    .reveal--delay-2 { transition-delay: 0.2s; }
+    .reveal--delay-3 { transition-delay: 0.3s; }
+
+    /* Problem/Solution upgrade */
+    .problem-solution__side {
+      border-radius: 16px;
+    }
+    .problem-solution__side--after {
+      background: linear-gradient(145deg, rgba(45, 107, 228, 0.1), rgba(13, 18, 32, 0.8));
+      border-color: rgba(45, 107, 228, 0.4);
+    }
+    .problem-solution__item--after::before {
+      color: var(--color-accent);
+    }
+
+    /* Contact info upgrade */
+    .contact__info {
+      background: linear-gradient(145deg, rgba(17, 24, 39, 0.9), rgba(13, 18, 32, 0.95));
+      border-color: var(--color-border);
+    }
+    .contact__email {
+      background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* About section upgrade */
+    .about {
+      background: linear-gradient(180deg, var(--color-bg-alt) 0%, var(--color-bg) 100%);
+    }
+
+    /* Team section upgrade */
+    .team {
+      background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
+    }
+    .team-card {
+      background: linear-gradient(145deg, rgba(17, 24, 39, 0.9), rgba(13, 18, 32, 0.95));
+      border-radius: 16px;
+      border-color: var(--color-border);
+    }
+    .team-card:hover {
+      border-color: rgba(201, 168, 76, 0.25);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 20px rgba(201, 168, 76, 0.05);
+    }
+    .team-card__role {
+      color: var(--color-accent);
+    }
+
+    /* Contact license upgrade */
+    .contact__license {
+      background: linear-gradient(145deg, rgba(17, 24, 39, 0.8), rgba(13, 18, 32, 0.9));
+      border-color: rgba(201, 168, 76, 0.2);
+    }
+    .contact__license-number {
+      color: var(--color-accent);
+    }
+    .contact__trust-title {
+      color: var(--color-accent-light);
+    }
+
+    /* Form upgrade */
+    .contact__form {
+      background: linear-gradient(145deg, rgba(17, 24, 39, 0.9), rgba(13, 18, 32, 0.95));
+    }
+    .form__input:focus,
+    .form__textarea:focus,
+    .form__select:focus {
+      border-color: var(--color-accent);
+      box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.1);
+    }
+
+    /* Divider line between sections */
+    .section__header .section__eyebrow::before,
+    .section__header .section__eyebrow::after {
+      content: '—';
+      margin: 0 var(--space-2);
+      opacity: 0.4;
+    }
+
+    /* nav link hover upgrade */
+    .header__nav-link:hover {
+      color: var(--color-accent-light);
+    }
+  </style>
+
+  <script>
+    // ─── Mobile Menu Toggle ─────────────────────────────────────────────
+    (function () {
+      const toggle = document.querySelector('.header__toggle');
+      const nav = document.querySelector('.header__nav');
+
+      if (toggle && nav) {
+        toggle.addEventListener('click', () => {
+          toggle.classList.toggle('active');
+          nav.classList.toggle('active');
+        });
+
+        // Close menu when clicking on nav links
+        const navLinks = nav.querySelectorAll('.header__nav-link');
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            toggle.classList.remove('active');
+            nav.classList.remove('active');
+          });
+        });
+      }
+    })();
+
+    // ─── Form Validation ────────────────────────────────────────────────
+    (function () {
+      const form = document.getElementById('contactForm');
+      const inputs = form.querySelectorAll('input[required], select[required], textarea[required]');
+
+      // Validate on input
+      inputs.forEach(input => {
+        input.addEventListener('blur', () => {
+          validateInput(input);
+        });
+
+        input.addEventListener('input', () => {
+          if (input.classList.contains('error')) {
+            validateInput(input);
+          }
+        });
+      });
+
+      function validateInput(input) {
+        let isValid = true;
+        let errorMsg = '';
+
+        if (input.value.trim() === '') {
+          isValid = false;
+          errorMsg = 'This field is required';
+        } else if (input.type === 'email' && !isValidEmail(input.value)) {
+          isValid = false;
+          errorMsg = 'Please enter a valid email address';
+        }
+
+        const formGroup = input.closest('.form__group');
+        let errorElement = formGroup.querySelector('.form__error');
+
+        if (!isValid) {
+          input.classList.add('error');
+          if (!errorElement) {
+            errorElement = document.createElement('div');
+            errorElement.className = 'form__error';
+            formGroup.appendChild(errorElement);
+          }
+          errorElement.textContent = errorMsg;
+        } else {
+          input.classList.remove('error');
+          if (errorElement) {
+            errorElement.remove();
+          }
+        }
+      }
+
+      function isValidEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      }
+
+      // Form submission
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        let isFormValid = true;
+        inputs.forEach(input => {
+          if (!input.value.trim()) {
+            isFormValid = false;
+            validateInput(input);
+          }
+        });
+
+        if (isFormValid) {
+          // Show success message
+          alert('Thank you for your inquiry! We will contact you soon.');
+          form.reset();
+        }
+      });
+    })();
+
+    // ─── Scroll Reveal Animation (Comprehensive) ───────────────────────────────────────
+    // ─── Scroll Reveal Animation (Comprehensive) ───────────────────────────────────────────────
+    (function () {
+      // Select all animated elements across the entire site
+      const elements = document.querySelectorAll(
+        // Hero
+        '.hero__title, .hero__description, .hero__cta, .hero__trust, .hero__platform, ' +
+        // Section headers
+        '.section__header, ' +
+        // Cards & Grid Items
+        '.service-card, .pricing-card, .value-prop, .team-card, ' +
+        // Case Study
+        '.case-study, .case-study__chapter, ' +
+        // Problem/Solution
+        '.problem-solution__side, .problem-solution__item, ' +
+        // About & Contact
+        '.about__text, .about__company-name, ' +
+        '.contact__info, .contact__form, .contact__map, .contact__trust, .contact__detail-item, ' +
+        // Footer
+        '.footer__company, .footer__text'
+      );
+
+      // Add reveal class and stagger delays for grid items
+      elements.forEach((el, i) => {
+        el.classList.add('reveal');
+        
+        // Stagger animation delays for items in grid containers
+        const parent = el.parentElement;
+        if (parent && (
+          parent.classList.contains('services__grid') ||
+          parent.classList.contains('pricing__grid') ||
+          parent.classList.contains('value-props__grid') ||
+          parent.classList.contains('team__grid') ||
+          parent.classList.contains('hero__platforms')
+        )) {
+          const siblings = Array.from(parent.children);
+          const index = siblings.indexOf(el);
+          if (index >= 0) {
+            const delayClass = index === 0 ? '' : `reveal--delay-${Math.min(index, 4)}`;
+            if (delayClass) el.classList.add(delayClass);
+          }
+        }
+      });
+
+      // Intersection Observer with refined settings
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Add visible class with a tiny delay to trigger CSS transition
+            requestAnimationFrame(() => {
+              entry.target.classList.add('reveal--visible');
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { 
+        threshold: 0.08, // Trigger when 8% visible
+        rootMargin: '0px 0px -50px 0px' // Slight offset for smoother experience
+      });
+
+      elements.forEach(el => observer.observe(el));
+    })();
+
+    // ─── Number Counter Animation (Enhanced) ──────────────────────────────────────────────
+    (function () {
+      const counters = document.querySelectorAll('.value-prop__number');
+
+      const animateCounter = (el) => {
+        const text = el.textContent.trim();
+        const match = text.match(/^(\d+)(%?)(.*)$/);
+        if (!match) return;
+
+        const target = parseInt(match[1], 10);
+        const suffix = match[2] + match[3];
+        const duration = 2000; // Slightly longer for better effect
+        const startTime = performance.now();
+
+        // Cubic easing function for natural feel
+        const ease = (t) => t < 0.5
+          ? 4 * t * t * t
+          : 1 - Math.pow(-2 * t + 2, 3) / 2;
+
+        const update = (now) => {
+          const elapsed = now - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const current = Math.round(ease(progress) * target);
+          el.textContent = current + suffix;
+          if (progress < 1) {
+            requestAnimationFrame(update);
+          }
+        };
+
+        requestAnimationFrame(update);
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.6 }); // Higher threshold for better trigger timing
+
+      counters.forEach(el => observer.observe(el));
+    })();
+  </script>
+</body>
+</html>
