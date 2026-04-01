@@ -1481,7 +1481,108 @@
       margin-left: 2px;
     }
 
-    /* Footer */
+    /* ✅ Form Success Card */
+    .form-success-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 500px;
+    }
+
+    .form-success-card__inner {
+      text-align: center;
+      padding: var(--space-8);
+    }
+
+    .form-success-card__icon {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto var(--space-6);
+      animation: successPop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    }
+
+    @keyframes successPop {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .form-success-card__title {
+      font-size: var(--font-size-3xl);
+      font-weight: 700;
+      background: linear-gradient(135deg, #c9a84c, #e8c87a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: var(--space-2);
+    }
+
+    .form-success-card__subtitle {
+      font-size: var(--font-size-lg);
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-4);
+    }
+
+    .form-success-card__message {
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      max-width: 420px;
+      margin: 0 auto var(--space-8);
+    }
+
+    .form-success-card__message strong {
+      color: var(--color-text-primary);
+    }
+
+    .form-success-card__details {
+      background: var(--color-bg-alt);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: var(--space-5);
+      margin-bottom: var(--space-4);
+      text-align: left;
+    }
+
+    .form-success-card__detail-row {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-1);
+      padding: var(--space-3) 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .form-success-card__detail-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .form-success-card__detail-row:first-child {
+      padding-top: 0;
+    }
+
+    .form-success-card__detail-label {
+      font-size: var(--font-size-xs);
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+    }
+
+    .form-success-card__detail-value {
+      font-size: var(--font-size-sm);
+      color: var(--color-accent-light);
+      font-weight: 500;
+    }
+
+    a.form-success-card__detail-value {
+      color: var(--color-primary);
+      text-decoration: none;
+    }
+
+    a.form-success-card__detail-value:hover {
+      text-decoration: underline;
+    }
+
+
     .footer {
       border-top: 1px solid var(--color-border);
       padding: var(--space-12) 0 var(--space-8);
@@ -2088,12 +2189,13 @@
 
             <!-- Map Section -->
             <div class="contact__map">
-              <div class="contact__map-embed">
+              <div class="contact__map-embed" id="mapContainer">
                 <iframe
                   class="contact__map-iframe"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.7!2d121.24!3d31.26!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDE1JzM2LjAiTiAxMjHCsDE0JzI0LjAiRQ!5e0!3m2!1sen!2scn!4v1625097600000!5m2!1sen!2scn"
+                  src="https://maps.google.com/maps?q=599+Wanzhen+Road+Songjiang+Shanghai+China&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   allowfullscreen=""
-                  loading="lazy">
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
               </div>
               <div class="contact__address">
@@ -2104,7 +2206,53 @@
         </div>
 
         <div class="contact__form">
-          <form id="contactForm" action="mailto:tmg@tuyuesouxin.cn" method="post" enctype="text/plain">
+
+          <!-- ✅ 成功提示卡片（默认隐藏，提交后显示） -->
+          <div id="formSuccess" style="display:none;" class="form-success-card">
+            <div class="form-success-card__inner">
+              <div class="form-success-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="12" fill="url(#successGrad)"/>
+                  <path d="M7 12.5l3.5 3.5 6.5-7" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <defs>
+                    <linearGradient id="successGrad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                      <stop offset="0%" stop-color="#c9a84c"/>
+                      <stop offset="100%" stop-color="#e8c87a"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <h3 class="form-success-card__title">Inquiry Received!</h3>
+              <p class="form-success-card__subtitle">Thank you for reaching out to TMG.</p>
+              <p class="form-success-card__message">
+                We've received your inquiry and will get back to you within <strong>1 business day</strong>. 
+                Keep an eye on your inbox at the email you provided.
+              </p>
+              <div class="form-success-card__details">
+                <div class="form-success-card__detail-row">
+                  <span class="form-success-card__detail-label">Email us directly:</span>
+                  <a href="mailto:tmg@tuyuesouxin.cn" class="form-success-card__detail-value">tmg@tuyuesouxin.cn</a>
+                </div>
+                <div class="form-success-card__detail-row">
+                  <span class="form-success-card__detail-label">For urgent matters:</span>
+                  <span class="form-success-card__detail-value">WhatsApp us via QR code below</span>
+                </div>
+              </div>
+              <button type="button" class="btn btn--secondary" onclick="document.getElementById('formSuccess').style.display='none'; document.getElementById('contactForm').style.display='block';" style="margin-top: var(--space-6); width:100%;">
+                Submit Another Inquiry
+              </button>
+            </div>
+          </div>
+
+          <!-- 📋 联系表单 -->
+          <!-- ⚠️ 重要：将下方 YOUR_FORM_ID 替换为你的 Formspree Form ID -->
+          <!-- 注册地址: https://formspree.io → 创建项目 → 复制Form ID -->
+          <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <!-- Formspree: 发送通知邮件到该地址 -->
+            <input type="hidden" name="_replyto" value="tmg@tuyuesouxin.cn">
+            <input type="hidden" name="_subject" value="🔔 New Inquiry from TMG Website">
+            <!-- 防止垃圾提交 (honeypot) -->
+            <input type="text" name="_gotcha" style="display:none">
             <div class="form__group">
               <label class="form__label" for="salutation">Salutation<span class="form__required">*</span></label>
               <select class="form__select" id="salutation" name="Salutation" required>
@@ -2394,22 +2542,59 @@
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
       }
 
-      // Form submission
-      form.addEventListener('submit', (e) => {
+      // Form submission — Formspree integration
+      form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
+        // Validate all required inputs first
         let isFormValid = true;
         inputs.forEach(input => {
-          if (!input.value.trim()) {
+          if (input.required && !input.value.trim()) {
             isFormValid = false;
             validateInput(input);
           }
         });
 
-        if (isFormValid) {
-          // Show success message
-          alert('Thank you for your inquiry! We will contact you soon.');
-          form.reset();
+        if (!isFormValid) return;
+
+        // Show loading state
+        const submitBtn = form.querySelector('[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+        submitBtn.style.opacity = '0.7';
+
+        try {
+          const formData = new FormData(form);
+          const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (response.ok) {
+            // ✅ Success: hide form, show success card
+            form.style.display = 'none';
+            const successCard = document.getElementById('formSuccess');
+            successCard.style.display = 'block';
+            successCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            form.reset();
+          } else {
+            // ⚠️ Server error fallback
+            const data = await response.json();
+            if (data.errors) {
+              alert('Submission failed: ' + data.errors.map(e => e.message).join(', '));
+            } else {
+              alert('There was an error submitting your form. Please email us directly at tmg@tuyuesouxin.cn');
+            }
+          }
+        } catch (err) {
+          // 🔌 Network error fallback
+          alert('Network error. Please email us directly at tmg@tuyuesouxin.cn');
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText;
+          submitBtn.style.opacity = '1';
         }
       });
     })();
