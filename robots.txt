@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tuyue-gateway.com/sitemap.xml
+Sitemap: https://tuyuesouxin.cn/sitemap.xml
