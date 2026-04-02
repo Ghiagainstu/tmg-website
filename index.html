@@ -448,6 +448,23 @@
       background-clip: text;
     }
 
+    .hero__title-underline {
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
+      border-radius: 2px;
+      margin-bottom: var(--space-6);
+      animation: underlineGrow 1s ease-out 0.3s forwards;
+      transform-origin: left;
+      transform: scaleX(0);
+    }
+
+    @keyframes underlineGrow {
+      to {
+        transform: scaleX(1);
+      }
+    }
+
     .hero__description {
       font-size: var(--font-size-xl);
       color: var(--color-text-secondary);
@@ -1767,6 +1784,7 @@
         Your Single Point of Access to<br>
         <span>China's Digital Ad Market</span>
       </h1>
+      <div class="hero__title-underline"></div>
       <p class="hero__description">
         One interface, all platforms, zero complexity. We help international agencies navigate China's $100B digital advertising landscape without headache.
       </p>
@@ -1857,7 +1875,11 @@
       </div>
       <div class="services__grid">
         <div class="service-card">
-          <div class="service-card__icon">💰</div>
+          <div class="service-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.41 16.09V20h-2.67v-1.93c-1.71-.36-3.16-1.46-3.27-3.4h1.96c.1 1.05.82 1.87 2.65 1.87 1.96 0 2.4-.98 2.4-1.59 0-.83-.44-1.61-2.67-2.14-2.48-.6-4.18-1.62-4.18-3.67 0-1.72 1.39-2.84 3.11-3.21V4h2.67v1.95c1.86.45 2.79 1.86 2.85 3.39H14.3c-.05-1.11-.64-1.87-2.22-1.87-1.5 0-2.4.68-2.4 1.64 0 .84.65 1.39 2.67 1.91s4.18 1.39 4.18 3.91c-.01 1.83-1.38 2.83-3.12 3.16z"/>
+            </svg>
+          </div>
           <h3 class="service-card__title">Ad Recharge</h3>
           <p class="service-card__description">
             Quick and secure recharge to all major Chinese media platforms.
@@ -1870,7 +1892,11 @@
           </ul>
         </div>
         <div class="service-card">
-          <div class="service-card__icon">🔐</div>
+          <div class="service-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+            </svg>
+          </div>
           <h3 class="service-card__title">Account Setup</h3>
           <p class="service-card__description">
             One-time account opening with full documentation support.
@@ -1883,7 +1909,11 @@
           </ul>
         </div>
         <div class="service-card">
-          <div class="service-card__icon">🚀</div>
+          <div class="service-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+          </div>
           <h3 class="service-card__title">Account Management</h3>
           <p class="service-card__description">
             China-based. No handoff after the contract. We run campaigns with AI-assisted workflows to keep costs low and results sharp.
@@ -2192,7 +2222,7 @@
               <div class="contact__map-embed" id="mapContainer">
                 <iframe
                   class="contact__map-iframe"
-                  src="https://maps.google.com/maps?q=599+Wanzhen+Road+Songjiang+Shanghai+China&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=599+Wanzhen+Road+Jiading+Shanghai+China&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade">
@@ -2254,35 +2284,16 @@
             <!-- 防止垃圾提交 (honeypot) -->
             <input type="text" name="_gotcha" style="display:none">
             <div class="form__group">
-              <label class="form__label" for="salutation">Salutation<span class="form__required">*</span></label>
-              <select class="form__select" id="salutation" name="Salutation" required>
-                <option value="">Select your title</option>
-                <option value="Mr.">Mr.</option>
-                <option value="Ms.">Ms.</option>
-                <option value="Mrs.">Mrs.</option>
-                <option value="Dr.">Dr.</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-            <div class="form__group">
               <label class="form__label" for="fullName">Full Name<span class="form__required">*</span></label>
               <input class="form__input" type="text" id="fullName" name="Full Name" required placeholder="Your full name">
             </div>
             <div class="form__group">
-              <label class="form__label" for="company">Company Name<span class="form__required">*</span></label>
-              <input class="form__input" type="text" id="company" name="Company Name" required placeholder="Your company name">
-            </div>
-            <div class="form__group">
-              <label class="form__label" for="type">Identity<span class="form__required">*</span></label>
-              <select class="form__select" id="type" name="Type" required>
-                <option value="">Select your type</option>
-                <option value="Advertiser">Advertiser (Direct Client)</option>
-                <option value="Agency">Agency (Service Provider)</option>
-              </select>
-            </div>
-            <div class="form__group">
               <label class="form__label" for="email">Email Address<span class="form__required">*</span></label>
               <input class="form__input" type="email" id="email" name="Email" required placeholder="your@email.com">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="company">Company Name<span class="form__required">*</span></label>
+              <input class="form__input" type="text" id="company" name="Company Name" required placeholder="Your company name">
             </div>
             <div class="form__group">
               <label class="form__label" for="service">Service Needed<span class="form__required">*</span></label>
@@ -2293,14 +2304,6 @@
                 <option value="Full Service">Full Service</option>
                 <option value="Other">Other / Not Sure</option>
               </select>
-            </div>
-            <div class="form__group">
-              <label class="form__label" for="needs">Your Needs<span class="form__required">*</span></label>
-              <textarea class="form__textarea" id="needs" name="Needs" required placeholder="Tell us about your requirements, goals, and any questions you have..."></textarea>
-            </div>
-            <div class="form__group">
-              <label class="form__label" for="comments">Comments (Optional)</label>
-              <textarea class="form__textarea" id="comments" name="Comments" placeholder="Any additional information..."></textarea>
             </div>
             <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">Submit Inquiry</button>
           </form>
@@ -2347,8 +2350,8 @@
         <div class="footer__section">
           <h4 class="footer__title">Legal</h4>
           <ul class="footer__links">
-            <li class="footer__license">License No. 91310114MADKG4UF0G</li>
-            <li class="footer__company-short">TUYUE SOUXIN (SHANGHAI) INFORMATION TECHNOLOGY CO., LTD.</li>
+            <li class="footer__license">91310114MADKG4UF0G</li>
+            <li class="footer__company-short">Tuyue Media Gateway</li>
           </ul>
         </div>
       </div>
