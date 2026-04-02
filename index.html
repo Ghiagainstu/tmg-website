@@ -2222,7 +2222,7 @@
               <div class="contact__map-embed" id="mapContainer">
                 <iframe
                   class="contact__map-iframe"
-                  src="https://maps.google.com/maps?q=599+Wanzhen+Road+Jiading+Shanghai+China&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=599+Wanzhen+Road+Songjiang+Shanghai+China&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade">
@@ -2284,16 +2284,37 @@
             <!-- 防止垃圾提交 (honeypot) -->
             <input type="text" name="_gotcha" style="display:none">
             <div class="form__group">
+              <label class="form__label" for="salutation">Salutation<span class="form__required">*</span></label>
+              <select class="form__select" id="salutation" name="Salutation" required>
+                <option value="">Select your title</option>
+                <option value="Mr.">Mr.</option>
+                <option value="Ms.">Ms.</option>
+                <option value="Mrs.">Mrs.</option>
+                <option value="Dr.">Dr.</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form__group">
               <label class="form__label" for="fullName">Full Name<span class="form__required">*</span></label>
               <input class="form__input" type="text" id="fullName" name="Full Name" required placeholder="Your full name">
             </div>
             <div class="form__group">
-              <label class="form__label" for="email">Email Address<span class="form__required">*</span></label>
-              <input class="form__input" type="email" id="email" name="Email" required placeholder="your@email.com">
-            </div>
-            <div class="form__group">
               <label class="form__label" for="company">Company Name<span class="form__required">*</span></label>
               <input class="form__input" type="text" id="company" name="Company Name" required placeholder="Your company name">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="type">Identity<span class="form__required">*</span></label>
+              <select class="form__select" id="type" name="Type" required>
+                <option value="">Select your role</option>
+                <option value="Agency">Advertising Agency</option>
+                <option value="Brand">Brand Owner</option>
+                <option value="Media">Media Publisher</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="email">Email Address<span class="form__required">*</span></label>
+              <input class="form__input" type="email" id="email" name="Email" required placeholder="your@email.com">
             </div>
             <div class="form__group">
               <label class="form__label" for="service">Service Needed<span class="form__required">*</span></label>
@@ -2304,6 +2325,14 @@
                 <option value="Full Service">Full Service</option>
                 <option value="Other">Other / Not Sure</option>
               </select>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="needs">Your Needs<span class="form__required">*</span></label>
+              <textarea class="form__textarea" id="needs" name="Needs" required placeholder="Tell us about your requirements, goals, and any questions you have..."></textarea>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="comments">Comments (Optional)</label>
+              <textarea class="form__textarea" id="comments" name="Comments" placeholder="Any additional information..."></textarea>
             </div>
             <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">Submit Inquiry</button>
           </form>
