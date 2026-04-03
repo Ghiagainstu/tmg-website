@@ -55,7 +55,7 @@
       --color-bg-alt: #0d1220;
       --color-bg-card: #111827;
       --color-text-primary: #f0f4ff;
-      --color-text-secondary: #94a3b8;
+      --color-text-secondary: #a3b1cc;
       --color-text-muted: #64748b;
       --color-primary: #2d6be4;
       --color-primary-hover: #1e55c4;
@@ -128,7 +128,7 @@
         radial-gradient(ellipse 80% 50% at 50% -10%, rgba(45, 107, 228, 0.12) 0%, transparent 60%),
         radial-gradient(ellipse 40% 30% at 85% 20%, rgba(201, 168, 76, 0.06) 0%, transparent 50%);
       color: var(--color-text-primary);
-      line-height: 1.6;
+      line-height: 1.7;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
@@ -392,12 +392,16 @@
 
     /* Sections */
     .section {
-      padding: var(--space-16) 0;
+      padding: var(--space-20) 0;
+    }
+
+    .section + .section {
+      border-top: 1px solid var(--color-border);
     }
 
     .section__header {
       text-align: center;
-      margin-bottom: var(--space-12);
+      margin-bottom: var(--space-14);
     }
 
     .section__eyebrow {
@@ -406,27 +410,34 @@
       font-weight: 600;
       color: var(--color-accent);
       text-transform: uppercase;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.14em;
       margin-bottom: var(--space-3);
     }
 
     .section__title {
-      font-size: var(--font-size-4xl);
+      font-size: var(--font-size-5xl);
       font-weight: 700;
       color: var(--color-text-primary);
-      letter-spacing: -0.02em;
-      line-height: 1.2;
-      margin-bottom: var(--space-4);
+      letter-spacing: -0.025em;
+      line-height: 1.15;
+      margin-bottom: var(--space-5);
     }
 
     .section__description {
       font-size: var(--font-size-lg);
       color: var(--color-text-secondary);
-      max-width: 600px;
+      max-width: 620px;
       margin: 0 auto;
+      line-height: 1.75;
     }
 
     @media (max-width: 768px) {
+      .section {
+        padding: var(--space-16) 0;
+      }
+      .section__header {
+        margin-bottom: var(--space-10);
+      }
       .section__title {
         font-size: var(--font-size-3xl);
       }
@@ -512,7 +523,7 @@
       color: var(--color-text-secondary);
       max-width: 700px;
       margin-bottom: var(--space-8);
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     .hero__cta {
@@ -529,6 +540,95 @@
       align-items: center;
       padding-top: var(--space-8);
       border-top: 1px solid var(--color-border);
+    }
+
+    /* Hero Layout — 2-column with diagram */
+    .hero__layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-12);
+      align-items: center;
+    }
+
+    @media (min-width: 1024px) {
+      .hero__layout {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .hero__content {
+      position: relative;
+    }
+
+    /* Hero Visual: Shanghai Skyline */
+    .hero__visual {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    .hero__skyline {
+      width: 100%;
+      max-width: 420px;
+      position: relative;
+    }
+
+    .hero__skyline svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero__skyline-buildings path {
+      transition: all var(--transition-normal);
+    }
+
+    .hero__skyline:hover .hero__skyline-buildings path {
+      stroke-opacity: 0.5;
+    }
+
+    .hero__skyline-pearl circle,
+    .hero__skyline-pearl line,
+    .hero__skyline-pearl path {
+      transition: all var(--transition-normal);
+    }
+
+    .hero__skyline:hover .hero__skyline-pearl circle {
+      stroke-opacity: 0.8;
+      filter: drop-shadow(0 0 8px rgba(201, 168, 76, 0.3));
+    }
+
+    .hero__skyline-lights rect {
+      animation: twinkle 3s ease-in-out infinite;
+    }
+
+    .hero__skyline-lights rect:nth-child(2n) {
+      animation-delay: 0.5s;
+    }
+
+    .hero__skyline-lights rect:nth-child(3n) {
+      animation-delay: 1s;
+    }
+
+    .hero__skyline-lights rect:nth-child(4n) {
+      animation-delay: 1.5s;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { fill-opacity: 0.3; }
+      50% { fill-opacity: 0.7; }
+    }
+
+    @media (max-width: 1023px) {
+      .hero__skyline {
+        max-width: 320px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero__skyline {
+        max-width: 280px;
+      }
     }
 
     .hero__trust-label {
@@ -601,6 +701,18 @@
       .hero__platform {
         flex: 1 1 auto;
       }
+      .hero__diagram {
+        width: 240px;
+        height: 240px;
+      }
+      .hero__diagram-node {
+        transform: rotate(var(--angle)) translateY(-100px) rotate(calc(-1 * var(--angle)));
+      }
+      .hero__diagram-logo {
+        width: 56px;
+        height: 56px;
+        font-size: 0.85rem;
+      }
     }
 
     @media (max-width: 480px) {
@@ -610,11 +722,23 @@
       .team__grid {
         grid-template-columns: 1fr;
       }
+      .hero__diagram {
+        width: 200px;
+        height: 200px;
+      }
+      .hero__diagram-node {
+        transform: rotate(var(--angle)) translateY(-82px) rotate(calc(-1 * var(--angle)));
+      }
+      .hero__diagram-node svg {
+        width: 24px;
+        height: 24px;
+      }
     }
 
     /* Problem/Solution */
     .problem-solution {
       background-color: var(--color-bg-alt);
+      border-image: linear-gradient(90deg, transparent, rgba(201, 168, 76, 0.15) 30%, rgba(45, 107, 228, 0.15) 70%, transparent) 1;
     }
 
     .problem-solution__comparison {
@@ -662,6 +786,8 @@
       gap: var(--space-3);
       padding: var(--space-3) 0;
       color: var(--color-text-secondary);
+      line-height: 1.6;
+      font-size: var(--font-size-base);
     }
 
     .problem-solution__item--before::before {
@@ -732,17 +858,25 @@
       border-radius: 12px;
       margin-bottom: var(--space-5);
       font-size: var(--font-size-xl);
+      color: var(--color-accent);
+    }
+
+    .service-card__icon svg {
+      width: 26px;
+      height: 26px;
     }
 
     .service-card__title {
       font-size: var(--font-size-2xl);
       font-weight: 600;
       margin-bottom: var(--space-3);
+      color: var(--color-text-primary);
     }
 
     .service-card__description {
       color: var(--color-text-secondary);
       margin-bottom: var(--space-5);
+      line-height: 1.7;
     }
 
     .service-card__features {
@@ -756,6 +890,7 @@
       padding: var(--space-2) 0;
       color: var(--color-text-secondary);
       font-size: var(--font-size-sm);
+      line-height: 1.6;
     }
 
     .service-card__feature::before {
@@ -940,6 +1075,7 @@
       padding: var(--space-2) 0;
       color: var(--color-text-secondary);
       font-size: var(--font-size-sm);
+      line-height: 1.6;
     }
 
     .pricing-card__feature::before {
@@ -980,8 +1116,9 @@
     .team__description {
       font-size: var(--font-size-lg);
       color: var(--color-text-secondary);
-      max-width: 600px;
+      max-width: 620px;
       margin: 0 auto;
+      line-height: 1.75;
     }
 
     .team__grid {
@@ -1074,7 +1211,7 @@
     .team-card__bio {
       color: var(--color-text-secondary);
       font-size: var(--font-size-sm);
-      line-height: 1.6;
+      line-height: 1.75;
     }
 
     @media (max-width: 768px) {
@@ -1835,11 +1972,12 @@
           <span></span>
         </button>
         <nav class="header__nav">
+          <a href="#challenge" class="header__nav-link">Why TMG</a>
           <a href="#services" class="header__nav-link">Services</a>
           <a href="#pricing" class="header__nav-link">Pricing</a>
           <a href="#client-stories" class="header__nav-link">Client Stories</a>
           <a href="#team" class="header__nav-link">Who We Are</a>
-          <a href="#about" class="header__nav-link">About</a>
+          <a href="#contact" class="header__nav-link">Contact</a>
         </nav>
         <div class="header__cta">
           <a href="#contact" class="btn btn--primary">Get Started</a>
@@ -1852,17 +1990,106 @@
   <section class="hero">
     <div class="hero__glow"></div>
     <div class="container">
-      <h1 class="hero__title">
-        Your Single Point of Access to<br>
-        <span>China's Digital Ad Market</span>
-      </h1>
-      <div class="hero__title-underline"></div>
-      <p class="hero__description">
-        One interface, all platforms, zero complexity. We help international agencies navigate China's $100B digital advertising landscape without headache.
-      </p>
-      <div class="hero__cta">
-        <a href="#contact" class="btn btn--primary btn--lg">Start Your Journey</a>
-        <a href="#services" class="btn btn--secondary btn--lg">Explore Services</a>
+      <div class="hero__layout">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Your Single Point of Access to<br>
+            <span>China's Digital Ad Market</span>
+          </h1>
+          <div class="hero__title-underline"></div>
+          <p class="hero__description">
+            One interface, all platforms, zero complexity. We help international agencies navigate China's $100B digital advertising landscape without headache.
+          </p>
+          <div class="hero__cta">
+            <a href="#contact" class="btn btn--primary btn--lg">Start Your Journey</a>
+            <a href="#services" class="btn btn--secondary btn--lg">Explore Services</a>
+          </div>
+        </div>
+        <!-- 上海地标剪影 -->
+        <div class="hero__visual">
+          <div class="hero__skyline">
+            <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- 背景光晕 -->
+              <defs>
+                <linearGradient id="skyline-glow" x1="200" y1="0" x2="200" y2="280" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.15"/>
+                  <stop offset="50%" stop-color="#c9a84c" stop-opacity="0.05"/>
+                  <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="building-gradient" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+                  <stop offset="0%" stop-color="#1a2332"/>
+                  <stop offset="100%" stop-color="#0d1117"/>
+                </linearGradient>
+              </defs>
+              
+              <!-- 底部光晕 -->
+              <ellipse cx="200" cy="260" rx="180" ry="30" fill="url(#skyline-glow)"/>
+              
+              <!-- 建筑群轮廓 -->
+              <g class="hero__skyline-buildings">
+                <!-- 左侧建筑 -->
+                <path d="M20 260 L20 180 L35 170 L50 180 L50 260 Z" fill="url(#building-gradient)" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.3"/>
+                <path d="M55 260 L55 150 L70 140 L85 150 L85 260 Z" fill="url(#building-gradient)" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.3"/>
+                
+                <!-- 东方明珠 -->
+                <g class="hero__skyline-pearl">
+                  <!-- 下球体 -->
+                  <circle cx="130" cy="200" r="18" fill="url(#building-gradient)" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.5"/>
+                  <!-- 中柱 -->
+                  <rect x="126" y="140" width="8" height="80" fill="url(#building-gradient)" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.3"/>
+                  <!-- 上球体 -->
+                  <circle cx="130" cy="130" r="12" fill="url(#building-gradient)" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.5"/>
+                  <!-- 顶部尖塔 -->
+                  <path d="M130 118 L130 80" stroke="#c9a84c" stroke-width="2" stroke-opacity="0.6"/>
+                  <circle cx="130" cy="85" r="3" fill="#c9a84c" fill-opacity="0.6"/>
+                  <!-- 支撑结构 -->
+                  <line x1="115" y1="180" x2="130" y2="200" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.4"/>
+                  <line x1="145" y1="180" x2="130" y2="200" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.4"/>
+                </g>
+                
+                <!-- 中间建筑群 -->
+                <path d="M160 260 L160 120 L175 110 L190 120 L190 260 Z" fill="url(#building-gradient)" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.3"/>
+                <path d="M195 260 L195 100 L210 90 L225 100 L225 260 Z" fill="url(#building-gradient)" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.3"/>
+                
+                <!-- 上海中心（扭曲塔） -->
+                <path d="M235 260 Q245 180 240 60 L250 55 L260 60 Q255 180 265 260 Z" fill="url(#building-gradient)" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.4"/>
+                
+                <!-- 环球金融中心（开瓶器） -->
+                <rect x="275" y="70" width="30" height="190" fill="url(#building-gradient)" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.4"/>
+                <path d="M275 70 L290 50 L305 70 Z" fill="url(#building-gradient)" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.4"/>
+                <!-- 顶部梯形开口 -->
+                <path d="M282 70 L290 55 L298 70" fill="none" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.5"/>
+                
+                <!-- 金茂大厦 -->
+                <path d="M320 260 L325 100 L335 90 L345 100 L350 260 Z" fill="url(#building-gradient)" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.4"/>
+                <!-- 金茂的阶梯式顶部 -->
+                <path d="M325 100 L328 85 L335 80 L342 85 L345 100" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.4"/>
+                
+                <!-- 右侧建筑 -->
+                <path d="M360 260 L360 160 L375 150 L390 160 L390 260 Z" fill="url(#building-gradient)" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.3"/>
+              </g>
+              
+              <!-- 窗户灯光点缀 -->
+              <g class="hero__skyline-lights" fill="#c9a84c" fill-opacity="0.4">
+                <rect x="28" y="190" width="3" height="3" rx="0.5"/>
+                <rect x="38" y="200" width="3" height="3" rx="0.5"/>
+                <rect x="65" y="160" width="3" height="3" rx="0.5"/>
+                <rect x="75" y="170" width="3" height="3" rx="0.5"/>
+                <rect x="170" y="130" width="3" height="3" rx="0.5"/>
+                <rect x="180" y="140" width="3" height="3" rx="0.5"/>
+                <rect x="205" y="110" width="3" height="3" rx="0.5"/>
+                <rect x="215" y="120" width="3" height="3" rx="0.5"/>
+                <rect x="285" y="100" width="3" height="3" rx="0.5"/>
+                <rect x="295" y="110" width="3" height="3" rx="0.5"/>
+                <rect x="332" y="120" width="3" height="3" rx="0.5"/>
+                <rect x="340" y="130" width="3" height="3" rx="0.5"/>
+              </g>
+              
+              <!-- 底部水波纹 -->
+              <path d="M0 260 Q50 255 100 260 T200 260 T300 260 T400 260 L400 280 L0 280 Z" fill="#0d1117" fill-opacity="0.8" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.2"/>
+            </svg>
+          </div>
+        </div>
       </div>
       <div class="hero__trust">
         <span class="hero__trust-label">Direct access to</span>
@@ -1901,7 +2128,7 @@
   </section>
 
   <!-- Problem/Solution -->
-  <section class="section problem-solution">
+  <section class="section problem-solution" id="challenge">
     <div class="container">
       <div class="section__header">
         <span class="section__eyebrow">The Challenge</span>
@@ -1948,8 +2175,8 @@
       <div class="services__grid">
         <div class="service-card">
           <div class="service-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.41 16.09V20h-2.67v-1.93c-1.71-.36-3.16-1.46-3.27-3.4h1.96c.1 1.05.82 1.87 2.65 1.87 1.96 0 2.4-.98 2.4-1.59 0-.83-.44-1.61-2.67-2.14-2.48-.6-4.18-1.62-4.18-3.67 0-1.72 1.39-2.84 3.11-3.21V4h2.67v1.95c1.86.45 2.79 1.86 2.85 3.39H14.3c-.05-1.11-.64-1.87-2.22-1.87-1.5 0-2.4.68-2.4 1.64 0 .84.65 1.39 2.67 1.91s4.18 1.39 4.18 3.91c-.01 1.83-1.38 2.83-3.12 3.16z"/>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z"/>
             </svg>
           </div>
           <h3 class="service-card__title">Ad Recharge</h3>
@@ -1965,8 +2192,8 @@
         </div>
         <div class="service-card">
           <div class="service-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/>
             </svg>
           </div>
           <h3 class="service-card__title">Account Setup</h3>
@@ -1982,8 +2209,8 @@
         </div>
         <div class="service-card">
           <div class="service-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/>
             </svg>
           </div>
           <h3 class="service-card__title">Account Management</h3>
