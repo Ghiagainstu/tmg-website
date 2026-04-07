@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tuyuesouxin.cn/sitemap.xml
+Sitemap: https://www.tuyuesouxin.cn/sitemap.xml
