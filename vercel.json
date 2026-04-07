@@ -2,6 +2,12 @@
   "redirects": [
     {
       "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "tuyuesouxin.cn"
+        }
+      ],
       "destination": "https://www.tuyuesouxin.cn/$1",
       "permanent": true
     }
