@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing | Tuyue Media Gateway</title>
+  <meta name="description" content="Simple, transparent pricing for TMG's China digital advertising services. Ad recharge, account setup, and full-service management.">
+  <link rel="canonical" href="https://www.tuyuesouxin.cn/pricing">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23c9a84c'/%3E%3Cstop offset='100%25' stop-color='%23e8c87a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='30' cy='24' r='16' fill='url(%23g)'/%3E%3Ccircle cx='37' cy='20' r='13' fill='%23080c14'/%3E%3Ctext x='4' y='32' font-family='Inter,sans-serif' font-size='19' font-weight='800' fill='%23f0f4ff' letter-spacing='-.8'%3ETMG%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-bg: #080c14; --color-bg-alt: #0d1220; --color-bg-card: #111827;
+      --color-text-primary: #f0f4ff; --color-text-secondary: #a3b1cc; --color-text-muted: #64748b;
+      --color-primary: #2d6be4; --color-primary-hover: #1e55c4; --color-accent: #c9a84c; --color-accent-light: #e8c87a;
+      --color-border: #1e2d45; --color-border-hover: #2d4060;
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-size-xs: 0.75rem; --font-size-sm: 0.875rem; --font-size-base: 1rem; --font-size-lg: 1.125rem;
+      --font-size-xl: 1.25rem; --font-size-2xl: 1.5rem; --font-size-3xl: 1.875rem; --font-size-4xl: 2.25rem; --font-size-5xl: 3rem;
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem; --space-5: 1.25rem;
+      --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem; --space-20: 5rem;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-family); background-color: var(--color-bg); color: var(--color-text-primary); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 var(--space-6); }
+    .header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(8, 12, 20, 0.85); backdrop-filter: blur(12px); border-bottom: 1px solid var(--color-border); }
+    .header__inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .header__logo { display: flex; align-items: center; gap: var(--space-3); text-decoration: none; color: var(--color-text-primary); font-weight: 600; font-size: var(--font-size-lg); }
+    .header__logo-text span { color: var(--color-accent); }
+    .header__nav { display: flex; align-items: center; gap: var(--space-8); }
+    .header__nav-link { color: var(--color-text-secondary); text-decoration: none; font-size: var(--font-size-sm); font-weight: 500; transition: color 150ms ease; position: relative; }
+    .header__nav-link:hover, .header__nav-link.active { color: var(--color-text-primary); }
+    .header__nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--color-accent); transition: width 150ms ease; }
+    .header__nav-link:hover::after, .header__nav-link.active::after { width: 100%; }
+    .header__cta { display: flex; align-items: center; gap: var(--space-4); }
+    .header__toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: var(--space-2); }
+    .header__toggle span { display: block; width: 24px; height: 2px; background: var(--color-text-primary); transition: all 250ms ease; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); padding: var(--space-3) var(--space-5); font-size: var(--font-size-sm); font-weight: 500; text-decoration: none; border-radius: 6px; transition: all 250ms ease; cursor: pointer; border: none; }
+    .btn--primary { background: var(--color-primary); color: white; }
+    .btn--primary:hover { background: var(--color-primary-hover); transform: translateY(-1px); }
+    .btn--secondary { background: transparent; color: var(--color-text-primary); border: 1px solid var(--color-border); }
+    .btn--secondary:hover { border-color: var(--color-border-hover); background: rgba(255,255,255,0.05); }
+    .btn--accent { background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light)); color: #080c14; font-weight: 600; }
+    .page-header { padding-top: 140px; padding-bottom: var(--space-12); text-align: center; }
+    .page-header__eyebrow { display: block; font-size: var(--font-size-sm); font-weight: 500; color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: var(--space-3); }
+    .page-header__title { font-size: var(--font-size-4xl); font-weight: 700; margin-bottom: var(--space-4); }
+    .page-header__description { font-size: var(--font-size-lg); color: var(--color-text-secondary); max-width: 600px; margin: 0 auto; }
+    .section { padding: var(--space-20) 0; }
+    .pricing__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); max-width: 1000px; margin: 0 auto; }
+    .pricing-card { background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 12px; padding: var(--space-8); position: relative; transition: all 250ms ease; }
+    .pricing-card:hover { border-color: var(--color-border-hover); }
+    .pricing-card--featured { border-color: rgba(201, 168, 76, 0.5); background: linear-gradient(145deg, rgba(17, 24, 39, 0.9), rgba(13, 18, 32, 0.95)); }
+    .pricing-card--featured:hover { border-color: rgba(201, 168, 76, 0.7); }
+    .pricing-card__badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, #c9a84c, #e8c87a); color: #080c14; font-size: var(--font-size-xs); font-weight: 600; padding: var(--space-1) var(--space-4); border-radius: 20px; }
+    .pricing-card__title { font-size: var(--font-size-xl); font-weight: 600; margin-bottom: var(--space-2); text-align: center; }
+    .pricing-card__price { font-size: var(--font-size-5xl); font-weight: 700; background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-light) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: var(--space-2); text-align: center; }
+    .pricing-card__price span { display: block; font-size: var(--font-size-sm); font-weight: 500; color: var(--color-text-muted); -webkit-text-fill-color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: var(--space-1); }
+    .pricing-card__description { color: var(--color-text-secondary); text-align: center; margin-bottom: var(--space-4); font-size: var(--font-size-sm); }
+    .pricing-card__setup-fee { background: rgba(45, 107, 228, 0.1); border: 1px solid rgba(45, 107, 228, 0.2); border-radius: 6px; padding: var(--space-3); text-align: center; font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-bottom: var(--space-2); }
+    .pricing-card__contact-note { text-align: center; font-size: var(--font-size-xs); color: var(--color-text-muted); margin-bottom: var(--space-4); }
+    .pricing-card__features { list-style: none; margin-bottom: var(--space-6); }
+    .pricing-card__feature { position: relative; padding-left: var(--space-5); margin-bottom: var(--space-2); color: var(--color-text-secondary); font-size: var(--font-size-sm); }
+    .pricing-card__feature::before { content: '✓'; position: absolute; left: 0; color: var(--color-accent); font-weight: 600; }
+    .pricing-card__cta { width: 100%; }
+    .value-props { background: var(--color-bg-alt); }
+    .value-props__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-6); }
+    .value-prop { text-align: center; }
+    .value-prop__number { font-size: var(--font-size-4xl); font-weight: 700; background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: var(--space-2); }
+    .value-prop__label { font-weight: 600; margin-bottom: var(--space-1); }
+    .value-prop__description { font-size: var(--font-size-sm); color: var(--color-text-secondary); }
+    .cta-section { text-align: center; padding: var(--space-20) 0; }
+    .cta-section__title { font-size: var(--font-size-3xl); font-weight: 700; margin-bottom: var(--space-4); }
+    .cta-section__description { font-size: var(--font-size-lg); color: var(--color-text-secondary); max-width: 600px; margin: 0 auto var(--space-8); }
+    .footer { background: var(--color-bg-alt); border-top: 1px solid var(--color-border); padding: var(--space-16) 0 var(--space-8); }
+    .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: var(--space-10); margin-bottom: var(--space-10); }
+    .footer__section { max-width: 300px; }
+    .footer__logo { display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-4); color: var(--color-text-primary); font-weight: 600; font-size: var(--font-size-lg); text-decoration: none; }
+    .footer__logo span { color: var(--color-accent); }
+    .footer__description { color: var(--color-text-secondary); font-size: var(--font-size-sm); line-height: 1.7; }
+    .footer__title { font-size: var(--font-size-sm); font-weight: 600; margin-bottom: var(--space-4); color: var(--color-text-primary); }
+    .footer__links { list-style: none; }
+    .footer__links li { margin-bottom: var(--space-2); }
+    .footer__link { color: var(--color-text-secondary); text-decoration: none; font-size: var(--font-size-sm); transition: color 150ms ease; }
+    .footer__link:hover { color: var(--color-text-primary); }
+    .footer__bottom { display: flex; justify-content: space-between; align-items: center; padding-top: var(--space-6); border-top: 1px solid var(--color-border); }
+    .footer__copyright { color: var(--color-text-muted); font-size: var(--font-size-sm); }
+    .footer__platforms { display: flex; gap: var(--space-2); }
+    .footer__platform-badge { display: inline-block; padding: var(--space-1) var(--space-3); background: rgba(45, 107, 228, 0.15); color: var(--color-primary-light); font-size: var(--font-size-xs); font-weight: 500; border-radius: 4px; text-decoration: none; transition: all 150ms ease; }
+    .footer__platform-badge:hover { background: rgba(45, 107, 228, 0.25); color: var(--color-text-primary); }
+    @media (max-width: 768px) {
+      .header__nav, .header__cta { display: none; }
+      .header__toggle { display: flex; }
+      .page-header { padding-top: 120px; }
+      .page-header__title { font-size: var(--font-size-3xl); }
+      .pricing__grid { grid-template-columns: 1fr; }
+      .value-props__grid { grid-template-columns: repeat(2, 1fr); }
+      .footer__grid { grid-template-columns: 1fr; gap: var(--space-8); }
+      .footer__bottom { flex-direction: column; gap: var(--space-4); text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="https://www.tuyuesouxin.cn" class="header__logo">
+          <svg width="40" height="40" viewBox="0 0 48 48" fill="none">
+            <defs><linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#c9a84c"/><stop offset="100%" stop-color="#e8c87a"/></linearGradient></defs>
+            <circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/><circle cx="37" cy="20" r="13" fill="#080c14"/>
+            <text x="4" y="32" font-family="Inter,sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-.8">TMG</text>
+          </svg>
+          <span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
+        </a>
+        <nav class="header__nav">
+          <a href="https://www.tuyuesouxin.cn#challenge" class="header__nav-link">Why TMG</a>
+          <a href="https://www.tuyuesouxin.cn/services" class="header__nav-link">Services</a>
+          <a href="#" class="header__nav-link active">Pricing</a>
+          <a href="https://www.tuyuesouxin.cn/client-stories" class="header__nav-link">Client Stories</a>
+          <a href="https://www.tuyuesouxin.cn/geo" class="header__nav-link">GEO</a>
+          <a href="https://www.tuyuesouxin.cn/about" class="header__nav-link">About</a>
+          <a href="https://www.tuyuesouxin.cn/contact" class="header__nav-link">Contact</a>
+        </nav>
+        <div class="header__cta">
+          <a href="https://www.tuyuesouxin.cn/contact" class="btn btn--primary">Get Started</a>
+        </div>
+        <button class="header__toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <span class="page-header__eyebrow">Pricing</span>
+        <h1 class="page-header__title">Simple, Transparent Pricing</h1>
+        <p class="page-header__description">Flexible plans designed to scale with your business</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="pricing__grid">
+          <div class="pricing-card">
+            <h3 class="pricing-card__title">Recharge Only</h3>
+            <div class="pricing-card__price"><span>Starts from</span> 2.5%</div>
+            <p class="pricing-card__description">of ad spend</p>
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature">Ad recharge only</li>
+              <li class="pricing-card__feature">All platforms supported</li>
+              <li class="pricing-card__feature">No setup fee</li>
+              <li class="pricing-card__feature">No account management</li>
+              <li class="pricing-card__feature">Below industry average rates</li>
+            </ul>
+            <a href="https://www.tuyuesouxin.cn/contact" class="btn btn--secondary pricing-card__cta">Get Started</a>
+          </div>
+          <div class="pricing-card pricing-card--featured">
+            <div class="pricing-card__badge">Most Popular</div>
+            <h3 class="pricing-card__title">Setup + Recharge</h3>
+            <div class="pricing-card__price"><span>Starts from</span> 2.5%</div>
+            <p class="pricing-card__description">of ad spend + one-time setup fee</p>
+            <div class="pricing-card__setup-fee">Setup Fee: Starts from $100+ (one-time)</div>
+            <div class="pricing-card__contact-note">Contact us for platform-specific pricing</div>
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature">Ad recharge</li>
+              <li class="pricing-card__feature">Account opening</li>
+              <li class="pricing-card__feature">Documentation support</li>
+              <li class="pricing-card__feature">All platforms included</li>
+              <li class="pricing-card__feature">Low setup fee with minimal commitment</li>
+            </ul>
+            <a href="https://www.tuyuesouxin.cn/contact" class="btn btn--primary pricing-card__cta">Get Started</a>
+          </div>
+          <div class="pricing-card">
+            <h3 class="pricing-card__title">AI Powered Full Service</h3>
+            <div class="pricing-card__price"><span>Starts from</span> 6%</div>
+            <p class="pricing-card__description">of ad spend + setup fee</p>
+            <div class="pricing-card__setup-fee">Setup Fee: Starts from $100+ (one-time)</div>
+            <div class="pricing-card__contact-note">Contact us for platform-specific pricing</div>
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature">Everything in Setup + Recharge</li>
+              <li class="pricing-card__feature">Account management</li>
+              <li class="pricing-card__feature">Campaign optimization</li>
+              <li class="pricing-card__feature">Reporting & analytics</li>
+              <li class="pricing-card__feature">Competitive full-service rate</li>
+            </ul>
+            <a href="https://www.tuyuesouxin.cn/contact" class="btn btn--secondary pricing-card__cta">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section value-props">
+      <div class="container">
+        <div class="value-props__grid">
+          <div class="value-prop">
+            <div class="value-prop__number">80%</div>
+            <div class="value-prop__label">Less Communication Time</div>
+            <div class="value-prop__description">One point of contact vs. managing 5-7 agencies</div>
+          </div>
+          <div class="value-prop">
+            <div class="value-prop__number">50%</div>
+            <div class="value-prop__label">Lower Trial Costs</div>
+            <div class="value-prop__description">We handle the learning curve for you</div>
+          </div>
+          <div class="value-prop">
+            <div class="value-prop__number">60%</div>
+            <div class="value-prop__label">Faster Launch</div>
+            <div class="value-prop__description">Launch in 1-2 weeks instead of months</div>
+          </div>
+          <div class="value-prop">
+            <div class="value-prop__number">30%</div>
+            <div class="value-prop__label">Higher Efficiency</div>
+            <div class="value-prop__description">Optimized through centralized operations</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <h2 class="cta-section__title">Questions About Pricing?</h2>
+        <p class="cta-section__description">Contact us for a custom quote based on your specific needs and budget.</p>
+        <a href="https://www.tuyuesouxin.cn/contact" class="btn btn--accent btn--lg">Contact Us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__section">
+          <a href="https://www.tuyuesouxin.cn" class="footer__logo">Tuyue Media <span>Gateway</span></a>
+          <p class="footer__description">Your single point of access to China's $100B digital advertising market. We help international agencies navigate Chinese platforms with ease.</p>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="https://www.tuyuesouxin.cn/services" class="footer__link">Services</a></li>
+            <li><a href="#" class="footer__link">Pricing</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/about" class="footer__link">Who We Are</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/client-stories" class="footer__link">Client Stories</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Contact</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:tmg@tuyuesouxin.cn" class="footer__link">tmg@tuyuesouxin.cn</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="https://www.tuyuesouxin.cn/privacy" class="footer__link">Privacy Policy</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/terms" class="footer__link">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Tuyue Media Gateway. All rights reserved.</p>
+        <div class="footer__platforms">
+          <a href="https://ad.weixin.qq.com" target="_blank" rel="noopener noreferrer" class="footer__platform-badge">WeChat</a>
+          <a href="https://www.oceanengine.com" target="_blank" rel="noopener noreferrer" class="footer__platform-badge">Douyin</a>
+          <a href="https://e.baidu.com" target="_blank" rel="noopener noreferrer" class="footer__platform-badge">Baidu</a>
+          <a href="https://www.xiaohongshu.com/brand" target="_blank" rel="noopener noreferrer" class="footer__platform-badge">Xiaohongshu</a>
+          <a href="https://member.bilibili.com/platform/ad" target="_blank" rel="noopener noreferrer" class="footer__platform-badge">Bilibili</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

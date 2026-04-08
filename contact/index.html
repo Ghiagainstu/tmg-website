@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Tuyue Media Gateway</title>
+  <meta name="description" content="Get in touch with Tuyue Media Gateway. Let's discuss how we can help your agency succeed in China's digital advertising market.">
+  <link rel="canonical" href="https://www.tuyuesouxin.cn/contact">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23c9a84c'/%3E%3Cstop offset='100%25' stop-color='%23e8c87a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='30' cy='24' r='16' fill='url(%23g)'/%3E%3Ccircle cx='37' cy='20' r='13' fill='%23080c14'/%3E%3Ctext x='4' y='32' font-family='Inter,sans-serif' font-size='19' font-weight='800' fill='%23f0f4ff' letter-spacing='-.8'%3ETMG%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-bg: #080c14; --color-bg-alt: #0d1220; --color-bg-card: #111827;
+      --color-text-primary: #f0f4ff; --color-text-secondary: #a3b1cc; --color-text-muted: #64748b;
+      --color-primary: #2d6be4; --color-primary-hover: #1e55c4; --color-primary-light: #5b8ef0;
+      --color-accent: #c9a84c; --color-accent-light: #e8c87a;
+      --color-success: #22c55e; --color-error: #ef4444;
+      --color-border: #1e2d45; --color-border-hover: #2d4060;
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-size-xs: 0.75rem; --font-size-sm: 0.875rem; --font-size-base: 1rem; --font-size-lg: 1.125rem;
+      --font-size-xl: 1.25rem; --font-size-2xl: 1.5rem; --font-size-3xl: 1.875rem; --font-size-4xl: 2.25rem;
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem; --space-5: 1.25rem;
+      --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem; --space-20: 5rem;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-family); background-color: var(--color-bg); color: var(--color-text-primary); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 var(--space-6); }
+    .header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(8, 12, 20, 0.85); backdrop-filter: blur(12px); border-bottom: 1px solid var(--color-border); }
+    .header__inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .header__logo { display: flex; align-items: center; gap: var(--space-3); text-decoration: none; color: var(--color-text-primary); font-weight: 600; font-size: var(--font-size-lg); }
+    .header__logo-text span { color: var(--color-accent); }
+    .header__nav { display: flex; align-items: center; gap: var(--space-8); }
+    .header__nav-link { color: var(--color-text-secondary); text-decoration: none; font-size: var(--font-size-sm); font-weight: 500; transition: color 150ms ease; position: relative; }
+    .header__nav-link:hover, .header__nav-link.active { color: var(--color-text-primary); }
+    .header__nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--color-accent); transition: width 150ms ease; }
+    .header__nav-link:hover::after, .header__nav-link.active::after { width: 100%; }
+    .header__cta { display: flex; align-items: center; gap: var(--space-4); }
+    .header__toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: var(--space-2); }
+    .header__toggle span { display: block; width: 24px; height: 2px; background: var(--color-text-primary); transition: all 250ms ease; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); padding: var(--space-3) var(--space-5); font-size: var(--font-size-sm); font-weight: 500; text-decoration: none; border-radius: 6px; transition: all 250ms ease; cursor: pointer; border: none; }
+    .btn--primary { background: var(--color-primary); color: white; }
+    .btn--primary:hover { background: var(--color-primary-hover); transform: translateY(-1px); }
+    .btn--secondary { background: transparent; color: var(--color-text-primary); border: 1px solid var(--color-border); }
+    .btn--secondary:hover { border-color: var(--color-border-hover); background: rgba(255,255,255,0.05); }
+    .page-header { padding-top: 140px; padding-bottom: var(--space-12); text-align: center; }
+    .page-header__eyebrow { display: block; font-size: var(--font-size-sm); font-weight: 500; color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: var(--space-3); }
+    .page-header__title { font-size: var(--font-size-4xl); font-weight: 700; margin-bottom: var(--space-4); }
+    .page-header__description { font-size: var(--font-size-lg); color: var(--color-text-secondary); max-width: 600px; margin: 0 auto; }
+    .section { padding: var(--space-20) 0; }
+    .contact__grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12); }
+    .contact__info-title { font-size: var(--font-size-2xl); font-weight: 700; margin-bottom: var(--space-4); }
+    .contact__info-text { color: var(--color-text-secondary); margin-bottom: var(--space-8); }
+    .contact__methods { display: flex; flex-direction: column; gap: var(--space-6); }
+    .contact__method { display: flex; align-items: flex-start; gap: var(--space-4); }
+    .contact__method-icon { width: 48px; height: 48px; background: rgba(45, 107, 228, 0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--color-primary-light); flex-shrink: 0; }
+    .contact__method-content h4 { font-size: var(--font-size-base); font-weight: 600; margin-bottom: var(--space-1); }
+    .contact__method-content p { color: var(--color-text-secondary); font-size: var(--font-size-sm); }
+    .contact__method-content a { color: var(--color-accent); text-decoration: none; }
+    .contact__method-content a:hover { text-decoration: underline; }
+    .contact__form { background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 16px; padding: var(--space-8); }
+    .form__group { margin-bottom: var(--space-5); }
+    .form__label { display: block; font-size: var(--font-size-sm); font-weight: 500; margin-bottom: var(--space-2); color: var(--color-text-primary); }
+    .form__input, .form__textarea, .form__select { width: 100%; padding: var(--space-3) var(--space-4); background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: 8px; color: var(--color-text-primary); font-family: inherit; font-size: var(--font-size-base); transition: all 200ms ease; }
+    .form__input:focus, .form__textarea:focus, .form__select:focus { outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(45, 107, 228, 0.2); }
+    .form__input::placeholder, .form__textarea::placeholder { color: var(--color-text-muted); }
+    .form__textarea { min-height: 120px; resize: vertical; }
+    .form__select { cursor: pointer; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23a3b1cc' d='M6 8L1 3h10z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; padding-right: 36px; }
+    .form__submit { width: 100%; padding: var(--space-4); font-size: var(--font-size-base); font-weight: 600; }
+    .form__success { display: none; background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); border-radius: 12px; padding: var(--space-8); text-align: center; }
+    .form__success-icon { width: 64px; height: 64px; background: rgba(34, 197, 94, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4); color: var(--color-success); }
+    .form__success-title { font-size: var(--font-size-xl); font-weight: 600; margin-bottom: var(--space-2); }
+    .form__success-text { color: var(--color-text-secondary); }
+    .map-section { background: var(--color-bg-alt); }
+    .map__container { border-radius: 16px; overflow: hidden; border: 1px solid var(--color-border); }
+    .map__frame { width: 100%; height: 400px; border: none; }
+    .footer { background: var(--color-bg-alt); border-top: 1px solid var(--color-border); padding: var(--space-16) 0 var(--space-8); }
+    .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: var(--space-10); margin-bottom: var(--space-10); }
+    .footer__section { max-width: 300px; }
+    .footer__logo { display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-4); color: var(--color-text-primary); font-weight: 600; font-size: var(--font-size-lg); text-decoration: none; }
+    .footer__logo span { color: var(--color-accent); }
+    .footer__description { color: var(--color-text-secondary); font-size: var(--font-size-sm); line-height: 1.7; }
+    .footer__title { font-size: var(--font-size-sm); font-weight: 600; margin-bottom: var(--space-4); color: var(--color-text-primary); }
+    .footer__links { list-style: none; }
+    .footer__links li { margin-bottom: var(--space-2); }
+    .footer__link { color: var(--color-text-secondary); text-decoration: none; font-size: var(--font-size-sm); transition: color 150ms ease; }
+    .footer__link:hover { color: var(--color-text-primary); }
+    .footer__bottom { display: flex; justify-content: space-between; align-items: center; padding-top: var(--space-6); border-top: 1px solid var(--color-border); }
+    .footer__copyright { color: var(--color-text-muted); font-size: var(--font-size-sm); }
+    .footer__platforms { display: flex; gap: var(--space-2); }
+    .footer__platform-badge { display: inline-block; padding: var(--space-1) var(--space-3); background: rgba(45, 107, 228, 0.15); color: var(--color-primary-light); font-size: var(--font-size-xs); font-weight: 500; border-radius: 4px; text-decoration: none; transition: all 150ms ease; }
+    .footer__platform-badge:hover { background: rgba(45, 107, 228, 0.25); color: var(--color-text-primary); }
+    @media (max-width: 768px) {
+      .header__nav, .header__cta { display: none; }
+      .header__toggle { display: flex; }
+      .page-header { padding-top: 120px; }
+      .page-header__title { font-size: var(--font-size-3xl); }
+      .contact__grid { grid-template-columns: 1fr; }
+      .footer__grid { grid-template-columns: 1fr; gap: var(--space-8); }
+      .footer__bottom { flex-direction: column; gap: var(--space-4); text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="https://www.tuyuesouxin.cn" class="header__logo">
+          <svg width="40" height="40" viewBox="0 0 48 48" fill="none">
+            <defs><linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#c9a84c"/><stop offset="100%" stop-color="#e8c87a"/></linearGradient></defs>
+            <circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/><circle cx="37" cy="20" r="13" fill="#080c14"/>
+            <text x="4" y="32" font-family="Inter,sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-.8">TMG</text>
+          </svg>
+          <span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
+        </a>
+        <nav class="header__nav">
+          <a href="https://www.tuyuesouxin.cn#challenge" class="header__nav-link">Why TMG</a>
+          <a href="https://www.tuyuesouxin.cn/services" class="header__nav-link">Services</a>
+          <a href="https://www.tuyuesouxin.cn/pricing" class="header__nav-link">Pricing</a>
+          <a href="https://www.tuyuesouxin.cn/client-stories" class="header__nav-link">Client Stories</a>
+          <a href="https://www.tuyuesouxin.cn/geo" class="header__nav-link">GEO</a>
+          <a href="https://www.tuyuesouxin.cn/about" class="header__nav-link">About</a>
+          <a href="#" class="header__nav-link active">Contact</a>
+        </nav>
+        <div class="header__cta">
+          <a href="https://www.tuyuesouxin.cn/contact" class="btn btn--primary">Get Started</a>
+        </div>
+        <button class="header__toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <span class="page-header__eyebrow">Contact</span>
+        <h1 class="page-header__title">Let's Start a Conversation</h1>
+        <p class="page-header__description">Ready to explore China's digital advertising market? We'd love to hear from you.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact__grid">
+          <div class="contact__info">
+            <h2 class="contact__info-title">Get in Touch</h2>
+            <p class="contact__info-text">Whether you have a specific project in mind or just want to learn more about how we can help, we're here to answer your questions.</p>
+            
+            <div class="contact__methods">
+              <div class="contact__method">
+                <div class="contact__method-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="contact__method-content">
+                  <h4>Email</h4>
+                  <p><a href="mailto:tmg@tuyuesouxin.cn">tmg@tuyuesouxin.cn</a></p>
+                </div>
+              </div>
+              
+              <div class="contact__method">
+                <div class="contact__method-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="contact__method-content">
+                  <h4>Office</h4>
+                  <p>599-2F202 Wanzhen Road<br>Jiading District, Shanghai 201824<br>China</p>
+                </div>
+              </div>
+              
+              <div class="contact__method">
+                <div class="contact__method-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div class="contact__method-content">
+                  <h4>Business Hours</h4>
+                  <p>Monday - Friday: 9:00 AM - 6:00 PM CST<br>Weekend: Closed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__form-wrapper">
+            <form class="contact__form" action="https://formspree.io/f/xpqojqlb" method="POST" id="contactForm">
+              <div class="form__group">
+                <label class="form__label" for="name">Name *</label>
+                <input type="text" id="name" name="name" class="form__input" placeholder="Your name" required>
+              </div>
+              
+              <div class="form__group">
+                <label class="form__label" for="email">Email *</label>
+                <input type="email" id="email" name="email" class="form__input" placeholder="your@email.com" required>
+              </div>
+              
+              <div class="form__group">
+                <label class="form__label" for="company">Company</label>
+                <input type="text" id="company" name="company" class="form__input" placeholder="Your company name">
+              </div>
+              
+              <div class="form__group">
+                <label class="form__label" for="interest">I'm interested in *</label>
+                <select id="interest" name="interest" class="form__select" required>
+                  <option value="">Select a service</option>
+                  <option value="recharge">Ad Recharge</option>
+                  <option value="setup">Account Setup</option>
+                  <option value="management">Full Service Management</option>
+                  <option value="geo">GEO Services</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              
+              <div class="form__group">
+                <label class="form__label" for="message">Message</label>
+                <textarea id="message" name="message" class="form__textarea" placeholder="Tell us about your project or questions..."></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn--primary form__submit">Send Message</button>
+            </form>
+
+            <div class="form__success" id="formSuccess">
+              <div class="form__success-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <h3 class="form__success-title">Message Sent!</h3>
+              <p class="form__success-text">Thank you for reaching out. We'll get back to you within 24 hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section map-section">
+      <div class="container">
+        <div class="map__container">
+          <iframe class="map__frame" src="https://maps.google.com/maps?q=31.25099883847901,121.37682772821607&z=15&output=embed" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__section">
+          <a href="https://www.tuyuesouxin.cn" class="footer__logo">Tuyue Media <span>Gateway</span></a>
+          <p class="footer__description">Your single point of access to China's $100B digital advertising market. We help international agencies navigate Chinese platforms with ease.</p>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="https://www.tuyuesouxin.cn/services" class="footer__link">Services</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/pricing" class="footer__link">Pricing</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/about" class="footer__link">About Us</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/client-stories" class="footer__link">Client Stories</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Contact</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:tmg@tuyuesouxin.cn" class="footer__link">tmg@tuyuesouxin.cn</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="https://www.tuyuesouxin.cn/privacy" class="footer__link">Privacy Policy</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/terms" class="footer__link">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Tuyue Media Gateway. All rights reserved.</p>
+        <div class="footer__platforms">
+          <span class="footer__platform-badge">Baidu</span>
+          <span class="footer__platform-badge">WeChat</span>
+          <span class="footer__platform-badge">Douyin</span>
+          <span class="footer__platform-badge">Xiaohongshu</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const form = this;
+      const success = document.getElementById('formSuccess');
+      const formData = new FormData(form);
+      
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        if (response.ok) {
+          form.style.display = 'none';
+          success.style.display = 'block';
+        }
+      }).catch(error => {
+        console.error('Error:', error);
+      });
+    });
+  </script>
+</body>
+</html>

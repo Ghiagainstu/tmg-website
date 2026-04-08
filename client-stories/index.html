@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Stories | Tuyue Media Gateway</title>
+  <meta name="description" content="See how Tuyue Media Gateway has helped global companies navigate and succeed in China's digital advertising market.">
+  <link rel="canonical" href="https://www.tuyuesouxin.cn/client-stories">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23c9a84c'/%3E%3Cstop offset='100%25' stop-color='%23e8c87a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='30' cy='24' r='16' fill='url(%23g)'/%3E%3Ccircle cx='37' cy='20' r='13' fill='%23080c14'/%3E%3Ctext x='4' y='32' font-family='Inter,sans-serif' font-size='19' font-weight='800' fill='%23f0f4ff' letter-spacing='-.8'%3ETMG%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-bg: #080c14; --color-bg-alt: #0d1220; --color-bg-card: #111827;
+      --color-text-primary: #f0f4ff; --color-text-secondary: #a3b1cc; --color-text-muted: #64748b;
+      --color-primary: #2d6be4; --color-primary-hover: #1e55c4; --color-accent: #c9a84c; --color-accent-light: #e8c87a;
+      --color-border: #1e2d45; --color-border-hover: #2d4060;
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-size-xs: 0.75rem; --font-size-sm: 0.875rem; --font-size-base: 1rem; --font-size-lg: 1.125rem;
+      --font-size-xl: 1.25rem; --font-size-2xl: 1.5rem; --font-size-3xl: 1.875rem; --font-size-4xl: 2.25rem;
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem; --space-5: 1.25rem;
+      --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem; --space-20: 5rem;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-family); background-color: var(--color-bg); color: var(--color-text-primary); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 var(--space-6); }
+    .header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(8, 12, 20, 0.85); backdrop-filter: blur(12px); border-bottom: 1px solid var(--color-border); }
+    .header__inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .header__logo { display: flex; align-items: center; gap: var(--space-3); text-decoration: none; color: var(--color-text-primary); font-weight: 600; font-size: var(--font-size-lg); }
+    .header__logo-text span { color: var(--color-accent); }
+    .header__nav { display: flex; align-items: center; gap: var(--space-8); }
+    .header__nav-link { color: var(--color-text-secondary); text-decoration: none; font-size: var(--font-size-sm); font-weight: 500; transition: color 150ms ease; position: relative; }
+    .header__nav-link:hover, .header__nav-link.active { color: var(--color-text-primary); }
+    .header__nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--color-accent); transition: width 150ms ease; }
+    .header__nav-link:hover::after, .header__nav-link.active::after { width: 100%; }
+    .header__cta { display: flex; align-items: center; gap: var(--space-4); }
+    .header__toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: var(--space-2); }
+    .header__toggle span { display: block; width: 24px; height: 2px; background: var(--color-text-primary); transition: all 250ms ease; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); padding: var(--space-3) var(--space-5); font-size: var(--font-size-sm); font-weight: 500; text-decoration: none; border-radius: 6px; transition: all 250ms ease; cursor: pointer; border: none; }
+    .btn--primary { background: var(--color-primary); color: white; }
+    .btn--primary:hover { background: var(--color-primary-hover); transform: translateY(-1px); }
+    .btn--secondary { background: transparent; color: var(--color-text-primary); border: 1px solid var(--color-border); }
+    .btn--secondary:hover { border-color: var(--color-border-hover); background: rgba(255,255,255,0.05); }
+    .page-header { padding-top: 140px; padding-bottom: var(--space-12); text-align: center; }
+    .page-header__eyebrow { display: block; font-size: var(--font-size-sm); font-weight: 500; color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: var(--space-3); }
+    .page-header__title { font-size: var(--font-size-4xl); font-weight: 700; margin-bottom: var(--space-4); }
+    .page-header__description { font-size: var(--font-size-lg); color: var(--color-text-secondary); max-width: 600px; margin: 0 auto; }
+    .case-study { background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 12px; padding: var(--space-10); margin-bottom: var(--space-12); }
+    .case-study__header { margin-bottom: var(--space-8); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-border); }
+    .case-study__client { display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-4); }
+    .case-study__logo { width: 64px; height: 64px; border-radius: 12px; overflow: hidden; background: white; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .case-study__logo-img { width: 100%; height: 100%; object-fit: cover; }
+    .case-study__client-name { font-size: var(--font-size-2xl); font-weight: 600; margin-bottom: var(--space-2); }
+    .case-study__badges { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+    .case-study__client-badge { display: inline-block; padding: var(--space-1) var(--space-3); background: rgba(45, 107, 228, 0.15); color: var(--color-primary-light); font-size: var(--font-size-xs); font-weight: 500; border-radius: 4px; }
+    .case-study__budget-badge { background: rgba(201, 168, 76, 0.15); color: var(--color-accent); }
+    .case-study__headline { font-size: var(--font-size-xl); color: var(--color-text-secondary); font-weight: 400; }
+    .case-study__content { display: grid; gap: var(--space-8); }
+    .case-study__chapter-title { font-size: var(--font-size-lg); font-weight: 600; margin-bottom: var(--space-3); color: var(--color-text-primary); }
+    .case-study__chapter-text { color: var(--color-text-secondary); margin-bottom: var(--space-3); }
+    .case-study__list { list-style: none; padding: 0; }
+    .case-study__list li { position: relative; padding-left: var(--space-5); margin-bottom: var(--space-3); color: var(--color-text-secondary); }
+    .case-study__list li::before { content: ''; position: absolute; left: 0; top: 10px; width: 6px; height: 6px; background: var(--color-accent); border-radius: 50%; }
+    .case-study__cta { margin-top: var(--space-8); padding-top: var(--space-6); border-top: 1px solid var(--color-border); text-align: center; }
+    .footer { background: var(--color-bg-alt); border-top: 1px solid var(--color-border); padding: var(--space-16) 0 var(--space-8); }
+    .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: var(--space-10); margin-bottom: var(--space-10); }
+    .footer__brand { max-width: 300px; }
+    .footer__logo { display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-4); color: var(--color-text-primary); font-weight: 600; font-size: var(--font-size-lg); text-decoration: none; }
+    .footer__logo span { color: var(--color-accent); }
+    .footer__description { color: var(--color-text-secondary); font-size: var(--font-size-sm); line-height: 1.7; }
+    .footer__title { font-size: var(--font-size-sm); font-weight: 600; margin-bottom: var(--space-4); color: var(--color-text-primary); }
+    .footer__links { list-style: none; }
+    .footer__links li { margin-bottom: var(--space-2); }
+    .footer__link { color: var(--color-text-secondary); text-decoration: none; font-size: var(--font-size-sm); transition: color 150ms ease; }
+    .footer__link:hover { color: var(--color-text-primary); }
+    .footer__bottom { display: flex; justify-content: space-between; align-items: center; padding-top: var(--space-6); border-top: 1px solid var(--color-border); }
+    .footer__copyright { color: var(--color-text-muted); font-size: var(--font-size-sm); }
+    @media (max-width: 768px) {
+      .header__nav, .header__cta { display: none; }
+      .header__toggle { display: flex; }
+      .page-header { padding-top: 120px; }
+      .page-header__title { font-size: var(--font-size-3xl); }
+      .case-study { padding: var(--space-6); }
+      .case-study__client { flex-direction: column; align-items: flex-start; }
+      .footer__grid { grid-template-columns: 1fr; gap: var(--space-8); }
+      .footer__bottom { flex-direction: column; gap: var(--space-4); text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="https://www.tuyuesouxin.cn" class="header__logo">
+          <svg width="40" height="40" viewBox="0 0 48 48" fill="none">
+            <defs><linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#c9a84c"/><stop offset="100%" stop-color="#e8c87a"/></linearGradient></defs>
+            <circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/><circle cx="37" cy="20" r="13" fill="#080c14"/>
+            <text x="4" y="32" font-family="Inter,sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-.8">TMG</text>
+          </svg>
+          <span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
+        </a>
+        <nav class="header__nav">
+          <a href="https://www.tuyuesouxin.cn#challenge" class="header__nav-link">Why TMG</a>
+          <a href="https://www.tuyuesouxin.cn/services" class="header__nav-link">Services</a>
+          <a href="https://www.tuyuesouxin.cn/pricing" class="header__nav-link">Pricing</a>
+          <a href="#" class="header__nav-link active">Client Stories</a>
+          <a href="https://www.tuyuesouxin.cn/geo" class="header__nav-link">GEO</a>
+          <a href="https://www.tuyuesouxin.cn/about" class="header__nav-link">About</a>
+          <a href="https://www.tuyuesouxin.cn/contact" class="header__nav-link">Contact</a>
+        </nav>
+        <div class="header__cta">
+          <a href="https://www.tuyuesouxin.cn#contact" class="btn btn--primary">Get Started</a>
+        </div>
+        <button class="header__toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <span class="page-header__eyebrow">Client Stories</span>
+        <h1 class="page-header__title">Real Success Stories</h1>
+        <p class="page-header__description">See how we've helped global companies navigate and succeed in China's digital advertising market</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="case-study">
+          <div class="case-study__header">
+            <div class="case-study__client">
+              <div class="case-study__logo">
+                <img src="https://www.tuyuesouxin.cn/assets/farmskins-logo.jpg" alt="Farmskins" class="case-study__logo-img">
+              </div>
+              <div class="case-study__client-info">
+                <h3 class="case-study__client-name">Farmskins</h3>
+                <div class="case-study__badges">
+                  <span class="case-study__client-badge">Case Study</span>
+                  <span class="case-study__client-badge case-study__budget-badge">$200K–$400K USD / year</span>
+                </div>
+              </div>
+            </div>
+            <p class="case-study__headline">How a Global CS:GO Platform Found Its Footing in China</p>
+          </div>
+
+          <div class="case-study__content">
+            <div class="case-study__chapter">
+              <h4 class="case-study__chapter-title">When "No" Was Only Answer</h4>
+              <p class="case-study__chapter-text">When Farmskins first approached us, they were running into a wall that many international companies hit in China: platform rejection. As a global CS:GO skins trading platform, they had identified China as a massive, untapped market opportunity—but every major Chinese advertising platform turned them away.</p>
+              <p class="case-study__chapter-text">Gaming-related advertising is heavily regulated in China. The platforms cited policy violations and told Farmskins that their business model simply wasn't compatible with Chinese advertising standards. No matter how they adjusted their messaging or how much budget they committed, the answer was always the same: "No."</p>
+            </div>
+
+            <div class="case-study__chapter">
+              <h4 class="case-study__chapter-title">What Actually Happened</h4>
+              <p class="case-study__chapter-text">That's when we stepped in. Unlike most agencies that would simply pass along the rejection or suggest abandoning the market, we took a different approach. We leveraged our deep understanding of Chinese platform policies, gaming regulations, and the nuances of platform approval processes.</p>
+              <p class="case-study__chapter-text">We worked directly with platform teams, presented Farmskins' business model through a lens that aligned with Chinese gaming market expectations, and helped them navigate the complex compliance landscape. Where other agencies saw policy roadblocks, we saw pathways—ones that only become visible with years of experience and established relationships.</p>
+            </div>
+
+            <div class="case-study__chapter">
+              <h4 class="case-study__chapter-title">Six Years Later</h4>
+              <p class="case-study__chapter-text">The partnership that began with rejection has now spanned six years and counting. Farmskins didn't just get approved—they built a thriving advertising operation in China that continues to grow year after year.</p>
+              <p class="case-study__chapter-text">What started as "impossible" became routine. Farmskins now runs ongoing campaigns across multiple Chinese platforms, accessing a market that once seemed completely closed to them. They've achieved sustained growth in China, proving that with the right partner, even the most regulated markets can be successfully navigated.</p>
+            </div>
+
+            <div class="case-study__chapter">
+              <h4 class="case-study__chapter-title">By the Numbers</h4>
+              <p class="case-study__chapter-text">The Farmskins success story wasn't luck—it was the result of our unique approach to China market entry:</p>
+              <ul class="case-study__list">
+                <li><strong>Deep Platform Relationships:</strong> We don't just submit applications—we know the people reviewing them and understand their priorities.</li>
+                <li><strong>Regulatory Expertise:</strong> Gaming advertising has complex rules in China. We know where the lines are drawn and how to operate within them.</li>
+                <li><strong>Persistence & Strategy:</strong> Initial rejection doesn't mean impossibility. We found alternative pathways that others missed.</li>
+                <li><strong>Long-term Partnership:</strong> Six years of ongoing support means Farmskins isn't just in the market—they're thriving in it.</li>
+                <li><strong>Annual Media Spend:</strong> Farmskins invests $200K–$400K USD per year in media in the China market alone, a figure that continues to grow as their presence in the market expands.</li>
+              </ul>
+            </div>
+
+            <div class="case-study__chapter">
+              <h4 class="case-study__chapter-title">For Other Companies Looking at China</h4>
+              <p class="case-study__chapter-text">If you're facing platform rejection or regulatory roadblocks in China, the Farmskins story shows there's often a way forward—if you have the right partner. We've helped companies in gaming, fintech, e-commerce, and other regulated industries find their path into the Chinese market.</p>
+              <p class="case-study__chapter-text">Don't let "no" from a platform be your final answer. With Tuyue Media Gateway, we help you discover what's actually possible.</p>
+            </div>
+          </div>
+
+          <div class="case-study__cta">
+            <a href="https://www.tuyuesouxin.cn#contact" class="btn btn--primary">Start Your Success Story</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="https://www.tuyuesouxin.cn" class="footer__logo">Tuyue Media <span>Gateway</span></a>
+          <p class="footer__description">Your single point of access to China's $100B digital advertising market. We help international agencies navigate Chinese platforms with ease.</p>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="https://www.tuyuesouxin.cn/services" class="footer__link">Services</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/pricing" class="footer__link">Pricing</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/about" class="footer__link">About Us</a></li>
+            <li><a href="#" class="footer__link">Client Stories</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Contact</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:tmg@tuyuesouxin.cn" class="footer__link">tmg@tuyuesouxin.cn</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="https://www.tuyuesouxin.cn/privacy" class="footer__link">Privacy Policy</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/terms" class="footer__link">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Tuyue Media Gateway. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
