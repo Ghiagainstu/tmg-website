@@ -100,6 +100,21 @@
       .footer__grid { grid-template-columns: 1fr; gap: var(--space-8); }
       .footer__bottom { flex-direction: column; gap: var(--space-4); text-align: center; }
     }
+
+    /* Scroll Reveal Animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1),
+                  transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .reveal.reveal--visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal--delay-1 { transition-delay: 0.1s; }
+    .reveal--delay-2 { transition-delay: 0.2s; }
+    .reveal--delay-3 { transition-delay: 0.3s; }
   </style>
 </head>
 <body>
@@ -134,16 +149,16 @@
   <main>
     <div class="page-header">
       <div class="container">
-        <span class="page-header__eyebrow">Pricing</span>
-        <h1 class="page-header__title">Simple, Transparent Pricing</h1>
-        <p class="page-header__description">Flexible plans designed to scale with your business</p>
+        <span class="page-header__eyebrow reveal">Pricing</span>
+        <h1 class="page-header__title reveal">Simple, Transparent Pricing</h1>
+        <p class="page-header__description reveal">Flexible plans designed to scale with your business</p>
       </div>
     </div>
 
     <section class="section">
       <div class="container">
         <div class="pricing__grid">
-          <div class="pricing-card">
+          <div class="pricing-card reveal">
             <h3 class="pricing-card__title">Recharge Only</h3>
             <div class="pricing-card__price"><span>Starts from</span> 2.5%</div>
             <p class="pricing-card__description">of ad spend</p>
@@ -156,7 +171,7 @@
             </ul>
             <a href="https://www.tuyuesouxin.cn/contact" class="btn btn--secondary pricing-card__cta">Get Started</a>
           </div>
-          <div class="pricing-card pricing-card--featured">
+          <div class="pricing-card pricing-card--featured reveal reveal--delay-1">
             <div class="pricing-card__badge">Most Popular</div>
             <h3 class="pricing-card__title">Setup + Recharge</h3>
             <div class="pricing-card__price"><span>Starts from</span> 2.5%</div>
@@ -172,7 +187,7 @@
             </ul>
             <a href="https://www.tuyuesouxin.cn/contact" class="btn btn--primary pricing-card__cta">Get Started</a>
           </div>
-          <div class="pricing-card">
+          <div class="pricing-card reveal reveal--delay-2">
             <h3 class="pricing-card__title">AI Powered Full Service</h3>
             <div class="pricing-card__price"><span>Starts from</span> 6%</div>
             <p class="pricing-card__description">of ad spend + setup fee</p>
@@ -194,22 +209,22 @@
     <section class="section value-props">
       <div class="container">
         <div class="value-props__grid">
-          <div class="value-prop">
+          <div class="value-prop reveal">
             <div class="value-prop__number">80%</div>
             <div class="value-prop__label">Less Communication Time</div>
             <div class="value-prop__description">One point of contact vs. managing 5-7 agencies</div>
           </div>
-          <div class="value-prop">
+          <div class="value-prop reveal reveal--delay-1">
             <div class="value-prop__number">50%</div>
             <div class="value-prop__label">Lower Trial Costs</div>
             <div class="value-prop__description">We handle the learning curve for you</div>
           </div>
-          <div class="value-prop">
+          <div class="value-prop reveal reveal--delay-2">
             <div class="value-prop__number">60%</div>
             <div class="value-prop__label">Faster Launch</div>
             <div class="value-prop__description">Launch in 1-2 weeks instead of months</div>
           </div>
-          <div class="value-prop">
+          <div class="value-prop reveal reveal--delay-3">
             <div class="value-prop__number">30%</div>
             <div class="value-prop__label">Higher Efficiency</div>
             <div class="value-prop__description">Optimized through centralized operations</div>
@@ -218,7 +233,7 @@
       </div>
     </section>
 
-    <section class="cta-section">
+    <section class="cta-section reveal">
       <div class="container">
         <h2 class="cta-section__title">Questions About Pricing?</h2>
         <p class="cta-section__description">Contact us for a custom quote based on your specific needs and budget.</p>
@@ -269,5 +284,24 @@
       </div>
     </div>
   </footer>
+  <script>
+    (function () {
+      var elements = document.querySelectorAll(
+        '.page-header__eyebrow, .page-header__title, .page-header__description, ' +
+        '.pricing-card, .value-prop, .cta-section'
+      );
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            requestAnimationFrame(function () {
+              entry.target.classList.add('reveal--visible');
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
+      elements.forEach(function (el) { observer.observe(el); });
+    })();
+  </script>
 </body>
 </html>

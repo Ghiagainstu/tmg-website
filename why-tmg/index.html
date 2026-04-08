@@ -105,6 +105,21 @@
       .comparison__grid { grid-template-columns: 1fr; }
       .difference__grid { grid-template-columns: repeat(2, 1fr); }
     }
+
+    /* Scroll Reveal Animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1),
+                  transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .reveal.reveal--visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal--delay-1 { transition-delay: 0.1s; }
+    .reveal--delay-2 { transition-delay: 0.2s; }
+    .reveal--delay-3 { transition-delay: 0.3s; }
   </style>
 </head>
 <body>
@@ -144,16 +159,16 @@
   <!-- Page Header -->
   <div class="page-header">
     <div class="container">
-      <span class="page-header__eyebrow">Why TMG</span>
-      <h1 class="page-header__title">From Complexity to Simplicity</h1>
-      <p class="page-header__description">Managing multiple Chinese media platforms shouldn't be this hard. Discover how TMG transforms your China advertising operations.</p>
+      <span class="page-header__eyebrow reveal">Why TMG</span>
+      <h1 class="page-header__title reveal">From Complexity to Simplicity</h1>
+      <p class="page-header__description reveal">Managing multiple Chinese media platforms shouldn't be this hard. Discover how TMG transforms your China advertising operations.</p>
     </div>
   </div>
 
   <!-- Problem/Solution Comparison -->
   <section class="section comparison">
     <div class="container">
-      <div class="section__header">
+      <div class="section__header reveal">
         <span class="section__eyebrow">The Difference</span>
         <h2 class="section__title">Before vs. With TMG</h2>
         <p class="section__description">
@@ -161,7 +176,7 @@
         </p>
       </div>
       <div class="comparison__grid">
-        <div class="comparison__card comparison__card--before">
+        <div class="comparison__card comparison__card--before reveal">
           <h3 class="comparison__title comparison__title--before">
             <svg class="comparison__icon comparison__icon--before" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
             Before
@@ -189,7 +204,7 @@
             </li>
           </ul>
         </div>
-        <div class="comparison__card comparison__card--after">
+        <div class="comparison__card comparison__card--after reveal">
           <h3 class="comparison__title comparison__title--after">
             <svg class="comparison__icon comparison__icon--after" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
             With TMG
@@ -224,27 +239,27 @@
   <!-- The TMG Difference -->
   <section class="section difference">
     <div class="container">
-      <div class="section__header">
+      <div class="section__header reveal">
         <span class="section__eyebrow">Results You Can Count On</span>
         <h2 class="section__title">The TMG Difference</h2>
       </div>
       <div class="difference__grid">
-        <div class="difference__card">
+        <div class="difference__card reveal">
           <div class="difference__number">80%</div>
           <div class="difference__label">Less Communication Time</div>
           <div class="difference__description">One point of contact vs. managing 5-7 agencies</div>
         </div>
-        <div class="difference__card">
+        <div class="difference__card reveal reveal--delay-1">
           <div class="difference__number">50%</div>
           <div class="difference__label">Lower Trial Costs</div>
           <div class="difference__description">We handle the learning curve for you</div>
         </div>
-        <div class="difference__card">
+        <div class="difference__card reveal reveal--delay-2">
           <div class="difference__number">60%</div>
           <div class="difference__label">Faster Launch</div>
           <div class="difference__description">Launch in 1-2 weeks instead of months</div>
         </div>
-        <div class="difference__card">
+        <div class="difference__card reveal reveal--delay-3">
           <div class="difference__number">30%</div>
           <div class="difference__label">Higher Efficiency</div>
           <div class="difference__description">Optimized through centralized operations</div>
@@ -254,7 +269,7 @@
   </section>
 
   <!-- CTA -->
-  <section class="cta">
+  <section class="cta reveal">
     <div class="container">
       <h2 class="cta__title">Ready to Simplify Your China Advertising?</h2>
       <p class="cta__description">Let's discuss how TMG can help you navigate China's digital advertising landscape with confidence.</p>
@@ -316,5 +331,28 @@
       </div>
     </div>
   </footer>
+  <script>
+    // Scroll Reveal Animation
+    (function () {
+      var elements = document.querySelectorAll(
+        '.page-header__eyebrow, .page-header__title, .page-header__description, ' +
+        '.section__header, ' +
+        '.comparison__card, ' +
+        '.difference__card, ' +
+        '.cta'
+      );
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            requestAnimationFrame(function () {
+              entry.target.classList.add('reveal--visible');
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
+      elements.forEach(function (el) { observer.observe(el); });
+    })();
+  </script>
 </body>
 </html>

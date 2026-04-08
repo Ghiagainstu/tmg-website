@@ -101,6 +101,18 @@
       .footer__grid { grid-template-columns: 1fr; gap: var(--space-8); }
       .footer__bottom { flex-direction: column; gap: var(--space-4); text-align: center; }
     }
+
+    /* Scroll Reveal Animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1),
+                  transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .reveal.reveal--visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
   </style>
 </head>
 <body>
@@ -135,9 +147,9 @@
   <main>
     <div class="page-header">
       <div class="container">
-        <span class="page-header__eyebrow">Contact</span>
-        <h1 class="page-header__title">Let's Start a Conversation</h1>
-        <p class="page-header__description">Ready to explore China's digital advertising market? We'd love to hear from you.</p>
+        <span class="page-header__eyebrow reveal">Contact</span>
+        <h1 class="page-header__title reveal">Let's Start a Conversation</h1>
+        <p class="page-header__description reveal">Ready to explore China's digital advertising market? We'd love to hear from you.</p>
       </div>
     </div>
 
@@ -312,6 +324,25 @@
         console.error('Error:', error);
       });
     });
+  </script>
+  <script>
+    (function () {
+      var elements = document.querySelectorAll(
+        '.page-header__eyebrow, .page-header__title, .page-header__description, ' +
+        '.contact__grid'
+      );
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            requestAnimationFrame(function () {
+              entry.target.classList.add('reveal--visible');
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
+      elements.forEach(function (el) { observer.observe(el); });
+    })();
   </script>
 </body>
 </html>

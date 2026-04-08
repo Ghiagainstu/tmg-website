@@ -104,6 +104,21 @@
       .footer__grid { grid-template-columns: 1fr; gap: var(--space-8); }
       .footer__bottom { flex-direction: column; gap: var(--space-4); text-align: center; }
     }
+
+    /* Scroll Reveal Animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1),
+                  transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .reveal.reveal--visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal--delay-1 { transition-delay: 0.1s; }
+    .reveal--delay-2 { transition-delay: 0.2s; }
+    .reveal--delay-3 { transition-delay: 0.3s; }
   </style>
 </head>
 <body>
@@ -138,9 +153,9 @@
   <main>
     <div class="page-header">
       <div class="container">
-        <span class="page-header__eyebrow">About Us</span>
-        <h1 class="page-header__title">Your Bridge to China's Digital Market</h1>
-        <p class="page-header__description">We're a team of programmatic experts and China market specialists helping international agencies unlock the world's largest digital advertising market.</p>
+        <span class="page-header__eyebrow reveal">About Us</span>
+        <h1 class="page-header__title reveal">Your Bridge to China's Digital Market</h1>
+        <p class="page-header__description reveal">We're a team of programmatic experts and China market specialists helping international agencies unlock the world's largest digital advertising market.</p>
       </div>
     </div>
 
@@ -182,27 +197,27 @@
 
     <section class="section">
       <div class="container">
-        <div class="section__header">
+        <div class="section__header reveal">
           <span class="section__eyebrow">What We Believe</span>
           <h2 class="section__title">Our Core Values</h2>
           <p class="section__description">These principles guide every decision we make and every partnership we build.</p>
         </div>
         <div class="values__grid">
-          <div class="value-card">
+          <div class="value-card reveal">
             <div class="value-card__icon">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
             <h3 class="value-card__title">Transparency First</h3>
             <p class="value-card__description">No hidden fees, no black boxes. You see exactly what you're paying for and exactly what you're getting. We believe trust is built through clarity.</p>
           </div>
-          <div class="value-card">
+          <div class="value-card reveal reveal--delay-1">
             <div class="value-card__icon">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
             </div>
             <h3 class="value-card__title">Long-term Partnership</h3>
             <p class="value-card__description">We're not interested in one-off transactions. Our average client relationship spans 6+ years because we invest in your long-term success.</p>
           </div>
-          <div class="value-card">
+          <div class="value-card reveal reveal--delay-2">
             <div class="value-card__icon">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             </div>
@@ -215,19 +230,19 @@
 
     <section class="section" style="background: var(--color-bg-alt);">
       <div class="container">
-        <div class="section__header">
+        <div class="section__header reveal">
           <span class="section__eyebrow">The Team</span>
           <h2 class="section__title">Meet the Founders</h2>
           <p class="section__description">Two complementary skill sets, one shared mission: making China's digital market accessible to the world.</p>
         </div>
         <div class="team__grid">
-          <div class="team-card">
+          <div class="team-card reveal">
             <div class="team-card__avatar">BC</div>
             <h3 class="team-card__name">Benny Cheuk</h3>
             <p class="team-card__role">Programmatic Expert, Trilingual</p>
             <p class="team-card__bio">Benny brings deep expertise in programmatic advertising and a unique trilingual capability (English, Mandarin, Cantonese) that bridges technical complexity with clear communication. His understanding of both Western and Chinese advertising ecosystems makes him invaluable for international agencies entering China.</p>
           </div>
-          <div class="team-card">
+          <div class="team-card reveal reveal--delay-1">
             <div class="team-card__avatar">YH</div>
             <h3 class="team-card__name">Yan Huo</h3>
             <p class="team-card__role">Paid Media Strategist</p>
@@ -237,7 +252,7 @@
       </div>
     </section>
 
-    <section class="cta-section">
+    <section class="cta-section reveal">
       <div class="container">
         <h2 class="cta-section__title">Ready to Work Together?</h2>
         <p class="cta-section__description">Let's discuss how TMG can help your agency succeed in China's digital advertising market.</p>
@@ -287,5 +302,24 @@
       </div>
     </div>
   </footer>
+  <script>
+    (function () {
+      var elements = document.querySelectorAll(
+        '.page-header__eyebrow, .page-header__title, .page-header__description, ' +
+        '.section__header, .value-card, .team-card, .cta-section'
+      );
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            requestAnimationFrame(function () {
+              entry.target.classList.add('reveal--visible');
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
+      elements.forEach(function (el) { observer.observe(el); });
+    })();
+  </script>
 </body>
 </html>
