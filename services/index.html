@@ -48,6 +48,8 @@
     .page-header__eyebrow { display: block; font-size: var(--font-size-sm); font-weight: 500; color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: var(--space-3); }
     .page-header__title { font-size: var(--font-size-4xl); font-weight: 700; margin-bottom: var(--space-4); }
     .page-header__description { font-size: var(--font-size-lg); color: var(--color-text-secondary); max-width: 600px; margin: 0 auto; }
+    .page-header__tagline { font-size: var(--font-size-base); color: var(--color-text-secondary); max-width: 700px; margin: var(--space-6) auto 0; line-height: 1.7; }
+    .page-header__tagline strong { color: var(--color-accent); }
     .section { padding: var(--space-20) 0; }
     .section__header { text-align: center; max-width: 640px; margin: 0 auto var(--space-12); }
     .section__eyebrow { display: block; font-size: var(--font-size-sm); font-weight: 500; color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: var(--space-3); }
@@ -385,6 +387,9 @@
         <span class="page-header__eyebrow reveal">Our Services</span>
         <h1 class="page-header__title reveal">Everything You Need in One Place</h1>
         <p class="page-header__description reveal">Three integrated modules designed to eliminate complexity and maximize efficiency when accessing China's digital advertising market.</p>
+        <p class="page-header__tagline reveal">
+          <strong>Tuyue Media Gateway</strong> — Your single point of access to China's $100B digital advertising market. We help international agencies navigate Chinese platforms with ease.
+        </p>
       </div>
     </div>
 
@@ -670,7 +675,7 @@
   <script>
     (function () {
       var elements = document.querySelectorAll(
-        '.page-header__eyebrow, .page-header__title, .page-header__description, ' +
+        '.page-header__eyebrow, .page-header__title, .page-header__description, .page-header__tagline, ' +
         '.service-card, .platform-item, .cta-section, ' +
         '.contact__info, .contact__form'
       );
