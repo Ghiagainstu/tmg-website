@@ -119,6 +119,243 @@
     .reveal--delay-1 { transition-delay: 0.1s; }
     .reveal--delay-2 { transition-delay: 0.2s; }
     .reveal--delay-3 { transition-delay: 0.3s; }
+
+    /* Contact Section */
+    .contact {
+      padding: var(--space-20) 0;
+    }
+    .contact__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-12);
+    }
+    @media (min-width: 900px) {
+      .contact__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .contact__info {
+      background-color: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: var(--space-10);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .contact__title {
+      font-size: var(--font-size-3xl);
+      font-weight: 700;
+      margin-bottom: var(--space-4);
+    }
+    .contact__description {
+      color: var(--color-text-secondary);
+      margin-bottom: var(--space-6);
+    }
+    .contact__email {
+      font-size: var(--font-size-2xl);
+      font-weight: 600;
+      color: var(--color-primary);
+      margin-bottom: var(--space-6);
+    }
+    .contact__details {
+      margin-bottom: var(--space-8);
+    }
+    .contact__detail-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      margin-bottom: var(--space-4);
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+    }
+    .contact__detail-icon {
+      width: 20px;
+      height: 20px;
+      color: var(--color-primary);
+    }
+    .contact__qr {
+      margin-top: var(--space-6);
+      text-align: center;
+      padding: var(--space-4);
+      background: var(--color-bg-card);
+      border-radius: 8px;
+      border: 1px solid var(--color-border);
+    }
+    .contact__qr-title {
+      font-size: var(--font-size-sm);
+      font-weight: 600;
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-3);
+    }
+    .contact__qr-image {
+      width: 140px;
+      height: 140px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 4px;
+    }
+    .contact__map {
+      margin-bottom: var(--space-8);
+    }
+    .contact__map-embed {
+      width: 100%;
+      height: 200px;
+      background-color: var(--color-bg-alt);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+    }
+    .contact__map-iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .contact__address {
+      margin-bottom: var(--space-6);
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+      line-height: 1.6;
+    }
+    .contact__address-text {
+      font-weight: 500;
+      color: var(--color-text-primary);
+    }
+    .contact__trust {
+      margin-bottom: var(--space-8);
+    }
+    .contact__form {
+      background-color: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: var(--space-8);
+    }
+    .form__group {
+      margin-bottom: var(--space-5);
+    }
+    .form__label {
+      display: block;
+      font-size: var(--font-size-sm);
+      font-weight: 500;
+      color: var(--color-text-secondary);
+      margin-bottom: var(--space-2);
+    }
+    .form__input,
+    .form__textarea,
+    .form__select {
+      width: 100%;
+      padding: var(--space-3);
+      background-color: var(--color-bg-alt);
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      color: var(--color-text-primary);
+      font-size: var(--font-size-base);
+      font-family: var(--font-family);
+      transition: border-color var(--transition-fast);
+    }
+    .form__input:focus,
+    .form__textarea:focus,
+    .form__select:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(45, 107, 228, 0.15);
+    }
+    .form__input::placeholder,
+    .form__textarea::placeholder {
+      color: var(--color-text-muted);
+    }
+    .form__textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+    .form__required {
+      color: #ef4444;
+      margin-left: 2px;
+    }
+    .form-success-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 500px;
+    }
+    .form-success-card__inner {
+      text-align: center;
+      padding: var(--space-8);
+    }
+    .form-success-card__icon {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto var(--space-6);
+      animation: successPop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    }
+    @keyframes successPop {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .form-success-card__title {
+      font-size: var(--font-size-3xl);
+      font-weight: 700;
+      background: linear-gradient(135deg, #c9a84c, #e8c87a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: var(--space-2);
+    }
+    .form-success-card__subtitle {
+      font-size: var(--font-size-lg);
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-4);
+    }
+    .form-success-card__message {
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      max-width: 420px;
+      margin: 0 auto var(--space-8);
+    }
+    .form-success-card__message strong {
+      color: var(--color-text-primary);
+    }
+    .form-success-card__details {
+      background: var(--color-bg-alt);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: var(--space-5);
+      margin-bottom: var(--space-4);
+      text-align: left;
+    }
+    .form-success-card__detail-row {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-1);
+      padding: var(--space-3) 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .form-success-card__detail-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .form-success-card__detail-row:first-child {
+      padding-top: 0;
+    }
+    .form-success-card__detail-label {
+      font-size: var(--font-size-xs);
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+    }
+    .form-success-card__detail-value {
+      font-size: var(--font-size-sm);
+      color: var(--color-accent-light);
+      font-weight: 500;
+    }
+    a.form-success-card__detail-value {
+      color: var(--color-primary);
+      text-decoration: none;
+    }
+    a.form-success-card__detail-value:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -252,11 +489,160 @@
       </div>
     </section>
 
-    <section class="cta-section reveal">
+    <!-- Contact -->
+    <section class="section contact" id="contact">
       <div class="container">
-        <h2 class="cta-section__title">Ready to Work Together?</h2>
-        <p class="cta-section__description">Let's discuss how TMG can help your agency succeed in China's digital advertising market.</p>
-        <a href="https://www.tuyuesouxin.cn/contact" class="btn btn--primary" style="padding: var(--space-4) var(--space-8); font-size: var(--font-size-base);">Get in Touch</a>
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <div>
+              <h2 class="contact__title">Ready to Expand to China?</h2>
+              <p class="contact__description">
+                Let's discuss how TMG can help your agency access China's digital advertising market.
+              </p>
+              <a href="mailto:tmg@tuyuesouxin.cn" class="contact__email">tmg@tuyuesouxin.cn</a>
+
+              <div class="contact__details">
+                <div class="contact__detail-item">
+                  <svg class="contact__detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  Response time: Within 24 hours (weekdays)
+                </div>
+                <div class="contact__detail-item">
+                  <svg class="contact__detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                  Languages: English, Mandarin, Cantonese
+                </div>
+                <div class="contact__detail-item">
+                  <svg aria-hidden="true" class="contact__detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  </svg>
+                  WhatsApp (scan below qr)
+                </div>
+              </div>
+
+              <div class="contact__qr" id="contactQR" style="display: block;">
+                <h3 class="contact__qr-title">Scan to Add Us on WhatsApp</h3>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https://wa.me/8618930383550" alt="WhatsApp QR Code" class="contact__qr-image">
+              </div>
+            </div>
+
+            <div class="contact__trust">
+              <div class="contact__map">
+                <div class="contact__map-embed" id="mapContainer">
+                  <iframe
+                    class="contact__map-iframe"
+                    src="https://maps.google.com/maps?q=599-2F202+Wanzhen+Rd,+Jia+Ding+Qu,+Shanghai+Shi,+China,+201824&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+                <div class="contact__address">
+                  <span class="contact__address-text">NO. 599 WANZHEN ROAD, SHANGHAI, CHINA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__form reveal">
+            <div id="formSuccess" style="display:none;" class="form-success-card">
+              <div class="form-success-card__inner">
+                <div class="form-success-card__icon">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="12" fill="url(#successGrad)"/>
+                    <path d="M7 12.5l3.5 3.5 6.5-7" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                      <linearGradient id="successGrad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#c9a84c"/>
+                        <stop offset="100%" stop-color="#e8c87a"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <h3 class="form-success-card__title">Inquiry Received!</h3>
+                <p class="form-success-card__subtitle">Thank you for reaching out to TMG.</p>
+                <p class="form-success-card__message">
+                  We've received your inquiry and will get back to you within <strong>1 business day</strong>.
+                  Keep an eye on your inbox at the email you provided.
+                </p>
+                <div class="form-success-card__details">
+                  <div class="form-success-card__detail-row">
+                    <span class="form-success-card__detail-label">Email us directly:</span>
+                    <a href="mailto:tmg@tuyuesouxin.cn" class="form-success-card__detail-value">tmg@tuyuesouxin.cn</a>
+                  </div>
+                  <div class="form-success-card__detail-row">
+                    <span class="form-success-card__detail-label">For urgent matters:</span>
+                    <span class="form-success-card__detail-value">WhatsApp us via QR code below</span>
+                  </div>
+                </div>
+                <button type="button" class="btn btn--secondary" onclick="document.getElementById('formSuccess').style.display='none'; document.getElementById('contactForm').style.display='block';" style="margin-top: var(--space-6); width:100%;">
+                  Submit Another Inquiry
+                </button>
+              </div>
+            </div>
+
+            <form id="contactForm" action="https://formspree.io/f/xpqojqlb" method="POST">
+              <input type="hidden" name="_replyto" value="tmg@tuyuesouxin.cn">
+              <input type="hidden" name="_subject" value="New Inquiry from TMG Website">
+              <input type="text" name="_gotcha" style="display:none">
+              <div class="form__group">
+                <label class="form__label" for="salutation">Salutation<span class="form__required">*</span></label>
+                <select class="form__select" id="salutation" name="Salutation" required>
+                  <option value="">Select your title</option>
+                  <option value="Mr.">Mr.</option>
+                  <option value="Ms.">Ms.</option>
+                  <option value="Mrs.">Mrs.</option>
+                  <option value="Dr.">Dr.</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="fullName">Full Name<span class="form__required">*</span></label>
+                <input class="form__input" type="text" id="fullName" name="Full Name" required placeholder="Your full name">
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="company">Company Name<span class="form__required">*</span></label>
+                <input class="form__input" type="text" id="company" name="Company Name" required placeholder="Your company name">
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="type">Identity<span class="form__required">*</span></label>
+                <select class="form__select" id="type" name="Type" required>
+                  <option value="">Select your role</option>
+                  <option value="Agency">Advertising Agency</option>
+                  <option value="Brand">Brand Owner</option>
+                  <option value="Media">Media Publisher</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="email">Email Address<span class="form__required">*</span></label>
+                <input class="form__input" type="email" id="email" name="Email" required placeholder="your@email.com">
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="service">Service Needed<span class="form__required">*</span></label>
+                <select class="form__select" id="service" name="Service" required>
+                  <option value="">Select service type</option>
+                  <option value="Recharge Only">Recharge Only</option>
+                  <option value="Account Setup">Account Setup</option>
+                  <option value="Full Service">Full Service</option>
+                  <option value="Other">Other / Not Sure</option>
+                </select>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="needs">Your Needs<span class="form__required">*</span></label>
+                <textarea class="form__textarea" id="needs" name="Needs" required placeholder="Tell us about your requirements, goals, and any questions you have..."></textarea>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="comments">Comments (Optional)</label>
+                <textarea class="form__textarea" id="comments" name="Comments" placeholder="Any additional information..."></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">Submit Inquiry</button>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -306,7 +692,8 @@
     (function () {
       var elements = document.querySelectorAll(
         '.page-header__eyebrow, .page-header__title, .page-header__description, ' +
-        '.section__header, .value-card, .team-card, .cta-section'
+        '.section__header, .value-card, .team-card, .cta-section, ' +
+        '.contact__info, .contact__form'
       );
       var observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
