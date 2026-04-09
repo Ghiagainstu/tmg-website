@@ -40,7 +40,10 @@
     .header__nav-link:hover::after, .header__nav-link.active::after { width: 100%; }
     .nav-badge { display: inline-block; margin-left: 5px; padding: 1px 5px; font-size: 10px; font-weight: 700; line-height: 1.5; letter-spacing: 0.04em; text-transform: uppercase; color: #080c14; background: var(--color-accent); border-radius: 3px; vertical-align: middle; animation: badgePulse 2s ease-in-out infinite; }
     @keyframes badgePulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.65; } }
-    .header__cta { display: flex; align-items: center; gap: var(--space-4); }
+    .header__cta { display: none; }
+    @media (min-width: 768px) {
+      .header__cta { display: block; }
+    }
     .header__toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: var(--space-2); }
 
     .header__toggle span { display: block; width: 24px; height: 2px; background: var(--color-text-primary); transition: all 250ms ease; }
