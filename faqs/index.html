@@ -59,6 +59,8 @@
     .header__nav-link:hover{color:var(--color-text-primary)}
     .header__nav-link.active{color:var(--color-accent)}
     .header__nav-link.active::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:2px;background:var(--color-accent);border-radius:2px}
+    .nav-badge{display:inline-block;margin-left:5px;padding:1px 5px;font-size:10px;font-weight:700;line-height:1.5;letter-spacing:0.04em;text-transform:uppercase;color:#080c14;background:var(--color-accent);border-radius:3px;vertical-align:middle;animation:badgePulse 2s ease-in-out infinite}
+    @keyframes badgePulse{0%,100%{opacity:1}50%{opacity:0.65}}
     .header__toggle{display:flex;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:var(--space-2)}
     .header__toggle span{width:24px;height:2px;background:var(--color-text-secondary);border-radius:2px;transition:var(--transition-fast)}
     .header__toggle.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
@@ -171,7 +173,7 @@
           <a href="https://www.tuyuesouxin.cn/services" class="header__nav-link">Services</a>
           <a href="https://www.tuyuesouxin.cn/pricing" class="header__nav-link">Pricing</a>
           <a href="https://www.tuyuesouxin.cn/client-stories" class="header__nav-link">Client Stories</a>
-          <a href="https://www.tuyuesouxin.cn/geo" class="header__nav-link">GEO</a>
+          <a href="https://www.tuyuesouxin.cn/geo" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
           <a href="https://www.tuyuesouxin.cn/about" class="header__nav-link">About</a>
           <a href="https://www.tuyuesouxin.cn/contact" class="header__nav-link">Contact</a>
           <a href="https://www.tuyuesouxin.cn/faqs" class="header__nav-link active">FAQ</a>
