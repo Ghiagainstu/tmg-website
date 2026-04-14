@@ -34,6 +34,8 @@
     .header__nav-link{font-size:.875rem;font-weight:500;color:var(--c-t2);transition:color .15s;text-decoration:none}
     .header__nav-link:hover{color:var(--c-t1)}
     .header__nav-link--active{color:var(--c-accent-light)}
+    .nav-badge{display:inline-block;margin-left:5px;padding:1px 5px;font-size:10px;font-weight:700;line-height:1.5;letter-spacing:.04em;text-transform:uppercase;color:#080c14;background:var(--c-accent);border-radius:3px;vertical-align:middle;animation:badgePulse 2s ease-in-out infinite}
+    @keyframes badgePulse{0%,100%{opacity:1}50%{opacity:.65}}
     .header__toggle{display:none;flex-direction:column;justify-content:center;gap:4px;background:none;border:none;cursor:pointer;padding:8px}
     .header__toggle span{width:24px;height:2px;background-color:var(--c-t1);transition:all .3s}
     .header__toggle.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
@@ -150,10 +152,14 @@
           <span></span>
         </button>
         <nav class="header__nav">
-          <a href="https://www.tuyuesouxin.cn/" class="header__nav-link">Home</a>
-          <a href="https://www.tuyuesouxin.cn/geo/" class="header__nav-link">China GEO</a>
-          <a href="https://www.tuyuesouxin.cn/faqs/" class="header__nav-link header__nav-link--active">FAQ</a>
+          <a href="https://www.tuyuesouxin.cn/why-tmg/" class="header__nav-link">Why TMG</a>
+          <a href="https://www.tuyuesouxin.cn/services/" class="header__nav-link">Services</a>
+          <a href="https://www.tuyuesouxin.cn/pricing/" class="header__nav-link">Pricing</a>
+          <a href="https://www.tuyuesouxin.cn/client-stories/" class="header__nav-link">Client Stories</a>
+          <a href="https://www.tuyuesouxin.cn/geo/" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
+          <a href="https://www.tuyuesouxin.cn/about/" class="header__nav-link">About</a>
           <a href="https://www.tuyuesouxin.cn/contact/" class="header__nav-link">Contact</a>
+          <a href="https://www.tuyuesouxin.cn/faqs" class="header__nav-link header__nav-link--active">FAQ</a>
         </nav>
       </div>
     </div>
