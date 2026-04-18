@@ -44,7 +44,8 @@
     .header__dropdown-trigger { display: flex; align-items: center; gap: 4px; cursor: pointer; }
     .header__dropdown-arrow { transition: transform 150ms ease; }
     .header__dropdown:hover .header__dropdown-arrow { transform: rotate(180deg); }
-    .header__dropdown-menu { position: absolute; top: calc(100% + 8px); left: 50%; transform: translateX(-50%); background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 10px; padding: var(--space-2); min-width: 180px; display: none; flex-direction: column; opacity: 0; box-shadow: 0 8px 32px rgba(0,0,0,0.4); z-index: 100; }
+    .header__dropdown-menu { position: absolute; top: calc(100% + 8px); left: 50%; transform: translateX(-50%); background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 10px; padding: var(--space-2); min-width: 180px; display: none; flex-direction: column; opacity: 0; box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      transition: opacity var(--transition-fast), transform var(--transition-fast); z-index: 100; }
     .header__dropdown:hover .header__dropdown-menu { display: flex; opacity: 1; }
     .header__dropdown-item { font-size: var(--font-size-sm); font-weight: 500; color: var(--color-text-secondary); padding: var(--space-3) var(--space-4); border-radius: 6px; transition: background 150ms ease, color 150ms ease; white-space: nowrap; text-decoration: none; }
     .header__dropdown-item:hover { background: rgba(201,168,76,0.1); color: var(--color-accent); }
@@ -484,11 +485,11 @@
           <div class="header__dropdown">
             <a href="https://www.tuyuesouxin.cn/services" class="header__nav-link header__dropdown-trigger">Services <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <div class="header__dropdown-menu">
-              <a href="https://www.tuyuesouxin.cn/services/#wechat" class="header__dropdown-item">WeChat Ads</a>
-              <a href="https://www.tuyuesouxin.cn/services/#douyin" class="header__dropdown-item">Douyin Ads</a>
-              <a href="https://www.tuyuesouxin.cn/services/#baidu" class="header__dropdown-item">Baidu SEM</a>
-              <a href="https://www.tuyuesouxin.cn/services/#xiaohongshu" class="header__dropdown-item">Xiaohongshu</a>
-              <a href="https://www.tuyuesouxin.cn/services/#bilibili" class="header__dropdown-item">Bilibili Ads</a>
+              <a href="https://www.tuyuesouxin.cn/services/wechat" class="header__dropdown-item">WeChat Ads</a>
+              <a href="https://www.tuyuesouxin.cn/services/douyin" class="header__dropdown-item">Douyin Ads</a>
+              <a href="https://www.tuyuesouxin.cn/services/baidu" class="header__dropdown-item">Baidu SEM</a>
+              <a href="https://www.tuyuesouxin.cn/services/xiaohongshu" class="header__dropdown-item">Xiaohongshu</a>
+              <a href="https://www.tuyuesouxin.cn/services" class="header__dropdown-item">Bilibili Ads</a>
               <a href="https://www.tuyuesouxin.cn/geo" class="header__dropdown-item">China GEO</a>
             </div>
           </div>
