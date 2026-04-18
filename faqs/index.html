@@ -183,14 +183,30 @@
           <span></span>
         </button>
         <nav class="header__nav">
-          <a href="https://www.tuyuesouxin.cn/why-tmg/" class="header__nav-link">Why TMG</a>
-          <a href="https://www.tuyuesouxin.cn/services/" class="header__nav-link">Services</a>
           <a href="https://www.tuyuesouxin.cn/pricing/" class="header__nav-link">Pricing</a>
           <a href="https://www.tuyuesouxin.cn/client-stories/" class="header__nav-link">Client Stories</a>
           <a href="https://www.tuyuesouxin.cn/geo/" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
-          <a href="https://www.tuyuesouxin.cn/about/" class="header__nav-link">About</a>
-          <a href="https://www.tuyuesouxin.cn/contact/" class="header__nav-link">Contact</a>
           <a href="https://www.tuyuesouxin.cn/faqs" class="header__nav-link header__nav-link--active">FAQ</a>
+          <div class="header__dropdown">
+            <a href="https://www.tuyuesouxin.cn/about/" class="header__nav-link header__dropdown-trigger">About <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+            <div class="header__dropdown-menu">
+              <a href="https://www.tuyuesouxin.cn/why-tmg/" class="header__dropdown-item">Why TMG</a>
+              <a href="https://www.tuyuesouxin.cn/about/" class="header__dropdown-item">About Us</a>
+              <a href="https://www.tuyuesouxin.cn/contact/" class="header__dropdown-item">Contact</a>
+            </div>
+          </div>
+          <div class="header__dropdown">
+            <a href="https://www.tuyuesouxin.cn/services/" class="header__nav-link header__dropdown-trigger">Services <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+            <div class="header__dropdown-menu">
+              <a href="https://www.tuyuesouxin.cn/services/#baidu" class="header__dropdown-item">Baidu SEM</a>
+              <a href="https://www.tuyuesouxin.cn/services/#douyin" class="header__dropdown-item">Douyin Ads</a>
+              <a href="https://www.tuyuesouxin.cn/services/#xiaohongshu" class="header__dropdown-item">Xiaohongshu</a>
+              <a href="https://www.tuyuesouxin.cn/services/#oceanengine" class="header__dropdown-item">Ocean Engine/Douyin</a>
+              <a href="https://www.tuyuesouxin.cn/services/#bilibili" class="header__dropdown-item">Bilibili Ads</a>
+              <a href="https://www.tuyuesouxin.cn/geo/" class="header__dropdown-item">China GEO</a>
+            </div>
+          </div>
+          <span class="header__nav-link header__nav-link--coming">Coming Soon</span>
         </nav>
         <div class="header__cta">
           <a href="https://www.tuyuesouxin.cn/contact/" class="btn btn--primary">Get Started</a>
@@ -1748,6 +1764,28 @@
       }
     })();
   </script>
+  <script>
+    (function () {
+      var toggle = document.querySelector('.header__toggle');
+      var nav = document.querySelector('.header__nav');
+      if (toggle && nav) {
+        toggle.addEventListener('click', function () {
+          toggle.classList.toggle('active');
+          nav.classList.toggle('active');
+        });
+        nav.querySelectorAll('.header__dropdown').forEach(function (dropdown) {
+          var trigger = dropdown.querySelector('.header__dropdown-trigger');
+          trigger.addEventListener('click', function (e) {
+            if (window.innerWidth <= 768) {
+              e.preventDefault();
+              dropdown.classList.toggle('active');
+            }
+          });
+        });
+      }
+    })();
+  </script>
+  <style>.header__dropdown{position:relative}.header__dropdown-trigger{display:flex;align-items:center;gap:4px;cursor:pointer}.header__dropdown-arrow{transition:transform .15s}.header__dropdown:hover .header__dropdown-arrow{transform:rotate(180deg)}.header__dropdown-menu{position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);background:var(--c-card);border:1px solid var(--c-border);border-radius:10px;padding:var(--space-2);min-width:180px;display:none;flex-direction:column;opacity:0;box-shadow:0 8px 32px rgba(0,0,0,.4);z-index:100}.header__dropdown:hover .header__dropdown-menu{display:flex;opacity:1}.header__dropdown-item{font-size:.875rem;font-weight:500;color:var(--c-t2);padding:var(--space-3) var(--space-4);border-radius:6px;transition:background .15s,color .15s;white-space:nowrap}.header__dropdown-item:hover{background:rgba(201,168,76,.1);color:var(--c-accent)}.header__nav-link--coming{opacity:.6;cursor:default}@media(max-width:768px){.header__dropdown-menu{position:static;transform:none;box-shadow:none;border:none;border-radius:0;padding:0}.header__dropdown:hover .header__dropdown-menu,.header__dropdown.active .header__dropdown-menu{display:flex}.header__dropdown.active .header__dropdown-arrow{transform:rotate(180deg)}.header__dropdown-item{padding:.75rem 1rem}}</style>
 
   <footer class="footer">
     <div class="container">
