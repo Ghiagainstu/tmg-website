@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root{--c-bg:#080c14;--c-bg-alt:#0d1220;--c-card:#111827;--c-t1:#f0f4ff;--c-t2:#a3b1cc;--c-t3:#64748b;--c-primary:#2d6be4;--c-primary-h:#1e55c4;--c-accent:#c9a84c;--c-accent-l:#e8c87a;--c-border:#1e2d45;--c-border-h:#2d4060;--c-baidu:#4152dd;--c-xhs:#e8202a;--c-wechat:#07c160;--c-ocean:#00CED1;--c-bilibili:#FB7299;--c-geo:#8B5CF6;--ff:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--r-sm:.375rem;--r-md:.5rem;--r-lg:.75rem;--r-xl:1rem;--tr:.25s;--space-4:1rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;--space-12:3rem;--space-16:4rem;--space-20:5rem}
+    :root{--c-bg:#080c14;--c-bg-alt:#0d1220;--c-card:#111827;--c-t1:#f0f4ff;--c-t2:#a3b1cc;--c-t3:#64748b;--c-primary:#2d6be4;--c-primary-h:#1e55c4;--c-accent:#c9a84c;--c-accent-l:#e8c87a;--c-border:#1e2d45;--c-border-h:#2d4060;--c-baidu:#4152dd;--c-xhs:#e8202a;--c-wechat:#07c160;--c-ocean:#c9a84c;--c-bilibili:#4DD0E1;--c-geo:#8B5CF6;--ff:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--r-sm:.375rem;--r-md:.5rem;--r-lg:.75rem;--r-xl:1rem;--tr:.25s;--space-4:1rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;--space-12:3rem;--space-16:4rem;--space-20:5rem}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
     body{font-family:var(--ff);font-size:1rem;line-height:1.6;color:var(--c-t2);background:var(--c-bg);-webkit-font-smoothing:antialiased;padding-top:64px}
@@ -94,7 +94,7 @@
     .tab--xhs .tab__dot{background:var(--c-xhs)}
     .tab--wechat .tab__dot{background:var(--c-wechat)}
     .tab--ocean .tab__dot{background:var(--c-accent)}
-    .tab--bilibili .tab__dot{background:var(--c-ocean)}
+    .tab--bilibili .tab__dot{background:var(--c-bilibili)}
     .tab--geo .tab__dot{background:var(--c-geo)}
     .filter-bar{padding:1.5rem 0;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-bottom:1px solid var(--c-border)}
     .filter-tabs{display:flex;gap:.5rem;flex-wrap:wrap}
@@ -126,8 +126,8 @@
     .faq-num{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:6px;font-size:.6875rem;font-weight:700;flex-shrink:0;margin-right:.375rem;font-family:var(--ff)}
     .faq-num--b{background:rgba(65,82,221,.15);color:var(--c-baidu)}
     .faq-num--x{background:rgba(232,32,42,.15);color:var(--c-xhs)}
-    .faq-num--o{background:rgba(0,206,209,.15);color:var(--c-ocean)}
-    .faq-num--bili{background:rgba(251,114,153,.15);color:var(--c-bilibili)}
+    .faq-num--o{background:rgba(201,168,76,.15);color:var(--c-accent)}
+    .faq-num--bili{background:rgba(77,208,225,.15);color:var(--c-bilibili)}
     .faq-num--geo{background:rgba(139,92,246,.15);color:var(--c-geo)}
     .faq-q-text{font-size:.9375rem;font-weight:500;color:var(--c-t1);line-height:1.5}
     .faq-a{padding:.25rem 1.125rem 1.125rem;padding-left:calc(1.125rem + 22px + .375rem + .75rem)}
@@ -951,8 +951,8 @@
         <!-- Account & Setup -->
         <div class="faq-category" data-cat="account">
           <div class="faq-cat-header">
-            <div class="faq-cat-icon" style="background:rgba(0,206,209,.15)">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#00CED1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <div class="faq-cat-icon" style="background:rgba(201,168,76,.15)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
             </div>
             <span class="faq-cat-title">Account &amp; Setup</span>
             <span class="faq-cat-count">4 questions</span>
@@ -1015,8 +1015,8 @@
         <!-- Fees & Budget -->
         <div class="faq-category" data-cat="fees">
           <div class="faq-cat-header">
-            <div class="faq-cat-icon" style="background:rgba(0,206,209,.15)">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#00CED1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <div class="faq-cat-icon" style="background:rgba(201,168,76,.15)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
             </div>
             <span class="faq-cat-title">Fees &amp; Budget</span>
             <span class="faq-cat-count">3 questions</span>
@@ -1069,8 +1069,8 @@
         <!-- Billing & CPC -->
         <div class="faq-category" data-cat="billing">
           <div class="faq-cat-header">
-            <div class="faq-cat-icon" style="background:rgba(0,206,209,.15)">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#00CED1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            <div class="faq-cat-icon" style="background:rgba(201,168,76,.15)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
             </div>
             <span class="faq-cat-title">Billing &amp; CPC</span>
             <span class="faq-cat-count">3 questions</span>
@@ -1124,8 +1124,8 @@
         <!-- Compliance & Review -->
         <div class="faq-category" data-cat="compliance">
           <div class="faq-cat-header">
-            <div class="faq-cat-icon" style="background:rgba(0,206,209,.15)">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#00CED1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div class="faq-cat-icon" style="background:rgba(201,168,76,.15)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
             <span class="faq-cat-title">Compliance &amp; Review</span>
             <span class="faq-cat-count">4 questions</span>
@@ -1207,8 +1207,8 @@
         <!-- Account & Setup -->
         <div class="faq-category" data-cat="account">
           <div class="faq-cat-header">
-            <div class="faq-cat-icon" style="background:rgba(251,114,153,.15)">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#FB7299" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <div class="faq-cat-icon" style="background:rgba(77,208,225,.15)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#4DD0E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
             </div>
             <span class="faq-cat-title">Account &amp; Setup</span>
             <span class="faq-cat-count">4 questions</span>
@@ -1270,8 +1270,8 @@
         <!-- Fees & Budget -->
         <div class="faq-category" data-cat="fees">
           <div class="faq-cat-header">
-            <div class="faq-cat-icon" style="background:rgba(251,114,153,.15)">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#FB7299" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <div class="faq-cat-icon" style="background:rgba(77,208,225,.15)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#4DD0E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
             </div>
             <span class="faq-cat-title">Fees &amp; Budget</span>
             <span class="faq-cat-count">3 questions</span>
@@ -1324,8 +1324,8 @@
         <!-- Billing & CPC -->
         <div class="faq-category" data-cat="billing">
           <div class="faq-cat-header">
-            <div class="faq-cat-icon" style="background:rgba(251,114,153,.15)">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#FB7299" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            <div class="faq-cat-icon" style="background:rgba(77,208,225,.15)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#4DD0E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
             </div>
             <span class="faq-cat-title">Billing &amp; CPC</span>
             <span class="faq-cat-count">3 questions</span>
@@ -1381,8 +1381,8 @@
         <!-- Compliance & Review -->
         <div class="faq-category" data-cat="compliance">
           <div class="faq-cat-header">
-            <div class="faq-cat-icon" style="background:rgba(251,114,153,.15)">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#FB7299" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div class="faq-cat-icon" style="background:rgba(77,208,225,.15)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#4DD0E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
             <span class="faq-cat-title">Compliance &amp; Review</span>
             <span class="faq-cat-count">4 questions</span>
