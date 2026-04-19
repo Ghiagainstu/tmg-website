@@ -165,6 +165,26 @@
     .whatsapp-cta__desc{font-size:1rem;color:var(--c-t2);max-width:440px;line-height:1.7}
     .whatsapp-cta__actions{display:flex;gap:.75rem;flex-wrap:wrap;justify-content:center}
     @media(max-width:640px){.filter-bar{flex-direction:column;align-items:flex-start}.search-box{min-width:100%}.tabs{flex-direction:column;width:100%}}
+    /* Contact section styles added to match homepage */
+    .contact__grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12); }
+    .contact__info-title { font-size: var(--font-size-2xl); font-weight: 700; margin-bottom: var(--space-4); }
+    .contact__info-text { color: var(--color-text-secondary); margin-bottom: var(--space-8); }
+    .contact__methods { display: flex; flex-direction: column; gap: var(--space-6); }
+    .contact__method { display: flex; align-items: flex-start; gap: var(--space-4); }
+    .contact__method-icon { width: 48px; height: 48px; background: rgba(45, 107, 228, 0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--color-primary-light); flex-shrink: 0; }
+    .contact__method-content h4 { font-size: var(--font-size-base); font-weight: 600; margin-bottom: var(--space-1); }
+    .contact__method-content p { color: var(--color-text-secondary); font-size: var(--font-size-sm); }
+    .contact__method-content a { color: var(--color-accent); text-decoration: none; }
+    .contact__method-content a:hover { text-decoration: underline; }
+    .contact__form { background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 16px; padding: var(--space-8); }
+    .form__group { margin-bottom: var(--space-5); }
+    .form__label { display: block; font-size: var(--font-size-sm); font-weight: 500; margin-bottom: var(--space-2); color: var(--color-text-primary); }
+    .form__input, .form__textarea, .form__select { width: 100%; padding: var(--space-3) var(--space-4); background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: 8px; color: var(--color-text-primary); font-family: inherit; font-size: var(--font-size-base); transition: all 200ms ease; }
+    .form__input:focus, .form__textarea:focus, .form__select:focus { outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(45, 107, 228, 0.2); }
+    .form__input::placeholder, .form__textarea::placeholder { color: var(--color-text-muted); }
+    .form__textarea { min-height: 120px; resize: vertical; }
+    .form__select { cursor: pointer; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23a3b1cc' d='M6 8L1 3h10z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; padding-right: 36px; }
+    .form__submit { width: 100%; padding: var(--space-4); font-size: var(--font-size-base); font-weight: 600; }
   </style>
 </head>
 <body>
