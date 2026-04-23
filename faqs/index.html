@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root{--c-bg:#080c14;--c-bg-alt:#0d1220;--c-card:#111827;--c-t1:#f0f4ff;--c-t2:#a3b1cc;--c-t3:#64748b;--c-primary:#2d6be4;--c-primary-h:#1e55c4;--c-accent:#c9a84c;--c-accent-l:#e8c87a;--c-border:#1e2d45;--c-border-h:#2d4060;--c-baidu:#4152dd;--c-xhs:#e8202a;--c-wechat:#07c160;--c-ocean:#c9a84c;--c-bilibili:#4DD0E1;--c-geo:#8B5CF6;--ff:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--r-sm:.375rem;--r-md:.5rem;--r-lg:.75rem;--r-xl:1rem;--tr:.25s;--space-4:1rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;--space-12:3rem;--space-16:4rem;--space-20:5rem;--font-size-xs:.75rem;--font-size-sm:.875rem;--font-size-base:1rem;--font-size-lg:1.125rem;--font-size-xl:1.25rem;--font-size-2xl:1.5rem;--font-size-3xl:1.875rem;--transition-fast:.15s;--transition-normal:.3s;--transition-slow:.5s;--color-bg:var(--c-bg);--color-bg-secondary:var(--c-bg-alt);--color-bg-alt:var(--c-bg-alt);--color-bg-card:var(--c-card);--color-text-primary:var(--c-t1);--color-text-secondary:var(--c-t2);--color-text-muted:var(--c-t3);--color-primary:var(--c-primary);--color-primary-light:var(--c-primary);--color-accent:var(--c-accent);--color-accent-light:var(--c-accent-l);--color-border:var(--c-border)}
+    :root{--c-bg:#080c14;--c-bg-alt:#0d1220;--c-card:#111827;--c-t1:#f0f4ff;--c-t2:#a3b1cc;--c-t3:#64748b;--c-primary:#2d6be4;--c-primary-h:#1e55c4;--c-accent:#c9a84c;--c-accent-l:#e8c87a;--c-border:#1e2d45;--c-border-h:#2d4060;--c-baidu:#4152dd;--c-xhs:#e8202a;--c-wechat:#07c160;--c-ocean:#c9a84c;--c-bilibili:#4DD0E1;--c-geo:#8B5CF6;--c-bing:#00809D;--ff:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--r-sm:.375rem;--r-md:.5rem;--r-lg:.75rem;--r-xl:1rem;--tr:.25s;--space-4:1rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;--space-12:3rem;--space-16:4rem;--space-20:5rem;--font-size-xs:.75rem;--font-size-sm:.875rem;--font-size-base:1rem;--font-size-lg:1.125rem;--font-size-xl:1.25rem;--font-size-2xl:1.5rem;--font-size-3xl:1.875rem;--transition-fast:.15s;--transition-normal:.3s;--transition-slow:.5s;--color-bg:var(--c-bg);--color-bg-secondary:var(--c-bg-alt);--color-bg-alt:var(--c-bg-alt);--color-bg-card:var(--c-card);--color-text-primary:var(--c-t1);--color-text-secondary:var(--c-t2);--color-text-muted:var(--c-t3);--color-primary:var(--c-primary);--color-primary-light:var(--c-primary);--color-accent:var(--c-accent);--color-accent-light:var(--c-accent-l);--color-border:var(--c-border)}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
     body{font-family:var(--ff);font-size:1rem;line-height:1.6;color:var(--c-t2);background:var(--c-bg);-webkit-font-smoothing:antialiased;padding-top:64px}
@@ -218,6 +218,7 @@
     .tab--ocean.active{color:var(--c-accent)}
     .tab--bilibili.active{color:var(--c-ocean)}
     .tab--geo.active{color:var(--c-geo)}
+    .tab--bing.active{color:var(--c-bing)}
     .tab__dot{width:8px;height:8px;border-radius:50%}
     .tab--baidu .tab__dot{background:var(--c-baidu)}
     .tab--xhs .tab__dot{background:var(--c-xhs)}
@@ -225,6 +226,7 @@
     .tab--ocean .tab__dot{background:var(--c-accent)}
     .tab--bilibili .tab__dot{background:var(--c-bilibili)}
     .tab--geo .tab__dot{background:var(--c-geo)}
+    .tab--bing .tab__dot{background:var(--c-bing)}
     .filter-bar{padding:1.5rem 0;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-bottom:1px solid var(--c-border)}
     .filter-tabs{display:flex;gap:.5rem;flex-wrap:wrap}
     .filter-tab{padding:.375rem .875rem;font-family:var(--ff);font-size:.8125rem;font-weight:500;border-radius:999px;border:1px solid var(--c-border);background:transparent;color:var(--c-t3);cursor:pointer;transition:all var(--tr)}
@@ -579,6 +581,9 @@
           </button>
           <button class="tab tab--geo" data-platform="geo">
             <span class="tab__dot"></span> China GEO
+          </button>
+          <button class="tab tab--bing" data-platform="bing">
+            <span class="tab__dot"></span> Bing China
           </button>
         </div>
       </div>
@@ -2113,6 +2118,133 @@
         </div>
       </div>
 
+      <!-- Bing China FAQ -->
+      <div class="faq-platform" id="platform-bing" data-platform="bing">
+
+        <!-- User Demographics -->
+        <div class="faq-category" data-cat="bing-demographics">
+          <div class="faq-cat-header">
+            <div class="faq-cat-icon" style="background:rgba(0,128,157,.15)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#00809D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <span class="faq-cat-title">User Demographics</span>
+            <span class="faq-cat-count">3 questions</span>
+          </div>
+
+          <details class="faq-card">
+            <summary class="faq-q">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              <span class="faq-num faq-num--bing">B1</span>
+              <span class="faq-q-text">Who uses Bing in China?</span>
+            </summary>
+            <div class="faq-a">
+              <p>Bing China's user base represents a premium audience: highly educated, urban, and with above-average income.</p>
+              <ul>
+                <li><strong>Age:</strong> Over 75% are under 45</li>
+                <li><strong>Education:</strong> More than 75% hold college degrees, compared to 57% national average</li>
+                <li><strong>Income:</strong> 27.5% overrepresentation in personal monthly income over ¥8,000 (TGI 127.5)</li>
+                <li><strong>Location:</strong> Concentrated in Tier 1-3 cities</li>
+                <li><strong>Gender:</strong> 57% male, 43% female</li>
+              </ul>
+              <p>This makes Bing China users ideal for brands targeting educated professionals, urban consumers, and premium product segments.</p>
+            </div>
+          </details>
+
+          <details class="faq-card">
+            <summary class="faq-q">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              <span class="faq-num faq-num--bing">B2</span>
+              <span class="faq-q-text">How do Bing China users differ from Baidu users?</span>
+            </summary>
+            <div class="faq-a">
+              <p>Bing China attracts a younger, more educated, and higher-income demographic compared to Baidu's broader user base.</p>
+              <table>
+                <thead>
+                  <tr><th>Metric</th><th>Bing China</th><th>Baidu (Estimated)</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Age concentration</td><td>Under 45 dominant</td><td>Broader age distribution</td></tr>
+                  <tr><td>College education</td><td>>75%</td><td>~57% (national average)</td></tr>
+                  <tr><td>Urban focus</td><td>Tier 1-3 cities</td><td>More nationwide spread</td></tr>
+                  <tr><td>Income level</td><td>Overindexed in >¥8k monthly</td><td>More representative of general population</td></tr>
+                </tbody>
+              </table>
+              <p>For international advertisers, this means Bing China offers a more premium audience, while Baidu provides broader reach.</p>
+            </div>
+          </details>
+
+          <details class="faq-cards">
+            <summary class="faq-q">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              <span class="faq-num faq-num--bing">B3</span>
+              <span class="faq-q-text">What are Bing China users interested in buying?</span>
+            </summary>
+            <div class="faq-a">
+              <p>Bing China users show strong purchasing intent across several categories, with average planned spending as follows:</p>
+              <ul>
+                <li><strong>Online shopping:</strong> ¥8,241.1 ($1,100 USD)</li>
+                <li><strong>Education products:</strong> ¥3,040.1 ($405 USD)</li>
+                <li><strong>Software:</strong> ¥633.3 ($84 USD)</li>
+                <li><strong>AI applications:</strong> ¥522.9 ($70 USD)</li>
+              </ul>
+              <p>Additionally, 68% express interest in AI technology, making them early adopters for tech products and services.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Advertising Opportunities -->
+        <div class="faq-category" data-cat="bing-ads">
+          <div class="faq-cat-header">
+            <div class="faq-cat-icon" style="background:rgba(0,128,157,.15)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#00809D" stroke-width="2" stroke-linecap="round" stitchlinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <span class="faq-cat-title">Advertising Opportunities</span>
+            <span class="faq-cat-count">2 questions</span>
+          </div>
+
+          <details class="faq-card">
+            <summary class="faq-q">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stitchlinejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              <span class="faq-num faq-num--bing">B4</span>
+              <span class="faq-q-text">What advertising formats work best on Bing China?</span>
+            </summary>
+            <div class="faq-a">
+              <p>Based on user behavior data, the following ad formats perform well:</p>
+              <ul>
+                <li><strong>Search ads:</strong> 59% of users research products before purchase, making search ads effective for capturing intent</li>
+                <li><strong>Display ads on tech sites:</strong> With 68% interest in AI, technology-focused display ads see higher engagement</li>
+                <li><strong>Education and professional service promotions:</strong> Over 75% college educated, with planned education spending averaging ¥3,040.1</li>
+                <li><strong>Premium brand positioning:</strong> Higher income levels support premium product advertising</li>
+              </ul>
+              <p>Additionally, 62% of users show greater willingness to engage with ads compared to average users.</p>
+            </div>
+          </details>
+
+          <details class="faq-card">
+            <summary class="faq-q">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stitchlinejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              <span class="faq-num faq-num--bing">B5</span>
+              <span class="faq-q-text">Which industries are best suited for Bing China advertising?</span>
+            </summary>
+            <div class="faq-a">
+              <p>High-potential categories include:</p>
+              <ul>
+                <li><strong>Technology & Software:</strong> 68% interest in AI, high education level</li>
+                <li><strong>Education & Training:</strong> >75% college educated, 72.4% plan education spending for children</li>
+                <li><strong>Premium E-commerce:</strong> High disposable income (¥4,334.5 monthly personal consumption)</li>
+                <li><strong>Financial Services:</strong> High income, rational decision-making</li>
+                <li><strong>B2B Services:</strong> Professional user base with decision-making authority</li>
+              </ul>
+              <p>These categories align with the demographic and behavioral characteristics of Bing China users.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="no-results" id="noResultsBing">
+          <p>No matching questions found.</p>
+        </div>
+      </div>
+
     </div><!-- .faq-section -->
   </main>
 
@@ -2414,6 +2546,8 @@
         'geo-pricing': 'Pricing &amp; Budget',
         'geo-delivery': 'Service &amp; Delivery',
         'geo-vs-seo': 'GEO vs SEO &amp; Strategy',
+        'bing-demographics': 'User Demographics',
+        'bing-ads': 'Advertising Opportunities',
         account: 'Account &amp; Setup',
         fees: 'Fees &amp; Budget',
         billing: 'Billing &amp; CPC',
