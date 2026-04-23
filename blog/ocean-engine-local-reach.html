@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ocean Engine Local Reach: Douyin's All-in-One Local Marketing Platform | Tuyue Media Gateway</title>
+  <meta name="description" content="Discover how Ocean Engine Local Reach empowers local businesses to advertise on Douyin. A complete guide to targeting nearby customers, boosting group deals, and growing foot traffic through short video and live streaming ads.">
+  <link rel="canonical" href="https://www.tuyuesouxin.cn/blog/ocean-engine-local-reach/">
+  <meta property="og:title" content="Ocean Engine Local Reach: Douyin's All-in-One Local Marketing Platform">
+  <meta property="og:description" content="Discover how Ocean Engine Local Reach empowers local businesses to advertise on Douyin.">
+  <meta property="og:url" content="https://www.tuyuesouxin.cn/blog/ocean-engine-local-reach/">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #080c14;
+      --bg-alt: #0d1421;
+      --bg-card: #111927;
+      --text: #e8eaf0;
+      --text-muted: #8892a4;
+      --accent: #c9a84c;
+      --accent-dim: rgba(201, 168, 76, 0.12);
+      --border: rgba(201, 168, 76, 0.15);
+      --radius: 12px;
+      --max-w: 860px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── NAV ── */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(8,12,20,.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+      height: 64px;
+      display: flex; align-items: center;
+    }
+    .nav__inner { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; gap: 2rem; }
+    .nav__logo { display: flex; align-items: center; gap: .6rem; font-weight: 700; font-size: 1.1rem; color: var(--accent); text-decoration: none; flex-shrink: 0; }
+    .nav__logo svg { width: 32px; height: 32px; }
+    .nav__links { display: flex; gap: 1.5rem; list-style: none; margin-left: auto; }
+    .nav__links a { color: var(--text-muted); font-size: .9rem; font-weight: 500; transition: color .2s; }
+    .nav__links a:hover { color: var(--text); text-decoration: none; }
+    .nav__dropdown { position: relative; }
+    .nav__dropdown-trigger { display: flex; align-items: center; gap: .3rem; cursor: pointer; }
+    .nav__dropdown-arrow { transition: transform .2s; font-size: .7rem; }
+    .nav__dropdown-menu { display: none; position: absolute; top: calc(100% + .75rem); left: 0; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: .5rem; min-width: 180px; flex-direction: column; gap: .25rem; box-shadow: 0 8px 32px rgba(0,0,0,.4); }
+    .nav__dropdown:hover .nav__dropdown-menu,
+    .nav__dropdown.open .nav__dropdown-menu { display: flex; }
+    .nav__dropdown:hover .nav__dropdown-arrow,
+    .nav__dropdown.open .nav__dropdown-arrow { transform: rotate(180deg); }
+    .nav__dropdown-menu a { color: var(--text-muted); padding: .5rem .75rem; border-radius: 8px; font-size: .88rem; display: block; transition: background .15s, color .15s; }
+    .nav__dropdown-menu a:hover { background: var(--accent-dim); color: var(--accent); text-decoration: none; }
+    .nav__cta { background: var(--accent); color: #080c14 !important; padding: .45rem 1.1rem; border-radius: 8px; font-weight: 600; font-size: .88rem !important; transition: opacity .2s !important; }
+    .nav__cta:hover { opacity: .85; text-decoration: none !important; }
+
+    /* ── HERO ── */
+    .article-hero {
+      padding: 8rem 2rem 3rem;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(201,168,76,.06) 0%, transparent 100%);
+      border-bottom: 1px solid var(--border);
+    }
+    .article-hero .tag {
+      display: inline-block;
+      background: rgba(201,168,76,.15);
+      color: var(--accent);
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: .3rem .85rem;
+      border-radius: 100px;
+      margin-bottom: 1.25rem;
+    }
+    .article-hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800;
+      line-height: 1.2;
+      max-width: 760px;
+      margin: 0 auto 1.25rem;
+      background: linear-gradient(135deg, #fff 0%, #d0c4a8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .article-hero .meta { color: var(--text-muted); font-size: .875rem; display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
+    .article-hero .meta span { display: flex; align-items: center; gap: .4rem; }
+
+    /* ── LAYOUT ── */
+    .layout { max-width: var(--max-w); margin: 0 auto; padding: 3rem 1.5rem 6rem; display: grid; grid-template-columns: 1fr; gap: 0; }
+
+    /* ── TOC ── */
+    .toc { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; margin-bottom: 2.5rem; }
+    .toc h2 { font-size: .8rem; text-transform: uppercase; letter-spacing: .1em; color: var(--accent); margin-bottom: .75rem; font-weight: 700; }
+    .toc ol { list-style: none; counter-reset: toc; }
+    .toc li { counter-increment: toc; }
+    .toc li::before { content: counter(toc) '. '; color: var(--accent); font-weight: 600; }
+    .toc a { color: var(--text-muted); font-size: .9rem; display: block; padding: .3rem 0; transition: color .2s; }
+    .toc a:hover { color: var(--accent); text-decoration: none; }
+
+    /* ── PROSE ── */
+    .prose h2 { font-size: 1.45rem; font-weight: 700; margin: 2.5rem 0 .75rem; color: #fff; border-left: 3px solid var(--accent); padding-left: .85rem; }
+    .prose h3 { font-size: 1.1rem; font-weight: 600; margin: 1.5rem 0 .5rem; color: #e0d8c8; }
+    .prose p { margin-bottom: 1rem; color: #c8ccd8; }
+    .prose ul, .prose ol { margin: .75rem 0 1rem 1.5rem; }
+    .prose li { margin-bottom: .4rem; color: #c8ccd8; }
+    .prose strong { color: var(--accent); font-weight: 600; }
+    .prose blockquote {
+      border-left: 3px solid var(--accent);
+      padding: .75rem 1.25rem;
+      margin: 1.5rem 0;
+      background: var(--accent-dim);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      font-size: 1.05rem;
+      color: #d8d0b8;
+      font-style: italic;
+    }
+
+    /* ── CALLOUT ── */
+    .callout {
+      background: var(--accent-dim);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+      display: flex; gap: 1rem; align-items: flex-start;
+    }
+    .callout__icon { font-size: 1.3rem; flex-shrink: 0; }
+    .callout p { margin: 0; color: #d8d0b8; font-size: .95rem; }
+
+    /* ── FEATURE GRID ── */
+    .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin: 1.25rem 0; }
+    .feature-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+    }
+    .feature-card__icon { font-size: 1.6rem; margin-bottom: .6rem; }
+    .feature-card h3 { font-size: .95rem; font-weight: 700; margin-bottom: .35rem; color: #fff; }
+    .feature-card p { font-size: .85rem; color: var(--text-muted); margin: 0; }
+
+    /* ── TAKEAWAYS ── */
+    .takeaways { background: linear-gradient(135deg, rgba(201,168,76,.08), rgba(201,168,76,.03)); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem; margin: 2rem 0; }
+    .takeaways h2 { border-left-color: #fff; color: #fff; font-size: 1.15rem; }
+    .takeaways ul { margin: .5rem 0 0 1.25rem; }
+    .takeaways li { margin-bottom: .5rem; color: #d0c8b8; font-size: .92rem; }
+
+    /* ── FOOTER ── */
+    footer { background: var(--bg-alt); border-top: 1px solid var(--border); padding: 2.5rem 2rem; margin-top: 4rem; }
+    .footer__inner { max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: space-between; align-items: center; }
+    .footer__brand { font-size: .85rem; color: var(--text-muted); }
+    .footer__brand span { color: var(--accent); font-weight: 600; }
+    .footer__links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    .footer__links a { color: var(--text-muted); font-size: .85rem; transition: color .2s; }
+    .footer__links a:hover { color: var(--accent); }
+
+    @media (max-width: 768px) {
+      .nav__links { display: none; }
+      .article-hero { padding: 6rem 1.5rem 2rem; }
+      .layout { padding: 2rem 1rem 4rem; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Ocean Engine Local Reach: Douyin's All-in-One Local Marketing Platform",
+    "description": "Discover how Ocean Engine Local Reach empowers local businesses to advertise on Douyin. A complete guide to targeting nearby customers, boosting group deals, and growing foot traffic through short video and live streaming ads.",
+    "author": {
+      "@type": "Organization",
+      "name": "Tuyue Media Gateway",
+      "url": "https://www.tuyuesouxin.cn"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Tuyue Media Gateway",
+      "url": "https://www.tuyuesouxin.cn"
+    },
+    "datePublished": "2026-04-23",
+    "dateModified": "2026-04-23",
+    "url": "https://www.tuyuesouxin.cn/blog/ocean-engine-local-reach/",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.tuyuesouxin.cn/blog/ocean-engine-local-reach/"
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Ocean Engine Local Reach",
+      "description": "Douyin's local marketing and advertising platform for life service businesses"
+    },
+    "keywords": "Ocean Engine Local Reach, Douyin ads, local marketing China, short video advertising, group deals, life services advertising"
+  }
+  </script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="../" class="nav__logo">
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="16" cy="16" r="14" stroke="#c9a84c" stroke-width="2"/>
+        <circle cx="22" cy="10" r="8" fill="#080c14"/>
+        <text x="16" y="20" font-family="Inter,sans-serif" font-size="10" font-weight="800" fill="#c9a84c" text-anchor="middle">TMG</text>
+      </svg>
+      Tuyue Media Gateway
+    </a>
+    <ul class="nav__links">
+      <li><a href="../">Home</a></li>
+      <li class="nav__dropdown">
+        <span class="nav__dropdown-trigger"><a href="../services/">Services</a> <span class="nav__dropdown-arrow">&#9662;</span></span>
+        <div class="nav__dropdown-menu">
+          <a href="../services/wechat/">WeChat Ads</a>
+          <a href="../services/douyin/">Douyin Ads</a>
+          <a href="../services/baidu/">Baidu SEM</a>
+          <a href="../services/xiaohongshu/">Xiaohongshu Ads</a>
+          <a href="../geo/">China GEO</a>
+        </div>
+      </li>
+      <li><a href="../pricing/">Pricing</a></li>
+      <li><a href="../client-stories/">Client Stories</a></li>
+      <li><a href="./">Blog</a></li>
+      <li><a href="../about/">About</a></li>
+      <li><a href="../contact/" class="nav__cta">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="article-hero">
+  <span class="tag">Douyin Advertising</span>
+  <h1>Ocean Engine Local Reach: Douyin's All-in-One Local Marketing Platform</h1>
+  <div class="meta">
+    <span>&#128197; April 23, 2026</span>
+    <span>&#128214; 8 min read</span>
+    <span>&#128214; Source: Ocean Engine Encyclopedia</span>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main class="layout">
+  <aside class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#what">What Is Ocean Engine Local Reach?</a></li>
+      <li><a href="#three-platforms">Three Platforms, One Strategy</a></li>
+      <li><a href="#three-goals">The Three Marketing Goals</a></li>
+      <li><a href="#four-values">Four Core Values for Local Businesses</a></li>
+      <li><a href="#anchor-points">Exclusive Anchor Points: Your Gateway to Douyin Traffic</a></li>
+      <li><a href="#setup">Getting Started: Account Setup Guide</a></li>
+      <li><a href="#implications">What This Means for International Advertisers</a></li>
+    </ol>
+  </aside>
+
+  <article class="prose">
+
+    <p>For international brands and media buyers exploring China's local consumer market, Douyin—the platform with over 700 million daily active users—is an indispensable channel. But running effective local campaigns on Douyin has traditionally required deep platform expertise and significant operational overhead.</p>
+
+    <p><strong>Ocean Engine Local Reach</strong> (巨量本地推) changes that equation. Launched by ByteDance's advertising arm, this dedicated local marketing tool gives restaurants, salons, gyms, clinics, and any brick-and-mortar business a streamlined way to reach nearby customers through short video and live streaming ads—all without needing a full in-house team.</p>
+
+    <p>Here's what international advertisers need to know about this platform.</p>
+
+    <h2 id="what">What Is Ocean Engine Local Reach?</h2>
+
+    <p>Ocean Engine Local Reach is a specialized advertising module within Douyin's ecosystem, purpose-built for life services businesses (生活服务商家). It sits within the Douyin ecosystem—not as a standalone app, but as a service layer accessible via three entry points:</p>
+
+    <ul>
+      <li><strong>Douyin Landing Customer App (抖音来客):</strong> For merchants already operating on Douyin.</li>
+      <li><strong>PC/Web Portal:</strong> For agencies and brands requiring more granular campaign management.</li>
+      <li><strong>In-Douyin Entry:</strong> Accessible via search within Douyin for quick campaign creation.</li>
+    </ul>
+
+    <p>The platform was launched progressively: the mobile app debuted in June 2022, the desktop version in August 2022, and the in-Douyin entry in December 2022—reflecting ByteDance's strategy of meeting merchants where they are.</p>
+
+    <div class="callout">
+      <span class="callout__icon">&#128161;</span>
+      <p><strong>Why this matters for international advertisers:</strong> Ocean Engine Local Reach is the most direct path for targeting Douyin's massive local user base with location-based precision. Unlike broad-reach brand campaigns, this platform is engineered for foot traffic, in-store conversions, and local brand building.</p>
+    </div>
+
+    <h2 id="three-platforms">Three Platforms, One Strategy</h2>
+
+    <p>Understanding where to access the platform is the first strategic decision. Each version serves a different operational profile:</p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-card__icon">&#128241;</div>
+        <h3>Mobile App (抖音来客)</h3>
+        <p>Best for: merchants with immediate, real-time marketing needs. Ideal for promotions tied to daily operations, seasonal events, or flash sales.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">&#128187;</div>
+        <h3>PC Desktop Portal</h3>
+        <p>Best for: agencies and brands requiring multi-location management, detailed performance analytics, and fine-grained budget control. Supports agency-led account opening.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">&#128269;</div>
+        <h3>In-Douyin Entry</h3>
+        <p>Best for: merchants and agencies who want to initiate campaigns directly from within Douyin's content ecosystem—lowest barrier to entry.</p>
+      </div>
+    </div>
+
+    <h2 id="three-goals">The Three Marketing Goals</h2>
+
+    <p>Ocean Engine Local Reach organizes advertising around three distinct conversion objectives. Choosing the right one is critical for campaign performance.</p>
+
+    <h3>&#127968; Short Video → Store Visits</h3>
+    <p>Drive nearby users to physically visit your store by promoting your location (POI). The ad displays your store's Douyin page with address, hours, and reviews. Best for: restaurants, gyms, clinics, salons, retail stores.</p>
+
+    <h3>&#128722; Short Video → Group Deal Purchases</h3>
+    <p>Promote specific products or service packages directly within Douyin's shopping ecosystem. Users can purchase团购 (group deals) without leaving the app. Best for: beauty salons, dental clinics, tutoring centers, entertainment venues.</p>
+
+    <h3>&#128250; Live Stream → Group Deal Sales</h3>
+    <p>Run live commerce campaigns that convert viewers into group deal buyers in real time. Combines the engagement of live streaming with direct e-commerce functionality. Best for: food delivery promotions, event tickets, course enrollments.</p>
+
+    <h2 id="four-values">Four Core Values for Local Businesses</h2>
+
+    <p>Ocean Engine Local Reach is built around four strategic promises. Here's how each translates to advertiser benefit:</p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-card__icon">&#128101;</div>
+        <h3>Multi-Role Support</h3>
+        <p>Supports Douyin merchants, enterprise account deal sellers, regular creators, local influencers (KOC), and even non-merchant businesses. Flexible enough for virtually any partnership model.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">&#128181;</div>
+        <h3>Group Deal Sales Focus</h3>
+        <p>Local-specific targeting strategies combined with conversion-optimized bidding. Designed to maximize deal purchases, not just impressions.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">&#128205;</div>
+        <h3>Hyper-Local Targeting</h3>
+        <p>Geo-targeting down to the store's surrounding area. No wasted spend on users outside your service radius—critical for businesses with limited geographic reach.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">&#9889;</div>
+        <h3>Minimal Operations Required</h3>
+        <p>Auto-optimization means campaigns run without constant monitoring. Beginners can launch effective campaigns without a dedicated media buyer on staff.</p>
+      </div>
+    </div>
+
+    <h2 id="anchor-points">Exclusive Anchor Points: Your Gateway to Douyin Traffic</h2>
+
+    <p>One of the most strategically valuable features of Ocean Engine Local Reach is its exclusive anchor point system. When a short video or live stream includes a local-specific anchor point, the Douyin platform surfaces the Local Reach entry point—making your ad discoverable to <strong>all users</strong>, not just those who follow your account.</p>
+
+    <p>This creates a powerful viral amplification effect: organic content combined with paid Local Reach targeting can compound reach dramatically.</p>
+
+    <h3>For Short Videos</h3>
+    <ul>
+      <li><strong>Product Anchor:</strong> Links directly to a group deal tied to the merchant's offering.</li>
+      <li><strong>Store Visit Anchor (POI):</strong> Links to the merchant's verified business location on Douyin—driving navigation and foot traffic.</li>
+    </ul>
+
+    <h3>For Live Streams</h3>
+    <p>The <strong>Local Live Commerce anchor</strong> (小房子锚点) is Douyin's exclusive live commerce component for life services. It displays active group deal products during the live stream and allows viewers to purchase without leaving the stream.</p>
+
+    <h2 id="setup">Getting Started: Account Setup Guide</h2>
+
+    <p>The onboarding process is streamlined across all three platform versions. Here is the path for each:</p>
+
+    <h3>&#128241; Via the App</h3>
+    <ol>
+      <li><strong>One-Click Account Opening:</strong> Confirm just three pieces of information—account name, industry category, and company name. No documentation maze.</li>
+      <li><strong>Douyin Account Authorization:</strong> If working with influencers or creators, submit a collaboration request and receive their confirmation.</li>
+      <li><strong>Choose Your Objective:</strong> Select Store Visits, Product Promotions, or Live Commerce, then create your first campaign.</li>
+    </ol>
+
+    <h3>&#128187; Via Desktop</h3>
+    <p>Desktop access requires prior Douyin merchant (抖音来客) registration. Agencies can open sub-accounts on behalf of clients. Entry points: Douyin Landing Customer Desktop, standalone Local Reach portal, or Ocean Ark platform.</p>
+
+    <h3>&#128269; Via In-Douyin Search</h3>
+    <p>Simply search "巨量本地推" within Douyin, click "Go to View," and follow the guided onboarding. This path supports all merchant types—from established businesses to independent creators to non-merchant organizations.</p>
+
+    <div class="takeaways">
+      <h2>Key Takeaways for International Advertisers</h2>
+      <ul>
+        <li><strong>Local Reach is essential for brick-and-mortar brands</strong> entering the Chinese market or expanding beyond Tier-1 cities—its geo-targeting is unmatched for physical store promotions.</li>
+        <li><strong>The anchor point system is a strategic multiplier.</strong> Organic short video content combined with Local Reach paid amplification creates compounding exposure across Douyin's algorithm.</li>
+        <li><strong>Low operational barrier</strong> makes this viable for SMBs and franchises, but also for international chains looking for a lightweight China market entry strategy.</li>
+        <li><strong>Three platform versions</strong> (App, PC, In-Douyin) mean advertisers can choose the operational depth that matches their resources.</li>
+        <li><strong>Group deal integration</strong> inside Douyin's ecosystem removes the need for a separate e-commerce checkout flow—significantly improving conversion rates for service businesses.</li>
+      </ul>
+    </div>
+
+    <h2 id="implications">What This Means for Your Media Strategy</h2>
+
+    <p>For international media buyers and brand managers, Ocean Engine Local Reach represents one of the most direct and measurable pathways into China's local consumer economy. Unlike broad awareness campaigns or performance Brand Search ads, Local Reach campaigns are designed around tangible local outcomes:</p>
+
+    <ul>
+      <li>Foot traffic to physical locations</li>
+      <li>Group deal purchases</li>
+      <li>Follower growth for Douyin merchant accounts</li>
+    </ul>
+
+    <p>The platform's exclusive anchor point mechanics mean that creative content—short videos or live streams—becomes the vehicle for both organic discovery and paid amplification. This is a fundamentally different media model from traditional digital advertising, and one that rewards advertisers who invest in localized, authentic content.</p>
+
+    <p>Whether you are managing campaigns for a global brand exploring China's domestic market or a local chain looking to dominate a specific neighborhood, Ocean Engine Local Reach deserves a prominent place in your Douyin media mix.</p>
+
+    <blockquote>
+      "For brands targeting China's local consumer market, Ocean Engine Local Reach is not just another ad product—it is the bridge between Douyin's massive reach and real-world store performance."
+    </blockquote>
+
+    <p style="margin-top:2rem; color:var(--text-muted); font-size:.875rem; border-top:1px solid var(--border); padding-top:1.5rem;">
+      <strong>Source:</strong> Ocean Engine Encyclopedia — 巨量本地推 entry. Published December 14, 2022.<br>
+      <strong>Prepared by:</strong> Tuyue Media Gateway — China's paid media specialist for international brands.
+    </p>
+
+  </article>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span>Tuyue Media Gateway</span> — China's paid media partner for global brands.
+    </div>
+    <div class="footer__links">
+      <a href="../services/">Services</a>
+      <a href="../geo/">China GEO</a>
+      <a href="../faqs/">FAQ</a>
+      <a href="../contact/">Contact</a>
+      <a href="../">Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Dropdown interaction
+  document.querySelectorAll('.nav__dropdown-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.preventDefault();
+      var nav = document.querySelector('.nav__inner') || document;
+      nav.querySelectorAll('.nav__dropdown').forEach(function(d) { d.classList.remove('open'); });
+      this.closest('.nav__dropdown').classList.toggle('open');
+    });
+  });
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.nav__dropdown')) {
+      document.querySelectorAll('.nav__dropdown').forEach(function(d) { d.classList.remove('open'); });
+    }
+  });
+</script>
+
+</body>
+</html>

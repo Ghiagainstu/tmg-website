@@ -49,10 +49,12 @@
       .header__dropdown-trigger{display:flex;align-items:center;gap:4px}
       .header__dropdown-arrow{transition:transform var(--transition-fast)}
       .header__dropdown:hover .header__dropdown-arrow,
-      .header__dropdown:focus-within .header__dropdown-arrow{transform:rotate(180deg)}
+      .header__dropdown:focus-within .header__dropdown-arrow,
+      .header__dropdown.open .header__dropdown-arrow{transform:rotate(180deg)}
       .header__dropdown-menu{position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%) translateY(-8px);background:var(--color-bg-card);border:1px solid var(--color-border);border-radius:10px;padding:.5rem 0;min-width:180px;display:none;opacity:0;box-shadow:0 8px 24px rgba(0,0,0,.4);z-index:200}
       .header__dropdown:hover .header__dropdown-menu,
-      .header__dropdown:focus-within .header__dropdown-menu{display:flex;flex-direction:column;opacity:1;transform:translateX(-50%) translateY(0)}
+      .header__dropdown:focus-within .header__dropdown-menu,
+      .header__dropdown.open .header__dropdown-menu{display:flex;flex-direction:column;opacity:1;transform:translateX(-50%) translateY(0)}
       .header__dropdown-item{font-size:var(--font-size-sm);font-weight:500;color:var(--color-text-secondary);padding:.625rem 1rem;border-radius:6px;white-space:nowrap;text-decoration:none;transition:background .15s,color .15s}
       .header__dropdown-item:hover{background:rgba(201,168,76,.1);color:var(--c-accent);text-decoration:none}
     }
@@ -139,7 +141,8 @@
         transition: transform var(--transition-fast);
       }
 
-      .header__dropdown.active .header__dropdown-arrow {
+      .header__dropdown.active .header__dropdown-arrow,
+      .header__dropdown.open .header__dropdown-arrow {
         transform: rotate(180deg);
       }
 
@@ -150,7 +153,8 @@
         padding: 0;
       }
 
-      .header__dropdown.active .header__dropdown-menu {
+      .header__dropdown.active .header__dropdown-menu,
+      .header__dropdown.open .header__dropdown-menu {
         display: flex;
       }
 
@@ -1533,6 +1537,70 @@
           </details>
         </div>
 
+        <!-- Platform & Tools -->
+        <div class="faq-category" data-cat="platform">
+          <div class="faq-cat-header">
+            <div class="faq-cat-icon" style="background:rgba(201,168,76,.15)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <span class="faq-cat-title">Platform &amp; Tools</span>
+            <span class="faq-cat-count">4 questions</span>
+          </div>
+
+          <details class="faq-card">
+            <summary class="faq-q">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              <span class="faq-num faq-num--o">O15</span>
+              <span class="faq-q-text">How many Ocean Engine accounts can I manage on one device?</span>
+            </summary>
+            <div class="faq-a">
+              <p>The Ocean Engine App (巨量引擎APP) supports up to 5 logged-in accounts per device. This limit is set to protect account security and ensure clean permission separation across teams.</p>
+              <p>If you manage more than 5 accounts, you can grant access to additional accounts through the authorization mechanism within the platform — no need to log in and out repeatedly. For large agency setups managing dozens of advertiser accounts, authorization is the recommended approach.</p>
+            </div>
+          </details>
+
+          <details class="faq-card">
+            <summary class="faq-q">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              <span class="faq-num faq-num--o">O16</span>
+              <span class="faq-q-text">Where do I find Comment Management and Lead Management in the new Ocean Engine App?</span>
+            </summary>
+            <div class="faq-a">
+              <p>After the latest app update, Comment Management and Lead Management have moved. The new path is:</p>
+              <p><strong>Home → Tap [All Accounts] at the top → Select a specific account → Scroll to the bottom → [Common Tools]</strong></p>
+              <p>Both Comment Management and Lead Management are now grouped under Common Tools, along with other frequently used utilities. If you bookmarked a shortcut on the old version, it will no longer work — you will need to navigate through this new path after updating.</p>
+            </div>
+          </details>
+
+          <details class="faq-card">
+            <summary class="faq-q">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              <span class="faq-num faq-num--o">O17</span>
+              <span class="faq-q-text">How do I adjust account budget in the Ocean Engine App?</span>
+            </summary>
+            <div class="faq-a">
+              <p>There are two ways to modify account-level budget directly in the app:</p>
+              <p><strong>Path 1 (Juliangqianchuan &amp; Juliangmarketing):</strong> Home → Tap [All Accounts] at the top → Select an account → Budget field is editable inline on the account overview page.</p>
+              <p><strong>Path 2 (Juliangmarketing only):</strong> Accounts tab → Long-press a single account → Quick budget edit option appears.</p>
+              <p>Path 1 supports both Juliangqianchuan (e-commerce) and Juliangmarketing (brand/performance) accounts. Path 2 is Juliangmarketing only. If you do not see the budget edit option, check whether your account role has budget management permissions.</p>
+            </div>
+          </details>
+
+          <details class="faq-card">
+            <summary class="faq-q">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              <span class="faq-num faq-num--o">O18</span>
+              <span class="faq-q-text">How do I contact Ocean Engine customer support?</span>
+            </summary>
+            <div class="faq-a">
+              <p>Within the Ocean Engine App, you can reach customer support via:</p>
+              <p><strong>Accounts → Select a single account → Account Center → Tap [Contact Support]</strong></p>
+              <p>A live support agent is available through this channel for real-time troubleshooting. This is the fastest route for account-specific issues such as billing disputes, ad rejection appeals, or access problems.</p>
+              <p>For audit-related questions and human review escalations, those are handled by the Juliangwenwen (巨量问问) system, not through the main support channel.</p>
+            </div>
+          </details>
+        </div>
+
         <div class="no-results" id="noResultsOcean">
           <p>No matching questions found.</p>
         </div>
@@ -2243,10 +2311,18 @@
           var trigger = dropdown.querySelector('.header__dropdown-trigger');
           if (trigger) {
             trigger.addEventListener('click', function (e) {
-              if (window.innerWidth <= 768) {
-                e.preventDefault();
-                dropdown.classList.toggle('active');
-              }
+              e.preventDefault();
+              nav.querySelectorAll('.header__dropdown').forEach(function (d) {
+                if (d !== dropdown) d.classList.remove('open');
+              });
+              dropdown.classList.toggle('open');
+            });
+          }
+        });
+        document.addEventListener('click', function (e) {
+          if (!nav.contains(e.target)) {
+            nav.querySelectorAll('.header__dropdown').forEach(function (d) {
+              d.classList.remove('open');
             });
           }
         });
@@ -2341,7 +2417,8 @@
         account: 'Account &amp; Setup',
         fees: 'Fees &amp; Budget',
         billing: 'Billing &amp; CPC',
-        compliance: 'Compliance &amp; Review'
+        compliance: 'Compliance &amp; Review',
+        platform: 'Platform &amp; Tools'
       };
       let html = '<button class="filter-tab active" data-cat="all">All</button>';
       for (const [k, v] of Object.entries(cats)) {

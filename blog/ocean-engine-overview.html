@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ocean Engine: Douyin's Unified Digital Marketing Platform Explained | Tuyue Media Gateway</title>
+  <meta name="description" content="Ocean Engine is ByteDance's all-in-one advertising platform spanning Douyin, Toutiao, Xigua Video, and 8+ other properties. Learn the platform's mission, product ecosystem, and what it means for international advertisers.">
+  <link rel="canonical" href="https://www.tuyuesouxin.cn/blog/ocean-engine-overview/">
+  <meta property="og:title" content="Ocean Engine: Douyin's Unified Digital Marketing Platform Explained">
+  <meta property="og:description" content="Ocean Engine spans Douyin, Toutiao, Xigua Video, and 8+ other properties. Learn the platform's mission, product ecosystem, and what it means for international advertisers.">
+  <meta property="og:url" content="https://www.tuyuesouxin.cn/blog/ocean-engine-overview/">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #080c14; --bg-alt: #0d1421; --bg-card: #111927;
+      --text: #e8eaf0; --text-muted: #8892a4; --accent: #c9a84c;
+      --accent-dim: rgba(201,168,76,.12); --border: rgba(201,168,76,.15);
+      --radius: 12px; --max-w: 860px;
+    }
+    body { background: var(--bg); color: var(--text); font-family: 'Inter',-apple-system,sans-serif; font-size: 16px; line-height: 1.75; -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(8,12,20,.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 0 2rem; height: 64px; display: flex; align-items: center; }
+    .nav__inner { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; gap: 2rem; }
+    .nav__logo { display: flex; align-items: center; gap: .6rem; font-weight: 700; font-size: 1.1rem; color: var(--accent); text-decoration: none; flex-shrink: 0; }
+    .nav__logo svg { width: 32px; height: 32px; }
+    .nav__links { display: flex; gap: 1.5rem; list-style: none; margin-left: auto; }
+    .nav__links a { color: var(--text-muted); font-size: .9rem; font-weight: 500; transition: color .2s; }
+    .nav__links a:hover { color: var(--text); text-decoration: none; }
+    .nav__dropdown { position: relative; }
+    .nav__dropdown-trigger { display: flex; align-items: center; gap: .3rem; cursor: pointer; }
+    .nav__dropdown-arrow { transition: transform .2s; font-size: .7rem; }
+    .nav__dropdown:hover .nav__dropdown-arrow, .nav__dropdown.open .nav__dropdown-arrow { transform: rotate(180deg); }
+    .nav__dropdown-menu { display: none; position: absolute; top: calc(100% + .75rem); left: 0; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: .5rem; min-width: 180px; flex-direction: column; gap: .25rem; box-shadow: 0 8px 32px rgba(0,0,0,.4); }
+    .nav__dropdown:hover .nav__dropdown-menu, .nav__dropdown.open .nav__dropdown-menu { display: flex; }
+    .nav__dropdown-menu a { color: var(--text-muted); padding: .5rem .75rem; border-radius: 8px; font-size: .88rem; display: block; transition: background .15s,color .15s; }
+    .nav__dropdown-menu a:hover { background: var(--accent-dim); color: var(--accent); text-decoration: none; }
+    .nav__cta { background: var(--accent); color: #080c14 !important; padding: .45rem 1.1rem; border-radius: 8px; font-weight: 600; font-size: .88rem !important; transition: opacity .2s !important; }
+    .nav__cta:hover { opacity: .85; text-decoration: none !important; }
+
+    .article-hero { padding: 8rem 2rem 3rem; text-align: center; background: linear-gradient(180deg,rgba(201,168,76,.06) 0%,transparent 100%); border-bottom: 1px solid var(--border); }
+    .article-hero .tag { display: inline-block; background: rgba(201,168,76,.15); color: var(--accent); font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; padding: .3rem .85rem; border-radius: 100px; margin-bottom: 1.25rem; }
+    .article-hero h1 { font-size: clamp(1.8rem,4vw,2.8rem); font-weight: 800; line-height: 1.2; max-width: 760px; margin: 0 auto 1.25rem; background: linear-gradient(135deg,#fff 0%,#d0c4a8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .article-hero .meta { color: var(--text-muted); font-size: .875rem; display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
+    .article-hero .meta span { display: flex; align-items: center; gap: .4rem; }
+
+    .layout { max-width: var(--max-w); margin: 0 auto; padding: 3rem 1.5rem 6rem; }
+
+    .toc { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; margin-bottom: 2.5rem; }
+    .toc h2 { font-size: .8rem; text-transform: uppercase; letter-spacing: .1em; color: var(--accent); margin-bottom: .75rem; font-weight: 700; }
+    .toc ol { list-style: none; counter-reset: toc; }
+    .toc li { counter-increment: toc; }
+    .toc li::before { content: counter(toc) '. '; color: var(--accent); font-weight: 600; }
+    .toc a { color: var(--text-muted); font-size: .9rem; display: block; padding: .3rem 0; transition: color .2s; }
+    .toc a:hover { color: var(--accent); text-decoration: none; }
+
+    .prose h2 { font-size: 1.45rem; font-weight: 700; margin: 2.5rem 0 .75rem; color: #fff; border-left: 3px solid var(--accent); padding-left: .85rem; }
+    .prose h3 { font-size: 1.1rem; font-weight: 600; margin: 1.5rem 0 .5rem; color: #e0d8c8; }
+    .prose p { margin-bottom: 1rem; color: #c8ccd8; }
+    .prose ul, .prose ol { margin: .75rem 0 1rem 1.5rem; }
+    .prose li { margin-bottom: .4rem; color: #c8ccd8; }
+    .prose strong { color: var(--accent); font-weight: 600; }
+    .prose blockquote { border-left: 3px solid var(--accent); padding: .75rem 1.25rem; margin: 1.5rem 0; background: var(--accent-dim); border-radius: 0 var(--radius) var(--radius) 0; font-size: 1.05rem; color: #d8d0b8; font-style: italic; }
+
+    /* MISSION CARD */
+    .mission { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; margin: 1.5rem 0; text-align: center; }
+    .mission__brand { font-size: .7rem; text-transform: uppercase; letter-spacing: .15em; color: var(--accent); font-weight: 700; margin-bottom: .75rem; display: block; }
+    .mission__mission { font-size: 1.15rem; font-weight: 600; color: #fff; margin-bottom: .5rem; }
+    .mission__vision { font-size: .95rem; color: var(--text-muted); }
+    .mission__tagline { font-size: 1.5rem; font-weight: 800; color: var(--accent); margin-top: 1rem; font-style: italic; }
+
+    /* PLATFORM GRID */
+    .platform-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(260px,1fr)); gap: 1rem; margin: 1.25rem 0; }
+    .platform-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem; }
+    .platform-card__name { font-weight: 700; color: #fff; font-size: .95rem; margin-bottom: .35rem; }
+    .platform-card__desc { font-size: .83rem; color: var(--text-muted); line-height: 1.6; }
+
+    .callout { background: var(--accent-dim); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem 1.5rem; margin: 1.5rem 0; display: flex; gap: 1rem; align-items: flex-start; }
+    .callout__icon { font-size: 1.3rem; flex-shrink: 0; }
+    .callout p { margin: 0; color: #d8d0b8; font-size: .95rem; }
+
+    .takeaways { background: linear-gradient(135deg,rgba(201,168,76,.08),rgba(201,168,76,.03)); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem; margin: 2rem 0; }
+    .takeaways h2 { border-left-color: #fff; color: #fff; font-size: 1.15rem; }
+    .takeaways ul { margin: .5rem 0 0 1.25rem; }
+    .takeaways li { margin-bottom: .5rem; color: #d0c8b8; font-size: .92rem; }
+
+    footer { background: var(--bg-alt); border-top: 1px solid var(--border); padding: 2.5rem 2rem; margin-top: 4rem; }
+    .footer__inner { max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: space-between; align-items: center; }
+    .footer__brand { font-size: .85rem; color: var(--text-muted); }
+    .footer__brand span { color: var(--accent); font-weight: 600; }
+    .footer__links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    .footer__links a { color: var(--text-muted); font-size: .85rem; transition: color .2s; }
+    .footer__links a:hover { color: var(--accent); }
+
+    @media (max-width: 768px) { .nav__links { display: none; } .article-hero { padding: 6rem 1.5rem 2rem; } .layout { padding: 2rem 1rem 4rem; } }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Ocean Engine: Douyin's Unified Digital Marketing Platform Explained",
+    "description": "Ocean Engine is ByteDance's all-in-one advertising platform spanning Douyin, Toutiao, Xigua Video, and 8+ other properties. Learn the platform's mission, product ecosystem, and what it means for international advertisers.",
+    "author": { "@type": "Organization", "name": "Tuyue Media Gateway", "url": "https://www.tuyuesouxin.cn" },
+    "publisher": { "@type": "Organization", "name": "Tuyue Media Gateway", "url": "https://www.tuyuesouxin.cn" },
+    "datePublished": "2026-04-23",
+    "dateModified": "2026-04-23",
+    "url": "https://www.tuyuesouxin.cn/blog/ocean-engine-overview/",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.tuyuesouxin.cn/blog/ocean-engine-overview/" },
+    "about": { "@type": "Thing", "name": "Ocean Engine", "description": "ByteDance's unified digital marketing platform spanning Douyin, Toutiao, Xigua Video, and 10+ other properties" },
+    "keywords": "Ocean Engine, Douyin advertising, ByteDance ads, Toutiao ads, Chinese digital marketing platform, app advertising China"
+  }
+  </script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="../" class="nav__logo">
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="16" cy="16" r="14" stroke="#c9a84c" stroke-width="2"/>
+        <circle cx="22" cy="10" r="8" fill="#080c14"/>
+        <text x="16" y="20" font-family="Inter,sans-serif" font-size="10" font-weight="800" fill="#c9a84c" text-anchor="middle">TMG</text>
+      </svg>
+      Tuyue Media Gateway
+    </a>
+    <ul class="nav__links">
+      <li><a href="../">Home</a></li>
+      <li class="nav__dropdown">
+        <span class="nav__dropdown-trigger"><a href="../services/">Services</a> <span class="nav__dropdown-arrow">&#9662;</span></span>
+        <div class="nav__dropdown-menu">
+          <a href="../services/wechat/">WeChat Ads</a>
+          <a href="../services/douyin/">Douyin Ads</a>
+          <a href="../services/baidu/">Baidu SEM</a>
+          <a href="../services/xiaohongshu/">Xiaohongshu Ads</a>
+          <a href="../geo/">China GEO</a>
+        </div>
+      </li>
+      <li><a href="../pricing/">Pricing</a></li>
+      <li><a href="../client-stories/">Client Stories</a></li>
+      <li><a href="./">Blog</a></li>
+      <li><a href="../about/">About</a></li>
+      <li><a href="../contact/" class="nav__cta">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="article-hero">
+  <span class="tag">Platform Overview</span>
+  <h1>Ocean Engine: Douyin's Unified Digital Marketing Platform Explained</h1>
+  <div class="meta">
+    <span>&#128197; April 23, 2026</span>
+    <span>&#128214; 7 min read</span>
+    <span>&#128214; Source: Ocean Engine Encyclopedia</span>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main class="layout">
+  <aside class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#what">What Is Ocean Engine?</a></li>
+      <li><a href="#mission">Mission, Vision & Tagline</a></li>
+      <li><a href="#ecosystem">The Full Product Ecosystem</a></li>
+      <li><a href="#china-ecosystem">China-Focused Products</a></li>
+      <li><a href="#global">Global Reach</a></li>
+      <li><a href="#implications">What This Means for International Advertisers</a></li>
+    </ol>
+  </aside>
+
+  <article class="prose">
+
+    <p>If you are running paid media in China—or planning to—the name you will encounter most is <strong>Ocean Engine</strong> (巨量引擎), ByteDance's unified digital marketing platform.</p>
+
+    <p>Ocean Engine is not just an ad network. It is the central nervous system connecting Douyin, Toutiao, Xigua Video, and a constellation of other ByteDance properties—giving advertisers a single access point to one of the largest and most sophisticated audiences in the world.</p>
+
+    <p>This article breaks down what Ocean Engine is, what it covers, and why it matters for your brand's China strategy.</p>
+
+    <h2 id="what">What Is Ocean Engine?</h2>
+
+    <p>Ocean Engine is the <strong>demand-side platform (DSP)</strong> and ad management system operated by ByteDance, the company behind TikTok, Douyin, and a suite of other massively popular applications. It serves as the unified gateway for advertisers seeking to place paid media across ByteDance's entire product ecosystem.</p>
+
+    <p>Unlike single-platform ad tools, Ocean Engine provides:</p>
+    <ul>
+      <li><strong>Centralized campaign management</strong> across all ByteDance properties</li>
+      <li><strong>Shared audience data and targeting</strong> across platforms</li>
+      <li><strong>Unified reporting and attribution</strong> across the full media mix</li>
+      <li><strong>AI-powered optimization</strong> leveraging ByteDance's proprietary recommendation engine</li>
+      <li><strong>Access to both brand and performance advertising</strong> formats</li>
+    </ul>
+
+    <p>Official website: <a href="https://www.oceanengine.com" target="_blank" rel="noopener">oceanengine.com</a> | Contact: <strong>400-618-1518</strong></p>
+
+    <h2 id="mission">Mission, Vision & Tagline</h2>
+
+    <div class="mission">
+      <span class="mission__brand">Ocean Engine</span>
+      <div class="mission__mission">Mission: Spark creativity. Drive business growth.</div>
+      <div class="mission__vision">Vision: Drive sustainable business growth and become a global partner for clients worldwide.</div>
+      <div class="mission__tagline">"Spark new possibilities for your business"</div>
+    </div>
+
+    <p>These are not just marketing phrases. The mission statement reflects ByteDance's core competitive advantage: its <strong>recommendation engine</strong>, originally developed for TikTok/Douyin, which has been applied to advertising to create highly personalized, relevance-driven media buying at massive scale.</p>
+
+    <div class="callout">
+      <span class="callout__icon">&#128161;</span>
+      <p><strong>Why this matters for international advertisers:</strong> Ocean Engine's AI-driven approach means that ad relevance scores are typically higher than industry average—your ads reach people who are actually interested, not just people who happen to be in your targeting demographic.</p>
+    </div>
+
+    <h2 id="ecosystem">The Full Product Ecosystem</h2>
+
+    <p>Ocean Engine covers more than just Douyin. Here is the complete map of ByteDance properties available through the platform:</p>
+
+    <div class="platform-grid">
+      <div class="platform-card">
+        <div class="platform-card__name">&#127917; Douyin (抖音)</div>
+        <div class="platform-card__desc">Short video and live commerce platform with 600M+ DAU. The core of ByteDance's commercial ecosystem and the primary driver of Ocean Engine ad revenue.</div>
+      </div>
+      <div class="platform-card">
+        <div class="platform-card__name">&#128240; Toutiao (今日头条)</div>
+        <div class="platform-card__desc">General-purpose content aggregation platform connecting people to information. Key for news, feature articles, and upper-funnel brand reach.</div>
+      </div>
+      <div class="platform-card">
+        <div class="platform-card__name">&#127909; Xigua Video (西瓜视频)</div>
+        <div class="platform-card__desc">China's leading PUGC video platform. Longer-form video content for deeper engagement and niche audience segments.</div>
+      </div>
+      <div class="platform-card">
+        <div class="platform-card__name">&#128664;懂车帝 (Dongched)</div>
+        <div class="platform-card__desc">One-stop automotive media platform covering vehicle discovery, comparison, and purchasing decisions. Ideal for auto, EV, and mobility brands.</div>
+      </div>
+      <div class="platform-card">
+        <div class="platform-card__name">&#128247; FaceU & 轻颜 (Qingyan)</div>
+        <div class="platform-card__desc">AR camera apps with social features. Large young female user base; effective for beauty, cosmetics, and lifestyle brands.</div>
+      </div>
+      <div class="platform-card">
+        <div class="platform-card__name">&#128054; 皮皮虾 (Pipi Xia)</div>
+        <div class="platform-card__desc">Community-driven entertainment platform targeting young male users. Strong for gaming, tech, and entertainment brands.</div>
+      </div>
+    </div>
+
+    <h2 id="china-ecosystem">China-Focused Products</h2>
+
+    <div class="platform-grid">
+      <div class="platform-card">
+        <div class="platform-card__name">&#127969; 住小帮 (Zhu Xiao Bang)</div>
+        <div class="platform-card__desc">Home improvement and interior design lifestyle app. Connects home improvement brands with consumers in renovation and decor decisions.</div>
+      </div>
+      <div class="platform-card">
+        <div class="platform-card__name">&#127970; 幸福里 (Xingfuli)</div>
+        <div class="platform-card__desc">Real estate information and services platform. Property listings, neighborhood insights, and home-buying tools for Chinese consumers.</div>
+      </div>
+      <div class="platform-card">
+        <div class="platform-card__name">&#9889; 穿山甲 (Pangle)</div>
+        <div class="platform-card__desc">Global app monetization network reaching 800M+ users. Access to 100,000+ apps for mobile user acquisition and cross-platform retargeting.</div>
+      </div>
+    </div>
+
+    <h2 id="global">Global Reach</h2>
+
+    <p>ByteDance's products extend well beyond China. Through Ocean Engine, advertisers can reach international audiences across:</p>
+    <ul>
+      <li><strong>150+ countries</strong> and regions</li>
+      <li><strong>75 languages</strong></li>
+      <li><strong>40+ markets</strong> where ByteDance apps rank #1 in their category</li>
+    </ul>
+
+    <p>This global footprint—built through TikTok, Capcut, Lark, and other international products—means Ocean Engine can serve as a <strong>single platform for both China domestic and international campaigns</strong>, with shared audience data and unified reporting across both.</p>
+
+    <h2 id="implications">What This Means for International Advertisers</h2>
+
+    <p>Ocean Engine is the most comprehensive paid media platform in China. Here is the strategic picture:</p>
+
+    <ol>
+      <li><strong>One platform, entire ecosystem.</strong> Instead of managing separate relationships with Douyin Ads, Toutiao Ads, and Xigua Ads, Ocean Engine provides a unified entry point to all of them—simplifying operations and enabling cross-platform audience targeting.</li>
+      <li><strong>AI-first optimization.</strong> ByteDance's recommendation engine, proven at scale on Douyin's 600M+ users, powers Ocean Engine's ad delivery. This means smarter bids, higher relevance scores, and better ROAS compared to traditional targeting.</li>
+      <li><strong>From awareness to transaction.</strong> Ocean Engine covers the full funnel: upper-funnel reach through Toutiao and Xigua, deep engagement through Douyin content, and conversion through Douyin Store and Pangle's app network.</li>
+      <li><strong>Auto, home, beauty verticals.</strong> Dedicated products like 懂车帝, 住小帮, and FaceU offer niche targeting for brands in those categories—highly qualified audiences with purchase intent.</li>
+      <li><strong>China + International.</strong> If your brand operates in both China and global markets, Ocean Engine can serve as the central platform for both—particularly valuable for brands with shared creative assets and unified media strategies.</li>
+    </ol>
+
+    <div class="takeaways">
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li><strong>Ocean Engine is ByteDance's unified ad platform</strong> spanning Douyin, Toutiao, Xigua, 懂车帝, Pangle, and 8+ other products—a one-stop shop for reaching Chinese consumers at every stage of the funnel.</li>
+        <li><strong>The ecosystem covers 600M+ Douyin users</strong> plus Toutiao's news audience, Xigua's video viewers, 懂车帝's auto shoppers, and Pangle's 800M+ in-app users globally.</li>
+        <li><strong>International reach across 150+ countries</strong> means Ocean Engine can serve as your central platform for both China and global campaigns with unified reporting.</li>
+        <li><strong>Niche vertical products</strong> (懂车帝 for auto, 住小帮 for home, FaceU/轻颜 for beauty) offer precision targeting unavailable through general-purpose platforms.</li>
+        <li><strong>The "Spark new possibilities" tagline</strong> reflects ByteDance's core value proposition: using AI recommendation to connect brands with the right audiences at scale—more precisely than any traditional media buying.</li>
+      </ul>
+    </div>
+
+    <blockquote>
+      "For international advertisers, Ocean Engine is not just an ad platform—it is access to the world's most sophisticated recommendation-driven media ecosystem, all under one roof."
+    </blockquote>
+
+    <p style="margin-top:2rem; color:var(--text-muted); font-size:.875rem; border-top:1px solid var(--border); padding-top:1.5rem;">
+      <strong>Source:</strong> Ocean Engine Encyclopedia — 巨量引擎 entry. Published July 16, 2021.<br>
+      <strong>Prepared by:</strong> Tuyue Media Gateway — China's paid media partner for international brands.
+    </p>
+
+  </article>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer__inner">
+    <div class="footer__brand"><span>Tuyue Media Gateway</span> — China's paid media partner for global brands.</div>
+    <div class="footer__links">
+      <a href="../services/">Services</a>
+      <a href="../geo/">China GEO</a>
+      <a href="../faqs/">FAQ</a>
+      <a href="../contact/">Contact</a>
+      <a href="../">Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.nav__dropdown-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.preventDefault();
+      var nav = document.querySelector('.nav__inner') || document;
+      nav.querySelectorAll('.nav__dropdown').forEach(function(d) { d.classList.remove('open'); });
+      this.closest('.nav__dropdown').classList.toggle('open');
+    });
+  });
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.nav__dropdown')) {
+      document.querySelectorAll('.nav__dropdown').forEach(function(d) { d.classList.remove('open'); });
+    }
+  });
+</script>
+
+</body>
+</html>
