@@ -220,6 +220,56 @@
         grid-template-columns: 1fr;
       }
     }
+    .sources__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-4);
+      list-style: none;
+    }
+    .sources__item {
+      background: var(--color-bg-alt);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: var(--space-5);
+      transition: border-color var(--transition-fast);
+    }
+    .sources__item:hover {
+      border-color: var(--color-border-hover);
+    }
+    .sources__name {
+      font-size: var(--font-size-sm);
+      font-weight: 600;
+      color: var(--color-accent-light);
+      margin-bottom: var(--space-2);
+    }
+    .sources__report {
+      font-size: var(--font-size-xs);
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-2);
+    }
+    .sources__data {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-secondary);
+      line-height: 1.5;
+    }
+    .sources__note {
+      margin-top: var(--space-6);
+      padding: var(--space-4);
+      background: rgba(201, 168, 76, 0.08);
+      border: 1px solid rgba(201, 168, 76, 0.2);
+      border-radius: 8px;
+      text-align: center;
+    }
+    .sources__note p {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-secondary);
+      font-style: italic;
+    }
+    @media (max-width: 768px) {
+      .sources__list {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
@@ -317,9 +367,10 @@
             <h3 class="service-card__title">Brand & Awareness Campaigns</h3>
             <p class="service-card__description">Build brand awareness at scale with branded hashtag challenges, AR filters, and influencer partnerships through Douyin's creator ecosystem.</p>
             <ul class="service-card__features">
-              <li class="service-card__feature">Hashtag challenge campaigns</li>
-              <li class="service-card__feature">AR lens & filter branding</li>
-              <li class="service-card__feature">Top influencer partnerships</li>
+              <li class="service-card__feature">Hashtag challenges with viral reach (50M+ impressions)</li>
+              <li class="service-card__feature">AR lens & filter branding for interactive engagement</li>
+              <li class="service-card__feature">Top influencer partnerships (1M+ follower creators)</li>
+              <li class="service-card__feature">UGC amplification & user participation campaigns</li>
             </ul>
           </div>
         </div>
@@ -365,6 +416,41 @@
             <p class="insight-card__description">125+ minutes average daily time spent • 500M+ daily searches (video‑first search engine).</p>
           </div>
         </div>
+        <div class="sources__note reveal">
+          <p>All audience data reflects the market landscape as of Q1 2024, providing the most current insights into China's rapidly shifting digital ecosystem.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section sources" id="sources">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__eyebrow">Data Sources</span>
+          <h2 class="section__title">Industry-Leading Research</h2>
+          <p class="section__description">Our insights are backed by China's most trusted research institutions and official platform data.</p>
+        </div>
+        <ul class="sources__list">
+          <li class="sources__item reveal">
+            <div class="sources__name">OceanEngine (巨量引擎)</div>
+            <div class="sources__report">Official Platform Report · 2024</div>
+            <div class="sources__data">DAU (600M+), daily searches (500M+), interest e-commerce metrics, and brand audience assets (O‑5A model).</div>
+          </li>
+          <li class="sources__item reveal reveal--delay-1">
+            <div class="sources__name">QuestMobile</div>
+            <div class="sources__report">China Mobile Internet Report · Q3 2023</div>
+            <div class="sources__data">Average daily usage time (125+ min), age distribution, city tier penetration, and cross‑app user overlap.</div>
+          </li>
+          <li class="sources__item reveal reveal--delay-1">
+            <div class="sources__name">CNNIC</div>
+            <div class="sources__report">53rd Statistical Report · March 2024</div>
+            <div class="sources__data">National short video user scale, online shopping penetration, and overall internet adoption rates.</div>
+          </li>
+          <li class="sources__item reveal reveal--delay-2">
+            <div class="sources__name">iResearch & CBNData</div>
+            <div class="sources__report">Short Video Marketing Whitepaper · 2023‑2024</div>
+            <div class="sources__data">Silver economy purchasing power, Tier 3‑5 market consumption trends, and vertical industry ROI benchmarks.</div>
+          </li>
+        </ul>
       </div>
     </section>
 
