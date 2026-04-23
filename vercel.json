@@ -11,5 +11,11 @@
       "destination": "https://www.tuyuesouxin.cn/$1",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/blog/:slug",
+      "destination": "/blog/:slug.html"
+    }
   ]
 }
