@@ -185,6 +185,225 @@
     .form-success-card__detail-value { font-size: var(--font-size-sm); color: var(--color-accent-light); font-weight: 500; }
     a.form-success-card__detail-value { color: var(--color-primary); text-decoration: none; }
     a.form-success-card__detail-value:hover { text-decoration: underline; }
+    .pillars__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-6);
+    }
+    .pillar-card {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: var(--space-8);
+      transition: all 250ms ease;
+    }
+    .pillar-card:hover {
+      border-color: var(--color-border-hover);
+      transform: translateY(-4px);
+    }
+    .pillar-card__icon {
+      width: 56px;
+      height: 56px;
+      background: rgba(201, 168, 76, 0.15);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      margin-bottom: var(--space-5);
+    }
+    .pillar-card__title {
+      font-size: var(--font-size-xl);
+      font-weight: 600;
+      margin-bottom: var(--space-3);
+    }
+    .pillar-card__description {
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+      line-height: 1.6;
+    }
+    .pillar-card__stats {
+      margin-top: var(--space-4);
+      padding-top: var(--space-4);
+      border-top: 1px solid var(--color-border);
+    }
+    .pillar-card__stat {
+      display: flex;
+      justify-content: space-between;
+      font-size: var(--font-size-sm);
+      margin-bottom: var(--space-2);
+    }
+    .pillar-card__stat-label {
+      color: var(--color-text-muted);
+    }
+    .pillar-card__stat-value {
+      color: var(--color-accent-light);
+      font-weight: 600;
+    }
+    .stats__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-6);
+    }
+    .stat-card {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: var(--space-8);
+      text-align: center;
+      transition: all 250ms ease;
+    }
+    .stat-card:hover {
+      border-color: var(--color-border-hover);
+      transform: translateY(-4px);
+    }
+    .stat-card__value {
+      font-size: var(--font-size-4xl);
+      font-weight: 700;
+      color: var(--color-accent);
+      margin-bottom: var(--space-2);
+    }
+    .stat-card__label {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-secondary);
+    }
+    .trust__content {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: var(--space-10);
+    }
+    .trust__loop {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-6);
+      margin-top: var(--space-8);
+    }
+    .trust__step {
+      text-align: center;
+      padding: var(--space-6);
+      background: var(--color-bg-alt);
+      border-radius: 12px;
+      position: relative;
+    }
+    .trust__step::after {
+      content: '→';
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      color: var(--color-accent);
+    }
+    .trust__step:last-child::after {
+      display: none;
+    }
+    .trust__step-icon {
+      font-size: 36px;
+      margin-bottom: var(--space-4);
+    }
+    .trust__step-title {
+      font-size: var(--font-size-lg);
+      font-weight: 600;
+      margin-bottom: var(--space-2);
+    }
+    .trust__step-desc {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-secondary);
+    }
+    .b2b__content {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: var(--space-10);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-8);
+    }
+    .b2b__block-title {
+      font-size: var(--font-size-xl);
+      font-weight: 600;
+      margin-bottom: var(--space-4);
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+    }
+    .b2b__list {
+      list-style: none;
+    }
+    .b2b__item {
+      position: relative;
+      padding-left: var(--space-5);
+      margin-bottom: var(--space-3);
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+    }
+    .b2b__item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 6px;
+      height: 6px;
+      background: var(--color-accent);
+      border-radius: 50%;
+    }
+    .sources__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-4);
+      list-style: none;
+    }
+    .sources__item {
+      background: var(--color-bg-alt);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: var(--space-5);
+      transition: border-color var(--transition-fast);
+    }
+    .sources__item:hover {
+      border-color: var(--color-border-hover);
+    }
+    .sources__name {
+      font-size: var(--font-size-sm);
+      font-weight: 600;
+      color: var(--color-accent-light);
+      margin-bottom: var(--space-2);
+    }
+    .sources__report {
+      font-size: var(--font-size-xs);
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-2);
+    }
+    .sources__data {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-secondary);
+      line-height: 1.5;
+    }
+    .sources__note {
+      margin-top: var(--space-6);
+      padding: var(--space-4);
+      background: rgba(201, 168, 76, 0.08);
+      border: 1px solid rgba(201, 168, 76, 0.2);
+      border-radius: 8px;
+      text-align: center;
+    }
+    .sources__note p {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-secondary);
+      font-style: italic;
+    }
+    @media (max-width: 768px) {
+      .pillars__grid, .stats__grid, .sources__list, .trust__loop {
+        grid-template-columns: 1fr;
+      }
+      .trust__step::after {
+        display: none;
+      }
+      .b2b__content {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
@@ -237,8 +456,8 @@
     <div class="page-header">
       <div class="container">
         <span class="page-header__eyebrow reveal">WeChat Ads</span>
-        <h1 class="page-header__title reveal">Tap China's Largest Social Ecosystem</h1>
-        <p class="page-header__description reveal">1.3 billion active users. Official Accounts, Mini Programs, Moments Ads, and Search — all connected within a single ecosystem. TMG handles account setup and campaign management so you can focus on strategy.</p>
+        <h1 class="page-header__title reveal">WeChat Is China's "OS for Life"</h1>
+        <p class="page-header__description reveal">With 1.34 billion Monthly Active Users, WeChat is not just an app — it's the operating system for daily life in China. From messaging to payments, Official Accounts to Mini Programs, WeChat connects your brand to decision-makers who matter.</p>
       </div>
     </div>
 
@@ -295,6 +514,209 @@
               <li class="service-card__feature">Tencent DMP audience targeting</li>
             </ul>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why-wechat" id="why-wechat">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__eyebrow">The Demographic Advantage</span>
+          <h2 class="section__title">Why WeChat Is Different</h2>
+          <p class="section__description">Unlike entertainment platforms, WeChat is where decisions happen — in corporate chat groups, payment approvals, and long-term brand relationships.</p>
+        </div>
+        <div class="pillars__grid">
+          <div class="pillar-card reveal">
+            <div class="pillar-card__icon">🛡️</div>
+            <h3 class="pillar-card__title">The Professional Hub</h3>
+            <p class="pillar-card__description">WeChat is the "LinkedIn of China." 50%+ of Official Account readers hold university degrees — your direct line to C-suite executives and decision-makers.</p>
+            <div class="pillar-card__stats">
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">Decision-makers (25-45)</span>
+                <span class="pillar-card__stat-value">50%+</span>
+              </div>
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">University degree holders</span>
+                <span class="pillar-card__stat-value">50%+</span>
+              </div>
+            </div>
+          </div>
+          <div class="pillar-card reveal reveal--delay-1">
+            <div class="pillar-card__icon">📈</div>
+            <h3 class="pillar-card__title">The Video Frontier</h3>
+            <p class="pillar-card__description">WeChat Channels (Video Accounts) is the new growth engine — reaching high-net-worth segments with 800M+ Video Account MAU. Premium audiences, premium results.</p>
+            <div class="pillar-card__stats">
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">Video Account MAU</span>
+                <span class="pillar-card__stat-value">800M+</span>
+              </div>
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">High-income segments</span>
+                <span class="pillar-card__stat-value">Fastest growing</span>
+              </div>
+            </div>
+          </div>
+          <div class="pillar-card reveal reveal--delay-2">
+            <div class="pillar-card__icon">💎</div>
+            <h3 class="pillar-card__title">The Transactional Heart</h3>
+            <p class="pillar-card__description">Mini Programs are the heart of WeChat commerce. 600M+ users engage with Mini Programs daily — seamless transactions without leaving the app.</p>
+            <div class="pillar-card__stats">
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">Mini Program DAU</span>
+                <span class="pillar-card__stat-value">600M+</span>
+              </div>
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">Transaction capability</span>
+                <span class="pillar-card__stat-value">Built-in</span>
+              </div>
+            </div>
+          </div>
+          <div class="pillar-card reveal reveal--delay-1">
+            <div class="pillar-card__icon">🌏</div>
+            <h3 class="pillar-card__title">Total Coverage</h3>
+            <p class="pillar-card__description">100% penetration in Tier 1-2 cities + growing Tier 3-5 expansion. WeChat reaches everyone — from Shanghai executives to emerging market consumers.</p>
+            <div class="pillar-card__stats">
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">T1/T2 city penetration</span>
+                <span class="pillar-card__stat-value">100%</span>
+              </div>
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">Total MAU</span>
+                <span class="pillar-card__stat-value">1.34B</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stats" id="stats">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__eyebrow">By the Numbers</span>
+          <h2 class="section__title">WeChat at a Glance</h2>
+        </div>
+        <div class="stats__grid">
+          <div class="stat-card reveal">
+            <div class="stat-card__value">1.34B</div>
+            <div class="stat-card__label">Monthly Active Users</div>
+          </div>
+          <div class="stat-card reveal reveal--delay-1">
+            <div class="stat-card__value">800M+</div>
+            <div class="stat-card__label">Video Account MAU</div>
+          </div>
+          <div class="stat-card reveal reveal--delay-2">
+            <div class="stat-card__value">600M+</div>
+            <div class="stat-card__label">Mini Program DAU</div>
+          </div>
+          <div class="stat-card reveal reveal--delay-1">
+            <div class="stat-card__value">50%+</div>
+            <div class="stat-card__label">Decision-maker audience</div>
+          </div>
+          <div class="stat-card reveal reveal--delay-2">
+            <div class="stat-card__value">100%</div>
+            <div class="stat-card__label">T1/T2 city coverage</div>
+          </div>
+          <div class="stat-card reveal reveal--delay-1">
+            <div class="stat-card__value">50%+</div>
+            <div class="stat-card__label">University degree readers</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trust" id="trust">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__eyebrow">The Ecosystem Loop</span>
+          <h2 class="section__title">Build Long-Term Brand Loyalty</h2>
+          <p class="section__description">WeChat is built for relationship-building, not impulse buying. Unlike short-form video platforms, WeChat's Official Account + Video Account + Mini Program ecosystem creates lasting customer connections.</p>
+        </div>
+        <div class="trust__content reveal">
+          <div class="trust__loop">
+            <div class="trust__step">
+              <div class="trust__step-icon">📰</div>
+              <h4 class="trust__step-title">Official Account</h4>
+              <p class="trust__step-desc">Build subscriber trust through consistent content and community</p>
+            </div>
+            <div class="trust__step">
+              <div class="trust__step-icon">🎬</div>
+              <h4 class="trust__step-title">Video Account</h4>
+              <p class="trust__step-desc">Reach new audiences with short-form video, then cross-link to your Account</p>
+            </div>
+            <div class="trust__step">
+              <div class="trust__step-icon">💳</div>
+              <h4 class="trust__step-title">Mini Program</h4>
+              <p class="trust__step-desc">Convert engaged followers into transactions — within WeChat itself</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section b2b" id="b2b">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__eyebrow">Premium Markets</span>
+          <h2 class="section__title">B2B & Luxury Brands: WeChat Is Non-Negotiable</h2>
+          <p class="section__description">For brands targeting high-value customers in China, WeChat is the only platform that combines trust, transactions, and long-term relationship management.</p>
+        </div>
+        <div class="b2b__content reveal">
+          <div>
+            <h3 class="b2b__block-title">🤝 B2B Lead Generation</h3>
+            <ul class="b2b__list">
+              <li class="b2b__item">Direct access to decision-makers via Official Accounts</li>
+              <li class="b2b__item">In-document and Moments ad placements for professional audiences</li>
+              <li class="b2b__item">Mini Programs for lead capture, product demos, and consultation booking</li>
+              <li class="b2b__item">WeChat Search brand keywords for high-intent B2B searches</li>
+              <li class="b2b__item">LinkedIn-level targeting at a fraction of the cost</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="b2b__block-title">💎 Luxury & Premium Brands</h3>
+            <ul class="b2b__list">
+              <li class="b2b__item">Unmatched brand trust in WeChat's verified environment</li>
+              <li class="b2b__item">Direct-to-consumer communication without third-party interference</li>
+              <li class="b2b__item">Exclusive content and member programs via Official Accounts</li>
+              <li class="b2b__item">Premium audience concentration — 50%+ with high purchasing power</li>
+              <li class="b2b__item">Mini Programs for luxury e-commerce and appointment booking</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section sources" id="sources">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__eyebrow">Data Sources</span>
+          <h2 class="section__title">Industry-Leading Research</h2>
+          <p class="section__description">Our insights are backed by China's most trusted research institutions and official platform data.</p>
+        </div>
+        <ul class="sources__list">
+          <li class="sources__item reveal">
+            <div class="sources__name">Tencent Official</div>
+            <div class="sources__report">Annual Report & Investor Relations · 2024</div>
+            <div class="sources__data">1.34B MAU, Mini Program DAU, Official Account metrics, and platform ecosystem data.</div>
+          </li>
+          <li class="sources__item reveal reveal--delay-1">
+            <div class="sources__name">QuestMobile</div>
+            <div class="sources__report">China Mobile Internet Report · Q3 2023</div>
+            <div class="sources__data">User demographics, age distribution, education levels, and cross-platform usage patterns.</div>
+          </li>
+          <li class="sources__item reveal reveal--delay-1">
+            <div class="sources__name">CNNIC</div>
+            <div class="sources__report">53rd Statistical Report · March 2024</div>
+            <div class="sources__data">National internet penetration, WeChat adoption rates, and digital payment statistics.</div>
+          </li>
+          <li class="sources__item reveal reveal--delay-2">
+            <div class="sources__name">iResearch & TMI</div>
+            <div class="sources__report">WeChat Marketing Whitepaper · 2023-2024</div>
+            <div class="sources__data">B2B marketing effectiveness, luxury brand ROI, and consumer loyalty benchmarks.</div>
+          </li>
+        </ul>
+        <div class="sources__note reveal">
+          <p>All demographic data reflects the market landscape as of Q1 2024, providing the most current insights into China's digital ecosystem.</p>
         </div>
       </div>
     </section>
@@ -476,7 +898,7 @@
   </footer>
   <script>
     (function () {
-      var elements = document.querySelectorAll('.page-header__eyebrow, .page-header__title, .page-header__description, .service-card, .contact__info, .contact__form');
+      var elements = document.querySelectorAll('.page-header__eyebrow, .page-header__title, .page-header__description, .service-card, .pillar-card, .stat-card, .trust__step, .b2b__content, .sources__item, .sources__note, .section__header, .contact__info, .contact__form');
       var observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
