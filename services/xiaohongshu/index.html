@@ -35,7 +35,7 @@
     .header__dropdown-arrow { transition: transform 150ms ease; }
     .header__dropdown:hover .header__dropdown-arrow,
     .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
-    .header__dropdown-menu { position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 10px; padding: 8px var(--space-2) var(--space-2); min-width: 180px; display: none; flex-direction: column; opacity: 0; box-shadow: 0 8px 32px rgba(0,0,0,0.4); z-index: 100;
+    .header__dropdown-menu { position: absolute; top: calc(100% + 8px); left: 0; background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 10px; padding: 8px var(--space-2) var(--space-2); min-width: 180px; display: none; flex-direction: column; opacity: 0; box-shadow: 0 8px 32px rgba(0,0,0,0.4); z-index: 100;
       transition: opacity var(--transition-fast), transform var(--transition-fast); }
     .header__dropdown:hover .header__dropdown-menu,
     .header__dropdown.open .header__dropdown-menu { display: flex; opacity: 1; }

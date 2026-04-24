@@ -116,7 +116,7 @@
     .header__dropdown-trigger { display: flex; align-items: center; gap: 4px; cursor: pointer; background: none; border: none; color: var(--color-text-secondary); font-size: .88rem; font-weight: 500; padding: 0; font-family: inherit; }
     .header__dropdown-arrow { transition: transform var(--transition-fast); }
     .header__dropdown:hover .header__dropdown-arrow, .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
-    .header__dropdown-menu { position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 10px; padding: 8px var(--space-2) var(--space-2); min-width: 180px; display: none; flex-direction: column; opacity: 0; box-shadow: 0 8px 32px rgba(0,0,0,.4); z-index: 100; transition: opacity var(--transition-fast); }
+    .header__dropdown-menu { position: absolute; top: calc(100% + 8px); left: 0; background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 10px; padding: 8px var(--space-2) var(--space-2); min-width: 180px; display: none; flex-direction: column; opacity: 0; box-shadow: 0 8px 32px rgba(0,0,0,.4); z-index: 100; transition: opacity var(--transition-fast); }
     .header__dropdown:hover .header__dropdown-menu, .header__dropdown.open .header__dropdown-menu { display: flex; flex-direction: column; opacity: 1; }
     .header__dropdown-item { font-size: var(--font-size-sm); font-weight: 500; color: var(--color-text-secondary); padding: var(--space-3) var(--space-4); border-radius: 6px; transition: background 150ms ease, color 150ms ease; white-space: nowrap; text-decoration: none; display: block; }
     .header__dropdown-item:hover { background: rgba(201,168,76,.1); color: var(--color-accent); }
@@ -180,7 +180,6 @@
   </script>
 </head>
 <body>
-  <style> body { padding-top: 64px; } </style>
 
 <!-- NAV -->
   <header class="header">
@@ -457,19 +456,41 @@
   </footer>
 
 <script>
-  document.querySelectorAll('.nav__dropdown-trigger').forEach(function(trigger) {
-    trigger.addEventListener('click', function(e) {
-      e.preventDefault();
-      var nav = document.querySelector('.nav__inner') || document;
-      nav.querySelectorAll('.nav__dropdown').forEach(function(d) { d.classList.remove('open'); });
-      this.closest('.nav__dropdown').classList.toggle('open');
+(function () {
+  const toggle = document.querySelector('.header__toggle');
+  const nav = document.querySelector('.header__nav');
+
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('active');
+      nav.classList.toggle('active');
     });
-  });
-  document.addEventListener('click', function(e) {
-    if (!e.target.closest('.nav__dropdown')) {
-      document.querySelectorAll('.nav__dropdown').forEach(function(d) { d.classList.remove('open'); });
-    }
-  });
+
+    const navLinks = nav.querySelectorAll('.header__nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        toggle.classList.remove('active');
+        nav.classList.remove('active');
+      });
+    });
+
+    const dropdowns = nav.querySelectorAll('.header__dropdown');
+    dropdowns.forEach(dropdown => {
+      const trigger = dropdown.querySelector('.header__dropdown-trigger');
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        dropdowns.forEach(d => { if (d !== dropdown) d.classList.remove('open'); });
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!nav.contains(e.target)) {
+        dropdowns.forEach(d => d.classList.remove('open'));
+      }
+    });
+  }
+})();
 </script>
 
 </body>
