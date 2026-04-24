@@ -271,6 +271,46 @@
       font-size: var(--font-size-sm);
       color: var(--color-text-secondary);
     }
+
+    /* ── User Insights Section ── */
+    .insights { padding: var(--space-12) 0; background: var(--color-bg-alt); }
+    .insights__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-5); margin-bottom: var(--space-6); }
+    .insight-stat { background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 12px; padding: var(--space-6); text-align: center; }
+    .insight-stat__icon { width: 44px; height: 44px; margin: 0 auto var(--space-3); background: rgba(19,168,103,.15); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+    .insight-stat__icon svg { color: #13a867; }
+    .insight-stat__num { font-size: var(--font-size-3xl); font-weight: 800; color: var(--color-text-primary); line-height: 1.1; margin-bottom: var(--space-1); }
+    .insight-stat__num span { color: #13a867; }
+    .insight-stat__label { font-size: var(--font-size-sm); color: var(--color-text-muted); }
+
+    .insights__breakdown { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: var(--space-6); margin-bottom: var(--space-4); }
+    .breakdown-card { background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 12px; padding: var(--space-6); }
+    .breakdown-card__title { font-size: var(--font-size-sm); font-weight: 600; color: var(--color-text-primary); margin-bottom: var(--space-5); display: flex; align-items: center; gap: var(--space-2); }
+    .breakdown-card__title svg { color: #13a867; flex-shrink: 0; }
+    .breakdown-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-3); }
+    .breakdown-row:last-child { margin-bottom: 0; }
+    .breakdown-row__label { font-size: var(--font-size-sm); color: var(--color-text-secondary); }
+    .breakdown-row__bar-wrap { flex: 1; margin: 0 var(--space-3); background: rgba(255,255,255,.05); border-radius: 4px; height: 8px; overflow: hidden; }
+    .breakdown-row__bar { height: 100%; background: linear-gradient(90deg, #13a867, #2dd4bf); border-radius: 4px; }
+    .breakdown-row__val { font-size: var(--font-size-sm); font-weight: 700; color: #13a867; min-width: 44px; text-align: right; }
+
+    .audience-tags { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-5); }
+    .audience-tag { display: inline-flex; align-items: center; gap: 5px; padding: 5px 12px; border-radius: 20px; font-size: var(--font-size-xs); font-weight: 600; }
+    .audience-tag--teal { background: rgba(19,168,103,.12); color: #2dd4bf; border: 1px solid rgba(19,168,103,.25); }
+    .audience-tag--green { background: rgba(16,185,129,.12); color: #34d399; border: 1px solid rgba(16,185,129,.25); }
+    .audience-tag--blue { background: rgba(59,130,246,.12); color: #60a5fa; border: 1px solid rgba(59,130,246,.25); }
+    .audience-tag--purple { background: rgba(139,92,246,.12); color: #a78bfa; border: 1px solid rgba(139,92,246,.25); }
+
+    .insights__highlight { background: var(--color-bg-card); border: 1px solid rgba(19,168,103,.3); border-radius: 12px; padding: var(--space-6); margin-bottom: var(--space-4); display: flex; align-items: flex-start; gap: var(--space-5); }
+    .insights__highlight-icon { flex-shrink: 0; width: 48px; height: 48px; background: rgba(19,168,103,.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #13a867; }
+    .insights__highlight h3 { font-size: var(--font-size-lg); font-weight: 700; margin-bottom: var(--space-2); color: var(--color-text-primary); }
+    .insights__highlight p { font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.7; }
+    .insights__highlight strong { color: #2dd4bf; }
+
+    .insights__source { text-align: center; font-size: var(--font-size-xs); color: var(--color-text-muted); padding: var(--space-2) 0; border-top: 1px solid var(--color-border); }
+
+    @media (max-width: 900px) { .insights__grid { grid-template-columns: repeat(2, 1fr); } .insights__breakdown { grid-template-columns: 1fr; } .insights__highlight { flex-direction: column; } }
+    @media (max-width: 600px) { .insights__grid { grid-template-columns: 1fr 1fr; } }
+
     .trust__content {
       background: var(--color-bg-card);
       border: 1px solid var(--color-border);
@@ -630,6 +670,119 @@
       </div>
     </section>
 
+    <section class="insights" id="audience-insights">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__eyebrow">Audience Insights</span>
+          <h2 class="section__title">Who Uses WeChat?</h2>
+          <p class="section__description">WeChat reaches across every demographic in China — from Gen Z to senior executives. Here's what we know about the people you can reach.</p>
+        </div>
+
+        <div class="insights__grid">
+          <div class="insight-stat reveal">
+            <div class="insight-stat__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="insight-stat__num">1.34<span>B</span></div>
+            <div class="insight-stat__label">Monthly Active Users</div>
+          </div>
+          <div class="insight-stat reveal reveal--delay-1">
+            <div class="insight-stat__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="insight-stat__num">70<span>+min</span></div>
+            <div class="insight-stat__label">Avg. daily time spent</div>
+          </div>
+          <div class="insight-stat reveal reveal--delay-2">
+            <div class="insight-stat__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="insight-stat__num">100<span>%</span></div>
+            <div class="insight-stat__label">T1 &amp; T2 city coverage</div>
+          </div>
+          <div class="insight-stat reveal reveal--delay-1">
+            <div class="insight-stat__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div class="insight-stat__num">13<span>M+</span></div>
+            <div class="insight-stat__label">WeChat Pay merchants</div>
+          </div>
+        </div>
+
+        <div class="insights__breakdown">
+          <div class="breakdown-card reveal">
+            <div class="breakdown-card__title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              Age Distribution
+            </div>
+            <div class="breakdown-row"><span class="breakdown-row__label">18-25 (Gen Z)</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:80%"></div></div><span class="breakdown-row__val">~24%</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">25-40 (Core professionals)</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:100%"></div></div><span class="breakdown-row__val">~45%</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">40-55 (Mid-career)</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:55%"></div></div><span class="breakdown-row__val">~21%</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">55+ (Seniors)</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:30%"></div></div><span class="breakdown-row__val">~10%</span></div>
+          </div>
+          <div class="breakdown-card reveal reveal--delay-1">
+            <div class="breakdown-card__title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              City Tier Distribution
+            </div>
+            <div class="breakdown-row"><span class="breakdown-row__label">Tier 1 (北上广深)</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:100%"></div></div><span class="breakdown-row__val">~28%</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">New Tier 1 cities</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:85%"></div></div><span class="breakdown-row__val">~24%</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">Tier 2 cities</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:62%"></div></div><span class="breakdown-row__val">~22%</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">Tier 3+ cities</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:60%"></div></div><span class="breakdown-row__val">~26%</span></div>
+          </div>
+          <div class="breakdown-card reveal reveal--delay-2">
+            <div class="breakdown-card__title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              Spending Power
+            </div>
+            <div class="breakdown-row"><span class="breakdown-row__label">High-income users</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:80%"></div></div><span class="breakdown-row__val">~52%</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">Decision-makers reached</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:70%"></div></div><span class="breakdown-row__val">50%+</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">WeChat Pay active users</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:95%"></div></div><span class="breakdown-row__val">900M+</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">Mini Program annual transactions</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:88%"></div></div><span class="breakdown-row__val">¥5.5T+</span></div>
+          </div>
+        </div>
+
+        <div class="breakdown-card reveal">
+          <div class="breakdown-card__title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            Key Audience Segments
+          </div>
+          <div class="audience-tags">
+            <span class="audience-tag audience-tag--teal">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Decision-Makers — Senior professionals with high purchasing power
+            </span>
+            <span class="audience-tag audience-tag--green">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Digital Natives — Gen Z &amp; Millennials, heavy social &amp; content consumers
+            </span>
+            <span class="audience-tag audience-tag--blue">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              E-Commerce Shoppers — WeChat Pay users, impulse &amp; habitual buyers
+            </span>
+            <span class="audience-tag audience-tag--purple">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Senior Professionals — 40-55 age group, B2B decision influencers
+            </span>
+          </div>
+        </div>
+
+        <div class="insights__highlight reveal">
+          <div class="insights__highlight-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <div>
+            <h3>Why WeChat for Your Brand?</h3>
+            <p>Unlike transactional platforms, WeChat is a <strong>relationship ecosystem</strong>. Users spend 70+ minutes daily communicating, reading, shopping, and paying — all within one app. This means your brand can build trust through content, capture leads via Mini Programs, and convert through WeChat Pay — all in one seamless journey. <strong>No platform switching, no lost attention.</strong></p>
+          </div>
+        </div>
+
+        <div class="insights__source">
+          Data sources: Tencent Q2 2025 Results (1.34B MAU, 900M+ WeChat Pay users); Tencent Financial Report 2025 (Mini Program GMV ¥5.5T+); Tencent Internal Data (50%+ decision-makers); QuestMobile 2025 — cross-referenced. Age distribution and city tier estimates are third-party approximations; Tencent has not published granular breakdowns.
+        </div>
+      </div>
+    </section>
+
     <section class="section trust" id="trust">
       <div class="container">
         <div class="section__header reveal">
@@ -903,7 +1056,7 @@
   </footer>
   <script>
     (function () {
-      var elements = document.querySelectorAll('.page-header__eyebrow, .page-header__title, .page-header__description, .service-card, .pillar-card, .stat-card, .trust__step, .b2b__content, .sources__item, .sources__note, .section__header, .contact__info, .contact__form');
+      var elements = document.querySelectorAll('.page-header__eyebrow, .page-header__title, .page-header__description, .service-card, .pillar-card, .stat-card, .section__header, .insight-stat, .breakdown-card, .audience-tag, .insights__highlight, .insights__source, .trust__step, .b2b__content, .sources__item, .sources__note, .contact__info, .contact__form');
       var observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
