@@ -141,13 +141,171 @@
     .form-success-card__detail-value { font-size: var(--font-size-sm); color: var(--color-accent-light); font-weight: 500; }
     a.form-success-card__detail-value { color: var(--color-primary); text-decoration: none; }
     a.form-success-card__detail-value:hover { text-decoration: underline; }
+
+    /* ── User Insights Section ── */
+    .insights { padding: var(--space-20) 0; background: var(--color-bg-alt); }
+    .insights__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-5); margin-bottom: var(--space-10); }
+    .insight-stat { background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 12px; padding: var(--space-6); text-align: center; }
+    .insight-stat__icon { width: 44px; height: 44px; margin: 0 auto var(--space-3); background: rgba(65,82,221,.15); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+    .insight-stat__icon svg { color: #4152dd; }
+    .insight-stat__num { font-size: var(--font-size-3xl); font-weight: 800; color: var(--color-text-primary); line-height: 1.1; margin-bottom: var(--space-1); }
+    .insight-stat__num span { color: #4152dd; }
+    .insight-stat__label { font-size: var(--font-size-sm); color: var(--color-text-muted); }
+
+    .insights__breakdown { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: var(--space-6); margin-bottom: var(--space-8); }
+    .breakdown-card { background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 12px; padding: var(--space-6); }
+    .breakdown-card__title { font-size: var(--font-size-sm); font-weight: 600; color: var(--color-text-primary); margin-bottom: var(--space-5); display: flex; align-items: center; gap: var(--space-2); }
+    .breakdown-card__title svg { color: #4152dd; flex-shrink: 0; }
+    .breakdown-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-3); }
+    .breakdown-row:last-child { margin-bottom: 0; }
+    .breakdown-row__label { font-size: var(--font-size-sm); color: var(--color-text-secondary); }
+    .breakdown-row__bar-wrap { flex: 1; margin: 0 var(--space-3); background: rgba(255,255,255,.05); border-radius: 4px; height: 8px; overflow: hidden; }
+    .breakdown-row__bar { height: 100%; background: linear-gradient(90deg, #4152dd, #6b8af4); border-radius: 4px; }
+    .breakdown-row__val { font-size: var(--font-size-sm); font-weight: 700; color: #4152dd; min-width: 44px; text-align: right; }
+
+    .audience-tags { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-5); }
+    .audience-tag { display: inline-flex; align-items: center; gap: 5px; padding: 5px 12px; border-radius: 20px; font-size: var(--font-size-xs); font-weight: 600; }
+    .audience-tag--blue { background: rgba(65,82,221,.12); color: #6b8af4; border: 1px solid rgba(65,82,221,.25); }
+    .audience-tag--green { background: rgba(16,185,129,.12); color: #34d399; border: 1px solid rgba(16,185,129,.25); }
+    .audience-tag--orange { background: rgba(245,158,11,.12); color: #fbbf24; border: 1px solid rgba(245,158,11,.25); }
+    .audience-tag--purple { background: rgba(139,92,246,.12); color: #a78bfa; border: 1px solid rgba(139,92,246,.25); }
+
+    .insights__source { text-align: center; font-size: var(--font-size-xs); color: var(--color-text-muted); padding: var(--space-4) 0; border-top: 1px solid var(--color-border); }
+    .insights__source a { color: var(--color-primary); text-decoration: none; }
+    .insights__source a:hover { text-decoration: underline; }
+
+    @media (max-width: 900px) { .insights__grid { grid-template-columns: repeat(2, 1fr); } .insights__breakdown { grid-template-columns: 1fr; } }
+    @media (max-width: 600px) { .insights__grid { grid-template-columns: 1fr 1fr; } }
   </style>
 </head>
 <body>
   <header class="header"><div class="container"><div class="header__inner"><a href="https://www.tuyuesouxin.cn" class="header__logo"><svg class="header__logo-icon" viewBox="0 0 48 48" fill="none"><defs><linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#c9a84c"/><stop offset="100%" stop-color="#e8c87a"/></linearGradient></defs><circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/><circle cx="37" cy="20" r="13" fill="#080c14"/><text x="4" y="32" font-family="Inter,sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-.8">TMG</text></svg><span class="header__logo-text">Tuyue Media <span>Gateway</span></span></a><nav class="header__nav"><div class="header__dropdown"><a href="https://www.tuyuesouxin.cn/services" class="header__nav-link header__dropdown-trigger active">Services <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a><div class="header__dropdown-menu"><a href="https://www.tuyuesouxin.cn/services" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">All Services</a><a href="https://www.tuyuesouxin.cn/services/wechat" class="header__dropdown-item">WeChat Ads</a><a href="https://www.tuyuesouxin.cn/services/douyin" class="header__dropdown-item">Douyin Ads</a><a href="https://www.tuyuesouxin.cn/services/baidu" class="header__dropdown-item header__dropdown-item--active">Baidu SEM</a><a href="https://www.tuyuesouxin.cn/services/xiaohongshu" class="header__dropdown-item">Xiaohongshu</a><a href="https://www.tuyuesouxin.cn/services/bilibili" class="header__dropdown-item">Bilibili Ads</a><a href="https://www.tuyuesouxin.cn/geo" class="header__dropdown-item">China GEO</a></div></div><a href="https://www.tuyuesouxin.cn/pricing" class="header__nav-link">Pricing</a><a href="https://www.tuyuesouxin.cn/client-stories" class="header__nav-link">Client Stories</a><a href="https://www.tuyuesouxin.cn/geo" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a><a href="https://www.tuyuesouxin.cn/blog/" class="header__nav-link">Blog</a><a href="https://www.tuyuesouxin.cn/faqs" class="header__nav-link">FAQ</a><div class="header__dropdown"><a href="https://www.tuyuesouxin.cn/about" class="header__nav-link header__dropdown-trigger">About <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a><div class="header__dropdown-menu"><a href="https://www.tuyuesouxin.cn/why-tmg" class="header__dropdown-item">Why TMG</a><a href="https://www.tuyuesouxin.cn/about" class="header__dropdown-item">About Us</a><a href="https://www.tuyuesouxin.cn/contact" class="header__dropdown-item">Contact</a></div></div></nav><div class="header__cta"><a href="https://www.tuyuesouxin.cn/contact" class="btn btn--primary">Get Started</a></div><button class="header__toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button></div></div></header>
   <main>
-    <div class="page-header"><div class="container"><span class="page-header__eyebrow reveal">Baidu SEM</span><h1 class="page-header__title reveal">Capture High-Intent Customers on China's #1 Search Engine</h1><p class="page-header__description reveal">660M+ monthly active users. Baidu commands over 70% market share in Chinese search. Reach customers at the precise moment they're searching for your products or services.</p></div></div>
+    <div class="page-header"><div class="container"><span class="page-header__eyebrow reveal">Baidu SEM</span><h1 class="page-header__title reveal">Capture High-Intent Customers on China's #1 Search Engine</h1><p class="page-header__description reveal">735M monthly active users + 322M AI search users. Baidu holds 97.5% coverage of Chinese internet users and processes 60 billion searches daily. Reach customers the moment they're actively looking for your products or services.</p></div></div>
     <section class="section"><div class="container"><div class="services__grid"><div class="service-card reveal"><div class="service-card__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><h3 class="service-card__title">Search Advertising (PPC)</h3><p class="service-card__description">Pay-per-click ads on Baidu's search results. Target customers actively searching for your products, services, or brand keywords in Chinese.</p><ul class="service-card__features"><li class="service-card__feature">Keyword strategy & expansion</li><li class="service-card__feature">Ad copy creation & optimization</li><li class="service-card__feature">Quality score improvement</li><li class="service-card__feature">Bid management & CPC control</li></ul></div><div class="service-card reveal reveal--delay-1"><div class="service-card__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><h3 class="service-card__title">Display & Feed Advertising</h3><p class="service-card__description">Reach users across Baidu's network of 800M+ devices through banner ads, native feeds, and programmatic display placements.</p><ul class="service-card__features"><li class="service-card__feature">Programmatic display ads</li><li class="service-card__feature">Native feed advertising</li><li class="service-card__feature">Audience targeting & retargeting</li></ul></div><div class="service-card reveal reveal--delay-2"><div class="service-card__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div><h3 class="service-card__title">Baidu Marketing Cloud</h3><p class="service-card__description">Leverage Baidu's proprietary data engine to run AI-powered campaigns, cross-channel attribution, and advanced audience segmentation.</p><ul class="service-card__features"><li class="service-card__feature">AI-powered campaign optimization</li><li class="service-card__feature">Cross-channel analytics</li><li class="service-card__feature">Custom audience modeling</li></ul></div></div></div></section>
+    <section class="insights">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Audience Insights</span>
+          <h2 class="section__title">Who Searches on Baidu?</h2>
+          <p class="section__description">Baidu reaches across every demographic in China — from Gen Z students to senior professionals. Here's what we know about the people you can reach.</p>
+        </div>
+
+        <div class="insights__grid">
+          <div class="insight-stat reveal">
+            <div class="insight-stat__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="insight-stat__num">735<span>M</span></div>
+            <div class="insight-stat__label">Monthly Active Users</div>
+          </div>
+          <div class="insight-stat reveal reveal--delay-1">
+            <div class="insight-stat__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <div class="insight-stat__num">97.5<span>%</span></div>
+            <div class="insight-stat__label">Chinese Netizen Coverage</div>
+          </div>
+          <div class="insight-stat reveal reveal--delay-2">
+            <div class="insight-stat__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <div class="insight-stat__num">322<span>M</span></div>
+            <div class="insight-stat__label">AI Search Monthly Users</div>
+          </div>
+          <div class="insight-stat reveal reveal--delay-2">
+            <div class="insight-stat__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <div class="insight-stat__num">62<span>%</span></div>
+            <div class="insight-stat__label">Ages 25–45 (Core Buyers)</div>
+          </div>
+        </div>
+
+        <div class="insights__breakdown">
+          <div class="breakdown-card reveal">
+            <div class="breakdown-card__title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              Age Distribution
+            </div>
+            <div class="breakdown-row"><span class="breakdown-row__label">24–35 years old</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:52%"></div></div><span class="breakdown-row__val">52%</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">21–35 years old</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:45%"></div></div><span class="breakdown-row__val">~29%</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">Gen Z (18–24)</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:35%"></div></div><span class="breakdown-row__val">Growing</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">Silver Gen (55+)</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:25%"></div></div><span class="breakdown-row__val">Fast Growing</span></div>
+          </div>
+          <div class="breakdown-card reveal reveal--delay-1">
+            <div class="breakdown-card__title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              City Tier Distribution
+            </div>
+            <div class="breakdown-row"><span class="breakdown-row__label">Tier 1 + New Tier 1</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:72%"></div></div><span class="breakdown-row__val">~44%</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">Tier 2 cities</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:50%"></div></div><span class="breakdown-row__val">~20%</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">Tier 3+ cities</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:55%"></div></div><span class="breakdown-row__val">~21%</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">1+2+3 tier total</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:100%"></div></div><span class="breakdown-row__val">67%</span></div>
+          </div>
+          <div class="breakdown-card reveal reveal--delay-2">
+            <div class="breakdown-card__title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              Spending Power
+            </div>
+            <div class="breakdown-row"><span class="breakdown-row__label">Outbound travel — Middle-High spenders</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:94%"></div></div><span class="breakdown-row__val">94%</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">Middle-class consumers</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:70%"></div></div><span class="breakdown-row__val">70%</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">High spenders</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:36%"></div></div><span class="breakdown-row__val">36%</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">Complete purchase on Baidu App</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:42%"></div></div><span class="breakdown-row__val">42.4%</span></div>
+          </div>
+        </div>
+
+        <div class="breakdown-card reveal" style="margin-bottom:var(--space-6);">
+          <div class="breakdown-card__title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Key Audience Segments (Baidu Marketing Platform)
+          </div>
+          <div class="audience-tags">
+            <span class="audience-tag audience-tag--blue">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Knowledge Elite — High education, high income, deep info seekers
+            </span>
+            <span class="audience-tag audience-tag--green">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Gen Z — Digital natives born 1995–2009
+            </span>
+            <span class="audience-tag audience-tag--blue">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Working Professionals — Urban office workers
+            </span>
+            <span class="audience-tag audience-tag--orange">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              New Parents — Infant stage family builders
+            </span>
+            <span class="audience-tag audience-tag--purple">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Silver Gen — Pre-retirees, stable savings, open to spending
+            </span>
+            <span class="audience-tag audience-tag--green">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Students — Online active, early adopters
+            </span>
+            <span class="audience-tag audience-tag--orange">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Fashion Forward — Appearance-conscious, trend-driven
+            </span>
+            <span class="audience-tag audience-tag--purple">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Health & Wellness Seekers —崇尚健康可持续生活
+            </span>
+            <span class="audience-tag audience-tag--blue">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Newlyweds — Young couples starting families
+            </span>
+          </div>
+        </div>
+
+        <div class="insights__source">
+          Data sources: Baidu Q2 2025 Earnings Report (735M MAU, AI search 322M); Baidu Marketing Deck (97.5% coverage, 60B daily searches); 南京营销集团, 今日头条, QuestMobile — cross-referenced. Gender ratio (6:5 male) is third-party estimate; Baidu has not published a public figure.
+        </div>
+      </div>
+    </section>
+
     <section class="section contact" id="contact"><div class="container"><div class="contact__grid"><div class="contact__info reveal"><div><h2 class="contact__title">Ready to Expand to China?</h2><p class="contact__description">Let's discuss how TMG can help your agency access China's digital advertising market.</p><a href="mailto:tmg@tuyuesouxin.cn" class="contact__email">tmg@tuyuesouxin.cn</a><div class="contact__details"><div class="contact__detail-item"><svg class="contact__detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>Response time: Within 24 hours (weekdays)</div><div class="contact__detail-item"><svg class="contact__detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>Languages: English, Mandarin, Cantonese</div><div class="contact__detail-item"><svg aria-hidden="true" class="contact__detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp (scan below qr)</div></div><div class="contact__qr" id="contactQR" style="display: block;"><h3 class="contact__qr-title">Scan to Add Us on WhatsApp</h3><img src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https://wa.me/8618930383550" alt="WhatsApp QR Code" class="contact__qr-image"></div></div><div class="contact__trust"><div class="contact__map"><div class="contact__map-embed" id="mapContainer"><iframe class="contact__map-iframe" src="https://maps.google.com/maps?q=599-2F202+Wanzhen+Rd,+Jia+Ding+Qu,+Shanghai+Shi,+China,+201824&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div><div class="contact__address"><span class="contact__address-text">NO. 599 WANZHEN ROAD, SHANGHAI, CHINA</span></div></div></div></div><div class="contact__form reveal"><div id="formSuccess" style="display:none;" class="form-success-card"><div class="form-success-card__inner"><div class="form-success-card__icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="url(#successGrad)"/><path d="M7 12.5l3.5 3.5 6.5-7" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="successGrad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#c9a84c"/><stop offset="100%" stop-color="#e8c87a"/></linearGradient></defs></svg></div><h3 class="form-success-card__title">Inquiry Received!</h3><p class="form-success-card__subtitle">Thank you for reaching out to TMG.</p><p class="form-success-card__message">We've received your inquiry and will get back to you within <strong>1 business day</strong>.</p><div class="form-success-card__details"><div class="form-success-card__detail-row"><span class="form-success-card__detail-label">Email us directly:</span><a href="mailto:tmg@tuyuesouxin.cn" class="form-success-card__detail-value">tmg@tuyuesouxin.cn</a></div><div class="form-success-card__detail-row"><span class="form-success-card__detail-label">For urgent matters:</span><span class="form-success-card__detail-value">WhatsApp us via QR code below</span></div></div><button type="button" class="btn btn--secondary" onclick="document.getElementById('formSuccess').style.display='none'; document.getElementById('contactForm').style.display='block';" style="margin-top: var(--space-6); width:100%;">Submit Another Inquiry</button></div></div><form id="contactForm" action="https://formspree.io/f/xpqojqlb" method="POST"><input type="hidden" name="_replyto" value="tmg@tuyuesouxin.cn"><input type="hidden" name="_subject" value="Baidu SEM Inquiry from TMG Website"><input type="text" name="_gotcha" style="display:none"><div class="form__group"><label class="form__label" for="salutation">Salutation<span class="form__required">*</span></label><select class="form__select" id="salutation" name="Salutation" required><option value="">Select your title</option><option value="Mr.">Mr.</option><option value="Ms.">Ms.</option><option value="Mrs.">Mrs.</option><option value="Dr.">Dr.</option><option value="Other">Other</option></select></div><div class="form__group"><label class="form__label" for="fullName">Full Name<span class="form__required">*</span></label><input class="form__input" type="text" id="fullName" name="Full Name" required placeholder="Your full name"></div><div class="form__group"><label class="form__label" for="company">Company Name<span class="form__required">*</span></label><input class="form__input" type="text" id="company" name="Company Name" required placeholder="Your company name"></div><div class="form__group"><label class="form__label" for="type">Identity<span class="form__required">*</span></label><select class="form__select" id="type" name="Type" required><option value="">Select your role</option><option value="Agency">Advertising Agency</option><option value="Brand">Brand Owner</option><option value="Media">Media Publisher</option><option value="Other">Other</option></select></div><div class="form__group"><label class="form__label" for="email">Email Address<span class="form__required">*</span></label><input class="form__input" type="email" id="email" name="Email" required placeholder="your@email.com"></div><div class="form__group"><label class="form__label" for="service">Service Needed<span class="form__required">*</span></label><select class="form__select" id="service" name="Service" required><option value="">Select service type</option><option value="Baidu SEM">Baidu SEM</option><option value="Recharge Only">Recharge Only</option><option value="Account Setup">Account Setup</option><option value="Full Service">Full Service</option><option value="Other">Other / Not Sure</option></select></div><div class="form__group"><label class="form__label" for="needs">Your Needs<span class="form__required">*</span></label><textarea class="form__textarea" id="needs" name="Needs" required placeholder="Tell us about your requirements, goals, and any questions you have..."></textarea></div><div class="form__group"><label class="form__label" for="comments">Comments (Optional)</label><textarea class="form__textarea" id="comments" name="Comments" placeholder="Any additional information..."></textarea></div><button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">Submit Inquiry</button></form></div></div></div></section>
   </main>
   <footer class="footer"><div class="container"><div class="footer__grid"><div class="footer__section"><a href="https://www.tuyuesouxin.cn" class="footer__logo">Tuyue Media <span>Gateway</span></a><p class="footer__description">Your single point of access to China's $100B digital advertising market. We help international agencies navigate Chinese platforms with ease.</p></div><div class="footer__section"><h4 class="footer__title">Quick Links</h4><ul class="footer__links"><li><a href="https://www.tuyuesouxin.cn/services" class="footer__link">Services</a></li><li><a href="https://www.tuyuesouxin.cn/pricing" class="footer__link">Pricing</a></li><li><a href="https://www.tuyuesouxin.cn/about" class="footer__link">Who We Are</a></li><li><a href="https://www.tuyuesouxin.cn/client-stories" class="footer__link">Client Stories</a></li><li><a href="https://www.tuyuesouxin.cn/faqs" class="footer__link">FAQ</a></li></ul></div><div class="footer__section"><h4 class="footer__title">Platforms</h4><ul class="footer__links"><li><a href="https://www.tuyuesouxin.cn/services/wechat" class="footer__link">WeChat Ads</a></li><li><a href="https://www.tuyuesouxin.cn/services/douyin" class="footer__link">Douyin Ads</a></li><li><a href="https://www.tuyuesouxin.cn/services/baidu" class="footer__link">Baidu SEM</a></li><li><a href="https://www.tuyuesouxin.cn/services/xiaohongshu" class="footer__link">Xiaohongshu</a></li><li><a href="https://www.tuyuesouxin.cn/geo" class="footer__link">China GEO</a></li></ul></div><div class="footer__section"><h4 class="footer__title">Contact</h4><ul class="footer__links"><li><a href="mailto:tmg@tuyuesouxin.cn" class="footer__link footer__link--email">tmg@tuyuesouxin.cn</a></li><li><a href="#contactQR" class="footer__link">WhatsApp (Click to scan)</a></li></ul></div></div><div class="footer__bottom"><p class="footer__copyright">© 2026 Tuyue Media Gateway. All rights reserved.</p><div class="footer__platforms"><a href="https://ad.weixin.qq.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">WeChat</a><a href="https://www.oceanengine.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Douyin</a><a href="https://e.baidu.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Baidu</a><a href="https://www.xiaohongshu.com/brand" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Xiaohongshu</a><a href="https://member.bilibili.com/platform/ad" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bilibili</a></div></div></div></footer>
