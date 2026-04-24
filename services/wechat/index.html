@@ -316,6 +316,8 @@
       border: 1px solid var(--color-border);
       border-radius: 12px;
       padding: var(--space-10);
+      opacity: 1 !important;
+      transform: none !important;
     }
     .trust__loop {
       display: grid;
@@ -326,9 +328,12 @@
     .trust__step {
       text-align: center;
       padding: var(--space-6);
-      background: var(--color-bg-alt);
+      background: #222222;
       border-radius: 12px;
       position: relative;
+      outline: 2px solid red;
+      opacity: 1 !important;
+      transform: none !important;
     }
     .trust__step::after {
       content: '→';
@@ -563,78 +568,6 @@
       </div>
     </section>
 
-    <section class="section why-wechat" id="why-wechat">
-      <div class="container">
-        <div class="section__header reveal">
-          <span class="section__eyebrow">The Demographic Advantage</span>
-          <h2 class="section__title">Why WeChat Is Different</h2>
-          <p class="section__description">Unlike entertainment platforms, WeChat is where decisions happen — in corporate chat groups, payment approvals, and long-term brand relationships.</p>
-        </div>
-        <div class="pillars__grid">
-          <div class="pillar-card reveal">
-            <div class="pillar-card__icon">🛡️</div>
-            <h3 class="pillar-card__title">The Professional Hub</h3>
-            <p class="pillar-card__description">WeChat is the "LinkedIn of China." 50%+ of Official Account readers hold university degrees — your direct line to C-suite executives and decision-makers.</p>
-            <div class="pillar-card__stats">
-              <div class="pillar-card__stat">
-                <span class="pillar-card__stat-label">Decision-makers (25-45)</span>
-                <span class="pillar-card__stat-value">50%+</span>
-              </div>
-              <div class="pillar-card__stat">
-                <span class="pillar-card__stat-label">University degree holders</span>
-                <span class="pillar-card__stat-value">50%+</span>
-              </div>
-            </div>
-          </div>
-          <div class="pillar-card reveal reveal--delay-1">
-            <div class="pillar-card__icon">📈</div>
-            <h3 class="pillar-card__title">The Video Frontier</h3>
-            <p class="pillar-card__description">WeChat Channels (Video Accounts) is the new growth engine — reaching high-net-worth segments with 800M+ Video Account MAU. Premium audiences, premium results.</p>
-            <div class="pillar-card__stats">
-              <div class="pillar-card__stat">
-                <span class="pillar-card__stat-label">Video Account MAU</span>
-                <span class="pillar-card__stat-value">800M+</span>
-              </div>
-              <div class="pillar-card__stat">
-                <span class="pillar-card__stat-label">High-income segments</span>
-                <span class="pillar-card__stat-value">Fastest growing</span>
-              </div>
-            </div>
-          </div>
-          <div class="pillar-card reveal reveal--delay-2">
-            <div class="pillar-card__icon">💎</div>
-            <h3 class="pillar-card__title">The Transactional Heart</h3>
-            <p class="pillar-card__description">Mini Programs are the heart of WeChat commerce. 600M+ users engage with Mini Programs daily — seamless transactions without leaving the app.</p>
-            <div class="pillar-card__stats">
-              <div class="pillar-card__stat">
-                <span class="pillar-card__stat-label">Mini Program DAU</span>
-                <span class="pillar-card__stat-value">600M+</span>
-              </div>
-              <div class="pillar-card__stat">
-                <span class="pillar-card__stat-label">Transaction capability</span>
-                <span class="pillar-card__stat-value">Built-in</span>
-              </div>
-            </div>
-          </div>
-          <div class="pillar-card reveal reveal--delay-1">
-            <div class="pillar-card__icon">🌏</div>
-            <h3 class="pillar-card__title">Total Coverage</h3>
-            <p class="pillar-card__description">100% penetration in Tier 1-2 cities + growing Tier 3-5 expansion. WeChat reaches everyone — from Shanghai executives to emerging market consumers.</p>
-            <div class="pillar-card__stats">
-              <div class="pillar-card__stat">
-                <span class="pillar-card__stat-label">T1/T2 city penetration</span>
-                <span class="pillar-card__stat-value">100%</span>
-              </div>
-              <div class="pillar-card__stat">
-                <span class="pillar-card__stat-label">Total MAU</span>
-                <span class="pillar-card__stat-value">1.34B</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="insights" id="audience-insights">
       <div class="container">
         <div class="section__header reveal">
@@ -744,6 +677,78 @@
 
         <div class="insights__source">
           Data sources: Tencent Q2 2025 Results (1.34B MAU, 900M+ WeChat Pay users); Tencent Financial Report 2025 (Mini Program GMV ¥5.5T+); Tencent Internal Data (50%+ decision-makers); QuestMobile 2025 — cross-referenced. Age distribution and city tier estimates are third-party approximations; Tencent has not published granular breakdowns.
+        </div>
+      </div>
+    </section>
+
+    <section class="section why-wechat" id="why-wechat">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__eyebrow">The Demographic Advantage</span>
+          <h2 class="section__title">Why WeChat Is Different</h2>
+          <p class="section__description">Unlike entertainment platforms, WeChat is where decisions happen — in corporate chat groups, payment approvals, and long-term brand relationships.</p>
+        </div>
+        <div class="pillars__grid">
+          <div class="pillar-card reveal">
+            <div class="pillar-card__icon">🛡️</div>
+            <h3 class="pillar-card__title">The Professional Hub</h3>
+            <p class="pillar-card__description">WeChat is the "LinkedIn of China." 50%+ of Official Account readers hold university degrees — your direct line to C-suite executives and decision-makers.</p>
+            <div class="pillar-card__stats">
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">Decision-makers (25-45)</span>
+                <span class="pillar-card__stat-value">50%+</span>
+              </div>
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">University degree holders</span>
+                <span class="pillar-card__stat-value">50%+</span>
+              </div>
+            </div>
+          </div>
+          <div class="pillar-card reveal reveal--delay-1">
+            <div class="pillar-card__icon">📈</div>
+            <h3 class="pillar-card__title">The Video Frontier</h3>
+            <p class="pillar-card__description">WeChat Channels (Video Accounts) is the new growth engine — reaching high-net-worth segments with 800M+ Video Account MAU. Premium audiences, premium results.</p>
+            <div class="pillar-card__stats">
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">Video Account MAU</span>
+                <span class="pillar-card__stat-value">800M+</span>
+              </div>
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">High-income segments</span>
+                <span class="pillar-card__stat-value">Fastest growing</span>
+              </div>
+            </div>
+          </div>
+          <div class="pillar-card reveal reveal--delay-2">
+            <div class="pillar-card__icon">💎</div>
+            <h3 class="pillar-card__title">The Transactional Heart</h3>
+            <p class="pillar-card__description">Mini Programs are the heart of WeChat commerce. 600M+ users engage with Mini Programs daily — seamless transactions without leaving the app.</p>
+            <div class="pillar-card__stats">
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">Mini Program DAU</span>
+                <span class="pillar-card__stat-value">600M+</span>
+              </div>
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">Transaction capability</span>
+                <span class="pillar-card__stat-value">Built-in</span>
+              </div>
+            </div>
+          </div>
+          <div class="pillar-card reveal reveal--delay-1">
+            <div class="pillar-card__icon">🌏</div>
+            <h3 class="pillar-card__title">Total Coverage</h3>
+            <p class="pillar-card__description">100% penetration in Tier 1-2 cities + growing Tier 3-5 expansion. WeChat reaches everyone — from Shanghai executives to emerging market consumers.</p>
+            <div class="pillar-card__stats">
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">T1/T2 city penetration</span>
+                <span class="pillar-card__stat-value">100%</span>
+              </div>
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">Total MAU</span>
+                <span class="pillar-card__stat-value">1.34B</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1021,7 +1026,7 @@
   </footer>
   <script>
     (function () {
-      var elements = document.querySelectorAll('.page-header__eyebrow, .page-header__title, .page-header__description, .service-card, .pillar-card, .stat-card, .section__header, .insight-stat, .breakdown-card, .audience-tag, .insights__highlight, .insights__source, .trust__step, .b2b__content, .sources__item, .sources__note, .contact__info, .contact__form');
+      var elements = document.querySelectorAll('.page-header__eyebrow, .page-header__title, .page-header__description, .service-card, .pillar-card, .stat-card, .section__header, .insight-stat, .breakdown-card, .audience-tag, .insights__highlight, .insights__source, .trust__content, .trust__step, .b2b__content, .sources__item, .sources__note, .contact__info, .contact__form');
       var observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
