@@ -27,7 +27,8 @@
     #contactQR { scroll-margin-top: 80px; }
     body { font-family: var(--font-family); background-color: var(--color-bg); color: var(--color-text-primary); line-height: 1.6; -webkit-font-smoothing: antialiased; }
     .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 var(--space-6); }
-    .header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(8, 12, 20, 0.85); backdrop-filter: blur(16px); border-bottom: 1px solid var(--color-border); }
+    .header { position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      margin-top: 8px; background: rgba(8, 12, 20, 0.85); backdrop-filter: blur(16px); border-bottom: 1px solid var(--color-border); }
     .header__inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
     .header__logo { display: flex; align-items: center; gap: var(--space-2); text-decoration: none; transition: opacity var(--transition-fast); }
     .header__logo:hover { opacity: 0.85; }
@@ -44,8 +45,9 @@
     .header__dropdown-arrow { transition: transform 150ms ease; }
     .header__dropdown:hover .header__dropdown-arrow,
     .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
-    .header__dropdown-menu { position: absolute; top: calc(100% + 8px); left: 50%; transform: translateX(-50%); background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 10px; padding: var(--space-2); min-width: 180px; display: none; flex-direction: column; opacity: 0; box-shadow: 0 8px 32px rgba(0,0,0,0.4);
-      transition: opacity var(--transition-fast), transform var(--transition-fast); z-index: 100; }
+    .header__dropdown-menu { position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 10px; padding: 8px var(--space-2) var(--space-2); min-width: 180px; display: none; flex-direction: column; opacity: 0; box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      transition: opacity var(--transition-fast), transform var(--transition-fast); z-index: 100;
+      margin-top: 8px; }
     .header__dropdown:hover .header__dropdown-menu,
     .header__dropdown.open .header__dropdown-menu { display: flex; opacity: 1; }
     .header__dropdown-item { font-size: var(--font-size-sm); font-weight: 500; color: var(--color-text-secondary); padding: var(--space-3) var(--space-4); border-radius: 6px; transition: background 150ms ease, color 150ms ease; white-space: nowrap; text-decoration: none; }
