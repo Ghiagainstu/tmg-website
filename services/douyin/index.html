@@ -274,6 +274,123 @@
         grid-template-columns: 1fr;
       }
     }
+
+    /* ===== Audience Insights Section (Douyin) ===== */
+    .insights {
+      padding: var(--space-12) 0;
+      background: var(--color-bg-alt);
+    }
+    .insights__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-5);
+      margin-bottom: var(--space-6);
+    }
+    .insight-stat {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: var(--space-6);
+      text-align: center;
+    }
+    .insight-stat__icon {
+      width: 44px; height: 44px;
+      margin: 0 auto var(--space-3);
+      background: rgba(254, 44, 85, .15);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .insight-stat__icon svg { color: #fe2c55; }
+    .insight-stat__num {
+      font-size: var(--font-size-3xl);
+      font-weight: 800;
+      color: var(--color-text-primary);
+      line-height: 1.1;
+      margin-bottom: var(--space-1);
+    }
+    .insight-stat__num span { color: #fe2c55; }
+    .insight-stat__label { font-size: var(--font-size-sm); color: var(--color-text-muted); }
+    .insights__breakdown {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: var(--space-6);
+      margin-bottom: var(--space-4);
+    }
+    .breakdown-card {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: var(--space-6);
+    }
+    .breakdown-card__title {
+      font-size: var(--font-size-sm);
+      font-weight: 600;
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-5);
+      display: flex; align-items: center; gap: var(--space-2);
+    }
+    .breakdown-card__title svg { color: #fe2c55; flex-shrink: 0; }
+    .breakdown-row {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: var(--space-3);
+    }
+    .breakdown-row:last-child { margin-bottom: 0; }
+    .breakdown-row__label { font-size: var(--font-size-sm); color: var(--color-text-secondary); }
+    .breakdown-row__bar-wrap {
+      flex: 1; margin: 0 var(--space-3);
+      background: rgba(255,255,255,.05);
+      border-radius: 4px; height: 8px; overflow: hidden;
+    }
+    .breakdown-row__bar {
+      height: 100%;
+      background: linear-gradient(90deg, #fe2c55, #ff6b8a);
+      border-radius: 4px;
+    }
+    .breakdown-row__val { font-size: var(--font-size-sm); font-weight: 700; color: #fe2c55; min-width: 44px; text-align: right; }
+    .audience-tags { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-5); }
+    .audience-tag {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 5px 12px; border-radius: 20px;
+      font-size: var(--font-size-xs); font-weight: 600;
+    }
+    .audience-tag--brand {
+      background: rgba(254, 44, 85, .12);
+      color: #ff6b8a;
+      border: 1px solid rgba(254, 44, 85, .25);
+    }
+    .insights__highlight {
+      background: var(--color-bg-card);
+      border: 1px solid rgba(254, 44, 85, .3);
+      border-radius: 12px;
+      padding: var(--space-6);
+      margin-bottom: var(--space-4);
+      display: flex; align-items: flex-start; gap: var(--space-5);
+    }
+    .insights__highlight-icon {
+      flex-shrink: 0; width: 48px; height: 48px;
+      background: rgba(254, 44, 85, .15);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      color: #fe2c55;
+    }
+    .insights__highlight h3 { font-size: var(--font-size-lg); font-weight: 700; margin-bottom: var(--space-2); }
+    .insights__highlight p { font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.7; }
+    .insights__highlight strong { color: #ff6b8a; }
+    .insights__source {
+      text-align: center;
+      font-size: var(--font-size-xs);
+      color: var(--color-text-muted);
+      padding: var(--space-2) 0;
+      border-top: 1px solid var(--color-border);
+    }
+    @media (max-width: 900px) {
+      .insights__grid { grid-template-columns: repeat(2, 1fr); }
+      .insights__breakdown { grid-template-columns: 1fr; }
+      .insights__highlight { flex-direction: column; }
+    }
+    @media (max-width: 600px) {
+      .insights__grid { grid-template-columns: 1fr 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -381,47 +498,162 @@
       </div>
     </section>
 
-    <section class="section insights" id="insights">
+    <section class="insights" id="audience-insights">
       <div class="container">
         <div class="section__header reveal">
           <span class="section__eyebrow">Audience Insights</span>
-          <h2 class="section__title">Douyin's Balanced, Affluent Audience</h2>
-          <p class="section__description">The platform has successfully saturated all age groups and income levels, making it China's most comprehensive advertising channel.</p>
+          <h2 class="section__title">Who Uses Douyin?</h2>
+          <p class="section__description">Douyin reaches across every demographic in China — from Gen Z to affluent millennials, silver economy seniors to impulse‑ready female shoppers.</p>
         </div>
+
+        <!-- 4个统计卡片 -->
         <div class="insights__grid">
-          <div class="insight-card reveal">
-            <div class="insight-card__icon">📊</div>
-            <h3 class="insight-card__title">Age Distribution</h3>
-            <p class="insight-card__description">Gen Z (under 24): 25% • Young Millennials (25‑30): 22% • Mature Millennials (31‑40): 26% • Silver Economy (41+): 27%</p>
+          <div class="insight-stat reveal">
+            <div class="insight-stat__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="insight-stat__num">600M<span>+</span></div>
+            <div class="insight-stat__label">Daily Active Users</div>
           </div>
-          <div class="insight-card reveal reveal--delay-1">
-            <div class="insight-card__icon">👫</div>
-            <h3 class="insight-card__title">Gender Split</h3>
-            <p class="insight-card__description">49% Male / 51% Female. Female users drive impulse buys; male users lead in high‑involvement research categories.</p>
+          <div class="insight-stat reveal reveal--delay-1">
+            <div class="insight-stat__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="insight-stat__num">125<span>min</span></div>
+            <div class="insight-stat__label">Avg. Daily Time Spent</div>
           </div>
-          <div class="insight-card reveal reveal--delay-2">
-            <div class="insight-card__icon">🏙️</div>
-            <h3 class="insight-card__title">Geographic Reach</h3>
-            <p class="insight-card__description">35% Tier 1‑2 cities (high purchasing power) • 65% Tier 3‑below (the "sinking market" growth engine).</p>
+          <div class="insight-stat reveal reveal--delay-2">
+            <div class="insight-stat__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="insight-stat__num">80<span>%</span></div>
+            <div class="insight-stat__label">T1/T2 City Coverage</div>
           </div>
-          <div class="insight-card reveal reveal--delay-1">
-            <div class="insight-card__icon">💰</div>
-            <h3 class="insight-card__title">Income & Education</h3>
-            <p class="insight-card__description">30% earn over ¥10,000/month • 45% hold college degrees or higher • High concentration of white‑collar professionals.</p>
-          </div>
-          <div class="insight-card reveal reveal--delay-2">
-            <div class="insight-card__icon">🛒</div>
-            <h3 class="insight-card__title">E‑commerce Behavior</h3>
-            <p class="insight-card__description">60% of users watched a shopping livestream in the last 30 days • Rising AOV in luxury, home appliances, skincare.</p>
-          </div>
-          <div class="insight-card reveal reveal--delay-1">
-            <div class="insight-card__icon">⏱️</div>
-            <h3 class="insight-card__title">Engagement Depth</h3>
-            <p class="insight-card__description">125+ minutes average daily time spent • 500M+ daily searches (video‑first search engine).</p>
+          <div class="insight-stat reveal reveal--delay-1">
+            <div class="insight-stat__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            </div>
+            <div class="insight-stat__num">500M<span>+</span></div>
+            <div class="insight-stat__label">Daily Searches</div>
           </div>
         </div>
-        <div class="sources__note reveal">
-          <p>All audience data reflects the market landscape as of Q1 2024, providing the most current insights into China's rapidly shifting digital ecosystem.</p>
+
+        <!-- 3个分解卡片 -->
+        <div class="insights__breakdown">
+          <div class="breakdown-card reveal">
+            <div class="breakdown-card__title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              Age Distribution
+            </div>
+            <div class="breakdown-row">
+              <span class="breakdown-row__label">Under 24 (Gen Z)</span>
+              <div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:25%"></div></div>
+              <span class="breakdown-row__val">25%</span>
+            </div>
+            <div class="breakdown-row">
+              <span class="breakdown-row__label">25–30 (Young Millennials)</span>
+              <div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:22%"></div></div>
+              <span class="breakdown-row__val">22%</span>
+            </div>
+            <div class="breakdown-row">
+              <span class="breakdown-row__label">31–40 (Mature Millennials)</span>
+              <div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:26%"></div></div>
+              <span class="breakdown-row__val">26%</span>
+            </div>
+            <div class="breakdown-row">
+              <span class="breakdown-row__label">41+ (Silver Economy)</span>
+              <div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:27%"></div></div>
+              <span class="breakdown-row__val">27%</span>
+            </div>
+          </div>
+          <div class="breakdown-card reveal">
+            <div class="breakdown-card__title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              City Tier Coverage
+            </div>
+            <div class="breakdown-row">
+              <span class="breakdown-row__label">Tier 1 (Beijing/Shanghai/Guangzhou/Shenzhen)</span>
+              <div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:35%"></div></div>
+              <span class="breakdown-row__val">35%</span>
+            </div>
+            <div class="breakdown-row">
+              <span class="breakdown-row__label">Tier 2 (New First-tier Cities)</span>
+              <div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:30%"></div></div>
+              <span class="breakdown-row__val">30%</span>
+            </div>
+            <div class="breakdown-row">
+              <span class="breakdown-row__label">Tier 3–5 (Sinking Market)</span>
+              <div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:35%"></div></div>
+              <span class="breakdown-row__val">35%</span>
+            </div>
+          </div>
+          <div class="breakdown-card reveal">
+            <div class="breakdown-card__title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              Income & Education
+            </div>
+            <div class="breakdown-row">
+              <span class="breakdown-row__label">Monthly Income ¥10,000+</span>
+              <div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:30%"></div></div>
+              <span class="breakdown-row__val">30%</span>
+            </div>
+            <div class="breakdown-row">
+              <span class="breakdown-row__label">College Degree or Higher</span>
+              <div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:45%"></div></div>
+              <span class="breakdown-row__val">45%</span>
+            </div>
+            <div class="breakdown-row">
+              <span class="breakdown-row__label">White‑Collar Professionals</span>
+              <div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:40%"></div></div>
+              <span class="breakdown-row__val">High</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 人群标签 -->
+        <div class="breakdown-card reveal">
+          <div class="breakdown-card__title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            Key Audience Segments
+          </div>
+          <div class="audience-tags">
+            <span class="audience-tag audience-tag--brand">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Gen Z Consumers (18–24)
+            </span>
+            <span class="audience-tag audience-tag--brand">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Affluent Millennials (25–40)
+            </span>
+            <span class="audience-tag audience-tag--brand">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Silver Economy (50+)
+            </span>
+            <span class="audience-tag audience-tag--brand">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Female Impulse Shoppers
+            </span>
+            <span class="audience-tag audience-tag--brand">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Live Commerce Enthusiasts
+            </span>
+          </div>
+        </div>
+
+        <!-- 亮点区块 -->
+        <div class="insights__highlight reveal">
+          <div class="insights__highlight-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div>
+            <h3>Why Douyin for Your Brand?</h3>
+            <p>Douyin is China's most comprehensive advertising channel — <strong>every age, every income tier, every city level</strong>. No other platform matches its combination of reach, engagement depth (125+ min/day), and direct commerce integration through live streaming. The 500M+ daily searches make it a video‑first discovery engine, not just entertainment.</p>
+          </div>
+        </div>
+
+        <!-- 数据来源 -->
+        <div class="insights__source">
+          Data sources: OceanEngine Official Platform Report 2024, QuestMobile China Mobile Internet Report Q3 2023, CNNIC 53rd Statistical Report March 2024, iResearch & CBNData Short Video Marketing Whitepaper 2023–2024.
         </div>
       </div>
     </section>
@@ -625,7 +857,7 @@
   </footer>
   <script>
     (function () {
-      var elements = document.querySelectorAll('.page-header__eyebrow, .page-header__title, .page-header__description, .service-card, .insight-card, .sources__item, .sources__note, .section__header, .contact__info, .contact__form');
+      var elements = document.querySelectorAll('.page-header__eyebrow, .page-header__title, .page-header__description, .service-card, .pillar-card, .stat-card, .section__header, .insight-stat, .breakdown-card, .audience-tag, .insights__highlight, .insights__source, .trust__step, .b2b__content, .sources__item, .sources__note, .contact__info, .contact__form');
       var observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
