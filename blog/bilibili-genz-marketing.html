@@ -15,373 +15,438 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --bg: #080c14;
-      --bg-alt: #0d1421;
-      --bg-card: #111927;
-      --text: #e8eaf0;
-      --text-muted: #8892a4;
-      --accent: #c9a84c;
-      --accent-dim: rgba(201, 168, 76, 0.12);
-      --border: rgba(201, 168, 76, 0.15);
-      --radius: 12px;
-      --max-w: 860px;
-    }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Inter', -apple-system, sans-serif;
-      font-size: 16px;
-      line-height: 1.75;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    /* ── NAV ── */
-    .nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: rgba(8,12,20,.92);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
-      padding: 0 2rem;
-      height: 64px;
-      display: flex; align-items: center;
-    }
-    .nav__inner { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; gap: 2rem; }
-    .nav__logo { display: flex; align-items: center; gap: .6rem; font-weight: 700; font-size: 1.1rem; color: var(--accent); text-decoration: none; flex-shrink: 0; }
-    .nav__logo svg { width: 32px; height: 32px; }
-    .nav__links { display: flex; gap: 1.5rem; list-style: none; margin-left: auto; }
-    .nav__links a { color: var(--text-muted); font-size: .9rem; font-weight: 500; transition: color .2s; }
-    .nav__links a:hover { color: var(--text); text-decoration: none; }
-    .nav__dropdown { position: relative; }
-    .nav__dropdown-trigger { display: flex; align-items: center; gap: .3rem; cursor: pointer; }
-    .nav__dropdown-arrow { transition: transform .2s; font-size: .7rem; }
-    .nav__dropdown-menu { display: none; position: absolute; top: calc(100% + .75rem); left: 0; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: .5rem; min-width: 180px; flex-direction: column; gap: .25rem; box-shadow: 0 8px 32px rgba(0,0,0,.4); }
-    .nav__dropdown:hover .nav__dropdown-menu,
-    .nav__dropdown.open .nav__dropdown-menu { display: flex; }
-    .nav__dropdown:hover .nav__dropdown-arrow,
-    .nav__dropdown.open .nav__dropdown-arrow { transform: rotate(180deg); }
-    .nav__dropdown-menu a { color: var(--text-muted); padding: .5rem .75rem; border-radius: 8px; font-size: .88rem; display: block; transition: background .15s, color .15s; }
-    .nav__dropdown-menu a:hover { background: var(--accent-dim); color: var(--accent); text-decoration: none; }
-    .nav__cta { background: var(--accent); color: #080c14 !important; padding: .45rem 1.1rem; border-radius: 8px; font-weight: 600; font-size: .88rem !important; transition: opacity .2s !important; }
-    .nav__cta:hover { opacity: .85; text-decoration: none !important; }
-
-    /* ── HERO ── */
-    .article-hero {
-      padding: 8rem 2rem 3rem;
-      text-align: center;
-      background: linear-gradient(180deg, rgba(201,168,76,.06) 0%, transparent 100%);
-      border-bottom: 1px solid var(--border);
-    }
-    .article-hero .tag {
-      display: inline-block;
-      background: rgba(201,168,76,.15);
-      color: var(--accent);
-      font-size: .75rem;
-      font-weight: 600;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      padding: .3rem .85rem;
-      border-radius: 100px;
-      margin-bottom: 1.25rem;
-    }
-    .article-hero h1 {
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
-      font-weight: 800;
-      line-height: 1.2;
-      max-width: 760px;
-      margin: 0 auto 1.25rem;
-      background: linear-gradient(135deg, #fff 0%, #d0c4a8 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    .article-hero .meta { color: var(--text-muted); font-size: .875rem; display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
-    .article-hero .meta span { display: flex; align-items: center; gap: .4rem; }
-
-    /* ── LAYOUT ── */
-    .layout { max-width: var(--max-w); margin: 0 auto; padding: 3rem 1.5rem 6rem; display: grid; grid-template-columns: 1fr; gap: 0; }
-
-    /* ── TOC ── */
-    .toc { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; margin-bottom: 2.5rem; }
-    .toc h2 { font-size: .8rem; text-transform: uppercase; letter-spacing: .1em; color: var(--accent); margin-bottom: .75rem; font-weight: 700; }
-    .toc ol { list-style: none; counter-reset: toc; }
-    .toc li { counter-increment: toc; }
-    .toc li::before { content: counter(toc) '. '; color: var(--accent); font-weight: 600; }
-    .toc a { color: var(--text-muted); font-size: .9rem; display: block; padding: .3rem 0; transition: color .2s; }
-    .toc a:hover { color: var(--accent); text-decoration: none; }
-
-    /* ── PROSE ── */
-    .prose h2 { font-size: 1.45rem; font-weight: 700; margin: 2.5rem 0 .75rem; color: #fff; border-left: 3px solid var(--accent); padding-left: .85rem; }
-    .prose h3 { font-size: 1.1rem; font-weight: 600; margin: 1.5rem 0 .5rem; color: #e0d8c8; }
-    .prose p { margin-bottom: 1rem; color: #c8ccd8; }
-    .prose ul, .prose ol { margin: .75rem 0 1rem 1.5rem; }
-    .prose li { margin-bottom: .4rem; color: #c8ccd8; }
-    .prose strong { color: var(--accent); font-weight: 600; }
-    .prose blockquote {
-      border-left: 3px solid var(--accent);
-      padding: .75rem 1.25rem;
-      margin: 1.5rem 0;
-      background: var(--accent-dim);
-      border-radius: 0 var(--radius) var(--radius) 0;
-      font-size: 1.05rem;
-      color: #d8d0b8;
-      font-style: italic;
-    }
-
-    /* ── CALLOUT ── */
-    .callout {
-      background: var(--accent-dim);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 1.25rem 1.5rem;
-      margin: 1.5rem 0;
-      display: flex; gap: 1rem; align-items: flex-start;
-    }
-    .callout__icon { font-size: 1.3rem; flex-shrink: 0; }
-    .callout p { margin: 0; color: #d8d0b8; font-size: .95rem; }
-
-    /* ── FEATURE GRID ── */
-    .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin: 1.25rem 0; }
-    .feature-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 1.25rem;
-    }
-    .feature-card__icon { font-size: 1.6rem; margin-bottom: .6rem; }
-    .feature-card h3 { font-size: .95rem; font-weight: 700; margin-bottom: .35rem; color: #fff; }
-    .feature-card p { font-size: .85rem; color: var(--text-muted); margin: 0; }
-
-    /* ── TAKEAWAYS ── */
-    .takeaways { background: linear-gradient(135deg, rgba(201,168,76,.08), rgba(201,168,76,.03)); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem; margin: 2rem 0; }
-    .takeaways h2 { border-left-color: #fff; color: #fff; font-size: 1.15rem; }
-    .takeaways ul { margin: .5rem 0 0 1.25rem; }
-    .takeaways li { margin-bottom: .5rem; color: #d0c8b8; font-size: .92rem; }
-
-    /* ── FOOTER ── */
-    footer { background: var(--bg-alt); border-top: 1px solid var(--border); padding: 2.5rem 2rem; margin-top: 4rem; }
-    .footer__inner { max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: space-between; align-items: center; }
-    .footer__brand { font-size: .85rem; color: var(--text-muted); }
-    .footer__brand span { color: var(--accent); font-weight: 600; }
-    .footer__links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
-    .footer__links a { color: var(--text-muted); font-size: .85rem; transition: color .2s; }
-    .footer__links a:hover { color: var(--accent); }
-
-    @media (max-width: 768px) {
-      .nav__links { display: none; }
-      .article-hero { padding: 6rem 1.5rem 2rem; }
-      .layout { padding: 2rem 1rem 4rem; }
-    }
-  </style>
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": "Why Bilibili is China's Most Undervalued Marketing Platform for Gen Z",
-    "description": "While Western marketers focus on TikTok, Bilibili offers deeper engagement with China's most influential youth demographic. 366M MAU and 107 min/day make it China's most underrated Gen Z platform.",
-    "author": {
-      "@type": "Organization",
-      "name": "Tuyue Media Gateway",
-      "url": "https://www.tuyuesouxin.cn"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Tuyue Media Gateway",
-      "url": "https://www.tuyuesouxin.cn"
-    },
+    "description": "Discover why international marketers are overlooking Bilibili's unmatched Gen Z engagement.",
+    "author": { "@type": "Organization", "name": "Tuyue Media Gateway", "url": "https://www.tuyuesouxin.cn" },
+    "publisher": { "@type": "Organization", "name": "Tuyue Media Gateway", "url": "https://www.tuyuesouxin.cn" },
     "datePublished": "2026-04-23",
     "dateModified": "2026-04-23",
     "url": "https://www.tuyuesouxin.cn/blog/bilibili-genz-marketing/",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.tuyuesouxin.cn/blog/bilibili-genz-marketing/"
-    },
-    "about": {
-      "@type": "Thing",
-      "name": "Bilibili Marketing",
-      "description": "China's most concentrated Gen Z video platform with 366M monthly active users and 107 min daily usage"
-    },
-    "keywords": "Bilibili marketing, China Gen Z marketing, Bilibili ads, Chinese video platform, China youth marketing, Bilibili MCN, UP主 collaboration"
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.tuyuesouxin.cn/blog/bilibili-genz-marketing/" },
+    "about": { "@type": "Thing", "name": "Bilibili Gen Z Marketing" },
+    "keywords": "Bilibili marketing, China Gen Z marketing, Bilibili ads, Chinese video platform"
   }
   </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --color-bg: #080c14;
+      --color-bg-alt: #0c1220;
+      --color-bg-card: rgba(201, 168, 76, 0.05);
+      --color-text-primary: #f0f4ff;
+      --color-text-secondary: #8899b0;
+      --color-accent: #c9a84c;
+      --color-accent-glow: rgba(201, 168, 76, 0.15);
+      --color-border: rgba(201, 168, 76, 0.15);
+      --color-border-strong: rgba(201, 168, 76, 0.3);
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-size-xs: 0.75rem;
+      --font-size-sm: 0.875rem;
+      --font-size-base: 1rem;
+      --font-size-xl: 1.25rem;
+      --font-size-2xl: 1.5rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --radius: 8px;
+      --radius-lg: 12px;
+      --transition-fast: 150ms ease;
+      --transition-base: 300ms ease;
+      --max-width-container: 1200px;
+      --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+    }
+
+    body {
+      background: var(--color-bg);
+      color: var(--color-text-primary);
+      font-family: var(--font-family);
+      font-size: 16px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+      margin-top: 64px;
+    }
+
+    a { color: var(--color-accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      width: 100%; max-width: var(--max-width-container);
+      margin-left: auto; margin-right: auto;
+      padding-left: var(--space-4); padding-right: var(--space-4);
+    }
+
+    /* Header */
+    .header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      margin-top: 8px;
+      background-color: rgba(8, 12, 20, 0.85);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--color-border);
+      padding: var(--space-4) 0;
+      transition: border-color var(--transition-base);
+    }
+    .header::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.4) 40%, rgba(45,107,228,0.4) 60%, transparent);
+      opacity: 0.6;
+    }
+    .header__inner { display: flex; align-items: center; justify-content: space-between; }
+    .header__logo { display: flex; align-items: center; gap: var(--space-2); text-decoration: none; transition: opacity var(--transition-fast); }
+    .header__logo:hover { opacity: 0.85; text-decoration: none; }
+    .header__logo-icon { width: 40px; height: 40px; flex-shrink: 0; }
+    .header__logo-text { font-size: var(--font-size-xl); font-weight: 700; color: var(--color-text-primary); letter-spacing: -0.02em; }
+    .header__logo-text span { color: var(--color-accent); }
+    .header__nav { display: none; gap: var(--space-8); }
+    .header__nav-link { font-size: var(--font-size-sm); font-weight: 500; color: var(--color-text-secondary); transition: color var(--transition-fast); display: inline-flex; align-items: center; }
+    .header__nav-link:hover { color: var(--color-text-primary); text-decoration: none; }
+    .header__dropdown { position: relative; }
+    .header__dropdown-trigger { display: flex; align-items: center; gap: 4px; }
+    .header__dropdown-arrow { transition: transform var(--transition-fast); }
+    .header__dropdown:hover .header__dropdown-arrow,
+    .header__dropdown:focus-within .header__dropdown-arrow,
+    .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
+    .header__dropdown-menu {
+      position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: 10px; padding: 8px var(--space-2) var(--space-2);
+      min-width: 180px; display: none; opacity: 0;
+      box-shadow: var(--shadow-lg); transition: opacity var(--transition-fast), transform var(--transition-fast); z-index: 100;
+    }
+    .header__dropdown:hover .header__dropdown-menu,
+    .header__dropdown:focus-within .header__dropdown-menu,
+    .header__dropdown.open .header__dropdown-menu { display: flex; flex-direction: column; opacity: 1; transform: translateX(-50%) translateY(0); }
+    .header__dropdown-item { font-size: var(--font-size-sm); font-weight: 500; color: var(--color-text-secondary); padding: var(--space-3) var(--space-4); border-radius: 6px; transition: background var(--transition-fast), color var(--transition-fast); white-space: nowrap; text-decoration: none; }
+    .header__dropdown-item:hover { background: rgba(201,168,76,0.1); color: var(--color-accent); text-decoration: none; }
+    .header__toggle { display: flex; flex-direction: column; justify-content: center; gap: 4px; background: none; border: none; cursor: pointer; }
+    .header__toggle span { display: block; width: 24px; height: 2px; background: var(--color-text-secondary); border-radius: 2px; transition: var(--transition-fast); }
+    .header__cta { display: none; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); padding: 10px 20px; font-family: var(--font-family); font-size: var(--font-size-sm); font-weight: 600; border: none; border-radius: 8px; cursor: pointer; transition: all var(--transition-fast); text-decoration: none; }
+    .btn--primary { background: var(--color-accent); color: #080c14; }
+    .btn--primary:hover { background: #d4b560; text-decoration: none; }
+    @media (min-width: 1024px) {
+      .header { margin-top: 0; }
+      .header__toggle { display: none; }
+      .header__nav { display: flex; }
+      .header__cta { display: block; }
+      .header__dropdown-menu { display: flex; flex-direction: column; opacity: 1; position: static; transform: none; box-shadow: none; border: none; padding: 0; background: transparent; }
+      .header__dropdown:hover .header__dropdown-menu { display: flex; }
+      .header__dropdown-item { color: var(--color-text-secondary); padding: var(--space-3) var(--space-4); }
+      .header__dropdown-item:hover { background: rgba(201,168,76,0.1); color: var(--color-accent); }
+      .header__dropdown-menu { display: none; }
+    }
+    @media (max-width: 1023px) {
+      .header__nav { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background-color: var(--color-bg-alt); border-bottom: 1px solid var(--color-border); padding: 0; box-shadow: 0 8px 32px rgba(0,0,0,0.5); }
+      .header__nav.active { display: flex; }
+      .header__nav-link { display: block; width: 100%; padding: 14px 40px 14px 24px; border-bottom: 1px solid var(--color-border); }
+      .header__dropdown-menu { position: static; transform: none; border-radius: 0; border: none; box-shadow: none; padding-left: 24px; }
+      .header__dropdown-item { padding: 12px 40px 12px 32px; }
+      .header__dropdown:hover .header__dropdown-menu { display: none; }
+      .header__dropdown.open .header__dropdown-menu { display: flex; }
+    }
+
+    /* NAV badge */
+    .nav-badge { display: inline-block; margin-left: 5px; padding: 1px 5px; font-size: 10px; font-weight: 700; line-height: 1; letter-spacing: 0.04em; text-transform: uppercase; color: #080c14; background: var(--color-accent); border-radius: 3px; vertical-align: baseline; white-space: nowrap; animation: badgePulse 2s ease-in-out infinite; }
+    @keyframes badgePulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+
+    /* Footer */
+    .footer { background: var(--color-bg-alt); border-top: 1px solid var(--color-border); padding: var(--space-12) 0 var(--space-6); margin-top: var(--space-16); position: relative; }
+    .footer::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 300px; height: 2px; background: linear-gradient(90deg, transparent, var(--color-accent), transparent); opacity: 0.6; }
+    .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: var(--space-8); margin-bottom: var(--space-8); }
+    @media (max-width: 768px) { .footer__grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 480px) { .footer__grid { grid-template-columns: 1fr; } }
+    .footer__title { font-size: var(--font-size-sm); font-weight: 600; color: var(--color-text-primary); margin-bottom: var(--space-4); position: relative; padding-bottom: var(--space-3); }
+    .footer__title::after { content: ''; position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background: linear-gradient(90deg, var(--color-accent), transparent); opacity: 0.8; }
+    .footer__description { font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.7; }
+    .footer__links { list-style: none; display: flex; flex-direction: column; gap: var(--space-2); }
+    .footer__link { color: var(--color-text-secondary); font-size: var(--font-size-sm); transition: color var(--transition-fast); display: inline-block; }
+    .footer__link:hover { color: var(--color-accent); text-decoration: none; }
+    .footer__link--email { color: var(--color-accent); }
+    .footer__license, .footer__company-short { font-size: 0.78rem; color: var(--color-text-secondary); line-height: 1.5; }
+    .footer__bottom { border-top: 1px solid var(--color-border); padding-top: var(--space-5); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-4); }
+    .footer__copyright { font-size: var(--font-size-sm); color: var(--color-text-secondary); }
+    .footer__platforms { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+    .footer__platform-badge { display: inline-block; padding: 0.25rem 0.6rem; border: 1px solid var(--color-border); border-radius: 100px; font-size: 0.72rem; color: var(--color-text-secondary); transition: all var(--transition-fast); }
+    .footer__platform-badge:hover { border-color: var(--color-accent); color: var(--color-accent); text-decoration: none; }
+
+    /* Article Hero */
+    .article-hero { padding: 8.5rem 2rem 3rem; text-align: center; background: linear-gradient(180deg, rgba(201,168,76,.06) 0%, transparent 100%); border-bottom: 1px solid var(--color-border); }
+    .article-hero .tag { display: inline-block; background: rgba(201,168,76,.15); color: var(--color-accent); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.3rem 0.85rem; border-radius: 100px; margin-bottom: 1.25rem; }
+    .article-hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; line-height: 1.2; max-width: 760px; margin: 0 auto 1.25rem; background: linear-gradient(135deg, #fff 0%, #d0c4a8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .article-hero .meta { color: var(--color-text-secondary); font-size: 0.875rem; display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
+    .article-hero .meta span { display: flex; align-items: center; gap: 0.4rem; }
+
+    /* Layout */
+    .layout { max-width: 860px; margin: 0 auto; padding: 3rem 1.5rem 6rem; }
+
+    /* TOC */
+    .toc { background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 2.5rem; }
+    .toc h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-accent); margin-bottom: 0.75rem; font-weight: 700; }
+    .toc ol { list-style: none; counter-reset: toc; }
+    .toc li { counter-increment: toc; }
+    .toc li::before { content: counter(toc) '. '; color: var(--color-accent); font-weight: 600; }
+    .toc a { color: var(--color-text-secondary); font-size: 0.9rem; display: block; padding: 0.3rem 0; transition: color var(--transition-fast); }
+    .toc a:hover { color: var(--color-accent); text-decoration: none; }
+
+    /* Prose */
+    .prose h2 { font-size: 1.45rem; font-weight: 700; margin: 2.5rem 0 0.75rem; color: #fff; border-left: 3px solid var(--color-accent); padding-left: 0.85rem; }
+    .prose h3 { font-size: 1.1rem; font-weight: 600; margin: 1.5rem 0 0.5rem; color: #e0d8c8; }
+    .prose p { margin-bottom: 1rem; color: #c8ccd8; }
+    .prose ul, .prose ol { margin: 0.75rem 0 1rem 1.5rem; }
+    .prose li { margin-bottom: 0.4rem; color: #c8ccd8; }
+    .prose strong { color: var(--color-accent); font-weight: 600; }
+    .prose blockquote { border-left: 3px solid var(--color-accent); padding: 0.75rem 1.25rem; margin: 1.5rem 0; background: var(--color-accent-glow); border-radius: 0 var(--radius-lg) var(--radius-lg) 0; font-size: 1.05rem; color: #d8d0b8; font-style: italic; }
+
+    /* Callout */
+    .callout { background: var(--color-accent-glow); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 1.25rem 1.5rem; margin: 1.5rem 0; display: flex; gap: 1rem; align-items: flex-start; }
+    .callout__icon { font-size: 1.3rem; flex-shrink: 0; }
+    .callout p { margin: 0; color: #d8d0b8; font-size: 0.95rem; }
+
+    /* Feature Grid */
+    .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin: 1.25rem 0; }
+    .feature-card { background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 1.25rem; }
+    .feature-card__icon { font-size: 1.6rem; margin-bottom: 0.6rem; }
+    .feature-card h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.35rem; color: #fff; }
+    .feature-card p { font-size: 0.85rem; color: var(--color-text-secondary); margin: 0; }
+
+    /* Takeaways */
+    .takeaways { background: linear-gradient(135deg, rgba(201,168,76,.08), rgba(201,168,76,.03)); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 1.75rem; margin: 2rem 0; }
+    .takeaways h2 { border-left-color: #fff; color: #fff; font-size: 1.15rem; }
+    .takeaways ul { margin: 0.5rem 0 0 1.25rem; }
+    .takeaways li { margin-bottom: 0.5rem; color: #d0c8b8; font-size: 0.92rem; }
+
+    @media (max-width: 768px) { .article-hero { padding: 6rem 1.5rem 2rem; } .layout { padding: 2rem 1rem 4rem; } }
+  </style>
 </head>
 <body>
-
-<!-- NAV -->
-<nav class="nav">
-  <div class="nav__inner">
-    <a href="../" class="nav__logo">
-      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="16" cy="16" r="14" stroke="#c9a84c" stroke-width="2"/>
-        <circle cx="22" cy="10" r="8" fill="#080c14"/>
-        <text x="16" y="20" font-family="Inter,sans-serif" font-size="10" font-weight="800" fill="#c9a84c" text-anchor="middle">TMG</text>
-      </svg>
-      Tuyue Media Gateway
-    </a>
-    <ul class="nav__links">
-      <li><a href="../">Home</a></li>
-      <li class="nav__dropdown">
-        <span class="nav__dropdown-trigger"><a href="../services/">Services</a> <span class="nav__dropdown-arrow">&#9662;</span></span>
-        <div class="nav__dropdown-menu">
-          <a href="../services/wechat/">WeChat Ads</a>
-          <a href="../services/douyin/">Douyin Ads</a>
-          <a href="../services/baidu/">Baidu SEM</a>
-          <a href="../services/xiaohongshu/">Xiaohongshu Ads</a>
-          <a href="../geo/">China GEO</a>
-        </div>
-      </li>
-      <li><a href="../pricing/">Pricing</a></li>
-      <li><a href="../client-stories/">Client Stories</a></li>
-      <li><a href="./">Blog</a></li>
-      <li><a href="../about/">About</a></li>
-      <li><a href="../contact/" class="nav__cta">Contact Us</a></li>
-    </ul>
-  </div>
-</nav>
-
-<!-- HERO -->
-<header class="article-hero">
-  <span class="tag">Bilibili / Gen Z Marketing</span>
-  <h1>Why Bilibili is China's Most Undervalued Marketing Platform for Gen Z</h1>
-  <div class="meta">
-    <span>&#128197; April 23, 2026</span>
-    <span>&#128214; 8 min read</span>
-    <span>&#128214; Source: Bilibili Marketing Guide 2026</span>
-  </div>
-</header>
-
-<!-- MAIN -->
-<main class="layout">
-  <aside class="toc">
-    <h2>Contents</h2>
-    <ol>
-      <li><a href="#demographics">The Bilibili Demographic Advantage</a></li>
-      <li><a href="#content">Content Depth vs. Short-Form Superficiality</a></li>
-      <li><a href="#community">Community Culture vs. Content Consumption</a></li>
-      <li><a href="#ai-tools">AI-Powered Marketing Infrastructure</a></li>
-      <li><a href="#ecosystem">Multi-Device Ecosystem</a></li>
-      <li><a href="#strategy">Practical Strategy for International Advertisers</a></li>
-    </ol>
-  </aside>
-
-  <article class="prose">
-
-    <p>While international advertisers rush to Douyin (TikTok's Chinese counterpart), they're overlooking the platform where China's Generation Z spends an average of <strong>107 minutes daily</strong>: Bilibili. With 366 million monthly active users, 70% born after 1990, and a community-driven ecosystem that creates engagement levels unmatched elsewhere in China, Bilibili represents the most concentrated youth audience in the market—yet remains significantly undervalued by global brands.</p>
-
-    <p>Here's why Bilibili deserves a central place in your China marketing strategy.</p>
-
-    <h2 id="demographics">The Bilibili Demographic Advantage</h2>
-
-    <p>Bilibili's user base is younger and more educated than any other major Chinese video platform. The average user age is 26, with over 50% born after 2000—making it China's definitive Gen Z platform. This concentration enables precise targeting that broad-reach platforms simply cannot match.</p>
-
-    <ul>
-      <li><strong>Monthly Active Users:</strong> 366 million (+8% YoY)</li>
-      <li><strong>Average Age:</strong> 26 years old</li>
-      <li><strong>Daily Usage:</strong> 107 minutes per user</li>
-      <li><strong>Gender Ratio:</strong> 1:1 balanced</li>
-      <li><strong>Tier 1-2 City Concentration:</strong> 60%+</li>
-      <li><strong>Monthly Paying Users:</strong> 35.66 million+</li>
-      <li><strong>12-Month Retention:</strong> 80%</li>
-    </ul>
-
-    <div class="callout">
-      <span class="callout__icon">&#128161;</span>
-      <p><strong>Why this matters:</strong> Bilibili offers <em>depth of engagement</em> where other platforms offer <em>breadth of reach</em>. For brands targeting China's youth, this translates to stronger community loyalty and higher lifetime value versus one-time impulse purchases.</p>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="https://www.tuyuesouxin.cn" class="header__logo">
+          <svg class="header__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#c9a84c"/><stop offset="100%" stop-color="#e8c87a"/></linearGradient></defs>
+            <circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/>
+            <circle cx="37" cy="20" r="13" fill="#080c14"/>
+            <text x="4" y="32" font-family="Inter, -apple-system, sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-0.8">TMG</text>
+          </svg>
+          <span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
+        </a>
+        <button class="header__toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        <nav class="header__nav">
+          <div class="header__dropdown">
+            <a href="https://www.tuyuesouxin.cn/services/" class="header__nav-link header__dropdown-trigger">
+              Services
+              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="header__dropdown-menu">
+              <a href="https://www.tuyuesouxin.cn/services" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">All Services</a>
+              <a href="https://www.tuyuesouxin.cn/services/wechat" class="header__dropdown-item">WeChat Ads</a>
+              <a href="https://www.tuyuesouxin.cn/services/douyin" class="header__dropdown-item">Douyin Ads</a>
+              <a href="https://www.tuyuesouxin.cn/services/baidu" class="header__dropdown-item">Baidu SEM</a>
+              <a href="https://www.tuyuesouxin.cn/services/bing" class="header__dropdown-item">Bing China</a>
+              <a href="https://www.tuyuesouxin.cn/services/xiaohongshu" class="header__dropdown-item">Xiaohongshu</a>
+              <a href="https://www.tuyuesouxin.cn/services/bilibili" class="header__dropdown-item">Bilibili Ads</a>
+              <a href="https://www.tuyuesouxin.cn/geo/" class="header__dropdown-item">China GEO</a>
+            </div>
+          </div>
+          <a href="https://www.tuyuesouxin.cn/pricing/" class="header__nav-link">Pricing</a>
+          <a href="https://www.tuyuesouxin.cn/client-stories/" class="header__nav-link">Client Stories</a>
+          <a href="https://www.tuyuesouxin.cn/geo/" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
+          <a href="https://www.tuyuesouxin.cn/blog/" class="header__nav-link" style="color: var(--color-text-primary);">Blog</a>
+          <a href="https://www.tuyuesouxin.cn/faqs" class="header__nav-link">FAQ</a>
+          <div class="header__dropdown">
+            <a href="https://www.tuyuesouxin.cn/about/" class="header__nav-link header__dropdown-trigger">
+              About
+              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="header__dropdown-menu">
+              <a href="https://www.tuyuesouxin.cn/why-tmg/" class="header__dropdown-item">Why TMG</a>
+              <a href="https://www.tuyuesouxin.cn/about/" class="header__dropdown-item">About Us</a>
+              <a href="https://www.tuyuesouxin.cn/contact/" class="header__dropdown-item">Contact</a>
+            </div>
+          </div>
+        </nav>
+        <div class="header__cta"><a href="https://www.tuyuesouxin.cn/contact/" class="btn btn--primary">Get Started</a></div>
+      </div>
     </div>
+  </header>
 
-    <h2 id="content">Content Depth vs. Short-Form Superficiality</h2>
+  <!-- Hero -->
+  <header class="article-hero">
+    <span class="tag">Bilibili / Gen Z Marketing</span>
+    <h1>Why Bilibili is China's Most Undervalued Marketing Platform for Gen Z</h1>
+    <div class="meta">
+      <span>&#128197; April 23, 2026</span>
+      <span>&#128214; 8 min read</span>
+      <span>&#128214; Source: Bilibili Marketing Guide 2026</span>
+    </div>
+  </header>
 
-    <p>While Douyin excels at 15-second viral content, Bilibili's ecosystem thrives on <strong>medium-length videos (10+ minutes)</strong> that comprise 80% of top-performing content. This format allows for in-depth storytelling, detailed product demonstrations, and educational content that builds genuine brand authority rather than fleeting awareness.</p>
+  <!-- Main -->
+  <main class="layout">
+    <aside class="toc">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#demographics">The Bilibili Demographic Advantage</a></li>
+        <li><a href="#content">Content Depth vs. Short-Form Superficiality</a></li>
+        <li><a href="#community">Community Culture vs. Content Consumption</a></li>
+        <li><a href="#ai-tools">AI-Powered Marketing Infrastructure</a></li>
+        <li><a href="#ecosystem">Multi-Device Ecosystem</a></li>
+        <li><a href="#strategy">Practical Strategy for International Advertisers</a></li>
+      </ol>
+    </aside>
 
-    <p>The platform's 31 primary content categories, 212 secondary categories, and 6 OGV (Officially Generated Video) categories create content depth unmatched by short-form platforms. The average Bilibili user follows 7 distinct <em>兴趣爱好</em> (hobbies/interests), enabling precise targeting through the platform's 2 million+ content tags.</p>
+    <article class="prose">
 
-    <h2 id="community">Community Culture vs. Content Consumption</h2>
+      <p>While international advertisers rush to Douyin (TikTok's Chinese counterpart), they're overlooking the platform where China's Generation Z spends an average of <strong>107 minutes daily</strong>: Bilibili. With 366 million monthly active users, 70% born after 1990, and a community-driven ecosystem that creates engagement levels unmatched elsewhere in China, Bilibili represents the most concentrated youth audience in the market—yet remains significantly undervalued by global brands.</p>
 
-    <p>Bilibili users don't just watch videos—they participate in communities built around <strong>7000+ 兴趣场景</strong> (interest scenarios). The platform's signature <em>弹幕</em> (danmu) system overlays real-time comments on videos, creating a shared viewing experience that transforms passive consumption into active participation.</p>
+      <p>Here's why Bilibili deserves a central place in your China marketing strategy.</p>
 
-    <p>This community-first approach means successful campaigns often involve authentic creator collaborations rather than traditional advertising. Bilibili's <strong>花火 (Huahuo)</strong> platform facilitates these partnerships with AI-driven matching and performance tracking.</p>
+      <h2 id="demographics">The Bilibili Demographic Advantage</h2>
 
-    <h2 id="ai-tools">AI-Powered Marketing Infrastructure</h2>
+      <p>Bilibili's user base is younger and more educated than any other major Chinese video platform. The average user age is 26, with over 50% born after 2000—making it China's definitive Gen Z platform. This concentration enables precise targeting that broad-reach platforms simply cannot match.</p>
 
-    <p>Bilibili's suite of AI marketing tools represents one of the platform's most significant competitive advantages:</p>
-
-    <ul>
-      <li><strong>哔哩必达 (Bilibili Bida):</strong> AI strategy center providing audience insights, competitive analysis, and campaign planning</li>
-      <li><strong>花火 (Huahuo):</strong> Creator marketplace for UP主 collaboration and campaign management</li>
-      <li><strong>三连 (Sanlian):</strong> Multi-scenario投放 platform for budget allocation and ROI optimization</li>
-      <li><strong>必火 (Bihuo):</strong> Creative center for 素材制作 and automated A/B testing</li>
-    </ul>
-
-    <h2 id="ecosystem">Multi-Device Ecosystem</h2>
-
-    <p>Bilibili's reach extends beyond mobile to PC, OTT television (smart TVs), and in-car systems. The platform's <strong>OTT端 (云视听小电视)</strong> is the #1 daily active user app in China's OTT market with 80%+ household coverage in Tier 1-2 cities—offering unique access to family audiences during prime viewing hours.</p>
-
-    <h2 id="strategy">Practical Strategy for International Advertisers</h2>
-
-    <p>For brands exploring Chinese youth marketing:</p>
-
-    <ol>
-      <li><strong>Move beyond short-form:</strong> Develop 5-15 minute content that educates or entertains your target audience</li>
-      <li><strong>Leverage niche communities:</strong> Target through 2 million+ content tags rather than broad demographics</li>
-      <li><strong>Partner with creators:</strong> Use Bilibili's花火 platform for authentic UP主 collaborations</li>
-      <li><strong>Utilize AI tools:</strong> Reduce campaign setup time by up to 70% with哔哩必达 strategy automation</li>
-      <li><strong>Consider full ecosystem:</strong> Extend campaigns to OTT and car systems for broader reach</li>
-    </ol>
-
-    <div class="takeaways">
-      <h2>Key Takeaways</h2>
       <ul>
-        <li>Bilibili's 366M MAU with 70% Gen Z concentration offers unmatched youth targeting in China</li>
-        <li>107 minutes daily usage—3x the industry average—means significantly higher engagement per impression</li>
-        <li>Medium-form content and community culture build brand authority that short-form cannot replicate</li>
-        <li>AI marketing tools (哔哩必达, 花火, 三连, 必火) make campaign setup accessible for international brands</li>
-        <li>OTT expansion provides access to family audiences beyond mobile-first targeting</li>
+        <li><strong>Monthly Active Users:</strong> 366 million (+8% YoY)</li>
+        <li><strong>Average Age:</strong> 26 years old</li>
+        <li><strong>Daily Usage:</strong> 107 minutes per user</li>
+        <li><strong>Gender Ratio:</strong> 1:1 balanced</li>
+        <li><strong>Tier 1-2 City Concentration:</strong> 60%+</li>
+        <li><strong>Monthly Paying Users:</strong> 35.66 million+</li>
+        <li><strong>12-Month Retention:</strong> 80%</li>
       </ul>
-    </div>
 
-  </article>
-</main>
+      <div class="callout">
+        <span class="callout__icon">💡</span>
+        <p><strong>Why this matters:</strong> Bilibili offers <em>depth of engagement</em> where other platforms offer <em>breadth of reach</em>. For brands targeting China's youth, this translates to stronger community loyalty and higher lifetime value versus one-time impulse purchases.</p>
+      </div>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer__inner">
-    <div class="footer__brand">
-      <span>Tuyue Media Gateway</span> — China's paid media partner for global brands.
+      <h2 id="content">Content Depth vs. Short-Form Superficiality</h2>
+
+      <p>While Douyin excels at 15-second viral content, Bilibili's ecosystem thrives on <strong>medium-length videos (10+ minutes)</strong> that comprise 80% of top-performing content. This format allows for in-depth storytelling, detailed product demonstrations, and educational content that builds genuine brand authority rather than fleeting awareness.</p>
+
+      <p>The platform's 31 primary content categories, 212 secondary categories, and 6 OGV (Officially Generated Video) categories create content depth unmatched by short-form platforms. The average Bilibili user follows 7 distinct <em>兴趣爱好</em> (hobbies/interests), enabling precise targeting through the platform's 2 million+ content tags.</p>
+
+      <h2 id="community">Community Culture vs. Content Consumption</h2>
+
+      <p>Bilibili users don't just watch videos—they participate in communities built around <strong>7000+ 兴趣场景</strong> (interest scenarios). The platform's signature <em>弹幕</em> (danmu) system overlays real-time comments on videos, creating a shared viewing experience that transforms passive consumption into active participation.</p>
+
+      <p>This community-first approach means successful campaigns often involve authentic creator collaborations rather than traditional advertising. Bilibili's <strong>花火 (Huahuo)</strong> platform facilitates these partnerships with AI-driven matching and performance tracking.</p>
+
+      <h2 id="ai-tools">AI-Powered Marketing Infrastructure</h2>
+
+      <p>Bilibili's suite of AI marketing tools represents one of the platform's most significant competitive advantages:</p>
+
+      <ul>
+        <li><strong>哔哩必达 (Bilibili Bida):</strong> AI strategy center providing audience insights, competitive analysis, and campaign planning</li>
+        <li><strong>花火 (Huahuo):</strong> Creator marketplace for UP主 collaboration and campaign management</li>
+        <li><strong>三连 (Sanlian):</strong> Multi-scenario 投放 platform for budget allocation and ROI optimization</li>
+        <li><strong>必火 (Bihuo):</strong> Creative center for 素材制作 and automated A/B testing</li>
+      </ul>
+
+      <h2 id="ecosystem">Multi-Device Ecosystem</h2>
+
+      <p>Bilibili's reach extends beyond mobile to PC, OTT television (smart TVs), and in-car systems. The platform's <strong>OTT端 (云视听小电视)</strong> is the #1 daily active user app in China's OTT market with 80%+ household coverage in Tier 1-2 cities—offering unique access to family audiences during prime viewing hours.</p>
+
+      <h2 id="strategy">Practical Strategy for International Advertisers</h2>
+
+      <p>For brands exploring Chinese youth marketing:</p>
+
+      <ol>
+        <li><strong>Move beyond short-form:</strong> Develop 5-15 minute content that educates or entertains your target audience</li>
+        <li><strong>Leverage niche communities:</strong> Target through 2 million+ content tags rather than broad demographics</li>
+        <li><strong>Partner with creators:</strong> Use Bilibili's 花火 platform for authentic UP主 collaborations</li>
+        <li><strong>Utilize AI tools:</strong> Reduce campaign setup time by up to 70% with 哔哩必达 strategy automation</li>
+        <li><strong>Consider full ecosystem:</strong> Extend campaigns to OTT and car systems for broader reach</li>
+      </ol>
+
+      <div class="takeaways">
+        <h2>Key Takeaways</h2>
+        <ul>
+          <li>Bilibili's 366M MAU with 70% Gen Z concentration offers unmatched youth targeting in China</li>
+          <li>107 minutes daily usage—3x the industry average—means significantly higher engagement per impression</li>
+          <li>Medium-form content and community culture build brand authority that short-form cannot replicate</li>
+          <li>AI marketing tools (哔哩必达, 花火, 三连, 必火) make campaign setup accessible for international brands</li>
+          <li>OTT expansion provides access to family audiences beyond mobile-first targeting</li>
+        </ul>
+      </div>
+
+      <p style="margin-top:2rem; color:var(--color-text-secondary); font-size:.875rem; border-top:1px solid var(--color-border); padding-top:1.5rem;">
+        <strong>Source:</strong> Bilibili Marketing Guide 2026<br>
+        <strong>Prepared by:</strong> Tuyue Media Gateway — China's paid media partner for international brands.
+      </p>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__section">
+          <h4 class="footer__title">About TMG</h4>
+          <p class="footer__description">Your single point of access to China's $100B digital advertising market. We help international agencies navigate Chinese platforms with ease.</p>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="https://www.tuyuesouxin.cn/services/" class="footer__link">Services</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/pricing/" class="footer__link">Pricing</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/about/" class="footer__link">About Us</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/client-stories" class="footer__link">Client Stories</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/faqs" class="footer__link">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Contact</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:tmg@tuyuesouxin.cn" class="footer__link footer__link--email">tmg@tuyuesouxin.cn</a></li>
+            <li><a href="#contactQR" class="footer__link">WhatsApp (Click to scan)</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Legal</h4>
+          <ul class="footer__links">
+            <li class="footer__license">Business License: 91310114MADKG4UF0G</li>
+            <li class="footer__company-short">Tuyue Media Gateway</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Tuyue Media Gateway. All rights reserved.</p>
+        <div class="footer__platforms">
+          <a href="https://ad.weixin.qq.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">WeChat</a>
+          <a href="https://www.oceanengine.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Douyin</a>
+          <a href="https://e.baidu.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Baidu</a>
+          <a href="https://www.xiaohongshu.com/brand" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Xiaohongshu</a>
+          <a href="https://member.bilibili.com/platform/ad" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bilibili</a>
+        </div>
+      </div>
     </div>
-    <div class="footer__links">
-      <a href="../services/">Services</a>
-      <a href="../geo/">China GEO</a>
-      <a href="../faqs/">FAQ</a>
-      <a href="../contact/">Contact</a>
-      <a href="../">Home</a>
-    </div>
-  </div>
-</footer>
+  </footer>
 
 <script>
-  // Dropdown interaction
-  document.querySelectorAll('.nav__dropdown-trigger').forEach(function(trigger) {
+  document.querySelector('.header__toggle').addEventListener('click', function() {
+    document.querySelector('.header__nav').classList.toggle('active');
+  });
+  document.querySelectorAll('.header__dropdown > .header__nav-link').forEach(function(trigger) {
     trigger.addEventListener('click', function(e) {
-      e.preventDefault();
-      var nav = document.querySelector('.nav__inner') || document;
-      nav.querySelectorAll('.nav__dropdown').forEach(function(d) { d.classList.remove('open'); });
-      this.closest('.nav__dropdown').classList.toggle('open');
+      var dropdown = trigger.parentElement;
+      if (window.innerWidth < 1024) {
+        e.preventDefault();
+        dropdown.classList.toggle('open');
+      }
     });
   });
-  document.addEventListener('click', function(e) {
-    if (!e.target.closest('.nav__dropdown')) {
-      document.querySelectorAll('.nav__dropdown').forEach(function(d) { d.classList.remove('open'); });
-    }
-  });
 </script>
-
 </body>
 </html>
