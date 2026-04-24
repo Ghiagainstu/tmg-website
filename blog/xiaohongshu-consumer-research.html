@@ -7,7 +7,7 @@
   <meta name="description" content="Discover how 170M Chinese consumers use Xiaohongshu as their primary research channel. Learn why authentic 'seeding' beats traditional ads and how international brands can leverage this shift.">
   <link rel="canonical" href="https://www.tuyuesouxin.cn/blog/xiaohongshu-consumer-research/">
   <meta property="og:title" content="Why 170 Million Chinese Consumers Ask Xiaohongshu Before Buying Anything">
-  <meta property="og:description" content="Discover how 170M Chinese consumers use Xiaohongshu as their primary research channel. Learn why authentic 'seeding' beats traditional ads and how international brands can leverage this shift.">
+  <meta property="og:description" content="Discover how 170M Chinese consumers use Xiaohongshu as their primary research channel.">
   <meta property="og:url" content="https://www.tuyuesouxin.cn/blog/xiaohongshu-consumer-research/">
   <meta property="og:type" content="article">
   <meta name="twitter:card" content="summary_large_image">
@@ -15,529 +15,557 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --bg: #080c14;
-      --bg-alt: #0d1421;
-      --bg-card: #111927;
-      --text: #e8eaf0;
-      --text-muted: #8892a4;
-      --accent: #c9a84c;
-      --accent-dim: rgba(201, 168, 76, 0.12);
-      --border: rgba(201, 168, 76, 0.15);
-      --radius: 12px;
-      --max-w: 860px;
-    }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Inter', -apple-system, sans-serif;
-      font-size: 16px;
-      line-height: 1.75;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
-
-    /* ── NAV ── */
-    .nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: rgba(8,12,20,.92);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
-      padding: 0 2rem;
-      height: 72px;
-      display: flex; align-items: center;
-    }
-    .nav__inner { max-width: 1200px; margin: 0 auto; width: 100%; height: 100%; display: flex; align-items: center; gap: 2rem; }
-    .nav__logo { display: flex; align-items: center; gap: .6rem; font-weight: 700; font-size: 1.15rem; color: var(--accent); text-decoration: none; flex-shrink: 0; }
-    .nav__logo svg { width: 36px; height: 36px; }
-    .nav__links { display: flex; gap: 1.5rem; list-style: none; margin-left: auto; align-items: center; }
-    .nav__links a { color: var(--text-muted); font-size: .9rem; font-weight: 500; transition: color .2s; display: inline-flex; align-items: center; }
-    .nav__links a:hover { color: var(--text); text-decoration: none; }
-    .nav__dropdown { position: relative; }
-    .nav__dropdown-trigger { display: flex; align-items: center; gap: .3rem; cursor: pointer; }
-    .nav__dropdown-arrow { transition: transform .2s; font-size: .7rem; }
-    .nav__dropdown-menu { display: none; position: absolute; top: calc(100% + .75rem); left: 0; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: .5rem; min-width: 180px; flex-direction: column; gap: .25rem; box-shadow: 0 8px 32px rgba(0,0,0,.4); }
-    .nav__dropdown:hover .nav__dropdown-menu,
-    .nav__dropdown.open .nav__dropdown-menu { display: flex; }
-    .nav__dropdown:hover .nav__dropdown-arrow,
-    .nav__dropdown.open .nav__dropdown-arrow { transform: rotate(180deg); }
-    .nav__dropdown-menu a { color: var(--text-muted); padding: .5rem .75rem; border-radius: 8px; font-size: .88rem; display: block; transition: background .15s, color .15s; }
-    .nav__dropdown-menu a:hover { background: var(--accent-dim); color: var(--accent); text-decoration: none; }
-    .nav__cta { background: var(--accent); color: #080c14 !important; padding: .45rem 1.1rem; border-radius: 8px; font-weight: 600; font-size: .88rem !important; transition: opacity .2s !important; }
-    .nav__cta:hover { opacity: .85; text-decoration: none !important; }
-
-    /* ── HERO ── */
-    .article-hero {
-      padding: 8.5rem 2rem 3rem;
-      text-align: center;
-      background: linear-gradient(180deg, rgba(201,168,76,.06) 0%, transparent 100%);
-      border-bottom: 1px solid var(--border);
-    }
-    .article-hero .tag {
-      display: inline-block;
-      background: rgba(201,168,76,.15);
-      color: var(--accent);
-      font-size: .75rem;
-      font-weight: 600;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      padding: .3rem .85rem;
-      border-radius: 100px;
-      margin-bottom: 1.25rem;
-    }
-    .article-hero h1 {
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
-      font-weight: 800;
-      line-height: 1.2;
-      max-width: 760px;
-      margin: 0 auto 1.25rem;
-      background: linear-gradient(135deg, #fff 0%, #d0c4a8 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    .article-hero .meta { color: var(--text-muted); font-size: .875rem; display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
-    .article-hero .meta span { display: flex; align-items: center; gap: .4rem; }
-
-    /* ── LAYOUT ── */
-    .layout { max-width: var(--max-w); margin: 0 auto; padding: 3rem 1.5rem 6rem; display: grid; grid-template-columns: 1fr; gap: 0; }
-
-    /* ── TOC ── */
-    .toc { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; margin-bottom: 2.5rem; }
-    .toc h2 { font-size: .8rem; text-transform: uppercase; letter-spacing: .1em; color: var(--accent); margin-bottom: .75rem; font-weight: 700; }
-    .toc ol { list-style: none; counter-reset: toc; }
-    .toc li { counter-increment: toc; }
-    .toc li::before { content: counter(toc) '. '; color: var(--accent); font-weight: 600; }
-    .toc a { color: var(--text-muted); font-size: .9rem; display: block; padding: .3rem 0; transition: color .2s; }
-    .toc a:hover { color: var(--accent); text-decoration: none; }
-
-    /* ── PROSE ── */
-    .prose h2 { font-size: 1.45rem; font-weight: 700; margin: 2.5rem 0 .75rem; color: #fff; border-left: 3px solid var(--accent); padding-left: .85rem; }
-    .prose h3 { font-size: 1.1rem; font-weight: 600; margin: 1.5rem 0 .5rem; color: #e0d8c8; }
-    .prose p { margin-bottom: 1rem; color: #c8ccd8; }
-    .prose ul, .prose ol { margin: .75rem 0 1rem 1.5rem; }
-    .prose li { margin-bottom: .4rem; color: #c8ccd8; }
-    .prose strong { color: var(--accent); font-weight: 600; }
-    .prose blockquote {
-      border-left: 3px solid var(--accent);
-      padding: .75rem 1.25rem;
-      margin: 1.5rem 0;
-      background: var(--accent-dim);
-      border-radius: 0 var(--radius) var(--radius) 0;
-      font-size: 1.05rem;
-      color: #d8d0b8;
-      font-style: italic;
-    }
-
-    /* ── CALLOUT ── */
-    .callout {
-      background: var(--accent-dim);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 1.25rem 1.5rem;
-      margin: 1.5rem 0;
-      display: flex; gap: 1rem; align-items: flex-start;
-    }
-    .callout__icon { font-size: 1.3rem; flex-shrink: 0; }
-    .callout p { margin: 0; color: #d8d0b8; font-size: .95rem; }
-
-    /* ── FEATURE GRID ── */
-    .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin: 1.25rem 0; }
-    .feature-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 1.25rem;
-    }
-    .feature-card__icon { font-size: 1.6rem; margin-bottom: .6rem; }
-    .feature-card h3 { font-size: .95rem; font-weight: 700; margin-bottom: .35rem; color: #fff; }
-    .feature-card p { font-size: .85rem; color: var(--text-muted); margin: 0; }
-
-    /* ── TAKEAWAYS ── */
-    .takeaways { background: linear-gradient(135deg, rgba(201,168,76,.08), rgba(201,168,76,.03)); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem; margin: 2rem 0; }
-    .takeaways h2 { border-left-color: #fff; color: #fff; font-size: 1.15rem; }
-    .takeaways ul { margin: .5rem 0 0 1.25rem; }
-    .takeaways li { margin-bottom: .5rem; color: #d0c8b8; font-size: .92rem; }
-
-    /* ── FOOTER ── */
-    .footer {
-      background: var(--bg-alt);
-      border-top: 1px solid var(--border);
-      padding: 3.5rem 0 1.5rem;
-      margin-top: 4rem;
-      position: relative;
-    }
-    .footer::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 300px;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, var(--accent), transparent);
-      opacity: 0.6;
-    }
-    .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
-    @media (max-width: 768px) { .footer__grid { grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 480px) { .footer__grid { grid-template-columns: 1fr; } }
-    .footer__section {}
-    .footer__title {
-      font-size: .85rem;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: .85rem;
-      position: relative;
-      padding-bottom: .5rem;
-    }
-    .footer__title::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 40px;
-      height: 2px;
-      background: linear-gradient(90deg, var(--accent), transparent);
-      opacity: 0.8;
-    }
-    .footer__description { font-size: .85rem; color: var(--text-muted); line-height: 1.7; }
-    .footer__links { list-style: none; display: flex; flex-direction: column; gap: .4rem; }
-    .footer__links li { margin-bottom: .2rem; }
-    .footer__link { color: var(--text-muted); font-size: .85rem; transition: color .2s; display: inline-block; }
-    .footer__link:hover { color: var(--accent); text-decoration: none; }
-    .footer__link--email { color: var(--accent); }
-    .footer__license, .footer__company-short { font-size: .78rem; color: var(--text-muted); line-height: 1.5; }
-    .footer__bottom { border-top: 1px solid var(--border); padding-top: 1.25rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .75rem; }
-    .footer__copyright { font-size: .8rem; color: var(--text-muted); }
-    .footer__platforms { display: flex; gap: .5rem; flex-wrap: wrap; }
-    .footer__platform-badge { display: inline-block; padding: .25rem .6rem; border: 1px solid var(--border); border-radius: 100px; font-size: .72rem; color: var(--text-muted); transition: all .2s; }
-    .footer__platform-badge:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
-
-    @media (max-width: 768px) {
-      .nav__links { display: none; }
-      .article-hero { padding: 6rem 1.5rem 2rem; }
-      .layout { padding: 2rem 1rem 4rem; }
-    }
-
-    /* GEO NEW badge */
-    .nav-badge {
-      display: inline-block;
-      margin-left: 5px;
-      padding: 1px 5px;
-      font-size: 10px;
-      font-weight: 700;
-      line-height: 1;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: #080c14;
-      background: var(--accent);
-      border-radius: 3px;
-      vertical-align: baseline;
-      white-space: nowrap;
-      animation: badgePulse 2s ease-in-out infinite;
-    }
-    @keyframes badgePulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.7; }
-    }
-
-    /* Magnetic Cursor Effect */
-    .magnetic {
-      display: inline-block;
-      transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
-      will-change: transform;
-    }
-    .magnetic__inner {
-      transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
-      will-change: transform;
-    }
-
-    /* Scroll Reveal Animations */
-    .reveal {
-      opacity: 0;
-      transform: translateY(28px);
-      transition: opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1),
-                  transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    body.scrolled .reveal {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .hero .reveal {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .reveal--delay-1 { transition-delay: 0.1s; }
-    .reveal--delay-2 { transition-delay: 0.2s; }
-    .reveal--delay-3 { transition-delay: 0.3s; }
-  </style>
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": "Why 170 Million Chinese Consumers Ask Xiaohongshu Before Buying Anything",
-    "description": "Discover how 170M Chinese consumers use Xiaohongshu as their primary research channel. Learn why authentic 'seeding' beats traditional ads and how international brands can leverage this shift.",
-    "author": {
-      "@type": "Organization",
-      "name": "Tuyue Media Gateway",
-      "url": "https://www.tuyuesouxin.cn"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Tuyue Media Gateway",
-      "url": "https://www.tuyuesouxin.cn"
-    },
+    "description": "Discover how 170M Chinese consumers use Xiaohongshu as their primary research channel.",
+    "author": { "@type": "Organization", "name": "Tuyue Media Gateway", "url": "https://www.tuyuesouxin.cn" },
+    "publisher": { "@type": "Organization", "name": "Tuyue Media Gateway", "url": "https://www.tuyuesouxin.cn" },
     "datePublished": "2026-04-24",
     "dateModified": "2026-04-24",
     "url": "https://www.tuyuesouxin.cn/blog/xiaohongshu-consumer-research/",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.tuyuesouxin.cn/blog/xiaohongshu-consumer-research/"
-    },
-    "about": {
-      "@type": "Thing",
-      "name": "Xiaohongshu Consumer Research",
-      "description": "How Chinese consumers use Xiaohongshu for product research and purchase decisions"
-    },
-    "keywords": "Xiaohongshu, Xiaohongshu marketing, Chinese consumer research, social commerce China, Xiaohongshu advertising"
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.tuyuesouxin.cn/blog/xiaohongshu-consumer-research/" },
+    "about": { "@type": "Thing", "name": "Xiaohongshu Consumer Research" },
+    "keywords": "Xiaohongshu, Xiaohongshu marketing, Chinese consumer research, social commerce China"
   }
   </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      /* Colors */
+      --color-bg: #080c14;
+      --color-bg-alt: #0c1220;
+      --color-bg-card: rgba(201, 168, 76, 0.05);
+      --color-text-primary: #f0f4ff;
+      --color-text-secondary: #8899b0;
+      --color-accent: #c9a84c;
+      --color-accent-glow: rgba(201, 168, 76, 0.15);
+      --color-border: rgba(201, 168, 76, 0.15);
+      --color-border-strong: rgba(201, 168, 76, 0.3);
+      /* Typography */
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-size-xs: 0.75rem;
+      --font-size-sm: 0.875rem;
+      --font-size-base: 1rem;
+      --font-size-xl: 1.25rem;
+      --font-size-2xl: 1.5rem;
+      --font-size-3xl: 2rem;
+      --font-size-4xl: 2.75rem;
+      /* Spacing */
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      /* Borders */
+      --radius: 8px;
+      --radius-lg: 12px;
+      /* Transitions */
+      --transition-fast: 150ms ease;
+      --transition-base: 300ms ease;
+      /* Layout */
+      --max-width-container: 1200px;
+      /* Shadows */
+      --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+    }
+
+    body {
+      background: var(--color-bg);
+      color: var(--color-text-primary);
+      font-family: var(--font-family);
+      font-size: 16px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+      margin-top: 64px;
+    }
+
+    a { color: var(--color-accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width-container);
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: var(--space-4);
+      padding-right: var(--space-4);
+    }
+
+    /* Header (copied from homepage) */
+    .header {
+      position: fixed;
+      top: 0; left: 0; right: 0; z-index: 100;
+      margin-top: 8px;
+      background-color: rgba(8, 12, 20, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--color-border);
+      padding: var(--space-4) 0;
+      transition: border-color var(--transition-base);
+    }
+    .header::after {
+      content: '';
+      position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.4) 40%, rgba(45,107,228,0.4) 60%, transparent);
+      opacity: 0.6;
+    }
+    .header__inner {
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .header__logo {
+      display: flex; align-items: center; gap: var(--space-2);
+      text-decoration: none; transition: opacity var(--transition-fast);
+    }
+    .header__logo:hover { opacity: 0.85; text-decoration: none; }
+    .header__logo-icon { width: 40px; height: 40px; flex-shrink: 0; }
+    .header__logo-text { font-size: var(--font-size-xl); font-weight: 700; color: var(--color-text-primary); letter-spacing: -0.02em; }
+    .header__logo-text span { color: var(--color-accent); }
+    .header__nav { display: none; gap: var(--space-8); }
+    .header__nav-link {
+      font-size: var(--font-size-sm); font-weight: 500; color: var(--color-text-secondary);
+      transition: color var(--transition-fast); display: inline-flex; align-items: center;
+    }
+    .header__nav-link:hover { color: var(--color-text-primary); text-decoration: none; }
+    .header__nav-link--coming { font-size: var(--font-size-sm); font-weight: 500; color: var(--color-text-secondary); opacity: 0.6; cursor: default; }
+    .header__dropdown { position: relative; }
+    .header__dropdown-trigger { display: flex; align-items: center; gap: 4px; }
+    .header__dropdown-arrow { transition: transform var(--transition-fast); }
+    .header__dropdown:hover .header__dropdown-arrow,
+    .header__dropdown:focus-within .header__dropdown-arrow,
+    .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
+    .header__dropdown-menu {
+      position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: 10px; padding: 8px var(--space-2) var(--space-2);
+      min-width: 180px; display: none; opacity: 0;
+      box-shadow: var(--shadow-lg);
+      transition: opacity var(--transition-fast), transform var(--transition-fast); z-index: 100;
+    }
+    .header__dropdown:hover .header__dropdown-menu,
+    .header__dropdown:focus-within .header__dropdown-menu,
+    .header__dropdown.open .header__dropdown-menu {
+      display: flex; flex-direction: column; opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+    .header__dropdown-item {
+      font-size: var(--font-size-sm); font-weight: 500; color: var(--color-text-secondary);
+      padding: var(--space-3) var(--space-4); border-radius: 6px;
+      transition: background var(--transition-fast), color var(--transition-fast);
+      white-space: nowrap; text-decoration: none;
+    }
+    .header__dropdown-item:hover { background: rgba(201,168,76,0.1); color: var(--color-accent); text-decoration: none; }
+    .header__toggle {
+      display: flex; flex-direction: column; justify-content: center; gap: 4px;
+      background: none; border: none; cursor: pointer;
+    }
+    .header__toggle span { display: block; width: 24px; height: 2px; background: var(--color-text-secondary); border-radius: 2px; transition: var(--transition-fast); }
+    .header__cta { display: none; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: var(--space-2); padding: 10px 20px;
+      font-family: var(--font-family); font-size: var(--font-size-sm);
+      font-weight: 600; border: none; border-radius: 8px;
+      cursor: pointer; transition: all var(--transition-fast); text-decoration: none;
+    }
+    .btn--primary { background: var(--color-accent); color: #080c14; }
+    .btn--primary:hover { background: #d4b560; text-decoration: none; }
+    @media (min-width: 1024px) {
+      .header { margin-top: 0; }
+      .header__toggle { display: none; }
+      .header__nav { display: flex; }
+      .header__cta { display: block; }
+      .header__dropdown-menu { display: flex; flex-direction: column; opacity: 1; position: static; transform: none; box-shadow: none; border: none; padding: 0; background: transparent; }
+      .header__dropdown { position: relative; }
+      .header__dropdown:hover .header__dropdown-menu { display: flex; }
+      .header__dropdown-item { color: var(--color-text-secondary); padding: var(--space-3) var(--space-4); }
+      .header__dropdown-item:hover { background: rgba(201,168,76,0.1); color: var(--color-accent); }
+      .header__dropdown-menu { display: none; }
+    }
+    @media (max-width: 1023px) {
+      .header__nav {
+        display: none; flex-direction: column;
+        position: absolute; top: 100%; left: 0; right: 0;
+        background-color: var(--color-bg-alt); border-bottom: 1px solid var(--color-border);
+        padding: 0; box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      }
+      .header__nav.active { display: flex; }
+      .header__nav-link { display: block; width: 100%; padding: 14px 40px 14px 24px; border-bottom: 1px solid var(--color-border); }
+      .header__dropdown-menu { position: static; transform: none; border-radius: 0; border: none; box-shadow: none; padding-left: 24px; }
+      .header__dropdown-item { padding: 12px 40px 12px 32px; }
+      .header__dropdown:hover .header__dropdown-menu { display: none; }
+      .header__dropdown.open .header__dropdown-menu { display: flex; }
+    }
+
+    /* NAV badge */
+    .nav-badge {
+      display: inline-block; margin-left: 5px; padding: 1px 5px;
+      font-size: 10px; font-weight: 700; line-height: 1;
+      letter-spacing: 0.04em; text-transform: uppercase;
+      color: #080c14; background: var(--color-accent);
+      border-radius: 3px; vertical-align: baseline; white-space: nowrap;
+      animation: badgePulse 2s ease-in-out infinite;
+    }
+    @keyframes badgePulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+
+    /* Footer */
+    .footer {
+      background: var(--color-bg-alt);
+      border-top: 1px solid var(--color-border);
+      padding: var(--space-12) 0 var(--space-6);
+      margin-top: var(--space-16);
+      position: relative;
+    }
+    .footer::before {
+      content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+      width: 300px; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+      opacity: 0.6;
+    }
+    .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: var(--space-8); margin-bottom: var(--space-8); }
+    @media (max-width: 768px) { .footer__grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 480px) { .footer__grid { grid-template-columns: 1fr; } }
+    .footer__title {
+      font-size: var(--font-size-sm); font-weight: 600; color: var(--color-text-primary);
+      margin-bottom: var(--space-4); position: relative; padding-bottom: var(--space-3);
+    }
+    .footer__title::after {
+      content: ''; position: absolute; bottom: 0; left: 0; width: 40px; height: 2px;
+      background: linear-gradient(90deg, var(--color-accent), transparent); opacity: 0.8;
+    }
+    .footer__description { font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.7; }
+    .footer__links { list-style: none; display: flex; flex-direction: column; gap: var(--space-2); }
+    .footer__link { color: var(--color-text-secondary); font-size: var(--font-size-sm); transition: color var(--transition-fast); display: inline-block; }
+    .footer__link:hover { color: var(--color-accent); text-decoration: none; }
+    .footer__link--email { color: var(--color-accent); }
+    .footer__license, .footer__company-short { font-size: 0.78rem; color: var(--color-text-secondary); line-height: 1.5; }
+    .footer__bottom {
+      border-top: 1px solid var(--color-border); padding-top: var(--space-5);
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-4);
+    }
+    .footer__copyright { font-size: var(--font-size-sm); color: var(--color-text-secondary); }
+    .footer__platforms { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+    .footer__platform-badge {
+      display: inline-block; padding: 0.25rem 0.6rem;
+      border: 1px solid var(--color-border); border-radius: 100px;
+      font-size: 0.72rem; color: var(--color-text-secondary); transition: all var(--transition-fast);
+    }
+    .footer__platform-badge:hover { border-color: var(--color-accent); color: var(--color-accent); text-decoration: none; }
+
+    /* Article Hero */
+    .article-hero {
+      padding: 8.5rem 2rem 3rem; text-align: center;
+      background: linear-gradient(180deg, rgba(201,168,76,.06) 0%, transparent 100%);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .article-hero .tag {
+      display: inline-block; background: rgba(201,168,76,.15); color: var(--color-accent);
+      font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 0.3rem 0.85rem; border-radius: 100px; margin-bottom: 1.25rem;
+    }
+    .article-hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; line-height: 1.2;
+      max-width: 760px; margin: 0 auto 1.25rem;
+      background: linear-gradient(135deg, #fff 0%, #d0c4a8 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .article-hero .meta { color: var(--color-text-secondary); font-size: 0.875rem; display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
+    .article-hero .meta span { display: flex; align-items: center; gap: 0.4rem; }
+
+    /* Layout */
+    .layout { max-width: 860px; margin: 0 auto; padding: 3rem 1.5rem 6rem; }
+
+    /* TOC */
+    .toc {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 2.5rem;
+    }
+    .toc h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-accent); margin-bottom: 0.75rem; font-weight: 700; }
+    .toc ol { list-style: none; counter-reset: toc; }
+    .toc li { counter-increment: toc; }
+    .toc li::before { content: counter(toc) '. '; color: var(--color-accent); font-weight: 600; }
+    .toc a { color: var(--color-text-secondary); font-size: 0.9rem; display: block; padding: 0.3rem 0; transition: color var(--transition-fast); }
+    .toc a:hover { color: var(--color-accent); text-decoration: none; }
+
+    /* Prose */
+    .prose h2 { font-size: 1.45rem; font-weight: 700; margin: 2.5rem 0 0.75rem; color: #fff; border-left: 3px solid var(--color-accent); padding-left: 0.85rem; }
+    .prose h3 { font-size: 1.1rem; font-weight: 600; margin: 1.5rem 0 0.5rem; color: #e0d8c8; }
+    .prose p { margin-bottom: 1rem; color: #c8ccd8; }
+    .prose ul, .prose ol { margin: 0.75rem 0 1rem 1.5rem; }
+    .prose li { margin-bottom: 0.4rem; color: #c8ccd8; }
+    .prose strong { color: var(--color-accent); font-weight: 600; }
+    .prose blockquote {
+      border-left: 3px solid var(--color-accent); padding: 0.75rem 1.25rem; margin: 1.5rem 0;
+      background: var(--color-accent-glow); border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+      font-size: 1.05rem; color: #d8d0b8; font-style: italic;
+    }
+
+    /* Callout */
+    .callout {
+      background: var(--color-accent-glow); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: 1.25rem 1.5rem; margin: 1.5rem 0;
+      display: flex; gap: 1rem; align-items: flex-start;
+    }
+    .callout__icon { font-size: 1.3rem; flex-shrink: 0; }
+    .callout p { margin: 0; color: #d8d0b8; font-size: 0.95rem; }
+
+    /* Feature Grid */
+    .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin: 1.25rem 0; }
+    .feature-card { background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 1.25rem; }
+    .feature-card__icon { font-size: 1.6rem; margin-bottom: 0.6rem; }
+    .feature-card h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.35rem; color: #fff; }
+    .feature-card p { font-size: 0.85rem; color: var(--color-text-secondary); margin: 0; }
+
+    /* Takeaways */
+    .takeaways {
+      background: linear-gradient(135deg, rgba(201,168,76,.08), rgba(201,168,76,.03));
+      border: 1px solid var(--color-border); border-radius: var(--radius-lg);
+      padding: 1.75rem; margin: 2rem 0;
+    }
+    .takeaways h2 { border-left-color: #fff; color: #fff; font-size: 1.15rem; }
+    .takeaways ul { margin: 0.5rem 0 0 1.25rem; }
+    .takeaways li { margin-bottom: 0.5rem; color: #d0c8b8; font-size: 0.92rem; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .article-hero { padding: 6rem 1.5rem 2rem; }
+      .layout { padding: 2rem 1rem 4rem; }
+    }
+  </style>
 </head>
 <body>
-  <style> body { padding-top: 72px; } </style>
-
-<!-- NAV -->
-  <nav class="nav">
-    <div class="nav__inner">
-      <a href="https://www.tuyuesouxin.cn" class="nav__logo">
-        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#c9a84c"/>
-              <stop offset="100%" stop-color="#e8c87a"/>
-            </linearGradient>
-            <clipPath id="moonClip">
-              <circle cx="30" cy="24" r="16"/>
-            </clipPath>
-          </defs>
-          <circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/>
-          <circle cx="37" cy="20" r="13" fill="#080c14"/>
-          <text x="4" y="32" font-family="Inter, -apple-system, sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-0.8">TMG</text>
-        </svg>
-        Tuyue Media Gateway
-      </a>
-      <ul class="nav__links">
-        <li class="nav__dropdown">
-          <a href="https://www.tuyuesouxin.cn/services/" class="nav__dropdown-trigger">
-            Services
-            <span class="nav__dropdown-arrow">▼</span>
-          </a>
-          <div class="nav__dropdown-menu">
-            <a href="https://www.tuyuesouxin.cn/services" style="font-weight:700; color:var(--accent);">All Services</a>
-            <a href="https://www.tuyuesouxin.cn/services/wechat">WeChat Ads</a>
-            <a href="https://www.tuyuesouxin.cn/services/douyin">Douyin Ads</a>
-            <a href="https://www.tuyuesouxin.cn/services/baidu">Baidu SEM</a>
-            <a href="https://www.tuyuesouxin.cn/services/xiaohongshu">Xiaohongshu</a>
-            <a href="https://www.tuyuesouxin.cn/services/bilibili">Bilibili Ads</a>
-            <a href="https://www.tuyuesouxin.cn/geo/">China GEO</a>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="https://www.tuyuesouxin.cn" class="header__logo">
+          <svg class="header__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#c9a84c"/>
+                <stop offset="100%" stop-color="#e8c87a"/>
+              </linearGradient>
+            </defs>
+            <circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/>
+            <circle cx="37" cy="20" r="13" fill="#080c14"/>
+            <text x="4" y="32" font-family="Inter, -apple-system, sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-0.8">TMG</text>
+          </svg>
+          <span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
+        </a>
+        <button class="header__toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="header__nav">
+          <div class="header__dropdown">
+            <a href="https://www.tuyuesouxin.cn/services/" class="header__nav-link header__dropdown-trigger">
+              Services
+              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="header__dropdown-menu">
+              <a href="https://www.tuyuesouxin.cn/services" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">All Services</a>
+              <a href="https://www.tuyuesouxin.cn/services/wechat" class="header__dropdown-item">WeChat Ads</a>
+              <a href="https://www.tuyuesouxin.cn/services/douyin" class="header__dropdown-item">Douyin Ads</a>
+              <a href="https://www.tuyuesouxin.cn/services/baidu" class="header__dropdown-item">Baidu SEM</a>
+              <a href="https://www.tuyuesouxin.cn/services/bing" class="header__dropdown-item">Bing China</a>
+              <a href="https://www.tuyuesouxin.cn/services/xiaohongshu" class="header__dropdown-item">Xiaohongshu</a>
+              <a href="https://www.tuyuesouxin.cn/services/bilibili" class="header__dropdown-item">Bilibili Ads</a>
+              <a href="https://www.tuyuesouxin.cn/geo/" class="header__dropdown-item">China GEO</a>
+            </div>
           </div>
-        </li>
-        <li><a href="https://www.tuyuesouxin.cn/pricing/">Pricing</a></li>
-        <li><a href="https://www.tuyuesouxin.cn/client-stories/">Client Stories</a></li>
-        <li><a href="https://www.tuyuesouxin.cn/geo/">GEO <span class="nav-badge">NEW</span></a></li>
-        <li><a href="https://www.tuyuesouxin.cn/blog/">Blog</a></li>
-        <li><a href="https://www.tuyuesouxin.cn/faqs">FAQ</a></li>
-        <li class="nav__dropdown">
-          <a href="https://www.tuyuesouxin.cn/about/" class="nav__dropdown-trigger">
-            About
-            <span class="nav__dropdown-arrow">▼</span>
-          </a>
-          <div class="nav__dropdown-menu">
-            <a href="https://www.tuyuesouxin.cn/why-tmg/">Why TMG</a>
-            <a href="https://www.tuyuesouxin.cn/about/">About Us</a>
-            <a href="https://www.tuyuesouxin.cn/contact/">Contact</a>
+          <a href="https://www.tuyuesouxin.cn/pricing/" class="header__nav-link">Pricing</a>
+          <a href="https://www.tuyuesouxin.cn/client-stories/" class="header__nav-link">Client Stories</a>
+          <a href="https://www.tuyuesouxin.cn/geo/" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
+          <a href="https://www.tuyuesouxin.cn/blog/" class="header__nav-link" style="color: var(--color-text-primary);">Blog</a>
+          <a href="https://www.tuyuesouxin.cn/faqs" class="header__nav-link">FAQ</a>
+          <div class="header__dropdown">
+            <a href="https://www.tuyuesouxin.cn/about/" class="header__nav-link header__dropdown-trigger">
+              About
+              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="header__dropdown-menu">
+              <a href="https://www.tuyuesouxin.cn/why-tmg/" class="header__dropdown-item">Why TMG</a>
+              <a href="https://www.tuyuesouxin.cn/about/" class="header__dropdown-item">About Us</a>
+              <a href="https://www.tuyuesouxin.cn/contact/" class="header__dropdown-item">Contact</a>
+            </div>
           </div>
-        </li>
-      </ul>
-      <a href="https://www.tuyuesouxin.cn/contact/" class="nav__cta">Get Started</a>
-    </div>
-  </nav>
-
-<!-- HERO -->
-<header class="article-hero">
-  <span class="tag">Xiaohongshu Marketing</span>
-  <h1>Why 170 Million Chinese Consumers Ask Xiaohongshu Before Buying Anything</h1>
-  <div class="meta">
-    <span>&#128197; April 24, 2026</span>
-    <span>&#128214; 6 min read</span>
-    <span>&#128214; Source: Xiaohongshu 2026 Platform Marketing Guide</span>
-  </div>
-</header>
-
-<!-- MAIN -->
-<main class="layout">
-  <aside class="toc">
-    <h2>Contents</h2>
-    <ol>
-      <li><a href="#search-first">The Search-First Platform</a></li>
-      <li><a href="#116-note">The 116-Note Journey</a></li>
-      <li><a href="#seeding">Why "Seeding" Beats Traditional Advertising</a></li>
-      <li><a href="#action-plan">Your Action Plan</a></li>
-      <li><a href="#takeaways">Key Takeaways</a></li>
-    </ol>
-  </aside>
-
-  <article class="prose">
-    
-    <p>Imagine this: A 28-year-old professional in Shanghai needs a new skincare serum. She doesn't Google it. She doesn't check Amazon reviews. She opens Xiaohongshu and types "干皮抗老精华推荐" (dry skin anti-aging serum recommendations). Over the next hour, she'll browse 47 notes—comparing ingredients, reading real-user before/after photos, and saving three top contenders to her "Want to Try" collection.</p>
-
-    <p>This isn't an edge case. <strong>170 million Chinese consumers</strong> seek purchase advice on Xiaohongshu every month. For categories from luxury handbags to baby strollers, XHS has become the default research channel—and international brands who miss this shift are losing customers before they even reach an e-commerce site.</p>
-
-    <p><strong>What You'll Learn:</strong></p>
-    <ul>
-      <li>✅ Why 73% of XHS users search monthly (and what they're looking for)</li>
-      <li>✅ How the "116-note journey" reveals deep consumer research habits</li>
-      <li>✅ Why authentic user content ("seeding") outperforms polished brand ads</li>
-      <li>✅ Practical steps to position your brand in the XHS research phase</li>
-    </ul>
-
-    <h2 id="search-first">The Search-First Platform</h2>
-
-    <p>Xiaohongshu's evolution from "Your Life Guide" to "Your Life Interest Community" reflects a fundamental shift: users don't come just to browse—they come to search with intent.</p>
-
-    <div class="callout">
-      <span class="callout__icon">📊</span>
-      <p><strong>Xiaohongshu by the Numbers: A Search-Driven Ecosystem</strong><br>
-      <strong>Monthly Active Users:</strong> 350M+ (Larger than the entire US population)<br>
-      <strong>Monthly Search Penetration:</strong> 73% (Nearly 3/4 of all users search each month)<br>
-      <strong>Active Intent Searches:</strong> 90% (Not casual browsing—specific queries)</p>
-    </div>
-
-    <p>The platform reports 52% year-over-year growth in long-tail searches (queries over 8 characters). Users aren't typing "serum"—they're typing "sensitive skin vitamin C serum without alcohol under ¥300." This specificity means your content needs to match detailed consumer needs, not just broad categories.</p>
-
-    <h2 id="116-note">The 116-Note Journey</h2>
-
-    <p>Let's examine a real case from the platform's internal research: a user searching for home cleaning services ("天鹅到家").</p>
-
-    <div class="feature-grid">
-      <div class="feature-card">
-        <div class="feature-card__icon">🔍</div>
-        <h3>Stage 1: Broad Exploration</h3>
-        <p><strong>Query:</strong> "How to find a postpartum nanny?"<br>
-        <strong>Notes browsed:</strong> 60<br>
-        <strong>Consumer mindset:</strong> "I need to understand the landscape"</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-card__icon">📋</div>
-        <h3>Stage 2: Criteria Refinement</h3>
-        <p><strong>Query:</strong> "What requirements should I specify for a nanny?"<br>
-        <strong>Notes browsed:</strong> 34<br>
-        <strong>Consumer mindset:</strong> "Now I know what to look for—let me compare options"</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-card__icon">✅</div>
-        <h3>Stage 3: Final Validation</h3>
-        <p><strong>Query:</strong> "Is '天鹅到家' reliable?"<br>
-        <strong>Notes browsed:</strong> 22<br>
-        <strong>Consumer mindset:</strong> "I've narrowed it down—now I need to trust this specific provider"</p>
+        </nav>
+        <div class="header__cta">
+          <a href="https://www.tuyuesouxin.cn/contact/" class="btn btn--primary">Get Started</a>
+        </div>
       </div>
     </div>
+  </header>
 
-    <div class="callout">
-      <span class="callout__icon">🎯</span>
-      <p><strong>Pro Tip:</strong> Don't create one piece of content and hope it works for everyone. Map your content to these three stages: education (broad), comparison (refined), and validation (specific).</p>
+  <!-- Hero -->
+  <header class="article-hero">
+    <span class="tag">Xiaohongshu Marketing</span>
+    <h1>Why 170 Million Chinese Consumers Ask Xiaohongshu Before Buying Anything</h1>
+    <div class="meta">
+      <span>&#128197; April 24, 2026</span>
+      <span>&#128214; 6 min read</span>
+      <span>&#128214; Source: Xiaohongshu 2026 Platform Marketing Guide</span>
     </div>
+  </header>
 
-    <p>This journey reveals why Chinese consumers have earned their reputation as "the world's most researched shoppers." They're not impulsive—they're methodical, and Xiaohongshu provides the research tools they trust.</p>
+  <!-- Main -->
+  <main class="layout">
+    <aside class="toc">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#search-first">The Search-First Platform</a></li>
+        <li><a href="#116-note">The 116-Note Journey</a></li>
+        <li><a href="#seeding">Why "Seeding" Beats Traditional Advertising</a></li>
+        <li><a href="#action-plan">Your Action Plan</a></li>
+        <li><a href="#takeaways">Key Takeaways</a></li>
+      </ol>
+    </aside>
 
-    <h2 id="seeding">Why "Seeding" Beats Traditional Advertising</h2>
+    <article class="prose">
 
-    <p>The Nielsen IQ 2025 Consumer Trends report identified "Consumer Awakening" as a key shift: Chinese shoppers have moved from passive recipients to active pursuers of the life they want.</p>
+      <p>Imagine this: A 28-year-old professional in Shanghai needs a new skincare serum. She doesn't Google it. She doesn't check Amazon reviews. She opens Xiaohongshu and types "干皮抗老精华推荐" (dry skin anti-aging serum recommendations). Over the next hour, she'll browse 47 notes—comparing ingredients, reading real-user before/after photos, and saving three top contenders to her "Want to Try" collection.</p>
 
-    <p><strong>❌ Common Mistake International Brands Make:</strong><br>
-    Polished, professional ads that feel like advertising. Chinese consumers—especially the 35% who are 95后 millennials—can spot inauthenticity instantly.</p>
+      <p>This isn't an edge case. <strong>170 million Chinese consumers</strong> seek purchase advice on Xiaohongshu every month. For categories from luxury handbags to baby strollers, XHS has become the default research channel—and international brands who miss this shift are losing customers before they even reach an e-commerce site.</p>
 
-    <p><strong>✅ The Smarter Approach:</strong><br>
-    Leverage authentic user-generated content (种草, "seeding"). When real people share genuine experiences, it creates what XHS calls "purchase intention before transaction."</p>
-
-    <p>The data supports this: searches for "real user experience" (真实使用体验) grew 57% year-over-year, while "brand official" (品牌官方) searches grew only 12%. Consumers want peer perspectives, not corporate messaging.</p>
-
-    <h2 id="action-plan">Your Action Plan</h2>
-
-    <p><strong>1️⃣ Audit Your Search Presence</strong></p>
-    <ul>
-      <li>Identify the top 20 search queries in your category on XHS</li>
-      <li>Analyze which phase each query represents (broad, refined, specific)</li>
-      <li>Map your existing content to these queries—where are the gaps?</li>
-    </ul>
-
-    <p><strong>2️⃣ Develop a Three-Stage Content Strategy</strong></p>
-    <ul>
-      <li><strong>Broad Phase:</strong> Create educational content answering category questions</li>
-      <li><strong>Refined Phase:</strong> Produce comparison content (vs. competitors, different product lines)</li>
-      <li><strong>Specific Phase:</strong> Amplify user reviews, case studies, before/after content</li>
-    </ul>
-
-    <p><strong>3️⃣ Activate Authentic Voices</strong></p>
-    <ul>
-      <li>Identify KOCs (Key Opinion Consumers) in your niche—not just mega-influencers</li>
-      <li>Consider training KOS (Key Opinion Sales) from your own team</li>
-      <li>Create systems to encourage and reward genuine user content</li>
-    </ul>
-
-    <div class="takeaways">
-      <h2 id="takeaways">Key Takeaways</h2>
+      <p><strong>What You'll Learn:</strong></p>
       <ul>
-        <li><strong>Xiaohongshu is a research channel first</strong>—73% of users search monthly, often with specific purchase intent.</li>
-        <li><strong>Chinese consumers conduct deep research</strong>—the "116-note journey" shows they won't settle for surface-level information.</li>
-        <li><strong>Authenticity beats polish</strong>—user-generated "seeding" content drives more trust than professional brand ads.</li>
-        <li><strong>Your content must address all three search stages</strong>—education, comparison, and validation.</li>
-        <li><strong>Don't underestimate the time investment</strong>—building a genuine presence on XHS takes months, not weeks. Start before you launch.</li>
+        <li>✅ Why 73% of XHS users search monthly (and what they're looking for)</li>
+        <li>✅ How the "116-note journey" reveals deep consumer research habits</li>
+        <li>✅ Why authentic user content ("seeding") outperforms polished brand ads</li>
+        <li>✅ Practical steps to position your brand in the XHS research phase</li>
       </ul>
-    </div>
 
-    <blockquote>
-      "In China's social commerce landscape, your Xiaohongshu presence isn't just marketing—it's intercepting customers at the moment of research."
-    </blockquote>
+      <h2 id="search-first">The Search-First Platform</h2>
 
-    <div class="callout">
-      <span class="callout__icon">🚀</span>
-      <p><strong>Ready to Launch Your Campaign?</strong> Navigating Xiaohongshu's unique ecosystem—where search intent meets authentic community—can be complex for international teams. Our specialists have managed over ¥500 million in XHS campaigns across beauty, FMCG, luxury, and automotive categories.</p>
-    </div>
+      <p>Xiaohongshu's evolution from "Your Life Guide" to "Your Life Interest Community" reflects a fundamental shift: users don't come just to browse—they come to search with intent.</p>
 
-    <p><strong>What We Offer:</strong></p>
-    <ul>
-      <li>✅ <strong>Xiaohongshu Strategy Workshop</strong> – Data-driven assessment of your category's search landscape</li>
-      <li>✅ <strong>KOC Seeding Campaigns</strong> – Identify and activate authentic micro-influencers</li>
-      <li>✅ <strong>Enterprise Pro Account Setup</strong> – Full Blue V verification and KOS training</li>
-      <li>✅ <strong>Search Ads Management</strong> – Capture high-intent traffic through the Juguang platform</li>
-    </ul>
+      <div class="callout">
+        <span class="callout__icon">📊</span>
+        <p><strong>Xiaohongshu by the Numbers: A Search-Driven Ecosystem</strong><br>
+        <strong>Monthly Active Users:</strong> 350M+ (Larger than the entire US population)<br>
+        <strong>Monthly Search Penetration:</strong> 73% (Nearly 3/4 of all users search each month)<br>
+        <strong>Active Intent Searches:</strong> 90% (Not casual browsing—specific queries)</p>
+      </div>
 
-    <p><strong>Next Steps:</strong></p>
-    <ul>
-      <li>📞 <strong>Schedule a free platform assessment</strong> – 30-minute analysis of your category's XHS opportunity</li>
-      <li>📥 <strong>Download our "Xiaohongshu Research Funnel" guide</strong> – Detailed framework for three-stage content</li>
-      <li>💬 <strong>Chat with our China market specialists</strong> – Live Q&A about your specific brand</li>
-    </ul>
+      <p>The platform reports 52% year-over-year growth in long-tail searches (queries over 8 characters). Users aren't typing "serum"—they're typing "sensitive skin vitamin C serum without alcohol under ¥300." This specificity means your content needs to match detailed consumer needs, not just broad categories.</p>
 
-    <p style="margin-top:2rem; color:var(--text-muted); font-size:.875rem; border-top:1px solid var(--border); padding-top:1.5rem;">
-      <strong>Source:</strong> Xiaohongshu 2026 Platform Marketing Guide (2025 H1 data)<br>
-      <strong>Prepared by:</strong> Tuyue Media Gateway — China's paid media partner for international brands.
-    </p>
+      <h2 id="116-note">The 116-Note Journey</h2>
 
-  </article>
-</main>
+      <p>Let's examine a real case from the platform's internal research: a user searching for home cleaning services ("天鹅到家").</p>
 
-<!-- FOOTER -->
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-card__icon">🔍</div>
+          <h3>Stage 1: Broad Exploration</h3>
+          <p><strong>Query:</strong> "How to find a postpartum nanny?"<br>
+          <strong>Notes browsed:</strong> 60<br>
+          <strong>Consumer mindset:</strong> "I need to understand the landscape"</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">📋</div>
+          <h3>Stage 2: Criteria Refinement</h3>
+          <p><strong>Query:</strong> "What requirements should I specify for a nanny?"<br>
+          <strong>Notes browsed:</strong> 34<br>
+          <strong>Consumer mindset:</strong> "Now I know what to look for—let me compare options"</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">✅</div>
+          <h3>Stage 3: Final Validation</h3>
+          <p><strong>Query:</strong> "Is '天鹅到家' reliable?"<br>
+          <strong>Notes browsed:</strong> 22<br>
+          <strong>Consumer mindset:</strong> "I've narrowed it down—now I need to trust this specific provider"</p>
+        </div>
+      </div>
+
+      <div class="callout">
+        <span class="callout__icon">🎯</span>
+        <p><strong>Pro Tip:</strong> Don't create one piece of content and hope it works for everyone. Map your content to these three stages: education (broad), comparison (refined), and validation (specific).</p>
+      </div>
+
+      <p>This journey reveals why Chinese consumers have earned their reputation as "the world's most researched shoppers." They're not impulsive—they're methodical, and Xiaohongshu provides the research tools they trust.</p>
+
+      <h2 id="seeding">Why "Seeding" Beats Traditional Advertising</h2>
+
+      <p>The Nielsen IQ 2025 Consumer Trends report identified "Consumer Awakening" as a key shift: Chinese shoppers have moved from passive recipients to active pursuers of the life they want.</p>
+
+      <p><strong>❌ Common Mistake International Brands Make:</strong><br>
+      Polished, professional ads that feel like advertising. Chinese consumers—especially the 35% who are 95后 millennials—can spot inauthenticity instantly.</p>
+
+      <p><strong>✅ The Smarter Approach:</strong><br>
+      Leverage authentic user-generated content (种草, "seeding"). When real people share genuine experiences, it creates what XHS calls "purchase intention before transaction."</p>
+
+      <p>The data supports this: searches for "real user experience" (真实使用体验) grew 57% year-over-year, while "brand official" (品牌官方) searches grew only 12%. Consumers want peer perspectives, not corporate messaging.</p>
+
+      <h2 id="action-plan">Your Action Plan</h2>
+
+      <p><strong>1️⃣ Audit Your Search Presence</strong></p>
+      <ul>
+        <li>Identify the top 20 search queries in your category on XHS</li>
+        <li>Analyze which phase each query represents (broad, refined, specific)</li>
+        <li>Map your existing content to these queries—where are the gaps?</li>
+      </ul>
+
+      <p><strong>2️⃣ Develop a Three-Stage Content Strategy</strong></p>
+      <ul>
+        <li><strong>Broad Phase:</strong> Create educational content answering category questions</li>
+        <li><strong>Refined Phase:</strong> Produce comparison content (vs. competitors, different product lines)</li>
+        <li><strong>Specific Phase:</strong> Amplify user reviews, case studies, before/after content</li>
+      </ul>
+
+      <p><strong>3️⃣ Activate Authentic Voices</strong></p>
+      <ul>
+        <li>Identify KOCs (Key Opinion Consumers) in your niche—not just mega-influencers</li>
+        <li>Consider training KOS (Key Opinion Sales) from your own team</li>
+        <li>Create systems to encourage and reward genuine user content</li>
+      </ul>
+
+      <div class="takeaways">
+        <h2 id="takeaways">Key Takeaways</h2>
+        <ul>
+          <li><strong>Xiaohongshu is a research channel first</strong>—73% of users search monthly, often with specific purchase intent.</li>
+          <li><strong>Chinese consumers conduct deep research</strong>—the "116-note journey" shows they won't settle for surface-level information.</li>
+          <li><strong>Authenticity beats polish</strong>—user-generated "seeding" content drives more trust than professional brand ads.</li>
+          <li><strong>Your content must address all three search stages</strong>—education, comparison, and validation.</li>
+          <li><strong>Don't underestimate the time investment</strong>—building a genuine presence on XHS takes months, not weeks. Start before you launch.</li>
+        </ul>
+      </div>
+
+      <blockquote>
+        "In China's social commerce landscape, your Xiaohongshu presence isn't just marketing—it's intercepting customers at the moment of research."
+      </blockquote>
+
+      <div class="callout">
+        <span class="callout__icon">🚀</span>
+        <p><strong>Ready to Launch Your Campaign?</strong> Navigating Xiaohongshu's unique ecosystem—where search intent meets authentic community—can be complex for international teams. Our specialists have managed over ¥500 million in XHS campaigns across beauty, FMCG, luxury, and automotive categories.</p>
+      </div>
+
+      <p><strong>What We Offer:</strong></p>
+      <ul>
+        <li>✅ <strong>Xiaohongshu Strategy Workshop</strong> – Data-driven assessment of your category's search landscape</li>
+        <li>✅ <strong>KOC Seeding Campaigns</strong> – Identify and activate authentic micro-influencers</li>
+        <li>✅ <strong>Enterprise Pro Account Setup</strong> – Full Blue V verification and KOS training</li>
+        <li>✅ <strong>Search Ads Management</strong> – Capture high-intent traffic through the Juguang platform</li>
+      </ul>
+
+      <p><strong>Next Steps:</strong></p>
+      <ul>
+        <li>📞 <strong>Schedule a free platform assessment</strong> – 30-minute analysis of your category's XHS opportunity</li>
+        <li>📥 <strong>Download our "Xiaohongshu Research Funnel" guide</strong> – Detailed framework for three-stage content</li>
+        <li>💬 <strong>Chat with our China market specialists</strong> – Live Q&A about your specific brand</li>
+      </ul>
+
+      <p style="margin-top:2rem; color:var(--color-text-secondary); font-size:.875rem; border-top:1px solid var(--color-border); padding-top:1.5rem;">
+        <strong>Source:</strong> Xiaohongshu 2026 Platform Marketing Guide (2025 H1 data)<br>
+        <strong>Prepared by:</strong> Tuyue Media Gateway — China's paid media partner for international brands.
+      </p>
+    </article>
+  </main>
+
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
@@ -560,23 +588,14 @@
         <div class="footer__section">
           <h4 class="footer__title">Contact</h4>
           <ul class="footer__links">
-            <li>
-              <a href="mailto:tmg@tuyuesouxin.cn" class="footer__link footer__link--email">tmg@tuyuesouxin.cn</a>
-            </li>
-            <li>
-              <a href="#contactQR" class="footer__link">
-                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: text-bottom; margin-right: 4px;">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                </svg>
-                WhatsApp (Click to scan)
-              </a>
-            </li>
+            <li><a href="mailto:tmg@tuyuesouxin.cn" class="footer__link footer__link--email">tmg@tuyuesouxin.cn</a></li>
+            <li><a href="#contactQR" class="footer__link">WhatsApp (Click to scan)</a></li>
           </ul>
         </div>
         <div class="footer__section">
           <h4 class="footer__title">Legal</h4>
           <ul class="footer__links">
-            <li class="footer__license">Business License Number: 91310114MADKG4UF0G</li>
+            <li class="footer__license">Business License: 91310114MADKG4UF0G</li>
             <li class="footer__company-short">Tuyue Media Gateway</li>
           </ul>
         </div>
@@ -595,66 +614,20 @@
   </footer>
 
 <script>
-  // Dropdown interaction
-  document.querySelectorAll('.nav__dropdown-trigger').forEach(function(trigger) {
+  // Header mobile toggle
+  document.querySelector('.header__toggle').addEventListener('click', function() {
+    document.querySelector('.header__nav').classList.toggle('active');
+  });
+  // Header dropdown click (mobile)
+  document.querySelectorAll('.header__dropdown > .header__nav-link').forEach(function(trigger) {
     trigger.addEventListener('click', function(e) {
-      e.preventDefault();
-      var nav = document.querySelector('.nav__inner') || document;
-      nav.querySelectorAll('.nav__dropdown').forEach(function(d) { d.classList.remove('open'); });
-      this.closest('.nav__dropdown').classList.toggle('open');
+      var dropdown = trigger.parentElement;
+      if (window.innerWidth < 1024) {
+        e.preventDefault();
+        dropdown.classList.toggle('open');
+      }
     });
   });
-  document.addEventListener('click', function(e) {
-    if (!e.target.closest('.nav__dropdown')) {
-      document.querySelectorAll('.nav__dropdown').forEach(function(d) { d.classList.remove('open'); });
-    }
-  });
 </script>
-<script>
-  // Scroll Reveal Animation - content always visible on load
-  (function() {
-    var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (prefersReducedMotion) {
-      document.body.classList.add('scrolled');
-      return;
-    }
-    document.body.classList.add('scrolled');
-  })();
-</script>
-<script>
-  // Magnetic Cursor Effect
-  (function() {
-    var magnetElements = document.querySelectorAll('[data-magnetic]');
-    if (!magnetElements.length) return;
-    magnetElements.forEach(function(el) {
-      var strength = 0.4;
-      var animFrame = null;
-      var onMove = function(e) {
-        if (animFrame) cancelAnimationFrame(animFrame);
-        animFrame = requestAnimationFrame(function() {
-          var rect = el.getBoundingClientRect();
-          var centerX = rect.left + rect.width / 2;
-          var centerY = rect.top + rect.height / 2;
-          var distX = e.clientX - centerX;
-          var distY = e.clientY - centerY;
-          var distance = Math.sqrt(distX * distX + distY * distY);
-          var maxDist = 120;
-          if (distance < maxDist) {
-            var pull = (1 - distance / maxDist) * strength;
-            el.style.transform = 'translate(' + (distX * pull) + 'px, ' + (distY * pull) + 'px)';
-          } else {
-            el.style.transform = 'translate(0, 0)';
-          }
-        });
-      };
-      var onLeave = function() {
-        el.style.transform = 'translate(0, 0)';
-      };
-      el.addEventListener('mousemove', onMove);
-      el.addEventListener('mouseleave', onLeave);
-    });
-  })();
-</script>
-
 </body>
 </html>
