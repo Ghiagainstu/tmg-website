@@ -255,11 +255,12 @@
     .article-hero__title {
       font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700;
       color: var(--color-text-primary); line-height: 1.25; margin-bottom: var(--space-6);
+      text-align: center;
     }
     .article-hero__title span { color: var(--color-accent); }
     .article-hero__intro {
       font-size: var(--font-size-lg); color: var(--color-text-secondary);
-      line-height: 1.75; max-width: 760px;
+      line-height: 1.75; max-width: 760px; margin: 0 auto; text-align: center;
     }
 
     /* ── Article Body ── */
@@ -583,12 +584,17 @@
 
   <!-- Hero -->
   <section class="article-hero">
-    <span class="tag">Bilibili / Gen Z Marketing</span>
-    <h1>Why Bilibili is China's Most Undervalued Marketing Platform for Gen Z</h1>
-    <div class="meta">
-      <span>&#128197; April 23, 2026</span>
-      <span>&#128214; 8 min read</span>
-      <span>&#128214; Source: Bilibili Marketing Guide 2026</span>
+    <div class="container">
+      <div class="article-meta">
+        <span class="article-category">Bilibili / Gen Z Marketing</span>
+        <span class="article-date">April 23, 2026</span>
+        <span class="article-read-time">8 min read</span>
+        <span class="article-source">Source: Bilibili Marketing Guide 2026</span>
+      </div>
+      <h1 class="article-hero__title">Why Bilibili is China's Most Undervalued Marketing Platform for Gen Z</h1>
+      <p class="article-hero__intro">
+        Discover why international marketers are overlooking Bilibili's unmatched Gen Z engagement and how to leverage this undervalued platform for authentic youth marketing in China.
+      </p>
     </div>
   </section>
 
