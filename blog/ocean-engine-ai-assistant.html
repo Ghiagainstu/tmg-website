@@ -148,7 +148,8 @@
     @media (min-width: 768px) {
       .header__toggle { display: none; }
       .header__cta { display: block; }
-      .header__dropdown { position: relative; }
+      .header__dropdown { position: relative; 
+      padding-bottom: 8px; }
       .header__dropdown-trigger { display: flex; align-items: center; gap: 4px; }
       .header__dropdown-arrow { transition: transform var(--transition-fast); }
       .header__dropdown:hover .header__dropdown-arrow,
@@ -194,7 +195,8 @@
         display: block; width: 100%; padding: 14px 40px 14px 24px;
         border-bottom: 1px solid var(--color-border); font-size: 1.1rem;
       }
-      .header__dropdown { position: static; width: 100%; }
+      .header__dropdown { position: static; width: 100%; 
+      padding-bottom: 8px; }
       .header__dropdown-trigger {
         display: flex; align-items: center; justify-content: space-between;
         width: 100%; padding: 14px 40px 14px 24px;

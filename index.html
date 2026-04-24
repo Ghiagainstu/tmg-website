@@ -295,6 +295,7 @@
 
     .header__dropdown {
       position: relative;
+      padding-bottom: 8px;
     }
 
     .header__dropdown-trigger {
@@ -328,7 +329,6 @@
       box-shadow: var(--shadow-lg);
       transition: opacity var(--transition-fast), transform var(--transition-fast);
       z-index: 100;
-      margin-top: 8px;
     }
 
     .header__dropdown:hover .header__dropdown-menu,
@@ -471,7 +471,8 @@
       .header__dropdown {
         position: static;
         width: 100%;
-      }
+      
+      padding-bottom: 8px; }
 
       .header__dropdown-trigger {
         display: flex;

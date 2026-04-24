@@ -45,7 +45,8 @@
     @media(min-width:768px){.header__toggle{display:none}.header__cta{display:block}}
     /* Desktop dropdown (inside min-width so it overrides mobile position:static) */
     @media(min-width:768px){
-      .header__dropdown{position:relative}
+      .header__dropdown{position:relative
+      padding-bottom: 8px; }
       .header__dropdown-trigger{display:flex;align-items:center;gap:4px}
       .header__dropdown-arrow{transition:transform var(--transition-fast)}
       .header__dropdown:hover .header__dropdown-arrow,
@@ -125,7 +126,8 @@
       .header__dropdown {
         position: static;
         width: 100%;
-      }
+      
+      padding-bottom: 8px; }
 
       .header__dropdown-trigger {
         display: flex;
