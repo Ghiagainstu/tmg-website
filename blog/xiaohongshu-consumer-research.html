@@ -43,6 +43,8 @@
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
 
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
     /* ── NAV ── */
     .nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -166,18 +168,50 @@
     .takeaways li { margin-bottom: .5rem; color: #d0c8b8; font-size: .92rem; }
 
     /* ── FOOTER ── */
-    footer { background: var(--bg-alt); border-top: 1px solid var(--border); padding: 2.5rem 2rem; margin-top: 4rem; }
-    .footer__inner { max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: space-between; align-items: center; }
-    .footer__brand { font-size: .85rem; color: var(--text-muted); }
-    .footer__brand span { color: var(--accent); font-weight: 600; }
-    .footer__links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
-    .footer__links a { color: var(--text-muted); font-size: .85rem; transition: color .2s; }
-    .footer__links a:hover { color: var(--accent); }
+    .footer { background: var(--bg-alt); border-top: 1px solid var(--border); padding: 3.5rem 0 1.5rem; margin-top: 4rem; }
+    .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+    @media (max-width: 768px) { .footer__grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 480px) { .footer__grid { grid-template-columns: 1fr; } }
+    .footer__section {}
+    .footer__title { font-size: .75rem; text-transform: uppercase; letter-spacing: .1em; color: var(--accent); margin-bottom: .85rem; font-weight: 600; }
+    .footer__description { font-size: .85rem; color: var(--text-muted); line-height: 1.6; }
+    .footer__links { list-style: none; display: flex; flex-direction: column; gap: .4rem; }
+    .footer__link { color: var(--text-muted); font-size: .85rem; transition: color .2s; }
+    .footer__link:hover { color: var(--accent); text-decoration: none; }
+    .footer__link--email { color: var(--accent); }
+    .footer__license, .footer__company-short { font-size: .78rem; color: var(--text-muted); line-height: 1.5; }
+    .footer__bottom { border-top: 1px solid var(--border); padding-top: 1.25rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .75rem; }
+    .footer__copyright { font-size: .8rem; color: var(--text-muted); }
+    .footer__platforms { display: flex; gap: .5rem; flex-wrap: wrap; }
+    .footer__platform-badge { display: inline-block; padding: .25rem .6rem; border: 1px solid var(--border); border-radius: 100px; font-size: .72rem; color: var(--text-muted); transition: all .2s; }
+    .footer__platform-badge:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
 
     @media (max-width: 768px) {
       .nav__links { display: none; }
       .article-hero { padding: 6rem 1.5rem 2rem; }
       .layout { padding: 2rem 1rem 4rem; }
+    }
+
+    /* GEO NEW badge */
+    .nav-badge {
+      display: inline-block;
+      margin-left: 5px;
+      padding: 1px 5px;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #080c14;
+      background: var(--accent);
+      border-radius: 3px;
+      vertical-align: baseline;
+      white-space: nowrap;
+      animation: badgePulse 2s ease-in-out infinite;
+    }
+    @keyframes badgePulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
     }
   </style>
 
@@ -254,7 +288,7 @@
         </li>
         <li><a href="https://www.tuyuesouxin.cn/pricing/">Pricing</a></li>
         <li><a href="https://www.tuyuesouxin.cn/client-stories/">Client Stories</a></li>
-        <li><a href="https://www.tuyuesouxin.cn/geo/">GEO <span style="display:inline-block; margin-left:4px; padding:1px 5px; font-size:10px; font-weight:700; line-height:1.5; letter-spacing:.04em; text-transform:uppercase; color:#080c14; background:var(--accent); border-radius:3px; vertical-align:middle;">NEW</span></a></li>
+        <li><a href="https://www.tuyuesouxin.cn/geo/">GEO <span class="nav-badge">NEW</span></a></li>
         <li><a href="https://www.tuyuesouxin.cn/blog/">Blog</a></li>
         <li><a href="https://www.tuyuesouxin.cn/faqs">FAQ</a></li>
         <li class="nav__dropdown">
@@ -439,17 +473,58 @@
 </main>
 
 <!-- FOOTER -->
-  <footer>
-    <div class="footer__inner">
-      <div class="footer__brand">
-        &copy; 2026 <span>Tuyue Media Gateway</span>. All rights reserved.
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__section">
+          <h4 class="footer__title">About TMG</h4>
+          <p class="footer__description">
+            Your single point of access to China's $100B digital advertising market. We help international agencies navigate Chinese platforms with ease.
+          </p>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="https://www.tuyuesouxin.cn/services/" class="footer__link">Services</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/pricing/" class="footer__link">Pricing</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/about/" class="footer__link">About Us</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/client-stories" class="footer__link">Client Stories</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/faqs" class="footer__link">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Contact</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="mailto:tmg@tuyuesouxin.cn" class="footer__link footer__link--email">tmg@tuyuesouxin.cn</a>
+            </li>
+            <li>
+              <a href="#contactQR" class="footer__link">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: text-bottom; margin-right: 4px;">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp (Click to scan)
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Legal</h4>
+          <ul class="footer__links">
+            <li class="footer__license">Business License Number: 91310114MADKG4UF0G</li>
+            <li class="footer__company-short">Tuyue Media Gateway</li>
+          </ul>
+        </div>
       </div>
-      <div class="footer__links">
-        <a href="https://www.tuyuesouxin.cn/services/">Services</a>
-        <a href="https://www.tuyuesouxin.cn/pricing/">Pricing</a>
-        <a href="https://www.tuyuesouxin.cn/about/">About</a>
-        <a href="https://www.tuyuesouxin.cn/contact/">Contact</a>
-        <a href="https://www.tuyuesouxin.cn/faqs">FAQ</a>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Tuyue Media Gateway. All rights reserved.</p>
+        <div class="footer__platforms">
+          <a href="https://ad.weixin.qq.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">WeChat</a>
+          <a href="https://www.oceanengine.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Douyin</a>
+          <a href="https://e.baidu.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Baidu</a>
+          <a href="https://www.xiaohongshu.com/brand" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Xiaohongshu</a>
+          <a href="https://member.bilibili.com/platform/ad" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bilibili</a>
+        </div>
       </div>
     </div>
   </footer>
