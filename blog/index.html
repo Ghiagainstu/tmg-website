@@ -7,6 +7,7 @@
   <title>Blog | Tuyue Media Gateway</title>
   <meta name="description" content="Insights, news, and expert perspectives on China's digital advertising landscape from the Tuyue Media Gateway team.">
   <link rel="canonical" href="https://www.tuyuesouxin.cn/blog">
+  <meta property="og:url" content="https://www.tuyuesouxin.cn/blog">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,6 +56,21 @@
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--color-bg);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--color-border);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--color-border-hover);
+    }
+
 
     body {
       font-family: var(--font-family);

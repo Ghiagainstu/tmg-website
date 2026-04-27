@@ -6,6 +6,7 @@
   <title>Pricing | Tuyue Media Gateway</title>
   <meta name="description" content="Simple, transparent pricing for TMG's China digital advertising services. Ad recharge, account setup, and full-service management.">
   <link rel="canonical" href="https://www.tuyuesouxin.cn/pricing">
+  <meta property="og:url" content="https://www.tuyuesouxin.cn/pricing">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +25,21 @@
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--color-bg);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--color-border);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--color-border-hover);
+    }
+
     #contactQR { scroll-margin-top: 80px; }
     body { font-family: var(--font-family); background-color: var(--color-bg); color: var(--color-text-primary); line-height: 1.6; -webkit-font-smoothing: antialiased; }
     .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 var(--space-6); }
@@ -818,6 +834,7 @@
           <a href="https://e.baidu.com" target="_blank" rel="noopener noreferrer" class="footer__platform-badge">Baidu</a>
           <a href="https://www.xiaohongshu.com/brand" target="_blank" rel="noopener noreferrer" class="footer__platform-badge">Xiaohongshu</a>
           <a href="https://member.bilibili.com/platform/ad" target="_blank" rel="noopener noreferrer" class="footer__platform-badge">Bilibili</a>
+                  <a href="https://ads.microsoft.com/zh-cn" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bing China</a>
         </div>
       </div>
     </div>
