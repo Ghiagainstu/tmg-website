@@ -67,7 +67,7 @@
     .header__dropdown:hover .header__dropdown-menu,
     .header__dropdown.open .header__dropdown-menu { display: flex; opacity: 1; }
     .header__dropdown-item { font-size: var(--font-size-sm); font-weight: 500; color: var(--color-text-secondary); padding: var(--space-3) var(--space-4); border-radius: 6px; transition: background 150ms ease, color 150ms ease; white-space: nowrap; text-decoration: none; }
-    .header__dropdown-item:hover { background: rgba(201,168,76,0.1); color: var(--color-accent); }
+    .header__dropdown-item:hover, .header__dropdown-item.active { background: rgba(201,168,76,0.1); color: var(--color-accent); }
     .header__nav-link--coming { opacity: 0.6; }
     .nav-badge { display: inline-block; margin-left: 5px; padding: 1px 5px; font-size: 10px; font-weight: 700; line-height: 1; letter-spacing: 0.04em; text-transform: uppercase; color: #080c14; background: var(--color-accent); border-radius: 3px; vertical-align: baseline; white-space: nowrap; animation: badgePulse 2s ease-in-out infinite; }
     @keyframes badgePulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.65; } }
@@ -525,7 +525,7 @@
           <div class="header__dropdown">
             <a href="https://www.tuyuesouxin.cn/about" class="header__nav-link header__dropdown-trigger active">About <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <div class="header__dropdown-menu">
-              <a href="https://www.tuyuesouxin.cn/why-tmg" class="header__dropdown-item">Why TMG</a>
+              <a href="https://www.tuyuesouxin.cn/why-tmg" class="header__dropdown-item active">Why TMG</a>
               <a href="https://www.tuyuesouxin.cn/about" class="header__dropdown-item">About Us</a>
               <a href="https://www.tuyuesouxin.cn/contact" class="header__dropdown-item">Contact</a>
             </div>
