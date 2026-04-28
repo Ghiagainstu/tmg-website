@@ -118,6 +118,151 @@
     .case-study__list li { position: relative; padding-left: var(--space-5); margin-bottom: var(--space-3); color: var(--color-text-secondary); }
     .case-study__list li::before { content: ''; position: absolute; left: 0; top: 10px; width: 6px; height: 6px; background: var(--color-accent); border-radius: 50%; }
     .case-study__cta { margin-top: var(--space-8); padding-top: var(--space-6); border-top: 1px solid var(--color-border); text-align: center; }
+    
+    /* Stories Grid Layout */
+    .stories-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-8);
+      margin-bottom: var(--space-12);
+    }
+    
+    @media (min-width: 768px) {
+      .stories-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+    .story-card {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: var(--space-8);
+      transition: all var(--transition-fast);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .story-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--color-accent);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+    }
+    
+    .story-card__header {
+      margin-bottom: var(--space-6);
+      padding-bottom: var(--space-4);
+      border-bottom: 1px solid var(--color-border);
+    }
+    
+    .story-card__client {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      margin-bottom: var(--space-4);
+    }
+    
+    .story-card__logo {
+      width: 56px;
+      height: 56px;
+      border-radius: 10px;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: white;
+    }
+    
+    .story-card__logo-icon {
+      width: 32px;
+      height: 32px;
+    }
+    
+    .story-card__client-info {
+      flex: 1;
+    }
+    
+    .story-card__client-name {
+      font-size: var(--font-size-xl);
+      font-weight: 600;
+      margin-bottom: var(--space-2);
+    }
+    
+    .story-card__badges {
+      display: flex;
+      gap: var(--space-2);
+      flex-wrap: wrap;
+    }
+    
+    .story-card__badge {
+      display: inline-block;
+      padding: var(--space-1) var(--space-3);
+      background: rgba(45, 107, 228, 0.15);
+      color: var(--color-primary-light);
+      font-size: var(--font-size-xs);
+      font-weight: 500;
+      border-radius: 4px;
+    }
+    
+    .story-card__badge--accent {
+      background: rgba(201, 168, 76, 0.15);
+      color: var(--color-accent);
+    }
+    
+    .story-card__headline {
+      font-size: var(--font-size-lg);
+      color: var(--color-text-secondary);
+      font-weight: 400;
+      line-height: 1.5;
+    }
+    
+    .story-card__content {
+      flex: 1;
+      margin-bottom: var(--space-6);
+    }
+    
+    .story-card__challenge {
+      color: var(--color-text-secondary);
+      margin-bottom: var(--space-4);
+      font-size: var(--font-size-sm);
+      line-height: 1.6;
+    }
+    
+    .story-card__outcome {
+      color: var(--color-text-primary);
+      font-size: var(--font-size-sm);
+      line-height: 1.6;
+      font-weight: 500;
+    }
+    
+    .story-card__outcome strong {
+      color: var(--color-accent);
+    }
+    
+    .story-card__cta {
+      margin-top: auto;
+    }
+    
+    @media (max-width: 768px) {
+      .story-card__client {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .story-card__logo {
+        width: 48px;
+        height: 48px;
+      }
+      
+      .story-card__logo-icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
     .footer { background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-alt) 100%); position: relative; padding: var(--space-16) 0 var(--space-8); }
     .footer::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 300px; height: 2px; background: linear-gradient(90deg, transparent, var(--color-accent), transparent); opacity: 0.6; }
     .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: var(--space-8); margin-bottom: var(--space-8); }
@@ -547,64 +692,75 @@
 
     <section class="section">
       <div class="container">
-        <div class="case-study">
-          <div class="case-study__header">
-            <div class="case-study__client">
-              <div class="case-study__logo">
-                <img src="https://www.tuyuesouxin.cn/assets/farmskins-logo.jpg" alt="Farmskins" class="case-study__logo-img">
-              </div>
-              <div class="case-study__client-info">
-                <h3 class="case-study__client-name">Farmskins</h3>
-                <div class="case-study__badges">
-                  <span class="case-study__client-badge">Case Study</span>
-                  <span class="case-study__client-badge case-study__budget-badge">$200K–$400K USD / year</span>
+        <div class="stories-grid">
+          <!-- Farmskins Card -->
+          <div class="story-card reveal">
+            <div class="story-card__header">
+              <div class="story-card__client">
+                <div class="story-card__logo">
+                  <img src="https://www.tuyuesouxin.cn/assets/farmskins-logo.jpg" alt="Farmskins" class="story-card__logo-img">
+                </div>
+                <div class="story-card__client-info">
+                  <h3 class="story-card__client-name">Farmskins</h3>
+                  <div class="story-card__badges">
+                    <span class="story-card__badge">Case Study</span>
+                    <span class="story-card__badge story-card__badge--accent">$200K–$400K USD / year</span>
+                  </div>
                 </div>
               </div>
+              <p class="story-card__headline">How a Global CS:GO Platform Found Its Footing in China</p>
             </div>
-            <p class="case-study__headline">How a Global CS:GO Platform Found Its Footing in China</p>
-          </div>
-
-          <div class="case-study__content">
-            <div class="case-study__chapter">
-              <h4 class="case-study__chapter-title">When "No" Was Only Answer</h4>
-              <p class="case-study__chapter-text">When Farmskins first approached us, they were running into a wall that many international companies hit in China: platform rejection. As a global CS:GO skins trading platform, they had identified China as a massive, untapped market opportunity—but every major Chinese advertising platform turned them away.</p>
-              <p class="case-study__chapter-text">Gaming-related advertising is heavily regulated in China. The platforms cited policy violations and told Farmskins that their business model simply wasn't compatible with Chinese advertising standards. No matter how they adjusted their messaging or how much budget they committed, the answer was always the same: "No."</p>
+            
+            <div class="story-card__content">
+              <p class="story-card__challenge">Facing platform rejection in China's regulated gaming advertising market. Every major Chinese platform said "No" to their business model.</p>
+              <p class="story-card__outcome"><strong>Six-year partnership</strong> with ongoing campaigns across multiple Chinese platforms, achieving sustained growth in a once-closed market.</p>
             </div>
-
-            <div class="case-study__chapter">
-              <h4 class="case-study__chapter-title">What Actually Happened</h4>
-              <p class="case-study__chapter-text">That's when we stepped in. Unlike most agencies that would simply pass along the rejection or suggest abandoning the market, we took a different approach. We leveraged our deep understanding of Chinese platform policies, gaming regulations, and the nuances of platform approval processes.</p>
-              <p class="case-study__chapter-text">We worked directly with platform teams, presented Farmskins' business model through a lens that aligned with Chinese gaming market expectations, and helped them navigate the complex compliance landscape. Where other agencies saw policy roadblocks, we saw pathways—ones that only become visible with years of experience and established relationships.</p>
-            </div>
-
-            <div class="case-study__chapter">
-              <h4 class="case-study__chapter-title">Six Years Later</h4>
-              <p class="case-study__chapter-text">The partnership that began with rejection has now spanned six years and counting. Farmskins didn't just get approved—they built a thriving advertising operation in China that continues to grow year after year.</p>
-              <p class="case-study__chapter-text">What started as "impossible" became routine. Farmskins now runs ongoing campaigns across multiple Chinese platforms, accessing a market that once seemed completely closed to them. They've achieved sustained growth in China, proving that with the right partner, even the most regulated markets can be successfully navigated.</p>
-            </div>
-
-            <div class="case-study__chapter">
-              <h4 class="case-study__chapter-title">By the Numbers</h4>
-              <p class="case-study__chapter-text">The Farmskins success story wasn't luck—it was the result of our unique approach to China market entry:</p>
-              <ul class="case-study__list">
-                <li><strong>Deep Platform Relationships:</strong> We don't just submit applications—we know the people reviewing them and understand their priorities.</li>
-                <li><strong>Regulatory Expertise:</strong> Gaming advertising has complex rules in China. We know where the lines are drawn and how to operate within them.</li>
-                <li><strong>Persistence & Strategy:</strong> Initial rejection doesn't mean impossibility. We found alternative pathways that others missed.</li>
-                <li><strong>Long-term Partnership:</strong> Six years of ongoing support means Farmskins isn't just in the market—they're thriving in it.</li>
-                <li><strong>Annual Media Spend:</strong> Farmskins invests $200K–$400K USD per year in media in the China market alone, a figure that continues to grow as their presence in the market expands.</li>
-              </ul>
-            </div>
-
-            <div class="case-study__chapter">
-              <h4 class="case-study__chapter-title">For Other Companies Looking at China</h4>
-              <p class="case-study__chapter-text">If you're facing platform rejection or regulatory roadblocks in China, the Farmskins story shows there's often a way forward—if you have the right partner. We've helped companies in gaming, fintech, e-commerce, and other regulated industries find their path into the Chinese market.</p>
-              <p class="case-study__chapter-text">Don't let "no" from a platform be your final answer. With Tuyue Media Gateway, we help you discover what's actually possible.</p>
+            
+            <div class="story-card__cta">
+              <a href="/client-stories/farmskins" class="btn btn--secondary" style="width: 100%;">Read full story</a>
             </div>
           </div>
-
-        <div class="case-study__cta">
-            <a href="https://www.tuyuesouxin.cn/contact" class="btn btn--primary">Start Your Success Story</a>
+          
+          <!-- Anonymous AI & Semiconductor Brand Card -->
+          <div class="story-card reveal">
+            <div class="story-card__header">
+              <div class="story-card__client">
+                <div class="story-card__logo">
+                  <svg class="story-card__logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+                    <line x1="7" y1="2" x2="7" y2="22"></line>
+                    <line x1="17" y1="2" x2="17" y2="22"></line>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <line x1="2" y1="7" x2="7" y2="7"></line>
+                    <line x1="2" y1="17" x2="7" y2="17"></line>
+                    <line x1="17" y1="17" x2="22" y2="17"></line>
+                    <line x1="17" y1="7" x2="22" y2="7"></line>
+                  </svg>
+                </div>
+                <div class="story-card__client-info">
+                  <h3 class="story-card__client-name">Global AI & Semiconductor Brand</h3>
+                  <div class="story-card__badges">
+                    <span class="story-card__badge">Case Study</span>
+                    <span class="story-card__badge story-card__badge--accent">Multi-Platform</span>
+                  </div>
+                </div>
+              </div>
+              <p class="story-card__headline">Simplifying Multi-Platform Paid Media Management</p>
+            </div>
+            
+            <div class="story-card__content">
+              <p class="story-card__challenge">Managing too many paid media platforms through multiple agencies, with limited transparency, high service fees, and suspected data manipulation.</p>
+              <p class="story-card__outcome"><strong>Consolidated multi-platform management</strong> under one agency, with transparent account access, single point of contact, and competitive bundled pricing.</p>
+            </div>
+            
+            <div class="story-card__cta">
+              <a href="/client-stories/ai-semiconductor" class="btn btn--secondary" style="width: 100%;">Read full story</a>
+            </div>
           </div>
+        </div>
+        
+        <div class="case-study__cta" style="text-align: center; margin-top: var(--space-12);">
+          <a href="https://www.tuyuesouxin.cn/contact" class="btn btn--primary">Start Your Success Story</a>
         </div>
       </div>
     </section>

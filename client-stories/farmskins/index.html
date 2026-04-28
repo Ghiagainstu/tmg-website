@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Story: How a Global CS:GO Platform Found Its Footing in China | Tuyue Media Gateway</title>
+  <meta name="description" content="See how we helped Farmskins navigate China's regulated gaming advertising market, turning platform rejections into a six-year partnership with sustained growth.">
+  <link rel="canonical" href="https://www.tuyuesouxin.cn/client-stories/farmskins">
+  <meta property="og:url" content="https://www.tuyuesouxin.cn/client-stories/farmskins">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-bg: #080c14; --color-bg-alt: #0d1220; --color-bg-card: #111827;
+      --color-text-primary: #f0f4ff; --color-text-secondary: #a3b1cc; --color-text-muted: #64748b;
+      --color-primary: #2d6be4; --color-primary-hover: #1e55c4; --color-accent: #c9a84c; --color-accent-light: #e8c87a;
+      --color-border: #1e2d45; --color-border-hover: #2d4060;
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-size-xs: 0.75rem; --font-size-sm: 0.875rem; --font-size-base: 1rem; --font-size-lg: 1.125rem;
+      --font-size-xl: 1.25rem; --font-size-2xl: 1.5rem; --font-size-3xl: 1.875rem; --font-size-4xl: 2.25rem;
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem; --space-5: 1.25rem;
+      --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem; --space-20: 5rem;
+      --transition-fast: 150ms ease; --transition-base: 250ms ease;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--color-bg);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--color-border);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--color-border-hover);
+    }
+
+    #contactQR { scroll-margin-top: 80px; }
+    body { font-family: var(--font-family); background-color: var(--color-bg); color: var(--color-text-primary); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 var(--space-6); }
+    .header { position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      margin-top: 8px;
+      margin-top: 8px; background: rgba(8, 12, 20, 0.85); backdrop-filter: blur(16px); border-bottom: 1px solid var(--color-border); }
+    .header__inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .header__logo { display: flex; align-items: center; gap: var(--space-2); text-decoration: none; transition: opacity var(--transition-fast); }
+    .header__logo:hover { opacity: 0.85; }
+    .header__logo-icon { width: 40px; height: 40px; flex-shrink: 0; }
+    .header__logo-text { font-size: var(--font-size-xl); font-weight: 700; color: var(--color-text-primary); letter-spacing: -0.02em; }
+    .header__logo-text span { color: var(--color-accent); }
+    .header__nav { display: flex; align-items: center; gap: var(--space-8); }
+    .header__nav-link { color: var(--color-text-secondary); text-decoration: none; font-size: var(--font-size-sm); font-weight: 500; transition: color 150ms ease; position: relative; display: inline-flex; align-items: center; }
+    .header__nav-link:hover, .header__nav-link.active { color: var(--color-text-primary); }
+    .header__nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--color-accent); transition: width 150ms ease; }
+    .header__nav-link:hover::after, .header__nav-link.active::after { width: 100%; }
+    .header__dropdown { position: relative; }
+    .header__dropdown-trigger { display: flex; align-items: center; gap: 4px; cursor: pointer; }
+    .header__dropdown-arrow { transition: transform 150ms ease; }
+    .header__dropdown:hover .header__dropdown-arrow,
+    .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
+    .header__dropdown-menu { position: absolute; top: calc(100% + 8px); left: 0; background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 10px; padding: 8px var(--space-2) var(--space-2); min-width: 180px; display: none; flex-direction: column; opacity: 0; box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      transition: opacity var(--transition-fast), transform var(--transition-fast); z-index: 100;
+      }
+    .header__dropdown:hover .header__dropdown-menu,
+    .header__dropdown.open .header__dropdown-menu { display: flex; opacity: 1; }
+    .header__dropdown-item { font-size: var(--font-size-sm); font-weight: 500; color: var(--color-text-secondary); padding: var(--space-3) var(--space-4); border-radius: 6px; transition: background 150ms ease, color 150ms ease; white-space: nowrap; text-decoration: none; }
+    .header__dropdown-item:hover { background: rgba(201,168,76,0.1); color: var(--color-accent); }
+    .header__nav-link--coming { opacity: 0.6; }
+    .nav-badge { display: inline-block; margin-left: 5px; padding: 1px 5px; font-size: 10px; font-weight: 700; line-height: 1; letter-spacing: 0.04em; text-transform: uppercase; color: #080c14; background: var(--color-accent); border-radius: 3px; vertical-align: baseline; white-space: nowrap; animation: badgePulse 2s ease-in-out infinite; }
+    @keyframes badgePulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.65; } }
+    .header__cta { display: none; }
+    @media (min-width: 768px) {
+      .header__cta { display: block; }
+    }
+    .header__toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: var(--space-2); }
+
+    .header__toggle span { display: block; width: 24px; height: 2px; background: var(--color-text-primary); transition: all 250ms ease; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); padding: var(--space-3) var(--space-5); font-size: var(--font-size-sm); font-weight: 500; text-decoration: none; border-radius: 6px; transition: all 250ms ease; cursor: pointer; border: none; }
+    .btn--primary {
+      background: linear-gradient(135deg, #c9a84c 0%, #e8c87a 50%, #c9a84c 100%);
+      background-size: 200% 200%;
+      color: #0d1220;
+      font-weight: 600;
+      box-shadow: 0 2px 12px rgba(201, 168, 76, 0.25);
+      transition: all var(--transition-fast);
+    }
+    .btn--primary:hover {
+      background-position: right center;
+      box-shadow: 0 4px 20px rgba(201, 168, 76, 0.4);
+      transform: translateY(-1px);
+    }
+    .btn--secondary { background: transparent; color: var(--color-text-primary); border: 1px solid var(--color-border); }
+    .btn--secondary:hover { border-color: var(--color-border-hover); background: rgba(255,255,255,0.05); }
+    .page-header { padding-top: 140px; padding-bottom: var(--space-12); text-align: center; }
+    .page-header__eyebrow { display: block; font-size: var(--font-size-sm); font-weight: 500; color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: var(--space-3); }
+    .page-header__title { font-size: var(--font-size-4xl); font-weight: 700; margin-bottom: var(--space-4); }
+    .page-header__description { font-size: var(--font-size-lg); color: var(--color-text-secondary); max-width: 700px; margin: 0 auto; }
+    .page-header__tagline { font-size: var(--font-size-base); color: var(--color-text-secondary); max-width: 700px; margin: var(--space-6) auto 0; line-height: 1.7; }
+    .page-header__tagline strong { color: var(--color-accent); }
+    .case-study { background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 12px; padding: var(--space-10); margin-bottom: var(--space-12); }
+    .case-study__header { margin-bottom: var(--space-8); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-border); }
+    .case-study__client { display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-4); }
+    .case-study__logo { width: 80px; height: 80px; border-radius: 16px; overflow: hidden; background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: white; }
+    .case-study__logo-icon { width: 48px; height: 48px; }
+    .case-study__client-name { font-size: var(--font-size-2xl); font-weight: 600; margin-bottom: var(--space-2); }
+    .case-study__badges { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+    .case-study__client-badge { display: inline-block; padding: var(--space-1) var(--space-3); background: rgba(45, 107, 228, 0.15); color: var(--color-primary-light); font-size: var(--font-size-xs); font-weight: 500; border-radius: 4px; }
+    .case-study__budget-badge { background: rgba(201, 168, 76, 0.15); color: var(--color-accent); }
+    .case-study__headline { font-size: var(--font-size-xl); color: var(--color-text-secondary); font-weight: 400; }
+    .case-study__content { display: grid; gap: var(--space-8); }
+    .case-study__chapter-title { font-size: var(--font-size-lg); font-weight: 600; margin-bottom: var(--space-3); color: var(--color-text-primary); }
+    .case-study__chapter-text { color: var(--color-text-secondary); margin-bottom: var(--space-3); line-height: 1.7; }
+    .case-study__list { list-style: none; padding: 0; }
+    .case-study__list li { position: relative; padding-left: var(--space-5); margin-bottom: var(--space-3); color: var(--color-text-secondary); line-height: 1.6; }
+    .case-study__list li::before { content: ''; position: absolute; left: 0; top: 10px; width: 6px; height: 6px; background: var(--color-accent); border-radius: 50%; }
+    .case-study__cta { margin-top: var(--space-8); padding-top: var(--space-6); border-top: 1px solid var(--color-border); text-align: center; }
+    .footer { background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-alt) 100%); position: relative; padding: var(--space-16) 0 var(--space-8); }
+    .footer::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 300px; height: 2px; background: linear-gradient(90deg, transparent, var(--color-accent), transparent); opacity: 0.6; }
+    .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: var(--space-8); margin-bottom: var(--space-8); }
+    .footer__brand { max-width: 300px; }
+    .footer__logo { display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-4); color: var(--color-text-primary); font-weight: 600; font-size: var(--font-size-lg); text-decoration: none; }
+    .footer__logo span { color: var(--color-accent); }
+    .footer__description { color: var(--color-text-secondary); font-size: var(--font-size-sm); line-height: 1.7; }
+    .footer__title { font-size: var(--font-size-sm); font-weight: 600; margin-bottom: var(--space-4); color: var(--color-text-primary); position: relative; padding-bottom: var(--space-2); }
+    .footer__title::after { content: ''; position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background: linear-gradient(90deg, var(--color-accent), transparent); opacity: 0.8; }
+    .footer__links { list-style: none; }
+    .footer__links li { margin-bottom: var(--space-2); }
+    .footer__link { color: var(--color-text-secondary); text-decoration: none; font-size: var(--font-size-sm); transition: color var(--transition-fast); display: inline-block; }
+    .footer__link:hover { color: var(--color-accent-light); transform: translateX(4px); }
+    .footer__link--email { color: var(--color-primary); font-weight: 500; }
+    .footer__license { color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--space-2); }
+    .footer__company-short { color: var(--color-text-muted); font-size: var(--font-size-xs); }
+    .footer__bottom { display: flex; justify-content: space-between; align-items: center; padding-top: var(--space-6); border-top: 1px solid var(--color-border); }
+    .footer__copyright { color: var(--color-text-muted); font-size: var(--font-size-sm); }
+    .footer__platforms { display: flex; gap: var(--space-2); }
+    .footer__platform-badge { background-color: rgba(201, 168, 76, 0.1); border: 1px solid rgba(201, 168, 76, 0.3); color: var(--color-accent-light); font-size: var(--font-size-xs); font-weight: 500; border-radius: 20px; text-decoration: none !important; transition: all 200ms ease; text-transform: uppercase; letter-spacing: 0.05em; display: inline-flex; align-items: center; padding: var(--space-1) var(--space-3); }
+    .footer__platform-badge:hover {
+      text-decoration: none; background-color: rgba(201, 168, 76, 0.2); border-color: var(--color-accent); transform: translateY(-2px); color: var(--color-accent-light); }
+    @media (max-width: 768px) {
+      .header__nav, .header__cta { display: none; }
+      .header__toggle { display: flex; }
+      .page-header { padding-top: 120px; }
+      .page-header__title { font-size: var(--font-size-3xl); }
+      .case-study { padding: var(--space-6); }
+      .case-study__client { flex-direction: column; align-items: flex-start; }
+      .footer__grid { grid-template-columns: 1fr; gap: var(--space-8); }
+      .footer__bottom { flex-direction: column; gap: var(--space-4); text-align: center; }
+    }
+
+    /* Scroll Reveal Animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1),
+                  transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .reveal.reveal--visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal--delay-1 { transition-delay: 0.1s; }
+    .reveal--delay-2 { transition-delay: 0.2s; }
+    .reveal--delay-3 { transition-delay: 0.3s; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="https://www.tuyuesouxin.cn" class="header__logo">
+          <svg class="header__logo-icon" viewBox="0 0 48 48" fill="none">
+            <defs><linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#c9a84c"/><stop offset="100%" stop-color="#e8c87a"/></linearGradient></defs>
+            <circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/><circle cx="37" cy="20" r="13" fill="#080c14"/>
+            <text x="4" y="32" font-family="Inter,sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-.8">TMG</text>
+          </svg>
+          <span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
+        </a>
+        <nav class="header__nav">
+          <div class="header__dropdown">
+            <a href="https://www.tuyuesouxin.cn/services" class="header__nav-link header__dropdown-trigger">Services <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+            <div class="header__dropdown-menu">
+              <a href="https://www.tuyuesouxin.cn/services" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">All Services</a>
+              <a href="https://www.tuyuesouxin.cn/services/wechat" class="header__dropdown-item">WeChat Ads</a>
+              <a href="https://www.tuyuesouxin.cn/services/douyin" class="header__dropdown-item">Douyin Ads</a>
+              <a href="https://www.tuyuesouxin.cn/services/baidu" class="header__dropdown-item">Baidu SEM</a>
+              <a href="https://www.tuyuesouxin.cn/services/bing" class="header__dropdown-item">Bing China</a>
+              <a href="https://www.tuyuesouxin.cn/services/xiaohongshu" class="header__dropdown-item">Xiaohongshu</a>
+              <a href="https://www.tuyuesouxin.cn/services/bilibili" class="header__dropdown-item">Bilibili Ads</a>
+              <a href="https://www.tuyuesouxin.cn/geo" class="header__dropdown-item">China GEO</a>
+            </div>
+          </div>
+          <a href="https://www.tuyuesouxin.cn/pricing" class="header__nav-link">Pricing</a>
+          <a href="https://www.tuyuesouxin.cn/client-stories" class="header__nav-link active">Client Stories</a>
+          <a href="https://www.tuyuesouxin.cn/geo" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
+          <a href="https://www.tuyuesouxin.cn/blog/" class="header__nav-link">Blog</a>
+          <a href="https://www.tuyuesouxin.cn/faqs" class="header__nav-link">FAQ</a>
+          <div class="header__dropdown">
+            <a href="https://www.tuyuesouxin.cn/about" class="header__nav-link header__dropdown-trigger">About <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+            <div class="header__dropdown-menu">
+              <a href="https://www.tuyuesouxin.cn/why-tmg" class="header__dropdown-item">Why TMG</a>
+              <a href="https://www.tuyuesouxin.cn/about" class="header__dropdown-item">About Us</a>
+              <a href="https://www.tuyuesouxin.cn/contact" class="header__dropdown-item">Contact</a>
+            </div>
+          </div>
+        </nav>
+        <div class="header__cta">
+          <a href="https://www.tuyuesouxin.cn#contact" class="btn btn--primary">Get Started</a>
+        </div>
+        <button class="header__toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <span class="page-header__eyebrow reveal">Client Story</span>
+        <h1 class="page-header__title reveal">How a Global CS:GO Platform Found Its Footing in China</h1>
+        <p class="page-header__description reveal">Overcoming platform rejections in China's regulated gaming advertising market to achieve sustained growth across multiple Chinese platforms.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="case-study">
+          <div class="case-study__header">
+            <div class="case-study__client">
+              <div class="case-study__logo">
+                <svg class="case-study__logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
+              <div class="case-study__client-info">
+                <h3 class="case-study__client-name">Farmskins</h3>
+                <div class="case-study__badges">
+                  <span class="case-study__client-badge">Case Study</span>
+                  <span class="case-study__client-badge case-study__budget-badge">$200K–$400K USD / year</span>
+                </div>
+              </div>
+            </div>
+            <p class="case-study__headline">Turning platform rejections into a six-year partnership with ongoing campaigns across multiple Chinese platforms, achieving sustained growth in a once-closed market.</p>
+          </div>
+
+          <div class="case-study__content">
+            <div class="case-study__chapter">
+              <h4 class="case-study__chapter-title">The Challenge: Breaking into China's Regulated Gaming Market</h4>
+              <p class="case-study__chapter-text">Farmskins, a leading global CS:GO skin trading platform, faced a formidable challenge when attempting to enter the Chinese market. Every major Chinese advertising platform — Baidu, Tencent, ByteDance — initially rejected their business model due to China's strict regulations around gaming and virtual item trading.</p>
+              <p class="case-study__chapter-text">The platform's unique value proposition of skin trading and marketplace operations fell into regulatory gray areas that made traditional advertising channels inaccessible. Without access to China's massive digital advertising ecosystem, Farmskins' growth ambitions in the world's largest gaming market were effectively blocked.</p>
+            </div>
+
+            <div class="case-study__chapter">
+              <h4 class="case-study__chapter-title">Why Platform Rejections Were Not the End of the Story</h4>
+              <p class="case-study__chapter-text>Many international gaming companies would have viewed these rejections as insurmountable barriers. However, we recognized that the challenge wasn't about circumventing regulations, but about understanding the nuanced requirements of each platform and presenting Farmskins' business in a way that aligned with Chinese advertising policies.</p>
+              <p class="case-study__chapter-text>The key issues we needed to address included:</p>
+              <ul class="case-study__list">
+                <li>Platform-specific content and advertising policies for gaming-related services</li>
+                <li>Regulatory compliance requirements for virtual item trading platforms</li>
+                <li>Cultural and linguistic adaptation of marketing materials</li>
+                <li>Building trust with platform representatives through transparent communication</li>
+                <li>Developing compliant advertising strategies that respected local regulations</li>
+              </ul>
+            </div>
+
+            <div class="case-study__chapter">
+              <h4 class="case-study__chapter-title">Our Strategic Approach</h4>
+              <p class="case-study__chapter-text>Rather than taking a standardized approach, we developed a platform-by-platform strategy that respected each channel's unique requirements while maintaining Farmskins' core value proposition.</p>
+              
+              <h5 class="case-study__chapter-title" style="font-size: var(--font-size-lg); margin-top: var(--space-4);">1. Platform-Specific Compliance Mapping</h5>
+              <p class="case-study__chapter-text>We conducted thorough research into each platform's advertising policies, identifying specific requirements and potential compliance pathways for gaming and trading platforms.</p>
+              
+              <h5 class="case-study__chapter-title" style="font-size: var(--font-size-lg); margin-top: var(--space-4);">2. Content Adaptation and Localization</h5>
+              <p class="case-study__chapter-text>We worked closely with Farmskins to adapt their messaging, ensuring it complied with local regulations while effectively communicating their value to Chinese gamers.</p>
+              
+              <h5 class="case-study__chapter-title" style="font-size: var(--font-size-lg); margin-top: var(--space-4);">3. Direct Platform Engagement</h5>
+              <p class="case-study__chapter-text>We established direct relationships with platform representatives, presenting Farmskins' business model transparently and addressing compliance concerns proactively.</p>
+              
+              <h5 class="case-study__chapter-title" style="font-size: var(--font-size-lg); margin-top: var(--space-4);">4. Phased Market Entry Strategy</h5>
+              <p class="case-study__chapter-text>We implemented a gradual approach, starting with more accessible channels and expanding to more restrictive platforms as we demonstrated compliance and built trust.</p>
+              
+              <h5 class="case-study__chapter-title" style="font-size: var(--font-size-lg); margin-top: var(--space-4);">5. Ongoing Compliance Monitoring</h5>
+              <p class="case-study__chapter-text>We established systems for continuous monitoring of regulatory changes and platform policy updates, ensuring long-term compliance.</p>
+            </div>
+
+            <div class="case-study__chapter">
+              <h4 class="case-study__chapter-title">The Outcome: Six-Year Partnership and Sustained Growth</h4>
+              <p class="case-study__chapter-text>Through persistent, strategic engagement and a deep understanding of China's digital advertising landscape, we transformed initial rejections into approvals and ultimately into a successful, long-term advertising presence.</p>
+              <p class="case-study__chapter-text>The results speak for themselves:</p>
+              <ul class="case-study__list">
+                <li><strong>Six-year ongoing partnership</strong> with consistent advertising campaigns across multiple Chinese platforms</li>
+                <li><strong>Sustained user growth</strong> in the Chinese market despite initial regulatory challenges</li>
+                <li><strong>Successful navigation</strong> of complex platform policies and regulatory requirements</li>
+                <li><strong>Established presence</strong> on platforms that initially rejected Farmskins' business model</li>
+                <li><strong>Continuous optimization</strong> of advertising strategies based on performance data and market feedback</li>
+              </ul>
+              <p class="case-study__chapter-text>Most importantly, Farmskins achieved what many international gaming platforms struggle with: establishing a compliant, sustainable advertising presence in China's highly regulated market.</p>
+            </div>
+
+            <div class="case-study__chapter">
+              <h4 class="case-study__chapter-title">Key Learnings for International Gaming Platforms</h4>
+              <p class="case-study__chapter-text>The Farmskins case demonstrates several critical principles for international gaming companies seeking to enter the Chinese market:</p>
+              <ul class="case-study__list">
+                <li><strong>Regulatory compliance is non-negotiable</strong> but can be navigated with the right expertise</li>
+                <li><strong>Platform rejections are often starting points</strong> for deeper engagement, not final decisions</li>
+                <li><strong>Cultural and linguistic adaptation</strong> is essential for successful market entry</li>
+                <li><strong>Patience and persistence</strong> are required when dealing with complex regulatory environments</li>
+                <li><strong>Local expertise</strong> can transform perceived barriers into achievable challenges</li>
+                <li><strong>Long-term partnerships</strong> with platform representatives build trust and open doors</li>
+              </ul>
+            </div>
+
+            <div class="case-study__chapter">
+              <h4 class="case-study__chapter-title">Why This Matters for Other Gaming Companies</h4>
+              <p class="case-study__chapter-text>China represents the world's largest gaming market, but it's also one of the most challenging to enter. The Farmskins story proves that with the right approach, even platforms operating in regulatory gray areas can establish compliant, successful advertising campaigns.</p>
+              <p class="case-study__chapter-text>The key is recognizing that compliance isn't about finding loopholes — it's about understanding requirements, adapting strategies, and building relationships that facilitate long-term success.</p>
+            </div>
+          </div>
+
+          <div class="case-study__cta">
+            <a href="https://www.tuyuesouxin.cn/contact" class="btn btn--primary">Start Your Success Story</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <div>
+              <h2 class="contact__title">Ready to Enter the Chinese Gaming Market?</h2>
+              <p class="contact__description">
+                Let's discuss how TMG can help your gaming platform navigate China's regulatory landscape and advertising ecosystem.
+              </p>
+              <a href="mailto:tmg@tuyuesouxin.cn" class="contact__email">tmg@tuyuesouxin.cn</a>
+            </div>
+          </div>
+          
+          <div class="contact__form reveal">
+            <form id="contactForm" action="https://formspree.io/f/xpqojqlb" method="POST">
+              <input type="hidden" name="_replyto" value="tmg@tuyuesouxin.cn">
+              <input type="hidden" name="_subject" value="New Inquiry from Farmskins Case Study">
+              <input type="text" name="_gotcha" style="display:none">
+              <div class="form__group">
+                <label class="form__label" for="fullName">Full Name<span class="form__required">*</span></label>
+                <input class="form__input" type="text" id="fullName" name="Full Name" required placeholder="Your full name">
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="company">Company Name<span class="form__required">*</span></label>
+                <input class="form__input" type="text" id="company" name="Company Name" required placeholder="Your company name">
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="email">Email Address<span class="form__required">*</span></label>
+                <input class="form__input" type="email" id="email" name="Email" required placeholder="your@email.com">
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="needs">Your Needs<span class="form__required">*</span></label>
+                <textarea class="form__textarea" id="needs" name="Needs" required placeholder="Tell us about your gaming platform and China market entry goals..."></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">Request Consultation</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__section">
+          <h4 class="footer__title">About TMG</h4>
+          <p class="footer__description">Your single point of access to China's $100B digital advertising market. We help international agencies navigate Chinese platforms with ease.</p>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="https://www.tuyuesouxin.cn/services" class="footer__link">Services</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/pricing" class="footer__link">Pricing</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/about" class="footer__link">About Us</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/client-stories" class="footer__link">Client Stories</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/faqs" class="footer__link">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Contact</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="mailto:tmg@tuyuesouxin.cn" class="footer__link footer__link--email">tmg@tuyuesouxin.cn</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Legal</h4>
+          <ul class="footer__links">
+            <li class="footer__license">Business License Number: 91310114MADKG4UF0G</li>
+            <li class="footer__company-short">Tuyue Media Gateway</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Tuyue Media Gateway. All rights reserved.</p>
+        <div class="footer__platforms">
+          <a href="https://ad.weixin.qq.com" target="_blank" rel="noopener noreferrer" class="footer__platform-badge">WeChat</a>
+          <a href="https://www.oceanengine.com" target="_blank" rel="noopener noreferrer" class="footer__platform-badge">Douyin</a>
+          <a href="https://e.baidu.com" target="_blank" rel="noopener noreferrer" class="footer__platform-badge">Baidu</a>
+          <a href="https://www.xiaohongshu.com/brand" target="_blank" rel="noopener noreferrer" class="footer__platform-badge">Xiaohongshu</a>
+          <a href="https://member.bilibili.com/platform/ad" target="_blank" rel="noopener noreferrer" class="footer__platform-badge">Bilibili</a>
+          <a href="https://ads.microsoft.com/zh-cn" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bing China</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    (function () {
+      var elements = document.querySelectorAll(
+        '.page-header__eyebrow, .page-header__title, .page-header__description, ' +
+        '.case-study, ' +
+        '.contact__info, .contact__form'
+      );
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            requestAnimationFrame(function () {
+              entry.target.classList.add('reveal--visible');
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
+      elements.forEach(function (el) { observer.observe(el); });
+    })();
+  </script>
+  <script>
+    (function () {
+      var toggle = document.querySelector('.header__toggle');
+      var nav = document.querySelector('.header__nav');
+      if (toggle && nav) {
+        toggle.addEventListener('click', function () {
+          toggle.classList.toggle('active');
+          nav.classList.toggle('active');
+        });
+        nav.querySelectorAll('.header__dropdown').forEach(function (dropdown) {
+          var trigger = dropdown.querySelector('.header__dropdown-trigger');
+          trigger.addEventListener('click', function (e) {
+            e.preventDefault();
+            nav.querySelectorAll('.header__dropdown').forEach(function (d) {
+              if (d !== dropdown) d.classList.remove('open');
+            });
+            dropdown.classList.toggle('open');
+          });
+        });
+        document.addEventListener('click', function (e) {
+          if (!nav.contains(e.target)) {
+            nav.querySelectorAll('.header__dropdown').forEach(function (d) {
+              d.classList.remove('open');
+            });
+          }
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
