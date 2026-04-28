@@ -183,7 +183,8 @@
     .footer__copyright { color: var(--color-text-muted); font-size: var(--font-size-sm); }
     .footer__platforms { display: flex; gap: var(--space-2); }
     .footer__platform-badge { background-color: rgba(201, 168, 76, 0.1); border: 1px solid rgba(201, 168, 76, 0.3); color: var(--color-accent-light); font-size: var(--font-size-xs); font-weight: 500; border-radius: 20px; text-decoration: none; transition: all 200ms ease; text-transform: uppercase; letter-spacing: 0.05em; display: inline-flex; align-items: center; padding: var(--space-1) var(--space-3); }
-    .footer__platform-badge:hover { background-color: rgba(201, 168, 76, 0.2); border-color: var(--color-accent); transform: translateY(-2px); color: var(--color-accent-light); }
+    .footer__platform-badge:hover {
+      text-decoration: none; background-color: rgba(201, 168, 76, 0.2); border-color: var(--color-accent); transform: translateY(-2px); color: var(--color-accent-light); }
     .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1), transform 0.65s cubic-bezier(0.4, 0, 0.2, 1); }
     .reveal.reveal--visible { opacity: 1; transform: translateY(0); }
     .reveal--delay-1 { transition-delay: 0.1s; }
