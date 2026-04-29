@@ -121,24 +121,6 @@
     .contact__method-content a { color: var(--color-accent); text-decoration: none; }
     .contact__method-content a:hover { text-decoration: underline; }
     .contact { padding: var(--space-20) 0; }
-    .contact__form {
-      background: linear-gradient(145deg, rgba(17,24,39,0.9) 0%, rgba(13,18,32,0.95) 100%);
-      border: 1px solid var(--color-form-border);
-      border-radius: var(--radius-lg);
-      padding: var(--space-8);
-    }
-    .form__group { margin-bottom: var(--space-5); }
-    .form__label { display: block; font-size: var(--font-size-sm); font-weight: 500; margin-bottom: var(--space-2); color: var(--color-text-primary); }
-    .form__input, .form__textarea, .form__select { width: 100%; padding: var(--space-3) var(--space-4); background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: 8px; color: var(--color-text-primary); font-family: inherit; font-size: var(--font-size-base); transition: all 200ms ease; }
-    .form__input:focus, .form__textarea:focus, .form__select:focus { outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(45, 107, 228, 0.2); }
-    .form__input::placeholder, .form__textarea::placeholder { color: var(--color-text-muted); }
-    .form__textarea { min-height: 120px; resize: vertical; }
-    .form__select { cursor: pointer; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23a3b1cc' d='M6 8L1 3h10z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; padding-right: 36px; }
-    .form__submit { width: 100%; padding: var(--space-4); font-size: var(--font-size-base); font-weight: 600; }
-    .form__success { display: none; background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); border-radius: 12px; padding: var(--space-8); text-align: center; }
-    .form__success-icon { width: 64px; height: 64px; background: rgba(34, 197, 94, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4); color: var(--color-success); }
-    .form__success-title { font-size: var(--font-size-xl); font-weight: 600; margin-bottom: var(--space-2); }
-    .form__success-text { color: var(--color-text-secondary); }
     .map-section { background: var(--color-bg-alt); }
     .map__container { border-radius: 16px; overflow: hidden; border: 1px solid var(--color-border); }
     .map__frame { width: 100%; height: 400px; border: none; }
@@ -251,7 +233,7 @@
       .footer__bottom { flex-direction: column; gap: var(--space-4); text-align: center; }
     }
 
-    /* Contact Section - 基础样式（从 AI Semiconductor 同步） */
+    /* Contact Section */
     .contact { padding: var(--space-20) 0; }
     .contact__grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12); }
     .contact__info { display: flex; flex-direction: column; justify-content: center; }
@@ -261,45 +243,130 @@
     .contact__email { color: var(--color-accent); font-size: var(--font-size-lg); font-weight: 600; text-decoration: none; transition: color 150ms ease; }
     .contact__email:hover { color: var(--color-accent-light); }
 
-    /* Form Styles - 基础样式（从 AI Semiconductor 同步） */
+    /* Form Styles (aligned with homepage) */
     .contact__form {
-      background: linear-gradient(145deg, rgba(17,24,39,0.9) 0%, rgba(13,18,32,0.95) 100%);
-      border: 1px solid var(--color-form-border);
-      border-radius: var(--radius-lg);
+      background-color: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
       padding: var(--space-8);
     }
-    .form__group { margin-bottom: var(--space-6); }
-    .form__group:last-child { margin-bottom: 0; }
+    .form__group { margin-bottom: var(--space-5); }
     .form__label {
       display: block;
       font-size: var(--font-size-sm);
       font-weight: 500;
       color: var(--color-text-secondary);
       margin-bottom: var(--space-2);
-      transition: color 0.2s ease;
     }
-    .form__group:focus-within .form__label { color: var(--color-form-focus); }
     .form__input,
-    .form__textarea {
+    .form__textarea,
+    .form__select {
       width: 100%;
-      background: var(--color-form-bg);
-      border: 1px solid var(--color-form-border);
-      border-radius: var(--radius-form);
-      padding: var(--space-3) var(--space-4);
+      padding: var(--space-3);
+      background-color: var(--color-bg-alt);
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
       color: var(--color-text-primary);
       font-size: var(--font-size-base);
       font-family: var(--font-family);
-      transition: all 0.2s ease;
+      transition: border-color var(--transition-fast);
     }
     .form__input:focus,
-    .form__textarea:focus {
+    .form__textarea:focus,
+    .form__select:focus {
       outline: none;
-      border-color: var(--color-form-focus);
-      box-shadow: 0 0 0 3px rgba(201,168,76,0.15);
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(45, 107, 228, 0.15);
     }
-    .form__textarea { min-height: 120px; resize: vertical; line-height: 1.5; }
+    .form__input.error,
+    .form__select.error,
+    .form__textarea.error {
+      border-color: #ef4444;
+      background-color: rgba(239, 68, 68, 0.05);
+    }
+    .form__error {
+      color: #ef4444;
+      font-size: var(--font-size-xs);
+      margin-top: var(--space-1);
+      animation: slideDown 0.3s ease;
+    }
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .form__input::placeholder,
+    .form__textarea::placeholder {
+      color: var(--color-text-muted);
+    }
+    .form__textarea { min-height: 120px; resize: vertical; }
     .form__required { color: #ef4444; margin-left: 2px; }
     .btn--lg { padding: var(--space-3) var(--space-8); font-size: var(--font-size-base); font-weight: 600; justify-content: center; }
+
+    /* Form Success Card (aligned with homepage) */
+    .form-success-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 500px;
+    }
+    .form-success-card__inner { text-align: center; padding: var(--space-8); }
+    .form-success-card__icon {
+      width: 72px; height: 72px;
+      margin: 0 auto var(--space-6);
+      animation: successPop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    }
+    @keyframes successPop {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .form-success-card__title {
+      font-size: var(--font-size-3xl);
+      font-weight: 700;
+      background: linear-gradient(135deg, #c9a84c, #e8c87a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: var(--space-2);
+    }
+    .form-success-card__subtitle {
+      font-size: var(--font-size-lg);
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-4);
+    }
+    .form-success-card__message {
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      max-width: 420px;
+      margin: 0 auto var(--space-8);
+    }
+    .form-success-card__message strong { color: var(--color-text-primary); }
+    .form-success-card__details {
+      background: var(--color-bg-alt);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: var(--space-5);
+      margin-bottom: var(--space-4);
+      text-align: left;
+    }
+    .form-success-card__detail-row {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-1);
+      padding: var(--space-3) 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .form-success-card__detail-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .form-success-card__detail-row:first-child { padding-top: 0; }
+    .form-success-card__detail-label {
+      font-size: var(--font-size-xs);
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+    }
+    .form-success-card__detail-value { font-size: var(--font-size-sm); color: var(--color-accent-light); font-weight: 500; }
+    a.form-success-card__detail-value { color: var(--color-primary); text-decoration: none; }
+    a.form-success-card__detail-value:hover { text-decoration: underline; }
 
     @media (max-width: 768px) {
       .contact__grid { grid-template-columns: 1fr; gap: var(--space-8); }
@@ -389,49 +456,6 @@
       border-radius: var(--radius-lg);
       padding: var(--space-8);
     }
-    .form-success-card__inner {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: var(--space-4);
-    }
-    .form-success-card__icon { width: 64px; height: 64px; }
-    .form-success-card__icon svg { width: 100%; height: 100%; }
-    .form-success-card__title {
-      font-size: var(--font-size-2xl);
-      font-weight: 700;
-      color: var(--color-text-primary);
-    }
-    .form-success-card__message {
-      font-size: var(--font-size-sm);
-      color: var(--color-text-secondary);
-      line-height: 1.7;
-    }
-
-    /* form__select */
-    .form__select {
-      width: 100%;
-      background: var(--color-form-bg);
-      border: 1px solid var(--color-form-border);
-      border-radius: var(--radius-form);
-      padding: var(--space-3) var(--space-4);
-      color: var(--color-text-primary);
-      font-size: var(--font-size-base);
-      font-family: var(--font-family);
-      transition: all 0.2s ease;
-      appearance: none;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23a3b1cc' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: right 12px center;
-      padding-right: 36px;
-    }
-    .form__select:focus {
-      outline: none;
-      border-color: var(--color-form-focus);
-      box-shadow: 0 0 0 3px rgba(201,168,76,0.15);
-    }
-
     /* Scroll Reveal Animation */
     .reveal {
       opacity: 0;
@@ -558,52 +582,102 @@
             </div>
           </div>
 
-          <div class="contact__form-wrapper">
-            <form class="contact__form" action="https://formspree.io/f/xpqojqlb" method="POST" id="contactForm">
-              <div class="form__group">
-                <label class="form__label" for="name">Name *</label>
-                <input type="text" id="name" name="name" class="form__input" placeholder="Your name" required>
-              </div>
-              
-              <div class="form__group">
-                <label class="form__label" for="email">Email *</label>
-                <input type="email" id="email" name="email" class="form__input" placeholder="your@email.com" required>
-              </div>
-              
-              <div class="form__group">
-                <label class="form__label" for="company">Company</label>
-                <input type="text" id="company" name="company" class="form__input" placeholder="Your company name">
-              </div>
-              
-              <div class="form__group">
-                <label class="form__label" for="interest">I'm interested in *</label>
-                <select id="interest" name="interest" class="form__select" required>
-                  <option value="">Select a service</option>
-                  <option value="recharge">Ad Recharge</option>
-                  <option value="setup">Account Setup</option>
-                  <option value="management">Full Service Management</option>
-                  <option value="geo">GEO Services</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              
-              <div class="form__group">
-                <label class="form__label" for="message">Message</label>
-                <textarea id="message" name="message" class="form__textarea" placeholder="Tell us about your project or questions..."></textarea>
-              </div>
-              
-              <button type="submit" class="btn btn--primary form__submit">Send Message</button>
-            </form>
-
-            <div class="form-success-card" id="formSuccess">
+          <div class="contact__form">
+            <!-- ✅ 成功提示卡片（默认隐藏，提交后显示） -->
+            <div id="formSuccess" style="display:none;" class="form-success-card">
               <div class="form-success-card__inner">
                 <div class="form-success-card__icon">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="12" fill="url(#successGrad)"/>
+                    <path d="M7 12.5l3.5 3.5 6.5-7" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                      <linearGradient id="successGrad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#c9a84c"/>
+                        <stop offset="100%" stop-color="#e8c87a"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
                 </div>
-                <h3 class="form-success-card__title">Message Sent!</h3>
-                <p class="form-success-card__message">Thank you for reaching out. We'll get back to you within 24 hours.</p>
+                <h3 class="form-success-card__title">Inquiry Received!</h3>
+                <p class="form-success-card__subtitle">Thank you for reaching out to TMG.</p>
+                <p class="form-success-card__message">
+                  We've received your inquiry and will get back to you within <strong>1 business day</strong>.
+                  Keep an eye on your inbox at the email you provided.
+                </p>
+                <div class="form-success-card__details">
+                  <div class="form-success-card__detail-row">
+                    <span class="form-success-card__detail-label">Email us directly:</span>
+                    <a href="mailto:tmg@tuyuesouxin.cn" class="form-success-card__detail-value">tmg@tuyuesouxin.cn</a>
+                  </div>
+                  <div class="form-success-card__detail-row">
+                    <span class="form-success-card__detail-label">For urgent matters:</span>
+                    <span class="form-success-card__detail-value">WhatsApp us via QR code below</span>
+                  </div>
+                </div>
+                <button type="button" class="btn btn--secondary" onclick="document.getElementById('formSuccess').style.display='none'; document.getElementById('contactForm').style.display='block';" style="margin-top: var(--space-6); width:100%;">
+                  Submit Another Inquiry
+                </button>
               </div>
             </div>
+
+            <!-- 📋 联系表单 -->
+            <form id="contactForm" action="https://formspree.io/f/xpqojqlb" method="POST">
+              <input type="hidden" name="_replyto" value="tmg@tuyuesouxin.cn">
+              <input type="hidden" name="_subject" value="🔔 New Inquiry from TMG Website">
+              <input type="text" name="_gotcha" style="display:none">
+              <div class="form__group">
+                <label class="form__label" for="salutation">Salutation<span class="form__required">*</span></label>
+                <select class="form__select" id="salutation" name="Salutation" required>
+                  <option value="">Select your title</option>
+                  <option value="Mr.">Mr.</option>
+                  <option value="Ms.">Ms.</option>
+                  <option value="Mrs.">Mrs.</option>
+                  <option value="Dr.">Dr.</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="fullName">Full Name<span class="form__required">*</span></label>
+                <input class="form__input" type="text" id="fullName" name="Full Name" required placeholder="Your full name">
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="company">Company Name<span class="form__required">*</span></label>
+                <input class="form__input" type="text" id="company" name="Company Name" required placeholder="Your company name">
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="type">Identity<span class="form__required">*</span></label>
+                <select class="form__select" id="type" name="Type" required>
+                  <option value="">Select your role</option>
+                  <option value="Agency">Advertising Agency</option>
+                  <option value="Brand">Brand Owner</option>
+                  <option value="Media">Media Publisher</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="email">Email Address<span class="form__required">*</span></label>
+                <input class="form__input" type="email" id="email" name="Email" required placeholder="your@email.com">
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="service">Service Needed<span class="form__required">*</span></label>
+                <select class="form__select" id="service" name="Service" required>
+                  <option value="">Select service type</option>
+                  <option value="Recharge Only">Recharge Only</option>
+                  <option value="Account Setup">Account Setup</option>
+                  <option value="Full Service">Full Service</option>
+                  <option value="Other">Other / Not Sure</option>
+                </select>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="needs">Your Needs<span class="form__required">*</span></label>
+                <textarea class="form__textarea" id="needs" name="Needs" required placeholder="Tell us about your requirements, goals, and any questions you have..."></textarea>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="comments">Comments (Optional)</label>
+                <textarea class="form__textarea" id="comments" name="Comments" placeholder="Any additional information..."></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">Submit Inquiry</button>
+            </form>
           </div>
         </div>
       </div>
@@ -674,72 +748,195 @@
   </footer>
 
   <script>
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const form = this;
-      const success = document.getElementById('formSuccess');
-      const formData = new FormData(form);
-      
-      fetch(form.action, {
-        method: 'POST',
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-      }).then(response => {
-        if (response.ok) {
-          form.style.display = 'none';
-          success.style.display = 'block';
-        }
-      }).catch(error => {
-        console.error('Error:', error);
+    // ─── Form Validation ───────────────────────────────────────────────
+    (function () {
+      const form = document.getElementById('contactForm');
+      const inputs = form.querySelectorAll('input[required], select[required], textarea[required]');
+
+      // Validate on input blur
+      inputs.forEach(input => {
+        input.addEventListener('blur', () => {
+          validateInput(input);
+        });
+
+        input.addEventListener('input', () => {
+          if (input.classList.contains('error')) {
+            validateInput(input);
+          }
+        });
       });
-    });
+
+      function validateInput(input) {
+        let isValid = true;
+        let errorMsg = '';
+
+        if (input.value.trim() === '') {
+          isValid = false;
+          errorMsg = 'This field is required';
+        } else if (input.type === 'email' && !isValidEmail(input.value)) {
+          isValid = false;
+          errorMsg = 'Please enter a valid email address';
+        }
+
+        const formGroup = input.closest('.form__group');
+        let errorElement = formGroup.querySelector('.form__error');
+
+        if (!isValid) {
+          input.classList.add('error');
+          if (!errorElement) {
+            errorElement = document.createElement('div');
+            errorElement.className = 'form__error';
+            formGroup.appendChild(errorElement);
+          }
+          errorElement.textContent = errorMsg;
+        } else {
+          input.classList.remove('error');
+          if (errorElement) {
+            errorElement.remove();
+          }
+        }
+      }
+
+      function isValidEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      }
+
+      // Form submission — Formspree integration
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        // Validate all required inputs first
+        let isFormValid = true;
+        inputs.forEach(input => {
+          if (input.required && !input.value.trim()) {
+            isFormValid = false;
+            validateInput(input);
+          }
+        });
+
+        if (!isFormValid) return;
+
+        // Show loading state
+        const submitBtn = form.querySelector('[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+        submitBtn.style.opacity = '0.7';
+
+        try {
+          const formData = new FormData(form);
+          const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (response.ok) {
+            // ✅ Success: hide form, show success card
+            form.style.display = 'none';
+            const successCard = document.getElementById('formSuccess');
+            successCard.style.display = 'block';
+            successCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            form.reset();
+          } else {
+            // ⚠️ Server error fallback
+            const data = await response.json();
+            if (data.errors) {
+              alert('Submission failed: ' + data.errors.map(e => e.message).join(', '));
+            } else {
+              alert('There was an error submitting your form. Please email us directly at tmg@tuyuesouxin.cn');
+            }
+          }
+        } catch (err) {
+          // 🔌 Network error fallback
+          alert('Network error. Please email us directly at tmg@tuyuesouxin.cn');
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText;
+          submitBtn.style.opacity = '1';
+        }
+      });
+    })();
   </script>
   <script>
+    // ─── Mobile Navigation ─────────────────────────────────────
     (function () {
-      var toggle = document.querySelector('.header__toggle');
-      var nav = document.querySelector('.header__nav');
+      const toggle = document.querySelector('.header__toggle');
+      const nav = document.querySelector('.header__nav');
+
       if (toggle && nav) {
-        toggle.addEventListener('click', function () {
+        toggle.addEventListener('click', () => {
           toggle.classList.toggle('active');
           nav.classList.toggle('active');
         });
-        nav.querySelectorAll('.header__dropdown').forEach(function (dropdown) {
-          var trigger = dropdown.querySelector('.header__dropdown-trigger');
-          trigger.addEventListener('click', function (e) {
+
+        // Close menu when clicking on nav links
+        const navLinks = nav.querySelectorAll('.header__nav-link');
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            toggle.classList.remove('active');
+            nav.classList.remove('active');
+          });
+        });
+
+        // Dropdown toggle (click to open, works on both mobile and desktop)
+        const dropdowns = nav.querySelectorAll('.header__dropdown');
+        dropdowns.forEach(dropdown => {
+          const trigger = dropdown.querySelector('.header__dropdown-trigger');
+          trigger.addEventListener('click', (e) => {
             e.preventDefault();
-            nav.querySelectorAll('.header__dropdown').forEach(function (d) {
+            // Close other dropdowns
+            dropdowns.forEach(d => {
               if (d !== dropdown) d.classList.remove('open');
             });
             dropdown.classList.toggle('open');
           });
         });
-        document.addEventListener('click', function (e) {
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (e) => {
           if (!nav.contains(e.target)) {
-            nav.querySelectorAll('.header__dropdown').forEach(function (d) {
-              d.classList.remove('open');
-            });
+            dropdowns.forEach(d => d.classList.remove('open'));
           }
         });
       }
     })();
   </script>
   <script>
+    // ─── Scroll Reveal Animation (Comprehensive) ─────────────────────────────────
     (function () {
-      var elements = document.querySelectorAll(
+      // Select all animated elements across the entire site
+      const elements = document.querySelectorAll(
+        // Page header
         '.page-header__eyebrow, .page-header__title, .page-header__description, .page-header__tagline, ' +
-        '.contact__grid'
+        // Contact section
+        '.contact__info, .contact__form, .contact__map, .contact__trust, .contact__detail-item, ' +
+        // Footer
+        '.footer__company, .footer__text'
       );
-      var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
+
+      // Add reveal class and stagger delays for grid items
+      elements.forEach((el, i) => {
+        el.classList.add('reveal');
+      });
+
+      // Intersection Observer with refined settings
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
           if (entry.isIntersecting) {
-            requestAnimationFrame(function () {
+            // Add visible class with a tiny delay to trigger CSS transition
+            requestAnimationFrame(() => {
               entry.target.classList.add('reveal--visible');
             });
             observer.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
-      elements.forEach(function (el) { observer.observe(el); });
+      }, {
+        threshold: 0.08,
+        rootMargin: '0px 0px -50px 0px'
+      });
+
+      elements.forEach(el => observer.observe(el));
     })();
   </script>
 </body>
