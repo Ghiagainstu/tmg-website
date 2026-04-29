@@ -24,6 +24,12 @@
       --font-size-xl: 1.25rem; --font-size-2xl: 1.5rem; --font-size-3xl: 1.875rem; --font-size-4xl: 2.25rem;
       --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem; --space-5: 1.25rem;
       --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem; --space-20: 5rem;
+      --transition-fast: 150ms ease; --transition-base: 250ms ease;
+      --radius-lg: 12px; --radius-form: 8px;
+      --color-form-bg: var(--color-bg-alt);
+      --color-form-border: rgba(255,255,255,0.1);
+      --color-form-focus: var(--color-accent);
+      --height-form-input: 48px;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -114,7 +120,13 @@
     .contact__method-content p { color: var(--color-text-secondary); font-size: var(--font-size-sm); }
     .contact__method-content a { color: var(--color-accent); text-decoration: none; }
     .contact__method-content a:hover { text-decoration: underline; }
-    .contact__form { background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 16px; padding: var(--space-8); }
+    .contact { padding: var(--space-20) 0; }
+    .contact__form {
+      background: linear-gradient(145deg, rgba(17,24,39,0.9) 0%, rgba(13,18,32,0.95) 100%);
+      border: 1px solid var(--color-form-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-8);
+    }
     .form__group { margin-bottom: var(--space-5); }
     .form__label { display: block; font-size: var(--font-size-sm); font-weight: 500; margin-bottom: var(--space-2); color: var(--color-text-primary); }
     .form__input, .form__textarea, .form__select { width: 100%; padding: var(--space-3) var(--space-4); background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: 8px; color: var(--color-text-primary); font-family: inherit; font-size: var(--font-size-base); transition: all 200ms ease; }
@@ -239,6 +251,187 @@
       .footer__bottom { flex-direction: column; gap: var(--space-4); text-align: center; }
     }
 
+    /* Contact Section - 基础样式（从 AI Semiconductor 同步） */
+    .contact { padding: var(--space-20) 0; }
+    .contact__grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12); }
+    .contact__info { display: flex; flex-direction: column; justify-content: center; }
+    .contact__info > div { display: flex; flex-direction: column; gap: var(--space-6); }
+    .contact__title { font-size: var(--font-size-3xl); font-weight: 700; color: var(--color-text-primary); margin-bottom: var(--space-4); line-height: 1.2; }
+    .contact__description { font-size: var(--font-size-base); color: var(--color-text-secondary); line-height: 1.7; margin-bottom: var(--space-6); }
+    .contact__email { color: var(--color-accent); font-size: var(--font-size-lg); font-weight: 600; text-decoration: none; transition: color 150ms ease; }
+    .contact__email:hover { color: var(--color-accent-light); }
+
+    /* Form Styles - 基础样式（从 AI Semiconductor 同步） */
+    .contact__form {
+      background: linear-gradient(145deg, rgba(17,24,39,0.9) 0%, rgba(13,18,32,0.95) 100%);
+      border: 1px solid var(--color-form-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-8);
+    }
+    .form__group { margin-bottom: var(--space-6); }
+    .form__group:last-child { margin-bottom: 0; }
+    .form__label {
+      display: block;
+      font-size: var(--font-size-sm);
+      font-weight: 500;
+      color: var(--color-text-secondary);
+      margin-bottom: var(--space-2);
+      transition: color 0.2s ease;
+    }
+    .form__group:focus-within .form__label { color: var(--color-form-focus); }
+    .form__input,
+    .form__textarea {
+      width: 100%;
+      background: var(--color-form-bg);
+      border: 1px solid var(--color-form-border);
+      border-radius: var(--radius-form);
+      padding: var(--space-3) var(--space-4);
+      color: var(--color-text-primary);
+      font-size: var(--font-size-base);
+      font-family: var(--font-family);
+      transition: all 0.2s ease;
+    }
+    .form__input:focus,
+    .form__textarea:focus {
+      outline: none;
+      border-color: var(--color-form-focus);
+      box-shadow: 0 0 0 3px rgba(201,168,76,0.15);
+    }
+    .form__textarea { min-height: 120px; resize: vertical; line-height: 1.5; }
+    .form__required { color: #ef4444; margin-left: 2px; }
+    .btn--lg { padding: var(--space-3) var(--space-8); font-size: var(--font-size-base); font-weight: 600; justify-content: center; }
+
+    @media (max-width: 768px) {
+      .contact__grid { grid-template-columns: 1fr; gap: var(--space-8); }
+      .contact__form { padding: var(--space-6); }
+    }
+
+    /* 补充：contact__info 完整样式 */
+    .contact__info {
+      background-color: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: var(--space-10);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-8);
+    }
+
+    /* contact__details */
+    .contact__details {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+      margin-top: var(--space-6);
+    }
+    .contact__detail-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      font-size: var(--font-size-sm);
+      color: var(--color-text-secondary);
+    }
+    .contact__detail-icon {
+      flex-shrink: 0;
+      color: var(--color-accent);
+    }
+
+    /* contact__qr */
+    .contact__qr {
+      margin-top: var(--space-6);
+      padding-top: var(--space-6);
+      border-top: 1px solid var(--color-border);
+    }
+    .contact__qr-title {
+      font-size: var(--font-size-sm);
+      font-weight: 600;
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-3);
+    }
+    .contact__qr-image {
+      width: 140px;
+      height: 140px;
+      border-radius: var(--radius-md);
+    }
+
+    /* contact__trust & map */
+    .contact__trust {
+      margin-top: var(--space-6);
+    }
+    .contact__map {
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+    }
+    .contact__map-embed {
+      width: 100%;
+      height: 250px;
+    }
+    .contact__map-iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .contact__address {
+      margin-top: var(--space-3);
+      text-align: center;
+    }
+    .contact__address-text {
+      font-size: var(--font-size-xs);
+      color: var(--color-text-muted);
+      letter-spacing: 0.05em;
+    }
+
+    /* form-success-card */
+    .form-success-card {
+      background: linear-gradient(145deg, rgba(17,24,39,0.9) 0%, rgba(13,18,32,0.95) 100%);
+      border: 1px solid var(--color-form-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-8);
+    }
+    .form-success-card__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: var(--space-4);
+    }
+    .form-success-card__icon { width: 64px; height: 64px; }
+    .form-success-card__icon svg { width: 100%; height: 100%; }
+    .form-success-card__title {
+      font-size: var(--font-size-2xl);
+      font-weight: 700;
+      color: var(--color-text-primary);
+    }
+    .form-success-card__message {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+    }
+
+    /* form__select */
+    .form__select {
+      width: 100%;
+      background: var(--color-form-bg);
+      border: 1px solid var(--color-form-border);
+      border-radius: var(--radius-form);
+      padding: var(--space-3) var(--space-4);
+      color: var(--color-text-primary);
+      font-size: var(--font-size-base);
+      font-family: var(--font-family);
+      transition: all 0.2s ease;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23a3b1cc' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      padding-right: 36px;
+    }
+    .form__select:focus {
+      outline: none;
+      border-color: var(--color-form-focus);
+      box-shadow: 0 0 0 3px rgba(201,168,76,0.15);
+    }
+
     /* Scroll Reveal Animation */
     .reveal {
       opacity: 0;
@@ -316,8 +509,10 @@
       <div class="container">
         <div class="contact__grid">
           <div class="contact__info">
-            <h2 class="contact__info-title">Get in Touch</h2>
-            <p class="contact__info-text">Whether you have a specific project in mind or just want to learn more about how we can help, we're here to answer your questions.</p>
+            <div>
+              <h2 class="contact__title">Get in Touch</h2>
+              <p class="contact__description">Whether you have a specific project in mind or just want to learn more about how we can help, we're here to answer your questions.</p>
+            </div>
             
             <div class="contact__methods">
               <div class="contact__method">
@@ -400,12 +595,14 @@
               <button type="submit" class="btn btn--primary form__submit">Send Message</button>
             </form>
 
-            <div class="form__success" id="formSuccess">
-              <div class="form__success-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <div class="form-success-card" id="formSuccess">
+              <div class="form-success-card__inner">
+                <div class="form-success-card__icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <h3 class="form-success-card__title">Message Sent!</h3>
+                <p class="form-success-card__message">Thank you for reaching out. We'll get back to you within 24 hours.</p>
               </div>
-              <h3 class="form__success-title">Message Sent!</h3>
-              <p class="form__success-text">Thank you for reaching out. We'll get back to you within 24 hours.</p>
             </div>
           </div>
         </div>
