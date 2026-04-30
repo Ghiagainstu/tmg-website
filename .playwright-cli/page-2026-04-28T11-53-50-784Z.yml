@@ -1,0 +1,206 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "Tuyue Media Gateway" [ref=e5] [cursor=pointer]:
+        - /url: https://www.tuyuesouxin.cn
+        - img [ref=e6]:
+          - generic [ref=e9]: TMG
+        - generic [ref=e10]: Tuyue Media Gateway
+      - navigation [ref=e11]:
+        - link "Services" [ref=e13] [cursor=pointer]:
+          - /url: https://www.tuyuesouxin.cn/services
+          - text: Services
+          - img [ref=e14]
+        - link "Pricing" [ref=e16] [cursor=pointer]:
+          - /url: https://www.tuyuesouxin.cn/pricing
+        - link "Client Stories" [ref=e17] [cursor=pointer]:
+          - /url: https://www.tuyuesouxin.cn/client-stories
+        - link "GEO NEW" [ref=e18] [cursor=pointer]:
+          - /url: https://www.tuyuesouxin.cn/geo
+          - text: GEO
+          - generic [ref=e19]: NEW
+        - link "Blog" [ref=e20] [cursor=pointer]:
+          - /url: https://www.tuyuesouxin.cn/blog/
+        - link "FAQ" [ref=e21] [cursor=pointer]:
+          - /url: https://www.tuyuesouxin.cn/faqs
+        - link "About" [ref=e23] [cursor=pointer]:
+          - /url: https://www.tuyuesouxin.cn/about
+          - text: About
+          - img [ref=e24]
+      - link "Get Started" [ref=e27] [cursor=pointer]:
+        - /url: https://www.tuyuesouxin.cn#contact
+  - main [ref=e28]:
+    - generic [ref=e30]:
+      - generic [ref=e31]: Client Stories
+      - heading "Real Success Stories" [level=1] [ref=e32]
+      - paragraph [ref=e33]: See how we've helped global companies navigate and succeed in China's digital advertising market
+      - paragraph [ref=e34]:
+        - strong [ref=e35]: Tuyue Media Gateway
+        - text: — Your single point of access to China's $100B digital advertising market. We help international agencies navigate Chinese platforms with ease.
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - generic [ref=e41]:
+              - img "Farmskins" [ref=e43]
+              - generic [ref=e44]:
+                - heading "Farmskins" [level=3] [ref=e45]
+                - generic [ref=e46]:
+                  - generic [ref=e47]: Case Study
+                  - generic [ref=e48]: $200K–$400K USD / year
+            - paragraph [ref=e49]: How a Global CS:GO Platform Found Its Footing in China
+          - generic [ref=e50]:
+            - paragraph [ref=e51]: Facing platform rejection in China's regulated gaming advertising market. Every major Chinese platform said "No" to their business model.
+            - paragraph [ref=e52]:
+              - strong [ref=e53]: Six-year partnership
+              - text: with ongoing campaigns across multiple Chinese platforms, achieving sustained growth in a once-closed market.
+          - link "Read full story" [ref=e55] [cursor=pointer]:
+            - /url: /client-stories/farmskins
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - generic [ref=e58]:
+              - img [ref=e60]
+              - generic [ref=e62]:
+                - heading "Global AI & Semiconductor Brand" [level=3] [ref=e63]
+                - generic [ref=e64]:
+                  - generic [ref=e65]: Case Study
+                  - generic [ref=e66]: Multi-Platform
+            - paragraph [ref=e67]: Simplifying Multi-Platform Paid Media Management
+          - generic [ref=e68]:
+            - paragraph [ref=e69]: Managing too many paid media platforms through multiple agencies, with limited transparency, high service fees, and suspected data manipulation.
+            - paragraph [ref=e70]:
+              - strong [ref=e71]: Consolidated multi-platform management
+              - text: under one agency, with transparent account access, single point of contact, and competitive bundled pricing.
+          - link "Read full story" [ref=e73] [cursor=pointer]:
+            - /url: /client-stories/ai-semiconductor
+      - link "Start Your Success Story" [ref=e75] [cursor=pointer]:
+        - /url: https://www.tuyuesouxin.cn/contact
+    - generic [ref=e78]:
+      - generic [ref=e79]:
+        - generic [ref=e80]:
+          - heading "Ready to Expand to China?" [level=2] [ref=e81]
+          - paragraph [ref=e82]: Let's discuss how TMG can help your agency access China's digital advertising market.
+          - link "tmg@tuyuesouxin.cn" [ref=e83] [cursor=pointer]:
+            - /url: mailto:tmg@tuyuesouxin.cn
+          - generic [ref=e84]:
+            - generic [ref=e85]:
+              - img [ref=e86]
+              - text: "Response time: Within 24 hours (weekdays)"
+            - generic [ref=e89]:
+              - img [ref=e90]
+              - text: "Languages: English, Mandarin, Cantonese"
+            - generic [ref=e92]:
+              - img [ref=e93]
+              - text: WhatsApp (scan below qr)
+          - generic [ref=e95]:
+            - heading "Scan to Add Us on WhatsApp" [level=3] [ref=e96]
+            - img "WhatsApp QR Code" [ref=e97]
+        - generic [ref=e99]:
+          - iframe [ref=e101]:
+            - link "地图（在新标签页中打开）" [ref=f3e4] [cursor=pointer]:
+              - /url: about:invalid#zClosurez
+              - text: 地图
+              - img [ref=f3e6]
+          - generic [ref=e102]: NO. 599 WANZHEN ROAD, SHANGHAI, CHINA
+      - generic [ref=e104]:
+        - generic [ref=e105]:
+          - generic [ref=e106]: Salutation*
+          - combobox "Salutation*" [ref=e107]:
+            - option "Select your title" [selected]
+            - option "Mr."
+            - option "Ms."
+            - option "Mrs."
+            - option "Dr."
+            - option "Other"
+        - generic [ref=e108]:
+          - generic [ref=e109]: Full Name*
+          - textbox "Full Name*" [ref=e110]:
+            - /placeholder: Your full name
+        - generic [ref=e111]:
+          - generic [ref=e112]: Company Name*
+          - textbox "Company Name*" [ref=e113]:
+            - /placeholder: Your company name
+        - generic [ref=e114]:
+          - generic [ref=e115]: Identity*
+          - combobox "Identity*" [ref=e116]:
+            - option "Select your role" [selected]
+            - option "Advertising Agency"
+            - option "Brand Owner"
+            - option "Media Publisher"
+            - option "Other"
+        - generic [ref=e117]:
+          - generic [ref=e118]: Email Address*
+          - textbox "Email Address*" [ref=e119]:
+            - /placeholder: your@email.com
+        - generic [ref=e120]:
+          - generic [ref=e121]: Service Needed*
+          - combobox "Service Needed*" [ref=e122]:
+            - option "Select service type" [selected]
+            - option "Recharge Only"
+            - option "Account Setup"
+            - option "Full Service"
+            - option "Other / Not Sure"
+        - generic [ref=e123]:
+          - generic [ref=e124]: Your Needs*
+          - textbox "Your Needs*" [ref=e125]:
+            - /placeholder: Tell us about your requirements, goals, and any questions you have...
+        - generic [ref=e126]:
+          - generic [ref=e127]: Comments (Optional)
+          - textbox "Comments (Optional)" [ref=e128]:
+            - /placeholder: Any additional information...
+        - button "Submit Inquiry" [ref=e129] [cursor=pointer]
+  - contentinfo [ref=e130]:
+    - generic [ref=e131]:
+      - generic [ref=e132]:
+        - generic [ref=e133]:
+          - heading "About TMG" [level=4] [ref=e134]
+          - paragraph [ref=e135]: Your single point of access to China's $100B digital advertising market. We help international agencies navigate Chinese platforms with ease.
+        - generic [ref=e136]:
+          - heading "Quick Links" [level=4] [ref=e137]
+          - list [ref=e138]:
+            - listitem [ref=e139]:
+              - link "Services" [ref=e140] [cursor=pointer]:
+                - /url: https://www.tuyuesouxin.cn/services
+            - listitem [ref=e141]:
+              - link "Pricing" [ref=e142] [cursor=pointer]:
+                - /url: https://www.tuyuesouxin.cn/pricing
+            - listitem [ref=e143]:
+              - link "About Us" [ref=e144] [cursor=pointer]:
+                - /url: https://www.tuyuesouxin.cn/about
+            - listitem [ref=e145]:
+              - link "Client Stories" [ref=e146] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e147]:
+              - link "FAQ" [ref=e148] [cursor=pointer]:
+                - /url: https://www.tuyuesouxin.cn/faqs
+        - generic [ref=e149]:
+          - heading "Contact" [level=4] [ref=e150]
+          - list [ref=e151]:
+            - listitem [ref=e152]:
+              - link "tmg@tuyuesouxin.cn" [ref=e153] [cursor=pointer]:
+                - /url: mailto:tmg@tuyuesouxin.cn
+            - listitem [ref=e154]:
+              - link "WhatsApp (Click to scan)" [ref=e155] [cursor=pointer]:
+                - /url: "#contactQR"
+                - img [ref=e156]
+                - text: WhatsApp (Click to scan)
+        - generic [ref=e158]:
+          - heading "Legal" [level=4] [ref=e159]
+          - list [ref=e160]:
+            - listitem [ref=e161]: "Business License Number: 91310114MADKG4UF0G"
+            - listitem [ref=e162]: Tuyue Media Gateway
+      - generic [ref=e163]:
+        - paragraph [ref=e164]: © 2026 Tuyue Media Gateway. All rights reserved.
+        - generic [ref=e165]:
+          - link "WeChat" [ref=e166] [cursor=pointer]:
+            - /url: https://ad.weixin.qq.com
+          - link "Douyin" [ref=e167] [cursor=pointer]:
+            - /url: https://www.oceanengine.com
+          - link "Baidu" [ref=e168] [cursor=pointer]:
+            - /url: https://e.baidu.com
+          - link "Xiaohongshu" [ref=e169] [cursor=pointer]:
+            - /url: https://www.xiaohongshu.com/brand
+          - link "Bilibili" [ref=e170] [cursor=pointer]:
+            - /url: https://member.bilibili.com/platform/ad
+          - link "Bing China" [ref=e171] [cursor=pointer]:
+            - /url: https://ads.microsoft.com/zh-cn
