@@ -1460,6 +1460,9 @@
       margin-bottom: var(--space-4);
     }
 
+    .case-study__client-link { display: block; text-decoration: none; color: inherit; cursor: pointer; }
+    .case-study__client-link:hover .case-study__client-name { color: var(--color-accent); }
+
     .case-study__logo {
       width: 64px;
       height: 64px;
@@ -2649,18 +2652,20 @@
       </div>
       <div class="case-study reveal" style="max-width: 760px; margin: 0 auto;">
         <div class="case-study__header">
-          <div class="case-study__client">
-            <div class="case-study__logo">
-              <img src="https://www.tuyuesouxin.cn/assets/farmskins-logo.jpg" alt="Farmskins" class="case-study__logo-img">
-            </div>
-            <div class="case-study__client-info">
-              <h3 class="case-study__client-name">Farmskins</h3>
-              <div class="case-study__badges">
-                <span class="case-study__client-badge">Case Study</span>
-                <span class="case-study__client-badge case-study__budget-badge">$200K–$400K USD / year</span>
+            <a href="/client-stories/farmskins/" class="case-study__client-link">
+              <div class="case-study__client">
+                <div class="case-study__logo">
+                  <img src="https://www.tuyuesouxin.cn/assets/farmskins-logo.jpg" alt="Farmskins" class="case-study__logo-img">
+                </div>
+                <div class="case-study__client-info">
+                  <h3 class="case-study__client-name">Farmskins</h3>
+                  <div class="case-study__badges">
+                    <span class="case-study__client-badge">Case Study</span>
+                    <span class="case-study__client-badge case-study__budget-badge">$200K–$400K USD / year</span>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+            </a>
           <p class="case-study__headline">"No" From Every Platform — Until TMG Stepped In</p>
         </div>
         <div class="case-study__content">
