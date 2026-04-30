@@ -141,6 +141,7 @@
       transition: all var(--transition-fast);
       display: flex;
       flex-direction: column;
+      cursor: pointer;
     }
     
     .story-card:hover {
@@ -176,8 +177,9 @@
     }
     
     .story-card__logo-icon {
-      width: 32px;
-      height: 32px;
+      width: 44px;
+      height: 44px;
+      border-radius: 6px;
     }
     
     .story-card__client-info {
@@ -257,8 +259,8 @@
       }
       
       .story-card__logo-icon {
-        width: 24px;
-        height: 24px;
+        width: 32px;
+        height: 32px;
       }
     }
 
@@ -696,10 +698,11 @@
           <div class="story-card reveal">
             <div class="story-card__header">
               <div class="story-card__client">
-                <div class="story-card__logo" style="background: #0a0a0a;">
-                  <svg class="story-card__logo-icon" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="width:44px;height:44px;">
-                    <text x="100" y="85" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="48" font-weight="bold" letter-spacing="3">FS</text>
-                    <text x="100" y="140" text-anchor="middle" fill="#c9a84c" font-family="Arial, sans-serif" font-size="14" letter-spacing="2">FARMSKINS</text>
+                <div class="story-card__logo" style="background: #080c14;">
+                  <svg class="story-card__logo-icon" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="200" height="200" fill="#080c14"/>
+                    <text x="100" y="75" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="26" font-weight="bold" letter-spacing="3">FARMSKINS</text>
+                    <text x="100" y="115" text-anchor="middle" fill="#c9a84c" font-family="Arial, sans-serif" font-size="12" letter-spacing="2">CS:GO SKINS</text>
                   </svg>
                 </div>
                 <div class="story-card__client-info">
@@ -1037,6 +1040,20 @@
           }
         });
       }
+    })();
+  </script>
+  <script>
+    (function () {
+      document.querySelectorAll('.story-card').forEach(function (card) {
+        var btn = card.querySelector('.story-card__cta a');
+        if (btn) {
+          card.addEventListener('click', function (e) {
+            if (!e.target.closest('a')) {
+              window.location.href = btn.getAttribute('href');
+            }
+          });
+        }
+      });
     })();
   </script>
 </body>
