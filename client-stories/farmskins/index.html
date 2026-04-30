@@ -125,6 +125,11 @@
       height: 64px;
       object-fit: contain;
     }
+    .case-study__logo-svg {
+      width: 64px;
+      height: 64px;
+      border-radius: 8px;
+    }
     .case-study__client-name { font-size: var(--font-size-2xl); font-weight: 600; margin-bottom: var(--space-2); }
     .case-study__badges { display: flex; gap: var(--space-2); flex-wrap: wrap; }
     .case-study__client-badge { display: inline-block; padding: var(--space-1) var(--space-3); background: rgba(45, 107, 228, 0.15); color: var(--color-primary-light); font-size: var(--font-size-xs); font-weight: 500; border-radius: 4px; }
@@ -463,7 +468,11 @@
           <div class="case-study__header">
             <div class="case-study__client">
               <div class="case-study__logo">
-                <img src="https://www.tuyuesouxin.cn/assets/farmskins-logo.jpg" alt="Farmskins" class="case-study__logo-img">
+                <svg class="case-study__logo-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="200" height="200" fill="#0a0a0a"/>
+                  <text x="100" y="80" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="bold" letter-spacing="3">FARMSKINS</text>
+                  <text x="100" y="130" text-anchor="middle" fill="#c9a84c" font-family="Arial, sans-serif" font-size="14" letter-spacing="2">CS:GO SKINS</text>
+                </svg>
               </div>
               <div class="case-study__client-info">
                 <h3 class="case-study__client-name">Farmskins</h3>
