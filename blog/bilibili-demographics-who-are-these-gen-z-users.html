@@ -518,12 +518,12 @@
       .related__grid { grid-template-columns: 1fr; }
     }
 
-    /* ── Scroll Reveal ── */
+    /* ── Scroll Reveal (disabled: content always visible) ── */
     .reveal {
-      opacity: 0; transform: translateY(24px);
-      transition: opacity .6s cubic-bezier(.4,0,.2,1), transform .6s cubic-bezier(.4,0,.2,1);
+      opacity: 1; transform: none;
+      transition: none;
     }
-    .reveal.reveal--visible { opacity: 1; transform: translateY(0); }
+    /* reveal--visible disabled */
   </style>
   <script type="application/ld+json">
 {
@@ -1055,18 +1055,9 @@
     });
   })();
 
-  // Scroll Reveal
+  // Scroll Reveal (disabled: content always visible)
   (function () {
-    var els = document.querySelectorAll('.reveal');
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('reveal--visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.08 });
-    els.forEach(function (el) { observer.observe(el); });
+    // Reveal animation removed - user prefers content always visible
   })();
   </script>
 </body>
