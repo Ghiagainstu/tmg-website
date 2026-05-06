@@ -610,17 +610,12 @@
 
     }
 
-    /* ── Scroll Reveal ── */
+    /* ── Scroll Reveal (disabled: content always visible) ── */
     .reveal {
-      opacity: 0;
-      transform: translateY(28px);
-      transition: opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1),
-                  transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+      opacity: 1; transform: none;
+      transition: none;
     }
-    .reveal.reveal--visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    /* reveal--visible disabled */
   </style>
 </head>
 <body>
@@ -691,6 +686,20 @@
     <section class="posts-section">
       <div class="container">
         <div class="posts-grid">
+        <!-- Post: Doubao GEO (NEW) -->
+        <a href="https://www.tuyuesouxin.cn/blog/doubao-paid-what-it-means-for-geo/" class="post-card reveal">
+          <div class="post-card__header">
+            <span class="post-card__cat post-card__cat--geo">GEO / AI Search</span>
+            <span class="post-card__date">May 6, 2026</span>
+          </div>
+          <h2 class="post-card__title">Doubao Goes Paid: What This Means for GEO in China</h2>
+          <p class="post-card__excerpt">Doubao just introduced paid tiers at 68-500 RMB/month. With 140M+ DAU, this signals AI platforms are now real, monetized channels — and GEO is no longer optional for brands entering China.</p>
+          <div class="post-card__footer">
+            <span class="post-card__read-time">8 min read</span>
+            <span class="post-card__arrow">Read more →</span>
+          </div>
+        </a>
+        
         <!-- Post: Kuaishou Demographics (NEW) -->
         <a href="https://www.tuyuesouxin.cn/blog/kuaishou-demographics-who-are-these-400m-users/" class="post-card reveal">
           <div class="post-card__header">
@@ -1099,19 +1108,9 @@
       }
     })();
 
-    // Scroll reveal
+    // Scroll Reveal (disabled: content always visible)
     (function () {
-      const reveals = document.querySelectorAll('.reveal');
-      if (!reveals.length) return;
-      const observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('reveal--visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.1 });
-      reveals.forEach(function (el) { observer.observe(el); });
+      // Reveal animation removed - user prefers content always visible
     })();
   </script>
 </body>
