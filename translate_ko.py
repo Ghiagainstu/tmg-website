@@ -867,6 +867,198 @@ KO = {
 "Response time: Within 24 hours (weekdays)": "응답 시간: 24시간 이내(평일 기준)",
 "Languages: English, Mandarin, Cantonese": "언어: 영어, 중국어, 광둥어",
 "Business License Number: 91310114MADKG4UF0G": "사업자 등록 번호: 91310114MADKG4UF0G",
+
+# ===== Round 5: Remaining FAQ + service pages =====
+"Can I run ads if my Baidu account shows Failed Review?":
+    "Baidu 계정이 검토 실패로 표시되면 광고를 실행할 수 있나요?",
+"No. Ads cannot run until your account passes review. You must resolve the rejection issues and get approved before any ads go live.":
+    "아니요. 계정이 검토를 통과할 때까지 광고를 실행할 수 없습니다. 거부 문제를 해결하고 승인을 받은 후에야 광고가 게재됩니다.",
+"The most common rejection reasons are: (1) Expired qualifications or licenses; (2) Content contains prohibited words; (3) Website is unreachable or offline; (4) Mismatch between ad content and landing page; (5) Missing or incorrect industry qualification documents.":
+    "가장 일반적인 거부 이유: (1) 자격증 또는 라이선스 만료; (2) 금지어 포함 콘텐츠; (3) 웹사이트에 접속 불가 또는 오프라인; (4) 광고 내용과 랜딩 페이지 불일치; (5) 업종 자격 증명서 누락 또는 오류.",
+"Common prohibited words include absolute claims such as: cheapest, number one in the country, 100% effective, guaranteed results, and similar superlatives.":
+    "일반적인 금지어에는 다음과 같은 절대적 표현이 포함됩니다: 최저가, 전국 1위, 100% 효과, 결과 보장 및 유사한 최상급 표현.",
+"Yes. Regulated industries such as healthcare and finance must provide industry-specific licenses, avoid efficacy claims in all ad copy and landing pages, and comply with strict review standards.":
+    "네. 의료, 금융 등의 규제 업종은 업종별 라이선스를 제공하고, 모든 광고 카피 및 랜딩 페이지에서 효능 주장을 피하며, 엄격한 검토 기준을 준수해야 합니다.",
+"Companies registered in Hong Kong, Japan, South Korea, or Taiwan can apply with additional documentation. For all other countries, eligibility is assessed case by case through the agency.":
+    "홍콩, 일본, 대한민국, 대만에 등록된 기업은 추가 서류로 신청할 수 있습니다. 기타 국가는 에이전시를 통해 사례별로 자격이 평가됩니다.",
+"At minimum, you need a Chinese business license (if registering directly) or a partnership agreement with a certified agency. Depending on your industry and ad content, you may also need:":
+    "최소한 중국 영업 허가증(직접 등록 시) 또는 공인 에이전시와의 파트너십 계약이 필요합니다. 업종 및 광고 내용에 따라 다음이 추가로 필요할 수 있습니다:",
+"(a) Trademark registration certificate + authorization letter (both required for non-owned trademarks);":
+    "(a) 상표 등록 증명서 + 인증서(비소유 상표의 경우 모두 필요);",
+"(b) ICP filing screenshot (if your ad mentions a website);":
+    "(b) ICP 등록 스크린샷(광고가 웹사이트를 언급하는 경우);",
+"(c) Software copyright certificate (if it references an app).":
+    "(c) 소프트웨어 저작권 증명서(앱을 참조하는 경우).",
+"Foreign entities need to provide a BR or CR certificate (Hong Kong) or a declaration letter (Japan, South Korea, Taiwan).":
+    "외국 법인은 BR 또는 CR 증명서(홍콩) 또는 신고서(일본, 대한민국, 대만)를 제출해야 합니다.",
+"Two options: CPC (cost per click) and CPM (cost per thousand impressions). You pick the model that fits your goal. CPC makes sense when you want actual traffic; CPM works best for brand visibility.":
+    "두 가지 옵션: CPC(클릭당 비용) 및 CPM(1,000노출당 비용). 목표에 맞는 모델을 선택하세요. 실제 트래픽을 원한다면 CPC, 브랜드 가시성을 원한다면 CPM이 가장 좋습니다.",
+"There is no hard minimum published by the platform, but in practice you need at least a few thousand CNY to test and gather meaningful data. Once your account is approved, you can start with a modest budget and scale up.":
+    "플랫폼이 공식적으로 발표한 최소 금액은 없지만, 실제로는 테스트와 의미 있는 데이터 수집을 위해 최소 수천 위안이 필요합니다. 계정 승인 후 적은 예산으로 시작하여 확장할 수 있습니다.",
+"Yes. The professional account review fee is CNY 600 (one-time, non-refundable). If you work through an agency, there is typically a service fee on top of the ad spend.":
+    "네. 프로페셔널 계정 검토 수수료는 600위안(1회, 환불 불가)입니다. 에이전시를 통해 작업하는 경우 일반적으로 광고 지출 외에 서비스 수수료가 추가됩니다.",
+"It varies a lot by industry and targeting. Low-competition niches might see CPCs of a few yuan. Competitive categories like beauty, fashion, or mother-and-baby can see CPCs of 10–30+ CNY.":
+    "업종 및 타겟팅에 따라 크게 다릅니다. 경쟁이 낮은 틈새 시장은 클릭당 몇 위안일 수 있습니다. 뷰티, 패션, 육아 등의 경쟁 카테고리는 클릭당 10~30위안 이상일 수 있습니다.",
+"Three things to check: your bid might be too low (raise it), your targeting might be too narrow (loosen it), or your creative might have failed review (check your account notifications).":
+    "세 가지 확인 사항: 입찰가가 너무 낮을 수 있음(인상), 타겟팅이 너무 좁을 수 있음(확대), 또는 크리에이티브 검토에 실패했을 수 있음(계정 알림 확인).",
+"Impressions without conversions usually point to an audience mismatch or a landing page problem.":
+    "노출 대비 전환 부족은 일반적으로 오디언스 불일치 또는 랜딩 페이지 문제를 나타냅니다.",
+"The big ones: using someone's face in your avatar (not allowed), mentioning prohibited industries (finance, gambling, tobacco), unlicensed trademark usage, and missing ICP filings.":
+    "주요 사유: 아바타에 타인의 얼굴 사용(금지), 금지 업종 언급(금융, 도박, 담배), 무허가 상표 사용, ICP 등록 누락.",
+"Yes. Financial services (securities, private equity, cryptocurrency, P2P lending), gambling, tobacco, and certain health/medical categories are either fully restricted or heavily regulated.":
+    "네. 금융 서비스(증권, 사모펀드, 암호화폐, P2P 대출), 도박, 담배, 특정 건강/의료 카테고리는 완전히 제한되거나 엄격히 규제됩니다.",
+"If the account name references a trademark, you need to prove you own it or have authorization.":
+    "계정 이름이 상표를 참조하는 경우, 소유권 또는 사용 권한을 증명해야 합니다.",
+"Yes. If your account name or ad content references a website, Xiaohongshu requires a screenshot of the ICP filing (MIIT) from China's MIIT.":
+    "네. 계정 이름이나 광고 내용이 웹사이트를 참조하는 경우, 샤오홍슈는 중국 MIIT의 ICP 등록 스크린샷을 요구합니다.",
+"The avatar cannot be a real person's face or a photo showing someone's face. It must be relevant to your brand, product, or company.":
+    "아바타는 실제 인물의 얼굴이나 누군가의 얼굴이 보이는 사진일 수 없습니다. 브랜드, 제품 또는 회사와 관련되어야 합니다.",
+"Xiaohongshu isn't just another social media platform—it's where 350 million Chinese consumers go to research products before buying.":
+    "샤오홍슈는 단순한 소셜 미디어 플랫폼이 아닙니다 — 3억 5,000만 중국 소비자가 구매 전에 제품을 조사하는 곳입니다.",
+"Over 4.5 million brand employees now act as trusted product experts, generating 29,000+ monthly leads.":
+    "450만 명 이상의 브랜드 직원이 신뢰할 수 있는 제품 전문가로 활동하며 월 29,000건 이상의 리드를 생성합니다.",
+
+# Douyin remaining
+"Reach 600M+ Daily Active Users Who Spend 2+ Hours on Douyin":
+    "하루 2시간 이상을 보내는 6억+ 일간 활성 사용자에게 도달하세요",
+"Douyin (TikTok China) reaches 80% of China's mobile internet users—a balanced, affluent audience where 45% hold college degrees and 30% earn over $1,400/month.":
+    "Douyin(중국판 TikTok)은 중국 모바일 인터넷 사용자의 80%에 도달합니다 — 45%가 대학 학위를 보유하고 30%가 월 $1,400 이상을 버는 균형 잡히고 부유한 오디언스.",
+"In-feed native ads that blend seamlessly into the user's content stream. Highly engaging and interruptive-free brand storytelling.":
+    "사용자의 콘텐츠 스트림에 자연스럽게 통합되는 인피드 네이티브 광고. 참여도가 높고 방해하지 않는 브랜드 스토리텔링.",
+"Tap into the explosive live commerce trend. Reach millions of viewers in real-time and convert them directly through the Douyin shopping ecosystem.":
+    "폭발적인 라이브 커머스 트렌드를 활용하세요. 수백만 시청자에게 실시간으로 도달하고 Douyin 쇼핑 생태계를 통해 직접 전환하세요.",
+"Hashtag challenges with viral reach (50M+ impressions)": "바이럴 도달 범위의 해시태그 챌린지(5,000만+ 노출)",
+"AR lens & filter branding for interactive engagement": "인터랙티브 참여를 위한 AR 렌즈 및 필터 브랜딩",
+"Top influencer partnerships (1M+ follower creators)": "최고 인플루언서 파트너십(100만+ 팔로워 크리에이터)",
+"UGC amplification & user participation campaigns": "UGC 증폭 및 사용자 참여 캠페인",
+". No other platform matches its combination of reach, engagement depth (125+ min/day), and direct commerce integration through live streaming.":
+    "도달 범위, 참여 깊이(하루 125분+), 라이브 스트리밍을 통한 직접 커머스 통합의 조합을 따라올 플랫폼은 없습니다.",
+"Data sources: OceanEngine Official Platform Report 2024, QuestMobile China Mobile Internet Report Q3 2023, CNNIC 53rd Statistical Report March 2024, iResearch/CBNData.":
+    "데이터 출처: OceanEngine 공식 플랫폼 리포트 2024, QuestMobile 중국 모바일 인터넷 리포트 Q3 2023, CNNIC 제53차 통계 리포트 2024년 3월, iResearch/CBNData.",
+"DAU (600M+), daily searches (500M+), interest e-commerce metrics, and brand audience assets (O‑5A model).":
+    "DAU(6억+), 일일 검색(5억+), 관심 기반 전자상거래 지표, 브랜드 오디언스 자산(O-5A 모델).",
+"Average daily usage time (125+ min), age distribution, city tier penetration, and cross‑app user overlap.":
+    "평균 일일 사용 시간(125분+), 연령 분포, 도시 계층 침투율, 앱 간 사용자 중복.",
+"National short video user scale, online shopping penetration, and overall internet adoption rates.":
+    "전국 쇼트 비디오 사용자 규모, 온라인 쇼핑 침투율, 전체 인터넷 채택률.",
+"Short Video Marketing Whitepaper · 2023‑2024": "쇼트 비디오 마케팅 백서 · 2023‑2024",
+"Silver economy purchasing power, Tier 3‑5 market consumption trends, and vertical industry ROI benchmarks.":
+    "실버 경제 구매력, Tier 3~5 시장 소비 동향, 업종별 ROI 벤치마크.",
+
+# WeChat remaining
+"Digital Natives — Gen Z &amp; Millennials, heavy social &amp; content consumers":
+    "디지털 네이티브 — Z세대 및 밀레니얼, 소셜 및 콘텐츠 헤비 유저",
+"E-Commerce Shoppers — WeChat Pay users, impulse &amp; habitual buyers":
+    "전자상거래 쇼퍼 — WeChat Pay 사용자, 충동 및 습관적 구매자",
+"WeChat is the LinkedIn of China. 50%+ of Official Account readers hold university degrees — your direct line to C-suite executives and decision-makers.":
+    "WeChat은 중국의 LinkedIn입니다. 공식 계정 독자의 50% 이상이 대학 학위를 보유하고 있습니다 — 경영진 및 의사결정권자와의 직접 연결 통로.",
+"For brands targeting high-value customers in China, WeChat is the only platform that combines trust, transactions, and long-term relationship management.":
+    "중국에서 고가치 고객을 타겟팅하는 브랜드에게 WeChat은 신뢰, 거래, 장기적 관계 관리를 결합한 유일한 플랫폼입니다.",
+"In-document and Moments ad placements for professional audiences":
+    "전문 오디언스를 위한 문서 내 및 모먼트 광고 배치",
+"Mini Programs for lead capture, product demos, and consultation booking":
+    "리드 캡처, 제품 데모, 상담 예약을 위한 미니 프로그램",
+"LinkedIn-level targeting at a fraction of the cost": "비용의 일부로 LinkedIn 수준의 타겟팅",
+"Unmatched brand trust in WeChat's verified environment":
+    "WeChat의 검증된 환경에서 비교할 수 없는 브랜드 신뢰",
+"Direct-to-consumer communication without third-party interference":
+    "제3자 간섭 없는 소비자 직접 커뮤니케이션",
+"Exclusive content and member programs via Official Accounts":
+    "공식 계정을 통한 독점 콘텐츠 및 멤버 프로그램",
+"Mini Programs for luxury e-commerce and appointment booking":
+    "럭셔리 전자상거래 및 예약을 위한 미니 프로그램",
+"1.34B MAU, Mini Program DAU, Official Account metrics, and platform ecosystem data.":
+    "13.4억 MAU, 미니 프로그램 DAU, 공식 계정 지표, 플랫폼 생태계 데이터.",
+"User demographics, age distribution, education levels, and cross-platform usage patterns.":
+    "사용자 인구통계, 연령 분포, 교육 수준, 플랫폼 간 사용 패턴.",
+"National internet penetration, WeChat adoption rates, and digital payment statistics.":
+    "국가 인터넷 보급률, WeChat 채택률, 디지털 결제 통계.",
+"B2B marketing effectiveness, luxury brand ROI, and consumer loyalty benchmarks.":
+    "B2B 마케팅 효과, 럭셔리 브랜드 ROI, 소비자 충성도 벤치마크.",
+"All demographic data reflects the market landscape as of Q1 2024, providing the most current insights into China's digital ecosystem.":
+    "모든 인구통계 데이터는 2024년 1분기 시장 환경을 반영하며, 중국 디지털 생태계에 대한 가장 최신의 인사이트를 제공합니다.",
+
+# Bing remaining
+"Bing China (Bing CN) Advertising | Tuyue Media Gateway":
+    "Bing China (Bing CN) 광고 | Tuyue Media Gateway",
+"The Premium Search Audience Baidu Can't Reach":
+    "Baidu가 도달할 수 없는 프리미엄 검색 오디언스",
+"Bing China reaches a uniquely educated and high-income urban audience — 75%+ hold college degrees, 68% are AI-interested, and 59% research products before purchase.":
+    "Bing China는 독특하게 교육 수준이 높고 고소득인 도시 오디언스에 도달합니다 — 75%+가 대학 학위 보유, 68%가 AI에 관심, 59%가 구매 전 제품 조사.",
+"Reach Bing China's premium audience across the Microsoft Advertising network — display banners, in-feed native ads, and contextual placements on high-authority sites.":
+    "Microsoft Advertising 네트워크 전반에 걸쳐 Bing China의 프리미엄 오디언스에 도달 — 디스플레이 배너, 인피드 네이티브 광고, 권위 있는 사이트의 컨텍스추얼 배치.",
+"Run Bing CN alongside Baidu campaigns for complete search coverage.":
+    "완벽한 검색 커버리지를 위해 Baidu 캠페인과 함께 Bing CN을 실행하세요.",
+"Bing China's user base is uniquely premium — highly educated, affluent, and research-driven.":
+    "Bing China의 사용자 기반은 독특하게 프리미엄입니다 — 고학력, 부유함, 리서치 중심.",
+"Education-Focused Parents — 72% plan education spending":
+    "교육 중심 부모 — 72%가 교육비 계획",
+"Premium E-Shoppers — ¥8,241 avg online spend": "프리미엄 E-쇼퍼 — 평균 온라인 지출 ¥8,241",
+"Data sources: Bing CN User Persona (Bing China Marketing Guide, 2026); TGI Index data (income brackets); cross-referenced with QuestMobile and Microsoft Advertising data.":
+    "데이터 출처: Bing CN 사용자 페르소나(Bing China 마케팅 가이드, 2026); TGI 지수 데이터(소득 구간); QuestMobile 및 Microsoft Advertising 데이터와 교차 참조.",
+"Let's discuss how Bing CN advertising fits into your China search strategy — alongside or as an alternative to Baidu.":
+    "Bing CN 광고가 Baidu와 함께 또는 대안으로 중국 검색 전략에 어떻게 적합한지 논의해 보세요.",
+
+# AI Semi remaining
+"That was the challenge facing one global brand in the AI and semiconductor space.":
+    "이것이 AI 및 반도체 분야의 글로벌 브랜드가 직면한 과제였습니다.",
+"They needed a more efficient way forward: one agency partner that could manage multiple platforms, provide full visibility, and reduce the time and effort required to coordinate across different vendors.":
+    "그들은 더 효율적인 방법이 필요했습니다: 여러 플랫폼을 관리하고, 완전한 가시성을 제공하며, 다른 벤더 간 조정에 필요한 시간과 노력을 줄일 수 있는 하나의 에이전시 파트너.",
+"In short, the client was not only looking for campaign delivery. They were looking for a more transparent, centralised, and cost-efficient operating model.":
+    "요컨대, 클라이언트는 단순한 캠페인 전달 이상을 원했습니다. 더 투명하고 중앙집중적이며 비용 효율적인 운영 모델을 찾고 있었습니다.",
+"We saw that the real opportunity was not simply to run ads across more platforms. It was to simplify management, improve transparency, and create a structure that allowed smarter decisions across channels.":
+    "진정한 기회는 단순히 더 많은 플랫폼에서 광고를 실행하는 것이 아니라, 관리를 간소화하고 투명성을 개선하며 채널 전반에서 더 스마트한 결정을 내릴 수 있는 구조를 만드는 것이었습니다.",
+"Instead of asking the client to manage multiple external contacts, we created a more streamlined model with one main agency interface.":
+    "클라이언트가 여러 외부 연락처를 관리하도록 요청하는 대신, 하나의 주요 에이전시 인터페이스로 간소화된 모델을 만들었습니다.",
+"Transparency was a key priority. We worked in a way that gave the client clearer access to platforms, reporting, and performance data, helping build trust across activity.":
+    "투명성은 핵심 우선순위였습니다. 플랫폼, 보고, 성과 데이터에 대한 명확한 액세스를 제공하여 활동 전반에 걸친 신뢰 구축을 지원했습니다.",
+"By consolidating work under one agency relationship, the client benefited from a more efficient service structure and more competitive terms.":
+    "하나의 에이전시 관계로 작업을 통합함으로써, 클라이언트는 더 효율적인 서비스 구조와 더 경쟁력 있는 조건의 혜택을 받았습니다.",
+"Just as importantly, the client was able to spend less time managing multiple outside partners and more time focusing on internal priorities.":
+    "마찬가지로 중요한 것은, 클라이언트가 여러 외부 파트너를 관리하는 데 시간을 덜 쓰고 내부 우선순위에 더 집중할 수 있게 되었다는 점입니다.",
+"For many global B2B businesses, paid media challenges are not only about performance. They are also about structure.":
+    "많은 글로벌 B2B 기업에게 유료 미디어 과제는 성과에 관한 것만이 아닙니다. 구조에 관한 것이기도 합니다.",
+"When too many agencies, contacts, and platforms are involved, marketing teams can lose time, clarity, and control.":
+    "너무 많은 에이전시, 연락처, 플랫폼이 관여되면 마케팅 팀은 시간, 명확성, 통제력을 잃을 수 있습니다.",
+"A more effective paid media model should not only deliver results — it should also make your team's life easier.":
+    "더 효과적인 유료 미디어 모델은 결과를 제공할 뿐만 아니라 팀의 업무를 더 쉽게 만들어야 합니다.",
+"A partner that understands both the channels and your business context":
+    "채널과 비즈니스 맥락을 모두 이해하는 파트너",
+
+# GEO remaining
+"SEO (Search Engine Optimization) aims to rank your website high in traditional search results — users click a link to reach you. GEO (Generative Engine Optimization) aims to get your brand mentioned inside AI answers.":
+    "SEO(검색 엔진 최적화)는 전통적인 검색 결과에서 웹사이트 순위를 높이는 것을 목표로 합니다 — 사용자가 링크를 클릭하여 도달합니다. GEO(생성 엔진 최적화)는 AI 답변 내에서 브랜드가 언급되도록 하는 것을 목표로 합니다.",
+"China's AI ecosystem is entirely separate from the West. 중국 GEO targets DeepSeek, Douyin AI (Doubao), Kimi, Wenxin, and Tongyi — platforms with zero overlap with Western AI.":
+    "중국의 AI 생태계는 서구와 완전히 분리되어 있습니다. 중국 GEO는 DeepSeek, Douyin AI(豆包), Kimi, Wenxin, Tongyi를 대상으로 합니다 — 서구 AI와 전혀 중첩되지 않는 플랫폼입니다.",
+"What do I need to provide to get started?":
+    "시작하려면 무엇을 제공해야 하나요?",
+"To begin, we need: your brand assets (logo, tagline, key messages), website URL, product/service descriptions, competitor brand names and URLs, and any existing marketing materials.":
+    "시작하려면 다음이 필요합니다: 브랜드 자산(로고, 태그라인, 핵심 메시지), 웹사이트 URL, 제품/서비스 설명, 경쟁사 브랜드명 및 URL, 기존 마케팅 자료.",
+"Ready to get cited in China's AI answers?": "중국 AI 답변에서 인용될 준비가 되셨나요?",
+"We'll get back to you within one business day.": "1영업일 이내에 연락드리겠습니다.",
+
+# Blog remaining
+"Keyword strategies, bid optimization, and Baidu Quality Score breakdowns.":
+    "키워드 전략, 입찰 최적화, Baidu 품질 점수 분석.",
+"How to get your brand cited in DeepSeek, Doubao, and Kimi responses.":
+    "DeepSeek, Doubao, Kimi 응답에서 브랜드를 인용받는 방법.",
+"1.28 billion users, 192 hours per month of screen time, a ¥168 billion Q1 ad market, and AI-native apps at 413M monthly users — QuestMobile's Spring 2026 report.":
+    "12.8억 사용자, 월 192시간의 화면 시간, 1,680억 위안의 1분기 광고 시장, 4억 1,300만 월간 사용자의 AI 네이티브 앱 — QuestMobile의 2026년 봄 보고서.",
+
+# Homepage remaining
+"One-time account opening with full documentation support.":
+    "전체 문서 지원을 통한 일회성 계정 개설.",
+"We built TMG to be the bridge we wished we had—one unified interface, transparent operations, and a team that speaks your language and understands China.":
+    "TMG는 우리가 원했던 다리 역할을 위해 구축되었습니다 — 통합된 인터페이스, 투명한 운영, 귀하의 언어를 구사하고 중국을 이해하는 팀.",
+"Today, we help agencies and brands from Europe, North America, and APAC navigate China's $100B+ digital advertising ecosystem with confidence.":
+    "오늘날 우리는 유럽, 북미, APAC의 에이전시와 브랜드가 중국의 1,000억 달러+ 디지털 광고 생태계를 자신 있게 탐색할 수 있도록 지원합니다.",
+"Baidu supports account opening for foreign companies and entities. You don't need a Chinese domestic business license to get started — we handle the process for you.":
+    "Baidu는 외국 기업 및 법인의 계정 개설을 지원합니다. 시작하는 데 중국 현지 영업 허가증이 필요하지 않습니다 — 당사가 프로세스를 처리합니다.",
+"What is the minimum top-up amount?": "최소 충전 금액은 얼마인가요?",
+"Baitu only supports pre-payment. You must have sufficient account balance before your ads can run. No credit or post-pay option available.":
+    "Baidu는 선불 결제만 지원합니다. 광고를 게재하려면 계정에 충분한 잔액이 있어야 합니다. 신용 또는 후불 옵션은 없습니다.",
+"Foreign companies work through a local agency partner who handles account setup, qualification filing, and creative submission.":
+    "외국 기업은 계정 설정, 자격 신청, 크리에이티브 제출을 처리하는 현지 에이전시 파트너를 통해 작업합니다.",
 }
 
 def translate():
