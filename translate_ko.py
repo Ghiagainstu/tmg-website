@@ -1209,6 +1209,227 @@ KO = {
 "AR lens & filter branding": "AR 렌즈 및 필터 브랜딩",
 "Top influencer partnerships": "최고 인플루언서 파트너십",
 "UGC amplification & user participation": "UGC 증폭 및 사용자 참여",
+
+# ===== Round 7: More FAQ detailed answers =====
+# WeChat FAQ answers
+"CPM (Cost Per Mille) — Pay per 1,000 impressions. Best for brand awareness.":
+    "CPM(1,000노출당 비용) — 1,000노출당 과금. 브랜드 인지도에 최적.",
+"CPC (Cost Per Click) — Pay only when someone clicks. Best for driving traffic.":
+    "CPC(클릭당 비용) — 클릭 시에만 과금. 트래픽 유도에 최적.",
+"oCPC (Optimized Cost Per Click) — Smart bidding. System optimizes toward conversions.":
+    "oCPC(최적화된 클릭당 비용) — 스마트 입찰. 시스템이 전환을 목표로 최적화.",
+"CPA (Cost Per Action) — Pay when a specific action is completed (purchase, signup).":
+    "CPA(액션당 비용) — 특정 액션(구매, 가입) 완료 시 과금.",
+"CPT (Cost Per Time) — Fixed fee for a time slot. Common for reserved placements.":
+    "CPT(시간당 비용) — 시간대별 고정 요금. 예약 배치에 일반적.",
+"What is oCPC and when should I use it?":
+    "oCPC란 무엇이며 언제 사용해야 하나요?",
+"oCPC stands for Optimized Cost Per Click. It lets WeChat optimize toward your conversion goal.":
+    "oCPC는 최적화된 클릭당 비용입니다. WeChat이 전환 목표에 맞게 최적화하도록 합니다.",
+"With regular CPC, you pay per click. With oCPC, you define a conversion action and the system optimizes toward users most likely to complete it.":
+    "일반 CPC는 클릭당 지불합니다. oCPC에서는 전환 액션을 정의하고 시스템이 이를 완료할 가능성이 가장 높은 사용자를 대상으로 최적화합니다.",
+"How does WeChat recharge and deduct advertising fees?":
+    "WeChat 광고비 충전 및 차감은 어떻게 이루어지나요?",
+"WeChat Ads runs on a pre-paid model. You deposit funds before ads go live.":
+    "WeChat 광고는 선불 모델로 운영됩니다. 광고 게재 전에 자금을 입금합니다.",
+"Recharge is done through the Tencent Ads platform or your agency partner.":
+    "충전은 Tencent Ads 플랫폼 또는 에이전시 파트너를 통해 이루어집니다.",
+"Fees are deducted based on your chosen billing model in real time.":
+    "수수료는 선택한 청구 모델에 따라 실시간으로 차감됩니다.",
+"For foreign companies, working through a certified agency is usually smoother.":
+    "외국 기업의 경우, 공인 에이전시를 통한 작업이 일반적으로 더 원활합니다.",
+"What is the difference between auction ads and contract ads?":
+    "경매 광고와 계약 광고의 차이점은 무엇인가요?",
+"Auction ads compete in real time. Higher bid + better quality wins the slot.":
+    "경매 광고는 실시간으로 경쟁합니다. 높은 입찰가 + 좋은 품질이 슬롯을 획득합니다.",
+"Contract ads negotiate a fixed price upfront for guaranteed placement.":
+    "계약 광고는 보장된 배치를 위해 사전에 고정 가격을 협상합니다.",
+"Auction ads are more flexible. Contract ads provide certainty.":
+    "경매 광고는 더 유연합니다. 계약 광고는 확실성을 제공합니다.",
+"How does WeChat handle malicious clicks?":
+    "WeChat은 악성 클릭을 어떻게 처리하나요?",
+"WeChat runs real-time monitoring for suspicious click activity.":
+    "WeChat은 의심스러운 클릭 활동에 대한 실시간 모니터링을 실행합니다.",
+"If the same user clicks your ad multiple times in a short period, the system filters those clicks and does not charge you.":
+    "동일 사용자가 단시간에 광고를 여러 번 클릭하면 시스템이 해당 클릭을 필터링하고 비용을 청구하지 않습니다.",
+"The platform automatically flags suspicious patterns like rapid repeated clicks or bots.":
+    "플랫폼은 빠른 반복 클릭이나 봇과 같은 의심스러운 패턴을 자동으로 플래그 지정합니다.",
+"If you notice unusual activity, you can report it. Their team reviews and credits invalid clicks.":
+    "비정상적인 활동을 발견하면 신고할 수 있습니다. 팀이 검토하고 무효 클릭을 환불합니다.",
+"Are there industries that cannot advertise on WeChat?":
+    "WeChat에서 광고할 수 없는 업종이 있나요?",
+"Yes. WeChat strictly prohibits or restricts:":
+    "네. WeChat은 다음을 엄격히 금지 또는 제한합니다:",
+"Finance: securities, private equity, cryptocurrency, P2P lending.":
+    "금융: 증권, 사모펀드, 암호화폐, P2P 대출.",
+"Healthcare: certain medical treatments, prescription drugs, unapproved health products.":
+    "의료: 특정 의료 시술, 처방약, 미승인 건강 제품.",
+"Content violating WeChat community guidelines or Chinese advertising law.":
+    "WeChat 커뮤니티 가이드라인 또는 중국 광고법을 위반하는 콘텐츠.",
+
+# Douyin FAQ answers
+"Can overseas companies advertise on Douyin?":
+    "해외 기업이 Douyin에서 광고할 수 있나요?",
+"Yes. Overseas companies can advertise through a certified Ocean Engine agency partner.":
+    "네. 해외 기업은 공인 Ocean Engine 에이전시 파트너를 통해 광고할 수 있습니다.",
+"Ocean Engine offers bilingual support for international advertisers.":
+    "Ocean Engine은 국제 광고주를 위한 이중 언어 지원을 제공합니다.",
+"What is the difference between Douyin and TikTok Ads?":
+    "Douyin과 TikTok 광고의 차이점은 무엇인가요?",
+"Douyin is the Chinese domestic version of TikTok, operated by ByteDance.":
+    "Douyin은 ByteDance가 운영하는 중국 국내 버전의 TikTok입니다.",
+"TikTok Ads reaches users outside China. Ocean Engine reaches 700M+ users inside China.":
+    "TikTok 광고는 중국 외 사용자에게 도달합니다. Ocean Engine은 중국 내 7억+ 사용자에게 도달합니다.",
+"What documents do I need to open an Ocean Engine account?":
+    "Ocean Engine 계정 개설에 필요한 서류는 무엇인가요?",
+"For overseas companies working through an agency:":
+    "에이전시를 통해 작업하는 해외 기업의 경우:",
+"(a) Company registration documents (business license or equivalent);":
+    "(a) 회사 등록 서류(영업 허가증 또는 이에 상응하는 서류);",
+"(b) Brand trademark registration certificate or authorization letter;":
+    "(b) 브랜드 상표 등록 증명서 또는 인증서;",
+"(c) Landing page hosted in mainland China with valid ICP filing;":
+    "(c) 중국 본토에 호스팅되고 유효한 ICP 등록이 있는 랜딩 페이지;",
+"(d) Industry-specific licenses if applicable.":
+    "(d) 해당되는 경우 업종별 라이선스.",
+"How long does account and ad review take?":
+    "계정 및 광고 검토는 얼마나 걸리나요?",
+"Account review: 1 to 3 business days. Ad creative review: 4 to 12 hours.":
+    "계정 검토: 1~3영업일. 광고 크리에이티브 검토: 4~12시간.",
+"You cannot run ads until your account passes qualification review.":
+    "계정이 자격 검토를 통과할 때까지 광고를 실행할 수 없습니다.",
+"How does Ocean Engine charge for advertising?":
+    "Ocean Engine의 광고 요금 체계는 어떻게 되나요?",
+"Ocean Engine supports multiple billing models:":
+    "Ocean Engine은 여러 청구 모델을 지원합니다:",
+"CPM — Pay per 1,000 impressions. Good for brand awareness.":
+    "CPM — 1,000노출당 과금. 브랜드 인지도에 적합.",
+"CPC — Pay per click. Works well for driving traffic.":
+    "CPC — 클릭당 과금. 트래픽 유도에 효과적.",
+"oCPM/oCPC — Optimized models. Define a conversion goal and the system optimizes.":
+    "oCPM/oCPC — 최적화 모델. 전환 목표를 정의하면 시스템이 최적화합니다.",
+"CV — Used for video ads. Pay when a user watches a defined duration.":
+    "CV — 동영상 광고에 사용. 사용자가 설정된 시간을 시청하면 과금.",
+"The platform runs on pre-paid billing for most international advertisers.":
+    "플랫폼은 대부분의 국제 광고주에게 선불 청구로 운영됩니다.",
+"What are typical CPM and CPC rates on Douyin?":
+    "Douyin의 일반적인 CPM 및 CPC 요금은 어떻게 되나요?",
+"CPM: USD 3 to 10 per 1,000 impressions.":
+    "CPM: 1,000노출당 USD 3~10.",
+"CPC: USD 0.50 to 1.50 per click.": "CPC: 클릭당 USD 0.50~1.50.",
+"CPA through oCPM: USD 10 to 40.": "oCPM을 통한 CPA: USD 10~40.",
+"These are indicative ranges, not guarantees.":
+    "이는 참고 범위이며 보장되지 않습니다.",
+"Does Ocean Engine support post-payment or credit terms?":
+    "Ocean Engine은 후불 또는 신용 조건을 지원하나요?",
+"Most international advertisers operate on a pre-paid basis.":
+    "대부분의 국제 광고주는 선불 방식으로 운영됩니다.",
+"Monthly billing may be available for established accounts with significant spend.":
+    "월별 청구는 지출이 많은 기존 계정에 대해 가능할 수 있습니다.",
+"How does the bidding system work on Ocean Engine?":
+    "Ocean Engine의 입찰 시스템은 어떻게 작동하나요?",
+"Ocean Engine uses a real-time auction system similar to other major ad platforms.":
+    "Ocean Engine은 다른 주요 광고 플랫폼과 유사한 실시간 경매 시스템을 사용합니다.",
+"You can set bid caps to control spending.":
+    "지출을 제어하기 위해 입찰 상한선을 설정할 수 있습니다.",
+"What ad formats are available on Douyin?":
+    "Douyin에서 사용 가능한 광고 형식은 무엇인가요?",
+"Douyin offers in-feed ads, brand takeovers, open-screen ads, search ads, and more.":
+    "Douyin은 인피드 광고, 브랜드 테이크오버, 오픈 스크린 광고, 검색 광고 등을 제공합니다.",
+"Video creative is central to Douyin. Video consistently outperforms static images.":
+    "동영상 크리에이티브는 Douyin의 핵심입니다. 동영상이 정적 이미지를 지속적으로 능가합니다.",
+"What industries are restricted on Douyin/Ocean Engine?":
+    "Douyin/Ocean Engine에서 제한되는 업종은 무엇인가요?",
+"Finance, healthcare, gambling, real-person testimonials, and content violating advertising law.":
+    "금융, 의료, 도박, 실제 인물 증언, 광고법 위반 콘텐츠.",
+"Some restricted categories can advertise with special qualification approval.":
+    "일부 제한 카테고리는 특별 자격 승인을 받으면 광고할 수 있습니다.",
+"My TikTok creative is ready. Can I use it on Douyin?":
+    "TikTok 크리에이티브가 준비되었습니다. Douyin에서 사용할 수 있나요?",
+"You can repurpose TikTok creative for Douyin, but modifications are needed.":
+    "TikTok 크리에이티브를 Douyin에 재사용할 수 있지만 수정이 필요합니다.",
+"Add simplified Chinese subtitles and use a China-hosted landing page.":
+    "간체 중국어 자막을 추가하고 중국 호스팅 랜딩 페이지를 사용하세요.",
+
+# Bilibili FAQ answers
+"Can foreign companies advertise on Bilibili?":
+    "외국 기업이 Bilibili에서 광고할 수 있나요?",
+"Yes. Foreign companies can advertise through a certified agency partner.":
+    "네. 외국 기업은 공인 에이전시 파트너를 통해 광고할 수 있습니다.",
+"Bilibili's ad platform is called Bilibili MCN.":
+    "Bilibili의 광고 플랫폼은 Bilibili MCN이라고 합니다.",
+"What makes Bilibili different from other Chinese ad platforms?":
+    "Bilibili가 다른 중국 광고 플랫폼과 다른 점은 무엇인가요?",
+"Bilibili is a video-centric community with a young, highly engaged audience.":
+    "Bilibili는 젊고 참여도가 높은 오디언스를 가진 동영상 중심 커뮤니티입니다.",
+"What documents are needed to open a Bilibili ad account?":
+    "Bilibili 광고 계정 개설에 필요한 서류는 무엇인가요?",
+"For overseas companies: registration documents, trademark certificate, ICP filing, licenses.":
+    "해외 기업의 경우: 등록 서류, 상표 증명서, ICP 등록, 라이선스.",
+"How long does Bilibili ad account approval take?":
+    "Bilibili 광고 계정 승인에는 얼마나 걸리나요?",
+"Account review: 1 to 5 business days. Creative review: 4 to 12 hours.":
+    "계정 검토: 1~5영업일. 크리에이티브 검토: 4~12시간.",
+"What is the minimum budget for Bilibili advertising?":
+    "Bilibili 광고의 최소 예산은 얼마인가요?",
+"Minimum daily budget: approximately USD 30 to 50 per campaign.":
+    "최소 일일 예산: 캠페인당 약 USD 30~50.",
+"How does Bilibili charge for advertising?":
+    "Bilibili 광고 요금은 어떻게 부과되나요?",
+"Bilibili supports CPM, CPC, oCPM, and CV billing models.":
+    "Bilibili는 CPM, CPC, oCPM, CV 청구 모델을 지원합니다.",
+"Billing is pre-paid for most advertisers.":
+    "대부분의 광고주는 선불로 청구됩니다.",
+"Does Bilibili offer post-payment or credit terms?":
+    "Bilibili는 후불 또는 신용 조건을 제공하나요?",
+"Most new advertisers operate on a pre-paid basis.":
+    "대부분의 신규 광고주는 선불 방식으로 운영됩니다.",
+"Established accounts may qualify for monthly invoicing.":
+    "기존 계정은 월별 청구 대상이 될 수 있습니다.",
+"What ad formats are available on Bilibili?":
+    "Bilibili에서 사용 가능한 광고 형식은 무엇인가요?",
+"Bilibili offers in-feed video ads, display banners, sponsored content, and landing pages.":
+    "Bilibili는 인피드 동영상 광고, 디스플레이 배너, 스폰서 콘텐츠, 랜딩 페이지를 제공합니다.",
+"Video creative is central to Bilibili and consistently outperforms static ads.":
+    "동영상 크리에이티브는 Bilibili의 핵심이며 정적 광고를 지속적으로 능가합니다.",
+"Can I work with Bilibili creators (UP主) for advertising?":
+    "Bilibili 크리에이터(UP主)와 광고 협업이 가능한가요?",
+"Yes — it is often the most effective approach on Bilibili.":
+    "네 — Bilibili에서 가장 효과적인 접근 방식인 경우가 많습니다.",
+"Bilibili's creator ecosystem covers gaming, anime, tech, lifestyle, and more.":
+    "Bilibili의 크리에이터 생태계는 게임, 애니메이션, 기술, 라이프스타일 등을 포괄합니다.",
+"What industries are restricted on Bilibili?":
+    "Bilibili에서 제한되는 업종은 무엇인가요?",
+"Finance, healthcare, real estate, and content violating advertising law are restricted.":
+    "금융, 의료, 부동산 및 광고법 위반 콘텐츠가 제한됩니다.",
+"Bilibili's audience values authenticity, humor, and genuine knowledge sharing.":
+    "Bilibili의 오디언스는 진정성, 유머, 진정한 지식 공유를 중요시합니다.",
+"Why are my Bilibili ads getting rejected?":
+    "Bilibili 광고가 거부되는 이유는 무엇인가요?",
+"Common reasons: exaggerated claims, lack of disclosure, landing page mismatch, invalid ICP.":
+    "일반적인 이유: 과장된 주장, 공개 부족, 랜딩 페이지 불일치, 무효 ICP.",
+"We audit creative against Bilibili's compliance guidelines before submission.":
+    "제출 전 Bilibili의 규정 준수 가이드라인에 따라 크리에이티브를 감사합니다.",
+"Should I use Douyin/TikTok content on Bilibili?":
+    "Bilibili에서 Douyin/TikTok 콘텐츠를 사용해야 하나요?",
+"You can repurpose content, but direct cross-posting is not recommended.":
+    "콘텐츠를 재사용할 수 있지만 직접 교차 게시는 권장되지 않습니다.",
+"Bilibili users prefer longer videos (5-30+ min). Adapt content to Bilibili's community tone.":
+    "Bilibili 사용자는 더 긴 동영상(5~30분+)을 선호합니다. Bilibili의 커뮤니티 톤에 맞게 콘텐츠를 조정하세요.",
+
+# Bing remaining FAQ
+"What are Bing China users interested in buying?":
+    "Bing China 사용자는 무엇을 구매하는 데 관심이 있나요?",
+"Bing China users show strong purchasing intent across several categories.":
+    "Bing China 사용자는 여러 카테고리에서 강한 구매 의도를 보입니다.",
+"Additionally, 68% express interest in AI technology.":
+    "또한 68%가 AI 기술에 관심을 표현합니다.",
+"Based on user behavior data, the following ad formats perform well:":
+    "사용자 행동 데이터에 따르면 다음 광고 형식이 효과적입니다:",
+"Education and professional service promotions":
+    "교육 및 전문 서비스 프로모션",
+"Which industries are best suited for Bing China advertising?":
+    "Bing China 광고에 가장 적합한 업종은 무엇인가요?",
 }
 
 def translate():
