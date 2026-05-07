@@ -206,12 +206,93 @@
 
     @media (max-width: 900px) { .insights__grid { grid-template-columns: repeat(2, 1fr); } .insights__breakdown { grid-template-columns: 1fr; } .insights__highlight { flex-direction: column; } }
     @media (max-width: 600px) { .insights__grid { grid-template-columns: 1fr 1fr; } }
+  
+    /* ── Language Switcher Dropdown ── */
+    .header__lang-wrap {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      margin-left: 8px;
+    }
+    .header__lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 10px;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--c-accent, #c9a84c);
+      background: transparent;
+      border: 1px solid var(--c-accent, #c9a84c);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background .15s;
+      line-height: 1.4;
+    }
+    .header__lang-btn:hover { background: rgba(201,168,76,.1); }
+    .header__lang-btn svg { transition: transform .15s; }
+    .header__lang-wrap:hover .header__lang-btn svg,
+    .header__lang-wrap.active .header__lang-btn svg { transform: rotate(180deg); }
+    .header__lang-menu {
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      min-width: 140px;
+      background: #111827;
+      border: 1px solid #1e2d45;
+      border-radius: 8px;
+      padding: 4px;
+      display: none;
+      opacity: 0;
+      box-shadow: 0 4px 20px rgba(0,0,0,.4);
+      z-index: 300;
+    }
+    .header__lang-wrap:hover .header__lang-menu,
+    .header__lang-wrap.active .header__lang-menu {
+      display: flex;
+      flex-direction: column;
+      opacity: 1;
+    }
+    .header__lang-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 10px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #a3b1cc;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background .15s, color .15s;
+      white-space: nowrap;
+    }
+    .header__lang-item:hover {
+      background: rgba(201,168,76,.1);
+      color: #e8c87a;
+      text-decoration: none;
+    }
+    .header__lang-item--cur {
+      color: #e8c87a;
+      background: rgba(201,168,76,.08);
+    }
+    .header__lang-flag { font-size: 15px; line-height: 1; }
+
   </style>
 </head>
 <body>
   <header class="header"><div class="container"><div class="header__inner"><a href="https://www.tuyuesouxin.cn/ko/" class="header__logo"><svg class="header__logo-icon" viewBox="0 0 48 48" fill="none"><defs><linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#c9a84c"/><stop offset="100%" stop-color="#e8c87a"/></linearGradient></defs><circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/><circle cx="37" cy="20" r="13" fill="#080c14"/><text x="4" y="32" font-family="Inter,sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-.8">TMG</text></svg><span class="header__logo-text">Tuyue Media <span>Gateway</span></span></a><nav class="header__nav"><div class="header__dropdown"><a href="https://www.tuyuesouxin.cn/ko/services" class="header__nav-link header__dropdown-trigger active">서비스 <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a><div class="header__dropdown-menu"><a href="https://www.tuyuesouxin.cn/ko/services" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">전체 서비스</a><a href="https://www.tuyuesouxin.cn/ko/services/wechat" class="header__dropdown-item">WeChat 광고</a><a href="https://www.tuyuesouxin.cn/ko/services/douyin" class="header__dropdown-item">Douyin 광고</a><a href="https://www.tuyuesouxin.cn/ko/services/baidu" class="header__dropdown-item">Baidu SEM</a><a href="https://www.tuyuesouxin.cn/ko/services/bing" class="header__dropdown-item header__dropdown-item--active">Bing China</a><a href="https://www.tuyuesouxin.cn/ko/services/xiaohongshu" class="header__dropdown-item">샤오홍슈(RED)</a><a href="https://www.tuyuesouxin.cn/ko/services/bilibili" class="header__dropdown-item">Bilibili 광고</a><a href="https://www.tuyuesouxin.cn/ko/geo" class="header__dropdown-item">중국 GEO</a></div></div><a href="https://www.tuyuesouxin.cn/ko/pricing" class="header__nav-link">요금</a><a href="https://www.tuyuesouxin.cn/ko/client-stories" class="header__nav-link">고객 사례</a><a href="https://www.tuyuesouxin.cn/ko/geo" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a><a href="https://www.tuyuesouxin.cn/ko/blog/" class="header__nav-link">블로그</a><a href="https://www.tuyuesouxin.cn/ko/faqs" class="header__nav-link">FAQ</a><div class="header__dropdown"><a href="https://www.tuyuesouxin.cn/ko/about" class="header__nav-link header__dropdown-trigger">회사 소개 <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a><div class="header__dropdown-menu"><a href="https://www.tuyuesouxin.cn/ko/why-tmg" class="header__dropdown-item">TMG를 선택해야 하는 이유</a><a href="https://www.tuyuesouxin.cn/ko/about" class="header__dropdown-item">회사 소개 Us</a><a href="https://www.tuyuesouxin.cn/ko/contact" class="header__dropdown-item">문의하기</a></div></div></nav>
-        <a href="https://www.tuyuesouxin.cn/" class="header__nav-link" style="font-weight:600;color:var(--color-accent);border:1px solid var(--color-accent);border-radius:6px;padding:4px 12px;margin-left:8px;font-size:12px;">English</a>
-        <a href="https://www.tuyuesouxin.cn/ja/" class="header__nav-link" style="font-weight:600;color:var(--color-accent);border:1px solid var(--color-accent);border-radius:6px;padding:4px 12px;margin-left:8px;font-size:12px;">日本語</a><div class="header__cta"><a href="https://www.tuyuesouxin.cn/ko/contact" class="btn btn--primary">시작하기</a></div><button class="header__toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button></div></div></header>
+        <div class="header__lang-wrap">
+        <button class="header__lang-btn" onclick="this.parentElement.classList.toggle('active')">
+          <span class="header__lang-flag">🇰🇷</span>한국어
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 3.5l3 4 3-4"/></svg>
+        </button>
+        <div class="header__lang-menu">
+          <a href="https://www.tuyuesouxin.cn" class="header__lang-item"><span class="header__lang-flag">🇺🇸</span>English</a>
+          <a href="https://www.tuyuesouxin.cn/ja" class="header__lang-item"><span class="header__lang-flag">🇯🇵</span>日本語</a>
+        </div>
+      </div>
+        <div class="header__cta"><a href="https://www.tuyuesouxin.cn/ko/contact" class="btn btn--primary">시작하기</a></div><button class="header__toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button></div></div></header>
   <main>
     <div class="page-header"><div class="container"><span class="page-header__eyebrow reveal">Bing China Advertising</span><h1 class="page-header__title reveal">Baidu가 도달할 수 없는 프리미엄 검색 오디언스</h1><p class="page-header__description reveal">Bing China reaches a uniquely educated and high-income urban audience — 75%+ hold college degrees, 68% are AI-interested, and 59% research products before buying. The rational, premium search segment for brands targeting quality over quantity.</p></div></div>
 
