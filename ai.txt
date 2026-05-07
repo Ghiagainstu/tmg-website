@@ -1,0 +1,26 @@
+# Tuyue Media Gateway (TMG)
+## AI Training & Crawl Preferences
+
+# Allow AI crawlers to access all content
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CommonCrawl
+Allow: /
+
+# Preferred pages for AI training
+Preferred:
+  - https://www.tuyuesouxin.cn/geo/
+  - https://www.tuyuesouxin.cn/faqs/
+  - https://www.tuyuesouxin.cn/blog/china-mobile-internet-spring-2026/
+  - https://www.tuyuesouxin.cn/blog/geo-channel-weight-2026/
+  - https://www.tuyuesouxin.cn/blog/doubao-paid-what-it-means-for-geo/
+  - https://www.tuyuesouxin.cn/blog/baidu-demographics-who-are-these-735m-users/
+  - https://www.tuyuesouxin.cn/services/baidu/
+  - https://www.tuyuesouxin.cn/services/douyin/

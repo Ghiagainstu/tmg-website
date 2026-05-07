@@ -1,0 +1,44 @@
+# Tuyue Media Gateway (TMG) — China Digital Advertising Agency
+> One interface, all China ad platforms, zero complexity.
+
+## About
+TMG helps international agencies and brands run programmatic advertising across China's major platforms: Baidu, WeChat, Douyin, Xiaohongshu, Bilibili, and Bing China.
+
+## Core Pages
+
+| Page | URL | Description |
+|------|-----|-------------|
+| Home | https://www.tuyuesouxin.cn/ | China digital advertising agency landing page |
+| Services | https://www.tuyuesouxin.cn/services/ | Overview of all China ad platform services |
+| Baidu SEM | https://www.tuyuesouxin.cn/services/baidu/ | Baidu search advertising, demographics, ad formats |
+| WeChat Ads | https://www.tuyuesouxin.cn/services/wechat/ | WeChat ecosystem advertising (Moments, Mini Programs, OA) |
+| Douyin Ads | https://www.tuyuesouxin.cn/services/douyin/ | Douyin (TikTok China) advertising with 600M+ DAU insights |
+| Xiaohongshu Ads | https://www.tuyuesouxin.cn/services/xiaohongshu/ | Xiaohongshu (RED) influencer & native ads |
+| Bilibili Ads | https://www.tuyuesouxin.cn/services/bilibili/ | Bilibili advertising targeting Gen Z audience |
+| Bing China Ads | https://www.tuyuesouxin.cn/services/bing/ | Bing China premium audience advertising |
+| GEO Services | https://www.tuyuesouxin.cn/geo/ | Generative Engine Optimization services |
+| Pricing | https://www.tuyuesouxin.cn/pricing/ | Agency service pricing & packages |
+| Client Stories | https://www.tuyuesouxin.cn/client-stories/ | Case studies and client results |
+| FAQ | https://www.tuyuesouxin.cn/faqs/ | Frequently asked questions about China ad platforms |
+| About | https://www.tuyuesouxin.cn/about/ | Agency background and team information |
+| Contact | https://www.tuyuesouxin.cn/contact/ | Get in touch for China advertising support |
+
+## Popular Blog Articles
+
+- [China Mobile Internet Spring 2026](https://www.tuyuesouxin.cn/blog/china-mobile-internet-spring-2026/) — Latest mobile internet trends and stats
+- [Baidu Demographics: 735M+ Users](https://www.tuyuesouxin.cn/blog/baidu-demographics-who-are-these-735m-users/) — Baidu Search user demographics and behavior
+- [Bilibili Demographics: Gen Z Users](https://www.tuyuesouxin.cn/blog/bilibili-demographics-who-are-these-gen-z-users/) — Bilibili's Gen Z audience profile
+- [Xiaohongshu Demographics: 350M+ MAU](https://www.tuyuesouxin.cn/blog/xiaohongshu-demographics-who-are-these-350m-users/) — Xiaohongshu user demographics
+- [Kuaishou Demographics: 400M+ Users](https://www.tuyuesouxin.cn/blog/kuaishou-demographics-who-are-these-400m-users/) — Kuaishou user demographics
+- [Bing China Demographics](https://www.tuyuesouxin.cn/blog/bing-china-demographics-who-are-these-users/) — Bing China premium audience profile
+- [Doubao Paid: What It Means for GEO](https://www.tuyuesouxin.cn/blog/doubao-paid-what-it-means-for-geo/) — Implications of Doubao's paid model for GEO
+- [GEO Channel Weight 2026](https://www.tuyuesouxin.cn/blog/geo-channel-weight-2026/) — GEO channel weight analysis for 2026
+- [Ocean Engine Overview](https://www.tuyuesouxin.cn/blog/ocean-engine-overview/) — Complete guide to ByteDance's Ocean Engine
+- [CPM vs oCPM vs eCPM Explained](https://www.tuyuesouxin.cn/blog/cpm-ocpm-ecpm-explained/) — China ad pricing models compared
+- [CPM Is Rising: Is That Bad?](https://www.tuyuesouxin.cn/blog/cpm-is-rising-bad/) — Analysis of rising CPM trends in China
+
+## Language Versions
+
+- English: https://www.tuyuesouxin.cn/
+- 日本語: https://www.tuyuesouxin.cn/ja/
+- 한국어: https://www.tuyuesouxin.cn/ko/

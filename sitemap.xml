@@ -1,166 +1,941 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Core Pages -->
   <url>
     <loc>https://www.tuyuesouxin.cn/</loc>
-    <lastmod>2026-04-30</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/"/>
   </url>
   <url>
     <loc>https://www.tuyuesouxin.cn/about/</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/about/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/about/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/about/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/about/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/about/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/about/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/about/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/about/"/>
   </url>
   <url>
     <loc>https://www.tuyuesouxin.cn/why-tmg/</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/why-tmg/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/why-tmg/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/why-tmg/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/why-tmg/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/why-tmg/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/why-tmg/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/why-tmg/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/why-tmg/"/>
   </url>
   <url>
     <loc>https://www.tuyuesouxin.cn/pricing/</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/pricing/"/>
   </url>
   <url>
-    <loc>https://www.tuyuesouxin.cn/client-stories/</loc>
-    <lastmod>2026-04-30</lastmod>
+    <loc>https://www.tuyuesouxin.cn/ja/pricing/</loc>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/pricing/"/>
   </url>
   <url>
-    <loc>https://www.tuyuesouxin.cn/client-stories/farmskins/</loc>
-    <lastmod>2026-04-30</lastmod>
+    <loc>https://www.tuyuesouxin.cn/ko/pricing/</loc>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.tuyuesouxin.cn/client-stories/ai-semiconductor/</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/pricing/"/>
   </url>
   <url>
     <loc>https://www.tuyuesouxin.cn/contact/</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/contact/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/contact/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/contact/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/contact/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/contact/"/>
   </url>
   <url>
     <loc>https://www.tuyuesouxin.cn/faqs/</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/faqs/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/faqs/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/faqs/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/faqs/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/faqs/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/faqs/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/faqs/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/faqs/"/>
   </url>
   <url>
     <loc>https://www.tuyuesouxin.cn/geo/</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/geo/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/geo/"/>
   </url>
-
-  <!-- Services -->
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/geo/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/geo/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/geo/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/geo/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/geo/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/geo/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/client-stories/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/client-stories/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/client-stories/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/client-stories/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/client-stories/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/client-stories/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/client-stories/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/client-stories/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/client-stories/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/client-stories/farmskins/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/client-stories/farmskins/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/client-stories/farmskins/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/client-stories/farmskins/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/client-stories/farmskins/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/client-stories/farmskins/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/client-stories/farmskins/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/client-stories/farmskins/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/client-stories/farmskins/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/client-stories/ai-semiconductor/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/client-stories/ai-semiconductor/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/client-stories/ai-semiconductor/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/client-stories/ai-semiconductor/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/client-stories/ai-semiconductor/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/client-stories/ai-semiconductor/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/client-stories/ai-semiconductor/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/client-stories/ai-semiconductor/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/client-stories/ai-semiconductor/"/>
+  </url>
   <url>
     <loc>https://www.tuyuesouxin.cn/services/</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/services/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/services/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/services/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/services/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/services/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/services/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/services/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/services/"/>
   </url>
   <url>
     <loc>https://www.tuyuesouxin.cn/services/baidu/</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/services/baidu/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/services/baidu/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/services/baidu/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/services/baidu/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/services/baidu/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/services/baidu/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/services/baidu/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/services/baidu/"/>
   </url>
   <url>
     <loc>https://www.tuyuesouxin.cn/services/wechat/</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/services/wechat/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/services/wechat/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/services/wechat/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/services/wechat/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/services/wechat/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/services/wechat/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/services/wechat/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/services/wechat/"/>
   </url>
   <url>
     <loc>https://www.tuyuesouxin.cn/services/douyin/</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/services/douyin/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/services/douyin/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/services/douyin/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/services/douyin/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/services/douyin/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/services/douyin/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/services/douyin/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/services/douyin/"/>
   </url>
   <url>
     <loc>https://www.tuyuesouxin.cn/services/xiaohongshu/</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/services/xiaohongshu/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/services/xiaohongshu/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/services/xiaohongshu/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/services/xiaohongshu/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/services/xiaohongshu/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/services/xiaohongshu/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/services/xiaohongshu/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/services/xiaohongshu/"/>
   </url>
   <url>
     <loc>https://www.tuyuesouxin.cn/services/bilibili/</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/services/bilibili/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/services/bilibili/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/services/bilibili/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/services/bilibili/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/services/bilibili/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/services/bilibili/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/services/bilibili/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/services/bilibili/"/>
   </url>
   <url>
     <loc>https://www.tuyuesouxin.cn/services/bing/</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-
-  <!-- Blog Articles -->
-  <url>
-    <loc>https://www.tuyuesouxin.cn/blog/ocean-engine-ai-assistant/</loc>
-    <lastmod>2026-04-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/services/bing/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/services/bing/"/>
   </url>
   <url>
-    <loc>https://www.tuyuesouxin.cn/blog/ocean-engine-overview/</loc>
-    <lastmod>2026-04-27</lastmod>
+    <loc>https://www.tuyuesouxin.cn/ja/services/bing/</loc>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/services/bing/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/services/bing/"/>
   </url>
   <url>
-    <loc>https://www.tuyuesouxin.cn/blog/ocean-engine-local-reach/</loc>
-    <lastmod>2026-04-27</lastmod>
+    <loc>https://www.tuyuesouxin.cn/ko/services/bing/</loc>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.tuyuesouxin.cn/blog/douyin-enterprise-account/</loc>
-    <lastmod>2026-04-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.tuyuesouxin.cn/blog/pangle-ads/</loc>
-    <lastmod>2026-04-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.tuyuesouxin.cn/blog/bilibili-genz-marketing/</loc>
-    <lastmod>2026-04-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.tuyuesouxin.cn/blog/xiaohongshu-consumer-research/</loc>
-    <lastmod>2026-04-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.tuyuesouxin.cn/blog/china-mobile-internet-spring-2026/</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/services/bing/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/services/bing/"/>
   </url>
   <url>
     <loc>https://www.tuyuesouxin.cn/blog/</loc>
-    <lastmod>2026-04-30</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/"/>
   </url>
-
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/blog/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/blog/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/blog/china-mobile-internet-spring-2026/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/china-mobile-internet-spring-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/china-mobile-internet-spring-2026/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/blog/china-mobile-internet-spring-2026/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/china-mobile-internet-spring-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/china-mobile-internet-spring-2026/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/blog/china-mobile-internet-spring-2026/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/china-mobile-internet-spring-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/china-mobile-internet-spring-2026/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/blog/ocean-engine-overview/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/ocean-engine-overview/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/ocean-engine-overview/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/blog/ocean-engine-overview/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/ocean-engine-overview/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/ocean-engine-overview/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/blog/ocean-engine-overview/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/ocean-engine-overview/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/ocean-engine-overview/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/blog/ocean-engine-ai-assistant/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/ocean-engine-ai-assistant/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/ocean-engine-ai-assistant/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/blog/ocean-engine-ai-assistant/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/ocean-engine-ai-assistant/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/ocean-engine-ai-assistant/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/blog/ocean-engine-ai-assistant/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/ocean-engine-ai-assistant/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/ocean-engine-ai-assistant/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/blog/ocean-engine-local-reach/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/ocean-engine-local-reach/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/ocean-engine-local-reach/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/blog/ocean-engine-local-reach/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/ocean-engine-local-reach/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/ocean-engine-local-reach/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/blog/ocean-engine-local-reach/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/ocean-engine-local-reach/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/ocean-engine-local-reach/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/blog/pangle-ads/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/pangle-ads/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/pangle-ads/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/blog/pangle-ads/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/pangle-ads/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/pangle-ads/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/blog/pangle-ads/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/pangle-ads/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/pangle-ads/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/blog/douyin-enterprise-account/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/douyin-enterprise-account/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/douyin-enterprise-account/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/blog/douyin-enterprise-account/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/douyin-enterprise-account/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/douyin-enterprise-account/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/blog/douyin-enterprise-account/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/douyin-enterprise-account/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/douyin-enterprise-account/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/blog/bilibili-genz-marketing/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/bilibili-genz-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/bilibili-genz-marketing/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/blog/bilibili-genz-marketing/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/bilibili-genz-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/bilibili-genz-marketing/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/blog/bilibili-genz-marketing/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/bilibili-genz-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/bilibili-genz-marketing/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/blog/xiaohongshu-consumer-research/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/xiaohongshu-consumer-research/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/xiaohongshu-consumer-research/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/blog/xiaohongshu-consumer-research/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/xiaohongshu-consumer-research/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/xiaohongshu-consumer-research/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/blog/xiaohongshu-consumer-research/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/xiaohongshu-consumer-research/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/xiaohongshu-consumer-research/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/blog/cpm-ocpm-ecpm-explained/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/cpm-ocpm-ecpm-explained/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/cpm-ocpm-ecpm-explained/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/blog/cpm-ocpm-ecpm-explained/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/cpm-ocpm-ecpm-explained/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/cpm-ocpm-ecpm-explained/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/blog/cpm-ocpm-ecpm-explained/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/cpm-ocpm-ecpm-explained/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/cpm-ocpm-ecpm-explained/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/blog/cpm-is-rising-bad/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/cpm-is-rising-bad/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/cpm-is-rising-bad/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/blog/cpm-is-rising-bad/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/cpm-is-rising-bad/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/cpm-is-rising-bad/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/blog/cpm-is-rising-bad/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/cpm-is-rising-bad/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/cpm-is-rising-bad/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/blog/attribution-models-guide/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/attribution-models-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/attribution-models-guide/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/blog/attribution-models-guide/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/attribution-models-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/attribution-models-guide/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/blog/attribution-models-guide/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/attribution-models-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/attribution-models-guide/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/blog/ad-billing-models-explained/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/ad-billing-models-explained/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/ad-billing-models-explained/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/blog/ad-billing-models-explained/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/ad-billing-models-explained/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/ad-billing-models-explained/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/blog/ad-billing-models-explained/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/ad-billing-models-explained/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/ad-billing-models-explained/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/blog/smart-bidding-strategies-explained/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/smart-bidding-strategies-explained/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/smart-bidding-strategies-explained/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/blog/smart-bidding-strategies-explained/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/smart-bidding-strategies-explained/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/smart-bidding-strategies-explained/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/blog/smart-bidding-strategies-explained/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/smart-bidding-strategies-explained/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/smart-bidding-strategies-explained/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/blog/geo-channel-weight-2026/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/geo-channel-weight-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/geo-channel-weight-2026/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/blog/geo-channel-weight-2026/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/geo-channel-weight-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/geo-channel-weight-2026/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/blog/geo-channel-weight-2026/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/geo-channel-weight-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/geo-channel-weight-2026/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/blog/bing-china-premium-audience-guide/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/bing-china-premium-audience-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/bing-china-premium-audience-guide/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/blog/bing-china-premium-audience-guide/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/bing-china-premium-audience-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/bing-china-premium-audience-guide/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/blog/bing-china-premium-audience-guide/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/bing-china-premium-audience-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/bing-china-premium-audience-guide/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/blog/bing-china-demographics-who-are-these-users/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/bing-china-demographics-who-are-these-users/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/bing-china-demographics-who-are-these-users/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/blog/bing-china-demographics-who-are-these-users/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/bing-china-demographics-who-are-these-users/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/bing-china-demographics-who-are-these-users/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/blog/bing-china-demographics-who-are-these-users/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/bing-china-demographics-who-are-these-users/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/bing-china-demographics-who-are-these-users/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/blog/bilibili-demographics-who-are-these-gen-z-users/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/bilibili-demographics-who-are-these-gen-z-users/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/bilibili-demographics-who-are-these-gen-z-users/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/blog/bilibili-demographics-who-are-these-gen-z-users/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/bilibili-demographics-who-are-these-gen-z-users/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/bilibili-demographics-who-are-these-gen-z-users/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/blog/bilibili-demographics-who-are-these-gen-z-users/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/bilibili-demographics-who-are-these-gen-z-users/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/bilibili-demographics-who-are-these-gen-z-users/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/blog/xiaohongshu-demographics-who-are-these-350m-users/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/xiaohongshu-demographics-who-are-these-350m-users/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/xiaohongshu-demographics-who-are-these-350m-users/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/blog/xiaohongshu-demographics-who-are-these-350m-users/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/xiaohongshu-demographics-who-are-these-350m-users/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/xiaohongshu-demographics-who-are-these-350m-users/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/blog/xiaohongshu-demographics-who-are-these-350m-users/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/xiaohongshu-demographics-who-are-these-350m-users/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/xiaohongshu-demographics-who-are-these-350m-users/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/blog/kuaishou-demographics-who-are-these-400m-users/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/kuaishou-demographics-who-are-these-400m-users/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/kuaishou-demographics-who-are-these-400m-users/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/blog/kuaishou-demographics-who-are-these-400m-users/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/kuaishou-demographics-who-are-these-400m-users/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/kuaishou-demographics-who-are-these-400m-users/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/blog/kuaishou-demographics-who-are-these-400m-users/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/kuaishou-demographics-who-are-these-400m-users/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/kuaishou-demographics-who-are-these-400m-users/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/blog/baidu-demographics-who-are-these-735m-users/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/baidu-demographics-who-are-these-735m-users/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/baidu-demographics-who-are-these-735m-users/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/blog/baidu-demographics-who-are-these-735m-users/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/baidu-demographics-who-are-these-735m-users/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/baidu-demographics-who-are-these-735m-users/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/blog/baidu-demographics-who-are-these-735m-users/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/baidu-demographics-who-are-these-735m-users/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/baidu-demographics-who-are-these-735m-users/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/blog/doubao-paid-what-it-means-for-geo/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/doubao-paid-what-it-means-for-geo/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/doubao-paid-what-it-means-for-geo/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ja/blog/doubao-paid-what-it-means-for-geo/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/doubao-paid-what-it-means-for-geo/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/doubao-paid-what-it-means-for-geo/"/>
+  </url>
+  <url>
+    <loc>https://www.tuyuesouxin.cn/ko/blog/doubao-paid-what-it-means-for-geo/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/doubao-paid-what-it-means-for-geo/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/doubao-paid-what-it-means-for-geo/"/>
+  </url>
 </urlset>
