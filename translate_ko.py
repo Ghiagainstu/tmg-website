@@ -1628,6 +1628,248 @@ KO = {
     "— 간체 중국어 자막을 추가하세요. 일부 광고주는 브랜드 이름과 주요 판매 포인트에 중국어 텍스트 오버레이도 추가합니다.",
 "— If your TikTok has English voiceover, consider replacing it with Chinese voiceover or keeping it with Chinese subtitles.":
     "— TikTok에 영어 음성 해설이 있는 경우 중국어 음성 해설로 교체하거나 중국어 자막과 함께 유지하는 것을 고려하세요.",
+
+# ===== Round 9: Final FAQ batch =====
+# Xiaohongshu FAQ remaining
+"China's influencer landscape has evolved into three distinct roles:":
+    "중국의 인플루언서 환경은 세 가지 뚜렷한 역할로 진화했습니다:",
+"Everyday consumer with 1K-100K followers": "1K~100K 팔로워를 가진 일반 소비자",
+'Professional + relatable ("They know the product")':
+    '전문적이면서도 친근함 ("그들이 제품을 안다")',
+"Lead generation, customer service, sales support":
+    "리드 생성, 고객 서비스, 영업 지원",
+"Confused about which influencer type fits your goals? Our team manages KOL campaigns, KOC seeding networks, and KOS training programs.":
+    "어떤 인플루언서 유형이 목표에 맞는지 혼란스러우신가요? 당사 팀은 KOL 캠페인, KOC 시딩 네트워크, KOS 교육 프로그램을 관리합니다.",
+"Download our China Influencer Strategy Guide": "중국 인플루언서 전략 가이드 다운로드",
+'Chinese consumers on XHS conduct remarkably deep research before purchasing.':
+    '중국 소비자는 XHS에서 구매 전에 놀라울 정도로 깊은 조사를 수행합니다.',
+'– "How to find a postpartum nanny?" → Browses 60 notes':
+    '– "산후 베이비시터 찾는 방법?" → 60개 노트 열람',
+'– "What requirements should I specify for a nanny?" → Browses 34 notes':
+    '– "베이비시터에게 어떤 조건을 지정해야 하나요?" → 34개 노트 열람',
+'Total: 116 notes researched before making a decision.':
+    '합계: 결정 전 116개 노트 조사.',
+"This 3-stage funnel shows why simply being present isn't enough—you need content that addresses users at each phase:":
+    "이 3단계 퍼널은 단순히 존재하는 것만으로는 충분하지 않으며 각 단계의 사용자를 대상으로 하는 콘텐츠가 필요함을 보여줍니다:",
+'Educational content answering broad category questions':
+    '광범위한 카테고리 질문에 답하는 교육 콘텐츠',
+'Comparison content helping users refine criteria':
+    '사용자가 기준을 세분화하는 데 도움이 되는 비교 콘텐츠',
+'Validation content (reviews, case studies) building trust':
+    '신뢰를 구축하는 검증 콘텐츠(리뷰, 사례 연구)',
+'Is your content addressing all three search stages? Our content strategists analyze search data to identify gaps in your funnel.':
+    '귀하의 콘텐츠가 세 가지 검색 단계를 모두 다루고 있나요? 당사의 콘텐츠 전략가가 검색 데이터를 분석하여 퍼널의 격차를 식별합니다.',
+
+# Baidu FAQ remaining
+"Yes. Baidu supports account opening for foreign companies and entities. You do not need a Chinese domestic business license to get started — we handle the process for you.":
+    "네. Baidu는 외국 기업 및 법인의 계정 개설을 지원합니다. 시작하는 데 중국 현지 영업 허가증이 필요하지 않습니다 — 당사가 프로세스를 처리합니다.",
+"Cost per click: There is no uniform price. Low-competition keywords may cost a few yuan per click. In highly competitive industries, popular keywords can cost significantly more.":
+    "클릭당 비용: 균일한 가격은 없습니다. 경쟁이 낮은 키워드는 클릭당 몇 위안일 수 있습니다. 경쟁이 치열한 업종에서는 인기 키워드의 비용이 상당히 높아질 수 있습니다.",
+"Common prohibited words include absolute claims such as: cheapest, number one in the country, 100% effective, guaranteed results, and similar superlatives. Also prohibited are terms related to medical efficacy (unless licensed), unsubstantiated comparative claims, and content violating Chinese laws.":
+    "일반적인 금지어: 최저가, 전국 1위, 100% 효과, 결과 보장 및 유사한 최상급 표현. 또한 의료 효능 관련 용어(라이선스 없는 경우), 입증되지 않은 비교 주장, 중국 법률 위반 콘텐츠가 금지됩니다.",
+"Yes. Regulated industries such as healthcare and finance must provide industry-specific licenses, avoid efficacy claims in all ad copy and landing pages, and comply with strict Baidu review standards.":
+    "네. 의료, 금융 등의 규제 업종은 업종별 라이선스를 제공하고, 모든 광고 카피 및 랜딩 페이지에서 효능 주장을 피하며, 엄격한 Baidu 검토 기준을 준수해야 합니다.",
+"Some industries need special approval before they can run ads. Check with us before you plan your campaign — it saves time.":
+    "일부 업종은 광고를 게재하기 전에 특별 승인이 필요합니다. 캠페인을 계획하기 전에 문의해 주세요 — 시간을 절약할 수 있습니다.",
+"The avatar must comply with Chinese laws: no political, violent, or discriminatory content, and no imagery associated with prohibited industries.":
+    "아바타는 중국 법률을 준수해야 합니다: 정치적, 폭력적, 차별적 콘텐츠 및 금지 업종과 관련된 이미지가 없어야 합니다.",
+"Unlike platforms where ads interrupt, XHS thrives on authentic user-generated content (种草, \"seeding\")—everyday consumers sharing real experiences.":
+    "광고가 중단되는 플랫폼과 달리, XHS는 진정한 사용자 생성 콘텐츠(种草, \"시딩\")로 성장합니다 — 일반 소비자가 실제 경험을 공유합니다.",
+"Three-number hero card showing 350M+ (MAU) | 73% (monthly search rate) | 90% (active search).":
+    "세 가지 숫자 히어로 카드: 3억 5,000만+(MAU) | 73%(월간 검색률) | 90%(활성 검색).",
+"KOS is Xiaohongshu's innovation:": "KOS는 샤오홍슈의 혁신입니다:",
+
+# GEO remaining
+"GEO stands for Generative Engine Optimization. It is the practice of making your brand and content easy for AI systems to find, understand, and cite in their generated answers.":
+    "GEO는 생성 엔진 최적화를 의미합니다. AI 시스템이 귀하의 브랜드와 콘텐츠를 찾고, 이해하고, 생성된 답변에서 인용하기 쉽게 만드는 방법입니다.",
+"What AI platforms does 중국 GEO cover?": "중국 GEO는 어떤 AI 플랫폼을 다루나요?",
+"We cover all major Chinese AI platforms: DeepSeek, Douyin AI (Doubao), Kimi (Moonshot AI), Wenxin (Baidu AI), and Tongyi (Alibaba). We work across all of them — our optimization is semantic-based and platform-agnostic.":
+    "주요 중국 AI 플랫폼을 모두 다룹니다: DeepSeek, Douyin AI(豆包), Kimi(Moonshot AI), Wenxin(Baidu AI), Tongyi(Alibaba). 모두에서 작동합니다 — 당사의 최적화는 의미론적 기반이며 플랫폼에 구애받지 않습니다.",
+"Multi-platform citation audit (Douyin, DeepSeek, Kimi, Wenxin)":
+    "멀티 플랫폼 인용 감사(Douyin, DeepSeek, Kimi, Wenxin)",
+"GEO opportunity score by platform": "플랫폼별 GEO 기회 점수",
+"30-day roadmap with prioritized recommendations":
+    "우선순위가 지정된 권장 사항이 포함된 30일 로드맵",
+"For brands ready to enter China AI search at scale":
+    "중국 AI 검색에 본격적으로 진출할 준비가 된 브랜드",
+"30 keywords (prompt phrases) optimized": "30개 키워드(프롬프트 구문) 최적화",
+"AI-friendly content creation & distribution": "AI 친화적인 콘텐츠 생성 및 배포",
+"Proprietary brand knowledge base built by our content team":
+    "당사 콘텐츠 팀이 구축한 독점 브랜드 지식 기반",
+"Sentiment monitoring & reputation management":
+    "감성 모니터링 및 평판 관리",
+"Quick answers about 중국 GEO and how it works.":
+    "중국 GEO 및 작동 방식에 대한 빠른 답변.",
+"SEO (Search Engine Optimization) aims to rank your website high in traditional search results. GEO (Generative Engine Optimization) aims to get your brand mentioned inside AI answers.":
+    "SEO(검색 엔진 최적화)는 전통적인 검색 결과에서 웹사이트 순위를 높이는 것을 목표로 합니다. GEO(생성 엔진 최적화)는 AI 답변 내에서 브랜드가 언급되도록 하는 것을 목표로 합니다.",
+"Most clients see measurable results within 1–2 weeks. Initial citation improvements can appear within 3–5 business days after deployment.":
+    "대부분의 클라이언트는 1~2주 이내에 측정 가능한 결과를 확인합니다. 배포 후 3~5영업일 이내에 초기 인용 개선이 나타날 수 있습니다.",
+"What happens to our citations if we stop the GEO service?":
+    "GEO 서비스를 중단하면 인용은 어떻게 되나요?",
+"Citations don't disappear immediately — but without ongoing optimization, competitors who invest in GEO will gradually overtake your share of voice.":
+    "인용이 즉시 사라지지는 않지만, 지속적인 최적화가 없으면 GEO에 투자하는 경쟁자가 점차 점유율을 빼앗을 것입니다.",
+"How is 중국 GEO different from Western GEO?":
+    "중국 GEO가 서양 GEO와 어떻게 다른가요?",
+"To begin, we need: your brand assets (logo, tagline, key messages), website URL, product/service descriptions, competitor brand names and URLs, and any existing marketing materials.":
+    "시작하려면 다음이 필요합니다: 브랜드 자산(로고, 태그라인, 핵심 메시지), 웹사이트 URL, 제품/서비스 설명, 경쟁사 브랜드명 및 URL, 기존 마케팅 자료.",
+
+# Bilibili remaining
+"Yes. Foreign companies can advertise on Bilibili, but the process requires working with a certified agency partner.":
+    "네. 외국 기업이 Bilibili에서 광고할 수 있지만, 공인 에이전시 파트너와 협력해야 합니다.",
+"Bilibili's advertising platform is called Bilibili MCN (member.bilibili.com/platform/ad), and the ad review process is managed through this platform.":
+    "Bilibili의 광고 플랫폼은 Bilibili MCN(member.bilibili.com/platform/ad)이라고 하며, 광고 검토 프로세스는 이 플랫폼을 통해 관리됩니다.",
+"What makes Bilibili different from other Chinese ad platforms?":
+    "Bilibili가 다른 중국 광고 플랫폼과 다른 점은 무엇인가요?",
+"Bilibili is a video-centric community with a highly engaged, younger audience (predominantly 18-35, 82% under 35).":
+    "Bilibili는 참여도가 높은 젊은 오디언스(주로 18~35세, 82%가 35세 미만)를 가진 비디오 중심 커뮤니티입니다.",
+"What documents are needed to open a Bilibili ad account?":
+    "Bilibili 광고 계정 개설에 필요한 서류는 무엇인가요?",
+"For overseas companies working through an agency:": "에이전시를 통해 작업하는 해외 기업의 경우:",
+"(a) Company registration documents — business license, certificate of incorporation, or equivalent (translated into Chinese);":
+    "(a) 회사 등록 서류 — 영업 허가증, 설립 증명서 또는 이에 상응하는 서류(중국어 번역본);",
+"(b) Brand trademark registration certificate in China, or trademark authorization letter if you do not own the trademark;":
+    "(b) 중국 내 브랜드 상표 등록 증명서 또는 상표를 소유하지 않은 경우 상표 인증서;",
+"(d) Industry-specific licenses if applicable — healthcare, education, finance, gaming, and other regulated sectors;":
+    "(d) 해당되는 경우 업종별 라이선스 — 의료, 교육, 금융, 게임 및 기타 규제 분야;",
+"(e) For HK/Macau/Taiwan companies: BR/CR certificate or equivalent identity document.":
+    "(e) 홍콩/마카오/대만 기업의 경우: BR/CR 증명서 또는 이에 상응하는 신분 증명서.",
+"How long does Bilibili ad account approval take?":
+    "Bilibili 광고 계정 승인에는 얼마나 걸리나요?",
+"Account qualification review typically takes 1 to 5 business days, depending on document completeness and industry.":
+    "계정 자격 검토는 일반적으로 1~5영업일이 소요되며, 서류 완전성과 업종에 따라 다릅니다.",
+"Ad creative review is usually 4 to 12 hours for standard content. During high-traffic periods (Bilibili events, holidays), it may extend.":
+    "광고 크리에이티브 검토는 표준 콘텐츠의 경우 일반적으로 4~12시간입니다. 트래픽이 많은 기간(Bilibili 이벤트, 휴일)에는 연장될 수 있습니다.",
+"What is the minimum budget for Bilibili advertising?":
+    "Bilibili 광고의 최소 예산은 얼마인가요?",
+"The minimum daily budget per campaign is approximately USD 30 to 50 (CNY 200 to 350) depending on the ad format and targeting.":
+    "캠페인당 최소 일일 예산은 광고 형식과 타겟팅에 따라 약 USD 30~50(CNY 200~350)입니다.",
+"Note: Bilibili's auction system is often less crowded than Baidu or Douyin, which means lower CPM/CPC rates for early movers in your category.":
+    "참고: Bilibili의 경매 시스템은 Baidu나 Douyin보다 경쟁이 적은 경우가 많아, 귀하의 카테고리에서 얼리 무버에게 더 낮은 CPM/CPC 요금을 의미합니다.",
+"How does Bilibili charge for advertising?": "Bilibili 광고 요금은 어떻게 부과되나요?",
+"Bilibili supports several billing models:": "Bilibili는 여러 청구 모델을 지원합니다:",
+"— Pay per 1,000 impressions. Best for brand awareness campaigns.":
+    "— 1,000노출당 과금. 브랜드 인지도 캠페인에 가장 적합합니다.",
+"— Pay per click. Works for traffic-driving campaigns.":
+    "— 클릭당 과금. 트래픽 유도 캠페인에 효과적입니다.",
+"— Optimized models where you define a conversion goal and the algorithm optimizes delivery. These typically cost more per event but deliver better ROAS.":
+    "— 전환 목표를 정의하면 알고리즘이 전달을 최적화하는 최적화 모델. 일반적으로 이벤트당 비용이 더 많이 들지만 더 나은 ROAS를 제공합니다.",
+"— Used for video ads, charged when a user watches a defined duration of your video.":
+    "— 비디오 광고에 사용, 사용자가 설정된 시간 동안 비디오를 시청하면 과금됩니다.",
+"Billing is pre-paid for most advertisers. Some established accounts with significant spend history may qualify for monthly invoicing.":
+    "대부분의 광고주는 선불로 청구됩니다. 상당한 지출 기록이 있는 일부 기존 계정은 월별 청구 대상이 될 수 있습니다.",
+"What are typical CPM and CPC rates on Bilibili?":
+    "Bilibili의 일반적인 CPM 및 CPC 요금은 어떻게 되나요?",
+"Bilibili generally has lower rates than mainstream platforms because the auction is less competitive.":
+    "Bilibili는 경매 경쟁이 덜하기 때문에 일반적으로 주류 플랫폼보다 요금이 낮습니다.",
+"CPM: USD 2 to 8 (CNY 15 to 55) per 1,000 impressions, depending on placement and targeting.":
+    "CPM: 1,000노출당 USD 2~8(CNY 15~55), 배치와 타겟팅에 따라 다름.",
+"CPC: USD 0.30 to 1.20 (CNY 2 to 8) per click. Gaming, tech, and anime-adjacent categories tend to have lower CPCs.":
+    "CPC: 클릭당 USD 0.30~1.20(CNY 2~8). 게임, 기술, 애니메이션 관련 카테고리는 CPC가 낮은 경향이 있습니다.",
+"CPA through oCPM: USD 8 to 30 (CNY 55 to 210) depending on conversion event and audience fit.":
+    "oCPM을 통한 CPA: USD 8~30(CNY 55~210), 전환 이벤트와 오디언스 적합성에 따라 다름.",
+"These are indicative benchmarks. Actual costs depend on creative quality, audience targeting precision, and industry competition.":
+    "이는 참고 벤치마크입니다. 실제 비용은 크리에이티브 품질, 오디언스 타겟팅 정밀도, 업종 경쟁에 따라 다릅니다.",
+"Most new international advertisers operate on a pre-paid basis — you deposit funds before campaigns run.":
+    "대부분의 신규 국제 광고주는 선불 방식으로 운영됩니다 — 캠페인 실행 전에 자금을 입금합니다.",
+"If credit terms are important to your operation, discuss this with us during onboarding.":
+    "신용 조건이 운영에 중요한 경우, 온보딩 중에 문의해 주세요.",
+"Bilibili offers a variety of formats, with video as the dominant format:":
+    "Bilibili는 다양한 형식을 제공하며, 비디오가 주요 형식입니다:",
+"— Short video ads that appear in the user's feed or between videos. The most common format.":
+    "— 사용자 피드 또는 비디오 사이에 표시되는 숏폼 비디오 광고. 가장 일반적인 형식.",
+"— Display banners on the Bilibili homepage and section pages.":
+    "— Bilibili 홈페이지 및 섹션 페이지의 디스플레이 배너.",
+"— Sponsored content created by Bilibili creators. This is often the most effective format on Bilibili.":
+    "— Bilibili 크리에이터가 제작한 스폰서 콘텐츠. Bilibili에서 가장 효과적인 형식인 경우가 많습니다.",
+"— A branded landing page experience for major campaigns.":
+    "— 주요 캠페인을 위한 브랜드 랜딩 페이지 경험.",
+"Video creative is central to Bilibili. Static ads exist but video consistently outperforms them, especially for engagement.":
+    "비디오 크리에이티브는 Bilibili의 핵심입니다. 정적 광고도 있지만 비디오가 특히 참여도에서 지속적으로 우수합니다.",
+"Can I work with Bilibili creators (UP主) for advertising?":
+    "Bilibili 크리에이터(UP主)와 광고 협업이 가능한가요?",
+"Yes — and it is often the most effective approach on Bilibili.":
+    "네 — Bilibili에서 가장 효과적인 접근 방식인 경우가 많습니다.",
+"Commercial collaboration through Bilibili's platform":
+    "Bilibili 플랫폼을 통한 상업적 협업",
+"— Working with creators directly through agencies or talent management (MCN) companies.":
+    "— 에이전시 또는 인재 관리(MCN) 회사를 통해 크리에이터와 직접 작업.",
+"— Run platform ads + creator collaborations simultaneously for maximum reach and credibility.":
+    "— 최대 도달 범위와 신뢰성을 위해 플랫폼 광고 + 크리에이터 협업을 동시에 실행.",
+"Bilibili's creator ecosystem covers virtually every interest: gaming, anime, tech, lifestyle, education, music, and more.":
+    "Bilibili의 크리에이터 생태계는 거의 모든 관심 분야를 포괄합니다: 게임, 애니메이션, 기술, 라이프스타일, 교육, 음악 등.",
+"Bilibili restricts or prohibits advertising for:":
+    "Bilibili는 다음에 대한 광고를 제한하거나 금지합니다:",
+"Finance: P2P lending, cryptocurrency, private equity, microlending, securities trading platforms;":
+    "금융: P2P 대출, 암호화폐, 사모펀드, 소액 대출, 증권 거래 플랫폼;",
+"Healthcare: Prescription drugs, unapproved medical devices or treatments, online pharmaceutical sales;":
+    "의료: 처방약, 미승인 의료 기기 또는 치료, 온라인 의약품 판매;",
+"Products requiring government-issued special permits that are not provided;":
+    "제공되지 않은 정부 발급 특별 허가가 필요한 제품;",
+"Some restricted categories may advertise with special qualification approval. Verify before planning campaigns.":
+    "일부 제한 카테고리는 특별 자격 승인을 받으면 광고할 수 있습니다. 캠페인 계획 전에 확인하세요.",
+"Bilibili's audience values authenticity, humor, and genuine knowledge sharing.":
+    "Bilibili의 오디언스는 진정성, 유머, 진정한 지식 공유를 중요시합니다.",
+"The best Bilibili campaigns usually involve some level of native content or creator collaboration, not just direct brand promotion.":
+    "최고의 Bilibili 캠페인은 일반적으로 직접적인 브랜드 프로모션뿐만 아니라 어느 정도의 네이티브 콘텐츠나 크리에이터 협업을 포함합니다.",
+"(1) Exaggerated or superlative claims — \"best,\" \"lowest price,\" \"100% effective,\" and similar language;":
+    "(1) 과장되거나 최상급 표현 — \"최고\", \"최저가\", \"100% 효과\" 및 유사한 언어;",
+"(2) Content that mimics organic posts without proper advertising disclosure — Bilibili reviewers are strict about this;":
+    "(2) 적절한 광고 공개 없이 오가닉 게시물을 모방하는 콘텐츠 — Bilibili 검토자가 이에 대해 엄격합니다;",
+"(3) Landing page mismatch — ad content must match the landing page exactly;":
+    "(3) 랜딩 페이지 불일치 — 광고 내용이 랜딩 페이지와 정확히 일치해야 합니다;",
+"(4) Missing or invalid ICP filing for the landing page URL;":
+    "(4) 랜딩 페이지 URL에 대한 ICP 등록 누락 또는 무효;",
+"(5) References to Bilibili's IP, mascot (2233娘), or trademarked elements without authorization;":
+    "(5) 허가 없는 Bilibili의 IP, 마스코트(2233娘) 또는 상표 요소에 대한 언급;",
+"(6) Content referencing gaming restrictions, age-gating, or other policy-sensitive topics without proper context;":
+    "(6) 적절한 맥락 없이 게임 제한, 연령 제한 또는 기타 정책에 민감한 주제를 언급하는 콘텐츠;",
+"(7) Content that could be perceived as exploiting youth audiences or controversial social topics.":
+    "(7) 젊은 오디언스를 착취하거나 논란의 여지가 있는 사회적 주제로 인식될 수 있는 콘텐츠.",
+"We audit creative against Bilibili's compliance guidelines before submission to minimize rejections.":
+    "제출 전 Bilibili의 규정 준수 가이드라인에 따라 크리에이티브를 감사하여 거부를 최소화합니다.",
+"You can repurpose video content, but direct cross-posting without adaptation is not recommended.":
+    "비디오 콘텐츠를 재사용할 수 있지만, 적응 없이 직접 교차 게시하는 것은 권장되지 않습니다.",
+"— Bilibili users watch longer videos (5 to 30+ minutes). Short 15-60 second clips may not perform well.":
+    "— Bilibili 사용자는 더 긴 비디오(5~30분+)를 시청합니다. 15~60초짜리 짧은 클립은 성능이 좋지 않을 수 있습니다.",
+"— Add simplified Chinese subtitles if your video has dialogue;":
+    "— 비디오에 대화가 있는 경우 간체 중국어 자막을 추가하세요;",
+"— Adapt to Bilibili's informal, community-driven tone. Content with humor and genuine insight performs best.":
+    "— Bilibili의 비공식적이고 커뮤니티 중심적인 톤에 적응하세요. 유머와 진정한 통찰력이 있는 콘텐츠가 가장 효과적입니다.",
+"— If using creator content, work with Bilibili creators rather than porting Douyin creator collaborations directly.":
+    "— 크리에이터 콘텐츠를 사용하는 경우, Douyin 크리에이터 협업을 직접 가져오기보다 Bilibili 크리에이터와 작업하세요.",
+"For best results, create Bilibili-specific content or significantly adapt existing creative to fit the platform's style.":
+    "최상의 결과를 위해 Bilibili 특화 콘텐츠를 만들거나 기존 크리에이티브를 플랫폼 스타일에 맞게 크게 조정하세요.",
+
+# Bing remaining  
+"Bing China's user base represents a premium audience: highly educated, urban, and with above-average income levels.":
+    "Bing China의 사용자 기반은 프리미엄 오디언스를 대표합니다: 고학력, 도시 거주, 평균 이상의 소득 수준.",
+"More than 75% hold college degrees, compared to 57% national average":
+    "75% 이상이 대학 학위 보유(전국 평균 57% 대비)",
+"27.5% overrepresentation in personal monthly income over ¥8,000 (TGI 127.5)":
+    "월 개인 소득 ¥8,000 초과에서 27.5% 초과 대표(TGI 127.5)",
+"This makes Bing China users ideal for brands targeting educated professionals, urban consumers, and high-value segments.":
+    "이는 Bing China 사용자를 교육받은 전문직, 도시 소비자, 고가치 세그먼트를 타겟팅하는 브랜드에 이상적으로 만듭니다.",
+"How do Bing China users differ from Baidu users?":
+    "Bing China 사용자는 Baidu 사용자와 어떻게 다른가요?",
+"Bing China attracts a younger, more educated, and higher-income demographic compared to Baidu's broader, more diversified user base.":
+    "Bing China는 Baidu의 더 넓고 다양한 사용자 기반에 비해 더 젊고, 교육 수준이 높고, 소득이 높은 인구통계를 유치합니다.",
+"For international advertisers, this means Bing China offers a more premium audience, while Baidu provides maximum reach.":
+    "국제 광고주에게 이는 Bing China가 더 프리미엄한 오디언스를 제공하는 반면, Baidu는 최대 도달 범위를 제공한다는 것을 의미합니다.",
+"Bing China users show strong purchasing intent across several categories, with average planned spending of ¥3,040.1 per month.":
+    "Bing China 사용자는 여러 카테고리에서 강한 구매 의도를 보이며, 월평균 계획 지출액은 ¥3,040.1입니다.",
+"Additionally, 68% express interest in AI technology, making them early adopters for tech products and services.":
+    "또한 68%가 AI 기술에 관심을 표현하여 기술 제품 및 서비스의 얼리 어답터입니다.",
+"59% of users research products before purchase, making search ads effective for capturing intent":
+    "사용자의 59%가 구매 전 제품을 조사하므로, 검색 광고가 의도 포착에 효과적입니다",
+"With 68% interest in AI, technology-focused display ads see higher engagement":
+    "AI 관심도 68%로, 기술 중심 디스플레이 광고가 더 높은 참여도를 보입니다",
+"Education and professional service promotions:": "교육 및 전문 서비스 프로모션:",
+"Over 75% college educated, with planned education spending averaging ¥3,040.1":
+    "75% 이상 대학 교육, 계획된 교육 지출 평균 ¥3,040.1",
+"Higher income levels support premium product advertising":
+    "높은 소득 수준이 프리미엄 제품 광고를 지원합니다",
+"Additionally, 62% of users show greater willingness to engage with ads compared to average users.":
+    "또한 62%의 사용자가 평균 사용자보다 광고에 참여할 의사가 더 높습니다.",
 }
 
 def translate():
