@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>블로그 | Tuyue Media Gateway</title>
+  <link rel="canonical" href="https://www.tuyuesouxin.cn/ko/blog/index.html">
+  <link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/index.html">
+  <link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn">
+  <link rel="alternate" hreflang="x-default" href="https://www.tuyuesouxin.cn">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/assets/og-image.png">
+<meta name="description" content="Insights, news, and expert perspectives on China's digital advertising landscape from the Tuyue Media Gateway team.">
+  <link rel="canonical" href="https://www.tuyuesouxin.cn/ko/blog">
+  <meta property="og:url" content="https://www.tuyuesouxin.cn/ko/blog">
+  <meta property="og:image" content="https://www.tuyuesouxin.cn/assets/og-image.png">
+  <meta name="twitter:image" content="https://www.tuyuesouxin.cn/assets/twitter-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-bg: #080c14;
+      --color-bg-alt: #0d1220;
+      --color-bg-card: #111827;
+      --color-text-primary: #f0f4ff;
+      --color-text-secondary: #a3b1cc;
+      --color-text-muted: #64748b;
+      --color-primary: #2d6be4;
+      --color-primary-hover: #1e55c4;
+      --color-accent: #c9a84c;
+      --color-accent-light: #e8c87a;
+      --color-border: #1e2d45;
+      --color-border-hover: #2d4060;
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-size-xs: 0.75rem;
+      --font-size-sm: 0.875rem;
+      --font-size-base: 1rem;
+      --font-size-lg: 1.125rem;
+      --font-size-xl: 1.25rem;
+      --font-size-2xl: 1.5rem;
+      --font-size-3xl: 1.875rem;
+      --font-size-4xl: 2.25rem;
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --transition-fast: 150ms ease;
+      --transition-base: 250ms ease;
+      --radius-sm: 0.375rem;
+      --radius-md: 0.5rem;
+      --radius-lg: 0.75rem;
+      --radius-xl: 1rem;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--color-bg);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--color-border);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--color-border-hover);
+    }
+
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--color-bg);
+      color: var(--color-text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 var(--space-6);
+    }
+
+    /* ── Header ── */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(8, 12, 20, 0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .header__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+    .header__logo {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      text-decoration: none;
+      transition: opacity var(--transition-fast);
+    }
+    .header__logo:hover { opacity: 0.85; }
+    .header__logo-icon { width: 40px; height: 40px; flex-shrink: 0; }
+    .header__logo-text { font-size: var(--font-size-xl); font-weight: 700; color: var(--color-text-primary); letter-spacing: -0.02em; }
+    .header__logo-text span { color: var(--color-accent); }
+
+    .header__nav {
+      display: flex;
+      align-items: center;
+      gap: var(--space-8);
+    }
+    .header__nav-link {
+      color: var(--color-text-secondary);
+      text-decoration: none;
+      font-size: var(--font-size-sm);
+      font-weight: 500;
+      transition: color var(--transition-fast);
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+    }
+    .header__nav-link:hover,
+    .header__nav-link.active { color: var(--color-text-primary); }
+    .header__nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--color-accent);
+      transition: width var(--transition-fast);
+    }
+    .header__nav-link:hover::after,
+    .header__nav-link.active::after { width: 100%; }
+
+    .header__dropdown { position: relative; }
+    .header__dropdown-trigger {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+    }
+    .header__dropdown-arrow { transition: transform var(--transition-fast); }
+    .header__dropdown:hover .header__dropdown-arrow,
+    .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
+    .header__dropdown-menu {
+      position: absolute;
+      top: calc(100% + 8px); left: 0;
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 10px;
+      padding: 8px var(--space-2) var(--space-2);
+      min-width: 180px;
+      display: none;
+      flex-direction: column;
+      opacity: 0;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      transition: opacity var(--transition-fast), transform var(--transition-fast);
+      z-index: 100;
+    }
+    .header__dropdown:hover .header__dropdown-menu,
+    .header__dropdown.open .header__dropdown-menu { display: flex; opacity: 1; }
+    .header__dropdown-item {
+      font-size: var(--font-size-sm);
+      font-weight: 500;
+      color: var(--color-text-secondary);
+      padding: var(--space-3) var(--space-4);
+      border-radius: 6px;
+      transition: background var(--transition-fast), color var(--transition-fast);
+      white-space: nowrap;
+      text-decoration: none;
+    }
+    .header__dropdown-item:hover { background: rgba(201,168,76,0.1); color: var(--color-accent); }
+
+    .header__nav-link--coming { opacity: 0.6; }
+
+    .nav-badge {
+      display: inline-block;
+      margin-left: 5px;
+      padding: 1px 5px;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #080c14;
+      background: var(--color-accent);
+      border-radius: 3px;
+      vertical-align: baseline;
+      white-space: nowrap;
+      animation: badgePulse 2s ease-in-out infinite;
+    }
+    @keyframes badgePulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.65; } }
+
+    .header__cta { display: none; }
+    @media (min-width: 768px) {
+      .header__cta { display: block; }
+    }
+    .header__toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: var(--space-2);
+    }
+    .header__toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--color-text-primary);
+      transition: all var(--transition-base);
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-2);
+      padding: var(--space-3) var(--space-5);
+      font-size: var(--font-size-sm);
+      font-weight: 500;
+      text-decoration: none;
+      border-radius: var(--radius-md);
+      transition: all var(--transition-base);
+      cursor: pointer;
+      border: none;
+    }
+    .btn--primary {
+      background: linear-gradient(135deg, #c9a84c 0%, #e8c87a 50%, #c9a84c 100%);
+      background-size: 200% 200%;
+      color: #0d1220;
+      font-weight: 600;
+      box-shadow: 0 2px 12px rgba(201, 168, 76, 0.25);
+      transition: all var(--transition-fast);
+    }
+    .btn--primary:hover {
+      background-position: right center;
+      box-shadow: 0 4px 20px rgba(201, 168, 76, 0.4);
+      transform: translateY(-1px);
+    }
+    .btn--secondary {
+      background: transparent;
+      color: var(--color-text-primary);
+      border: 1px solid var(--color-border);
+    }
+    .btn--secondary:hover {
+      border-color: var(--color-border-hover);
+      background: rgba(255,255,255,0.05);
+    }
+
+    /* ── Page Header ── */
+    .page-header {
+      padding-top: 140px;
+      padding-bottom: var(--space-12);
+      text-align: center;
+    }
+    .page-header__eyebrow {
+      display: block;
+      font-size: var(--font-size-sm);
+      font-weight: 500;
+      color: var(--color-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: var(--space-3);
+    }
+    .page-header__title {
+      font-size: var(--font-size-4xl);
+      font-weight: 700;
+      margin-bottom: var(--space-4);
+    }
+    .page-header__description {
+      font-size: var(--font-size-lg);
+      color: var(--color-text-secondary);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* ── Coming Soon Section ── */
+    .coming-soon {
+      padding: var(--space-20) 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .coming-soon__card {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 16px;
+      padding: var(--space-16) var(--space-12);
+      text-align: center;
+      max-width: 560px;
+      width: 100%;
+    }
+    .coming-soon__icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto var(--space-8);
+      background: rgba(201,168,76,0.1);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-accent);
+    }
+    .coming-soon__badge {
+      display: inline-block;
+      padding: var(--space-1) var(--space-4);
+      background: rgba(201,168,76,0.15);
+      border: 1px solid rgba(201,168,76,0.3);
+      border-radius: 20px;
+      font-size: var(--font-size-xs);
+      font-weight: 600;
+      color: var(--color-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: var(--space-6);
+    }
+    .coming-soon__title {
+      font-size: var(--font-size-2xl);
+      font-weight: 700;
+      margin-bottom: var(--space-4);
+      color: var(--color-text-primary);
+    }
+    .coming-soon__description {
+      font-size: var(--font-size-lg);
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      margin-bottom: var(--space-8);
+    }
+    .coming-soon__cta {
+      display: flex;
+      gap: var(--space-4);
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ── Posts Section ── */
+    .posts-section {
+      padding: var(--space-12) 0 var(--space-20);
+    }
+    .posts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: var(--space-6);
+    }
+    .post-card {
+      display: block; text-decoration: none;
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: 14px; padding: var(--space-6);
+      transition: border-color var(--transition-base), transform var(--transition-base);
+    }
+    .post-card:hover {
+      border-color: rgba(201,168,76,.4); transform: translateY(-3px); text-decoration: none;
+    }
+    .post-card__header {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: var(--space-3); margin-bottom: var(--space-4);
+    }
+    .post-card__cat {
+      display: inline-block; padding: 3px 10px;
+      border-radius: 20px; font-size: var(--font-size-xs); font-weight: 600;
+      text-transform: uppercase; letter-spacing: .08em;
+    }
+    .post-card__cat--ocean {
+      background: rgba(201,168,76,.15); color: var(--color-accent);
+    }
+    .post-card__cat--baidu {
+      background: rgba(65,82,221,.15); color: #4152dd;
+    }
+    .post-card__cat--geo {
+      background: rgba(139,92,246,.15); color: #8B5CF6;
+    }
+    .post-card__date {
+      font-size: var(--font-size-xs); color: var(--color-text-muted);
+    }
+    .post-card__title {
+      font-size: var(--font-size-lg); font-weight: 700;
+      color: var(--color-text-primary); line-height: 1.35;
+      margin-bottom: var(--space-3);
+      transition: color var(--transition-fast);
+    }
+    .post-card:hover .post-card__title { color: var(--color-accent-light); }
+    .post-card__excerpt {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary);
+      line-height: 1.65; margin-bottom: var(--space-5);
+    }
+    .post-card__footer {
+      display: flex; align-items: center; justify-content: space-between;
+      font-size: var(--font-size-xs); color: var(--color-text-muted);
+    }
+    .post-card__arrow { color: var(--color-accent); font-weight: 600; }
+
+    /* ── Features Preview ── */
+    .preview {
+      padding: var(--space-16) 0;
+      background: var(--color-bg-alt);
+    }
+    .preview__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-6);
+    }
+    .preview-card {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: var(--space-6);
+      opacity: 0.5;
+    }
+    .preview-card__icon {
+      width: 40px;
+      height: 40px;
+      background: rgba(45,107,228,0.15);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-primary);
+      margin-bottom: var(--space-4);
+    }
+    .preview-card__title {
+      font-size: var(--font-size-base);
+      font-weight: 600;
+      margin-bottom: var(--space-2);
+      color: var(--color-text-muted);
+    }
+    .preview-card__desc {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }    /* ── Footer ── */
+    .footer {
+      padding: var(--space-10) 0 var(--space-8);
+      background: var(--color-bg);
+      border-top: 1px solid var(--color-border);
+    }
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-8);
+      margin-bottom: var(--space-10);
+    }
+    @media (min-width: 768px) {
+      .footer__grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    .footer__section { text-align: left; }
+    .footer__title {
+      font-size: var(--font-size-base);
+      font-weight: 600;
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-4);
+      position: relative;
+      padding-bottom: var(--space-2);
+    }
+    .footer__title::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 40px; height: 2px;
+      background: linear-gradient(90deg, var(--color-accent), transparent);
+      opacity: 0.8;
+    }
+    .footer__description {
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+    .footer__links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer__links li { margin-bottom: var(--space-3); }
+    .footer__link { text-decoration: none; 
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+      transition: color var(--transition-fast);
+      display: inline-block;
+    }
+    .footer__link:hover { color: var(--color-accent-light); transform: translateX(4px); }
+    .footer__link--email { color: var(--color-primary); font-weight: 500; }
+    .footer__license { color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--space-2); }
+    .footer__company-short { color: var(--color-text-muted); font-size: var(--font-size-xs); }
+    .footer__bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-4);
+      padding-top: var(--space-8);
+      border-top: 1px solid var(--color-border);
+    }
+    @media (min-width: 768px) {
+      .footer__bottom { flex-direction: row; justify-content: space-between; }
+    }
+    .footer__copyright { color: var(--color-text-muted); font-size: var(--font-size-sm); margin: 0; }
+    .footer__platforms { display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: center; }
+    .footer__platform-badge {
+      display: inline-block;
+      padding: var(--space-1) var(--space-3);
+      background-color: rgba(201, 168, 76, 0.1);
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      border-radius: 4px;
+      color: var(--color-accent-light);
+      font-size: var(--font-size-xs);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      transition: all var(--transition-fast);
+    }
+    .footer__platform-badge:hover {
+      text-decoration: none;
+      background-color: rgba(201, 168, 76, 0.2);
+      border-color: var(--color-accent);
+      transform: translateY(-2px);
+    }/* ── Responsive ── */
+    @media (max-width: 768px) {
+      .header__toggle { display: flex; }
+      .header__nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--color-bg-alt);
+        border-bottom: 1px solid var(--color-border);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+        padding: 0;
+      }
+      .header__nav.active { display: flex; }
+      .header__nav-link {
+        display: block;
+        width: 100%;
+        padding: 14px 40px 14px 24px;
+        border-bottom: 1px solid var(--color-border);
+        font-size: 1.1rem;
+      }
+      .header__nav-link--coming {
+        display: block;
+        width: 100%;
+        padding: 14px 40px 14px 24px;
+        border-bottom: 1px solid var(--color-border);
+        font-size: 1.1rem;
+        opacity: 0.5;
+      }
+      .header__dropdown { position: static; width: 100%; 
+       }
+      .header__dropdown-trigger {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 14px 40px 14px 24px;
+        border-bottom: 1px solid var(--color-border);
+        font-size: 1.1rem;
+      }
+      .header__dropdown-arrow { transition: transform var(--transition-fast); }
+      .header__dropdown.active .header__dropdown-arrow,
+      .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
+      .header__dropdown-menu {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0,0,0,0.25);
+        padding: 0;
+      }
+      .header__dropdown.active .header__dropdown-menu,
+      .header__dropdown.open .header__dropdown-menu { display: flex; }
+      .header__dropdown-item {
+        display: block;
+        width: 100%;
+        padding: 12px 40px 12px 40px;
+        font-size: 1rem;
+        color: var(--color-text-secondary);
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+      }
+      .header__dropdown-item:hover {
+        background: rgba(201,168,76,0.08);
+        color: var(--color-accent);
+      }
+
+      .page-header { padding-top: 120px; }
+      .page-header__title { font-size: var(--font-size-3xl); }
+      .coming-soon__card { padding: var(--space-10) var(--space-6); }
+      .preview__grid { grid-template-columns: 1fr; }
+
+    }
+
+    /* ── Scroll Reveal (disabled: content always visible) ── */
+    .reveal {
+      opacity: 1; transform: none;
+      transition: none;
+    }
+    /* reveal--visible disabled */
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="https://www.tuyuesouxin.cn/ko/" class="header__logo">
+          <svg class="header__logo-icon" viewBox="0 0 48 48" fill="none">
+            <defs><linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#c9a84c"/><stop offset="100%" stop-color="#e8c87a"/></linearGradient></defs>
+            <circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/><circle cx="37" cy="20" r="13" fill="#080c14"/>
+            <text x="4" y="32" font-family="Inter,sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-.8">TMG</text>
+          </svg>
+          <span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
+        </a>
+        <nav class="header__nav">
+          <div class="header__dropdown">
+            <a href="https://www.tuyuesouxin.cn/ko/services" class="header__nav-link header__dropdown-trigger">
+              서비스
+              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="header__dropdown-menu">
+              <a href="https://www.tuyuesouxin.cn/ko/services" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">전체 서비스</a>
+              <a href="https://www.tuyuesouxin.cn/ko/services/wechat" class="header__dropdown-item">WeChat 광고</a>
+              <a href="https://www.tuyuesouxin.cn/ko/services/douyin" class="header__dropdown-item">Douyin 광고</a>
+              <a href="https://www.tuyuesouxin.cn/ko/services/baidu" class="header__dropdown-item">Baidu SEM</a>
+              <a href="https://www.tuyuesouxin.cn/ko/services/bing" class="header__dropdown-item">Bing China</a>
+              <a href="https://www.tuyuesouxin.cn/ko/services/xiaohongshu" class="header__dropdown-item">샤오홍슈(RED)</a>
+              <a href="https://www.tuyuesouxin.cn/ko/services/bilibili" class="header__dropdown-item">Bilibili 광고</a>
+              <a href="https://www.tuyuesouxin.cn/ko/geo" class="header__dropdown-item">중국 GEO</a>
+            </div>
+          </div>
+          <a href="https://www.tuyuesouxin.cn/ko/pricing" class="header__nav-link">요금</a>
+          <a href="https://www.tuyuesouxin.cn/ko/client-stories" class="header__nav-link">고객 사례</a>
+          <a href="https://www.tuyuesouxin.cn/ko/geo" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
+          <a href="https://www.tuyuesouxin.cn/ko/blog/" class="header__nav-link active">블로그</a>
+          <a href="https://www.tuyuesouxin.cn/ko/faqs" class="header__nav-link">FAQ</a>
+          <div class="header__dropdown">
+            <a href="https://www.tuyuesouxin.cn/ko/about" class="header__nav-link header__dropdown-trigger">
+              회사 소개
+              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="header__dropdown-menu">
+              <a href="https://www.tuyuesouxin.cn/ko/why-tmg" class="header__dropdown-item">TMG를 선택해야 하는 이유</a>
+              <a href="https://www.tuyuesouxin.cn/ko/about" class="header__dropdown-item">회사 소개 Us</a>
+              <a href="https://www.tuyuesouxin.cn/ko/contact" class="header__dropdown-item">문의하기</a>
+            </div>
+          </div>
+        </nav>
+        <a href="https://www.tuyuesouxin.cn/" class="header__nav-link" style="font-weight:600;color:var(--color-accent);border:1px solid var(--color-accent);border-radius:6px;padding:4px 12px;margin-left:8px;font-size:12px;">English</a>
+        <div class="header__cta">
+          <a href="https://www.tuyuesouxin.cn/ko/contact" class="btn btn--primary">시작하기</a>
+        </div>
+        <button class="header__toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <span class="page-header__eyebrow reveal">Tuyue Media Gateway</span>
+        <h1 class="page-header__title reveal">Insights & Perspectives</h1>
+        <p class="page-header__description reveal">
+          Expert analysis on China's digital advertising landscape — SEM strategies, platform updates, market insights, and case studies from our team.
+        </p>
+      </div>
+    </div>
+
+    <section class="posts-section">
+      <div class="container">
+        <div class="posts-grid">
+        <!-- Post: Doubao GEO (NEW) -->
+        <a href="https://www.tuyuesouxin.cn/ko/blog/doubao-paid-what-it-means-for-geo/" class="post-card reveal">
+          <div class="post-card__header">
+            <span class="post-card__cat post-card__cat--geo">GEO / AI Search</span>
+            <span class="post-card__date">May 6, 2026</span>
+          </div>
+          <h2 class="post-card__title">Doubao Goes Paid: What This Means for GEO in China</h2>
+          <p class="post-card__excerpt">Doubao just introduced paid tiers at 68-500 RMB/month. With 140M+ DAU, this signals AI platforms are now real, monetized channels — and GEO is no longer optional for brands entering China.</p>
+          <div class="post-card__footer">
+            <span class="post-card__read-time">8 min read</span>
+            <span class="post-card__arrow">Read more →</span>
+          </div>
+        </a>
+        
+        <!-- Post: Kuaishou Demographics (NEW) -->
+        <a href="https://www.tuyuesouxin.cn/ko/blog/kuaishou-demographics-who-are-these-400m-users/" class="post-card reveal">
+          <div class="post-card__header">
+            <span class="post-card__cat post-card__cat--ocean">China Ad Platforms</span>
+            <span class="post-card__date">May 4, 2026</span>
+          </div>
+          <h2 class="post-card__title">Kuaishou (Kwai) Demographics: Understanding the 400M+ User Base in 2026</h2>
+          <p class="post-card__excerpt">Discover Kuaishou's user demographics: 400M+ users, 90M+ CNY shoppers, 64.2% video sharing growth.</p>
+          <div class="post-card__footer">
+            <span class="post-card__read-time">9 min read</span>
+            <span class="post-card__arrow">Read more →</span>
+          </div>
+        </a>
+        
+        <!-- Post: XHS Demographics (NEW) -->
+        <a href="https://www.tuyuesouxin.cn/ko/blog/xiaohongshu-demographics-who-are-these-350m-users/" class="post-card reveal">
+          <div class="post-card__header">
+            <span class="post-card__cat post-card__cat--ocean">China Ad Platforms</span>
+            <span class="post-card__date">May 4, 2026</span>
+          </div>
+          <h2 class="post-card__title">샤오홍슈(RED) (RED) Demographics: Who Are These 350M+ Users in 2026?</h2>
+          <p class="post-card__excerpt">Discover 샤오홍슈(RED)'s user demographics: 350M+ MAU, 73% monthly search penetration, 1.2-1.9h daily usage.</p>
+          <div class="post-card__footer">
+            <span class="post-card__read-time">8 min read</span>
+            <span class="post-card__arrow">Read more →</span>
+          </div>
+        </a>
+        
+        <!-- Post: Baidu Demographics (NEW) -->
+        <a href="https://www.tuyuesouxin.cn/ko/blog/baidu-demographics-who-are-these-735m-users/" class="post-card reveal">
+          <div class="post-card__header">
+            <span class="post-card__cat post-card__cat--baidu">Search Engine</span>
+            <span class="post-card__date">May 4, 2026</span>
+          </div>
+          <h2 class="post-card__title">Baidu Search Demographics: Who Are These 735M+ Users?</h2>
+          <p class="post-card__excerpt">735M+ MAU, 322M AI search users. Data-driven insights for advertisers targeting China's largest search engine.</p>
+          <div class="post-card__footer">
+            <span class="post-card__read-time">9 min read</span>
+            <span class="post-card__arrow">Read more →</span>
+          </div>
+        </a>
+        
+        <!-- Post: Bilibili Demographics (NEW) -->
+        <a href="https://www.tuyuesouxin.cn/ko/blog/bilibili-demographics-who-are-these-gen-z-users" class="post-card reveal">
+          <div class="post-card__header">
+            <span class="post-card__cat post-card__cat--bilibili">China Ad Platforms</span>
+            <span class="post-card__date">May 4, 2026</span>
+          </div>
+          <h2 class="post-card__title">Bilibili Demographics: Who Are These Gen Z Users?</h2>
+          <p class="post-card__excerpt">Discover Bilibili's unique user demographics: 26yo avg age, 50%+ post-00s, 1:1 gender ratio, 107min daily usage.</p>
+          <div class="post-card__footer">
+            <span class="post-card__read-time">7 min read</span>
+            <span class="post-card__arrow">Read more →</span>
+          </div>
+        </a>
+        
+
+          
+          <!-- Post: Bing China Demographics (NEW) -->
+          <a href="https://www.tuyuesouxin.cn/ko/blog/bing-china-demographics-who-are-these-users" class="post-card reveal">
+            <div class="post-card__header">
+              <span class="post-card__cat post-card__cat--baidu">China Search Ads</span>
+              <span class="post-card__date">May 4, 2026</span>
+            </div>
+            <h2 class="post-card__title">Bing China Demographics: Who Are These High-Value Users?</h2>
+            <p class="post-card__excerpt">Discover Bing China's premium user demographics: 75%+ college-educated, high income, urban-focused. Data-driven insights for advertisers.</p>
+            <div class="post-card__footer">
+              <span class="post-card__read-time">7 min read</span>
+              <span class="post-card__arrow">Read more →</span>
+            </div>
+          </a>
+<!-- Post: Bing China Premium Audience (NEW) -->
+          <a href="https://www.tuyuesouxin.cn/ko/blog/bing-china-premium-audience-guide" class="post-card reveal">
+            <div class="post-card__header">
+              <span class="post-card__cat post-card__cat--baidu">China Search Ads</span>
+              <span class="post-card__date">May 4, 2026</span>
+            </div>
+            <h2 class="post-card__title">Bing China's Premium Audience: Why Smart Brands Are Advertising Here</h2>
+            <p class="post-card__excerpt">Discover why Bing China's educated, affluent user base (75%+ college-educated, 62% ad engagement) is a goldmine for international brands targeting China's premium market.</p>
+            <div class="post-card__footer">
+              <span class="post-card__read-time">7 min read</span>
+              <span class="post-card__arrow">Read more →</span>
+            </div>
+          </a>
+
+          <!-- Post: Attribution Models Guide (NEW) -->
+          <a href="https://www.tuyuesouxin.cn/ko/blog/attribution-models-guide" class="post-card reveal">
+            <div class="post-card__header">
+              <span class="post-card__cat post-card__cat--ocean">Paid Media Strategy</span>
+              <span class="post-card__date">May 4, 2026</span>
+            </div>
+            <h2 class="post-card__title">Attribution Models in Paid Media: Why Your Campaign Data Might Be Lying to You</h2>
+            <p class="post-card__excerpt">Confused by attribution models in China's paid media? We break down 7 models, platform differences, and how to choose the right one for your campaign goals.</p>
+            <div class="post-card__footer">
+              <span class="post-card__read-time">6 min read</span>
+              <span class="post-card__arrow">Read more →</span>
+            </div>
+          </a>
+
+          <!-- Post: Smart Bidding Strategies -->
+          <a href="https://www.tuyuesouxin.cn/ko/blog/smart-bidding-strategies-explained" class="post-card reveal">
+            <div class="post-card__header">
+              <span class="post-card__cat post-card__cat--baidu">Paid Media Strategy</span>
+              <span class="post-card__date">May 4, 2026</span>
+            </div>
+            <h2 class="post-card__title">Smart Bidding Strategies: From oCPM to tROI — How to Pick the Right Bid for Every Campaign</h2>
+            <p class="post-card__excerpt">Plain-English guide to smart bidding strategies in China's paid media landscape: oCPC, tROI, cost cap, and more. Learn when to use each bid type and how to avoid common pitfalls.</p>
+            <div class="post-card__footer">
+              <span class="post-card__read-time">8 min read</span>
+              <span class="post-card__arrow">Read more →</span>
+            </div>
+          </a>
+
+          <!-- Post: Ad Billing Models Explained -->
+          <a href="https://www.tuyuesouxin.cn/ko/blog/ad-billing-models-explained" class="post-card reveal">
+            <div class="post-card__header">
+              <span class="post-card__cat post-card__cat--baidu">Paid Media Strategy</span>
+              <span class="post-card__date">May 4, 2026</span>
+            </div>
+            <h2 class="post-card__title">Ad Billing Models Explained: CPM, CPC, CPA, oCPM and When to Use Each</h2>
+            <p class="post-card__excerpt">Behind every ad campaign is a billing model that determines how you pay — and whether you get the result you paid for. A practical guide to picking the right one.</p>
+            <div class="post-card__footer">
+              <span class="post-card__read-time">9 min read</span>
+              <span class="post-card__arrow">Read more →</span>
+            </div>
+          </a>
+
+          <!-- Post: GEO Channel Weight 2026 -->
+          <a href="https://www.tuyuesouxin.cn/ko/blog/geo-channel-weight-2026" class="post-card reveal">
+            <div class="post-card__header">
+              <span class="post-card__cat post-card__cat--geo">GEO / AI Search</span>
+              <span class="post-card__date">May 3, 2026</span>
+            </div>
+            <h2 class="post-card__title">GEO Channel Weight Update 2026: 2 Types Rising, 3 Downgraded by AI</h2>
+            <p class="post-card__excerpt">April 2026 testing across Doubao, DeepSeek, and Kimi shows AI platforms rewrote their channel weights. Compliant vertical sites and local government media are up. Small self-media, cluttered forums, and pure AI content are out.</p>
+            <div class="post-card__footer">
+              <span class="post-card__read-time">8 min read</span>
+              <span class="post-card__arrow">Read more →</span>
+            </div>
+          </a>
+
+          <!-- Post: CPM, oCPM, eCPM Explained -->
+          <a href="https://www.tuyuesouxin.cn/ko/blog/cpm-ocpm-ecpm-explained" class="post-card reveal">
+            <div class="post-card__header">
+              <span class="post-card__cat post-card__cat--baidu">Paid Media Strategy</span>
+              <span class="post-card__date">May 3, 2026</span>
+            </div>
+            <h2 class="post-card__title">CPM, oCPM, eCPM: The Three Metrics Every Paid Media Buyer Gets Wrong</h2>
+            <p class="post-card__excerpt">CPM is what you pay. oCPM is how you bid. eCPM is how the system ranks you. Mix them up and you are optimizing for the wrong number. A practical breakdown of the three metrics that look the same but are nothing alike.</p>
+            <div class="post-card__footer">
+              <span class="post-card__read-time">7 min read</span>
+              <span class="post-card__arrow">Read more →</span>
+            </div>
+          </a>
+
+          <!-- Post: Is a Rising CPM Really That Bad? -->
+          <a href="https://www.tuyuesouxin.cn/ko/blog/cpm-is-rising-bad" class="post-card reveal">
+            <div class="post-card__header">
+              <span class="post-card__cat post-card__cat--baidu">Paid Media Strategy</span>
+              <span class="post-card__date">May 3, 2026</span>
+            </div>
+            <h2 class="post-card__title">Is a Rising CPM Really That Bad?</h2>
+            <p class="post-card__excerpt">CPM goes up and everyone panics. But in real programmatic campaigns — from Baidu to Douyin — a higher CPM can mean better audiences and a lower CPA. Here is when to worry and when to double down.</p>
+            <div class="post-card__footer">
+              <span class="post-card__read-time">6 min read</span>
+              <span class="post-card__arrow">Read more →</span>
+            </div>
+          </a>
+
+          <!-- Post 0: China Mobile Internet Spring 2026 -->
+          <a href="https://www.tuyuesouxin.cn/ko/blog/china-mobile-internet-spring-2026" class="post-card reveal">
+            <div class="post-card__header">
+              <span class="post-card__cat post-card__cat--ocean">China Market Insights</span>
+              <span class="post-card__date">April 30, 2026</span>
+            </div>
+            <h2 class="post-card__title">China's Internet Landscape in Spring 2026</h2>
+            <p class="post-card__excerpt">1.28 billion users, 192 hours per month of screen time, a ¥168 billion Q1 ad market, and AI-native apps at 413M monthly users — QuestMobile's Spring 2026 report paints a picture of a market that is both mature and shifting fast.</p>
+            <div class="post-card__footer">
+              <span class="post-card__read-time">9 min read</span>
+              <span class="post-card__arrow">Read more →</span>
+            </div>
+          </a>
+
+          <!-- Post 1: Ocean Engine AI Assistant -->
+          <a href="https://www.tuyuesouxin.cn/ko/blog/ocean-engine-ai-assistant" class="post-card reveal">
+            <div class="post-card__header">
+              <span class="post-card__cat post-card__cat--ocean">Douyin / Ocean Engine</span>
+              <span class="post-card__date">April 23, 2026</span>
+            </div>
+            <h2 class="post-card__title">Meet Zhitu Xing: Ocean Engine's Built-In AI Advertising Assistant</h2>
+            <p class="post-card__excerpt">ByteDance has embedded an AI assistant directly into the Ocean Engine App. It offers smart Q&amp;A, multi-account analysis, natural-language data queries, and one-click diagnostic tools for Douyin advertisers.</p>
+            <div class="post-card__footer">
+              <span class="post-card__read-time">5 min read</span>
+              <span class="post-card__arrow">Read more →</span>
+            </div>
+          </a>
+
+          <!-- Post 2: Ocean Engine Local Reach -->
+          <a href="https://www.tuyuesouxin.cn/ko/blog/ocean-engine-local-reach" class="post-card reveal">
+            <div class="post-card__header">
+              <span class="post-card__cat post-card__cat--ocean">Douyin / Ocean Engine</span>
+              <span class="post-card__date">April 23, 2026</span>
+            </div>
+            <h2 class="post-card__title">Ocean Engine Local Reach: Douyin's All-in-One Local Marketing Platform</h2>
+            <p class="post-card__excerpt">How ByteDance's dedicated local marketing tool helps brick-and-mortar businesses reach nearby customers through short video and live streaming ads—with minimal operational overhead.</p>
+            <div class="post-card__footer">
+              <span class="post-card__read-time">8 min read</span>
+              <span class="post-card__arrow">Read more →</span>
+            </div>
+          </a>
+
+          <!-- Post 3: Ocean Engine Overview -->
+          <a href="https://www.tuyuesouxin.cn/ko/blog/ocean-engine-overview" class="post-card reveal">
+            <div class="post-card__header">
+              <span class="post-card__cat post-card__cat--ocean">Platform Overview</span>
+              <span class="post-card__date">April 23, 2026</span>
+            </div>
+            <h2 class="post-card__title">Ocean Engine: Douyin's Unified Digital Marketing Platform Explained</h2>
+            <p class="post-card__excerpt">From Douyin and Toutiao to Xigua Video, Pangle, and 懂车帝—Ocean Engine is ByteDance's all-in-one ad platform covering 10+ products and 600M+ users.</p>
+            <div class="post-card__footer">
+              <span class="post-card__read-time">7 min read</span>
+              <span class="post-card__arrow">Read more →</span>
+            </div>
+          </a>
+
+          <!-- Post 4: Douyin Enterprise Account -->
+          <a href="https://www.tuyuesouxin.cn/ko/blog/douyin-enterprise-account" class="post-card reveal">
+            <div class="post-card__header">
+              <span class="post-card__cat post-card__cat--ocean">Douyin / Ocean Engine</span>
+              <span class="post-card__date">April 23, 2026</span>
+            </div>
+            <h2 class="post-card__title">Douyin Enterprise Accounts: The Complete Guide for International Brands</h2>
+            <p class="post-card__excerpt">What every international brand needs to know about Douyin Enterprise Accounts—the verified business profile that unlocks Blue V status, audience insights, and 600M+ daily active users.</p>
+            <div class="post-card__footer">
+              <span class="post-card__read-time">6 min read</span>
+              <span class="post-card__arrow">Read more →</span>
+            </div>
+          </a>
+
+          <!-- Post 5: Pangle Ads -->
+          <a href="https://www.tuyuesouxin.cn/ko/blog/pangle-ads" class="post-card reveal">
+            <div class="post-card__header">
+              <span class="post-card__cat post-card__cat--ocean">App Monetization</span>
+              <span class="post-card__date">April 23, 2026</span>
+            </div>
+            <h2 class="post-card__title">Pangle Ads: ByteDance's Global App Monetization Platform</h2>
+            <p class="post-card__excerpt">800M+ users reached, 63B daily ad requests, 110B daily impressions—Pangle is ByteDance's global app network that advertisers can access through Ocean Engine.</p>
+            <div class="post-card__footer">
+              <span class="post-card__read-time">7 min read</span>
+              <span class="post-card__arrow">Read more →</span>
+            </div>
+          </a>
+
+          <!-- Post 6: Bilibili Gen Z Marketing -->
+          <a href="https://www.tuyuesouxin.cn/ko/blog/bilibili-genz-marketing" class="post-card reveal">
+            <div class="post-card__header">
+              <span class="post-card__cat post-card__cat--ocean">Bilibili / Gen Z Marketing</span>
+              <span class="post-card__date">April 23, 2026</span>
+            </div>
+            <h2 class="post-card__title">Why Bilibili is China's Most Undervalued Marketing Platform for Gen Z</h2>
+            <p class="post-card__excerpt">While international advertisers rush to Douyin, they're overlooking the platform where China's Generation Z spends 107 minutes daily: 366M users, 70% post-90s, and unmatched youth engagement.</p>
+            <div class="post-card__footer">
+              <span class="post-card__read-time">8 min read</span>
+              <span class="post-card__arrow">Read more →</span>
+            </div>
+          </a>
+
+          <!-- Post 7: 샤오홍슈(RED) Consumer Research -->
+          <a href="https://www.tuyuesouxin.cn/ko/blog/xiaohongshu-consumer-research" class="post-card reveal">
+            <div class="post-card__header">
+              <span class="post-card__cat post-card__cat--ocean">샤오홍슈(RED) / Consumer Insights</span>
+              <span class="post-card__date">April 24, 2026</span>
+            </div>
+            <h2 class="post-card__title">Why 170 Million Chinese Consumers Ask 샤오홍슈(RED) Before Buying Anything</h2>
+            <p class="post-card__excerpt">73% monthly search rate, 90% active search intent, 116-note decision journey — how 샤오홍슈(RED) became China's most influential product research platform for 350M+ users.</p>
+            <div class="post-card__footer">
+              <span class="post-card__read-time">9 min read</span>
+              <span class="post-card__arrow">Read more →</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="preview">
+      <div class="container">
+        <div class="preview__grid">
+          <div class="preview-card reveal">
+            <div class="preview-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+              </svg>
+            </div>
+            <h3 class="preview-card__title">SEM Deep Dives</h3>
+            <p class="preview-card__desc">Keyword strategies, bid optimization, and Baidu Quality Score breakdowns.</p>
+          </div>
+          <div class="preview-card reveal reveal--delay-1">
+            <div class="preview-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+            </div>
+            <h3 class="preview-card__title">Platform Updates</h3>
+            <p class="preview-card__desc">Breaking news on Douyin, 샤오홍슈(RED), and WeChat 광고 policy changes.</p>
+          </div>
+          <div class="preview-card reveal reveal--delay-2">
+            <div class="preview-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+              </svg>
+            </div>
+            <h3 class="preview-card__title">GEO & AI Search</h3>
+            <p class="preview-card__desc">How to get your brand cited in DeepSeek, Doubao, and Kimi responses.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__section">
+          <h4 class="footer__title">TMG 소개</h4>
+          <p class="footer__description">
+            Your single point of access to China's $100B digital advertising market. We help international agencies navigate Chinese platforms with ease.
+          </p>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">바로가기</h4>
+          <ul class="footer__links">
+            <li><a href="https://www.tuyuesouxin.cn/ko/services/" class="footer__link">서비스</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/ko/pricing/" class="footer__link">요금</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/ko/about/" class="footer__link">회사 소개 Us</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/ko/client-stories" class="footer__link">고객 사례</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/ko/faqs" class="footer__link">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">문의하기</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="mailto:tmg@tuyuesouxin.cn" class="footer__link footer__link--email">tmg@tuyuesouxin.cn</a>
+            </li>
+            <li>
+              <a href="#contactQR" class="footer__link">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: text-bottom; margin-right: 4px;">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp (Click to scan)
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">법적 고지</h4>
+          <ul class="footer__links">
+            <li class="footer__license">Business License Number: 91310114MADKG4UF0G</li>
+            <li class="footer__company-short">Tuyue Media Gateway</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Tuyue Media Gateway. All rights reserved.</p>
+        <div class="footer__platforms">
+          <a href="https://ad.weixin.qq.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">WeChat</a>
+          <a href="https://www.oceanengine.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Douyin</a>
+          <a href="https://e.baidu.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Baidu</a>
+          <a href="https://www.xiaohongshu.com/brand" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">샤오홍슈(RED)</a>
+          <a href="https://member.bilibili.com/platform/ad" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bilibili</a>
+          <a href="https://ads.microsoft.com/zh-cn" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bing China</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    (function () {
+      const toggle = document.querySelector('.header__toggle');
+      const nav = document.querySelector('.header__nav');
+      if (toggle && nav) {
+        toggle.addEventListener('click', function () {
+          toggle.classList.toggle('active');
+          nav.classList.toggle('active');
+        });
+        nav.querySelectorAll('.header__dropdown').forEach(function (dropdown) {
+          var trigger = dropdown.querySelector('.header__dropdown-trigger');
+          trigger.addEventListener('click', function (e) {
+            e.preventDefault();
+            nav.querySelectorAll('.header__dropdown').forEach(function (d) {
+              if (d !== dropdown) d.classList.remove('open');
+            });
+            dropdown.classList.toggle('open');
+          });
+        });
+        document.addEventListener('click', function (e) {
+          if (!nav.contains(e.target)) {
+            nav.querySelectorAll('.header__dropdown').forEach(function (d) {
+              d.classList.remove('open');
+            });
+          }
+        });
+      }
+    })();
+
+    // Scroll Reveal (disabled: content always visible)
+    (function () {
+      // Reveal animation removed - user prefers content always visible
+    })();
+  </script>
+</body>
+</html>
