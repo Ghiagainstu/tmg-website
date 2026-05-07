@@ -39,6 +39,245 @@ COMMON = {
         "開始するために何を提供する必要がありますか？",
 }
 
+# GEO - merged with existing below
+
+FARMSKINS = {
+    "Overcoming platform rejections in China's regulated gaming advertising market to achieve sustained growth across multiple Chinese platforms — a six-year partnership case study.":
+        "中国の規制されたゲーム広告市場でプラットフォーム拒否を克服し、複数の中国プラットフォームで持続的成長を達成 — 6年にわたるパートナーシップのケーススタディ。",
+    "The platform's unique value proposition of skin trading and marketplace operations fell into regulatory gray areas that made standard platform compliance approvals difficult.":
+        "スキン取引とマーケットプレイス運営という独自の価値提案は、規制のグレーゾーンに該当し、標準的なプラットフォームコンプライアンス承認が困難でした。",
+    "Regulatory compliance is non-negotiable":
+        "規制コンプライアンスは譲れない条件",
+    "but can be navigated with the right expertise":
+        "だが適切な専門知識があれば対応可能",
+    "Platform rejections are often starting points":
+        "プラットフォーム拒否は多くの場合",
+    "for deeper engagement, not final decisions":
+        "最終決定ではなく、より深いエンゲージメントの出発点",
+    "Cultural and linguistic adaptation":
+        "文化的・言語的適応",
+    "is essential for successful market entry":
+        "は市場参入成功に不可欠",
+    "are required when dealing with complex regulatory environments":
+        "複雑な規制環境への対応に必要",
+    "can transform perceived barriers into achievable challenges":
+        "は認識上の障壁を達成可能な課題に変える",
+    "with platform representatives build trust and open doors":
+        "プラットフォーム担当者との関係構築が信頼と扉を開く",
+    "The key is recognizing that compliance isn't about finding loopholes — it's about understanding requirements, adapting strategies, and building long-term relationships.":
+        "重要なのは、コンプライアンスは抜け穴を見つけることではなく、要件を理解し、戦略を適応させ、長期的な関係を構築することだと認識することです。",
+    "Ready to Enter the Chinese Gaming Market?":
+        "中国ゲーム市場に参入しませんか？",
+    "Let's discuss how TMG can help your gaming platform navigate China's regulatory landscape and advertising ecosystem.":
+        "TMGがどのようにゲームプラットフォームの中国規制環境と広告エコシステムをナビゲートできるか、ご相談ください。",
+    "Overcoming platform rejections in China's regulated gaming advertising market to achieve sustained growth across multiple Chinese platforms.":
+        "中国の規制されたゲーム広告市場でプラットフォーム拒否を克服し、複数の中国プラットフォームで持続的成長を達成。",
+    "The platform's unique value proposition of skin trading and marketplace operations fell into regulatory gray areas that made traditional advertising channels inaccessible. Without access to China's massive digital advertising ecosystem, Farmskins' growth ambitions in the world's largest gaming market were effectively blocked.":
+        "スキン取引とマーケットプレイス運営という独自の価値提案は規制のグレーゾーンに該当し、従来の広告チャネルが利用できませんでした。中国の巨大なデジタル広告エコシステムにアクセスできなければ、世界最大のゲーム市場でのFarmskinsの成長は事実上阻止されていました。",
+    "The key is recognizing that compliance isn't about finding loopholes — it's about understanding requirements, adapting strategies, and building relationships that facilitate long-term success.":
+        "重要なのは、コンプライアンスは抜け穴を見つけることではなく、要件を理解し、戦略を適応させ、長期的な成功を促進する関係を構築することです。",
+}
+
+AISEMI = {
+    "That was the challenge facing one global brand in the AI and semiconductor space. As a market-leading business operating across multiple countries, the company's paid media activity had grown beyond what a single agency could manage effectively.":
+        "これがあるグローバルAI・半導体ブランドが直面した課題です。複数国で事業を展開する市場リーディング企業として、同社の広告活動は単一代理店が効果的に管理できる範囲を超えていました。",
+    "They needed a more efficient way forward: one agency partner that could manage multiple platforms, provide full visibility across campaigns, and simplify reporting — all without sacrificing performance.":
+        "彼らが必要としたのは、複数プラットフォームを管理し、キャンペーン全体の可視性を提供し、パフォーマンスを犠牲にすることなくレポーティングを簡素化できる、1つの効率的なパートナーでした。",
+    "In short, the client was not only looking for campaign delivery. They were looking for a more transparent, centralised, and efficient operating model that could scale with their business.":
+        "要するに、クライアントは単なるキャンペーン配信以上のものを求めていました。ビジネスの成長に合わせてスケールできる、より透明で中央集権的で効率的な運用モデルを必要としていたのです。",
+    "We already had experience in search marketing and a strong understanding of the client's business environment, audience, and competitive landscape.":
+        "当社はすでに検索マーケティングの経験と、クライアントのビジネス環境、オーディエンス、競合状況に対する深い理解を有していました。",
+    "Because of that, we were able to quickly understand what they needed — not only from a campaign execution perspective, but from an operational efficiency standpoint.":
+        "そのため、キャンペーン実行の観点だけでなく、運用効率の観点からも、彼らが必要としていることを迅速に理解することができました。",
+    "We saw that the real opportunity was not simply to run ads across more platforms. It was to simplify management, improve transparency, and reduce the cost and complexity of the client's entire paid media operation.":
+        "真の機会は単に多くのプラットフォームで広告を配信することではなく、管理の簡素化、透明性の向上、クライアントの広告運用全体のコストと複雑さの削減にあると認識しました。",
+    "With our experience across media partnerships and platform operations, we were confident we could support:":
+        "メディアパートナーシップとプラットフォーム運用における当社の経験から、以下をサポートできると確信していました：",
+    "Transparent account access and reporting":
+        "透明なアカウントアクセスとレポーティング",
+    "Strategic budget recommendations across products and platforms":
+        "製品・プラットフォーム横断の戦略的予算提案",
+    "More efficient agency management through a bundled service model":
+        "バンドルサービスモデルによるより効率的な代理店管理",
+    "Rather than treating each platform as a separate task, we focused on building a more unified paid media framework.":
+        "各プラットフォームを個別タスクとして扱うのではなく、より統合された広告運用フレームワークの構築に注力しました。",
+    "1. A single contact point for multi-platform coordination":
+        "1. マルチプラットフォーム調整のための単一窓口",
+    "Instead of asking the client to manage multiple external contacts, we created a more streamlined model with one main agency contact coordinating all platform activity.":
+        "クライアントに複数の外部窓口を管理させる代わりに、1つの主要代理店窓口がすべてのプラットフォーム活動を調整する、より効率的なモデルを構築しました。",
+    "2. Greater transparency in accounts and reporting":
+        "2. アカウントとレポーティングの透明性向上",
+    "Transparency was a key priority. We worked in a way that gave the client clearer access to platforms, reporting, and performance data — no black boxes.":
+        "透明性は最優先事項でした。プラットフォーム、レポーティング、パフォーマンスデータへの明確なアクセスをクライアントに提供 — ブラックボックスはありません。",
+    "3. Consolidated platform management under one roof":
+        "3. 一元化されたプラットフォーム管理",
+    "By bringing multiple platforms under a single management structure, we reduced administrative overhead, improved data consistency, and made it easier for the client's team to track overall performance.":
+        "複数プラットフォームを単一の管理体制に統合することで、管理オーバーヘッドを削減し、データの一貫性を向上させ、クライアントチームが全体のパフォーマンスを追跡しやすくしました。",
+    "4. Competitive bundled pricing":
+        "4. 競争力のあるバンドル価格",
+    "Instead of paying separate service fees to multiple agencies, the client benefited from a bundled pricing model that reduced overall costs while maintaining or improving service quality across every channel.":
+        "複数の代理店に個別のサービス料を支払う代わりに、バンドル価格モデルにより全体的なコストを削減し、すべてのチャネルでサービス品質を維持または向上させました。",
+    "The client achieved a more efficient, transparent, and cost-effective paid media operation. By consolidating under one agency, they gained:":
+        "クライアントはより効率的で透明性が高く、コスト効率の良い広告運用を実現。1つの代理店に統合することで、以下を獲得しました：",
+    "One point of contact instead of multiple agency relationships":
+        "複数の代理店関係ではなく、単一の窓口",
+    "Full visibility into platform performance and ad account access":
+        "プラットフォームパフォーマンスと広告アカウントへの完全な可視性",
+    "Simplified reporting with consistent metrics across platforms":
+        "プラットフォーム間で一貫した指標による簡素化されたレポーティング",
+    "Cost savings through consolidated service fees":
+        "統合サービス料金によるコスト削減",
+    "Faster decision-making with a single agency team":
+        "単一の代理店チームによる迅速な意思決定",
+    "In the end, the client didn't just get better campaign management. They got a more efficient, scalable operating model — one that supports their growth without adding complexity.":
+        "最終的にクライアントは、単により良いキャンペーン管理を手に入れただけでなく、複雑さを増すことなく成長をサポートする、より効率的でスケーラブルな運用モデルを獲得しました。",
+    "Client Story: Multi-Platform Paid Media for AI &amp; Semiconductor Brand":
+        "クライアント事例：AI＆半導体ブランドのマルチプラットフォーム広告",
+    'That was the challenge facing one global brand in the AI and semiconductor space. As a market-leading business operating across multiple regions and media platforms, they were managing a broad paid media setup through several different partners. Over time, this created unnecessary complexity, reduced transparency, and made it harder to scale with confidence.':
+        'これがあるグローバルAI・半導体ブランドが直面した課題です。複数の地域とメディアプラットフォームで事業を展開する市場リーディング企業として、広範囲にわたる広告運用を複数の異なるパートナーを通じて管理していました。時間とともに、これは不必要な複雑さを生み、透明性を低下させ、自信を持ってスケールすることを困難にしました。',
+    'They needed a more efficient way forward: one agency partner that could manage multiple platforms, provide full visibility, and reduce the time and effort required to coordinate across different vendors.':
+        '彼らが必要としたのは、複数のプラットフォームを管理し、完全な可視性を提供し、異なるベンダー間の調整に必要な時間と労力を削減できる、1つの効率的な代理店パートナーでした。',
+    'In short, the client was not only looking for campaign delivery. They were looking for a more transparent, centralised, and cost-efficient operating model.':
+        '要するに、クライアントは単なるキャンペーン配信を超えて、より透明で中央集権的でコスト効率の高い運用モデルを求めていました。',
+    "We already had experience in search marketing and a strong understanding of the client's business environment, audience, and wider industry context.":
+        '当社はすでに検索マーケティングの経験と、クライアントのビジネス環境、オーディエンス、およびより広範な業界コンテキストに対する深い理解を有していました。',
+    'Because of that, we were able to quickly understand what they needed — not only from a campaign execution perspective, but from an operational one too.':
+        'そのため、キャンペーン実行の観点だけでなく、運用面からも彼らが必要としていることを迅速に理解することができました。',
+    'We saw that the real opportunity was not simply to run ads across more platforms. It was to simplify management, improve transparency, and create a structure that allowed smarter decisions across channels.':
+        '真の機会は単に多くのプラットフォームで広告を配信することではなく、管理の簡素化、透明性の向上、チャネル全体でよりスマートな意思決定を可能にする構造の構築にあると認識しました。',
+    'Instead of asking the client to manage multiple external contacts, we created a more streamlined model with one main agency interface. This reduced communication friction and made day-to-day collaboration more efficient.':
+        'クライアントに複数の外部窓口を管理させる代わりに、1つの主要代理店インターフェースを持つより効率的なモデルを構築しました。これによりコミュニケーションの摩擦が減り、日々のコラボレーションがより効率的になりました。',
+    'Transparency was a key priority. We worked in a way that gave the client clearer access to platforms, reporting, and performance data, helping build trust and improve visibility across activity.':
+        '透明性は最優先事項でした。プラットフォーム、レポーティング、パフォーマンスデータへの明確なアクセスを提供し、信頼構築と活動全体の可視性向上に貢献しました。',
+    '3. Multi-platform operational support':
+        '3. マルチプラットフォーム運用サポート',
+    'Because the client needed broader paid media support, we were able to manage activity across multiple platforms rather than limiting strategy to a single channel. This gave the client more flexibility and a more consistent operating structure.':
+        'クライアントがより広範な広告サポートを必要としていたため、単一チャネルに戦略を限定するのではなく、複数プラットフォームにわたる活動を管理することができました。これにより、クライアントはより柔軟で一貫性のある運用体制を得ることができました。',
+    '4. Budget and platform recommendations based on performance':
+        '4. パフォーマンスに基づく予算とプラットフォームの推奨',
+    'Different products and campaigns do not perform the same way across every platform. With ongoing monitoring and industry understanding, we were able to advise on where budget could be adjusted, which platforms were more suitable, and how media activity could better align with business goals.':
+        '異なる製品やキャンペーンはすべてのプラットフォームで同じように機能するわけではありません。継続的なモニタリングと業界理解により、予算の調整箇所、より適切なプラットフォーム、メディア活動をビジネス目標により適合させる方法についてアドバイスすることができました。',
+    '5. Competitive service packaging':
+        '5. 競争力のあるサービスパッケージ',
+    'By consolidating work under one agency relationship, the client benefited from a more efficient service structure and more competitive commercial terms than a fragmented multi-agency setup.':
+        '1つの代理店関係の下で業務を統合することで、クライアントは断片的なマルチエージェンシー体制よりも効率的なサービス構造と競争力のある商用条件の恩恵を受けました。',
+    'While we are not sharing specific performance figures, the value of the partnership was clear.':
+        '具体的なパフォーマンス数値は共有していませんが、パートナーシップの価値は明らかでした。',
+    'One agency partner to manage multiple media relationships':
+        '複数のメディア関係を管理する1つの代理店パートナー',
+    'One consistent point of contact across platforms':
+        'プラットフォーム全体で一貫した単一連絡窓口',
+    'More transparent access to accounts and performance data':
+        'アカウントとパフォーマンスデータへのより透明なアクセス',
+    'A more efficient way to manage paid media activity':
+        '広告運用を管理するより効率的な方法',
+    'Lower communication complexity across external vendors':
+        '外部ベンダー間のコミュニケーション複雑性の低減',
+    'Stronger strategic support around analysis, planning, and optimisation':
+        '分析、計画、最適化に関するより強力な戦略的サポート',
+    'A service model that remained competitive without compromising delivery quality':
+        '提供品質を損なうことなく競争力を維持したサービスモデル',
+    'Just as importantly, the client was able to spend less time managing multiple outside partners and more time focusing on internal priorities, decision-making, and business alignment.':
+        '同様に重要なのは、クライアントが複数の外部パートナーの管理に費やす時間を減らし、内部の優先事項、意思決定、ビジネスアライメントに集中できるようになったことです。',
+    'Why this matters for other B2B brands':
+        '他のB2Bブランドにとっての重要性',
+    'For many global B2B businesses, paid media challenges are not only about performance. They are also about structure.':
+        '多くのグローバルB2B企業にとって、広告の課題はパフォーマンスだけではありません。構造の問題でもあります。',
+    "When too many agencies, contacts, and platforms are involved, marketing teams can lose time, clarity, and control. Even strong media activity can become harder to manage when transparency is limited and communication becomes fragmented.":
+        'あまりに多くの代理店、窓口、プラットフォームが関与すると、マーケティングチームは時間、明確性、コントロールを失う可能性があります。透明性が限られ、コミュニケーションが断片化すると、強力なメディア活動でさえ管理が難しくなります。',
+    "A more effective paid media model should not only deliver results — it should also make your team's life easier.":
+        'より効果的な広告モデルは結果を提供するだけでなく、チームの業務をより簡単にすることも重要です。',
+    'More coordinated platform management':
+        'より調整されたプラットフォーム管理',
+    'A partner that understands both the channels and your business context':
+        'チャネルとビジネスコンテキストの両方を理解するパートナー',
+    "Your single point of access to China's $100B digital advertising market. We help international agencies navigate Chinese platforms with ease.":
+        '中国の1,000億ドル規模のデジタル広告市場へのシングルアクセスポイント。国際エージェンシーが中国プラットフォームを容易にナビゲートできるよう支援します。',
+}
+
+FAQ_ADDITIONAL = {
+    "(b) Enterprise info screenshot from government website + certified translation (stamped with company seal);":
+        "(b) 政府ウェブサイトの企業情報スクリーンショット＋認証翻訳（会社印付き）；",
+    "The most common rejection reasons are: (1) Expired qualifications or licenses; (2) Content contains prohibited words; (3) Website is unreachable or offline; (4) Mismatch between ad content and landing page; (5) Missing or incorrect industry qualification documents.":
+        "最も一般的な否認理由：(1) 期限切れの資格またはライセンス；(2) 禁止用語を含むコンテンツ；(3) ウェブサイトにアクセスできない、またはオフライン；(4) 広告内容とランディングページの不一致；(5) 業界資格証明書の欠落または誤り。",
+    "(a) Trademark registration certificate + authorization letter (both required for non-owned trademarks);":
+        "(a) 商標登録証明書＋許可証（非自社商標の場合必須）；",
+    "(b) ICP filing screenshot (if your ad mentions a website);":
+        "(b) ICP登録スクリーンショット（広告がウェブサイトに言及する場合）；",
+    "What are the rules for the Xiaohongshu account avatar?":
+        "小紅書アカウントアバターのルールは？",
+    "The avatar cannot be a real person's face or a photo showing someone's face. It must be relevant to your brand, product, or company — no generic selfies or third-party images.":
+        "アバターは実際の人物の顔や顔写真を使用できません。ブランド、製品、会社に関連するものでなければならず、一般的な自撮り写真やサードパーティの画像は不可。",
+    "The avatar must comply with Chinese laws: no political, violent, or discriminatory content, and no imagery associated with prohibited industries.":
+        "アバターは中国法に準拠する必要があります：政治的、暴力的、差別的なコンテンツ、禁止業種に関連するイメージは不可。",
+    "Why is Xiaohongshu essential for entering the Chinese market?":
+        "小紅書が中国市場参入に不可欠な理由は？",
+    "Xiaohongshu isn't just another social media platform—it's where 350 million Chinese consumers go to research products before buying. 73% of users search on XHS monthly, and 90% of those searches have active purchase intent.":
+        "小紅書は単なるソーシャルメディアプラットフォームではありません — 3億5,000万人の中国消費者が購入前に製品をリサーチする場です。月間73%のユーザーがXHSで検索し、その90%が積極的な購買意図を持っています。",
+    "Unlike platforms where ads interrupt, XHS thrives on authentic user-generated content (种草, \"seeding\")—everyday consumers sharing real experiences. This makes ad integration feel native, not intrusive.":
+        "広告が割り込むプラットフォームとは異なり、XHSは本物のユーザー生成コンテンツ（种草＝シーディング）で成長しています — 一般消費者が実際の体験を共有する場です。これにより、広告の統合がネイティブで、押し付けがましくありません。",
+    "Three-number hero card showing 350M+ (MAU) | 73% (monthly search rate) | 90% (active search).":
+        "3つの数字のヒーローカード：3.5億+（MAU）| 73%（月間検索率）| 90%（アクティブ検索）。",
+    "Unsure how to navigate Xiaohongshu's unique ecosystem? Our China market specialists have managed over ¥500 million in XHS campaigns.":
+        "小紅書のユニークなエコシステムのナビゲートに不安がありますか？当社の中国市場スペシャリストは5億元以上のXHSキャンペーンを管理してきました。",
+    "to see where your brand fits.":
+        "自社ブランドの適合性をご確認ください。",
+    "What's the difference between KOL, KOC, and KOS on Xiaohongshu?":
+        "小紅書におけるKOL、KOC、KOSの違いは？",
+    "Everyday consumer with 1K-100K followers":
+        "1K〜100Kフォロワーの一般消費者",
+    "Product validation, community building":
+        "製品検証、コミュニティ構築",
+    'Professional + relatable ("They know the product")':
+        'プロフェッショナル＋親しみやすい（「製品を知っている」）',
+    "Lead generation, customer service, sales support":
+        "リード生成、カスタマーサービス、セールスサポート",
+    "KOS is Xiaohongshu's innovation:":
+        "KOSは小紅書の革新です：",
+    "Over 4.5 million brand employees now act as trusted product experts, generating 29,000+ monthly leads. They combine professional product knowledge with the authentic voice of a real user — the most trusted format on the platform.":
+        "450万人以上のブランド従業員が信頼できる製品エキスパートとして活動し、月間29,000件以上のリードを生成。プロフェッショナルな製品知識と実際のユーザーとしての本物の声を組み合わせた、プラットフォーム上で最も信頼されるフォーマット。",
+    "Confused about which influencer type fits your goals? Our team manages KOL campaigns, KOC seeding networks, and KOS training programs.":
+        "どのインフルエンサータイプが目標に合うか迷っていますか？当社チームはKOLキャンペーン、KOCシーディングネットワーク、KOSトレーニングプログラムを管理しています。",
+    "Download our China Influencer Strategy Guide":
+        "中国インフルエンサー戦略ガイドをダウンロード",
+    "How does the Xiaohongshu search funnel work?":
+        "小紅書の検索ファネルはどのように機能しますか？",
+    '– "How to find a postpartum nanny?" → Browses 60 notes':
+        '–「産後ベビーシッターの見つけ方は？」→ 60件のノートを閲覧',
+    '– "What requirements should I specify for a nanny?" → Browses 34 notes':
+        '–「ベビーシッターにどんな条件を指定すべき？」→ 34件のノートを閲覧',
+    'Total: 116 notes researched before making a decision.':
+        '合計：意思決定前に116件のノートをリサーチ。',
+    "This 3-stage funnel shows why simply being present isn't enough—you need content that addresses users at each phase:":
+        "この3段階ファネルは、単に存在するだけでは不十分で、各フェーズのユーザーに対応したコンテンツが必要であることを示しています：",
+    "Educational content answering broad category questions":
+        "幅広いカテゴリの質問に答える教育コンテンツ",
+    "Comparison content helping users refine criteria":
+        "ユーザーが条件を絞り込むのに役立つ比較コンテンツ",
+    "Validation content (reviews, case studies) building trust":
+        "信頼を構築する検証コンテンツ（レビュー、ケーススタディ）",
+    "Is your content addressing all three search stages? Our content strategists analyze search data to identify gaps in your funnel.":
+        "あなたのコンテンツは3つの検索段階すべてをカバーしていますか？当社のコンテンツストラテジストが検索データを分析し、ファネルのギャップを特定します。",
+    "Request a free content gap analysis":
+        "無料コンテンツギャップ分析をリクエスト",
+    "Can foreign companies advertise on WeChat?":
+        "外国企業はWeChatで広告を出せますか？",
+    "Yes. Foreign companies can run ads on WeChat through a certified agency partner. WeChat requires a Chinese business license for direct account registration, but TMG can facilitate the process as an authorized reseller.":
+        "はい。外国企業は認定代理店パートナーを通じてWeChatで広告を出稿できます。WeChatは直接アカウント登録に中国の営業許可証を必要としますが、TMGが公認リセラーとしてプロセスを支援できます。",
+    "Companies from Hong Kong, Japan, South Korea, and Taiwan have a slightly different process with additional documentation requirements.":
+        "香港、日本、韓国、台湾の企業は追加書類が必要なため、手順が多少異なります。",
+    "What documents do I need to advertise on WeChat?":
+        "WeChatで広告を出すにはどのような書類が必要ですか？",
+    "At minimum, you need a Chinese business license or a partnership with a certified WeChat advertising agency. Depending on your industry and ad content, you may also need:":
+        "最低限必要なのは、中国の営業許可証または認定WeChat広告代理店とのパートナーシップです。業界や広告内容によっては、以下も必要になる場合があります：",
+    "(a) Trademark registration certificate + authorization letter (required if your ad references a brand you do not own);":
+        "(a) 商標登録証明書＋許可証（広告が非自社ブランドに言及する場合に必要）；",
+    "(b) ICP filing screenshot (if your ad mentions a website — the site must be hosted in mainland China);":
+        "(b) ICP登録スクリーンショット（広告がウェブサイトに言及する場合 — サイトは中国本土でホストされている必要があります）；",
+    "(c) Industry-specific licenses for regulated sectors such as healthcare, finance, or education.":
+        "(c) 医療、金融、教育などの規制セクター向けの業界固有ライセンス。",
+}
+
 BAIDU_FAQ = {
     "What are the common reasons for Baidu ad rejection?":
         "Baidu広告が否認されるよくある理由は？",
@@ -459,6 +698,56 @@ GEO = {
         "Kimiブランド検索連携",
     "We built our SEM expertise across Baidu and Chinese platforms — now we're bringing the same playbook to AI search.":
         "当社はBaiduや中国プラットフォームでSEMの専門知識を構築してきました — 今、同じプレイブックをAI検索に適用しています。",
+    "While the West debates AI search, China's already living in it. 1 billion users, 47% of all search behavior migrated to AI assistants. GEO — Generative Engine Optimization — is the new SEM. We help you get cited, get cited fast.":
+        "西洋がAI検索を議論している間、中国はすでにAIアシスタントを日常的に使用。10億ユーザー、全検索の47%がAIネイティブプラットフォームに移行。GEO（生成エンジン最適化）が新しいSEMです。引用される、素早く引用される。それを支援します。",
+    "No single AI platform dominates. Each has its own user base, strengths, and citation logic. You need a multi-platform strategy, not a single-vendor bet.":
+        "単一のAIプラットフォームが支配しているわけではありません。各プラットフォームに独自のユーザーベース、強み、引用ロジックがあります。単一ベンダーに賭けるのではなく、マルチプラットフォーム戦略が必要です。",
+    "Multi-platform ad spend management across China's top AI channels. We handle account setup, recharge, campaign optimization, and reporting — one partner, all platforms.":
+        "中国の主要AIチャネル全体でのマルチプラットフォーム広告費管理。アカウント設定、チャージ、キャンペーン最適化、レポーティング — 1つのパートナーですべてのプラットフォームをカバー。",
+    "AI citation is earned through structured, authoritative content. We audit your existing materials and rebuild them for AI citation — not just human readability.":
+        "AIによる引用は、構造化された権威あるコンテンツを通じて獲得。既存素材を監査し、人間の可読性だけでなくAI引用のためにも再構築します。",
+    "Weekly reports + real-time monitoring dashboard":
+        "週次レポート＋リアルタイムモニタリングダッシュボード",
+    "For ongoing, full-funnel GEO operations with maximum flexibility":
+        "継続的なフルファネルGEO運用、最大の柔軟性",
+    "100 keywords (prompt phrases), editable monthly":
+        "100キーワード（プロンプトフレーズ）、毎月編集可能",
+    "Full access to review every content asset published":
+        "公開されたすべてのコンテンツアセットへのフルアクセス",
+    "Sentiment monitoring &amp; reputation management":
+        "センチメントモニタリング＆レピュテーション管理",
+    "Monthly citation reports + competitive benchmarking":
+        "月次引用レポート＋競合ベンチマーク",
+    "Dedicated GEO strategist on retainer":
+        "専任GEOストラテジスト（リテーナー制）",
+    'Quick answers about China GEO and how it works.':
+        '中国GEOとその仕組みについての簡単な回答。',
+    'What is GEO and how does it differ from SEO?':
+        'GEOとは何か、SEOとどう違うのか？',
+    'How long does it take to see GEO results?':
+        'GEOの効果が出るまでどのくらいかかりますか？',
+    'Most clients see measurable results within 1–2 weeks. Initial citation improvements can appear within 3–5 business days after deployment. For competitive or high-volume keywords, full stabilization typically takes 1–3 months.':
+        'ほとんどのクライアントは1〜2週間以内に測定可能な結果を確認。導入後3〜5営業日以内に初期の引用改善が現れます。競合の多いキーワードでは、完全な安定化に通常1〜3ヶ月かかります。',
+    'What AI platforms does China GEO cover?':
+        '中国GEOはどのAIプラットフォームをカバーしていますか？',
+    'We cover all major Chinese AI platforms: DeepSeek, Douyin AI (Doubao), Kimi (Moonshot AI), Wenxin (Baidu AI), and Tongyi (Alibaba). We work across all of them — our optimization is semantic-based and platform-agnostic.':
+        'DeepSeek、Douyin AI（豆包）、Kimi（Moonshot AI）、文心一言（Baidu AI）、通義（Alibaba）など、中国の主要AIプラットフォームをすべてカバー。セマンティックベースでプラットフォームに依存しない最適化を提供します。',
+    "Citations don't disappear immediately — but without ongoing optimization, competitors who invest in GEO will gradually overtake your share of voice. AI platforms continuously update their knowledge bases, so we recommend ongoing maintenance to protect your market position.":
+        '引用はすぐには消えませんが、継続的な最適化がなければ、GEOに投資する競合が徐々にシェア・オブ・ボイスを奪います。AIプラットフォームは継続的にナレッジベースを更新するため、市場ポジションを守るには継続的なメンテナンスをお勧めします。',
+    'To begin, we need: your brand assets (logo, tagline, key messages), website URL, product/service descriptions, competitor brand names and URLs, and any existing marketing materials. We handle the rest — keyword research, content creation, platform deployment, and monitoring.':
+        '開始にあたり必要なもの：ブランドアセット（ロゴ、タグライン、キーメッセージ）、ウェブサイトURL、製品/サービス説明、競合ブランド名とURL、既存のマーケティング資料。残りはすべて当社が対応 — キーワード調査、コンテンツ作成、プラットフォーム展開、モニタリング。',
+    'AI Platform Ad Spend Management':
+        'AIプラットフォーム広告費管理',
+    "We'll get back to you within one business day.":
+        '1営業日以内にご連絡いたします。',
+    'Jiading District, Shanghai 201824':
+        '上海市嘉定区 201824',
+    "Your single point of access to China's $100B digital advertising market. We help international agencies navigate Chinese platforms with ease.":
+        '中国の1,000億ドル規模のデジタル広告市場へのシングルアクセスポイント。国際エージェンシーが中国プラットフォームを容易にナビゲートできるよう支援します。',
+    'What happens to our citations if we stop the GEO service?':
+        'GEOサービスを停止すると、引用はどうなりますか？',
+    'How is China GEO different from Western GEO?':
+        '中国GEOは西洋のGEOとどう違うのですか？',
 }
 
 CLIENT_STORIES = {
@@ -526,7 +815,7 @@ CLIENT_STORIES = {
 # File → translation mapping
 FILES = [
     ('ja/index.html', {**HOMEPAGE, **COMMON}),
-    ('ja/faqs/index.html', {**BAIDU_FAQ, **XHS_FAQ, **COMMON}),
+    ('ja/faqs/index.html', {**BAIDU_FAQ, **XHS_FAQ, **FAQ_ADDITIONAL, **COMMON}),
     ('ja/geo/index.html', {**GEO, **COMMON}),
     ('ja/services/baidu/index.html', {**BAIDU_PAGE, **COMMON}),
     ('ja/services/wechat/index.html', {**WECHAT, **COMMON}),
@@ -540,8 +829,8 @@ FILES = [
     ('ja/pricing/index.html', {**PRICING, **COMMON}),
     ('ja/contact/index.html', {**COMMON}),
     ('ja/client-stories/index.html', {**CLIENT_STORIES, **COMMON}),
-    ('ja/client-stories/farmskins/index.html', {**CLIENT_STORIES, **COMMON}),
-    ('ja/client-stories/ai-semiconductor/index.html', {**COMMON}),
+    ('ja/client-stories/farmskins/index.html', {**CLIENT_STORIES, **FARMSKINS, **COMMON}),
+    ('ja/client-stories/ai-semiconductor/index.html', {**AISEMI, **COMMON}),
     ('ja/blog/index.html', {**COMMON}),
 ]
 
