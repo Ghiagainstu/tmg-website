@@ -479,6 +479,232 @@ KO = {
 "Your Message": "메시지",
 "Submit": "제출",
 "Loading": "로딩 중",
+
+# ===== Round 3: Client stories full translation =====
+"Case Study: How a CS:GO Platform Won in China | TMG":
+    "사례 연구: CS:GO 플랫폼이 중국에서 성공한 방법 | TMG",
+"How a Global CS:GO Platform Found Its Footing in China":
+    "글로벌 CS:GO 플랫폼이 중국에서 발판을 찾은 방법",
+"Turning platform rejections into a six-year partnership with ongoing campaigns across multiple Chinese platforms, achieving sustained growth in a once-closed market.":
+    "플랫폼 거부를 6년 파트너십으로 전환, 여러 중국 플랫폼에서 캠페인을 진행하며 한때 폐쇄되었던 시장에서 지속적 성장 달성.",
+"The Challenge: Breaking into China's Regulated Gaming Market":
+    "과제: 중국 규제 게임 시장 진출",
+"Farmskins, a leading global CS:GO skin trading platform, faced a formidable challenge when attempting to enter the Chinese market.":
+    "글로벌 선도 CS:GO 스킨 거래 플랫폼 Farmskins는 중국 시장 진출 시도에서 엄청난 도전에 직면했습니다.",
+"The platform's unique value proposition of skin trading and marketplace operations fell into regulatory gray areas that made standard platform compliance approvals difficult. Without access to China's massive digital advertising ecosystem, Farmskins' growth ambitions in the world's largest gaming market were effectively blocked.":
+    "스킨 거래 및 마켓플레이스 운영이라는 독특한 가치 제안은 규제 회색 지대에 속하여 표준 플랫폼 규정 준수 승인이 어려웠습니다. 중국의 거대한 디지털 광고 생태계에 접근할 수 없었기 때문에 세계 최대 게임 시장에서 Farmskins의 성장 야망은 사실상 차단되었습니다.",
+"Why Platform Rejections Were Not the End of the Story":
+    "플랫폼 거부가 이야기의 끝이 아니었던 이유",
+"Many international gaming companies would have viewed these rejections as insurmountable barriers. However, we recognized that each rejection was an opportunity to refine our approach and find compliant pathways.":
+    "많은 국제 게임 기업은 이러한 거부를 극복할 수 없는 장벽으로 보았을 것입니다. 그러나 당사는 각 거부가 접근 방식을 개선하고 규정을 준수하는 경로를 찾을 수 있는 기회라고 인식했습니다.",
+"The key issues we needed to address included:":
+    "해결해야 할 주요 과제는 다음과 같습니다:",
+"Platform-specific content and advertising policies for gaming-related services":
+    "게임 관련 서비스에 대한 플랫폼별 콘텐츠 및 광고 정책",
+"Regulatory compliance requirements for virtual item trading platforms":
+    "가상 아이템 거래 플랫폼에 대한 규제 준수 요구사항",
+"Cultural and linguistic adaptation of marketing materials":
+    "마케팅 자료의 문화적, 언어적 적응",
+"Building trust with platform representatives through transparent communication":
+    "투명한 커뮤니케이션을 통한 플랫폼 담당자와의 신뢰 구축",
+"Developing compliant advertising strategies that respected local regulations":
+    "현지 규정을 존중하는 규정 준수 광고 전략 개발",
+"Rather than taking a standardized approach, we developed a platform-by-platform strategy that respected each channel's unique requirements.":
+    "표준화된 접근 방식 대신 각 채널의 고유한 요구사항을 존중하는 플랫폼별 전략을 개발했습니다.",
+"1. Platform-Specific Compliance Mapping": "1. 플랫폼별 규정 준수 매핑",
+"We conducted thorough research into each platform's advertising policies, identifying specific requirements and potential compliance pathways.":
+    "각 플랫폼의 광고 정책을 철저히 조사하고, 특정 요구사항과 잠재적 규정 준수 경로를 식별했습니다.",
+"2. Content Adaptation and Localization": "2. 콘텐츠 적응 및 현지화",
+"We worked closely with Farmskins to adapt their messaging, ensuring it complied with local regulations while effectively communicating the brand's value proposition.":
+    "Farmskins와 긴밀히 협력하여 메시지를 조정하고, 브랜드의 가치 제안을 효과적으로 전달하면서 현지 규정을 준수하도록 했습니다.",
+"3. Direct Platform Engagement": "3. 플랫폼 직접 교섭",
+"We established direct relationships with platform representatives, presenting Farmskins' business model transparently and negotiating compliant advertising arrangements.":
+    "플랫폼 담당자와 직접 관계를 구축하고, Farmskins의 비즈니스 모델을 투명하게 제시하며 규정 준수 광고 계약을 협상했습니다.",
+"4. Phased Market Entry Strategy": "4. 단계적 시장 진입 전략",
+"We implemented a gradual approach, starting with more accessible channels and expanding to more restrictive platforms as compliance was established.":
+    "접근하기 쉬운 채널부터 시작하여 규정 준수가 확립됨에 따라 더 제한적인 플랫폼으로 확장하는 점진적 접근 방식을 구현했습니다.",
+"5. Ongoing Compliance Monitoring": "5. 지속적 규정 준수 모니터링",
+"We established systems for continuous monitoring of regulatory changes and platform policy updates, ensuring long-term compliance.":
+    "규제 변경 및 플랫폼 정책 업데이트에 대한 지속적인 모니터링 시스템을 구축하여 장기적인 규정 준수를 보장했습니다.",
+"The results speak for themselves:": "결과는 스스로 말해줍니다:",
+"with consistent advertising campaigns across multiple Chinese platforms":
+    "여러 중국 플랫폼에서의 일관된 광고 캠페인",
+"in the Chinese market despite initial regulatory challenges":
+    "초기 규제 문제에도 불구하고 중국 시장에서의",
+"of complex platform policies and regulatory requirements":
+    "복잡한 플랫폼 정책 및 규제 요구사항의",
+"on platforms that initially rejected Farmskins' business model":
+    "초기에 Farmskins의 비즈니스 모델을 거부했던 플랫폼에서의",
+"of advertising strategies based on performance data and market feedback":
+    "성과 데이터 및 시장 피드백에 기반한 광고 전략",
+"Most importantly, Farmskins achieved what many international gaming platforms struggle with: establishing a compliant, sustainable presence in China's gaming advertising market.":
+    "가장 중요한 것은, Farmskins가 많은 국제 게임 플랫폼이 어려워하는 것을 달성했다는 점입니다: 중국 게임 광고 시장에서 규정을 준수하고 지속 가능한 입지를 구축한 것입니다.",
+"Key Learnings for International Gaming Platforms":
+    "국제 게임 플랫폼을 위한 주요 교훈",
+"The Farmskins case demonstrates several critical principles for international gaming companies seeking to enter the Chinese market:":
+    "Farmskins 사례는 중국 시장 진출을 원하는 국제 게임 기업을 위한 몇 가지 중요한 원칙을 보여줍니다:",
+
+# AI Semiconductor full case
+"Case Study: Multi-Platform Paid Media for AI Brand | TMG":
+    "사례 연구: AI 브랜드의 멀티 플랫폼 유료 미디어 | TMG",
+"Helping a Global AI and Semiconductor Brand Simplify Multi-Platform Paid Media":
+    "글로벌 AI 및 반도체 브랜드의 멀티 플랫폼 유료 미디어 단순화 지원",
+"That was the challenge facing one global brand in the AI and semiconductor space. As a market-leading business operating across multiple countries, the company's paid media activity had grown beyond what a single agency could manage effectively.":
+    "이것이 AI 및 반도체 분야의 글로벌 브랜드가 직면한 과제였습니다. 여러 국가에서 사업을 운영하는 시장 선도 기업으로서 회사의 유료 미디어 활동은 단일 에이전시가 효과적으로 관리할 수 있는 범위를 넘어섰습니다.",
+"They needed a more efficient way forward: one agency partner that could manage multiple platforms, provide full visibility across campaigns, and simplify reporting.":
+    "그들은 더 효율적인 방법이 필요했습니다: 여러 플랫폼을 관리하고, 캠페인 전반에 걸쳐 완전한 가시성을 제공하며, 보고를 간소화할 수 있는 하나의 에이전시 파트너.",
+"Before working with us, the client faced several common but critical issues:":
+    "당사와 협력하기 전, 클라이언트는 몇 가지 일반적이지만 심각한 문제에 직면했습니다:",
+"Too many paid media channels being managed separately": "너무 많은 유료 미디어 채널이 개별적으로 관리됨",
+"Multiple agency and media contacts to coordinate": "조정해야 할 여러 에이전시 및 미디어 연락처",
+"Limited transparency on some platforms, including restricted access to ad accounts":
+    "일부 플랫폼에서의 제한된 투명성(광고 계정 접근 제한 포함)",
+"Concerns around data visibility and reporting accuracy":
+    "데이터 가시성 및 보고 정확성에 대한 우려",
+"High service fees spread across multiple partners": "여러 파트너에 분산된 높은 서비스 수수료",
+"Unnecessary time spent on external communication and vendor management":
+    "외부 커뮤니케이션 및 벤더 관리에 소요되는 불필요한 시간",
+"In short, the client was not only looking for campaign delivery. They were looking for a more transparent, centralised, and efficient operating model.":
+    "요컨대, 클라이언트는 단순한 캠페인 전달 이상을 원했습니다. 그들은 더 투명하고 중앙집중적이며 효율적인 운영 모델을 찾고 있었습니다.",
+"Provide a single point of contact across multiple paid media platforms":
+    "여러 유료 미디어 플랫폼에 걸친 단일 연락 창구 제공",
+"Offer full access to ad accounts and clearer reporting":
+    "광고 계정에 대한 전체 액세스 및 명확한 보고 제공",
+"Manage campaigns across different media channels under one roof":
+    "하나의 조직에서 다양한 미디어 채널의 캠페인 관리",
+"Package services in a more competitive and efficient way":
+    "더 경쟁력 있고 효율적인 방식으로 서비스 패키징",
+"Support budget planning and platform recommendations based on performance and business needs":
+    "성과 및 비즈니스 요구에 기반한 예산 계획 및 플랫폼 추천 지원",
+"We already had experience in search marketing and a strong understanding of the client's business environment, audience, and competitive landscape.":
+    "당사는 검색 마케팅 경험과 클라이언트의 비즈니스 환경, 오디언스, 경쟁 환경에 대한 깊은 이해를 이미 보유하고 있었습니다.",
+"Because of that, we were able to quickly understand what they needed — not only from a campaign execution perspective, but from an operational efficiency standpoint.":
+    "그 결과, 캠페인 실행 관점뿐만 아니라 운영 효율성 관점에서도 그들이 필요로 하는 것을 신속히 이해할 수 있었습니다.",
+"We saw that the real opportunity was not simply to run ads across more platforms. It was to simplify management, improve transparency, and reduce the cost and complexity of the client's entire paid media operation.":
+    "진정한 기회는 단순히 더 많은 플랫폼에서 광고를 실행하는 것이 아니라, 관리를 간소화하고 투명성을 개선하며 클라이언트의 전체 유료 미디어 운영 비용과 복잡성을 줄이는 것임을 깨달았습니다.",
+"With our experience across media partnerships and platform operations, we were confident we could support:":
+    "미디어 파트너십 및 플랫폼 운영에 대한 당사의 경험을 바탕으로 다음을 지원할 수 있다고 확신했습니다:",
+
+# GEO remaining translation
+"SEO is table stakes. GEO is where the game is won.":
+    "SEO는 기본입니다. GEO가 게임의 승부처입니다.",
+"Traditional SEO gets you found. GEO gets you cited inside AI answers — before the user ever clicks a link.":
+    "기존 SEO는 발견되게 합니다. GEO는 사용자가 링크를 클릭하기 전에 AI 답변 내에서 인용되게 합니다.",
+"DeepSeek, Douyin AI, Kimi, 원신, ChatGPT-CN": "DeepSeek, Douyin AI, Kimi, 원신, ChatGPT-CN",
+"Structured content, brand citations, authoritative citations, entity clarity":
+    "구조화된 콘텐츠, 브랜드 인용, 권위 있는 인용, 엔터티 명확화",
+"User gets an answer — your brand is the source":
+    "사용자가 답변을 얻습니다 — 귀하의 브랜드가 출처입니다",
+"Direct answer authority — brand impression without click":
+    "직접 답변 권위 — 클릭 없는 브랜드 노출",
+"AI assistants now drive 47% of search behavior":
+    "AI 어시스턴트가 이제 검색 행동의 47%를 주도합니다",
+"No single AI platform dominates. Each has its own user base, strengths, and citation logic. You need a multi-platform strategy.":
+    "단일 AI 플랫폼이 지배하지 않습니다. 각 플랫폼은 고유한 사용자 기반, 강점, 인용 로직을 가지고 있습니다. 멀티 플랫폼 전략이 필요합니다.",
+"We built our SEM expertise across Baidu and Chinese platforms — now we're bringing the same playbook to AI search.":
+    "당사는 Baidu 및 중국 플랫폼에서 SEM 전문성을 구축했습니다 — 이제 동일한 플레이북을 AI 검색에 적용합니다.",
+"Multi-platform ad spend management across China's top AI channels. We handle account setup, recharge, campaign optimization, and reporting — one partner, all platforms.":
+    "중국 최고 AI 채널 전반의 멀티 플랫폼 광고 지출 관리. 계정 설정, 충전, 캠페인 최적화, 보고를 처리합니다 — 하나의 파트너, 모든 플랫폼.",
+"Douyin AI (Doubao) ad campaigns": "Douyin AI (Doubao) 광고 캠페인",
+"DeepSeek native advertising": "DeepSeek 네이티브 광고",
+"Kimi brand zones and content partnerships": "Kimi 브랜드 존 및 콘텐츠 파트너십",
+"Wenxin (Baidu AI) ad products": "원신 (Baidu AI) 광고 제품",
+"Multi-currency billing, transparent rates": "다중 통화 청구, 투명한 요금",
+"AI citation is earned through structured, authoritative content. We audit your existing materials and rebuild them for AI citation — not just human readability.":
+    "AI 인용은 구조화되고 권위 있는 콘텐츠를 통해 획득됩니다. 기존 자료를 감사하고 인간의 가독성뿐만 아니라 AI 인용을 위해 재구축합니다.",
+"When organic GEO isn't fast enough, paid AI search placements get you in front of the right audience immediately.":
+    "오가닉 GEO가 충분히 빠르지 않을 때, 유료 AI 검색 배치가 즉시 적절한 오디언스 앞에 귀하를 노출시킵니다.",
+"Douyin AI content recommendation feeds": "Douyin AI 콘텐츠 추천 피드",
+"Performance reporting with AI-specific KPIs": "AI 특화 KPI가 포함된 성과 보고",
+"A/B testing of copy, format, and placement": "카피, 형식, 배치의 A/B 테스트",
+"No hidden fees. No platform lock-in. Start with the package that fits your current goals.":
+    "숨은 수수료 없음. 플랫폼 종속 없음. 현재 목표에 맞는 패키지로 시작하세요.",
+"For teams exploring GEO for the first time": "GEO를 처음 탐색하는 팀을 위한",
+"GEO readiness audit across your current content": "현재 콘텐츠 전반의 GEO 준비 상태 감사",
+"30 keywords (prompt phrases), editable monthly": "30개 키워드(프롬프트 구문), 월별 편집 가능",
+"KPI guarantee: ≥50% brand visibility by month 3–6": "KPI 보장: 3~6개월 내 브랜드 가시성 50% 이상",
+
+# Homepage remaining
+"Your Single Point of Access to": "단일 액세스 포인트",
+"One interface, all platforms, zero complexity.": "하나의 인터페이스, 모든 플랫폼, 복잡성 제로.",
+"Managing multiple Chinese media platforms shouldn't be this hard.":
+    "여러 중국 미디어 플랫폼을 관리하는 것이 이렇게 어려울 필요가 없습니다.",
+"Three integrated modules designed to eliminate complexity and maximize efficiency.":
+    "복잡성을 제거하고 효율성을 극대화하도록 설계된 세 가지 통합 모듈.",
+"Quick and secure recharge to all major Chinese media platforms.":
+    "모든 주요 중국 미디어 플랫폼에 대한 빠르고 안전한 충전.",
+"China-based. No handoff after the contract.": "중국 기반. 계약 후 인계 없음.",
+"Direct access — no middlemen, no markup chain":
+    "직접 액세스 — 중개인 없음, 마크업 체인 없음",
+"One point of contact vs. managing 5-7 agencies":
+    "단일 연락 창구 vs 5-7개 에이전시 관리",
+"Optimized through centralized operations": "중앙 집중식 운영을 통한 최적화",
+"Flexible plans designed to scale with your business":
+    "비즈니스와 함께 확장되도록 설계된 유연한 요금제",
+"Proven Results in China's Digital Market": "중국 디지털 시장에서 입증된 결과",
+"See how international brands navigate China's complex media landscape with TMG.":
+    "국제 브랜드가 TMG와 함께 중국의 복잡한 미디어 환경을 탐색하는 방법을 확인하세요.",
+'"No" From Every Platform — Until TMG Stepped In':
+    '"거절"만 있던 모든 플랫폼 — TMG가 개입하기까지',
+"TMG leveraged six years of deep platform relationships and regulatory expertise to find a pathway through.":
+    "TMG는 6년간의 깊은 플랫폼 관계와 규제 전문 지식을 활용하여 돌파구를 찾았습니다.",
+
+# Blog remaining
+"Doubao just introduced paid tiers at 68-500 RMB/month. With 140M+ DAU, this signals AI platforms are now real, monetized channels for advertisers.":
+    "Doubao가 월 68-500위안의 유료 등급을 도입했습니다. 1억 4,000만+ DAU로, 이는 AI 플랫폼이 이제 광고주를 위한 실제 수익 창출 채널이 되었음을 의미합니다.",
+"China's Internet Landscape in Spring 2026":
+    "2026년 봄 중국 인터넷 환경",
+"1.28 billion users, 192 hours per month of screen time, a ¥168 billion Q1 ad market, and AI-native apps at 413M monthly users — the essential data snapshot for anyone marketing in China.":
+    "12.8억 사용자, 월 192시간의 화면 시간, 1,680억 위안의 1분기 광고 시장, 4억 1,300만 월간 사용자의 AI 네이티브 앱 — 중국에서 마케팅하는 모든 사람을 위한 필수 데이터 스냅샷.",
+"Ocean Engine Local Reach: Douyin's All-in-One Local Marketing Platform":
+    "Ocean Engine Local Reach: Douyin의 올인원 로컬 마케팅 플랫폼",
+"Bing China's Premium Audience: Why Smart Brands Are Advertising Here":
+    "Bing China의 프리미엄 오디언스: 똑똑한 브랜드가 여기서 광고하는 이유",
+"Attribution Models in Paid Media: Why Your Campaign Data Might Be Lying to You":
+    "유료 미디어의 기여 모델: 캠페인 데이터가 거짓말할 수 있는 이유",
+"Smart Bidding Strategies: From oCPM to tROI":
+    "스마트 입찰 전략: oCPM에서 tROI까지",
+"Ad Billing Models Explained: CPM, CPC, CPA, oCPM and When to Use Each":
+    "광고 청구 모델 설명: CPM, CPC, CPA, oCPM 및 각각 사용 시기",
+"GEO Channel Weight Update 2026: 2 Types Rising, 3 Downgraded by AI":
+    "GEO 채널 가중치 업데이트 2026: 2개 유형 상승, 3개 AI에 의해 하락",
+"CPM, oCPM, eCPM: The Three Metrics Every Paid Media Buyer Gets Wrong":
+    "CPM, oCPM, eCPM: 모든 유료 미디어 바이어가 혼동하는 세 가지 지표",
+"Is a Rising CPM Really That Bad?": "CPM 상승이 정말 나쁜가요?",
+"Meet Zhitu Xing: Ocean Engine's Built-In AI Advertising Assistant":
+    "Zhitu Xing 소개: Ocean Engine의 내장 AI 광고 어시스턴트",
+"Ocean Engine: Douyin's Unified Digital Marketing Platform Explained":
+    "Ocean Engine: Douyin의 통합 디지털 마케팅 플랫폼 설명",
+"Douyin Enterprise Accounts: The Complete Guide for International Brands":
+    "Douyin 기업 계정: 국제 브랜드를 위한 완벽 가이드",
+"Pangle Ads: ByteDance's Global App Monetization Platform":
+    "Pangle 광고: ByteDance의 글로벌 앱 수익화 플랫폼",
+
+# WeChat additional
+"With 1.34 billion Monthly Active Users, WeChat is not just an app":
+    "13.4억 월간 활성 사용자를 보유한 WeChat은 단순한 앱이 아닙니다",
+"Data sources: Tencent Q2 2025 Results": "데이터 출처: Tencent 2025년 2분기 실적",
+"WeChat Channels (Video Accounts) is the new growth engine":
+    "WeChat 채널(비디오 계정)이 새로운 성장 엔진입니다",
+"Mini Programs are the heart of WeChat commerce":
+    "미니 프로그램은 WeChat 커머스의 핵심입니다",
+"100% penetration in Tier 1-2 cities + growing Tier 3-5 expansion":
+    "Tier 1-2 도시 100% 침투 + Tier 3-5 확장 증가",
+"WeChat is built for relationship-building, not impulse buying":
+    "WeChat은 충동 구매가 아닌 관계 구축을 위해 설계되었습니다",
+"Build subscriber trust through consistent content and community":
+    "일관된 콘텐츠와 커뮤니티를 통한 구독자 신뢰 구축",
+"Reach new audiences with short-form video, then cross-link to your Account":
+    "숏폼 비디오로 새로운 오디언스에 도달한 후 계정으로 교차 연결",
+"Convert engaged followers into transactions — within WeChat itself":
+    "참여한 팔로워를 WeChat 내에서 거래로 전환",
+"B2B & Luxury Brands: WeChat Is Non-Negotiable":
+    "B2B 및 럭셔리 브랜드: WeChat은 선택이 아닌 필수",
+"Direct access to decision-makers via Official Accounts":
+    "공식 계정을 통한 의사결정권자 직접 접근",
+"Premium audience concentration — 50%+ with high purchasing power":
+    "프리미엄 오디언스 집중 — 50%+ 높은 구매력",
+"Annual Report & Investor Relations · 2024": "연례 보고서 및 투자자 관계 · 2024",
 }
 
 def translate():
