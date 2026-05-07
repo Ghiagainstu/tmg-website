@@ -1059,6 +1059,156 @@ KO = {
     "Baidu는 선불 결제만 지원합니다. 광고를 게재하려면 계정에 충분한 잔액이 있어야 합니다. 신용 또는 후불 옵션은 없습니다.",
 "Foreign companies work through a local agency partner who handles account setup, qualification filing, and creative submission.":
     "외국 기업은 계정 설정, 자격 신청, 크리에이티브 제출을 처리하는 현지 에이전시 파트너를 통해 작업합니다.",
+
+# ===== Round 6: FAQ remaining detailed answers =====
+"WeChat FAQ": "WeChat FAQ",
+"How does WeChat advertising charge?": "WeChat 광고 요금은 어떻게 부과되나요?",
+"CPM (Cost Per Mille)": "CPM (1,000노출당 비용)",
+"CPC (Cost Per Click)": "CPC (클릭당 비용)",
+"oCPC (Optimized Cost Per Click)": "oCPC (최적화된 클릭당 비용)",
+"CPA (Cost Per Action)": "CPA (액션당 비용)",
+"CPT (Cost Per Time)": "CPT (시간당 비용)",
+"What is oCPC and when should I use it?": "oCPC란 무엇이며 언제 사용해야 하나요?",
+"How does WeChat recharge and deduct advertising fees?":
+    "WeChat 광고비 충전 및 차감은 어떻게 이루어지나요?",
+"What is the difference between auction ads and contract ads?":
+    "경매 광고와 계약 광고의 차이점은 무엇인가요?",
+"How does WeChat handle malicious clicks?": "WeChat은 악성 클릭을 어떻게 처리하나요?",
+"What common mistakes cause WeChat ad rejection?": "WeChat 광고 거부의 일반적인 실수는 무엇인가요?",
+"Are there industries that cannot advertise on WeChat?":
+    "WeChat에서 광고할 수 없는 업종이 있나요?",
+"Tencent Ads is not just WeChat. It is an ecosystem that spans multiple platforms:":
+    "Tencent Ads는 WeChat만이 아닙니다. 여러 플랫폼에 걸친 생태계입니다:",
+
+# Douyin FAQ
+"Can overseas companies advertise on Douyin?": "해외 기업이 Douyin에서 광고할 수 있나요?",
+"What is the difference between Douyin and TikTok Ads?":
+    "Douyin과 TikTok 광고의 차이점은 무엇인가요?",
+"What documents do I need to open an Ocean Engine account?":
+    "Ocean Engine 계정 개설에 필요한 서류는 무엇인가요?",
+"How long does account and ad review take?":
+    "계정 및 광고 검토는 얼마나 걸리나요?",
+"How does Ocean Engine charge for advertising?":
+    "Ocean Engine의 광고 요금 체계는 어떻게 되나요?",
+"What are typical CPM and CPC rates on Douyin?":
+    "Douyin의 일반적인 CPM 및 CPC 요금은 어떻게 되나요?",
+"Does Ocean Engine support post-payment or credit terms?":
+    "Ocean Engine은 후불 또는 신용 조건을 지원하나요?",
+"How does the bidding system work on Ocean Engine?":
+    "Ocean Engine의 입찰 시스템은 어떻게 작동하나요?",
+"What ad formats are available on Douyin?":
+    "Douyin에서 사용 가능한 광고 형식은 무엇인가요?",
+"What industries are restricted on Douyin/Ocean Engine?":
+    "Douyin/Ocean Engine에서 제한되는 업종은 무엇인가요?",
+"My TikTok creative is ready. Can I use it on Douyin?":
+    "TikTok 크리에이티브가 준비되었습니다. Douyin에서 사용할 수 있나요?",
+"How many Ocean Engine accounts can I manage on one device?":
+    "한 기기에서 몇 개의 Ocean Engine 계정을 관리할 수 있나요?",
+"How do I contact Ocean Engine customer support?":
+    "Ocean Engine 고객 지원에 어떻게 연락하나요?",
+"Where do I find Comment Management and Lead Management in the new Ocean Engine App?":
+    "새 Ocean Engine 앱에서 댓글 관리 및 리드 관리는 어디에서 찾을 수 있나요?",
+
+# Bilibili FAQ
+"Can foreign companies advertise on Bilibili?":
+    "외국 기업이 Bilibili에서 광고할 수 있나요?",
+"What makes Bilibili different from other Chinese ad platforms?":
+    "Bilibili가 다른 중국 광고 플랫폼과 다른 점은 무엇인가요?",
+"What documents are needed to open a Bilibili ad account?":
+    "Bilibili 광고 계정 개설에 필요한 서류는 무엇인가요?",
+"How long does Bilibili ad account approval take?":
+    "Bilibili 광고 계정 승인에는 얼마나 걸리나요?",
+"What is the minimum budget for Bilibili advertising?":
+    "Bilibili 광고의 최소 예산은 얼마인가요?",
+"How does Bilibili charge for advertising?": "Bilibili 광고 요금은 어떻게 부과되나요?",
+"What are typical CPM and CPC rates on Bilibili?":
+    "Bilibili의 일반적인 CPM 및 CPC 요금은 어떻게 되나요?",
+"Does Bilibili offer post-payment or credit terms?":
+    "Bilibili는 후불 또는 신용 조건을 제공하나요?",
+"What ad formats are available on Bilibili?":
+    "Bilibili에서 사용 가능한 광고 형식은 무엇인가요?",
+"Can I work with Bilibili creators (UP主) for advertising?":
+    "Bilibili 크리에이터(UP主)와 광고 협업이 가능한가요?",
+"What industries are restricted on Bilibili?":
+    "Bilibili에서 제한되는 업종은 무엇인가요?",
+"Why are my Bilibili ads getting rejected?":
+    "Bilibili 광고가 거부되는 이유는 무엇인가요?",
+"Should I use Douyin/TikTok content on Bilibili?":
+    "Bilibili에서 Douyin/TikTok 콘텐츠를 사용해야 하나요?",
+
+# Bing FAQ
+"What are Bing China users interested in buying?":
+    "Bing China 사용자는 무엇을 구매하는 데 관심이 있나요?",
+"Bing China users show strong purchasing intent across several categories, with average planned spending of ¥3,040.1 per month.":
+    "Bing China 사용자는 여러 카테고리에서 강한 구매 의도를 보이며, 월평균 계획 지출액은 ¥3,040.1입니다.",
+"Based on user behavior data, the following ad formats perform well:":
+    "사용자 행동 데이터에 따르면, 다음 광고 형식이 효과적입니다:",
+"59% of users research products before purchase, making search ads effective for capturing intent":
+    "사용자의 59%가 구매 전 제품을 조사하므로, 검색 광고가 의도 포착에 효과적입니다",
+"With 68% interest in AI, technology-focused display ads see higher engagement":
+    "AI 관심도 68%로, 기술 중심 디스플레이 광고가 더 높은 참여도를 보입니다",
+"Education and professional service promotions:": "교육 및 전문 서비스 프로모션:",
+"Over 75% college educated, with planned education spending averaging ¥3,040.1":
+    "75% 이상 대학 교육, 계획된 교육 지출 평균 ¥3,040.1",
+"Higher income levels support premium product advertising":
+    "높은 소득 수준이 프리미엄 제품 광고를 지원합니다",
+"Which industries are best suited for Bing China advertising?":
+    "Bing China 광고에 가장 적합한 업종은 무엇인가요?",
+"68% interest in AI, high education level": "AI 관심도 68%, 높은 교육 수준",
+">75% college educated, 72.4% plan education spending for children":
+    "75% 초과 대학 교육, 72.4%가 자녀 교육비 계획",
+"High disposable income (¥4,334.5 monthly personal consumption)":
+    "높은 가처분 소득(월 개인 소비 ¥4,334.5)",
+"Professional user base with decision-making authority":
+    "의사결정 권한을 가진 전문 사용자 기반",
+"These categories align with the demographic and behavioral characteristics of Bing China users.":
+    "이러한 카테고리는 Bing China 사용자의 인구통계학적 및 행동 특성과 일치합니다.",
+
+# GEO FAQ
+"How is 중국 GEO different from Western GEO?":
+    "중국 GEO가 서양 GEO와 어떻게 다른가요?",
+"China's AI ecosystem is entirely separate from the West. 중국 GEO targets DeepSeek, Douyin AI (Doubao), Kimi, Wenxin, and Tongyi — platforms with zero overlap with Western AI.":
+    "중국의 AI 생태계는 서양과 완전히 분리되어 있습니다. 중국 GEO는 DeepSeek, Douyin AI(豆包), Kimi, Wenxin, Tongyi를 대상으로 합니다 — 서양 AI와 전혀 중첩되지 않는 플랫폼입니다.",
+
+# WeChat service additional
+"Unlike entertainment platforms, WeChat is where decisions happen — in corporate chat groups, payment approvals, and long-term brand relationships.":
+    "엔터테인먼트 플랫폼과 달리 WeChat은 결정이 이루어지는 곳입니다 — 기업 채팅 그룹, 결제 승인, 장기적인 브랜드 관계 속에서.",
+"WeChat is the LinkedIn of China. 50%+ of Official Account readers hold university degrees — your direct line to C-suite executives and decision-makers.":
+    "WeChat은 중국의 LinkedIn입니다. 공식 계정 독자의 50% 이상이 대학 학위를 보유하고 있습니다 — 경영진 및 의사결정권자와의 직접 연결 통로.",
+"For brands targeting high-value customers in China, WeChat is the only platform that combines trust, transactions, and long-term relationship management.":
+    "중국에서 고가치 고객을 타겟팅하는 브랜드에게 WeChat은 신뢰, 거래, 장기적 관계 관리를 결합한 유일한 플랫폼입니다.",
+"In-document and Moments ad placements for professional audiences":
+    "전문 오디언스를 위한 문서 내 및 모먼트 광고 배치",
+"Mini Programs for lead capture, product demos, and consultation booking":
+    "리드 캡처, 제품 데모, 상담 예약을 위한 미니 프로그램",
+"LinkedIn-level targeting at a fraction of the cost":
+    "비용의 일부로 LinkedIn 수준의 타겟팅",
+"Unmatched brand trust in WeChat's verified environment":
+    "WeChat의 검증된 환경에서 비교할 수 없는 브랜드 신뢰",
+"Direct-to-consumer communication without third-party interference":
+    "제3자 간섭 없는 소비자 직접 커뮤니케이션",
+"Exclusive content and member programs via Official Accounts":
+    "공식 계정을 통한 독점 콘텐츠 및 멤버 프로그램",
+"Mini Programs for luxury e-commerce and appointment booking":
+    "럭셔리 전자상거래 및 예약을 위한 미니 프로그램",
+"User demographics, age distribution, education levels, and cross-platform usage patterns.":
+    "사용자 인구통계, 연령 분포, 교육 수준, 플랫폼 간 사용 패턴.",
+"National internet penetration, WeChat adoption rates, and digital payment statistics.":
+    "국가 인터넷 보급률, WeChat 채택률, 디지털 결제 통계.",
+"B2B marketing effectiveness, luxury brand ROI, and consumer loyalty benchmarks.":
+    "B2B 마케팅 효과, 럭셔리 브랜드 ROI, 소비자 충성도 벤치마크.",
+"All demographic data reflects the market landscape as of Q1 2024, providing the most current insights into China's digital ecosystem.":
+    "모든 인구통계 데이터는 2024년 1분기 시장 환경을 반영하며, 중국 디지털 생태계에 대한 가장 최신의 인사이트를 제공합니다.",
+
+# Douyin remaining small pieces
+"Female Impulse Shoppers": "여성 충동구매자",
+"In-feed native ads that blend seamlessly": "자연스럽게 통합되는 인피드 네이티브 광고",
+"Build brand awareness at scale with branded hashtag challenges":
+    "브랜드 해시태그 챌린지로 대규모 브랜드 인지도 구축",
+"Hashtag challenges with viral reach": "바이럴 도달 범위의 해시태그 챌린지",
+"AR lens & filter branding": "AR 렌즈 및 필터 브랜딩",
+"Top influencer partnerships": "최고 인플루언서 파트너십",
+"UGC amplification & user participation": "UGC 증폭 및 사용자 참여",
 }
 
 def translate():
