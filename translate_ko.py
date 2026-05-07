@@ -705,6 +705,168 @@ KO = {
 "Premium audience concentration — 50%+ with high purchasing power":
     "프리미엄 오디언스 집중 — 50%+ 높은 구매력",
 "Annual Report & Investor Relations · 2024": "연례 보고서 및 투자자 관계 · 2024",
+
+# ===== Round 4: Remaining content =====
+# FAQ answers
+"Yes. Baidu supports account opening for foreign companies and entities. You do not need a Chinese domestic business license to get started.":
+    "네. Baidu는 외국 기업 및 법인의 계정 개설을 지원합니다. 시작하는 데 중국 현지 영업 허가증이 필요하지 않습니다.",
+"Is there a difference between foreign and Chinese domestic Baidu accounts?":
+    "외국인 계정과 중국 국내 Baidu 계정 간에 차이가 있나요?",
+"No functional difference. The only distinction is in the ad display: the company name shown at the bottom of your ads will be the English name for foreign accounts.":
+    "기능적 차이는 없습니다. 유일한 차이는 광고 표시에 있습니다: 광고 하단에 표시되는 회사 이름이 외국 계정의 경우 영어 이름으로 표시됩니다.",
+"What documents do I need to open a Baidu account?":
+    "Baidu 계정을 개설하는 데 필요한 서류는 무엇인가요?",
+"(a) Business license copy + certified translation (stamped with company seal);":
+    "(a) 영업 허가증 사본 + 공증 번역(회사 직인 날인);",
+"(b) Enterprise info screenshot from government website + certified translation (stamped with company seal);":
+    "(b) 정부 웹사이트의 기업 정보 스크린샷 + 공증 번역(회사 직인 날인);",
+"(c) Bank account certificate + translated document from designated institution (stamped with company seal), such as bank statement or account opening certificate.":
+    "(c) 은행 계좌 증명서 + 지정 기관의 번역 문서(회사 직인 날인)(예: 은행 거래 명세서 또는 계좌 개설 증명서);",
+"(d, optional) Screenshot of landing page homepage (stamped with company seal).":
+    "(d, 선택 사항) 랜딩 페이지 홈페이지 스크린샷(회사 직인 날인).",
+"If you have difficulty providing these documents, we are happy to assist.":
+    "이 서류 제공에 어려움이 있으시면 기꺼이 도와드리겠습니다.",
+"What should I do if my Baidu ad fails review?":
+    "Baidu 광고 검토에 실패하면 어떻게 해야 하나요?",
+"Follow these steps: (1) Read the review notes carefully; (2) Revise the specific content flagged; (3) Re-submit for review.":
+    "다음 단계를 따르세요: (1) 검토 의견을 주의 깊게 읽으십시오; (2) 지적된 특정 내용을 수정하십시오; (3) 재검토를 위해 다시 제출하십시오.",
+"Are there fees besides the advertising budget for Baidu?":
+    "Baidu의 광고 예산 외에 다른 수수료가 있나요?",
+"Yes. There is an annual account authentication fee of CNY 600. For new users, this fee is refunded to your ad account after the first year.":
+    "네. 연간 계정 인증 수수료 600위안이 있습니다. 신규 사용자의 경우 이 수수료는 첫 해 이후 광고 계정으로 환불됩니다.",
+"What is the minimum top-up amount for Baidu?":
+    "Baidu의 최소 충전 금액은 얼마인가요?",
+"Baidu's official rule is a minimum top-up of CNY 2,400. However, to save on transaction fees and reduce transfer time, we recommend a single top-up of at least CNY 10,000.":
+    "Baidu의 공식 규정은 최소 충전 금액 2,400위안입니다. 그러나 송금 수수료를 절약하고 입금 시간을 단축하기 위해 최소 10,000위안의 일괄 충전을 권장합니다.",
+"How much does it cost to open a Baidu account?":
+    "Baidu 계정 개설 비용은 얼마인가요?",
+"Pre-paid advertising fee: minimum CNY 2,400. Service fee: starting from USD 100, which includes document translation, document submission, and account setup assistance.":
+    "선불 광고비: 최소 2,400위안. 서비스 수수료: USD 100부터 시작하며, 문서 번역, 문서 제출, 계정 설정 지원이 포함됩니다.",
+"Does Baidu support post-payment (pay later)?":
+    "Baidu는 후불 결제를 지원하나요?",
+"No. Baidu only supports pre-payment. You must have sufficient balance in your account before your ads can run.":
+    "아니요. Baidu는 선불 결제만 지원합니다. 광고를 게재하려면 계정에 충분한 잔액이 있어야 합니다.",
+"Cost-per-click (CPC): You are charged only when a user clicks your ad.":
+    "클릭당 비용(CPC): 사용자가 광고를 클릭한 경우에만 비용이 청구됩니다.",
+"How much does each click cost on Baidu? What is the minimum monthly budget?":
+    "Baidu에서 클릭당 비용은 얼마인가요? 최소 월 예산은 얼마인가요?",
+"Cost per click: There is no uniform price. Low-competition keywords may cost a few yuan per click. Industry-specific keywords can be significantly higher.":
+    "클릭당 비용: 균일한 가격은 없습니다. 경쟁이 낮은 키워드는 클릭당 몇 위안일 수 있습니다. 업종별 키워드는 상당히 높을 수 있습니다.",
+"Minimum monthly budget: the minimum daily budget is CNY 50, which means the theoretical monthly minimum is CNY 1,500.":
+    "최소 월 예산: 최소 일일 예산은 50위안이며, 이론적 월 최소 금액은 1,500위안입니다.",
+"Everything you need to know about advertising on": "광고에 대해 알아야 할 모든 것",
+"Straight answers from a China media agency. No fluff.": "중국 미디어 에이전시의 직접적인 답변. 불필요한 내용 없음.",
+
+# AI Semi remaining
+"In short, the client was not only looking for campaign delivery. They were looking for a more transparent, centralised, and efficient operating model.":
+    "요컨대, 클라이언트는 단순한 캠페인 전달 이상을 원했습니다. 그들은 더 투명하고 중앙집중적이며 효율적인 운영 모델을 찾고 있었습니다.",
+"Rather than treating each platform as a separate task, we focused on building a more unified paid media framework.":
+    "각 플랫폼을 별도의 작업으로 취급하는 대신, 보다 통합된 유료 미디어 프레임워크 구축에 집중했습니다.",
+"1. A single contact point for multi-platform coordination":
+    "1. 멀티 플랫폼 조정을 위한 단일 연락 창구",
+"Instead of asking the client to manage multiple external contacts, we created a more streamlined model with one main agency contact coordinating all platform activity.":
+    "클라이언트가 여러 외부 연락처를 관리하도록 요청하는 대신, 하나의 주요 에이전시 연락처가 모든 플랫폼 활동을 조정하는 간소화된 모델을 만들었습니다.",
+"2. Greater transparency in accounts and reporting":
+    "2. 계정 및 보고의 향상된 투명성",
+"Transparency was a key priority. We worked in a way that gave the client clearer access to platforms, reporting, and performance data — no black boxes.":
+    "투명성은 핵심 우선순위였습니다. 플랫폼, 보고, 성과 데이터에 대한 명확한 액세스를 클라이언트에게 제공하는 방식으로 작업했습니다 — 블랙박스는 없습니다.",
+"Because the client needed broader paid media support, we were able to manage activity across multiple platforms rather than limiting strategy to a single channel.":
+    "클라이언트가 더 광범위한 유료 미디어 지원을 필요로 했기 때문에, 전략을 단일 채널로 제한하는 대신 여러 플랫폼에서 활동을 관리할 수 있었습니다.",
+"4. Budget and platform recommendations based on performance":
+    "4. 성과 기반 예산 및 플랫폼 추천",
+"Different products and campaigns do not perform the same way across every platform.":
+    "다른 제품과 캠페인은 모든 플랫폼에서 동일한 방식으로 수행되지 않습니다.",
+"By consolidating work under one agency relationship, the client benefited from a more efficient service structure and more competitive commercial terms.":
+    "하나의 에이전시 관계로 작업을 통합함으로써, 클라이언트는 더 효율적인 서비스 구조와 더 경쟁력 있는 상업 조건의 혜택을 받았습니다.",
+"While we are not sharing specific performance figures, the value of the partnership was clear.":
+    "구체적인 성과 수치는 공유하지 않지만, 파트너십의 가치는 분명했습니다.",
+"One agency partner to manage multiple media relationships":
+    "여러 미디어 관계를 관리하는 하나의 에이전시 파트너",
+"One consistent point of contact across platforms": "플랫폼 전반에 걸친 일관된 단일 연락 창구",
+"More transparent access to accounts and performance data":
+    "계정 및 성과 데이터에 대한 더 투명한 액세스",
+"A more efficient way to manage paid media activity": "유료 미디어 활동을 관리하는 더 효율적인 방법",
+"Lower communication complexity across external vendors":
+    "외부 벤더 간 커뮤니케이션 복잡성 감소",
+"Stronger strategic support around analysis, planning, and optimisation":
+    "분석, 계획 및 최적화에 대한 강화된 전략적 지원",
+"A service model that remained competitive without compromising delivery quality":
+    "제공 품질을 저하시키지 않으면서 경쟁력을 유지한 서비스 모델",
+
+# Farmskins remaining
+"The platform's unique value proposition of skin trading and marketplace operations fell into regulatory gray areas that made traditional advertising channels inaccessible.":
+    "스킨 거래 및 마켓플레이스 운영의 독특한 가치 제안은 규제 회색 지대에 속하여 기존 광고 채널을 이용할 수 없게 만들었습니다.",
+"Many international gaming companies would have viewed these rejections as insurmountable barriers. However, we recognized that each rejection was an opportunity to refine our approach and find compliant pathways.":
+    "많은 국제 게임 기업은 이러한 거부를 극복할 수 없는 장벽으로 보았을 것입니다. 그러나 당사는 각 거부가 접근 방식을 개선하고 규정 준수 경로를 찾을 수 있는 기회라고 인식했습니다.",
+"Through persistent, strategic engagement and a deep understanding of China's digital advertising landscape, we transformed what started as a series of rejections into a long-term, successful partnership.":
+    "지속적이고 전략적인 참여와 중국 디지털 광고 환경에 대한 깊은 이해를 통해, 거부의 연속으로 시작된 것을 장기적이고 성공적인 파트너십으로 전환시켰습니다.",
+"are required when dealing with complex regulatory environments":
+    "복잡한 규제 환경을 다룰 때 필요합니다",
+"can transform perceived barriers into achievable challenges":
+    "인식된 장벽을 달성 가능한 과제로 전환할 수 있습니다",
+"with platform representatives build trust and open doors":
+    "플랫폼 담당자와의 관계가 신뢰를 구축하고 문을 엽니다",
+"Why This Matters for Other Gaming Companies":
+    "다른 게임 기업에게 중요한 이유",
+"The key is recognizing that compliance isn't about finding loopholes — it's about understanding requirements, adapting strategies, and building relationships that facilitate long-term success.":
+    "핵심은 규정 준수가 허점을 찾는 것이 아니라 요구 사항을 이해하고, 전략을 조정하며, 장기적 성공을 촉진하는 관계를 구축하는 것임을 인식하는 것입니다.",
+"Ready to Enter the Chinese Gaming Market?":
+    "중국 게임 시장에 진출할 준비가 되셨나요?",
+"Let's discuss how TMG can help your gaming platform navigate China's regulatory landscape and advertising ecosystem.":
+    "TMG가 귀사의 게임 플랫폼이 중국의 규제 환경과 광고 생태계를 탐색하는 방법을 논의해 보세요.",
+
+# GEO remaining FAQ
+"SEO (Search Engine Optimization) aims to rank your website high in traditional search results — users click a link to read your content.":
+    "SEO(검색 엔진 최적화)는 전통적인 검색 결과에서 웹사이트 순위를 높이는 것을 목표로 합니다 — 사용자가 링크를 클릭하여 콘텐츠를 읽습니다.",
+"Most clients see measurable results within 1–2 weeks. Initial citation improvements can appear within 3–5 business days after deployment.":
+    "대부분의 클라이언트는 1~2주 이내에 측정 가능한 결과를 확인합니다. 배포 후 3~5영업일 이내에 초기 인용 개선이 나타날 수 있습니다.",
+"Quick answers about 중국 GEO and how it works.":
+    "중국 GEO 및 작동 방식에 대한 빠른 답변.",
+"Citations don't disappear immediately — but without ongoing optimization, competitors who invest in GEO will gradually overtake your share of voice.":
+    "인용이 즉시 사라지지는 않지만, 지속적인 최적화 없이는 GEO에 투자하는 경쟁자가 점차 점유율을 빼앗을 것입니다.",
+
+# Blog descriptions  
+"Discover Kuaishou's user demographics: 400M+ users, 90M+ CNY shoppers, 64.2% video sharing growth.":
+    "Kuaishou 사용자 인구통계 탐색: 4억+ 사용자, 9,000만+ 위안 쇼퍼, 64.2% 비디오 공유 성장.",
+"735M+ MAU, 322M AI search users. Data-driven insights for advertisers targeting China's largest search engine.":
+    "7억 3,500만+ MAU, 3억 2,200만 AI 검색 사용자. 중국 최대 검색 엔진을 타겟팅하는 광고주를 위한 데이터 기반 인사이트.",
+"Discover Bilibili's unique user demographics: 26yo avg age, 50%+ post-00s, 1:1 gender ratio, 107min daily usage.":
+    "Bilibili의 고유한 사용자 인구통계 탐색: 평균 연령 26세, 50%+ 00년대생, 1:1 성비, 일일 107분 사용.",
+"Discover Bing China's premium user demographics: 75%+ college-educated, high income, urban-focused.":
+    "Bing China의 프리미엄 사용자 인구통계 탐색: 75%+ 대학 교육, 고소득, 도시 중심.",
+"Discover why Bing China's educated, affluent user base (75%+ college-educated, 62% ad engagement) is a goldmine for international brands.":
+    "Bing China의 교육 수준이 높고 부유한 사용자 기반(75%+ 대학 교육, 62% 광고 참여)이 국제 브랜드에게 금광인 이유를 알아보세요.",
+"Confused by attribution models in China's paid media? We break down 7 models, platform differences, and how to choose the right one.":
+    "중국 유료 미디어의 기여 모델이 혼란스러우신가요? 7가지 모델, 플랫폼 차이점, 올바른 선택 방법을 설명합니다.",
+"Bing China's Premium Audience: Why Smart Brands Are Advertising Here":
+    "Bing China의 프리미엄 오디언스: 똑똑한 브랜드가 여기서 광고하는 이유",
+"Why Bilibili is China's Most Undervalued Marketing Platform for Gen Z":
+    "Bilibili가 Z세대를 위한 중국에서 가장 과소평가된 마케팅 플랫폼인 이유",
+"While international advertisers rush to Douyin, they're overlooking the platform where China's Generation Z spends 107 minutes daily.":
+    "국제 광고주들이 Douyin으로 몰려드는 동안, 중국 Z세대가 매일 107분을 보내는 플랫폼을 간과하고 있습니다.",
+"800M+ users reached, 63B daily ad requests, 110B daily impressions—Pangle is ByteDance's global app network that advertisers are sleeping on.":
+    "8억+ 사용자 도달, 630억 일일 광고 요청, 1,100억 일일 노출 — Pangle은 광고주들이 간과하고 있는 ByteDance의 글로벌 앱 네트워크입니다.",
+
+# Homepage remaining
+"When Farmskins first approached us, every major Chinese advertising platform had rejected them.":
+    "Farmskins가 처음 문의했을 때, 모든 주요 중국 광고 플랫폼이 그들을 거부했습니다.",
+"— proving that the right partner makes all the difference.":
+    "— 올바른 파트너가 모든 차이를 만든다는 것을 증명합니다.",
+"Late to the international market — but not new to the game. We've been running domestic campaigns in China for over 10 years.":
+    "국제 시장에는 늦었지만, 게임에 새로운 것은 아닙니다. 우리는 중국에서 10년 이상 국내 캠페인을 운영해 왔습니다.",
+"You keep full ownership of your ad accounts.":
+    "귀하는 광고 계정의 완전한 소유권을 유지합니다.",
+"TUYUE SOUXIN (SHANGHAI) INFORMATION TECHNOLOGY CO., LTD.":
+    "TUYUE SOUXIN (SHANGHAI) INFORMATION TECHNOLOGY CO., LTD.",
+"Tuyue Media Gateway was founded by professionals who lived the problem firsthand.":
+    "Tuyue Media Gateway는 문제를 직접 경험한 전문가들에 의해 설립되었습니다.",
+"We built TMG to be the bridge we wished we had—one unified interface, transparent operations, and a team that speaks your language.":
+    "TMG는 우리가 원했던 다리 역할을 하기 위해 구축되었습니다 — 통합된 인터페이스, 투명한 운영, 귀하의 언어를 구사하는 팀.",
+"Top questions from international advertisers getting started in China.":
+    "중국에서 시작하는 국제 광고주들의 주요 질문.",
+"Response time: Within 24 hours (weekdays)": "응답 시간: 24시간 이내(평일 기준)",
+"Languages: English, Mandarin, Cantonese": "언어: 영어, 중국어, 광둥어",
+"Business License Number: 91310114MADKG4UF0G": "사업자 등록 번호: 91310114MADKG4UF0G",
 }
 
 def translate():
