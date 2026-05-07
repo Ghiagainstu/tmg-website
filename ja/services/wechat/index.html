@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Douyin Ads | Tuyue Media Gateway</title>
+  <title>WeChat Ads | Tuyue Media Gateway</title>
   
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/assets/og-image.png">
-<meta name="description" content="Reach 700M+ DAU on Douyin (TikTok China). Video feed ads, live stream shopping, brand takeovers — TMG manages your full Douyin advertising ecosystem.">
-  <link rel="canonical" href="https://www.tuyuesouxin.cn/services/douyin">
-  <meta property="og:title" content="Douyin Ads | Tuyue Media Gateway">
-  <meta property="og:description" content="Tap into China's most engaging short video platform. Video feed ads, live commerce, and branded content — all managed by TMG.">
-  <meta property="og:url" content="https://www.tuyuesouxin.cn/services/douyin">
+<meta name="description" content="Reach 1.3 billion users through WeChat公式アカウント, ミニプログラム, Moments ads, and video channels. TMG manages your entire WeChat advertising ecosystem.">
+  <link rel="canonical" href="https://www.tuyuesouxin.cn/ja/services/wechat/index.html">
+  <link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/services/wechat/index.html">
+  <link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/services/wechat/">
+  <link rel="alternate" hreflang="x-default" href="https://www.tuyuesouxin.cn/services/wechat/">
+  <meta property="og:title" content="WeChat Ads | Tuyue Media Gateway">
+  <meta property="og:description" content="Tap into China's largest social ecosystem. 公式アカウント, ミニプログラム, モーメント・検索広告 — all in one place.">
+  <meta property="og:url" content="https://www.tuyuesouxin.cn/ja/services/wechat/index.html">
   <meta property="og:image" content="https://www.tuyuesouxin.cn/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://www.tuyuesouxin.cn/assets/twitter-card.png">
@@ -86,7 +89,13 @@
     .header__toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: var(--space-2); }
     .header__toggle span { display: block; width: 24px; height: 2px; background: var(--color-text-primary); transition: all 250ms ease; }
     .btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); padding: var(--space-3) var(--space-5); font-size: var(--font-size-sm); font-weight: 500; text-decoration: none; border-radius: 6px; transition: all 250ms ease; cursor: pointer; border: none; }
-    .btn--primary { background: linear-gradient(135deg, #c9a84c 0%, #e8c87a 50%, #c9a84c 100%); background-size: 200% 200%; color: #0d1220; font-weight: 600; box-shadow: 0 2px 12px rgba(201, 168, 76, 0.25); transition: all var(--transition-fast); }
+    .btn--primary {
+      background: linear-gradient(135deg, #c9a84c 0%, #e8c87a 50%, #c9a84c 100%);
+      background-size: 200% 200%;
+      color: #0d1220; font-weight: 600;
+      box-shadow: 0 2px 12px rgba(201, 168, 76, 0.25);
+      transition: all var(--transition-fast);
+    }
     .btn--primary:hover { background-position: right center; box-shadow: 0 4px 20px rgba(201, 168, 76, 0.4); transform: translateY(-1px); }
     .btn--secondary { background: transparent; color: var(--color-text-primary); border: 1px solid var(--color-border); }
     .btn--secondary:hover { border-color: var(--color-border-hover); background: rgba(255,255,255,0.05); }
@@ -161,6 +170,7 @@
     .reveal.reveal--visible { opacity: 1; transform: translateY(0); }
     .reveal--delay-1 { transition-delay: 0.1s; }
     .reveal--delay-2 { transition-delay: 0.2s; }
+    .reveal--delay-3 { transition-delay: 0.3s; }
     .contact { padding: var(--space-20) 0; }
     .contact__grid { display: grid; grid-template-columns: 1fr; gap: var(--space-12); }
     @media (min-width: 900px) { .contact__grid { grid-template-columns: 1fr 1fr; } }
@@ -204,23 +214,23 @@
     .form-success-card__detail-value { font-size: var(--font-size-sm); color: var(--color-accent-light); font-weight: 500; }
     a.form-success-card__detail-value { color: var(--color-primary); text-decoration: none; }
     a.form-success-card__detail-value:hover { text-decoration: underline; }
-    .insights__grid {
+    .pillars__grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: var(--space-6);
     }
-    .insight-card {
+    .pillar-card {
       background: var(--color-bg-card);
       border: 1px solid var(--color-border);
       border-radius: 12px;
       padding: var(--space-8);
       transition: all 250ms ease;
     }
-    .insight-card:hover {
+    .pillar-card:hover {
       border-color: var(--color-border-hover);
       transform: translateY(-4px);
     }
-    .insight-card__icon {
+    .pillar-card__icon {
       width: 56px;
       height: 56px;
       background: rgba(201, 168, 76, 0.15);
@@ -231,20 +241,181 @@
       font-size: 28px;
       margin-bottom: var(--space-5);
     }
-    .insight-card__title {
+    .pillar-card__title {
       font-size: var(--font-size-xl);
       font-weight: 600;
       margin-bottom: var(--space-3);
     }
-    .insight-card__description {
+    .pillar-card__description {
       color: var(--color-text-secondary);
       font-size: var(--font-size-sm);
       line-height: 1.6;
     }
-    @media (max-width: 768px) {
-      .insights__grid {
-        grid-template-columns: 1fr;
-      }
+    .pillar-card__stats {
+      margin-top: var(--space-4);
+      padding-top: var(--space-4);
+      border-top: 1px solid var(--color-border);
+    }
+    .pillar-card__stat {
+      display: flex;
+      justify-content: space-between;
+      font-size: var(--font-size-sm);
+      margin-bottom: var(--space-2);
+    }
+    .pillar-card__stat-label {
+      color: var(--color-text-muted);
+    }
+    .pillar-card__stat-value {
+      color: var(--color-accent-light);
+      font-weight: 600;
+    }
+    .stats__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-6);
+    }
+    .stat-card {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: var(--space-8);
+      text-align: center;
+      transition: all 250ms ease;
+    }
+    .stat-card:hover {
+      border-color: var(--color-border-hover);
+      transform: translateY(-4px);
+    }
+    .stat-card__value {
+      font-size: var(--font-size-4xl);
+      font-weight: 700;
+      color: var(--color-accent);
+      margin-bottom: var(--space-2);
+    }
+    .stat-card__label {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-secondary);
+    }
+
+    /* ── User Insights Section ── */
+    .insights { padding: var(--space-12) 0; background: var(--color-bg-alt); }
+    .insights__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-5); margin-bottom: var(--space-6); }
+    .insight-stat { background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 12px; padding: var(--space-6); text-align: center; }
+    .insight-stat__icon { width: 44px; height: 44px; margin: 0 auto var(--space-3); background: rgba(19,168,103,.15); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+    .insight-stat__icon svg { color: #13a867; }
+    .insight-stat__num { font-size: var(--font-size-3xl); font-weight: 800; color: var(--color-text-primary); line-height: 1.1; margin-bottom: var(--space-1); }
+    .insight-stat__num span { color: #13a867; }
+    .insight-stat__label { font-size: var(--font-size-sm); color: var(--color-text-muted); }
+
+    .insights__breakdown { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: var(--space-6); margin-bottom: var(--space-4); }
+    .breakdown-card { background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 12px; padding: var(--space-6); }
+    .breakdown-card__title { font-size: var(--font-size-sm); font-weight: 600; color: var(--color-text-primary); margin-bottom: var(--space-5); display: flex; align-items: center; gap: var(--space-2); }
+    .breakdown-card__title svg { color: #13a867; flex-shrink: 0; }
+    .breakdown-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-3); }
+    .breakdown-row:last-child { margin-bottom: 0; }
+    .breakdown-row__label { font-size: var(--font-size-sm); color: var(--color-text-secondary); }
+    .breakdown-row__bar-wrap { flex: 1; margin: 0 var(--space-3); background: rgba(255,255,255,.05); border-radius: 4px; height: 8px; overflow: hidden; }
+    .breakdown-row__bar { height: 100%; background: linear-gradient(90deg, #13a867, #2dd4bf); border-radius: 4px; }
+    .breakdown-row__val { font-size: var(--font-size-sm); font-weight: 700; color: #13a867; min-width: 44px; text-align: right; }
+
+    .audience-tags { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-5); }
+    .audience-tag { display: inline-flex; align-items: center; gap: 5px; padding: 5px 12px; border-radius: 20px; font-size: var(--font-size-xs); font-weight: 600; }
+    .audience-tag--teal { background: rgba(19,168,103,.12); color: #2dd4bf; border: 1px solid rgba(19,168,103,.25); }
+    .audience-tag--green { background: rgba(16,185,129,.12); color: #34d399; border: 1px solid rgba(16,185,129,.25); }
+    .audience-tag--blue { background: rgba(59,130,246,.12); color: #60a5fa; border: 1px solid rgba(59,130,246,.25); }
+    .audience-tag--purple { background: rgba(139,92,246,.12); color: #a78bfa; border: 1px solid rgba(139,92,246,.25); }
+
+    .insights__highlight { background: var(--color-bg-card); border: 1px solid rgba(19,168,103,.3); border-radius: 12px; padding: var(--space-6); margin-bottom: var(--space-4); display: flex; align-items: flex-start; gap: var(--space-5); }
+    .insights__highlight-icon { flex-shrink: 0; width: 48px; height: 48px; background: rgba(19,168,103,.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #13a867; }
+    .insights__highlight h3 { font-size: var(--font-size-lg); font-weight: 700; margin-bottom: var(--space-2); color: var(--color-text-primary); }
+    .insights__highlight p { font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.7; }
+    .insights__highlight strong { color: #2dd4bf; }
+
+    .insights__source { text-align: center; font-size: var(--font-size-xs); color: var(--color-text-muted); padding: var(--space-2) 0; border-top: 1px solid var(--color-border); }
+
+    @media (max-width: 900px) { .insights__grid { grid-template-columns: repeat(2, 1fr); } .insights__breakdown { grid-template-columns: 1fr; } .insights__highlight { flex-direction: column; } }
+    @media (max-width: 600px) { .insights__grid { grid-template-columns: 1fr 1fr; } }
+
+    .trust__content {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: var(--space-10);
+    }
+    .trust__loop {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-6);
+      margin-top: var(--space-8);
+    }
+    .trust__step {
+      text-align: center;
+      padding: var(--space-6);
+      background: var(--color-bg-alt);
+      border-radius: 12px;
+      position: relative;
+    }
+    .trust__step::after {
+      content: '→';
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      color: var(--color-accent);
+    }
+    .trust__step:last-child::after {
+      display: none;
+    }
+    .trust__step-icon {
+      font-size: 36px;
+      margin-bottom: var(--space-4);
+    }
+    .trust__step-title {
+      font-size: var(--font-size-lg);
+      font-weight: 600;
+      margin-bottom: var(--space-2);
+    }
+    .trust__step-desc {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-secondary);
+    }
+    .b2b__content {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: var(--space-10);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-8);
+    }
+    .b2b__block-title {
+      font-size: var(--font-size-xl);
+      font-weight: 600;
+      margin-bottom: var(--space-4);
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+    }
+    .b2b__list {
+      list-style: none;
+    }
+    .b2b__item {
+      position: relative;
+      padding-left: var(--space-5);
+      margin-bottom: var(--space-3);
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+    }
+    .b2b__item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 6px;
+      height: 6px;
+      background: var(--color-accent);
+      border-radius: 50%;
     }
     .sources__list {
       display: grid;
@@ -292,126 +463,15 @@
       font-style: italic;
     }
     @media (max-width: 768px) {
-      .sources__list {
+      .pillars__grid, .stats__grid, .sources__list, .trust__loop {
         grid-template-columns: 1fr;
       }
-    }
-
-    /* ===== Audience Insights Section (Douyin) ===== */
-    .insights {
-      padding: var(--space-12) 0;
-      background: var(--color-bg-alt);
-    }
-    .insights__grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: var(--space-5);
-      margin-bottom: var(--space-6);
-    }
-    .insight-stat {
-      background: var(--color-bg-card);
-      border: 1px solid var(--color-border);
-      border-radius: 12px;
-      padding: var(--space-6);
-      text-align: center;
-    }
-    .insight-stat__icon {
-      width: 44px; height: 44px;
-      margin: 0 auto var(--space-3);
-      background: rgba(254, 44, 85, .15);
-      border-radius: 10px;
-      display: flex; align-items: center; justify-content: center;
-    }
-    .insight-stat__icon svg { color: #fe2c55; }
-    .insight-stat__num {
-      font-size: var(--font-size-3xl);
-      font-weight: 800;
-      color: var(--color-text-primary);
-      line-height: 1.1;
-      margin-bottom: var(--space-1);
-    }
-    .insight-stat__num span { color: #fe2c55; }
-    .insight-stat__label { font-size: var(--font-size-sm); color: var(--color-text-muted); }
-    .insights__breakdown {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: var(--space-6);
-      margin-bottom: var(--space-4);
-    }
-    .breakdown-card {
-      background: var(--color-bg-card);
-      border: 1px solid var(--color-border);
-      border-radius: 12px;
-      padding: var(--space-6);
-    }
-    .breakdown-card__title {
-      font-size: var(--font-size-sm);
-      font-weight: 600;
-      color: var(--color-text-primary);
-      margin-bottom: var(--space-5);
-      display: flex; align-items: center; gap: var(--space-2);
-    }
-    .breakdown-card__title svg { color: #fe2c55; flex-shrink: 0; }
-    .breakdown-row {
-      display: flex; justify-content: space-between; align-items: center;
-      margin-bottom: var(--space-3);
-    }
-    .breakdown-row:last-child { margin-bottom: 0; }
-    .breakdown-row__label { font-size: var(--font-size-sm); color: var(--color-text-secondary); }
-    .breakdown-row__bar-wrap {
-      flex: 1; margin: 0 var(--space-3);
-      background: rgba(255,255,255,.05);
-      border-radius: 4px; height: 8px; overflow: hidden;
-    }
-    .breakdown-row__bar {
-      height: 100%;
-      background: linear-gradient(90deg, #fe2c55, #ff6b8a);
-      border-radius: 4px;
-    }
-    .breakdown-row__val { font-size: var(--font-size-sm); font-weight: 700; color: #fe2c55; min-width: 44px; text-align: right; }
-    .audience-tags { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-5); }
-    .audience-tag {
-      display: inline-flex; align-items: center; gap: 5px;
-      padding: 5px 12px; border-radius: 20px;
-      font-size: var(--font-size-xs); font-weight: 600;
-    }
-    .audience-tag--brand {
-      background: rgba(254, 44, 85, .12);
-      color: #ff6b8a;
-      border: 1px solid rgba(254, 44, 85, .25);
-    }
-    .insights__highlight {
-      background: var(--color-bg-card);
-      border: 1px solid rgba(254, 44, 85, .3);
-      border-radius: 12px;
-      padding: var(--space-6);
-      margin-bottom: var(--space-4);
-      display: flex; align-items: flex-start; gap: var(--space-5);
-    }
-    .insights__highlight-icon {
-      flex-shrink: 0; width: 48px; height: 48px;
-      background: rgba(254, 44, 85, .15);
-      border-radius: 12px;
-      display: flex; align-items: center; justify-content: center;
-      color: #fe2c55;
-    }
-    .insights__highlight h3 { font-size: var(--font-size-lg); font-weight: 700; margin-bottom: var(--space-2); }
-    .insights__highlight p { font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.7; }
-    .insights__highlight strong { color: #ff6b8a; }
-    .insights__source {
-      text-align: center;
-      font-size: var(--font-size-xs);
-      color: var(--color-text-muted);
-      padding: var(--space-2) 0;
-      border-top: 1px solid var(--color-border);
-    }
-    @media (max-width: 900px) {
-      .insights__grid { grid-template-columns: repeat(2, 1fr); }
-      .insights__breakdown { grid-template-columns: 1fr; }
-      .insights__highlight { flex-direction: column; }
-    }
-    @media (max-width: 600px) {
-      .insights__grid { grid-template-columns: 1fr 1fr; }
+      .trust__step::after {
+        display: none;
+      }
+      .b2b__content {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -429,10 +489,11 @@
         </a>
         <nav class="header__nav">
           <div class="header__dropdown">
-            <a href="https://www.tuyuesouxin.cn/services" class="header__nav-link header__dropdown-trigger active">Services <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+            <a href="https://www.tuyuesouxin.cn/services" class="header__nav-link header__dropdown-trigger active">サービス <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <div class="header__dropdown-menu">
-              <a href="https://www.tuyuesouxin.cn/services/wechat" class="header__dropdown-item">WeChat Ads</a>
-              <a href="https://www.tuyuesouxin.cn/services/douyin" class="header__dropdown-item header__dropdown-item--active">Douyin Ads</a>
+              <a href="https://www.tuyuesouxin.cn/services" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">すべてのサービス</a>
+              <a href="https://www.tuyuesouxin.cn/services/wechat" class="header__dropdown-item header__dropdown-item--active">WeChat Ads</a>
+              <a href="https://www.tuyuesouxin.cn/services/douyin" class="header__dropdown-item">Douyin Ads</a>
               <a href="https://www.tuyuesouxin.cn/services/baidu" class="header__dropdown-item">Baidu SEM</a>
               <a href="https://www.tuyuesouxin.cn/services/bing" class="header__dropdown-item">Bing China</a>
               <a href="https://www.tuyuesouxin.cn/services/xiaohongshu" class="header__dropdown-item">Xiaohongshu</a>
@@ -440,23 +501,23 @@
               <a href="https://www.tuyuesouxin.cn/geo" class="header__dropdown-item">China GEO</a>
             </div>
           </div>
-          <a href="https://www.tuyuesouxin.cn/pricing" class="header__nav-link">Pricing</a>
-          <a href="https://www.tuyuesouxin.cn/client-stories" class="header__nav-link">Client Stories</a>
+          <a href="https://www.tuyuesouxin.cn/pricing" class="header__nav-link">料金</a>
+          <a href="https://www.tuyuesouxin.cn/client-stories" class="header__nav-link">導入事例</a>
           <a href="https://www.tuyuesouxin.cn/geo" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
-          <a href="https://www.tuyuesouxin.cn/blog/" class="header__nav-link">Blog</a>
+          <a href="https://www.tuyuesouxin.cn/blog/" class="header__nav-link">ブログ</a>
           <a href="https://www.tuyuesouxin.cn/faqs" class="header__nav-link">FAQ</a>
           <div class="header__dropdown">
             <a href="https://www.tuyuesouxin.cn/about" class="header__nav-link header__dropdown-trigger">About <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <div class="header__dropdown-menu">
-              <a href="https://www.tuyuesouxin.cn/why-tmg" class="header__dropdown-item">Why TMG</a>
-              <a href="https://www.tuyuesouxin.cn/about" class="header__dropdown-item">About Us</a>
-              <a href="https://www.tuyuesouxin.cn/contact" class="header__dropdown-item">Contact</a>
+              <a href="https://www.tuyuesouxin.cn/why-tmg" class="header__dropdown-item">TMGを選ぶ理由</a>
+              <a href="https://www.tuyuesouxin.cn/about" class="header__dropdown-item">会社概要</a>
+              <a href="https://www.tuyuesouxin.cn/contact" class="header__dropdown-item">お問い合わせ</a>
             </div>
           </div>
         </nav>
-        <a href="https://www.tuyuesouxin.cn/ja/" class="header__nav-link" style="font-weight:600;color:var(--color-accent);border:1px solid var(--color-accent);border-radius:6px;padding:4px 12px;margin-left:8px;font-size:12px;">日本語</a>
+                  <a href="https://www.tuyuesouxin.cn/" class="header__nav-link" style="font-weight:600;color:var(--color-accent);border:1px solid var(--color-accent);border-radius:6px;padding:4px 12px;margin-left:8px;font-size:12px;">English</a>
         <div class="header__cta">
-          <a href="https://www.tuyuesouxin.cn/contact" class="btn btn--primary">Get Started</a>
+          <a href="https://www.tuyuesouxin.cn/contact" class="btn btn--primary">お問い合わせ</a>
         </div>
         <button class="header__toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
       </div>
@@ -466,9 +527,9 @@
   <main>
     <div class="page-header">
       <div class="container">
-        <span class="page-header__eyebrow reveal">Douyin Ads</span>
-        <h1 class="page-header__title reveal">Reach 600M+ Daily Active Users Who Spend 2+ Hours on Douyin</h1>
-        <p class="page-header__description reveal">Douyin (TikTok China) reaches 80% of China's mobile internet users—a balanced, affluent audience where 45% hold college degrees and 30% earn over $1,400/month. It's the definitive platform for brands targeting China's affluent millennials, health‑conscious seniors, and impulse‑ready female shoppers.</p>
+        <span class="page-header__eyebrow reveal">WeChat Ads</span>
+        <h1 class="page-header__title reveal">WeChatは中国の「OS for Life」</h1>
+        <p class="page-header__description reveal">月間アクティブユーザー13.4億人。WeChatは単なるアプリではなく、中国の日常生活のオペレーティングシステムです。 From messaging to payments, 公式アカウント to ミニプログラム, WeChat connects your brand to decision-makers who matter.</p>
       </div>
     </div>
 
@@ -478,44 +539,51 @@
           <div class="service-card reveal">
             <div class="service-card__icon">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <polygon points="5 3 19 12 5 21 5 3"/>
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
               </svg>
             </div>
-            <h3 class="service-card__title">Video Feed Advertising</h3>
-            <p class="service-card__description">In-feed native ads that blend seamlessly into the user's content stream. Highly engaging and interruptive-free brand storytelling.</p>
+            <h3 class="service-card__title">公式アカウント</h3>
+            <p class="service-card__description">Build brand presence in WeChat's content ecosystem. Reach subscribers through articles, updates, and native advertising.</p>
             <ul class="service-card__features">
-              <li class="service-card__feature">Native video placements</li>
-              <li class="service-card__feature">Brand takeover ads</li>
-              <li class="service-card__feature">TopView premium placement</li>
+              <li class="service-card__feature">購読・サービスアカウント</li>
+              <li class="service-card__feature">コンテンツマーケティングキャンペーン</li>
+              <li class="service-card__feature">In-article ad placements</li>
             </ul>
           </div>
           <div class="service-card reveal reveal--delay-1">
             <div class="service-card__icon">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M15 10l4.553-2.276A1 1 0 0 1 21 8.618v6.764a1 1 0 0 1-1.447.894L15 14M5 18h8a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2z"/>
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
               </svg>
             </div>
-            <h3 class="service-card__title">Live Stream & Commerce</h3>
-            <p class="service-card__description">Tap into the explosive live commerce trend. Reach millions of viewers in real-time and convert them directly through the Douyin shopping ecosystem.</p>
+            <h3 class="service-card__title">ミニプログラム</h3>
+            <p class="service-card__description">Lightweight apps inside WeChat for e-commerce, lead generation, and customer engagement — no downloads required.</p>
             <ul class="service-card__features">
-              <li class="service-card__feature">Live streaming ad formats</li>
-              <li class="service-card__feature">In-stream product showcase</li>
-              <li class="service-card__feature">KOL live commerce integration</li>
+              <li class="service-card__feature">エンドツーエンドのミニプログラム構築</li>
+              <li class="service-card__feature">In-WeChat app store advertising</li>
+              <li class="service-card__feature">Direct access from 公式アカウント</li>
             </ul>
           </div>
           <div class="service-card reveal reveal--delay-2">
             <div class="service-card__icon">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
               </svg>
             </div>
-            <h3 class="service-card__title">Brand & Awareness Campaigns</h3>
-            <p class="service-card__description">Build brand awareness at scale with branded hashtag challenges, AR filters, and influencer partnerships through Douyin's creator ecosystem.</p>
+            <h3 class="service-card__title">モーメント・検索広告</h3>
+            <p class="service-card__description">Tencentのデータエンジンで、モーメントフィード、WeChat検索、Snap Moment広告フォーマットでネイティブにリーチ。</p>
             <ul class="service-card__features">
-              <li class="service-card__feature">Hashtag challenges with viral reach (50M+ impressions)</li>
-              <li class="service-card__feature">AR lens & filter branding for interactive engagement</li>
-              <li class="service-card__feature">Top influencer partnerships (1M+ follower creators)</li>
-              <li class="service-card__feature">UGC amplification & user participation campaigns</li>
+              <li class="service-card__feature">モーメントネイティブ広告</li>
+              <li class="service-card__feature">WeChat検索ブランドキーワード</li>
+              <li class="service-card__feature">Tencent DMPオーディエンスターゲティング</li>
             </ul>
           </div>
         </div>
@@ -525,159 +593,245 @@
     <section class="insights" id="audience-insights">
       <div class="container">
         <div class="section__header reveal">
-          <span class="section__eyebrow">Audience Insights</span>
-          <h2 class="section__title">Who Uses Douyin?</h2>
-          <p class="section__description">Douyin reaches across every demographic in China — from Gen Z to affluent millennials, silver economy seniors to impulse‑ready female shoppers.</p>
+          <span class="section__eyebrow">オーディエンスインサイト</span>
+          <h2 class="section__title">WeChatのユーザー層</h2>
+          <p class="section__description">WeChat reaches across every demographic in China — from Gen Z to senior executives. Here's what we know about the people you can reach.</p>
         </div>
 
-        <!-- 4个统计卡片 -->
         <div class="insights__grid">
           <div class="insight-stat reveal">
             <div class="insight-stat__icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             </div>
-            <div class="insight-stat__num">600M<span>+</span></div>
-            <div class="insight-stat__label">Daily Active Users</div>
+            <div class="insight-stat__num">1.34<span>B</span></div>
+            <div class="insight-stat__label">月間アクティブユーザー数</div>
           </div>
           <div class="insight-stat reveal reveal--delay-1">
             <div class="insight-stat__icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
-            <div class="insight-stat__num">125<span>min</span></div>
-            <div class="insight-stat__label">Avg. Daily Time Spent</div>
+            <div class="insight-stat__num">70<span>+min</span></div>
+            <div class="insight-stat__label">1日平均利用時間</div>
           </div>
           <div class="insight-stat reveal reveal--delay-2">
             <div class="insight-stat__icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
-            <div class="insight-stat__num">80<span>%</span></div>
-            <div class="insight-stat__label">T1/T2 City Coverage</div>
+            <div class="insight-stat__num">100<span>%</span></div>
+            <div class="insight-stat__label">T1 &amp; T2 city coverage</div>
           </div>
           <div class="insight-stat reveal reveal--delay-1">
             <div class="insight-stat__icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
             </div>
-            <div class="insight-stat__num">500M<span>+</span></div>
-            <div class="insight-stat__label">Daily Searches</div>
+            <div class="insight-stat__num">13<span>M+</span></div>
+            <div class="insight-stat__label">WeChat Pay加盟店数</div>
           </div>
         </div>
 
-        <!-- 3个分解卡片 -->
         <div class="insights__breakdown">
           <div class="breakdown-card reveal">
             <div class="breakdown-card__title">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-              Age Distribution
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              年齢分布
             </div>
-            <div class="breakdown-row">
-              <span class="breakdown-row__label">Under 24 (Gen Z)</span>
-              <div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:25%"></div></div>
-              <span class="breakdown-row__val">25%</span>
-            </div>
-            <div class="breakdown-row">
-              <span class="breakdown-row__label">25–30 (Young Millennials)</span>
-              <div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:22%"></div></div>
-              <span class="breakdown-row__val">22%</span>
-            </div>
-            <div class="breakdown-row">
-              <span class="breakdown-row__label">31–40 (Mature Millennials)</span>
-              <div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:26%"></div></div>
-              <span class="breakdown-row__val">26%</span>
-            </div>
-            <div class="breakdown-row">
-              <span class="breakdown-row__label">41+ (Silver Economy)</span>
-              <div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:27%"></div></div>
-              <span class="breakdown-row__val">27%</span>
-            </div>
+            <div class="breakdown-row"><span class="breakdown-row__label">18〜25歳（Z世代）</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:80%"></div></div><span class="breakdown-row__val">~24%</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">25-40 (Core professionals)</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:100%"></div></div><span class="breakdown-row__val">~45%</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">40-55 (Mid-career)</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:55%"></div></div><span class="breakdown-row__val">~21%</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">55+ (Seniors)</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:30%"></div></div><span class="breakdown-row__val">~10%</span></div>
           </div>
-          <div class="breakdown-card reveal">
+          <div class="breakdown-card reveal reveal--delay-1">
             <div class="breakdown-card__title">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              City Tier Coverage
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              都市階層分布
             </div>
-            <div class="breakdown-row">
-              <span class="breakdown-row__label">Tier 1 (Beijing/Shanghai/Guangzhou/Shenzhen)</span>
-              <div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:35%"></div></div>
-              <span class="breakdown-row__val">35%</span>
-            </div>
-            <div class="breakdown-row">
-              <span class="breakdown-row__label">Tier 2 (New First-tier Cities)</span>
-              <div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:30%"></div></div>
-              <span class="breakdown-row__val">30%</span>
-            </div>
-            <div class="breakdown-row">
-              <span class="breakdown-row__label">Tier 3–5 (Sinking Market)</span>
-              <div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:35%"></div></div>
-              <span class="breakdown-row__val">35%</span>
-            </div>
+            <div class="breakdown-row"><span class="breakdown-row__label">Tier 1 (北上广深)</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:100%"></div></div><span class="breakdown-row__val">~28%</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">新一線都市</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:85%"></div></div><span class="breakdown-row__val">~24%</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">二線都市</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:62%"></div></div><span class="breakdown-row__val">~22%</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">三線都市以下</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:60%"></div></div><span class="breakdown-row__val">~26%</span></div>
           </div>
-          <div class="breakdown-card reveal">
+          <div class="breakdown-card reveal reveal--delay-2">
             <div class="breakdown-card__title">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-              Income & Education
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              消費力
             </div>
-            <div class="breakdown-row">
-              <span class="breakdown-row__label">Monthly Income ¥10,000+</span>
-              <div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:30%"></div></div>
-              <span class="breakdown-row__val">30%</span>
-            </div>
-            <div class="breakdown-row">
-              <span class="breakdown-row__label">College Degree or Higher</span>
-              <div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:45%"></div></div>
-              <span class="breakdown-row__val">45%</span>
-            </div>
-            <div class="breakdown-row">
-              <span class="breakdown-row__label">White‑Collar Professionals</span>
-              <div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:40%"></div></div>
-              <span class="breakdown-row__val">High</span>
-            </div>
+            <div class="breakdown-row"><span class="breakdown-row__label">High-income users</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:80%"></div></div><span class="breakdown-row__val">~52%</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">Decision-makers reached</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:70%"></div></div><span class="breakdown-row__val">50%+</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">WeChat Pay active users</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:95%"></div></div><span class="breakdown-row__val">900M+</span></div>
+            <div class="breakdown-row"><span class="breakdown-row__label">Mini Program annual transactions</span><div class="breakdown-row__bar-wrap"><div class="breakdown-row__bar" style="width:88%"></div></div><span class="breakdown-row__val">¥5.5T+</span></div>
           </div>
         </div>
 
-        <!-- 人群标签 -->
         <div class="breakdown-card reveal">
           <div class="breakdown-card__title">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             Key Audience Segments
           </div>
           <div class="audience-tags">
-            <span class="audience-tag audience-tag--brand">
+            <span class="audience-tag audience-tag--teal">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Gen Z Consumers (18–24)
+              Decision-Makers — Senior professionals with high purchasing power
             </span>
-            <span class="audience-tag audience-tag--brand">
+            <span class="audience-tag audience-tag--green">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Affluent Millennials (25–40)
+              Digital Natives — Gen Z &amp; Millennials, heavy social &amp; content consumers
             </span>
-            <span class="audience-tag audience-tag--brand">
+            <span class="audience-tag audience-tag--blue">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Silver Economy (50+)
+              E-Commerce Shoppers — WeChat Pay users, impulse &amp; habitual buyers
             </span>
-            <span class="audience-tag audience-tag--brand">
+            <span class="audience-tag audience-tag--purple">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Female Impulse Shoppers
-            </span>
-            <span class="audience-tag audience-tag--brand">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Live Commerce Enthusiasts
+              Senior Professionals — 40-55 age group, B2B decision influencers
             </span>
           </div>
         </div>
 
-        <!-- 亮点区块 -->
         <div class="insights__highlight reveal">
           <div class="insights__highlight-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
           </div>
           <div>
-            <h3>Why Douyin for Your Brand?</h3>
-            <p>Douyin is China's most comprehensive advertising channel — <strong>every age, every income tier, every city level</strong>. No other platform matches its combination of reach, engagement depth (125+ min/day), and direct commerce integration through live streaming. The 500M+ daily searches make it a video‑first discovery engine, not just entertainment.</p>
+            <h3>Why WeChat for Your Brand?</h3>
+            <p>Unlike transactional platforms, WeChat is a <strong>relationship ecosystem</strong>. Users spend 70+ minutes daily communicating, reading, shopping, and paying — all within one app. This means your brand can build trust through content, capture leads via ミニプログラム, and convert through WeChat Pay — all in one seamless journey. <strong>No platform switching, no lost attention.</strong></p>
           </div>
         </div>
 
-        <!-- 数据来源 -->
         <div class="insights__source">
-          Data sources: OceanEngine Official Platform Report 2024, QuestMobile China Mobile Internet Report Q3 2023, CNNIC 53rd Statistical Report March 2024, iResearch & CBNData Short Video Marketing Whitepaper 2023–2024.
+          Data sources: Tencent Q2 2025 Results (1.34B MAU, 900M+ WeChat Pay users); Tencent Financial Report 2025 (Mini Program GMV ¥5.5T+); Tencent Internal Data (50%+ decision-makers); QuestMobile 2025 — cross-referenced. Age distribution and city tier estimates are third-party approximations; Tencent has not published granular breakdowns.
+        </div>
+      </div>
+    </section>
+
+    <section class="section why-wechat" id="why-wechat">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__eyebrow">The Demographic Advantage</span>
+          <h2 class="section__title">Why WeChat Is Different</h2>
+          <p class="section__description">Unlike entertainment platforms, WeChat is where decisions happen — in corporate chat groups, payment approvals, and long-term brand relationships.</p>
+        </div>
+        <div class="pillars__grid">
+          <div class="pillar-card reveal">
+            <div class="pillar-card__icon">🛡️</div>
+            <h3 class="pillar-card__title">The Professional Hub</h3>
+            <p class="pillar-card__description">WeChat is the "LinkedIn of China." 50%+ of Official Account readers hold university degrees — your direct line to C-suite executives and decision-makers.</p>
+            <div class="pillar-card__stats">
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">Decision-makers (25-45)</span>
+                <span class="pillar-card__stat-value">50%+</span>
+              </div>
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">University degree holders</span>
+                <span class="pillar-card__stat-value">50%+</span>
+              </div>
+            </div>
+          </div>
+          <div class="pillar-card reveal reveal--delay-1">
+            <div class="pillar-card__icon">📈</div>
+            <h3 class="pillar-card__title">The Video Frontier</h3>
+            <p class="pillar-card__description">WeChat Channels (Video Accounts) is the new growth engine — reaching high-net-worth segments with 800M+ Video Account MAU. Premium audiences, premium results.</p>
+            <div class="pillar-card__stats">
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">Video Account MAU</span>
+                <span class="pillar-card__stat-value">800M+</span>
+              </div>
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">High-income segments</span>
+                <span class="pillar-card__stat-value">Fastest growing</span>
+              </div>
+            </div>
+          </div>
+          <div class="pillar-card reveal reveal--delay-2">
+            <div class="pillar-card__icon">💎</div>
+            <h3 class="pillar-card__title">The Transactional Heart</h3>
+            <p class="pillar-card__description">ミニプログラム are the heart of WeChat commerce. 600M+ users engage with ミニプログラム daily — seamless transactions without leaving the app.</p>
+            <div class="pillar-card__stats">
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">Mini Program DAU</span>
+                <span class="pillar-card__stat-value">600M+</span>
+              </div>
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">Transaction capability</span>
+                <span class="pillar-card__stat-value">Built-in</span>
+              </div>
+            </div>
+          </div>
+          <div class="pillar-card reveal reveal--delay-1">
+            <div class="pillar-card__icon">🌏</div>
+            <h3 class="pillar-card__title">Total Coverage</h3>
+            <p class="pillar-card__description">100% penetration in 一線・二線都市 + growing Tier 3-5 expansion. WeChat reaches everyone — from Shanghai executives to emerging market consumers.</p>
+            <div class="pillar-card__stats">
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">T1/T2 city penetration</span>
+                <span class="pillar-card__stat-value">100%</span>
+              </div>
+              <div class="pillar-card__stat">
+                <span class="pillar-card__stat-label">Total MAU</span>
+                <span class="pillar-card__stat-value">1.34B</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trust" id="trust">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__eyebrow">The Ecosystem Loop</span>
+          <h2 class="section__title">Build Long-Term Brand Loyalty</h2>
+          <p class="section__description">WeChat is built for relationship-building, not impulse buying. Unlike short-form video platforms, WeChat's Official Account + Video Account + Mini Program ecosystem creates lasting customer connections.</p>
+        </div>
+        <div class="trust__content reveal">
+          <div class="trust__loop">
+            <div class="trust__step">
+              <div class="trust__step-icon">📰</div>
+              <h4 class="trust__step-title">Official Account</h4>
+              <p class="trust__step-desc">Build subscriber trust through consistent content and community</p>
+            </div>
+            <div class="trust__step">
+              <div class="trust__step-icon">🎬</div>
+              <h4 class="trust__step-title">Video Account</h4>
+              <p class="trust__step-desc">Reach new audiences with short-form video, then cross-link to your Account</p>
+            </div>
+            <div class="trust__step">
+              <div class="trust__step-icon">💳</div>
+              <h4 class="trust__step-title">Mini Program</h4>
+              <p class="trust__step-desc">Convert engaged followers into transactions — within WeChat itself</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section b2b" id="b2b">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__eyebrow">Premium Markets</span>
+          <h2 class="section__title">B2B & Luxury Brands: WeChat Is Non-Negotiable</h2>
+          <p class="section__description">For brands targeting high-value customers in China, WeChat is the only platform that combines trust, transactions, and long-term relationship management.</p>
+        </div>
+        <div class="b2b__content reveal">
+          <div>
+            <h3 class="b2b__block-title">🤝 B2B Lead Generation</h3>
+            <ul class="b2b__list">
+              <li class="b2b__item">Direct access to decision-makers via 公式アカウント</li>
+              <li class="b2b__item">In-document and Moments ad placements for professional audiences</li>
+              <li class="b2b__item">ミニプログラム for lead capture, product demos, and consultation booking</li>
+              <li class="b2b__item">WeChat検索ブランドキーワード for high-intent B2B searches</li>
+              <li class="b2b__item">LinkedIn-level targeting at a fraction of the cost</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="b2b__block-title">💎 Luxury & Premium Brands</h3>
+            <ul class="b2b__list">
+              <li class="b2b__item">Unmatched brand trust in WeChat's verified environment</li>
+              <li class="b2b__item">Direct-to-consumer communication without third-party interference</li>
+              <li class="b2b__item">Exclusive content and member programs via 公式アカウント</li>
+              <li class="b2b__item">Premium audience concentration — 50%+ with high purchasing power</li>
+              <li class="b2b__item">ミニプログラム for luxury e-commerce and appointment booking</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -685,32 +839,35 @@
     <section class="section sources" id="sources">
       <div class="container">
         <div class="section__header reveal">
-          <span class="section__eyebrow">Data Sources</span>
+          <span class="section__eyebrow">データソース</span>
           <h2 class="section__title">Industry-Leading Research</h2>
           <p class="section__description">Our insights are backed by China's most trusted research institutions and official platform data.</p>
         </div>
         <ul class="sources__list">
           <li class="sources__item reveal">
-            <div class="sources__name">OceanEngine (巨量引擎)</div>
-            <div class="sources__report">Official Platform Report · 2024</div>
-            <div class="sources__data">DAU (600M+), daily searches (500M+), interest e-commerce metrics, and brand audience assets (O‑5A model).</div>
+            <div class="sources__name">Tencent Official</div>
+            <div class="sources__report">Annual Report & Investor Relations · 2024</div>
+            <div class="sources__data">1.34B MAU, Mini Program DAU, Official Account metrics, and platform ecosystem data.</div>
           </li>
           <li class="sources__item reveal reveal--delay-1">
             <div class="sources__name">QuestMobile</div>
             <div class="sources__report">China Mobile Internet Report · Q3 2023</div>
-            <div class="sources__data">Average daily usage time (125+ min), age distribution, city tier penetration, and cross‑app user overlap.</div>
+            <div class="sources__data">User demographics, age distribution, education levels, and cross-platform usage patterns.</div>
           </li>
           <li class="sources__item reveal reveal--delay-1">
             <div class="sources__name">CNNIC</div>
             <div class="sources__report">53rd Statistical Report · March 2024</div>
-            <div class="sources__data">National short video user scale, online shopping penetration, and overall internet adoption rates.</div>
+            <div class="sources__data">National internet penetration, WeChat adoption rates, and digital payment statistics.</div>
           </li>
           <li class="sources__item reveal reveal--delay-2">
-            <div class="sources__name">iResearch & CBNData</div>
-            <div class="sources__report">Short Video Marketing Whitepaper · 2023‑2024</div>
-            <div class="sources__data">Silver economy purchasing power, Tier 3‑5 market consumption trends, and vertical industry ROI benchmarks.</div>
+            <div class="sources__name">iResearch & TMI</div>
+            <div class="sources__report">WeChat Marketing Whitepaper · 2023-2024</div>
+            <div class="sources__data">B2B marketing effectiveness, luxury brand ROI, and consumer loyalty benchmarks.</div>
           </li>
         </ul>
+        <div class="sources__note reveal">
+          <p>All demographic data reflects the market landscape as of Q1 2024, providing the most current insights into China's digital ecosystem.</p>
+        </div>
       </div>
     </section>
 
@@ -719,25 +876,25 @@
         <div class="contact__grid">
           <div class="contact__info reveal">
             <div>
-              <h2 class="contact__title">Ready to Expand to China?</h2>
+              <h2 class="contact__title">中国市場への進出をお考えですか？</h2>
               <p class="contact__description">Let's discuss how TMG can help your agency access China's digital advertising market.</p>
               <a href="mailto:tmg@tuyuesouxin.cn" class="contact__email">tmg@tuyuesouxin.cn</a>
               <div class="contact__details">
                 <div class="contact__detail-item">
                   <svg class="contact__detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                  Response time: Within 24 hours (weekdays)
+                  返答時間：24時間以内（平日）
                 </div>
                 <div class="contact__detail-item">
                   <svg class="contact__detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                  Languages: English, Mandarin, Cantonese
+                  対応言語：英語、中国語（普通话）、広東語
                 </div>
                 <div class="contact__detail-item">
                   <svg aria-hidden="true" class="contact__detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                  WhatsApp (scan below qr)
+                  WhatsApp（下のQRコードをスキャン）
                 </div>
               </div>
               <div class="contact__qr" id="contactQR" style="display: block;">
-                <h3 class="contact__qr-title">Scan to Add Us on WhatsApp</h3>
+                <h3 class="contact__qr-title">WhatsAppでお友達追加</h3>
                 <img src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https://wa.me/8618930383550" alt="WhatsApp QR Code" class="contact__qr-image">
               </div>
             </div>
@@ -762,31 +919,35 @@
                     <defs><linearGradient id="successGrad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#c9a84c"/><stop offset="100%" stop-color="#e8c87a"/></linearGradient></defs>
                   </svg>
                 </div>
-                <h3 class="form-success-card__title">Inquiry Received!</h3>
+                <h3 class="form-success-card__title">お問い合わせを受け付けました！</h3>
                 <p class="form-success-card__subtitle">Thank you for reaching out to TMG.</p>
-                <p class="form-success-card__message">We've received your inquiry and will get back to you within <strong>1 business day</strong>.</p>
+                <p class="form-success-card__message">We've received your inquiry and will get back to you within <strong>1 business day</strong>. Keep an eye on your inbox at the email you provided.</p>
                 <div class="form-success-card__details">
                   <div class="form-success-card__detail-row">
-                    <span class="form-success-card__detail-label">Email us directly:</span>
+                    <span class="form-success-card__detail-label">メールでのお問い合わせ：</span>
                     <a href="mailto:tmg@tuyuesouxin.cn" class="form-success-card__detail-value">tmg@tuyuesouxin.cn</a>
                   </div>
                   <div class="form-success-card__detail-row">
-                    <span class="form-success-card__detail-label">For urgent matters:</span>
-                    <span class="form-success-card__detail-value">WhatsApp us via QR code below</span>
+                    <span class="form-success-card__detail-label">緊急のお問い合わせ：</span>
+                    <span class="form-success-card__detail-value">下のQRコードからWhatsAppで連絡</span>
                   </div>
                 </div>
-                <button type="button" class="btn btn--secondary" onclick="document.getElementById('formSuccess').style.display='none'; document.getElementById('contactForm').style.display='block';" style="margin-top: var(--space-6); width:100%;">Submit Another Inquiry</button>
+                <button type="button" class="btn btn--secondary" onclick="document.getElementById('formSuccess').style.display='none'; document.getElementById('contactForm').style.display='block';" style="margin-top: var(--space-6); width:100%;">別のお問い合わせ</button>
               </div>
             </div>
             <form id="contactForm" action="https://formspree.io/f/xpqojqlb" method="POST">
               <input type="hidden" name="_replyto" value="tmg@tuyuesouxin.cn">
-              <input type="hidden" name="_subject" value="Douyin Ads Inquiry from TMG Website">
+              <input type="hidden" name="_subject" value="WeChat Ads Inquiry from TMG Website">
               <input type="text" name="_gotcha" style="display:none">
               <div class="form__group">
-                <label class="form__label" for="salutation">Salutation<span class="form__required">*</span></label>
-                <select class="form__select" id="salutation" name="Salutation" required>
-                  <option value="">Select your title</option>
-                  <option value="Mr.">Mr.</option><option value="Ms.">Ms.</option><option value="Mrs.">Mrs.</option><option value="Dr.">Dr.</option><option value="Other">Other</option>
+                <label class="form__label" for="salutation">敬称<span class="form__required">*</span></label>
+                <select class="form__select" id="salutation" name="敬称" required>
+                  <option value="">敬称を選択</option>
+                  <option value="Mr.">Mr.</option>
+                  <option value="Ms.">Ms.</option>
+                  <option value="Mrs.">Mrs.</option>
+                  <option value="Dr.">Dr.</option>
+                  <option value="その他">その他</option>
                 </select>
               </div>
               <div class="form__group">
@@ -794,37 +955,43 @@
                 <input class="form__input" type="text" id="fullName" name="Full Name" required placeholder="Your full name">
               </div>
               <div class="form__group">
-                <label class="form__label" for="company">Company Name<span class="form__required">*</span></label>
-                <input class="form__input" type="text" id="company" name="Company Name" required placeholder="Your company name">
+                <label class="form__label" for="company">会社名<span class="form__required">*</span></label>
+                <input class="form__input" type="text" id="company" name="会社名" required placeholder="Your company name">
               </div>
               <div class="form__group">
                 <label class="form__label" for="type">Identity<span class="form__required">*</span></label>
                 <select class="form__select" id="type" name="Type" required>
-                  <option value="">Select your role</option>
-                  <option value="Agency">Advertising Agency</option><option value="Brand">Brand Owner</option><option value="Media">Media Publisher</option><option value="Other">Other</option>
+                  <option value="">役職を選択</option>
+                  <option value="Agency">広告代理店</option>
+                  <option value="Brand">ブランドオーナー</option>
+                  <option value="Media">メディアパブリッシャー</option>
+                  <option value="その他">その他</option>
                 </select>
               </div>
               <div class="form__group">
-                <label class="form__label" for="email">Email Address<span class="form__required">*</span></label>
+                <label class="form__label" for="email">メールアドレス<span class="form__required">*</span></label>
                 <input class="form__input" type="email" id="email" name="Email" required placeholder="your@email.com">
               </div>
               <div class="form__group">
-                <label class="form__label" for="service">Service Needed<span class="form__required">*</span></label>
+                <label class="form__label" for="service">必要なサービス<span class="form__required">*</span></label>
                 <select class="form__select" id="service" name="Service" required>
-                  <option value="">Select service type</option>
-                  <option value="Douyin Ads">Douyin Ads</option>
-                  <option value="Recharge Only">Recharge Only</option><option value="Account Setup">Account Setup</option><option value="Full Service">Full Service</option><option value="Other">Other / Not Sure</option>
+                  <option value="">サービス種類を選択</option>
+                  <option value="WeChat Ads">WeChat Ads</option>
+                  <option value="チャージ専用プラン">チャージ専用プラン</option>
+                  <option value="アカウント開設">アカウント開設</option>
+                  <option value="フルサービス">フルサービス</option>
+                  <option value="その他">その他 / Not Sure</option>
                 </select>
               </div>
               <div class="form__group">
-                <label class="form__label" for="needs">Your Needs<span class="form__required">*</span></label>
+                <label class="form__label" for="needs">ご要望<span class="form__required">*</span></label>
                 <textarea class="form__textarea" id="needs" name="Needs" required placeholder="Tell us about your requirements, goals, and any questions you have..."></textarea>
               </div>
               <div class="form__group">
-                <label class="form__label" for="comments">Comments (Optional)</label>
+                <label class="form__label" for="comments">コメント（任意）</label>
                 <textarea class="form__textarea" id="comments" name="Comments" placeholder="Any additional information..."></textarea>
               </div>
-              <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">Submit Inquiry</button>
+              <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">送信する</button>
             </form>
           </div>
         </div>
@@ -840,12 +1007,12 @@
           <p class="footer__description">Your single point of access to China's $100B digital advertising market. We help international agencies navigate Chinese platforms with ease.</p>
         </div>
         <div class="footer__section">
-          <h4 class="footer__title">Quick Links</h4>
+          <h4 class="footer__title">クイックリンク</h4>
           <ul class="footer__links">
-            <li><a href="https://www.tuyuesouxin.cn/services" class="footer__link">Services</a></li>
-            <li><a href="https://www.tuyuesouxin.cn/pricing" class="footer__link">Pricing</a></li>
-            <li><a href="https://www.tuyuesouxin.cn/about" class="footer__link">Who We Are</a></li>
-            <li><a href="https://www.tuyuesouxin.cn/client-stories" class="footer__link">Client Stories</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/services" class="footer__link">サービス</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/pricing" class="footer__link">料金</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/about" class="footer__link">私たちについて</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/client-stories" class="footer__link">導入事例</a></li>
             <li><a href="https://www.tuyuesouxin.cn/faqs" class="footer__link">FAQ</a></li>
           </ul>
         </div>
@@ -860,10 +1027,10 @@
           </ul>
         </div>
         <div class="footer__section">
-          <h4 class="footer__title">Contact</h4>
+          <h4 class="footer__title">お問い合わせ</h4>
           <ul class="footer__links">
             <li><a href="mailto:tmg@tuyuesouxin.cn" class="footer__link footer__link--email">tmg@tuyuesouxin.cn</a></li>
-            <li><a href="#contactQR" class="footer__link">WhatsApp (Click to scan)</a></li>
+            <li><a href="#contactQR" class="footer__link">WhatsApp（クリックしてスキャン）</a></li>
           </ul>
         </div>
       </div>
@@ -882,7 +1049,7 @@
   </footer>
   <script>
     (function () {
-      var elements = document.querySelectorAll('.page-header__eyebrow, .page-header__title, .page-header__description, .service-card, .pillar-card, .stat-card, .section__header, .insight-stat, .breakdown-card, .audience-tag, .insights__highlight, .insights__source, .trust__step, .b2b__content, .sources__item, .sources__note, .contact__info, .contact__form');
+      var elements = document.querySelectorAll('.page-header__eyebrow, .page-header__title, .page-header__description, .service-card, .pillar-card, .stat-card, .section__header, .insight-stat, .breakdown-card, .audience-tag, .insights__highlight, .insights__source, .trust__content, .trust__step, .b2b__content, .sources__item, .sources__note, .contact__info, .contact__form');
       var observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {

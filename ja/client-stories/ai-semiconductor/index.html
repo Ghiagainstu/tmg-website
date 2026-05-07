@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Client Stories | Tuyue Media Gateway</title>
+  <title>事例紹介: Multi-Platform Paid Media for AI Brand | TMG</title>
   
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/assets/og-image.png">
-<meta name="description" content="See how Tuyue Media Gateway has helped global companies navigate and succeed in China's digital advertising market.">
-  <link rel="canonical" href="https://www.tuyuesouxin.cn/client-stories">
-  <meta property="og:title" content="Client Stories | Tuyue Media Gateway">
-  <meta property="og:description" content="See how Tuyue Media Gateway has helped global companies navigate and succeed in China">
-  <meta property="og:url" content="https://www.tuyuesouxin.cn/client-stories">
+<meta name="description" content="See how TMG consolidated multi-platform paid media for a global AI and semiconductor brand with integrated SEM, social, and programmatic campaigns across China.">
+  <link rel="canonical" href="https://www.tuyuesouxin.cn/ja/client-stories/ai-semiconductor/index.html">
+  <link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/client-stories/ai-semiconductor/index.html">
+  <link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/client-stories/ai-semiconductor/">
+  <link rel="alternate" hreflang="x-default" href="https://www.tuyuesouxin.cn/client-stories/ai-semiconductor/">
+  <meta property="og:title" content="Client Story: Multi-Platform Paid Media for AI & Semiconductor Brand | TMG">
+  <meta property="og:description" content="See how we consolidated multi-platform paid media management for a global AI & semiconductor brand, delivering integrated SEM, social, and programmatic campaign">
+  <meta property="og:url" content="https://www.tuyuesouxin.cn/ja/client-stories/ai-semiconductor/index.html">
   <meta property="og:image" content="https://www.tuyuesouxin.cn/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://www.tuyuesouxin.cn/assets/twitter-card.png">
@@ -31,6 +34,13 @@
       --font-size-xl: 1.25rem; --font-size-2xl: 1.5rem; --font-size-3xl: 1.875rem; --font-size-4xl: 2.25rem;
       --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem; --space-5: 1.25rem;
       --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem; --space-20: 5rem;
+      --transition-fast: 150ms ease; --transition-base: 250ms ease;
+      /* 表单相关变量 */
+      --radius-lg: 12px; --radius-form: 8px;
+      --color-form-bg: var(--color-bg-alt);
+      --color-form-border: rgba(255, 255, 255, 0.1);
+      --color-form-focus: var(--color-accent);
+      --height-form-input: 48px;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -104,7 +114,7 @@
     }
     .btn--secondary { background: transparent; color: var(--color-text-primary); border: 1px solid var(--color-border); }
     .btn--secondary:hover { border-color: var(--color-border-hover); background: rgba(255,255,255,0.05); }
-    .page-header { padding-top: 120px; padding-bottom: var(--space-8); text-align: center; }
+    .page-header { padding-top: 140px; padding-bottom: var(--space-12); text-align: center; }
     .page-header__eyebrow { display: block; font-size: var(--font-size-sm); font-weight: 500; color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: var(--space-3); }
     .page-header__title { font-size: var(--font-size-4xl); font-weight: 700; margin-bottom: var(--space-4); }
     .page-header__description { font-size: var(--font-size-lg); color: var(--color-text-secondary); max-width: 700px; margin: 0 auto; }
@@ -113,8 +123,8 @@
     .case-study { background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 12px; padding: var(--space-10); margin-bottom: var(--space-12); }
     .case-study__header { margin-bottom: var(--space-8); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-border); }
     .case-study__client { display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-4); }
-    .case-study__logo { width: 64px; height: 64px; border-radius: 12px; overflow: hidden; background: white; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .case-study__logo-img { width: 100%; height: 100%; object-fit: cover; }
+    .case-study__logo { width: 64px; height: 64px; background-color: rgba(255,255,255,0.15); backdrop-filter: blur(8px); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .case-study__logo-icon { width: 48px; height: 48px; }
     .case-study__client-name { font-size: var(--font-size-2xl); font-weight: 600; margin-bottom: var(--space-2); }
     .case-study__badges { display: flex; gap: var(--space-2); flex-wrap: wrap; }
     .case-study__client-badge { display: inline-block; padding: var(--space-1) var(--space-3); background: rgba(45, 107, 228, 0.15); color: var(--color-primary-light); font-size: var(--font-size-xs); font-weight: 500; border-radius: 4px; }
@@ -122,157 +132,11 @@
     .case-study__headline { font-size: var(--font-size-xl); color: var(--color-text-secondary); font-weight: 400; }
     .case-study__content { display: grid; gap: var(--space-8); }
     .case-study__chapter-title { font-size: var(--font-size-lg); font-weight: 600; margin-bottom: var(--space-3); color: var(--color-text-primary); }
-    .case-study__chapter-text { color: var(--color-text-secondary); margin-bottom: var(--space-3); }
+    .case-study__chapter-text { color: var(--color-text-secondary); margin-bottom: var(--space-3); line-height: 1.7; }
     .case-study__list { list-style: none; padding: 0; }
-    .case-study__list li { position: relative; padding-left: var(--space-5); margin-bottom: var(--space-3); color: var(--color-text-secondary); }
+    .case-study__list li { position: relative; padding-left: var(--space-5); margin-bottom: var(--space-3); color: var(--color-text-secondary); line-height: 1.6; }
     .case-study__list li::before { content: ''; position: absolute; left: 0; top: 10px; width: 6px; height: 6px; background: var(--color-accent); border-radius: 50%; }
     .case-study__cta { margin-top: var(--space-8); padding-top: var(--space-6); border-top: 1px solid var(--color-border); text-align: center; }
-    .section { padding: var(--space-8) 0; }
-    
-    /* Stories Grid Layout */
-    .stories-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: var(--space-8);
-    }
-    
-    @media (min-width: 768px) {
-      .stories-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-    
-    .story-card {
-      background: var(--color-bg-card);
-      border: 1px solid var(--color-border);
-      border-radius: 12px;
-      padding: var(--space-6);
-      transition: all var(--transition-fast);
-      display: flex;
-      flex-direction: column;
-      cursor: pointer;
-    }
-    
-    .story-card:hover {
-      transform: translateY(-4px);
-      border-color: var(--color-accent);
-      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
-    }
-    
-    .story-card__header {
-      margin-bottom: var(--space-4);
-      padding-bottom: var(--space-3);
-      border-bottom: 1px solid var(--color-border);
-    }
-    
-    .story-card__client {
-      display: flex;
-      align-items: center;
-      gap: var(--space-4);
-      margin-bottom: var(--space-4);
-    }
-    
-    .story-card__logo {
-      width: 56px;
-      height: 56px;
-      border-radius: 10px;
-      overflow: hidden;
-      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      color: white;
-    }
-    
-    .story-card__logo-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 6px;
-    }
-    
-    .story-card__client-info {
-      flex: 1;
-    }
-    
-    .story-card__client-name {
-      font-size: var(--font-size-xl);
-      font-weight: 600;
-      margin-bottom: var(--space-2);
-    }
-    
-    .story-card__badges {
-      display: flex;
-      gap: var(--space-2);
-      flex-wrap: wrap;
-    }
-    
-    .story-card__badge {
-      display: inline-block;
-      padding: var(--space-1) var(--space-3);
-      background: rgba(45, 107, 228, 0.15);
-      color: var(--color-primary-light);
-      font-size: var(--font-size-xs);
-      font-weight: 500;
-      border-radius: 4px;
-    }
-    
-    .story-card__badge--accent {
-      background: rgba(201, 168, 76, 0.15);
-      color: var(--color-accent);
-    }
-    
-    .story-card__headline {
-      font-size: var(--font-size-lg);
-      color: var(--color-text-secondary);
-      font-weight: 400;
-      line-height: 1.5;
-    }
-    
-    .story-card__content {
-      flex: 1;
-      margin-bottom: var(--space-6);
-    }
-    
-    .story-card__challenge {
-      color: var(--color-text-secondary);
-      margin-bottom: var(--space-4);
-      font-size: var(--font-size-sm);
-      line-height: 1.6;
-    }
-    
-    .story-card__outcome {
-      color: var(--color-text-primary);
-      font-size: var(--font-size-sm);
-      line-height: 1.6;
-      font-weight: 500;
-    }
-    
-    .story-card__outcome strong {
-      color: var(--color-accent);
-    }
-    
-    .story-card__cta {
-      margin-top: auto;
-    }
-    
-    @media (max-width: 768px) {
-      .story-card__client {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      
-      .story-card__logo {
-        width: 48px;
-        height: 48px;
-      }
-      
-      .story-card__logo-icon {
-        width: 32px;
-        height: 32px;
-      }
-    }
-
     .footer { background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-alt) 100%); position: relative; padding: var(--space-16) 0 var(--space-8); }
     .footer::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 300px; height: 2px; background: linear-gradient(90deg, transparent, var(--color-accent), transparent); opacity: 0.6; }
     .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: var(--space-8); margin-bottom: var(--space-8); }
@@ -320,102 +184,63 @@
     .reveal--delay-1 { transition-delay: 0.1s; }
     .reveal--delay-2 { transition-delay: 0.2s; }
     .reveal--delay-3 { transition-delay: 0.3s; }
+
+    /* お問い合わせ Section - 补全缺失样式 */
+    .contact { padding: var(--space-20) 0; }
+    .contact__grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12); }
+    .contact__info { display: flex; flex-direction: column; justify-content: center; }
+    .contact__info > div { display: flex; flex-direction: column; gap: var(--space-6); }
+    .contact__title { font-size: var(--font-size-3xl); font-weight: 700; color: var(--color-text-primary); margin-bottom: var(--space-4); line-height: 1.2; }
+    .contact__description { font-size: var(--font-size-base); color: var(--color-text-secondary); line-height: 1.7; margin-bottom: var(--space-6); }
+    .contact__email { color: var(--color-accent); font-size: var(--font-size-lg); font-weight: 600; text-decoration: none; transition: color 150ms ease; }
+    .contact__email:hover { color: var(--color-accent-light); }
+
+    /* Form Styles - 补全缺失样式 */
+    .contact__form {
+      background: linear-gradient(145deg, rgba(17, 24, 39, 0.9) 0%, rgba(13, 18, 32, 0.95) 100%);
+      border: 1px solid var(--color-form-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-8);
+    }
+    .form__group { margin-bottom: var(--space-6); }
+    .form__group:last-child { margin-bottom: 0; }
+    .form__label {
+      display: block;
+      font-size: var(--font-size-sm);
+      font-weight: 500;
+      color: var(--color-text-secondary);
+      margin-bottom: var(--space-2);
+      transition: color 0.2s ease;
+    }
+    .form__group:focus-within .form__label { color: var(--color-form-focus); }
+    .form__input,
+    .form__textarea {
+      width: 100%;
+      background: var(--color-form-bg);
+      border: 1px solid var(--color-form-border);
+      border-radius: var(--radius-form);
+      padding: var(--space-3) var(--space-4);
+      color: var(--color-text-primary);
+      font-size: var(--font-size-base);
+      font-family: var(--font-family);
+      transition: all 0.2s ease;
+    }
+    .form__input:focus,
+    .form__textarea:focus {
+      outline: none;
+      border-color: var(--color-form-focus);
+      box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.15);
+    }
+    .form__textarea { min-height: 120px; resize: vertical; line-height: 1.5; }
+    .form__required { color: #ef4444; margin-left: 2px; }
+    .btn--lg { padding: var(--space-3) var(--space-8); font-size: var(--font-size-base); font-weight: 600; justify-content: center; }
+
     @media (max-width: 768px) {
-      .header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 200;
-      }
-      body { padding-top: 64px; }
-      .header__inner {
-        background: var(--color-bg-card);
-        border-bottom: 1px solid var(--color-border);
-        position: relative;
-        z-index: 201;
-      }
-      .header__toggle {
-        display: flex;
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 202;
-      }
-      .header__nav {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: var(--color-bg-alt);
-        border-bottom: 1px solid var(--color-border);
-        box-shadow: 0 8px 32px rgba(0,0,0,0.5);
-        padding: 0;
-      }
-      .header__nav.active { display: flex; }
-      .header__nav-link {
-        display: block;
-        width: 100%;
-        padding: 14px 40px 14px 24px;
-        border-bottom: 1px solid var(--color-border);
-        font-size: 1.1rem;
-      }
-      .header__nav-link--coming {
-        display: block;
-        width: 100%;
-        padding: 14px 40px 14px 24px;
-        border-bottom: 1px solid var(--color-border);
-        font-size: 1.1rem;
-        opacity: 0.5;
-      }
-      .header__dropdown { position: static; width: 100%; 
-       }
-      .header__dropdown-trigger {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        padding: 14px 40px 14px 24px;
-        border-bottom: 1px solid var(--color-border);
-        font-size: 1.1rem;
-      }
-      .header__dropdown-arrow { transition: transform 150ms ease; }
-      .header__dropdown.active .header__dropdown-arrow,
-      .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
-      .header__dropdown-menu { display: none; flex-direction: column; background: rgba(0,0,0,0.25); padding: 0; }
-      .header__dropdown.active .header__dropdown-menu,
-      .header__dropdown.open .header__dropdown-menu { display: flex; }
-      .header__dropdown-item {
-        display: block;
-        width: 100%;
-        padding: 12px 40px 12px 40px;
-        font-size: 1rem;
-        color: var(--color-text-secondary);
-        border-bottom: 1px solid rgba(255,255,255,0.06);
-      }
-      .header__dropdown-item:hover { background: rgba(201,168,76,0.08); color: var(--color-accent); }
-      .stories__grid { grid-template-columns: 1fr; }
-      .footer__grid { grid-template-columns: 1fr; gap: var(--space-8); }
-      .footer__bottom { flex-direction: column; gap: var(--space-4); text-align: center; }
+      .contact__grid { grid-template-columns: 1fr; gap: var(--space-8); }
+      .contact__form { padding: var(--space-6); }
     }
 
-    /* Contact Section */
-    .contact {
-      padding: var(--space-20) 0;
-    }
-    .contact__grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: var(--space-12);
-    }
-    @media (min-width: 900px) {
-      .contact__grid {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
+    /* 补充：contact__info 完整样式（覆盖已有的简化版） */
     .contact__info {
       background-color: var(--color-bg-card);
       border: 1px solid var(--color-border);
@@ -423,46 +248,33 @@
       padding: var(--space-10);
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      gap: var(--space-8);
     }
-    .contact__title {
-      font-size: var(--font-size-3xl);
-      font-weight: 700;
-      margin-bottom: var(--space-4);
-    }
-    .contact__description {
-      color: var(--color-text-secondary);
-      margin-bottom: var(--space-6);
-    }
-    .contact__email {
-      font-size: var(--font-size-2xl);
-      font-weight: 600;
-      color: var(--color-primary);
-      margin-bottom: var(--space-6);
-    }
+
+    /* contact__details */
     .contact__details {
-      margin-bottom: var(--space-8);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+      margin-top: var(--space-6);
     }
     .contact__detail-item {
       display: flex;
       align-items: center;
       gap: var(--space-3);
-      margin-bottom: var(--space-4);
-      color: var(--color-text-secondary);
       font-size: var(--font-size-sm);
+      color: var(--color-text-secondary);
     }
     .contact__detail-icon {
-      width: 20px;
-      height: 20px;
-      color: var(--color-primary);
+      flex-shrink: 0;
+      color: var(--color-accent);
     }
+
+    /* contact__qr */
     .contact__qr {
       margin-top: var(--space-6);
-      text-align: center;
-      padding: var(--space-4);
-      background: var(--color-bg-card);
-      border-radius: 8px;
-      border: 1px solid var(--color-border);
+      padding-top: var(--space-6);
+      border-top: 1px solid var(--color-border);
     }
     .contact__qr-title {
       font-size: var(--font-size-sm);
@@ -473,170 +285,118 @@
     .contact__qr-image {
       width: 140px;
       height: 140px;
-      display: block;
-      margin: 0 auto;
-      border-radius: 4px;
+      border-radius: var(--radius-md);
+    }
+
+    /* contact__trust & map */
+    .contact__trust {
+      margin-top: var(--space-6);
     }
     .contact__map {
-      margin-bottom: var(--space-8);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--color-border);
     }
     .contact__map-embed {
       width: 100%;
-      height: 200px;
-      background-color: var(--color-bg-alt);
-      border-radius: 8px;
-      overflow: hidden;
-      border: 1px solid var(--color-border);
+      height: 250px;
     }
     .contact__map-iframe {
       width: 100%;
       height: 100%;
-      border: none;
+      border: 0;
     }
     .contact__address {
-      margin-bottom: var(--space-6);
-      color: var(--color-text-secondary);
-      font-size: var(--font-size-sm);
-      line-height: 1.6;
+      margin-top: var(--space-3);
+      text-align: center;
     }
     .contact__address-text {
-      font-weight: 500;
-      color: var(--color-text-primary);
-    }
-    .contact__trust {
-      margin-bottom: var(--space-8);
-    }
-    .contact__form {
-      background-color: var(--color-bg-card);
-      border: 1px solid var(--color-border);
-      border-radius: 12px;
-      padding: var(--space-8);
-    }
-    .form__group {
-      margin-bottom: var(--space-5);
-    }
-    .form__label {
-      display: block;
-      font-size: var(--font-size-sm);
-      font-weight: 500;
-      color: var(--color-text-secondary);
-      margin-bottom: var(--space-2);
-    }
-    .form__input,
-    .form__textarea,
-    .form__select {
-      width: 100%;
-      padding: var(--space-3);
-      background-color: var(--color-bg-alt);
-      border: 1px solid var(--color-border);
-      border-radius: 6px;
-      color: var(--color-text-primary);
-      font-size: var(--font-size-base);
-      font-family: var(--font-family);
-      transition: border-color var(--transition-fast);
-    }
-    .form__input:focus,
-    .form__textarea:focus,
-    .form__select:focus {
-      outline: none;
-      border-color: var(--color-primary);
-      box-shadow: 0 0 0 3px rgba(45, 107, 228, 0.15);
-    }
-    .form__input::placeholder,
-    .form__textarea::placeholder {
+      font-size: var(--font-size-xs);
       color: var(--color-text-muted);
+      letter-spacing: 0.05em;
     }
-    .form__textarea {
-      min-height: 120px;
-      resize: vertical;
-    }
-    .form__required {
-      color: #ef4444;
-      margin-left: 2px;
-    }
+
+    /* form-success-card */
     .form-success-card {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 500px;
+      background: linear-gradient(145deg, rgba(17, 24, 39, 0.9) 0%, rgba(13, 18, 32, 0.95) 100%);
+      border: 1px solid var(--color-form-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-8);
     }
     .form-success-card__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
-      padding: var(--space-8);
+      gap: var(--space-4);
     }
     .form-success-card__icon {
-      width: 72px;
-      height: 72px;
-      margin: 0 auto var(--space-6);
-      animation: successPop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+      width: 64px;
+      height: 64px;
     }
-    @keyframes successPop {
-      0% { transform: scale(0); opacity: 0; }
-      100% { transform: scale(1); opacity: 1; }
+    .form-success-card__icon svg {
+      width: 100%;
+      height: 100%;
     }
     .form-success-card__title {
-      font-size: var(--font-size-3xl);
+      font-size: var(--font-size-2xl);
       font-weight: 700;
-      background: linear-gradient(135deg, #c9a84c, #e8c87a);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin-bottom: var(--space-2);
+      color: var(--color-text-primary);
     }
     .form-success-card__subtitle {
-      font-size: var(--font-size-lg);
-      color: var(--color-text-primary);
-      margin-bottom: var(--space-4);
+      font-size: var(--font-size-base);
+      color: var(--color-accent);
+      font-weight: 500;
     }
     .form-success-card__message {
+      font-size: var(--font-size-sm);
       color: var(--color-text-secondary);
       line-height: 1.7;
-      max-width: 420px;
-      margin: 0 auto var(--space-8);
-    }
-    .form-success-card__message strong {
-      color: var(--color-text-primary);
     }
     .form-success-card__details {
-      background: var(--color-bg-alt);
-      border: 1px solid var(--color-border);
-      border-radius: 12px;
-      padding: var(--space-5);
-      margin-bottom: var(--space-4);
-      text-align: left;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+      margin-top: var(--space-4);
+      padding-top: var(--space-4);
+      border-top: 1px solid var(--color-border);
     }
     .form-success-card__detail-row {
       display: flex;
-      flex-direction: column;
-      gap: var(--space-1);
-      padding: var(--space-3) 0;
-      border-bottom: 1px solid var(--color-border);
-    }
-    .form-success-card__detail-row:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
-    }
-    .form-success-card__detail-row:first-child {
-      padding-top: 0;
+      justify-content: space-between;
+      align-items: center;
+      font-size: var(--font-size-sm);
     }
     .form-success-card__detail-label {
-      font-size: var(--font-size-xs);
       color: var(--color-text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-weight: 600;
     }
     .form-success-card__detail-value {
-      font-size: var(--font-size-sm);
-      color: var(--color-accent-light);
+      color: var(--color-accent);
       font-weight: 500;
     }
-    a.form-success-card__detail-value {
-      color: var(--color-primary);
-      text-decoration: none;
+
+    /* form__select */
+    .form__select {
+      width: 100%;
+      background: var(--color-form-bg);
+      border: 1px solid var(--color-form-border);
+      border-radius: var(--radius-form);
+      padding: var(--space-3) var(--space-4);
+      color: var(--color-text-primary);
+      font-size: var(--font-size-base);
+      font-family: var(--font-family);
+      transition: all 0.2s ease;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M6 8L1 3h10z' fill='%239CA3AF'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      padding-right: 36px;
     }
-    a.form-success-card__detail-value:hover {
-      text-decoration: underline;
+    .form__select:focus {
+      outline: none;
+      border-color: var(--color-form-focus);
+      box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.15);
     }
   </style>
 </head>
@@ -654,9 +414,9 @@
         </a>
         <nav class="header__nav">
           <div class="header__dropdown">
-            <a href="https://www.tuyuesouxin.cn/services" class="header__nav-link header__dropdown-trigger">Services <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+            <a href="https://www.tuyuesouxin.cn/services" class="header__nav-link header__dropdown-trigger">サービス <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <div class="header__dropdown-menu">
-              <a href="https://www.tuyuesouxin.cn/services" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">All Services</a>
+              <a href="https://www.tuyuesouxin.cn/services" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">すべてのサービス</a>
               <a href="https://www.tuyuesouxin.cn/services/wechat" class="header__dropdown-item">WeChat Ads</a>
               <a href="https://www.tuyuesouxin.cn/services/douyin" class="header__dropdown-item">Douyin Ads</a>
               <a href="https://www.tuyuesouxin.cn/services/baidu" class="header__dropdown-item">Baidu SEM</a>
@@ -666,23 +426,23 @@
               <a href="https://www.tuyuesouxin.cn/geo" class="header__dropdown-item">China GEO</a>
             </div>
           </div>
-          <a href="https://www.tuyuesouxin.cn/pricing" class="header__nav-link">Pricing</a>
-          <a href="https://www.tuyuesouxin.cn/client-stories" class="header__nav-link active">Client Stories</a>
+          <a href="https://www.tuyuesouxin.cn/pricing" class="header__nav-link">料金</a>
+          <a href="https://www.tuyuesouxin.cn/client-stories" class="header__nav-link active">導入事例</a>
           <a href="https://www.tuyuesouxin.cn/geo" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
-          <a href="https://www.tuyuesouxin.cn/blog/" class="header__nav-link">Blog</a>
+          <a href="https://www.tuyuesouxin.cn/blog/" class="header__nav-link">ブログ</a>
           <a href="https://www.tuyuesouxin.cn/faqs" class="header__nav-link">FAQ</a>
           <div class="header__dropdown">
             <a href="https://www.tuyuesouxin.cn/about" class="header__nav-link header__dropdown-trigger">About <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <div class="header__dropdown-menu">
-              <a href="https://www.tuyuesouxin.cn/why-tmg" class="header__dropdown-item">Why TMG</a>
-              <a href="https://www.tuyuesouxin.cn/about" class="header__dropdown-item">About Us</a>
-              <a href="https://www.tuyuesouxin.cn/contact" class="header__dropdown-item">Contact</a>
+              <a href="https://www.tuyuesouxin.cn/why-tmg" class="header__dropdown-item">TMGを選ぶ理由</a>
+              <a href="https://www.tuyuesouxin.cn/about" class="header__dropdown-item">会社概要</a>
+              <a href="https://www.tuyuesouxin.cn/contact" class="header__dropdown-item">お問い合わせ</a>
             </div>
           </div>
         </nav>
-        <a href="https://www.tuyuesouxin.cn/ja/" class="header__nav-link" style="font-weight:600;color:var(--color-accent);border:1px solid var(--color-accent);border-radius:6px;padding:4px 12px;margin-left:8px;font-size:12px;">日本語</a>
+                  <a href="https://www.tuyuesouxin.cn/" class="header__nav-link" style="font-weight:600;color:var(--color-accent);border:1px solid var(--color-accent);border-radius:6px;padding:4px 12px;margin-left:8px;font-size:12px;">English</a>
         <div class="header__cta">
-          <a href="https://www.tuyuesouxin.cn#contact" class="btn btn--primary">Get Started</a>
+          <a href="https://www.tuyuesouxin.cn#contact" class="btn btn--primary">お問い合わせ</a>
         </div>
         <button class="header__toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
       </div>
@@ -692,112 +452,169 @@
   <main>
     <div class="page-header">
       <div class="container">
-        <span class="page-header__eyebrow reveal">Client Stories</span>
-        <h1 class="page-header__title reveal">Real Success Stories</h1>
-        <p class="page-header__description reveal">See how we've helped global companies navigate and succeed in China's digital advertising market</p>
-        <p class="page-header__tagline reveal">
-          <strong>Tuyue Media Gateway</strong> — Your single point of access to China's $100B digital advertising market. We help international agencies navigate Chinese platforms with ease.
-        </p>
+        <span class="page-header__eyebrow reveal">Client Story</span>
+        <h1 class="page-header__title reveal">Helping a Global AI and Semiconductor Brand Simplify Multi-Platform Paid Media</h1>
+        <p class="page-header__description reveal">One agency, one point of contact, clearer reporting, and a more efficient way to manage complex paid media activity.</p>
       </div>
     </div>
 
     <section class="section">
       <div class="container">
-        <div class="stories-grid">
-          <!-- Farmskins Card -->
-          <div class="story-card reveal">
-            <div class="story-card__header">
-              <div class="story-card__client">
-                <div class="story-card__logo" style="background: #080c14;">
-                  <svg class="story-card__logo-icon" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="200" height="200" fill="#080c14"/>
-                    <text x="100" y="75" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="26" font-weight="bold" letter-spacing="3">FARMSKINS</text>
-                    <text x="100" y="115" text-anchor="middle" fill="#c9a84c" font-family="Arial, sans-serif" font-size="12" letter-spacing="2">CS:GO SKINS</text>
-                  </svg>
-                </div>
-                <div class="story-card__client-info">
-                  <h3 class="story-card__client-name">Farmskins</h3>
-                  <div class="story-card__badges">
-                    <span class="story-card__badge">Case Study</span>
-                    <span class="story-card__badge story-card__badge--accent">$200K–$400K USD / year</span>
-                  </div>
+        <div class="case-study reveal">
+          <div class="case-study__header">
+            <div class="case-study__client">
+              <div class="case-study__logo">
+                <svg class="case-study__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Microchip / AI circuit logo -->
+                  <rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2" fill="none"/>
+                  <!-- Circuit lines -->
+                  <line x1="24" y1="8" x2="24" y2="2" stroke="currentColor" stroke-width="2"/>
+                  <line x1="24" y1="40" x2="24" y2="46" stroke="currentColor" stroke-width="2"/>
+                  <line x1="8" y1="24" x2="2" y2="24" stroke="currentColor" stroke-width="2"/>
+                  <line x1="40" y1="24" x2="46" y2="24" stroke="currentColor" stroke-width="2"/>
+                  <!-- Circuit nodes -->
+                  <circle cx="24" cy="6" r="2" fill="currentColor"/>
+                  <circle cx="24" cy="42" r="2" fill="currentColor"/>
+                  <circle cx="6" cy="24" r="2" fill="currentColor"/>
+                  <circle cx="42" cy="24" r="2" fill="currentColor"/>
+                  <!-- Inner core: neural network nodes -->
+                  <circle cx="24" cy="24" r="5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                  <circle cx="24" cy="24" r="2" fill="currentColor" opacity="0.6"/>
+                  <circle cx="16" cy="16" r="1.5" fill="currentColor" opacity="0.4"/>
+                  <circle cx="32" cy="16" r="1.5" fill="currentColor" opacity="0.4"/>
+                  <circle cx="16" cy="32" r="1.5" fill="currentColor" opacity="0.4"/>
+                  <circle cx="32" cy="32" r="1.5" fill="currentColor" opacity="0.4"/>
+                  <!-- Connections -->
+                  <line x1="24" y1="24" x2="16" y2="16" stroke="currentColor" stroke-width="0.8" opacity="0.3"/>
+                  <line x1="24" y1="24" x2="32" y2="16" stroke="currentColor" stroke-width="0.8" opacity="0.3"/>
+                  <line x1="24" y1="24" x2="16" y2="32" stroke="currentColor" stroke-width="0.8" opacity="0.3"/>
+                  <line x1="24" y1="24" x2="32" y2="32" stroke="currentColor" stroke-width="0.8" opacity="0.3"/>
+                </svg>
+              </div>
+              <div class="case-study__client-info">
+                <h3 class="case-study__client-name">Global AI & Semiconductor Brand</h3>
+                <div class="case-study__badges">
+                  <span class="case-study__client-badge">事例紹介</span>
+                  <span class="case-study__client-badge case-study__budget-badge">Multi-Platform Management</span>
                 </div>
               </div>
-              <p class="story-card__headline">How a Global CS:GO Platform Found Its Footing in China</p>
             </div>
-            
-            <div class="story-card__content">
-              <p class="story-card__challenge">Facing platform rejection in China's regulated gaming advertising market. Every major Chinese platform said "No" to their business model.</p>
-              <p class="story-card__outcome"><strong>Six-year partnership</strong> with ongoing campaigns across multiple Chinese platforms, achieving sustained growth in a once-closed market.</p>
+            <p class="case-study__headline">One agency, one point of contact, clearer reporting, and a more efficient way to manage complex paid media activity.</p>
+          </div>
+
+          <div class="case-study__content">
+            <div class="case-study__chapter">
+              <h4 class="case-study__chapter-title">When paid media becomes too fragmented</h4>
+              <p class="case-study__chapter-text">For large B2B brands, paid media should support growth — not create operational complexity.</p>
+              <p class="case-study__chapter-text">That was the challenge facing one global brand in the AI and semiconductor space. As a market-leading business operating across multiple regions and media platforms, they were managing a broad paid media setup through several different partners. Over time, this created unnecessary complexity, reduced transparency, and made it harder to scale with confidence.</p>
+              <p class="case-study__chapter-text">They needed a more efficient way forward: one agency partner that could manage multiple platforms, provide full visibility, and reduce the time and effort required to coordinate across different vendors.</p>
             </div>
-            
-            <div class="story-card__cta">
-              <a href="/client-stories/farmskins" class="btn btn--secondary" style="width: 100%;">Read full story</a>
+
+            <div class="case-study__chapter">
+              <h4 class="case-study__chapter-title">The challenge</h4>
+              <p class="case-study__chapter-text">導入前 working with us, the client faced several common but critical issues:</p>
+              <ul class="case-study__list">
+                <li>Too many paid media channels being managed separately</li>
+                <li>Multiple agency and media contacts to coordinate</li>
+                <li>Limited transparency on some platforms, including restricted access to ad accounts</li>
+                <li>Concerns around data visibility and reporting accuracy</li>
+                <li>High service fees spread across multiple partners</li>
+                <li>Unnecessary time spent on external communication and vendor management</li>
+              </ul>
+              <p class="case-study__chapter-text">In short, the client was not only looking for campaign delivery. They were looking for a more transparent, centralised, and cost-efficient operating model.</p>
+              <p class="case-study__chapter-text">They wanted an agency that could:</p>
+              <ul class="case-study__list">
+                <li>Provide a single point of contact across multiple paid media platforms</li>
+                <li>Offer full access to ad accounts and clearer reporting</li>
+                <li>Manage campaigns across different media channels under one roof</li>
+                <li>Package services in a more competitive and efficient way</li>
+                <li>Support budget planning and platform recommendations based on performance and business needs</li>
+              </ul>
+            </div>
+
+            <div class="case-study__chapter">
+              <h4 class="case-study__chapter-title">Why they chose to work with us</h4>
+              <p class="case-study__chapter-text">We already had experience in search marketing and a strong understanding of the client's business environment, audience, and wider industry context.</p>
+              <p class="case-study__chapter-text">Because of that, we were able to quickly understand what they needed — not only from a campaign execution perspective, but from an operational one too.</p>
+              <p class="case-study__chapter-text">We saw that the real opportunity was not simply to run ads across more platforms. It was to simplify management, improve transparency, and create a structure that allowed smarter decisions across channels.</p>
+              <p class="case-study__chapter-text">With our experience across media partnerships and platform operations, we were confident we could support:</p>
+              <ul class="case-study__list">
+                <li>Multi-platform campaign management</li>
+                <li>Transparent account access and reporting</li>
+                <li>KPI-focused execution</li>
+                <li>Strategic budget recommendations across products and platforms</li>
+                <li>More efficient agency management through a bundled service model</li>
+              </ul>
+            </div>
+
+            <div class="case-study__chapter">
+              <h4 class="case-study__chapter-title">Our approach</h4>
+              <p class="case-study__chapter-text">Rather than treating each platform as a separate task, we focused on building a more unified paid media framework.</p>
+              <p class="case-study__chapter-text">Our approach included:</p>
+              
+              <h5 class="case-study__chapter-title" style="font-size: var(--font-size-lg); margin-top: var(--space-4);">1. A single contact point for multi-platform coordination</h5>
+              <p class="case-study__chapter-text">Instead of asking the client to manage multiple external contacts, we created a more streamlined model with one main agency interface. This reduced communication friction and made day-to-day collaboration more efficient.</p>
+              
+              <h5 class="case-study__chapter-title" style="font-size: var(--font-size-lg); margin-top: var(--space-4);">2. Greater transparency in accounts and reporting</h5>
+              <p class="case-study__chapter-text">Transparency was a key priority. We worked in a way that gave the client clearer access to platforms, reporting, and performance data, helping build trust and improve visibility across activity.</p>
+              
+              <h5 class="case-study__chapter-title" style="font-size: var(--font-size-lg); margin-top: var(--space-4);">3. Multi-platform operational support</h5>
+              <p class="case-study__chapter-text">Because the client needed broader paid media support, we were able to manage activity across multiple platforms rather than limiting strategy to a single channel. This gave the client more flexibility and a more consistent operating structure.</p>
+              
+              <h5 class="case-study__chapter-title" style="font-size: var(--font-size-lg); margin-top: var(--space-4);">4. Budget and platform recommendations based on performance</h5>
+              <p class="case-study__chapter-text">Different products and campaigns do not perform the same way across every platform. With ongoing monitoring and industry understanding, we were able to advise on where budget could be adjusted, which platforms were more suitable, and how media activity could better align with business goals.</p>
+              
+              <h5 class="case-study__chapter-title" style="font-size: var(--font-size-lg); margin-top: var(--space-4);">5. Competitive service packaging</h5>
+              <p class="case-study__chapter-text">By consolidating work under one agency relationship, the client benefited from a more efficient service structure and more competitive commercial terms than a fragmented multi-agency setup.</p>
+            </div>
+
+            <div class="case-study__chapter">
+              <h4 class="case-study__chapter-title">The outcome</h4>
+              <p class="case-study__chapter-text">While we are not sharing specific performance figures, the value of the partnership was clear.</p>
+              <p class="case-study__chapter-text">The client gained:</p>
+              <ul class="case-study__list">
+                <li>One agency partner to manage multiple media relationships</li>
+                <li>One consistent point of contact across platforms</li>
+                <li>More transparent access to accounts and performance data</li>
+                <li>A more efficient way to manage paid media activity</li>
+                <li>Lower communication complexity across external vendors</li>
+                <li>Stronger strategic support around analysis, planning, and optimisation</li>
+                <li>A service model that remained competitive without compromising delivery quality</li>
+              </ul>
+              <p class="case-study__chapter-text">Just as importantly, the client was able to spend less time managing multiple outside partners and more time focusing on internal priorities, decision-making, and business alignment.</p>
+            </div>
+
+            <div class="case-study__chapter">
+              <h4 class="case-study__chapter-title">Why this matters for other B2B brands</h4>
+              <p class="case-study__chapter-text">For many global B2B businesses, paid media challenges are not only about performance. They are also about structure.</p>
+              <p class="case-study__chapter-text">When too many agencies, contacts, and platforms are involved, marketing teams can lose time, clarity, and control. Even strong media activity can become harder to manage when transparency is limited and communication becomes fragmented.</p>
+              <p class="case-study__chapter-text">A more effective paid media model should not only deliver results — it should also make your team's life easier.</p>
+              <p class="case-study__chapter-text">That means:</p>
+              <ul class="case-study__list">
+                <li>Fewer handovers</li>
+                <li>Less duplicated communication</li>
+                <li>More transparent reporting</li>
+                <li>More coordinated platform management</li>
+                <li>Clearer budget planning</li>
+                <li>A partner that understands both the channels and your business context</li>
+              </ul>
             </div>
           </div>
-          
-          <!-- Anonymous AI & Semiconductor Brand Card -->
-          <div class="story-card reveal">
-            <div class="story-card__header">
-              <div class="story-card__client">
-                <div class="story-card__logo">
-                  <svg class="story-card__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2" fill="none"/>
-                    <line x1="24" y1="8" x2="24" y2="2" stroke="currentColor" stroke-width="2"/>
-                    <line x1="24" y1="40" x2="24" y2="46" stroke="currentColor" stroke-width="2"/>
-                    <line x1="8" y1="24" x2="2" y2="24" stroke="currentColor" stroke-width="2"/>
-                    <line x1="40" y1="24" x2="46" y2="24" stroke="currentColor" stroke-width="2"/>
-                    <circle cx="24" cy="6" r="2" fill="currentColor"/>
-                    <circle cx="24" cy="42" r="2" fill="currentColor"/>
-                    <circle cx="6" cy="24" r="2" fill="currentColor"/>
-                    <circle cx="42" cy="24" r="2" fill="currentColor"/>
-                    <circle cx="24" cy="24" r="5" stroke="currentColor" stroke-width="1.5" fill="none"/>
-                    <circle cx="24" cy="24" r="2" fill="currentColor" opacity="0.6"/>
-                    <circle cx="16" cy="16" r="1.5" fill="currentColor" opacity="0.4"/>
-                    <circle cx="32" cy="16" r="1.5" fill="currentColor" opacity="0.4"/>
-                    <circle cx="16" cy="32" r="1.5" fill="currentColor" opacity="0.4"/>
-                    <circle cx="32" cy="32" r="1.5" fill="currentColor" opacity="0.4"/>
-                    <line x1="24" y1="24" x2="16" y2="16" stroke="currentColor" stroke-width="0.8" opacity="0.3"/>
-                    <line x1="24" y1="24" x2="32" y2="16" stroke="currentColor" stroke-width="0.8" opacity="0.3"/>
-                    <line x1="24" y1="24" x2="16" y2="32" stroke="currentColor" stroke-width="0.8" opacity="0.3"/>
-                    <line x1="24" y1="24" x2="32" y2="32" stroke="currentColor" stroke-width="0.8" opacity="0.3"/>
-                  </svg>
-                </div>
-                <div class="story-card__client-info">
-                  <h3 class="story-card__client-name">Global AI & Semiconductor Brand</h3>
-                  <div class="story-card__badges">
-                    <span class="story-card__badge">Case Study</span>
-                    <span class="story-card__badge story-card__badge--accent">Multi-Platform</span>
-                  </div>
-                </div>
-              </div>
-              <p class="story-card__headline">Simplifying Multi-Platform Paid Media Management</p>
-            </div>
-            
-            <div class="story-card__content">
-              <p class="story-card__challenge">Managing too many paid media platforms through multiple agencies, with limited transparency, high service fees, and suspected data manipulation.</p>
-              <p class="story-card__outcome"><strong>Consolidated multi-platform management</strong> under one agency, with transparent account access, single point of contact, and competitive bundled pricing.</p>
-            </div>
-            
-            <div class="story-card__cta">
-              <a href="/client-stories/ai-semiconductor" class="btn btn--secondary" style="width: 100%;">Read full story</a>
-            </div>
+
+          <div class="case-study__cta">
+            <a href="https://www.tuyuesouxin.cn/contact" class="btn btn--primary">Start Your Success Story</a>
           </div>
-        </div>
-        
-        <div class="case-study__cta" style="text-align: center; margin-top: var(--space-4);">
-          <a href="https://www.tuyuesouxin.cn/contact" class="btn btn--primary">Start Your Success Story</a>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- お問い合わせ Section (从FAQ页面复制完整版) -->
     <section class="section contact" id="contact">
       <div class="container">
         <div class="contact__grid">
-          <div class="contact__info reveal">
+          <div class="contact__info">
             <div>
-              <h2 class="contact__title">Ready to Expand to China?</h2>
+              <h2 class="contact__title">中国市場への進出をお考えですか？</h2>
               <p class="contact__description">
                 Let's discuss how TMG can help your agency access China's digital advertising market.
               </p>
@@ -809,28 +626,28 @@
                     <circle cx="12" cy="12" r="10"></circle>
                     <polyline points="12 6 12 12 16 14"></polyline>
                   </svg>
-                  Response time: Within 24 hours (weekdays)
+                  返答時間：24時間以内（平日）
                 </div>
                 <div class="contact__detail-item">
                   <svg class="contact__detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                   </svg>
-                  Languages: English, Mandarin, Cantonese
+                  対応言語：英語、中国語（普通话）、広東語
                 </div>
                 <div class="contact__detail-item">
                   <svg aria-hidden="true" class="contact__detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                   </svg>
-                  WhatsApp (scan below qr)
+                  WhatsApp（下のQRコードをスキャン）
                 </div>
               </div>
 
-              <div class="contact__qr" id="contactQR" style="display: block;">
-                <h3 class="contact__qr-title">Scan to Add Us on WhatsApp</h3>
+              <div class="contact__qr" id="contactQR">
+                <h3 class="contact__qr-title">WhatsAppでお友達追加</h3>
                 <img src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https://wa.me/8618930383550" alt="WhatsApp QR Code" class="contact__qr-image">
               </div>
             </div>
-
+            
             <div class="contact__trust">
               <div class="contact__map">
                 <div class="contact__map-embed" id="mapContainer">
@@ -849,7 +666,7 @@
             </div>
           </div>
 
-          <div class="contact__form reveal">
+          <div class="contact__form">
             <div id="formSuccess" style="display:none;" class="form-success-card">
               <div class="form-success-card__inner">
                 <div class="form-success-card__icon">
@@ -857,14 +674,14 @@
                     <circle cx="12" cy="12" r="12" fill="url(#successGrad)"/>
                     <path d="M7 12.5l3.5 3.5 6.5-7" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <defs>
-                      <linearGradient id="successGrad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                      <linearGradient id="successGrad2" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
                         <stop offset="0%" stop-color="#c9a84c"/>
                         <stop offset="100%" stop-color="#e8c87a"/>
                       </linearGradient>
                     </defs>
                   </svg>
                 </div>
-                <h3 class="form-success-card__title">Inquiry Received!</h3>
+                <h3 class="form-success-card__title">お問い合わせを受け付けました！</h3>
                 <p class="form-success-card__subtitle">Thank you for reaching out to TMG.</p>
                 <p class="form-success-card__message">
                   We've received your inquiry and will get back to you within <strong>1 business day</strong>.
@@ -872,33 +689,33 @@
                 </p>
                 <div class="form-success-card__details">
                   <div class="form-success-card__detail-row">
-                    <span class="form-success-card__detail-label">Email us directly:</span>
+                    <span class="form-success-card__detail-label">メールでのお問い合わせ：</span>
                     <a href="mailto:tmg@tuyuesouxin.cn" class="form-success-card__detail-value">tmg@tuyuesouxin.cn</a>
                   </div>
                   <div class="form-success-card__detail-row">
-                    <span class="form-success-card__detail-label">For urgent matters:</span>
-                    <span class="form-success-card__detail-value">WhatsApp us via QR code below</span>
+                    <span class="form-success-card__detail-label">緊急のお問い合わせ：</span>
+                    <span class="form-success-card__detail-value">下のQRコードからWhatsAppで連絡</span>
                   </div>
                 </div>
                 <button type="button" class="btn btn--secondary" onclick="document.getElementById('formSuccess').style.display='none'; document.getElementById('contactForm').style.display='block';" style="margin-top: var(--space-6); width:100%;">
-                  Submit Another Inquiry
+                  別のお問い合わせ
                 </button>
               </div>
             </div>
 
             <form id="contactForm" action="https://formspree.io/f/xpqojqlb" method="POST">
               <input type="hidden" name="_replyto" value="tmg@tuyuesouxin.cn">
-              <input type="hidden" name="_subject" value="New Inquiry from TMG Website">
+              <input type="hidden" name="_subject" value="🔔 New Inquiry from AI Semiconductor 事例紹介">
               <input type="text" name="_gotcha" style="display:none">
               <div class="form__group">
-                <label class="form__label" for="salutation">Salutation<span class="form__required">*</span></label>
-                <select class="form__select" id="salutation" name="Salutation" required>
-                  <option value="">Select your title</option>
+                <label class="form__label" for="salutation">敬称<span class="form__required">*</span></label>
+                <select class="form__select" id="salutation" name="敬称" required>
+                  <option value="">敬称を選択</option>
                   <option value="Mr.">Mr.</option>
                   <option value="Ms.">Ms.</option>
                   <option value="Mrs.">Mrs.</option>
                   <option value="Dr.">Dr.</option>
-                  <option value="Other">Other</option>
+                  <option value="その他">その他</option>
                 </select>
               </div>
               <div class="form__group">
@@ -906,42 +723,42 @@
                 <input class="form__input" type="text" id="fullName" name="Full Name" required placeholder="Your full name">
               </div>
               <div class="form__group">
-                <label class="form__label" for="company">Company Name<span class="form__required">*</span></label>
-                <input class="form__input" type="text" id="company" name="Company Name" required placeholder="Your company name">
+                <label class="form__label" for="company">会社名<span class="form__required">*</span></label>
+                <input class="form__input" type="text" id="company" name="会社名" required placeholder="Your company name">
               </div>
               <div class="form__group">
                 <label class="form__label" for="type">Identity<span class="form__required">*</span></label>
                 <select class="form__select" id="type" name="Type" required>
-                  <option value="">Select your role</option>
-                  <option value="Agency">Advertising Agency</option>
-                  <option value="Brand">Brand Owner</option>
-                  <option value="Media">Media Publisher</option>
-                  <option value="Other">Other</option>
+                  <option value="">役職を選択</option>
+                  <option value="Agency">広告代理店</option>
+                  <option value="Brand">ブランドオーナー</option>
+                  <option value="Media">メディアパブリッシャー</option>
+                  <option value="その他">その他</option>
                 </select>
               </div>
               <div class="form__group">
-                <label class="form__label" for="email">Email Address<span class="form__required">*</span></label>
+                <label class="form__label" for="email">メールアドレス<span class="form__required">*</span></label>
                 <input class="form__input" type="email" id="email" name="Email" required placeholder="your@email.com">
               </div>
               <div class="form__group">
-                <label class="form__label" for="service">Service Needed<span class="form__required">*</span></label>
+                <label class="form__label" for="service">必要なサービス<span class="form__required">*</span></label>
                 <select class="form__select" id="service" name="Service" required>
-                  <option value="">Select service type</option>
-                  <option value="Recharge Only">Recharge Only</option>
-                  <option value="Account Setup">Account Setup</option>
-                  <option value="Full Service">Full Service</option>
-                  <option value="Other">Other / Not Sure</option>
+                  <option value="">サービス種類を選択</option>
+                  <option value="チャージ専用プラン">チャージ専用プラン</option>
+                  <option value="アカウント開設">アカウント開設</option>
+                  <option value="フルサービス">フルサービス</option>
+                  <option value="その他">その他 / Not Sure</option>
                 </select>
               </div>
               <div class="form__group">
-                <label class="form__label" for="needs">Your Needs<span class="form__required">*</span></label>
+                <label class="form__label" for="needs">ご要望<span class="form__required">*</span></label>
                 <textarea class="form__textarea" id="needs" name="Needs" required placeholder="Tell us about your requirements, goals, and any questions you have..."></textarea>
               </div>
               <div class="form__group">
-                <label class="form__label" for="comments">Comments (Optional)</label>
+                <label class="form__label" for="comments">コメント（任意）</label>
                 <textarea class="form__textarea" id="comments" name="Comments" placeholder="Any additional information..."></textarea>
               </div>
-              <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">Submit Inquiry</button>
+              <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">送信する</button>
             </form>
           </div>
         </div>
@@ -953,39 +770,31 @@
     <div class="container">
       <div class="footer__grid">
         <div class="footer__section">
-          <h4 class="footer__title">About TMG</h4>
+          <h4 class="footer__title">TMGについて</h4>
           <p class="footer__description">Your single point of access to China's $100B digital advertising market. We help international agencies navigate Chinese platforms with ease.</p>
         </div>
         <div class="footer__section">
-          <h4 class="footer__title">Quick Links</h4>
+          <h4 class="footer__title">クイックリンク</h4>
           <ul class="footer__links">
-            <li><a href="https://www.tuyuesouxin.cn/services" class="footer__link">Services</a></li>
-            <li><a href="https://www.tuyuesouxin.cn/pricing" class="footer__link">Pricing</a></li>
-            <li><a href="https://www.tuyuesouxin.cn/about" class="footer__link">About Us</a></li>
-            <li><a href="#" class="footer__link">Client Stories</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/services" class="footer__link">サービス</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/pricing" class="footer__link">料金</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/about" class="footer__link">会社概要</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/client-stories" class="footer__link">導入事例</a></li>
             <li><a href="https://www.tuyuesouxin.cn/faqs" class="footer__link">FAQ</a></li>
           </ul>
         </div>
         <div class="footer__section">
-          <h4 class="footer__title">Contact</h4>
+          <h4 class="footer__title">お問い合わせ</h4>
           <ul class="footer__links">
             <li>
               <a href="mailto:tmg@tuyuesouxin.cn" class="footer__link footer__link--email">tmg@tuyuesouxin.cn</a>
             </li>
-            <li>
-              <a href="#contactQR" class="footer__link">
-                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: text-bottom; margin-right: 4px;">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                </svg>
-                WhatsApp (Click to scan)
-              </a>
-            </li>
           </ul>
         </div>
         <div class="footer__section">
-          <h4 class="footer__title">Legal</h4>
+          <h4 class="footer__title">法務情報</h4>
           <ul class="footer__links">
-            <li class="footer__license">Business License Number: 91310114MADKG4UF0G</li>
+            <li class="footer__license">営業許可証番号： 91310114MADKG4UF0G</li>
             <li class="footer__company-short">Tuyue Media Gateway</li>
           </ul>
         </div>
@@ -998,16 +807,17 @@
           <a href="https://e.baidu.com" target="_blank" rel="noopener noreferrer" class="footer__platform-badge">Baidu</a>
           <a href="https://www.xiaohongshu.com/brand" target="_blank" rel="noopener noreferrer" class="footer__platform-badge">Xiaohongshu</a>
           <a href="https://member.bilibili.com/platform/ad" target="_blank" rel="noopener noreferrer" class="footer__platform-badge">Bilibili</a>
-                  <a href="https://ads.microsoft.com/zh-cn" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bing China</a>
+          <a href="https://ads.microsoft.com/zh-cn" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bing China</a>
         </div>
       </div>
     </div>
   </footer>
+  
   <script>
     (function () {
       var elements = document.querySelectorAll(
-        '.page-header__eyebrow, .page-header__title, .page-header__description, .page-header__tagline, ' +
-        '.story-card, ' +
+        '.page-header__eyebrow, .page-header__title, .page-header__description, ' +
+        '.case-study, ' +
         '.contact__info, .contact__form'
       );
       var observer = new IntersectionObserver(function (entries) {
@@ -1052,17 +862,45 @@
       }
     })();
   </script>
+
   <script>
+    // Form submission with AJAX (from FAQ page)
     (function () {
-      document.querySelectorAll('.story-card').forEach(function (card) {
-        var btn = card.querySelector('.story-card__cta a');
-        if (btn) {
-          card.addEventListener('click', function (e) {
-            if (!e.target.closest('a')) {
-              window.location.href = btn.getAttribute('href');
-            }
-          });
-        }
+      var form = document.getElementById('contactForm');
+      if (!form) return;
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        var formData = new FormData(form);
+        var submitBtn = form.querySelector('button[type="submit"]');
+        var originalText = submitBtn.textContent;
+
+        submitBtn.textContent = 'Submitting...';
+        submitBtn.disabled = true;
+
+        fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        })
+        .then(function (response) {
+          if (response.ok) {
+            form.style.display = 'none';
+            document.getElementById('formSuccess').style.display = 'block';
+          } else {
+            alert('Oops! There was a problem submitting your form. Please try again.');
+          }
+        })
+        .catch(function (error) {
+          alert('Oops! There was a problem submitting your form. Please try again.');
+        })
+        .finally(function () {
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+        });
       });
     })();
   </script>
