@@ -1430,6 +1430,204 @@ KO = {
     "교육 및 전문 서비스 프로모션",
 "Which industries are best suited for Bing China advertising?":
     "Bing China 광고에 가장 적합한 업종은 무엇인가요?",
+
+# ===== Round 8: More FAQ detailed answers =====
+"WeChat offers four pricing models. Choose based on your campaign goal:":
+    "WeChat은 4가지 가격 모델을 제공합니다. 캠페인 목표에 따라 선택하세요:",
+"— Pay per 1,000 impressions. Works best for brand awareness campaigns where reach matters more than clicks.":
+    "— 1,000노출당 과금. 클릭보다 도달 범위가 중요한 브랜드 인지도 캠페인에 가장 적합합니다.",
+"— Pay only when someone clicks your ad. Better for driving traffic to your landing page, mini program, or official account.":
+    "— 광고를 클릭한 경우에만 과금. 랜딩 페이지, 미니 프로그램, 공식 계정으로 트래픽을 유도하는 데 적합합니다.",
+"— Used for influencer content (mutual selection ads). You pay a fixed fee per published article.":
+    "— 인플루언서 콘텐츠(상호 선택 광고)에 사용. 게시된 기사당 고정 수수료를 지불합니다.",
+"— Pay only when a sale is made. You set the commission percentage and pay out of actual revenue generated.":
+    "— 판매가 이루어진 경우에만 과금. 수수료 비율을 설정하고 실제 발생한 수익에서 지불합니다.",
+"Most advertisers start with CPM or CPC. The right choice depends on your campaign objective — we can advise on which model fits your goal.":
+    "대부분의 광고주는 CPM 또는 CPC로 시작합니다. 올바른 선택은 캠페인 목표에 따라 다릅니다 — 어떤 모델이 목표에 맞는지 조언해 드릴 수 있습니다.",
+"oCPC stands for Optimized Cost Per Click. It is an intelligent bidding mode where WeChat optimizes toward your actual conversion goal rather than just clicks.":
+    "oCPC는 최적화된 클릭당 비용입니다. 단순한 클릭이 아닌 실제 전환 목표를 향해 WeChat이 최적화하는 지능형 입찰 모드입니다.",
+"With regular CPC, you pay for each click regardless of what happens after. With oCPC, you define a conversion event (like a purchase or form submission) and the system optimizes toward users most likely to complete that action.":
+    "일반 CPC는 이후에 무슨 일이 일어나든 각 클릭에 대해 비용을 지불합니다. oCPC를 사용하면 전환 이벤트(구매 또는 양식 제출 등)를 정의하고 시스템이 해당 작업을 완료할 가능성이 가장 높은 사용자를 대상으로 최적화합니다.",
+"Use oCPC when you want to focus on results, not just traffic. The catch: you need enough conversion data (typically 20+ conversions per week) for the algorithm to optimize effectively.":
+    "트래픽뿐만 아니라 결과에 집중하려면 oCPC를 사용하세요. 단점: 알고리즘이 효과적으로 최적화하려면 충분한 전환 데이터(일반적으로 주 20회 이상)가 필요합니다.",
+"WeChat 광고 runs on a pre-paid model. You deposit funds into your ad account before your ads go live. There is no post-payment option for standard accounts.":
+    "WeChat 광고는 선불 모델로 운영됩니다. 광고가 게재되기 전에 광고 계정에 자금을 입금합니다. 표준 계정에는 후불 옵션이 없습니다.",
+"Recharge is done through the Tencent Ads platform (ads.e.qq.com) or through your agency partner. Minimum recharge amount varies but is typically around CNY 5,000.":
+    "충전은 Tencent Ads 플랫폼(ads.e.qq.com) 또는 에이전시 파트너를 통해 이루어집니다. 최소 충전 금액은 다양하지만 일반적으로 약 5,000위안입니다.",
+"Fees are deducted based on your chosen billing model (CPM, CPC, oCPC, etc.) and are calculated in real time. You can set daily budgets and view real-time spend in the dashboard.":
+    "수수료는 선택한 청구 모델(CPM, CPC, oCPC 등)에 따라 실시간으로 계산되어 차감됩니다. 대시보드에서 일일 예산을 설정하고 실시간 지출을 확인할 수 있습니다.",
+"For foreign companies, working through a certified agency is usually the smoother option — the agency handles account funding, compliance, and billing on your behalf.":
+    "외국 기업의 경우, 공인 에이전시를 통해 작업하는 것이 일반적으로 더 원활합니다 — 에이전시가 계정 자금 조달, 규정 준수, 청구를 대신 처리합니다.",
+"There is no official minimum budget published by WeChat, but in practice you need at least CNY 5,000 to 10,000 for meaningful testing and initial campaigns.":
+    "WeChat이 공식적으로 발표한 최소 예산은 없지만, 실제로 의미 있는 테스트와 초기 캠페인을 위해 최소 5,000~10,000위안이 필요합니다.",
+"WeChat ads work well for brands that want to build awareness within specific Moments feed placements or target Official Account subscribers with relevant content.":
+    "WeChat 광고는 특정 모먼트 피드 배치 내에서 인지도를 구축하거나 관련 콘텐츠로 공식 계정 구독자를 타겟팅하려는 브랜드에 효과적입니다.",
+"Think of it as \"what you are paying for\":":
+    "\"무엇에 대해 비용을 지불하는지\"라고 생각하세요:",
+"— Cost Per Mille. You pay per 1,000 impressions. 1,000 people see your ad, you get charged once.":
+    "— CPM(1,000노출당 비용). 1,000노출당 과금. 1,000명이 광고를 보면 한 번 청구됩니다.",
+"— Cost Per Click. You pay only when someone clicks. No click, no charge.":
+    "— CPC(클릭당 비용). 클릭한 경우에만 과금. 클릭 없음, 청구 없음.",
+"— Cost Per Action. You pay when someone completes a specific action, like downloading your app or signing up.":
+    "— CPA(액션당 비용). 앱 다운로드 또는 가입과 같은 특정 액션을 완료하면 과금.",
+"— Cost Per Time. You pay a fixed fee for a time slot, such as CNY 10,000 for one day.":
+    "— CPT(시간당 비용). 시간 슬롯에 대해 고정 요금을 지불합니다(예: 하루 10,000위안).",
+"— The smart versions. The system optimizes delivery toward users most likely to convert, which means less guesswork for you.":
+    "— 스마트 버전. 시스템이 전환 가능성이 가장 높은 사용자를 대상으로 전달을 최적화하므로 추측 작업이 줄어듭니다.",
+"Different ad placements and campaign goals call for different billing models. You pick based on what you are trying to achieve.":
+    "다른 광고 배치와 캠페인 목표에는 다른 청구 모델이 필요합니다. 달성하려는 목표에 따라 선택하세요.",
+"— Compete in real time with other advertisers. Higher bid plus better ad quality wins the slot. You control the budget you set.":
+    "— 다른 광고주와 실시간으로 경쟁합니다. 높은 입찰가와 좋은 광고 품질이 슬롯을 획득합니다. 설정한 예산을 통제할 수 있습니다.",
+"— Negotiate a fixed price with the platform upfront for guaranteed placement. You get a fixed position at a fixed time for a fixed price.":
+    "— 보장된 배치를 위해 플랫폼과 사전에 고정 가격을 협상합니다. 고정된 시간에 고정된 위치를 고정된 가격에 확보합니다.",
+"Auction ads are simpler and more flexible. Contract ads are for when you need certainty.":
+    "경매 광고는 더 간단하고 유연합니다. 계약 광고는 확실성이 필요할 때 사용합니다.",
+"Two factors determine whether your ad gets shown: your bid and your ad quality score.":
+    "광고 게재 여부를 결정하는 두 가지 요소: 입찰가와 광고 품질 점수.",
+"— What you are willing to pay per action (click, impression, or conversion). You set this when creating your campaign.":
+    "— 액션(클릭, 노출 또는 전환)당 지불할 의사가 있는 금액. 캠페인 생성 시 설정합니다.",
+"— Calculated from relevance, click-through rate, and landing page experience. Higher quality ads can win auctions even with lower bids.":
+    "— 관련성, 클릭률, 랜딩 페이지 경험에서 계산됩니다. 품질이 높은 광고는 낮은 입찰가로도 경매에서 이길 수 있습니다.",
+"It is not just about how much you spend. A well-crafted ad with strong relevance can outperform a competitor bidding higher.":
+    "얼마를 지출하는지가 전부는 아닙니다. 관련성이 높은 잘 만들어진 광고는 더 높은 입찰가의 경쟁자를 능가할 수 있습니다.",
+"The platform automatically flags patterns like rapid repeated clicks, automated bots, or other suspicious behavior.":
+    "플랫폼은 빠른 반복 클릭, 자동화된 봇 또는 기타 의심스러운 행동과 같은 패턴을 자동으로 플래그 지정합니다.",
+"If you notice unusual activity in your dashboard, you can report it. Their team reviews reported cases and adjusts the billing accordingly.":
+    "대시보드에서 비정상적인 활동을 발견하면 신고할 수 있습니다. 팀이 보고된 사례를 검토하고 그에 따라 청구를 조정합니다.",
+"There is no fixed CPC — it varies by industry, targeting, and ad placement. WeChat Moments ads tend to have higher CPCs than in-article placements.":
+    "고정 CPC는 없습니다 — 업종, 타겟팅, 광고 배치에 따라 다릅니다. WeChat 모먼트 광고는 기사 내 배치보다 CPC가 높은 경향이 있습니다.",
+"We will share benchmark data for your specific industry during our onboarding call.":
+    "온보딩 통화 중 귀하의 특정 업종에 대한 벤치마크 데이터를 공유해 드리겠습니다.",
+"— The feed ads that appear between organic posts in WeChat. High engagement, strong brand presence.":
+    "— WeChat의 오가닉 게시물 사이에 표시되는 피드 광고. 높은 참여도, 강력한 브랜드 입지.",
+"— Banner and article native ads inside public accounts. Good for building a subscriber base.":
+    "— 공개 계정 내 배너 및 기사 네이티브 광고. 구독자 기반 구축에 적합합니다.",
+"— Ads that drive users directly into WeChat mini programs. Ideal for e-commerce, services, and app-like experiences.":
+    "— 사용자를 WeChat 미니 프로그램으로 직접 유도하는 광고. 전자상거래, 서비스, 앱과 같은 경험에 이상적입니다.",
+"— Short video ads within WeChat's video feed. Growing fast as short-form content expands in China.":
+    "— WeChat의 비디오 피드 내 숏폼 비디오 광고. 중국에서 숏폼 콘텐츠가 확장됨에 따라 빠르게 성장하고 있습니다.",
+"— Ads that appear in WeChat's internal search results. Catches users actively looking for something specific.":
+    "— WeChat의 내부 검색 결과에 표시되는 광고. 특정 항목을 적극적으로 찾는 사용자를 포착합니다.",
+"Beyond WeChat itself, Tencent Ads also covers": "WeChat 자체 외에도 Tencent Ads는 다음을 포함합니다:",
+"(a network of partner apps and websites). If you want broad reach across China's internet, Tencent Ads gives you one entry point.":
+    "(파트너 앱 및 웹사이트 네트워크). 중국 인터넷 전반에 걸쳐 광범위한 도달을 원한다면, Tencent Ads가 하나의 진입점을 제공합니다.",
+"We will recommend the right mix based on your target audience and campaign goals.":
+    "타겟 오디언스와 캠페인 목표에 따라 적절한 조합을 추천해 드립니다.",
+"Yes. WeChat follows strict advertising regulations. Prohibited or heavily restricted industries include:":
+    "네. WeChat은 엄격한 광고 규정을 따릅니다. 금지되거나 엄격히 제한되는 업종은 다음과 같습니다:",
+"Finance: securities, private equity, cryptocurrency, P2P lending, online microlending;":
+    "금융: 증권, 사모펀드, 암호화폐, P2P 대출, 온라인 소액 대출;",
+"Healthcare: certain medical treatments, prescription drugs, unapproved health products;":
+    "의료: 특정 의료 시술, 처방약, 미승인 건강 제품;",
+"Certain regulated professions requiring government licenses;": "정부 라이선스가 필요한 특정 규제 직종;",
+"The most common reasons ads get rejected on WeChat:":
+    "WeChat에서 광고가 거부되는 가장 일반적인 이유:",
+"(2) Missing or expired qualifications — your business license, trademark certificates, or industry licenses must be current;":
+    "(2) 누락되거나 만료된 자격 — 영업 허가증, 상표 증명서, 업종 라이선스가 유효해야 합니다;",
+"(3) Landing page issues — the site must be hosted in mainland China with a valid ICP filing, and must be accessible;":
+    "(3) 랜딩 페이지 문제 — 사이트는 중국 본토에 호스팅되고 유효한 ICP 등록이 있어야 하며 접근 가능해야 합니다;",
+"(4) Prohibited content categories — the product or service itself may fall into restricted categories;":
+    "(4) 금지된 콘텐츠 카테고리 — 제품 또는 서비스 자체가 제한된 카테고리에 속할 수 있습니다;",
+"(5) Creative copy that feels like a hard sell rather than authentic content.":
+    "(5) 진정성 있는 콘텐츠보다 하드셀로 느껴지는 크리에이티브 카피.",
+
+# WeChat more
+"Yes. Overseas companies can advertise on Douyin through a certified Ocean Engine agency partner. Douyin requires a Chinese business license for direct registration.":
+    "네. 해외 기업은 공인 Ocean Engine 에이전시 파트너를 통해 Douyin에서 광고할 수 있습니다. Douyin은 직접 등록을 위해 중국 영업 허가증이 필요합니다.",
+"Ocean Engine offers bilingual support for international advertisers and has dedicated account managers for foreign brands.":
+    "Ocean Engine은 국제 광고주를 위한 이중 언어 지원과 해외 브랜드를 위한 전용 계정 관리자를 제공합니다.",
+"Think of it this way: TikTok Ads reaches users outside China. Ocean Engine reaches the 700+ million daily active users inside China.":
+    "이렇게 생각하세요: TikTok 광고는 중국 외 사용자에게 도달합니다. Ocean Engine은 중국 내 7억+ 일간 활성 사용자에게 도달합니다.",
+"Some agencies offer both, letting you manage both markets from one interface, but the accounts and ad systems are technically separate.":
+    "일부 에이전시는 둘 다 제공하여 하나의 인터페이스로 두 시장을 관리할 수 있지만, 계정과 광고 시스템은 기술적으로 분리되어 있습니다.",
+"For overseas companies working through an agency, the agency typically provides the qualification gateway.":
+    "에이전시를 통해 작업하는 해외 기업의 경우, 에이전시가 일반적으로 자격 게이트웨이를 제공합니다.",
+"(a) Company registration documents (business license, certificate of incorporation, or equivalent);":
+    "(a) 회사 등록 서류(영업 허가증, 설립 증명서 또는 이에 상응하는 서류);",
+"(b) Brand trademark registration certificate or authorization letter (if advertising a brand you do not own);":
+    "(b) 브랜드 상표 등록 증명서 또는 인증서(소유하지 않은 브랜드를 광고하는 경우);",
+"(c) Landing page hosted in mainland China with a valid ICP filing (required for most product categories);":
+    "(c) 중국 본토에 호스팅되고 유효한 ICP 등록이 있는 랜딩 페이지(대부분의 제품 카테고리에 필요);",
+"(d) Industry-specific licenses if applicable (healthcare, education, finance, and similar regulated sectors).":
+    "(d) 해당되는 경우 업종별 라이선스(의료, 교육, 금융 및 유사한 규제 분야).",
+"The exact document list depends on your industry and product category.":
+    "정확한 서류 목록은 업종과 제품 카테고리에 따라 다릅니다.",
+"Account review typically takes 1 to 3 business days for basic qualifications. Ad creative review is usually faster: most standard creatives are reviewed within 4 to 12 hours.":
+    "계정 검토는 기본 자격의 경우 일반적으로 1~3영업일이 소요됩니다. 광고 크리에이티브 검토는 일반적으로 더 빠릅니다: 대부분의 표준 크리에이티브는 4~12시간 내에 검토됩니다.",
+"The minimum daily budget per ad set is approximately USD 50 (or CNY equivalent). For meaningful testing and data gathering, we recommend a monthly budget of at least USD 1,500 to 3,000.":
+    "광고 세트당 최소 일일 예산은 약 USD 50(또는 해당 CNY)입니다. 의미 있는 테스트와 데이터 수집을 위해 월 최소 USD 1,500~3,000의 예산을 권장합니다.",
+"There is no mandatory monthly minimum published by the platform, but ad delivery can be constrained if your daily budget is set too low.":
+    "플랫폼이 공식적으로 발표한 필수 월 최소 금액은 없지만, 일일 예산이 너무 낮게 설정되면 광고 게재가 제한될 수 있습니다.",
+"— Pay per 1,000 impressions. Good for brand awareness campaigns.":
+    "— 1,000노출당 과금. 브랜드 인지도 캠페인에 적합합니다.",
+"— Pay per click. Works well for driving traffic.": "— 클릭당 과금. 트래픽 유도에 효과적입니다.",
+"— The optimized versions. You define a conversion goal (app install, purchase, form fill) and the system optimizes toward that goal.":
+    "— 최적화 버전. 전환 목표(앱 설치, 구매, 양식 작성)를 정의하면 시스템이 해당 목표에 맞게 최적화합니다.",
+"— Used for video ads. You pay when a user watches a defined duration of your video.":
+    "— 동영상 광고에 사용. 사용자가 설정된 시간 동안 동영상을 시청하면 과금됩니다.",
+"Benchmarks vary widely by industry, targeting, and ad placement, but general ranges are:":
+    "벤치마크는 업종, 타겟팅, 광고 배치에 따라 크게 다르지만 일반적인 범위는 다음과 같습니다:",
+"CPM: USD 3 to 10 (roughly CNY 22 to 72) per 1,000 impressions, depending on placement and competition.":
+    "CPM: 1,000노출당 USD 3~10(약 CNY 22~72), 배치와 경쟁에 따라 다름.",
+"CPC: USD 0.50 to 1.50 (roughly CNY 3.5 to 11) per click. Competitive categories like beauty, fashion, and gaming run higher.":
+    "CPC: 클릭당 USD 0.50~1.50(약 CNY 3.5~11). 뷰티, 패션, 게임과 같은 경쟁 카테고리는 더 높습니다.",
+"CPA / CPA goals through oCPM: typically USD 10 to 40 (CNY 70 to 290) depending on the conversion event and industry.":
+    "oCPM을 통한 CPA: 일반적으로 USD 10~40(CNY 70~290), 전환 이벤트와 업종에 따라 다름.",
+"Monthly billing (post-pay) may be available for established accounts with significant spend history and a direct relationship with Ocean Engine.":
+    "월별 청구(후불)는 상당한 지출 기록이 있고 Ocean Engine과 직접적인 관계가 있는 기존 계정에 대해 가능할 수 있습니다.",
+"The formula is roughly: ad rank = bid x predicted CTR (for standard bidding) or bid x predicted conversion rate (for optimized bidding).":
+    "공식은 대략: 광고 순위 = 입찰가 x 예측 CTR(표준 입찰) 또는 입찰가 x 예측 전환율(최적화 입찰)입니다.",
+"You can also set bid caps (maximum cost per click or cost per thousand impressions) to control spend, or let the system optimize freely.":
+    "지출을 제어하기 위해 입찰 상한선(최대 클릭당 비용 또는 1,000노출당 비용)을 설정하거나 시스템이 자유롭게 최적화하도록 할 수 있습니다.",
+"Douyin offers a wide range of ad formats across its ecosystem:":
+    "Douyin은 생태계 전반에 걸쳐 다양한 광고 형식을 제공합니다:",
+"— Short video ads that appear in the user's main Douyin feed. The most common format. Skippable after a few seconds.":
+    "— 사용자의 메인 Douyin 피드에 표시되는 숏폼 비디오 광고. 가장 일반적인 형식. 몇 초 후 건너뛰기 가능.",
+"— Full-screen video ad that plays automatically when users open Douyin. Premium placement, high impact.":
+    "— 사용자가 Douyin을 열 때 자동 재생되는 전체 화면 비디오 광고. 프리미엄 배치, 높은 효과.",
+"— Text and video ads that appear in Douyin's in-app search results for relevant keywords.":
+    "— 관련 키워드에 대해 Douyin의 앱 내 검색 결과에 표시되는 텍스트 및 비디오 광고.",
+"— Display and video ads within Toutiao (ByteDance's news app).":
+    "— Toutiao(ByteDance의 뉴스 앱) 내 디스플레이 및 비디오 광고.",
+"Video creative is central to Douyin. Static image ads exist but video consistently outperforms them on engagement and conversion rates.":
+    "비디오 크리에이티브는 Douyin의 핵심입니다. 정적 이미지 광고도 있지만 비디오가 참여율과 전환율에서 지속적으로 우수합니다.",
+"Like all major Chinese advertising platforms, Douyin restricts or prohibits advertising for:":
+    "모든 주요 중국 광고 플랫폼과 마찬가지로 Douyin은 다음에 대한 광고를 제한하거나 금지합니다:",
+"Finance: securities, private equity, cryptocurrency, P2P lending, microlending;":
+    "금융: 증권, 사모펀드, 암호화폐, P2P 대출, 소액 대출;",
+"Healthcare: prescription drugs, unapproved medical treatments, medical devices requiring special approval;":
+    "의료: 처방약, 미승인 의료 시술, 특별 승인이 필요한 의료 기기;",
+"Gambling, lotteries, and related services;": "도박, 복권 및 관련 서비스;",
+"Content involving real-person testimonials (faces of non-consenting individuals);":
+    "실제 인물의 증언(동의하지 않은 개인의 얼굴)을 포함하는 콘텐츠;",
+"Products or services requiring government-issued special permits;":
+    "정부 발급 특별 허가가 필요한 제품 또는 서비스;",
+"Content that violates Chinese advertising law, including superlative claims.":
+    "최상급 표현을 포함하여 중국 광고법을 위반하는 콘텐츠.",
+"Some restricted categories can advertise with special qualification approval.":
+    "일부 제한 카테고리는 특별 자격 승인을 받으면 광고할 수 있습니다.",
+"Under normal conditions, ad creative review takes 4 to 12 hours. During high-traffic periods (holidays, 618 / Double 11, etc.), it may extend to 24–48 hours.":
+    "정상 조건에서 광고 크리에이티브 검토는 4~12시간 소요됩니다. 트래픽이 많은 기간(휴일, 618/더블 11 등)에는 24~48시간으로 연장될 수 있습니다.",
+"Accounts with a clean history and previously approved creatives tend to get faster re-reviews.":
+    "깨끗한 이력과 이전에 승인된 크리에이티브가 있는 계정은 더 빠른 재검토를 받는 경향이 있습니다.",
+"(1) Exaggerated or unverifiable claims — superlatives, guaranteed results, and similar violations.":
+    "(1) 과장되거나 검증할 수 없는 주장 — 최상급 표현, 결과 보장 및 유사한 위반.",
+"(2) Landing page mismatch — the ad content must match the landing page. Redirecting to a generic homepage causes rejection.":
+    "(2) 랜딩 페이지 불일치 — 광고 내용이 랜딩 페이지와 일치해야 합니다. 일반 홈페이지로 리디렉션하면 거부됩니다.",
+"(3) Missing or incomplete ICP filing — your landing page must be hosted in mainland China with a valid ICP filing.":
+    "(3) ICP 등록 누락 또는 불완전 — 랜딩 페이지는 중국 본토에 호스팅되고 유효한 ICP 등록이 있어야 합니다.",
+"(4) Content that mimics organic posts too closely — Douyin reviewers flag content disguised as non-advertising.":
+    "(4) 오가닉 게시물을 너무 밀접하게 모방하는 콘텐츠 — Douyin 검토자는 비광고로 위장한 콘텐츠를 플래그 지정합니다.",
+"(5) Restricted industry or product category without the required qualification documents.":
+    "(5) 필요한 자격 서류가 없는 제한된 업종 또는 제품 카테고리.",
+"We will audit your creative and landing page against Douyin's compliance guidelines before submission to minimize rejections.":
+    "제출 전 Douyin의 규정 준수 가이드라인에 따라 크리에이티브와 랜딩 페이지를 감사하여 거부를 최소화합니다.",
+"You can repurpose TikTok creative for Douyin, but expect to need some modifications.":
+    "TikTok 크리에이티브를 Douyin에 재사용할 수 있지만 약간의 수정이 필요할 것으로 예상하세요.",
+"— Add simplified Chinese subtitles. Some advertisers also add Chinese text overlays for brand name and key selling points.":
+    "— 간체 중국어 자막을 추가하세요. 일부 광고주는 브랜드 이름과 주요 판매 포인트에 중국어 텍스트 오버레이도 추가합니다.",
+"— If your TikTok has English voiceover, consider replacing it with Chinese voiceover or keeping it with Chinese subtitles.":
+    "— TikTok에 영어 음성 해설이 있는 경우 중국어 음성 해설로 교체하거나 중국어 자막과 함께 유지하는 것을 고려하세요.",
 }
 
 def translate():
