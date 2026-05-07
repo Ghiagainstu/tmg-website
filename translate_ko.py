@@ -1870,6 +1870,122 @@ KO = {
     "높은 소득 수준이 프리미엄 제품 광고를 지원합니다",
 "Additionally, 62% of users show greater willingness to engage with ads compared to average users.":
     "또한 62%의 사용자가 평균 사용자보다 광고에 참여할 의사가 더 높습니다.",
+
+# ===== Round 10: Remaining FAQ + misc =====
+# Baidu FAQ truncated
+"Yes. There is an annual account authentication fee of CNY 600. For new users, this fee is refunded to your ad account after the first year — effectively making it free for year one.":
+    "네. 연간 계정 인증 수수료 600위안이 있습니다. 신규 사용자의 경우 이 수수료는 첫 해 이후 광고 계정으로 환불되어 실질적으로 첫 해는 무료입니다.",
+"Baidu's official rule is a minimum top-up of CNY 2,400. However, to save on transaction fees and reduce transfer time, we recommend a single top-up of at least CNY 10,000.":
+    "Baidu의 공식 규정은 최소 충전 금액 2,400위안입니다. 그러나 송금 수수료를 절약하고 입금 시간을 단축하기 위해 최소 10,000위안의 일괄 충전을 권장합니다.",
+"Pre-paid advertising fee: minimum CNY 2,400. Service fee: starting from USD 100, which includes document translation, document review, and submission to the Baidu platform.":
+    "선불 광고비: 최소 2,400위안. 서비스 수수료: USD 100부터 시작하며, 문서 번역, 문서 검토, Baidu 플랫폼 제출이 포함됩니다.",
+"The most common rejection reasons are: (1) Expired qualifications or licenses; (2) Content contains prohibited words; (3) Website is unreachable or offline; (4) Mismatch between ad content and landing page; (5) Missing or incorrect industry qualification documents.":
+    "가장 일반적인 거부 이유: (1) 자격증 또는 라이선스 만료; (2) 금지어 포함 콘텐츠; (3) 웹사이트 접속 불가 또는 오프라인; (4) 광고 내용과 랜딩 페이지 불일치; (5) 업종 자격 증명서 누락 또는 오류.",
+"Common prohibited words include absolute claims such as: cheapest, number one in the country, 100% effective, guaranteed results, and similar superlatives. Also prohibited are terms related to medical efficacy (unless licensed), unsubstantiated comparative claims, and content violating Chinese laws.":
+    "일반적인 금지어: 최저가, 전국 1위, 100% 효과, 결과 보장 및 유사한 최상급 표현. 또한 의료 효능 관련 용어(라이선스 없는 경우), 입증되지 않은 비교 주장, 중국 법률 위반 콘텐츠가 금지됩니다.",
+"Yes. Regulated industries such as healthcare and finance must provide industry-specific licenses, avoid efficacy claims in all ad copy and landing pages, and comply with strict Baidu review standards.":
+    "네. 의료, 금융 등의 규제 업종은 업종별 라이선스를 제공하고, 모든 광고 카피 및 랜딩 페이지에서 효능 주장을 피하며, 엄격한 Baidu 검토 기준을 준수해야 합니다.",
+"Companies registered in Hong Kong, Japan, South Korea, or Taiwan can apply with additional documentation. For all other countries, eligibility is assessed case by case through the agency.":
+    "홍콩, 일본, 대한민국, 대만에 등록된 기업은 추가 서류로 신청할 수 있습니다. 기타 국가는 에이전시를 통해 사례별로 자격이 평가됩니다.",
+"At minimum, you need a Chinese business license (if registering directly) or a partnership agreement with a certified agency. Depending on your industry and ad content, you may also need:":
+    "최소한 중국 영업 허가증(직접 등록 시) 또는 공인 에이전시와의 파트너십 계약이 필요합니다. 업종 및 광고 내용에 따라 다음이 추가로 필요할 수 있습니다:",
+"Two options: CPC (cost per click) and CPM (cost per thousand impressions). You pick the model that fits your goal. CPC makes sense when you want actual traffic; CPM works best for brand visibility.":
+    "두 가지 옵션: CPC(클릭당 비용) 및 CPM(1,000노출당 비용). 목표에 맞는 모델을 선택하세요. 실제 트래픽을 원한다면 CPC, 브랜드 가시성을 원한다면 CPM이 가장 좋습니다.",
+"There is no hard minimum published by the platform, but in practice you need at least a few thousand CNY to test and gather meaningful data. Once your account is approved, you can start with a modest budget and scale up.":
+    "플랫폼이 공식적으로 발표한 최소 금액은 없지만, 실제로는 테스트와 의미 있는 데이터 수집을 위해 최소 수천 위안이 필요합니다. 계정 승인 후 적은 예산으로 시작하여 확장할 수 있습니다.",
+"Yes. The professional account review fee is CNY 600 (one-time, non-refundable). If you work through an agency, there is typically a service fee on top of the ad spend.":
+    "네. 프로페셔널 계정 검토 수수료는 600위안(1회, 환불 불가)입니다. 에이전시를 통해 작업하는 경우 일반적으로 광고 지출 외에 서비스 수수료가 추가됩니다.",
+"It varies a lot by industry and targeting. Low-competition niches might see CPCs of a few yuan. Competitive categories like beauty, fashion, or mother-and-baby can see CPCs of 10–30+ CNY.":
+    "업종 및 타겟팅에 따라 크게 다릅니다. 경쟁이 낮은 틈새 시장은 클릭당 몇 위안일 수 있습니다. 뷰티, 패션, 육아 등의 경쟁 카테고리는 클릭당 10~30위안 이상일 수 있습니다.",
+"Yes. Financial services (securities, private equity, cryptocurrency, P2P lending), gambling, tobacco, and certain health/medical categories are either fully restricted or heavily regulated.":
+    "네. 금융 서비스(증권, 사모펀드, 암호화폐, P2P 대출), 도박, 담배, 특정 건강/의료 카테고리는 완전히 제한되거나 엄격히 규제됩니다.",
+"The avatar cannot be a real person's face or a photo showing someone's face. It must be relevant to your brand, product, or company.":
+    "아바타는 실제 인물의 얼굴이나 누군가의 얼굴이 보이는 사진일 수 없습니다. 브랜드, 제품 또는 회사와 관련되어야 합니다.",
+"Unlike platforms where ads interrupt, XHS thrives on authentic user-generated content (种草, \"seeding\")—everyday consumers sharing real experiences.":
+    "광고가 중단되는 플랫폼과 달리, XHS는 진정한 사용자 생성 콘텐츠(种草, \"시딩\")로 성장합니다 — 일반 소비자가 실제 경험을 공유합니다.",
+"Yes. Foreign companies can run ads on WeChat through a certified agency partner. WeChat requires a Chinese business license for direct registration.":
+    "네. 외국 기업은 공인 에이전시 파트너를 통해 WeChat에서 광고할 수 있습니다. WeChat은 직접 등록을 위해 중국 영업 허가증이 필요합니다.",
+"Companies from Hong Kong, Japan, South Korea, and Taiwan have a slightly different process with additional documentation requirements.":
+    "홍콩, 일본, 대한민국, 대만의 기업은 추가 서류 요구사항으로 인해 절차가 약간 다릅니다.",
+"What documents do I need to advertise on WeChat?":
+    "WeChat에서 광고하는 데 필요한 서류는 무엇인가요?",
+"At minimum, you need a Chinese business license or a partnership with a certified WeChat advertising agency. Depending on your industry and ad content, you may also need:":
+    "최소한 중국 영업 허가증 또는 공인 WeChat 광고 에이전시와의 파트너십이 필요합니다. 업종 및 광고 내용에 따라 다음이 추가로 필요할 수 있습니다:",
+"(a) Trademark registration certificate + authorization letter (required if your ad references a brand you do not own);":
+    "(a) 상표 등록 증명서 + 인증서(소유하지 않은 브랜드를 광고하는 경우 필요);",
+"(b) ICP filing screenshot (if your ad mentions a website — the site must be hosted in mainland China);":
+    "(b) ICP 등록 스크린샷(광고가 웹사이트를 언급하는 경우 — 사이트는 중국 본토에 호스팅되어야 함);",
+"(c) Industry-specific licenses for regulated sectors such as healthcare, finance, or education.":
+    "(c) 의료, 금융, 교육 등 규제 분야에 대한 업종별 라이선스.",
+"Foreign entities typically need a BR or CR certificate (Hong Kong companies) or equivalent documentation for other jurisdictions.":
+    "외국 법인은 일반적으로 BR 또는 CR 증명서(홍콩 기업) 또는 기타 관할권에 대한 이에 상응하는 서류가 필요합니다.",
+"Most advertisers start with CPM or CPC. The right choice depends on your campaign objective — we can advise on which model fits your goal.":
+    "대부분의 광고주는 CPM 또는 CPC로 시작합니다. 올바른 선택은 캠페인 목표에 따라 다릅니다 — 어떤 모델이 목표에 맞는지 조언해 드릴 수 있습니다.",
+"With regular CPC, you pay for each click regardless of what happens after. With oCPC, you define a conversion event (like a purchase or form submission) and the system optimizes toward users most likely to complete that action.":
+    "일반 CPC는 이후에 무슨 일이 일어나든 각 클릭에 대해 비용을 지불합니다. oCPC를 사용하면 전환 이벤트(구매 또는 양식 제출 등)를 정의하고 시스템이 해당 작업을 완료할 가능성이 가장 높은 사용자를 대상으로 최적화합니다.",
+"Use oCPC when you want to focus on results, not just traffic. The catch: you need enough conversion data (typically 20+ conversions per week) for the algorithm to optimize effectively.":
+    "트래픽뿐만 아니라 결과에 집중하려면 oCPC를 사용하세요. 단점: 알고리즘이 효과적으로 최적화하려면 충분한 전환 데이터(일반적으로 주 20회 이상)가 필요합니다.",
+"There is no official minimum budget published by WeChat, but in practice you need at least CNY 5,000 to 10,000 for meaningful testing and initial campaigns.":
+    "WeChat이 공식적으로 발표한 최소 예산은 없지만, 실제로 의미 있는 테스트와 초기 캠페인을 위해 최소 5,000~10,000위안이 필요합니다.",
+"WeChat ads work well for brands that want to build awareness within specific Moments feed placements or target Official Account subscribers with relevant content.":
+    "WeChat 광고는 특정 모먼트 피드 배치 내에서 인지도를 구축하거나 관련 콘텐츠로 공식 계정 구독자를 타겟팅하려는 브랜드에 효과적입니다.",
+"There is no fixed CPC — it varies by industry, targeting, and ad placement. WeChat Moments ads tend to have higher CPCs than in-article placements.":
+    "고정 CPC는 없습니다 — 업종, 타겟팅, 광고 배치에 따라 다릅니다. WeChat 모먼트 광고는 기사 내 배치보다 CPC가 높은 경향이 있습니다.",
+"Low-competition niches might see CPCs of a few yuan. Competitive categories like beauty, fashion, or food and beverage can see CPCs of 10–30+ CNY.":
+    "경쟁이 낮은 틈새 시장은 클릭당 몇 위안일 수 있습니다. 뷰티, 패션, 식음료 등의 경쟁 카테고리는 클릭당 10~30위안 이상일 수 있습니다.",
+"Low-competition niches might see CPCs of a few yuan. Competitive categories like beauty, fashion, or finance can see CPCs of 10–30+ CNY.":
+    "경쟁이 낮은 틈새 시장은 클릭당 몇 위안일 수 있습니다. 뷰티, 패션, 금융 등의 경쟁 카테고리는 클릭당 10~30위안 이상일 수 있습니다.",
+
+# GEO remaining
+"No. AI-generated answers do not replace search engine results pages — they sit alongside them. Users consult both, depending on the query.":
+    "아니요. AI 생성 답변은 검색 엔진 결과 페이지를 대체하지 않습니다 — 그것들은 나란히 존재합니다. 사용자는 질문에 따라 둘 다 참고합니다.",
+"GEO is an additional channel, not a replacement. The clients who benefit most from GEO are the ones who already have a solid SEO foundation.":
+    "GEO는 추가 채널이지 대체가 아닙니다. GEO에서 가장 큰 혜택을 받는 클라이언트는 이미 견고한 SEO 기반을 갖춘 클라이언트입니다.",
+"Cutting SEO to fund GEO would likely hurt your overall visibility in the long run.":
+    "SEO를 줄여 GEO에 자금을 대면 장기적으로 전체 가시성을 해칠 가능성이 높습니다.",
+"They serve different parts of the funnel and complement each other well.":
+    "그것들은 퍼널의 다른 부분을 담당하며 서로 잘 보완합니다.",
+"Baidu SEM reaches users who are actively searching right now — high commercial intent, immediate conversion potential.":
+    "Baidu SEM은 지금 바로 적극적으로 검색하는 사용자에게 도달합니다 — 높은 상업적 의도, 즉각적인 전환 가능성.",
+"Think of SEM as paying for a spot at the front of the line. GEO is trying to become the name the waiter recommends.":
+    "SEM은 줄 앞자리에 돈을 내는 것과 같습니다. GEO는 웨이터가 추천하는 이름이 되는 것입니다.",
+"Some clients also use GEO to research which topics and queries their AI-visibility competitors are winning.":
+    "일부 클라이언트는 또한 GEO를 사용하여 경쟁사가 AI 가시성에서 이기고 있는 주제와 쿼리를 조사합니다.",
+"Based on what AI systems tend to reference:": "AI 시스템이 참조하는 경향이 있는 것에 기반:",
+"FAQ pages — direct Q&A format maps naturally to how users ask AI questions. High priority.":
+    "FAQ 페이지 — 직접적인 Q&A 형식이 사용자가 AI에 질문하는 방식에 자연스럽게 매핑됩니다. 우선순위 높음.",
+"Data points and statistics — specific numbers, benchmarks, and research findings get cited frequently.":
+    "데이터 포인트 및 통계 — 구체적인 숫자, 벤치마크, 연구 결과가 자주 인용됩니다.",
+"Clear definitions and explanations — the AI equivalent of a dictionary entry":
+    "명확한 정의와 설명 — 사전 항목의 AI 버전",
+"Case studies and real examples — concrete stories outperform abstract claims":
+    "사례 연구 및 실제 예 — 구체적인 이야기가 추상적인 주장보다 효과적입니다",
+"Properly structured articles — clear headings (H1/H2/H3), opening paragraphs that answer the main question directly.":
+    "적절히 구조화된 문서 — 명확한 제목(H1/H2/H3), 주요 질문에 직접 답하는 시작 단락.",
+
+# Bing remaining
+"Bing China's user base represents a premium audience: highly educated, urban, and with above-average income levels.":
+    "Bing China의 사용자 기반은 프리미엄 오디언스를 대표합니다: 고학력, 도시 거주, 평균 이상의 소득 수준.",
+"This makes Bing China users ideal for brands targeting educated professionals, urban consumers, and high-value segments.":
+    "이는 Bing China 사용자를 교육받은 전문직, 도시 소비자, 고가치 세그먼트를 타겟팅하는 브랜드에 이상적으로 만듭니다.",
+"Bing China attracts a younger, more educated, and higher-income demographic compared to Baidu's broader, more diversified user base.":
+    "Bing China는 Baidu의 더 넓고 다양한 사용자 기반에 비해 더 젊고, 교육 수준이 높고, 소득이 높은 인구통계를 유치합니다.",
+"For international advertisers, this means Bing China offers a more premium audience, while Baidu provides maximum reach.":
+    "국제 광고주에게 이는 Bing China가 더 프리미엄한 오디언스를 제공하는 반면, Baidu는 최대 도달 범위를 제공한다는 것을 의미합니다.",
+"Bing China users show strong purchasing intent across several categories, with average planned spending of ¥3,040.1 per month.":
+    "Bing China 사용자는 여러 카테고리에서 강한 구매 의도를 보이며, 월평균 계획 지출액은 ¥3,040.1입니다.",
+"Additionally, 68% express interest in AI technology, making them early adopters for tech products and services.":
+    "또한 68%가 AI 기술에 관심을 표현하여 기술 제품 및 서비스의 얼리 어답터입니다.",
+"What advertising formats work best on Bing China?":
+    "Bing China에서 가장 효과적인 광고 형식은 무엇인가요?",
+"Based on user behavior data, the following ad formats perform well:":
+    "사용자 행동 데이터에 따르면, 다음 광고 형식이 효과적입니다:",
+"Education and professional service promotions:": "교육 및 전문 서비스 프로모션:",
+
+# Additional misc
+"More representative of general population": "일반 인구를 더 잘 대표함",
+"Additionally, 62% of users show greater willingness to engage with ads compared to average users.":
+    "또한 62%의 사용자가 평균 사용자보다 광고에 참여할 의사가 더 높습니다.",
 }
 
 def translate():
