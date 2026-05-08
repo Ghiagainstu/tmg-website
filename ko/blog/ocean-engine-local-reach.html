@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ocean Engine Local Reach: Douyin's Local Marketing Platform | Tuyue Media Gateway (TMG)</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/assets/og-image.png">
+<meta name="description" content="How Ocean Engine Local Reach helps businesses advertise on Douyin with hyper-local targeting, store visits optimization, and smart budget distribution across China.">
+  <link rel="canonical" href="https://www.tuyuesouxin.cn/ko/blog/ocean-engine-local-reach">
+  <meta property="og:title" content="Ocean Engine Local Reach: Douyin의 올인원 로컬 마케팅 플랫폼">
+  <meta property="og:description" content="Discover how Ocean Engine Local Reach empowers local businesses to advertise on Douyin.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.tuyuesouxin.cn/blog/ocean-engine-local-reach/">
+  <meta property="og:image" content="https://www.tuyuesouxin.cn/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.tuyuesouxin.cn/assets/twitter-card.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-bg: #080c14;
+      --color-bg-alt: #0d1220;
+      --color-bg-card: #111827;
+      --color-text-primary: #f0f4ff;
+      --color-text-secondary: #a3b1cc;
+      --color-text-muted: #64748b;
+      --color-primary: #2d6be4;
+      --color-primary-hover: #1e55c4;
+      --color-accent: #c9a84c;
+      --color-accent-light: #e8c87a;
+      --color-border: #1e2d45;
+      --color-border-hover: #2d4060;
+      --c-ocean: #c9a84c;
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-size-xs: 0.75rem;
+      --font-size-sm: 0.875rem;
+      --font-size-base: 1rem;
+      --font-size-lg: 1.125rem;
+      --font-size-xl: 1.25rem;
+      --font-size-2xl: 1.5rem;
+      --font-size-3xl: 1.875rem;
+      --font-size-4xl: 2.25rem;
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --transition-fast: 150ms ease;
+      --transition-base: 250ms ease;
+      --radius-sm: 0.375rem;
+      --radius-md: 0.5rem;
+      --radius-lg: 0.75rem;
+      --radius-xl: 1rem;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-family);
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--color-text-secondary);
+      background: var(--color-bg);
+      -webkit-font-smoothing: antialiased;
+      padding-top: 64px;
+    }
+
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--color-bg); }
+    ::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--color-border-hover); }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+    a { color: var(--color-primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Buttons ── */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: var(--space-2); padding: var(--space-3) var(--space-5);
+      font-family: var(--font-family); font-size: var(--font-size-sm);
+      font-weight: 500; text-decoration: none; border-radius: var(--radius-md);
+      transition: all var(--transition-base); cursor: pointer; border: none;
+    }
+    .btn--primary {
+      background: linear-gradient(135deg, #c9a84c 0%, #e8c87a 50%, #c9a84c 100%);
+      background-size: 200% 200%; color: #0d1220; font-weight: 600;
+      box-shadow: 0 2px 12px rgba(201,168,76,0.25);
+    }
+    .btn--primary:hover {
+      background-position: right center; box-shadow: 0 4px 20px rgba(201,168,76,0.4);
+      transform: translateY(-1px); text-decoration: none;
+    }
+    .btn--secondary {
+      background: transparent; color: var(--color-text-primary);
+      border: 1px solid var(--color-border);
+    }
+    .btn--secondary:hover {
+      border-color: var(--color-border-hover); background: rgba(255,255,255,0.05);
+      text-decoration: none;
+    }
+
+    /* ── Header ── */
+    .header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background-color: rgba(8,12,20,.85);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--color-border); padding: 1rem 0;
+      transition: border-color var(--transition-base);
+    }
+    .header::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,.4) 40%, rgba(45,107,228,.4) 60%, transparent);
+      opacity: .6;
+    }
+    .header__inner { display: flex; align-items: center; justify-content: space-between; }
+    .header__logo {
+      display: flex; align-items: center; gap: .5rem;
+      text-decoration: none; transition: opacity .15s;
+    }
+    .header__logo:hover { opacity: .85; text-decoration: none; }
+    .header__logo-icon { width: 40px; height: 40px; flex-shrink: 0; }
+    .header__logo-text { font-size: 1.125rem; font-weight: 700; color: var(--color-text-primary); letter-spacing: -.02em; }
+    .header__logo-text span { color: var(--color-accent); }
+    .header__nav { display: flex; gap: 2rem; align-items: center; }
+    .header__nav-link {
+      font-size: .875rem; font-weight: 500; color: var(--color-text-secondary);
+      transition: color .15s; text-decoration: none;
+    }
+    .header__nav-link:hover { color: var(--color-text-primary); text-decoration: none; }
+    .header__nav-link--active { color: var(--color-accent-light); }
+    .header__cta { display: none; }
+    .header__toggle {
+      display: none; flex-direction: column; justify-content: center;
+      gap: 4px; background: none; border: none; cursor: pointer; padding: 8px;
+    }
+    .header__toggle span { width: 24px; height: 2px; background: var(--color-text-primary); transition: all .3s; }
+    .header__toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+    .header__toggle.active span:nth-child(2) { opacity: 0; }
+    .header__toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+    @media (min-width: 768px) {
+      .header__toggle { display: none; }
+      .header__cta { display: block; }
+      .header__dropdown { position: relative; }
+      .header__dropdown-trigger { display: flex; align-items: center; gap: 4px; }
+      .header__dropdown-arrow { transition: transform var(--transition-fast); }
+      .header__dropdown:hover .header__dropdown-arrow,
+      .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
+      .header__dropdown-menu {
+        position: absolute; top: calc(100% + 8px); left: 0;
+        background: var(--color-bg-card); border: 1px solid var(--color-border);
+        border-radius: 10px; padding: .5rem 0; min-width: 180px;
+        display: none; opacity: 0; box-shadow: 0 8px 24px rgba(0,0,0,.4); z-index: 200;
+      }
+      .header__dropdown:hover .header__dropdown-menu,
+      .header__dropdown.open .header__dropdown-menu {
+        display: flex; flex-direction: column; opacity: 1;
+        transform: translateY(0);
+      }
+      .header__dropdown-item {
+        font-size: var(--font-size-sm); font-weight: 500;
+        color: var(--color-text-secondary); padding: .625rem 1rem;
+        border-radius: 6px; white-space: nowrap; text-decoration: none;
+        transition: background .15s, color .15s;
+      }
+      .header__dropdown-item:hover {
+        background: rgba(201,168,76,.1); color: var(--color-accent); text-decoration: none;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .header { position: fixed; top: 0; left: 0; right: 0; z-index: 200; }
+      .header__inner {
+        background: var(--color-bg-card); border-bottom: 1px solid var(--color-border);
+        position: relative; z-index: 201;
+      }
+      .header__toggle { display: flex; }
+      .header__nav {
+        display: none; flex-direction: column; gap: 0;
+        position: absolute; top: 100%; left: 0; right: 0;
+        background: var(--color-bg-card); border-bottom: 1px solid var(--color-border);
+        z-index: 200;
+      }
+      .header__nav.active { display: flex; }
+      .header__nav-link {
+        display: block; width: 100%; padding: 14px 40px 14px 24px;
+        border-bottom: 1px solid var(--color-border); font-size: 1.1rem;
+      }
+      .header__dropdown { position: static; width: 100%; 
+       }
+      .header__dropdown-trigger {
+        display: flex; align-items: center; justify-content: space-between;
+        width: 100%; padding: 14px 40px 14px 24px;
+        border-bottom: 1px solid var(--color-border); font-size: 1.1rem;
+      }
+      .header__dropdown-arrow { transition: transform var(--transition-fast); }
+      .header__dropdown.active .header__dropdown-arrow,
+      .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
+      .header__dropdown-menu { display: none; flex-direction: column; background: rgba(0,0,0,.25); padding: 0; }
+      .header__dropdown.active .header__dropdown-menu,
+      .header__dropdown.open .header__dropdown-menu { display: flex; }
+      .header__dropdown-item {
+        display: block; width: 100%; padding: 12px 40px;
+        font-size: 1rem; color: var(--color-text-secondary);
+        border-bottom: 1px solid rgba(255,255,255,.06);
+      }
+      .header__dropdown-item:hover { background: rgba(201,168,76,.08); color: var(--color-accent); }
+    }
+
+    /* ── Article Layout ── */
+    .article-hero {
+      padding: 100px 0 var(--space-12);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .article-hero .container { max-width: 860px; }
+    .article-meta {
+      display: flex; align-items: center; gap: var(--space-3);
+      flex-wrap: wrap; margin-bottom: var(--space-6);
+    }
+    .article-category {
+      display: inline-block; padding: 4px 12px;
+      background: rgba(201,168,76,.15); border: 1px solid rgba(201,168,76,.3);
+      border-radius: 20px; font-size: var(--font-size-xs); font-weight: 600;
+      color: var(--color-accent); text-transform: uppercase; letter-spacing: .08em;
+    }
+    .article-date {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+    }
+    .article-read-time {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+    }
+
+    .article-hero__author {
+      display: flex; align-items: center; gap: 1rem;
+      margin-top: 2rem; padding-top: 2rem;
+      border-top: 1px solid var(--color-border);
+    }
+    .article-hero__author-avatar {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; color: var(--color-bg); font-size: var(--font-size-base);
+    }
+    .article-hero__author-info { display: flex; flex-direction: column; }
+    .article-hero__author-name {
+      font-weight: 600; color: var(--color-text-primary);
+      font-size: var(--font-size-sm);
+    }
+    .article-hero__author-role {
+      font-size: var(--font-size-xs); color: var(--color-text-muted);
+    }
+
+    .article-hero__title {
+      font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700;
+      color: var(--color-text-primary); line-height: 1.25; margin-bottom: var(--space-6);
+    }
+    .article-hero__title span { color: var(--color-accent); }
+    .article-hero__intro {
+      font-size: var(--font-size-lg); color: var(--color-text-secondary);
+      line-height: 1.75; max-width: 760px;
+    }
+
+    /* ── Article Body ── */
+    .article-body {
+      padding: var(--space-16) 0;
+    }
+    .article-body .container {
+      max-width: 860px;
+      display: grid;
+      grid-template-columns: 1fr 260px;
+      gap: var(--space-12);
+      align-items: start;
+    }
+    .article-content h2 {
+      font-size: var(--font-size-2xl); font-weight: 700;
+      color: var(--color-text-primary); margin: var(--space-10) 0 var(--space-4);
+      padding-top: var(--space-6); border-top: 1px solid var(--color-border);
+    }
+    .article-content h2:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+    .article-content h3 {
+      font-size: var(--font-size-xl); font-weight: 600;
+      color: var(--color-text-primary); margin: var(--space-8) 0 var(--space-3);
+    }
+    .article-content p { margin-bottom: var(--space-4); color: var(--color-text-secondary); }
+    .article-content strong { color: var(--color-text-primary); font-weight: 600; }
+    .article-content ul, .article-content ol {
+      margin: var(--space-4) 0 var(--space-6) var(--space-6);
+    }
+    .article-content li { margin-bottom: var(--space-2); color: var(--color-text-secondary); }
+    .article-content a { color: var(--color-primary); }
+    .article-content a:hover { text-decoration: underline; }
+
+    /* Feature card grid */
+    .feature-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: var(--space-4); margin: var(--space-6) 0;
+    }
+    .feature-card {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5);
+      transition: border-color var(--transition-base);
+    }
+    .feature-card:hover { border-color: rgba(201,168,76,.4); }
+    .feature-card__num {
+      display: inline-block; width: 28px; height: 28px; line-height: 28px;
+      text-align: center; background: rgba(201,168,76,.15);
+      color: var(--color-accent); font-size: var(--font-size-sm);
+      font-weight: 700; border-radius: 50%; margin-bottom: var(--space-3);
+    }
+    .feature-card__title {
+      font-size: var(--font-size-base); font-weight: 600;
+      color: var(--color-text-primary); margin-bottom: var(--space-2);
+    }
+    .feature-card__desc {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.6;
+    }
+
+    /* Callout / tip box */
+    .callout {
+      background: rgba(45,107,228,.08); border: 1px solid rgba(45,107,228,.2);
+      border-left: 3px solid var(--color-primary);
+      border-radius: var(--radius-md); padding: var(--space-5);
+      margin: var(--space-6) 0;
+    }
+    .callout--accent {
+      background: rgba(201,168,76,.06); border: 1px solid rgba(201,168,76,.2);
+      border-left: 3px solid var(--color-accent);
+    }
+    .callout__label {
+      font-size: var(--font-size-xs); font-weight: 700; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--color-primary); margin-bottom: var(--space-2);
+    }
+    .callout--accent .callout__label { color: var(--color-accent); }
+    .callout p { margin: 0; font-size: var(--font-size-sm); }
+
+    /* Scenario steps */
+    .scenario-list {
+      list-style: none; margin: var(--space-4) 0 var(--space-6); padding: 0;
+    }
+    .scenario-list li {
+      display: flex; gap: var(--space-4); padding: var(--space-4) 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .scenario-list li:last-child { border-bottom: none; }
+    .scenario-list__icon {
+      width: 36px; height: 36px; flex-shrink: 0;
+      background: rgba(201,168,76,.1); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; margin-top: 2px;
+    }
+    .scenario-list__content strong {
+      display: block; font-size: var(--font-size-base); color: var(--color-text-primary);
+      margin-bottom: 2px;
+    }
+    .scenario-list__content span { font-size: var(--font-size-sm); }
+
+    /* ── Sidebar TOC ── */
+    .article-sidebar {
+      position: sticky; top: 88px;
+    }
+    .toc {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5);
+    }
+    .toc__title {
+      font-size: var(--font-size-xs); font-weight: 700; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--color-text-muted); margin-bottom: var(--space-4);
+    }
+    .toc__list { list-style: none; }
+    .toc__list li + li { margin-top: var(--space-2); }
+    .toc__link {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+      text-decoration: none; display: block; line-height: 1.4;
+      transition: color var(--transition-fast);
+    }
+    .toc__link:hover { color: var(--color-text-primary); text-decoration: none; }
+
+    .sidebar-cta {
+      margin-top: var(--space-6); background: var(--color-bg-card);
+      border: 1px solid var(--color-border); border-radius: var(--radius-lg);
+      padding: var(--space-5); text-align: center;
+    }
+    .sidebar-cta p {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary);
+      margin-bottom: var(--space-4); line-height: 1.5;
+    }
+    .sidebar-cta .btn { width: 100%; justify-content: center; }
+
+    /* ── Related Posts ── */
+    .related {
+      padding: var(--space-12) 0;
+      background: var(--color-bg-alt);
+      border-top: 1px solid var(--color-border);
+    }
+    .related__title {
+      font-size: var(--font-size-2xl); font-weight: 700;
+      color: var(--color-text-primary); margin-bottom: var(--space-8);
+    }
+    .related__grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6);
+    }
+    .related-card {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5);
+      text-decoration: none; display: block;
+      transition: border-color var(--transition-base), transform var(--transition-base);
+    }
+    .related-card:hover { border-color: rgba(201,168,76,.4); transform: translateY(-2px); text-decoration: none; }
+    .related-card__cat {
+      font-size: var(--font-size-xs); font-weight: 600; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--color-accent); margin-bottom: var(--space-3);
+    }
+    .related-card__title {
+      font-size: var(--font-size-base); font-weight: 600;
+      color: var(--color-text-primary); line-height: 1.4; margin-bottom: var(--space-2);
+    }
+    .related-card__desc {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.5;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      padding: var(--space-10) 0 var(--space-8);
+      background: var(--color-bg);
+      border-top: 1px solid var(--color-border);
+    }
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-8);
+      margin-bottom: var(--space-10);
+    }
+    @media (min-width: 768px) {
+      .footer__grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    .footer__section { text-align: left; }
+    .footer__title {
+      font-size: var(--font-size-base);
+      font-weight: 600;
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-4);
+      position: relative;
+      padding-bottom: var(--space-2);
+    }
+    .footer__title::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 40px; height: 2px;
+      background: linear-gradient(90deg, var(--color-accent), transparent);
+      opacity: 0.8;
+    }
+    .footer__description {
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+    .footer__links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer__links li { margin-bottom: var(--space-3); }
+    .footer__link { text-decoration: none; 
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+      transition: color var(--transition-fast);
+      display: inline-block;
+    }
+    .footer__link:hover { color: var(--color-accent-light); transform: translateX(4px); }
+    .footer__link--email { color: var(--color-primary); font-weight: 500; }
+    .footer__license { color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--space-2); }
+    .footer__company-short { color: var(--color-text-muted); font-size: var(--font-size-xs); }
+    .footer__bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-4);
+      padding-top: var(--space-8);
+      border-top: 1px solid var(--color-border);
+    }
+    @media (min-width: 768px) {
+      .footer__bottom { flex-direction: row; justify-content: space-between; }
+    }
+    .footer__copyright { color: var(--color-text-muted); font-size: var(--font-size-sm); margin: 0; }
+    .footer__platforms { display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: center; }
+    .footer__platform-badge {
+      text-decoration: none;
+      display: inline-block;
+      padding: var(--space-1) var(--space-3);
+      background-color: rgba(201, 168, 76, 0.1);
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      border-radius: 4px;
+      color: var(--color-accent-light);
+      font-size: var(--font-size-xs);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all var(--transition-fast);
+    }
+    .footer__platform-badge:hover {
+      text-decoration: none;
+      background-color: rgba(201, 168, 76, 0.2);
+      border-color: var(--color-accent);
+      transform: translateY(-2px);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .article-body .container { grid-template-columns: 1fr; }
+      .article-sidebar { display: none; }
+    }
+    @media (max-width: 767px) {
+      .article-hero { padding: 90px 0 var(--space-10); }
+      .feature-grid { grid-template-columns: 1fr; }
+      .related__grid { grid-template-columns: 1fr; }
+    }
+    }
+
+    /* ── Scroll Reveal (disabled: content always visible) ── */
+    .reveal {
+      opacity: 1; transform: none;
+      transition: none;
+    }
+    /* reveal--visible disabled */
+  </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "블로그Posting",
+  "headline": "Ocean Engine Local Reach: Douyin's Local Marketing Platform",
+  "description": "How Ocean Engine Local Reach helps businesses advertise on Douyin with hyper-local targeting, store visits optimization, and smart budget distribution across China.",
+  "author": {
+    "@type": "Organization",
+    "name": "TMG (Tuyue Media Gateway, Paid Media Team, Shanghai)",
+    "url": "https://www.tuyuesouxin.cn"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Tuyue Media Gateway",
+    "url": "https://www.tuyuesouxin.cn"
+  },
+  "datePublished": "2026-04-23",
+  "dateModified": "2026-04-23",
+  "url": "https://www.tuyuesouxin.cn/blog/ocean-engine-local-reach/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.tuyuesouxin.cn/blog/ocean-engine-local-reach/"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Ocean Engine Local Reach: Douyin's Local Marketing Platform",
+    "description": "Data-driven demographic analysis and marketing insights for advertisers targeting China's market. Covers ocean engine local reach: douyin's local marketing platform."
+  },
+  "keywords": "Ocean Engine Local Reach, Douyin ads, local marketing China, short video advertising, group deals, life services advertising"
+}
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="https://www.tuyuesouxin.cn" class="header__logo">
+          <svg class="header__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#c9a84c"/>
+                <stop offset="100%" stop-color="#e8c87a"/>
+              </linearGradient>
+              <clipPath id="moonClip">
+                <circle cx="30" cy="24" r="16"/>
+              </clipPath>
+            </defs>
+            <circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/>
+            <circle cx="37" cy="20" r="13" fill="#080c14"/>
+            <text x="4" y="32" font-family="Inter, -apple-system, sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-0.8">TMG</text>
+          </svg>
+          <span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
+        </a>
+        <button class="header__toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="header__nav">
+          <div class="header__dropdown">
+            <a href="https://www.tuyuesouxin.cn/services/" class="header__nav-link header__dropdown-trigger">
+              서비스
+              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="header__dropdown-menu">
+              <a href="https://www.tuyuesouxin.cn/services" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">전체 서비스</a>
+              <a href="https://www.tuyuesouxin.cn/services/wechat" class="header__dropdown-item">WeChat 광고</a>
+              <a href="https://www.tuyuesouxin.cn/services/douyin" class="header__dropdown-item">Douyin 광고</a>
+              <a href="https://www.tuyuesouxin.cn/services/baidu" class="header__dropdown-item">Baidu SEM</a>
+              <a href="https://www.tuyuesouxin.cn/services/bing" class="header__dropdown-item">Bing China</a>
+              <a href="https://www.tuyuesouxin.cn/services/xiaohongshu" class="header__dropdown-item">샤오홍슈(RED)</a>
+              <a href="https://www.tuyuesouxin.cn/services/bilibili" class="header__dropdown-item">Bilibili 광고</a>
+              <a href="https://www.tuyuesouxin.cn/geo/" class="header__dropdown-item">중국 GEO</a>
+            </div>
+          </div>
+          <a href="https://www.tuyuesouxin.cn/pricing/" class="header__nav-link">요금</a>
+          <a href="https://www.tuyuesouxin.cn/client-stories/" class="header__nav-link">고객 사례</a>
+          <a href="https://www.tuyuesouxin.cn/geo/" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
+          <a href="https://www.tuyuesouxin.cn/blog/" class="header__nav-link">블로그</a>
+          <a href="https://www.tuyuesouxin.cn/faqs" class="header__nav-link">FAQ</a>
+          <div class="header__dropdown">
+            <a href="https://www.tuyuesouxin.cn/about/" class="header__nav-link header__dropdown-trigger">
+              회사 소개
+              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="header__dropdown-menu">
+              <a href="https://www.tuyuesouxin.cn/why-tmg/" class="header__dropdown-item">TMG를 선택해야 하는 이유</a>
+              <a href="https://www.tuyuesouxin.cn/about/" class="header__dropdown-item">회사 소개</a>
+              <a href="https://www.tuyuesouxin.cn/contact/" class="header__dropdown-item">문의하기</a>
+            </div>
+          </div>
+        </nav>
+        <div class="header__cta">
+          <a href="https://www.tuyuesouxin.cn/contact/" class="btn btn--primary">시작하기</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Article Hero -->
+  <section class="article-hero">
+  <div class="container">
+    <div class="article-meta">
+      <span class="article-category">Douyin Advertising</span>
+      <span class="article-date">April 23, 2026</span>
+      <span class="article-read-time">8 min read</span>
+    </div>
+    <h1 class="article-hero__title">
+      Ocean Engine Local Reach: Douyin의 올인원 로컬 마케팅 플랫폼
+    </h1>
+    <p class="article-hero__intro">
+      
+    </p>
+
+      <div class="article-hero__author">
+        <div class="article-hero__author-avatar">TMG</div>
+        <div class="article-hero__author-info">
+          <div class="article-hero__author-name">Tuyue Media Gateway</div>
+          <div class="article-hero__author-role">Paid Media Team · Shanghai</div>
+        </div>
+      </div>
+  </div>
+</section>
+<!-- Article Body -->
+<main class="article-body">
+  <div class="container">
+    <article class="article-content reveal">
+
+    <p>For international brands and media buyers exploring China's local consumer market, Douyin—the platform with over 700 million daily active users—is an indispensable channel. But running effective local campaigns on Douyin has traditionally required deep platform expertise and significant operational overhead.</p>
+
+    <p><strong>Ocean Engine Local Reach</strong> (巨量本地推) changes that equation. Launched by ByteDance's advertising arm, this dedicated local marketing tool gives restaurants, salons, gyms, clinics, and any brick-and-mortar business a streamlined way to reach nearby customers through short video and live streaming ads—all without needing a full in-house team.</p>
+
+    <p>Here's what international advertisers need to know about this platform.</p>
+
+    <h2 id="what">What Is Ocean Engine Local Reach?</h2>
+
+    <p>Ocean Engine Local Reach is a specialized advertising module within Douyin's ecosystem, purpose-built for life services businesses (生活服务商家). It sits within the Douyin ecosystem—not as a standalone app, but as a service layer accessible via three entry points:</p>
+
+    <ul>
+      <li><strong>Douyin Landing Customer App (抖音来客):</strong> For merchants already operating on Douyin.</li>
+      <li><strong>PC/Web Portal:</strong> For agencies and brands requiring more granular campaign management.</li>
+      <li><strong>In-Douyin Entry:</strong> Accessible via search within Douyin for quick campaign creation.</li>
+    </ul>
+
+    <p>The platform was launched progressively: the mobile app debuted in June 2022, the desktop version in August 2022, and the in-Douyin entry in December 2022—reflecting ByteDance's strategy of meeting merchants where they are.</p>
+
+    <div class="callout">
+      <span class="callout__icon">&#128161;</span>
+      <p><strong>Why this matters for international advertisers:</strong> Ocean Engine Local Reach is the most direct path for targeting Douyin's massive local user base with location-based precision. Unlike broad-reach brand campaigns, this platform is engineered for foot traffic, in-store conversions, and local brand building.</p>
+    </div>
+
+    <h2 id="three-platforms">Three Platforms, One Strategy</h2>
+
+    <p>Understanding where to access the platform is the first strategic decision. Each version serves a different operational profile:</p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-card__icon">&#128241;</div>
+        <h3>Mobile App (抖音来客)</h3>
+        <p>Best for: merchants with immediate, real-time marketing needs. Ideal for promotions tied to daily operations, seasonal events, or flash sales.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">&#128187;</div>
+        <h3>PC Desktop Portal</h3>
+        <p>Best for: agencies and brands requiring multi-location management, detailed performance analytics, and fine-grained budget control. Supports agency-led account opening.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">&#128269;</div>
+        <h3>In-Douyin Entry</h3>
+        <p>Best for: merchants and agencies who want to initiate campaigns directly from within Douyin's content ecosystem—lowest barrier to entry.</p>
+      </div>
+    </div>
+
+    <h2 id="three-goals">The Three Marketing Goals</h2>
+
+    <p>Ocean Engine Local Reach organizes advertising around three distinct conversion objectives. Choosing the right one is critical for campaign performance.</p>
+
+    <h3>&#127968; Short Video → Store Visits</h3>
+    <p>Drive nearby users to physically visit your store by promoting your location (POI). The ad displays your store's Douyin page with address, hours, and reviews. Best for: restaurants, gyms, clinics, salons, retail stores.</p>
+
+    <h3>&#128722; Short Video → Group Deal Purchases</h3>
+    <p>Promote specific products or service packages directly within Douyin's shopping ecosystem. Users can purchase团购 (group deals) without leaving the app. Best for: beauty salons, dental clinics, tutoring centers, entertainment venues.</p>
+
+    <h3>&#128250; Live Stream → Group Deal Sales</h3>
+    <p>Run live commerce campaigns that convert viewers into group deal buyers in real time. Combines the engagement of live streaming with direct e-commerce functionality. Best for: food delivery promotions, event tickets, course enrollments.</p>
+
+    <h2 id="four-values">Four Core Values for Local Businesses</h2>
+
+    <p>Ocean Engine Local Reach is built around four strategic promises. Here's how each translates to advertiser benefit:</p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-card__icon">&#128101;</div>
+        <h3>Multi-Role Support</h3>
+        <p>Supports Douyin merchants, enterprise account deal sellers, regular creators, local influencers (KOC), and even non-merchant businesses. Flexible enough for virtually any partnership model.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">&#128181;</div>
+        <h3>Group Deal Sales Focus</h3>
+        <p>Local-specific targeting strategies combined with conversion-optimized bidding. Designed to maximize deal purchases, not just impressions.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">&#128205;</div>
+        <h3>Hyper-Local Targeting</h3>
+        <p>Geo-targeting down to the store's surrounding area. No wasted spend on users outside your service radius—critical for businesses with limited geographic reach.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">&#9889;</div>
+        <h3>Minimal Operations Required</h3>
+        <p>Auto-optimization means campaigns run without constant monitoring. Beginners can launch effective campaigns without a dedicated media buyer on staff.</p>
+      </div>
+    </div>
+
+    <h2 id="anchor-points">Exclusive Anchor Points: Your Gateway to Douyin Traffic</h2>
+
+    <p>One of the most strategically valuable features of Ocean Engine Local Reach is its exclusive anchor point system. When a short video or live stream includes a local-specific anchor point, the Douyin platform surfaces the Local Reach entry point—making your ad discoverable to <strong>all users</strong>, not just those who follow your account.</p>
+
+    <p>This creates a powerful viral amplification effect: organic content combined with paid Local Reach targeting can compound reach dramatically.</p>
+
+    <h3>For Short Videos</h3>
+    <ul>
+      <li><strong>Product Anchor:</strong> Links directly to a group deal tied to the merchant's offering.</li>
+      <li><strong>Store Visit Anchor (POI):</strong> Links to the merchant's verified business location on Douyin—driving navigation and foot traffic.</li>
+    </ul>
+
+    <h3>For Live Streams</h3>
+    <p>The <strong>Local Live Commerce anchor</strong> (小房子锚点) is Douyin's exclusive live commerce component for life services. It displays active group deal products during the live stream and allows viewers to purchase without leaving the stream.</p>
+
+    <h2 id="setup">Getting Started: Account Setup Guide</h2>
+
+    <p>The onboarding process is streamlined across all three platform versions. Here is the path for each:</p>
+
+    <h3>&#128241; Via the App</h3>
+    <ol>
+      <li><strong>One-Click Account Opening:</strong> Confirm just three pieces of information—account name, industry category, and company name. No documentation maze.</li>
+      <li><strong>Douyin Account Authorization:</strong> If working with influencers or creators, submit a collaboration request and receive their confirmation.</li>
+      <li><strong>Choose Your Objective:</strong> Select Store Visits, Product Promotions, or Live Commerce, then create your first campaign.</li>
+    </ol>
+
+    <h3>&#128187; Via Desktop</h3>
+    <p>Desktop access requires prior Douyin merchant (抖音来客) registration. Agencies can open sub-accounts on behalf of clients. Entry points: Douyin Landing Customer Desktop, standalone Local Reach portal, or Ocean Ark platform.</p>
+
+    <h3>&#128269; Via In-Douyin Search</h3>
+    <p>Simply search "巨量本地推" within Douyin, click "Go to View," and follow the guided onboarding. This path supports all merchant types—from established businesses to independent creators to non-merchant organizations.</p>
+
+    <div class="takeaways">
+      <h2>Key Takeaways for International Advertisers</h2>
+      <ul>
+        <li><strong>Local Reach is essential for brick-and-mortar brands</strong> entering the Chinese market or expanding beyond Tier-1 cities—its geo-targeting is unmatched for physical store promotions.</li>
+        <li><strong>The anchor point system is a strategic multiplier.</strong> Organic short video content combined with Local Reach paid amplification creates compounding exposure across Douyin's algorithm.</li>
+        <li><strong>Low operational barrier</strong> makes this viable for SMBs and franchises, but also for international chains looking for a lightweight China market entry strategy.</li>
+        <li><strong>Three platform versions</strong> (App, PC, In-Douyin) mean advertisers can choose the operational depth that matches their resources.</li>
+        <li><strong>Group deal integration</strong> inside Douyin's ecosystem removes the need for a separate e-commerce checkout flow—significantly improving conversion rates for service businesses.</li>
+      </ul>
+    </div>
+
+    <h2 id="implications">What This Means for Your Media Strategy</h2>
+
+    <p>For international media buyers and brand managers, Ocean Engine Local Reach represents one of the most direct and measurable pathways into China's local consumer economy. Unlike broad awareness campaigns or performance Brand Search ads, Local Reach campaigns are designed around tangible local outcomes:</p>
+
+    <ul>
+      <li>Foot traffic to physical locations</li>
+      <li>Group deal purchases</li>
+      <li>Follower growth for Douyin merchant accounts</li>
+    </ul>
+
+    <p>The platform's exclusive anchor point mechanics mean that creative content—short videos or live streams—becomes the vehicle for both organic discovery and paid amplification. This is a fundamentally different media model from traditional digital advertising, and one that rewards advertisers who invest in localized, authentic content.</p>
+
+    <p>Whether you are managing campaigns for a global brand exploring China's domestic market or a local chain looking to dominate a specific neighborhood, Ocean Engine Local Reach deserves a prominent place in your Douyin media mix.</p>
+
+    <blockquote>
+      "For brands targeting China's local consumer market, Ocean Engine Local Reach is not just another ad product—it is the bridge between Douyin's massive reach and real-world store performance."
+    </blockquote>
+
+    <p style="margin-top:2rem; color:var(--text-muted); font-size:.875rem; border-top:1px solid var(--border); padding-top:1.5rem;">
+      <strong>Source:</strong> Ocean Engine Encyclopedia — 巨量本地推 entry. Published December 14, 2022.<br>
+      <strong>Prepared by:</strong> Tuyue Media Gateway — China's paid media specialist for international brands.
+    </p>
+
+  </article>
+
+    <!-- Sidebar -->
+    <aside class="article-sidebar">
+      <nav class="toc">
+        
+    <div class="toc__title">In This Article</div>
+    <ul class="toc__list">
+      <li><a class="toc__link" href="#what">What Is Ocean Engine Local Reach?</a></li>
+      <li><a class="toc__link" href="#three-platforms">Three Platforms, One Strategy</a></li>
+      <li><a class="toc__link" href="#three-goals">The Three Marketing Goals</a></li>
+      <li><a class="toc__link" href="#four-values">Four Core Values for Local Businesses</a></li>
+      <li><a class="toc__link" href="#anchor-points">Exclusive Anchor Points: Your Gateway to Douyin Traffic</a></li>
+      <li><a class="toc__link" href="#setup">Getting Started: Account Setup Guide</a></li>
+      <li><a class="toc__link" href="#implications">What This Means for International Advertisers</a></li>
+    </ul>
+  
+      </nav>
+      <div class="sidebar-cta">
+        <p>Running Douyin ads or planning to? We manage Ocean Engine campaigns for international brands.</p>
+        <a href="https://www.tuyuesouxin.cn/contact" class="btn btn--primary">Talk to Us</a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+  <!-- Related Posts placeholder -->
+  <section class="related">
+    <div class="container">
+      <div class="related__title">More from the 블로그</div>
+      <div class="related__grid">
+        <a href="https://www.tuyuesouxin.cn/faqs#platform-ocean" class="related-card">
+          <div class="related-card__cat">Douyin / Ocean Engine</div>
+          <div class="related-card__title">Douyin Advertising FAQ</div>
+          <p class="related-card__desc">14 questions on account setup, budgets, ad formats, compliance, and platform tools answered by TMG.</p>
+        </a>
+        <a href="https://www.tuyuesouxin.cn/services/douyin" class="related-card">
+          <div class="related-card__cat">서비스</div>
+          <div class="related-card__title">Douyin 광고 — TMG Service</div>
+          <p class="related-card__desc">How TMG manages Ocean Engine advertising campaigns for international brands entering China.</p>
+        </a>
+        <a href="https://www.tuyuesouxin.cn/geo" class="related-card">
+          <div class="related-card__cat">GEO</div>
+          <div class="related-card__title">중국 GEO: AI Search Optimization</div>
+          <p class="related-card__desc">As Douyin and WeChat integrate AI search, GEO is becoming a key part of the China digital strategy.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__section">
+          <h4 class="footer__title">TMG 소개</h4>
+          <p class="footer__description">
+            중국 1,000억 달러 디지털 광고 시장으로의 단일 액세스 포인트. 국제 에이전시가 중국 플랫폼을 쉽게 탐색할 수 있도록 지원합니다.
+          </p>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">바로가기</h4>
+          <ul class="footer__links">
+            <li><a href="https://www.tuyuesouxin.cn/services/" class="footer__link">서비스</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/pricing/" class="footer__link">요금</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/about/" class="footer__link">회사 소개</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/client-stories" class="footer__link">고객 사례</a></li>
+            <li><a href="https://www.tuyuesouxin.cn/faqs" class="footer__link">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">문의하기</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="mailto:tmg@tuyuesouxin.cn" class="footer__link footer__link--email">tmg@tuyuesouxin.cn</a>
+            </li>
+            <li>
+              <a href="#contactQR" class="footer__link">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: text-bottom; margin-right: 4px;">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp (클릭하여 스캔)
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">법적 고지</h4>
+          <ul class="footer__links">
+            <li class="footer__license">사업자 등록 번호: 91310114MADKG4UF0G</li>
+            <li class="footer__company-short">Tuyue Media Gateway</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Tuyue Media Gateway. 모든 권리 보유.</p>
+        <div class="footer__platforms">
+          <a href="https://ad.weixin.qq.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">WeChat</a>
+          <a href="https://www.oceanengine.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Douyin</a>
+          <a href="https://e.baidu.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Baidu</a>
+          <a href="https://www.xiaohongshu.com/brand" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">샤오홍슈(RED)</a>
+          <a href="https://member.bilibili.com/platform/ad" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bilibili</a>
+          <a href="https://ads.microsoft.com/zh-cn" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bing China</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  // Mobile Menu & Dropdown Toggle
+  (function () {
+    var toggle = document.querySelector('.header__toggle');
+    var nav = document.querySelector('.header__nav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', function () {
+        toggle.classList.toggle('active');
+        nav.classList.toggle('active');
+      });
+    }
+    nav.querySelectorAll('.header__dropdown').forEach(function (dropdown) {
+      var trigger = dropdown.querySelector('.header__dropdown-trigger');
+      if (trigger) {
+        trigger.addEventListener('click', function (e) {
+          e.preventDefault();
+          nav.querySelectorAll('.header__dropdown').forEach(function (d) {
+            if (d !== dropdown) d.classList.remove('open');
+          });
+          dropdown.classList.toggle('open');
+        });
+      }
+    });
+    document.addEventListener('click', function (e) {
+      if (!nav.contains(e.target)) {
+        nav.querySelectorAll('.header__dropdown').forEach(function (d) {
+          d.classList.remove('open');
+        });
+      }
+    });
+  })();
+
+  // Scroll Reveal (disabled: content always visible)
+  (function () {
+    // Reveal animation removed - user prefers content always visible
+  })();
+  </script>
+</body>
+</html>
