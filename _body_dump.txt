@@ -1,0 +1,23 @@
+=== ad-billing-models-explained.html: NO <article> TAG FOUND ===
+After <body>: <body>
+  
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="https://www.tuyuesouxin.cn" class="header__logo">
+        <svg class="header__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+   
+
+============================================================
+File: attribution-models-guide.html
+Title: Attribution Models in Paid Media: How to Pick the Right One | Tuyue Media Gateway (TMG)
+Desc: Confused by attribution models in China's paid media? We break down 7 models, platform differences, and how to choose th
+Body len: 21638
+Body start: <h2 id="why-it-matters">Why Attribution Matters 📊</h2>
+
+    <p>I learned this the hard way. A few years back, I was managing a campaign for an international skincare brand entering China. We were running ads across Douyin, WeChat, and Baidu. The data looked great on Douyin—high conversion rates, low CPA. So I doubled down on Douyin and cut budgets on the other platforms.</p>
+
+    <p>Big mistake. 💥
+Body end: ...n attribution audit—free for the first 10 brands that reach out this month. <a href="https://www.tuyuesouxin.cn/contact/" class="btn btn--primary" style="margin-left:1rem;">Get in Touch →</a>
+    </p>
