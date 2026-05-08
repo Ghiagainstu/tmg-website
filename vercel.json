@@ -20,6 +20,22 @@
     {
       "source": "/blog/:slug/",
       "destination": "/blog/:slug.html"
+    },
+    {
+      "source": "/ja/blog/:slug",
+      "destination": "/ja/blog/:slug.html"
+    },
+    {
+      "source": "/ja/blog/:slug/",
+      "destination": "/ja/blog/:slug.html"
+    },
+    {
+      "source": "/ko/blog/:slug",
+      "destination": "/ko/blog/:slug.html"
+    },
+    {
+      "source": "/ko/blog/:slug/",
+      "destination": "/ko/blog/:slug.html"
     }
   ],
   "headers": [
