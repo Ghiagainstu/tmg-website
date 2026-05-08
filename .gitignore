@@ -1,0 +1,8 @@
+# Temporary / generated files
+_b*.py
+_b*.txt
+_temp_*.txt
+_temp_*.py
+_temp_*.html
+*.tmp
+*.log
