@@ -1,27 +1,27 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CPM, oCPM, eCPM: 모든 유료 미디어 바이어가 혼동하는 세 가지 지표 | Tuyue Media Gateway (TMG)</title>
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="apple-touch-icon" href="/assets/og-image.png">
-<meta name="description" content="CPM is what you pay. oCPM is how you bid. eCPM is how the system ranks you. Mixing them up means optimizing for the wrong number. Here is the difference explained.">
-  <link rel="canonical" href="https://www.tuyuesouxin.cn/ko/blog/cpm-ocpm-ecpm-explained">
-  <meta property="og:title" content="CPM, oCPM, eCPM: 모든 유료 미디어 바이어가 혼동하는 세 가지 지표">
-  <meta property="og:description" content="CPM is what you pay. oCPM is how you bid. eCPM is how the system ranks you. Mixing them up means optimizing for the wrong number. Here is the difference explained.">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://www.tuyuesouxin.cn/blog/cpm-ocpm-ecpm-explained">
-  <meta property="og:image" content="https://www.tuyuesouxin.cn/assets/og-image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://www.tuyuesouxin.cn/assets/twitter-card.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CPM, oCPM, eCPM: 모든 유료 미디어 바이어가 혼동하는 세 가지 지표 | Tuyue Media Gateway (TMG)</title>
+<!-- Favicon -->
+<link href="/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/og-image.png" rel="apple-touch-icon"/>
+<meta content="CPM is what you pay. oCPM is how you bid. eCPM is how the system ranks you. Mixing them up means optimizing for the wrong number. Here is the difference explained." name="description"/>
+<link href="https://www.tuyuesouxin.cn/ko/blog/cpm-ocpm-ecpm-explained" rel="canonical"/>
+<meta content="CPM, oCPM, eCPM: 모든 유료 미디어 바이어가 혼동하는 세 가지 지표" property="og:title"/>
+<meta content="CPM is what you pay. oCPM is how you bid. eCPM is how the system ranks you. Mixing them up means optimizing for the wrong number. Here is the difference explained." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://www.tuyuesouxin.cn/blog/cpm-ocpm-ecpm-explained" property="og:url"/>
+<meta content="https://www.tuyuesouxin.cn/assets/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://www.tuyuesouxin.cn/assets/twitter-card.png" name="twitter:image"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
     :root {
       --color-bg: #080c14;
       --color-bg-alt: #0d1220;
@@ -538,7 +538,7 @@
     }
     /* reveal--visible disabled */
   </style>
-    <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "블로그Posting",
@@ -570,403 +570,343 @@
 }
   </script>
 </head>
-<body>
-
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <div class="header__inner">
-        <a href="https://www.tuyuesouxin.cn" class="header__logo">
-          <svg class="header__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#c9a84c"/>
-                <stop offset="100%" stop-color="#e8c87a"/>
-              </linearGradient>
-              <clipPath id="moonClip">
-                <circle cx="30" cy="24" r="16"/>
-              </clipPath>
-            </defs>
-            <circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/>
-            <circle cx="37" cy="20" r="13" fill="#080c14"/>
-            <text x="4" y="32" font-family="Inter, -apple-system, sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-0.8">TMG</text>
-          </svg>
-          <span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
-        </a>
-        <button class="header__toggle" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <nav class="header__nav">
-          <div class="header__dropdown">
-            <a href="https://www.tuyuesouxin.cn/services/" class="header__nav-link header__dropdown-trigger">
+<body>CPM = 실제 지불 금액. oCPM = 시스템에 얼마를 지불하고 싶은지 알려주는 방법. eCPM = 시스템이 승자를 결정하는 방법. 3개 층, 하나의 퍼널.<!-- Header -->CPM은 Cost Per Mille——천 회 노출당 비용. 모든 대시보드에서 가장 눈에 띄는 지표이며 가장 먼저 확인하는 것입니다.<header class="header">공식: CPM = 지출 ÷ 노출수 × 1000. 10,000 노출에 100위안을 썼다면 CPM은 10위안입니다.<div class="container">두 가지 유형: 프로그래매틱(검색, 소셜, OTT)에서 CPM은 동적——경쟁, 오디언스 품질, 시간대에 따라 변동. 브랜드 광고에서 CPM은 보통 고정——레이트 카드로 구매합니다.<div class="header__inner">작동 방식: 원하는 액션(구매, 등록, 리드)에 대해 얼마를 지불할 의사가 있는지 시스템에 알려줍니다. 시스템이 목표 달성을 위해 실시간으로 입찰을 조정합니다.<a class="header__logo" href="https://www.tuyuesouxin.cn">예: 구매 목표 CPA 100위안으로 oCPM 입찰 설정. 시스템이 각 사용 가능한 노출을 보고, 구매 가능성을 추정하고, 입찰액을 결정합니다. 사용자가——<svg class="header__logo-icon" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">광고주가 oCPM으로 입찰→시스템이 eCPM으로 랭킹→비용이 CPM으로 표시<defs>Baidu, Douyin, WeChat, 샤오홍슈(RED), Bilibili, Bing China 전반에서 국제 에이전시와 브랜드를 위한 유료 미디어를 운영합니다. 캠페인 데이터에 대해 이야기하고 싶으시면——또는 세컨드 오피니언이 필요하시면——<lineargradient id="moonGrad" x1="0%" x2="100%" y1="0%" y2="100%">중국 1,000억 달러 규모 디지털 광고 시장으로의 단일 액세스 포인트. 국제 에이전시가 중국 플랫폼을 쉽게 탐색할 수 있도록 지원합니다.<stop offset="0%" stop-color="#c9a84c"></stop>© 2026 Tuyue Media Gateway. 모든 권리 보유.<stop offset="100%" stop-color="#e8c87a"></stop>
+</lineargradient>
+<clippath id="moonClip">
+<circle cx="30" cy="24" r="16"></circle>
+</clippath>
+</defs>
+<circle cx="30" cy="24" fill="url(#moonGrad)" r="16"></circle>
+<circle cx="37" cy="20" fill="#080c14" r="13"></circle>
+<text fill="#f0f4ff" font-family="Inter, -apple-system, sans-serif" font-size="19" font-weight="800" letter-spacing="-0.8" x="4" y="32">TMG</text>
+</svg>
+<span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
+</a>
+<button aria-label="Toggle navigation" class="header__toggle">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav class="header__nav">
+<div class="header__dropdown">
+<a class="header__nav-link header__dropdown-trigger" href="https://www.tuyuesouxin.cn/services/">
               서비스
-              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </a>
-            <div class="header__dropdown-menu">
-              <a href="https://www.tuyuesouxin.cn/services" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">전체 서비스</a>
-              <a href="https://www.tuyuesouxin.cn/services/wechat" class="header__dropdown-item">WeChat 광고</a>
-              <a href="https://www.tuyuesouxin.cn/services/douyin" class="header__dropdown-item">Douyin 광고</a>
-              <a href="https://www.tuyuesouxin.cn/services/baidu" class="header__dropdown-item">Baidu SEM</a>
-              <a href="https://www.tuyuesouxin.cn/services/bing" class="header__dropdown-item">Bing China</a>
-              <a href="https://www.tuyuesouxin.cn/services/xiaohongshu" class="header__dropdown-item">샤오홍슈(RED)</a>
-              <a href="https://www.tuyuesouxin.cn/services/bilibili" class="header__dropdown-item">Bilibili 광고</a>
-              <a href="https://www.tuyuesouxin.cn/geo/" class="header__dropdown-item">중국 GEO</a>
-            </div>
-          </div>
-          <a href="https://www.tuyuesouxin.cn/pricing/" class="header__nav-link">요금</a>
-          <a href="https://www.tuyuesouxin.cn/client-stories/" class="header__nav-link">고객 사례</a>
-          <a href="https://www.tuyuesouxin.cn/geo/" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
-          <a href="https://www.tuyuesouxin.cn/blog/" class="header__nav-link">블로그</a>
-          <a href="https://www.tuyuesouxin.cn/faqs" class="header__nav-link">FAQ</a>
-          <div class="header__dropdown">
-            <a href="https://www.tuyuesouxin.cn/about/" class="header__nav-link header__dropdown-trigger">
+              <svg class="header__dropdown-arrow" fill="none" height="12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="12"><polyline points="6 9 12 15 18 9"></polyline></svg>
+</a>
+<div class="header__dropdown-menu">
+<a class="header__dropdown-item" href="https://www.tuyuesouxin.cn/services" style="font-weight:700; color:var(--color-accent);">전체 서비스</a>
+<a class="header__dropdown-item" href="https://www.tuyuesouxin.cn/services/wechat">WeChat 광고</a>
+<a class="header__dropdown-item" href="https://www.tuyuesouxin.cn/services/douyin">Douyin 광고</a>
+<a class="header__dropdown-item" href="https://www.tuyuesouxin.cn/services/baidu">Baidu SEM</a>
+<a class="header__dropdown-item" href="https://www.tuyuesouxin.cn/services/bing">Bing China</a>
+<a class="header__dropdown-item" href="https://www.tuyuesouxin.cn/services/xiaohongshu">샤오홍슈(RED)</a>
+<a class="header__dropdown-item" href="https://www.tuyuesouxin.cn/services/bilibili">Bilibili 광고</a>
+<a class="header__dropdown-item" href="https://www.tuyuesouxin.cn/geo/">중국 GEO</a>
+</div>
+</div>
+<a class="header__nav-link" href="https://www.tuyuesouxin.cn/pricing/">요금</a>
+<a class="header__nav-link" href="https://www.tuyuesouxin.cn/client-stories/">고객 사례</a>
+<a class="header__nav-link" href="https://www.tuyuesouxin.cn/geo/">GEO <span class="nav-badge">NEW</span></a>
+<a class="header__nav-link" href="https://www.tuyuesouxin.cn/blog/">블로그</a>
+<a class="header__nav-link" href="https://www.tuyuesouxin.cn/faqs">FAQ</a>
+<div class="header__dropdown">
+<a class="header__nav-link header__dropdown-trigger" href="https://www.tuyuesouxin.cn/about/">
               회사 소개
-              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </a>
-            <div class="header__dropdown-menu">
-              <a href="https://www.tuyuesouxin.cn/why-tmg/" class="header__dropdown-item">TMG를 선택해야 하는 이유</a>
-              <a href="https://www.tuyuesouxin.cn/about/" class="header__dropdown-item">회사 소개</a>
-              <a href="https://www.tuyuesouxin.cn/contact/" class="header__dropdown-item">문의하기</a>
-            </div>
-          </div>
-        </nav>
-        <div class="header__cta">
-          <a href="https://www.tuyuesouxin.cn/contact/" class="btn btn--primary">시작하기</a>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Article Hero -->
-  <section class="article-hero">
-    <div class="container">
-      <div class="article-meta">
-        <span class="article-category">유료 미디어 전략</span>
-        <span class="article-date">May 3, 2026</span>
-        <span class="article-read-time">6 min read</span>
-      </div>
-      <h1 class="article-hero__title">
-        <span>CPM</span>, <span>oCPM</span>, <span>eCPM</span>:
+              <svg class="header__dropdown-arrow" fill="none" height="12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="12"><polyline points="6 9 12 15 18 9"></polyline></svg>
+</a>
+<div class="header__dropdown-menu">
+<a class="header__dropdown-item" href="https://www.tuyuesouxin.cn/why-tmg/">TMG를 선택해야 하는 이유</a>
+<a class="header__dropdown-item" href="https://www.tuyuesouxin.cn/about/">회사 소개</a>
+<a class="header__dropdown-item" href="https://www.tuyuesouxin.cn/contact/">문의하기</a>
+</div>
+</div>
+</nav>
+<div class="header__cta">
+<a class="btn btn--primary" href="https://www.tuyuesouxin.cn/contact/">시작하기</a>
+</div>
+</div>
+</div>
+</header>
+<!-- Article Hero -->
+<section class="article-hero">
+<div class="container">
+<div class="article-meta">
+<span class="article-category">유료 미디어 전략</span>
+<span class="article-date">May 3, 2026</span>
+<span class="article-read-time">6 min read</span>
+</div>
+<h1 class="article-hero__title">
+<span>CPM</span>, <span>oCPM</span>, <span>eCPM</span>:
         The Three Metrics Every Paid Media Buyer Gets Wrong
       </h1>
-      <p class="article-hero__intro">
-        I have seen media buyers kill campaigns over a rising CPM, chase oCPM like it is a target, and obsess over eCPM like a report card. These three metrics look almost identical, but they live at completely different levels of the ad system. Mix them up, and you are optimizing for the wrong number.
-      </p>
-
-      <div class="article-hero__author">
-        <div class="article-hero__author-avatar">TMG</div>
-        <div class="article-hero__author-info">
-          <div class="article-hero__author-name">Tuyue Media Gateway</div>
-          <div class="article-hero__author-role">Paid Media Team · Shanghai</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Article Body -->
-  <main class="article-body">
-    <div class="container">
-      <article class="article-content reveal">
-
-        <p>
-          You log into the dashboard. CPM is up. oCPM is sitting at your target. And somewhere in the backend, eCPM is quietly deciding whether your ad gets shown at all.
-        </p>
-        <p>
-          Three metrics, all ending in "CPM," and three completely different jobs inside the ad system. Get them straight, and you stop optimizing the wrong thing.
-        </p>
-
-        <div class="callout" style="margin-bottom: var(--space-8);">
-          <div class="callout__label">The Short Version</div>
-          <p><strong>CPM</strong> = what you actually pay. <strong>oCPM</strong> = how you tell the system what you want to pay. <strong>eCPM</strong> = how the system decides who wins. Three layers, one funnel.</p>
-        </div>
-
-        <h2 id="cpm">💰 CPM — The Price Tag (and Why It Lies)</h2>
-        <p>
+<p class="article-hero__intro">CPM 상승으로 캠페인을 중단하는 미디어 바이어를 봤습니다. oCPM을 목표처럼 쫓고, eCPM을 성적표처럼 집착하는 바이어도. 이 세 지표는 거의 동일해 보이지만 완전히 다른 세계에 존재합니다.</p>
+<div class="article-hero__author">
+<div class="article-hero__author-avatar">TMG</div>
+<div class="article-hero__author-info">
+<div class="article-hero__author-name">Tuyue Media Gateway</div>
+<div class="article-hero__author-role">Paid Media Team · Shanghai</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Article Body -->
+<main class="article-body">
+<div class="container">
+<article class="article-content reveal">
+<p>대시보드에 로그인합니다. CPM 상승 중. oCPM은 목표에 맞춰져 있음. 그리고 백엔드 어딘가에서 eCPM이 조용히 광고가 표시될지 말지를 결정하고 있습니다.</p>
+<p>세 지표, 모두 'CPM'으로 끝나지만 광고 시스템 내 역할은 완전히 다릅니다. 이것들을 정리하면, 잘못된 것을 최적화하는 것을 멈출 수 있습니다.</p>
+<div class="callout" style="margin-bottom: var(--space-8);">
+<div class="callout__label">The Short Version</div>
+<p><strong>CPM</strong> = what you actually pay. <strong>oCPM</strong> = how you tell the system what you want to pay. <strong>eCPM</strong> = how the system decides who wins. Three layers, one funnel.</p>
+</div>
+<h2 id="cpm">💰 CPM — The Price Tag (and Why It Lies)</h2>
+<p>
           CPM stands for Cost Per Mille — cost per 천 impressions. It is the most visible metric on any dashboard and the first one people check.
         </p>
-        <p>
-          <strong>The formula:</strong> CPM = spend ÷ impressions × 1000. If you spend ¥100 on 10,000 impressions, your CPM is ¥10.
+<p>
+<strong>The formula:</strong> CPM = spend ÷ impressions × 1000. If you spend ¥100 on 10,000 impressions, your CPM is ¥10.
         </p>
-        <p>
-          <strong>Two flavors:</strong> In programmatic (search, social, OTT), CPM is dynamic — it fluctuates with competition, audience quality, and time of day. In brand advertising, CPM is usually fixed — you buy a rate card for a specific placement.
+<p>
+<strong>Two flavors:</strong> In programmatic (search, social, OTT), CPM is dynamic — it fluctuates with competition, audience quality, and time of day. In brand advertising, CPM is usually fixed — you buy a rate card for a specific placement.
         </p>
-        <p>
-          But here is where it gets tricky. A low CPM is not automatically good, and a high CPM is not automatically bad.
+<p>하지만 여기서 까다로워집니다. 낮은 CPM이 자동으로 좋은 것도, 높은 CPM이 자동으로 나쁜 것도 아닙니다.</p>
+<div class="callout callout--accent">
+<div class="callout__label">Real Talk</div>
+<p>모든 노출에는 사람이 연결되어 있습니다. 천 회 노출당 50위안 가치의 사람도 있고, 5위안인 사람도 있습니다. 5위안 풀을 사고 있다면, 전환되지 않는 싼 트래픽을 얻고 있을 뿐입니다. CPM은——</p>
+</div>
+<h2 id="ocpm">🎯 oCPM — Your Bid, Not Your Cost</h2>
+<p>oCPM은 Optimized Cost Per Mille의 약자. 지표가 아니라 입찰 방식입니다.<strong>bidding method</strong>.
         </p>
-
-        <div class="callout callout--accent">
-          <div class="callout__label">Real Talk</div>
-          <p>Every impression comes with a human attached. Some humans are worth ¥50 per 1,000 views. Some are worth ¥5. If you are buying the ¥5 pool, you get cheap traffic that never converts. CPM only tells you the price — it says nothing about the value.</p>
-        </div>
-
-        <h2 id="ocpm">🎯 oCPM — Your Bid, Not Your Cost</h2>
-        <p>
-          oCPM stands for Optimized Cost Per Mille. It is not a metric — it is a <strong>bidding method</strong>.
+<p>
+<strong>How it works:</strong> you tell the system what you are willing to pay for a desired action (a purchase, a registration, a lead). The system adjusts its bids in real time to try to hit your target.
         </p>
-        <p>
-          <strong>How it works:</strong> you tell the system what you are willing to pay for a desired action (a purchase, a registration, a lead). The system adjusts its bids in real time to try to hit your target.
+<p>
+<strong>Example:</strong> You set an oCPM bid with a target CPA of ¥100 for purchases. The system looks at every available impression, estimates the likelihood of a purchase, and decides how much to bid. If the user looks like a buyer, it might bid ¥150 CPM to win the impression. If the user looks unlikely to convert, it bids ¥20. On average, you pay ¥100 per purchase.
         </p>
-        <p>
-          <strong>Example:</strong> You set an oCPM bid with a target CPA of ¥100 for purchases. The system looks at every available impression, estimates the likelihood of a purchase, and decides how much to bid. If the user looks like a buyer, it might bid ¥150 CPM to win the impression. If the user looks unlikely to convert, it bids ¥20. On average, you pay ¥100 per purchase.
+<p>그래서 '최적화(Optimized)'라고 불립니다——시스템이 입찰 관리의 무거운 작업을 대신합니다. Baidu에서는 oCPC/oCPM, Douyin Ocean Engine에서는 oCPM, Meta에서는 '최저 비용' 전략——</p>
+<div class="callout">
+<div class="callout__label">Common Mistake</div>
+<p>많은 사람들이 oCPM을 실제 CPM의 목표로 취급합니다. 대시보드를 보며 실현 CPM이 oCPM 입찰을 초과하면 패닉. 그러나 oCPM은 입찰 입력이지 비용 출력이 아닙니다. 실제 CPM은——<em>bid input</em>, not your <em>cost output</em>. Your actual CPM can and will vary — what matters is whether your CPA is on track.</p>
+</div>
+<h2 id="ecpm">🧠 eCPM — The System's Secret Ranking Score</h2>
+<p>eCPM은 Effective Cost Per Mille의 약자. CPM이 표면 데이터, oCPM이 광고주와 시스템의 대화라면, eCPM은 시스템 내부의 랭킹 엔진입니다.</p>
+<p>플랫폼에는 제한된 광고 인벤토리와 훨씬 더 많은 광고주가 있습니다. 그래서 '누가 이 노출을 얻을 것인가'를 결정할 방법이 필요합니다. 그 답이 eCPM입니다.<em>who gets this impression?</em> The answer is eCPM.
         </p>
-        <p>
-          That is why it is called "Optimized" — the system does the heavy lifting of bid management. On Baidu, it is called oCPC or oCPM. On Douyin's Ocean Engine, it is oCPM. On Meta, it is called "Lowest Cost" or "Cost Cap." Different names, same logic.
+<p>
+<strong>간소화된 공식:</strong>
+</p>
+<p style="text-align: center; font-size: var(--font-size-lg); padding: var(--space-4); background: var(--color-bg-card); border-radius: var(--radius-md); margin: var(--space-4) 0;">
+<strong>eCPM = 입찰가 × 추정 CTR × 추정 CVR × 1000</strong>
+</p>
+<p>시스템은 사용자가 클릭하거나 전환할지 확실히 알지 못합니다——예측합니다. 그 예측은 사용자 행동, 크리에이티브 성과, 광고 관련성의 이력 데이터로부터 구축됩니다.</p>
+<p>
+<strong>여기서 흥미로워집니다: eCPM이 진정한 게이트키퍼이기 때문에, 낮은 입찰이 높은 입찰을 이길 수 있습니다.</strong> a lower bid can beat a higher bid, because eCPM is the real gatekeeper.
         </p>
-
-        <div class="callout">
-          <div class="callout__label">Common Mistake</div>
-          <p>Many people treat oCPM as a target for their actual CPM. They watch the dashboard and panic when realized CPM is above their oCPM bid. But oCPM is your <em>bid input</em>, not your <em>cost output</em>. Your actual CPM can and will vary — what matters is whether your CPA is on track.</p>
-        </div>
-
-        <h2 id="ecpm">🧠 eCPM — The System's Secret Ranking Score</h2>
-        <p>
-          eCPM stands for Effective Cost Per Mille. If CPM is surface-level data and oCPM is the advertiser's conversation with the system, eCPM is the system's internal ranking engine.
-        </p>
-        <p>
-          Platforms have a limited amount of ad inventory and far more advertisers who want it. So they need a way to decide: <em>who gets this impression?</em> The answer is eCPM.
-        </p>
-        <p>
-          <strong>The simplified formula:</strong>
-        </p>
-
-        <p style="text-align: center; font-size: var(--font-size-lg); padding: var(--space-4); background: var(--color-bg-card); border-radius: var(--radius-md); margin: var(--space-4) 0;">
-          <strong>eCPM = Bid × Estimated CTR × Estimated CVR × 1000</strong>
-        </p>
-
-        <p>
-          The system does not know for certain whether a user will click or convert — it predicts. That prediction is built from historical data on user behavior, creative performance, and ad relevance.
-        </p>
-        <p>
-          <strong>This is where it gets interesting:</strong> a lower bid can beat a higher bid, because eCPM is the real gatekeeper.
-        </p>
-
-        <div style="overflow-x: auto; margin: var(--space-6) 0;">
-          <table style="width: 100%; border-collapse: collapse; background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden;">
-            <thead>
-              <tr style="background: rgba(201,168,76,.1);">
-                <th style="padding: var(--space-3) var(--space-4); text-align: left; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Advertiser</th>
-                <th style="padding: var(--space-3) var(--space-4); text-align: center; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Bid (oCPM)</th>
-                <th style="padding: var(--space-3) var(--space-4); text-align: center; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Est. CTR</th>
-                <th style="padding: var(--space-3) var(--space-4); text-align: center; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Est. CVR</th>
-                <th style="padding: var(--space-3) var(--space-4); text-align: center; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">eCPM</th>
-                <th style="padding: var(--space-3) var(--space-4); text-align: center; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Wins?</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr style="border-top: 1px solid var(--color-border);">
-                <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-primary); font-weight: 500;">Advertiser A</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">¥100</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">2.0%</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">3.0%</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);"><strong>¥60</strong></td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: #22c55e;">✅</td>
-              </tr>
-              <tr style="border-top: 1px solid var(--color-border); background: rgba(239,68,68,.04);">
-                <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-primary); font-weight: 500;">Advertiser B</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">¥150</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">1.0%</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">1.5%</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);"><strong>¥22.5</strong></td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: #ef4444;">❌</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p>
-          Advertiser A bids ¥100 but wins the impression. Advertiser B bids ¥150 but loses. Why? Because A's creative produces better CTR and CVR, which generates a higher eCPM — and the platform values revenue, not bids.
-        </p>
-
-        <div class="callout callout--accent">
-          <div class="callout__label">Translation</div>
-          <p>This is why "my bid is higher but they get all the traffic" is almost always a creative quality problem. The platform does not care how much you bid — it cares how much revenue it expects to make from your ad. Better creative = higher eCPM = more traffic, even at the same or lower bid.</p>
-        </div>
-
-        <h2 id="together">🔗 How They Fit Together</h2>
-        <p>
-          One sentence says it all:
-        </p>
-
-        <div style="text-align: center; padding: var(--space-6); background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-lg); margin: var(--space-6) 0;">
-          <p style="font-size: var(--font-size-lg); font-weight: 600; color: var(--color-accent-light);">
+<div style="overflow-x: auto; margin: var(--space-6) 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden;">
+<thead>
+<tr style="background: rgba(201,168,76,.1);">
+<th style="padding: var(--space-3) var(--space-4); text-align: left; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Advertiser</th>
+<th style="padding: var(--space-3) var(--space-4); text-align: center; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Bid (oCPM)</th>
+<th style="padding: var(--space-3) var(--space-4); text-align: center; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Est. CTR</th>
+<th style="padding: var(--space-3) var(--space-4); text-align: center; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Est. CVR</th>
+<th style="padding: var(--space-3) var(--space-4); text-align: center; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">eCPM</th>
+<th style="padding: var(--space-3) var(--space-4); text-align: center; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Wins?</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-top: 1px solid var(--color-border);">
+<td style="padding: var(--space-3) var(--space-4); color: var(--color-text-primary); font-weight: 500;">Advertiser A</td>
+<td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">¥100</td>
+<td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">2.0%</td>
+<td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">3.0%</td>
+<td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);"><strong>¥60</strong></td>
+<td style="padding: var(--space-3) var(--space-4); text-align: center; color: #22c55e;">✅</td>
+</tr>
+<tr style="border-top: 1px solid var(--color-border); background: rgba(239,68,68,.04);">
+<td style="padding: var(--space-3) var(--space-4); color: var(--color-text-primary); font-weight: 500;">Advertiser B</td>
+<td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">¥150</td>
+<td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">1.0%</td>
+<td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">1.5%</td>
+<td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);"><strong>¥22.5</strong></td>
+<td style="padding: var(--space-3) var(--space-4); text-align: center; color: #ef4444;">❌</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>광고주 A는 100위안 입찰로 노출 획득. 광고주 B는 150위안 입찰로 패배. 왜? A의 크리에이티브가 더 나은 CTR과 CVR을 생성하여 더 높은 eCPM을 산출——플랫폼은 수익을 중시하기 때문입니다.</p>
+<div class="callout callout--accent">
+<div class="callout__label">Translation</div>
+<p>'내 입찰가가 더 높은데 상대가 트래픽을 독점한다'는 거의 항상 크리에이티브 품질 문제입니다. 플랫폼은 입찰가를 신경 쓰지 않습니다——노출로부터 기대되는 수익을 신경 씁니다.</p>
+</div>
+<h2 id="together">🔗 How They Fit Together</h2>
+<p>한 문장으로 요약:</p>
+<div style="text-align: center; padding: var(--space-6); background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-lg); margin: var(--space-6) 0;">
+<p style="font-size: var(--font-size-lg); font-weight: 600; color: var(--color-accent-light);">
             Advertiser bids via <strong>oCPM</strong> → System ranks by <strong>eCPM</strong> → Cost shows as <strong>CPM</strong>
-          </p>
-        </div>
-
-        <table style="width: 100%; border-collapse: collapse; background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden; margin: var(--space-6) 0;">
-          <thead>
-            <tr style="background: rgba(201,168,76,.1);">
-              <th style="padding: var(--space-3) var(--space-4); text-align: left; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Metric</th>
-              <th style="padding: var(--space-3) var(--space-4); text-align: left; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Role</th>
-              <th style="padding: var(--space-3) var(--space-4); text-align: left; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Who Owns It</th>
-              <th style="padding: var(--space-3) var(--space-4); text-align: left; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Fixed or Dynamic?</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="border-top: 1px solid var(--color-border);">
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-primary); font-weight: 500;">CPM</td>
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">Traffic price indicator</td>
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">Market (result)</td>
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">Dynamic</td>
-            </tr>
-            <tr style="border-top: 1px solid var(--color-border);">
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-primary); font-weight: 500;">oCPM</td>
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">Bidding method</td>
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">Advertiser (input)</td>
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">You set the target</td>
-            </tr>
-            <tr style="border-top: 1px solid var(--color-border);">
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-primary); font-weight: 500;">eCPM</td>
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">Ranking score</td>
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">System (calculated)</td>
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">Re-calculated per auction</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h2 id="takeaways">💡 Practical Takeaways</h2>
-        <p>
-          Understanding the difference between these three changes how you read a dashboard and where you invest your optimization energy.
-        </p>
-
-        <div class="feature-grid">
-          <div class="feature-card">
-            <div class="feature-card__num">1</div>
-            <div class="feature-card__title">Stop optimizing CPM directly</div>
-            <div class="feature-card__desc">CPM is an intermediate metric, not a goal. A low CPM with high CPA is worse than a high CPM with low CPA. Focus on the end of the funnel.</div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card__num">2</div>
-            <div class="feature-card__title">Creative feeds eCPM</div>
-            <div class="feature-card__desc">Better CTR and CVR = higher eCPM = more traffic at the same bid. The most direct lever for improving eCPM is creative quality — not raising your bid.</div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card__num">3</div>
-            <div class="feature-card__title">CVR is your volume ceiling</div>
-            <div class="feature-card__desc">If you have high CTR but cannot scale, check your CVR. A low CVR drags eCPM down, and the system reduces your traffic allocation. Fix the landing page or the offer first.</div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card__num">4</div>
-            <div class="feature-card__title">Don't panic when CPM ≠ oCPM</div>
-            <div class="feature-card__desc">Your actual CPM will drift above and below your oCPM bid. This is normal — the system is testing different audiences. What matters is whether CPA stays on track.</div>
-          </div>
-        </div>
-
-        <div class="callout callout--accent">
-          <div class="callout__label">One More Thing</div>
-          <p>On Chinese platforms like Baidu (oCPC/oCPM) and Ocean Engine (oCPM), the same logic applies. The naming conventions differ slightly, but the bidding → ranking → pricing pipeline works the same way. Understanding it once means you can audit any platform's auction system.</p>
-        </div>
-
-        <p>
+</p>
+</div>
+<table style="width: 100%; border-collapse: collapse; background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden; margin: var(--space-6) 0;">
+<thead>
+<tr style="background: rgba(201,168,76,.1);">
+<th style="padding: var(--space-3) var(--space-4); text-align: left; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Metric</th>
+<th style="padding: var(--space-3) var(--space-4); text-align: left; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Role</th>
+<th style="padding: var(--space-3) var(--space-4); text-align: left; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Who Owns It</th>
+<th style="padding: var(--space-3) var(--space-4); text-align: left; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Fixed or Dynamic?</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-top: 1px solid var(--color-border);">
+<td style="padding: var(--space-3) var(--space-4); color: var(--color-text-primary); font-weight: 500;">CPM</td>
+<td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">Traffic price indicator</td>
+<td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">Market (result)</td>
+<td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">Dynamic</td>
+</tr>
+<tr style="border-top: 1px solid var(--color-border);">
+<td style="padding: var(--space-3) var(--space-4); color: var(--color-text-primary); font-weight: 500;">oCPM</td>
+<td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">Bidding method</td>
+<td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">Advertiser (input)</td>
+<td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">You set the target</td>
+</tr>
+<tr style="border-top: 1px solid var(--color-border);">
+<td style="padding: var(--space-3) var(--space-4); color: var(--color-text-primary); font-weight: 500;">eCPM</td>
+<td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">Ranking score</td>
+<td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">System (calculated)</td>
+<td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">Re-calculated per auction</td>
+</tr>
+</tbody>
+</table>
+<h2 id="takeaways">💡 Practical Takeaways</h2>
+<p>이 세 가지 차이를 이해하면 대시보드를 읽는 방식과 최적화 에너지를 어디에 쏟을지가 달라집니다.</p>
+<div class="feature-grid">
+<div class="feature-card">
+<div class="feature-card__num">1</div>
+<div class="feature-card__title">Stop optimizing CPM directly</div>
+<div class="feature-card__desc">CPM is an intermediate metric, not a goal. A low CPM with high CPA is worse than a high CPM with low CPA. Focus on the end of the funnel.</div>
+</div>
+<div class="feature-card">
+<div class="feature-card__num">2</div>
+<div class="feature-card__title">Creative feeds eCPM</div>
+<div class="feature-card__desc">Better CTR and CVR = higher eCPM = more traffic at the same bid. The most direct lever for improving eCPM is creative quality — not raising your bid.</div>
+</div>
+<div class="feature-card">
+<div class="feature-card__num">3</div>
+<div class="feature-card__title">CVR is your volume ceiling</div>
+<div class="feature-card__desc">If you have high CTR but cannot scale, check your CVR. A low CVR drags eCPM down, and the system reduces your traffic allocation. Fix the landing page or the offer first.</div>
+</div>
+<div class="feature-card">
+<div class="feature-card__num">4</div>
+<div class="feature-card__title">Don't panic when CPM ≠ oCPM</div>
+<div class="feature-card__desc">Your actual CPM will drift above and below your oCPM bid. This is normal — the system is testing different audiences. What matters is whether CPA stays on track.</div>
+</div>
+</div>
+<div class="callout callout--accent">
+<div class="callout__label">One More Thing</div>
+<p>Baidu(oCPC/oCPM)나 Ocean Engine(oCPM) 같은 중국 플랫폼에서도 동일한 로직이 적용됩니다. 명명 규칙은 약간 다르지만, 입찰→랭킹→가격 책정 파이프라인은 동일하게 작동합니다.</p>
+</div>
+<p>
           We run paid media across Baidu, Douyin, WeChat, 샤오홍슈(RED), Bilibili, and Bing China for international agencies and brands. If you want to talk through your campaign data — or just want a second set of eyes — <a href="https://www.tuyuesouxin.cn/contact">reach out</a>.
         </p>
-
-      </article>
-
-      <!-- Sidebar -->
-      <aside class="article-sidebar">
-        <nav class="toc">
-          <div class="toc__title">In This Article</div>
-          <ul class="toc__list">
-            <li><a href="#cpm" class="toc__link">💰 CPM — The Price Tag</a></li>
-            <li><a href="#ocpm" class="toc__link">🎯 oCPM — Your Bid, Not Your Cost</a></li>
-            <li><a href="#ecpm" class="toc__link">🧠 eCPM — The Ranking Score</a></li>
-            <li><a href="#together" class="toc__link">🔗 How They Fit Together</a></li>
-          </ul>
-        </nav>
-        <div class="sidebar-cta">
-          <p>Running paid media in China? We help international brands navigate Baidu, Douyin, WeChat, and more.</p>
-          <a href="https://www.tuyuesouxin.cn/contact" class="btn btn--primary">Talk to TMG</a>
-        </div>
-      </aside>
-    </div>
-  </main>
-
-  <!-- Related Posts placeholder -->
-  <section class="related">
-    <div class="container">
-      <div class="related__title">More from the 블로그</div>
-      <div class="related__grid">
-        <a href="https://www.tuyuesouxin.cn/blog/cpm-is-rising-bad" class="related-card">
-          <div class="related-card__cat">Paid Media</div>
-          <div class="related-card__title">CPM 상승이 정말 나쁜가요?</div>
-          <p class="related-card__desc">CPM goes up and everyone panics. But a higher CPM can mean better audiences and lower CPA. Here is how to tell the difference.</p>
-        </a>
-        <a href="https://www.tuyuesouxin.cn/services/douyin" class="related-card">
-          <div class="related-card__cat">서비스</div>
-          <div class="related-card__title">Douyin 광고 — TMG Service</div>
-          <p class="related-card__desc">How TMG manages Ocean Engine advertising campaigns for international brands entering China.</p>
-        </a>
-        <a href="https://www.tuyuesouxin.cn/services/baidu" class="related-card">
-          <div class="related-card__cat">서비스</div>
-          <div class="related-card__title">Baidu SEM — TMG Service</div>
-          <p class="related-card__desc">Full-service Baidu SEM management for international agencies and brands advertising in China.</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div class="footer__section">
-          <h4 class="footer__title">TMG 소개</h4>
-          <p class="footer__description">
+</article>
+<!-- Sidebar -->
+<aside class="article-sidebar">
+<nav class="toc">
+<div class="toc__title">In This Article</div>
+<ul class="toc__list">
+<li><a class="toc__link" href="#cpm">💰 CPM — The Price Tag</a></li>
+<li><a class="toc__link" href="#ocpm">🎯 oCPM — Your Bid, Not Your Cost</a></li>
+<li><a class="toc__link" href="#ecpm">🧠 eCPM — The Ranking Score</a></li>
+<li><a class="toc__link" href="#together">🔗 How They Fit Together</a></li>
+</ul>
+</nav>
+<div class="sidebar-cta">
+<p>중국에서 유료 미디어 운영 중이신가요? 국제 브랜드가 Baidu, Douyin, WeChat 등을 내비게이트하도록 돕습니다.</p>
+<a class="btn btn--primary" href="https://www.tuyuesouxin.cn/contact">Talk to TMG</a>
+</div>
+</aside>
+</div>
+</main>
+<!-- Related Posts placeholder -->
+<section class="related">
+<div class="container">
+<div class="related__title">More from the 블로그</div>
+<div class="related__grid">
+<a class="related-card" href="https://www.tuyuesouxin.cn/blog/cpm-is-rising-bad">
+<div class="related-card__cat">Paid Media</div>
+<div class="related-card__title">CPM 상승이 정말 나쁜가요?</div>
+<p class="related-card__desc">CPM이 오르면 모두 패닉. 하지만 높은 CPM이 더 나은 오디언스와 더 낮은 CPA를 의미할 수도. 차이를 구별하는 방법.</p>
+</a>
+<a class="related-card" href="https://www.tuyuesouxin.cn/services/douyin">
+<div class="related-card__cat">서비스</div>
+<div class="related-card__title">Douyin 광고 — TMG Service</div>
+<p class="related-card__desc">TMG가 국제 브랜드의 중국 시장 진출을 위해 Ocean Engine 광고 캠페인을 관리하는 방법.</p>
+</a>
+<a class="related-card" href="https://www.tuyuesouxin.cn/services/baidu">
+<div class="related-card__cat">서비스</div>
+<div class="related-card__title">Baidu SEM — TMG Service</div>
+<p class="related-card__desc">중국에서 광고하는 국제 에이전시와 브랜드를 위한 풀서비스 Baidu SEM 관리.</p>
+</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="footer__grid">
+<div class="footer__section">
+<h4 class="footer__title">TMG 소개</h4>
+<p class="footer__description">
             중국 1,000억 달러 디지털 광고 시장으로의 단일 액세스 포인트. 국제 에이전시가 중국 플랫폼을 쉽게 탐색할 수 있도록 지원합니다.
           </p>
-        </div>
-        <div class="footer__section">
-          <h4 class="footer__title">바로가기</h4>
-          <ul class="footer__links">
-            <li><a href="https://www.tuyuesouxin.cn/services/" class="footer__link">서비스</a></li>
-            <li><a href="https://www.tuyuesouxin.cn/pricing/" class="footer__link">요금</a></li>
-            <li><a href="https://www.tuyuesouxin.cn/about/" class="footer__link">회사 소개</a></li>
-            <li><a href="https://www.tuyuesouxin.cn/client-stories" class="footer__link">고객 사례</a></li>
-            <li><a href="https://www.tuyuesouxin.cn/faqs" class="footer__link">FAQ</a></li>
-          </ul>
-        </div>
-        <div class="footer__section">
-          <h4 class="footer__title">문의하기</h4>
-          <ul class="footer__links">
-            <li>
-              <a href="mailto:tmg@tuyuesouxin.cn" class="footer__link footer__link--email">tmg@tuyuesouxin.cn</a>
-            </li>
-            <li>
-              <a href="#contactQR" class="footer__link">
-                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: text-bottom; margin-right: 4px;">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                </svg>
+</div>
+<div class="footer__section">
+<h4 class="footer__title">바로가기</h4>
+<ul class="footer__links">
+<li><a class="footer__link" href="https://www.tuyuesouxin.cn/services/">서비스</a></li>
+<li><a class="footer__link" href="https://www.tuyuesouxin.cn/pricing/">요금</a></li>
+<li><a class="footer__link" href="https://www.tuyuesouxin.cn/about/">회사 소개</a></li>
+<li><a class="footer__link" href="https://www.tuyuesouxin.cn/client-stories">고객 사례</a></li>
+<li><a class="footer__link" href="https://www.tuyuesouxin.cn/faqs">FAQ</a></li>
+</ul>
+</div>
+<div class="footer__section">
+<h4 class="footer__title">문의하기</h4>
+<ul class="footer__links">
+<li>
+<a class="footer__link footer__link--email" href="mailto:tmg@tuyuesouxin.cn">tmg@tuyuesouxin.cn</a>
+</li>
+<li>
+<a class="footer__link" href="#contactQR">
+<svg aria-hidden="true" fill="currentColor" height="16" style="vertical-align: text-bottom; margin-right: 4px;" viewbox="0 0 24 24" width="16">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+</svg>
                 WhatsApp (클릭하여 스캔)
               </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__section">
-          <h4 class="footer__title">법적 고지</h4>
-          <ul class="footer__links">
-            <li class="footer__license">사업자 등록 번호: 91310114MADKG4UF0G</li>
-            <li class="footer__company-short">Tuyue Media Gateway</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p class="footer__copyright">© 2026 Tuyue Media Gateway. 모든 권리 보유.</p>
-        <div class="footer__platforms">
-          <a href="https://ad.weixin.qq.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">WeChat</a>
-          <a href="https://www.oceanengine.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Douyin</a>
-          <a href="https://e.baidu.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Baidu</a>
-          <a href="https://www.xiaohongshu.com/brand" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">샤오홍슈(RED)</a>
-          <a href="https://member.bilibili.com/platform/ad" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bilibili</a>
-          <a href="https://ads.microsoft.com/zh-cn" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bing China</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script>
+</li>
+</ul>
+</div>
+<div class="footer__section">
+<h4 class="footer__title">법적 고지</h4>
+<ul class="footer__links">
+<li class="footer__license">사업자 등록 번호: 91310114MADKG4UF0G</li>
+<li class="footer__company-short">Tuyue Media Gateway</li>
+</ul>
+</div>
+</div>
+<div class="footer__bottom">
+<p class="footer__copyright">© 2026 Tuyue Media Gateway. 모든 권리 보유.</p>
+<div class="footer__platforms">
+<a class="footer__platform-badge" href="https://ad.weixin.qq.com" rel="nofollow noopener noreferrer" target="_blank">WeChat</a>
+<a class="footer__platform-badge" href="https://www.oceanengine.com" rel="nofollow noopener noreferrer" target="_blank">Douyin</a>
+<a class="footer__platform-badge" href="https://e.baidu.com" rel="nofollow noopener noreferrer" target="_blank">Baidu</a>
+<a class="footer__platform-badge" href="https://www.xiaohongshu.com/brand" rel="nofollow noopener noreferrer" target="_blank">샤오홍슈(RED)</a>
+<a class="footer__platform-badge" href="https://member.bilibili.com/platform/ad" rel="nofollow noopener noreferrer" target="_blank">Bilibili</a>
+<a class="footer__platform-badge" href="https://ads.microsoft.com/zh-cn" rel="nofollow noopener noreferrer" target="_blank">Bing China</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
   // Mobile Menu & Dropdown Toggle
   (function () {
     var toggle = document.querySelector('.header__toggle');
