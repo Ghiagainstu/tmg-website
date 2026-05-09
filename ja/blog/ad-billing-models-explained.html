@@ -1,32 +1,27 @@
 <!DOCTYPE html>
+
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ad Billing Models Explained: CPM, CPC, CPA, oCPM and When to Use Each | Tuyue Media Gateway (TMG)</title>
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="apple-touch-icon" href="/assets/og-image.png">
-  
-  <meta name="description" content="A practical guide to ad billing models in paid media: CPM, CPC, CPA, oCPM and more. Learn which pricing model fits your campaign goals and how to avoid burning budget on the wrong one.">
-  <link rel="canonical" href="https://www.tuyuesouxin.cn/ja/blog/ad-billing-models-explained">
-  
-  <meta property="og:title" content="Ad Billing Models Explained: CPM, CPC, CPA, oCPM and When to Use Each">
-  <meta property="og:description" content="A practical guide to ad billing models in paid media: CPM, CPC, CPA, oCPM and more. Learn which pricing model fits your campaign goals.">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://www.tuyuesouxin.cn/ja/blog/ad-billing-models-explained">
-  <meta property="og:image" content="https://www.tuyuesouxin.cn/assets/og-image.png">
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://www.tuyuesouxin.cn/assets/twitter-card.png">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>中国の広告主は、他の地域よりもCPM入札の使用が少ない傾向があり、コンバージョンベースの入札が支配的です。</title>
+<!-- Favicon -->
+<link href="/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/og-image.png" rel="apple-touch-icon"/>
+<meta content="A practical guide to ad billing models in paid media: CPM, CPC, CPA, oCPM and more. Learn which pricing model fits your campaign goals and how to avoid burning budget on the wrong one." name="description"/>
+<link href="https://www.tuyuesouxin.cn/ja/blog/ad-billing-models-explained" rel="canonical"/>
+<meta content="中国の広告主は、他の地域よりもCPM入札の使用が少ない傾向があり、コンバージョンベースの入札が支配的です。" property="og:title"/>
+<meta content="A practical guide to ad billing models in paid media: CPM, CPC, CPA, oCPM and more. Learn which pricing model fits your campaign goals." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://www.tuyuesouxin.cn/ja/blog/ad-billing-models-explained" property="og:url"/>
+<meta content="https://www.tuyuesouxin.cn/assets/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://www.tuyuesouxin.cn/assets/twitter-card.png" name="twitter:image"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
     :root {
       --color-bg: #080c14;
       --color-bg-alt: #0d1220;
@@ -491,537 +486,455 @@
   </style>
 </head>
 <body>
-  
-  <!-- Header -->
-  <header class="header" id="header">
-    <div class="container header__inner">
-      <a href="https://www.tuyuesouxin.cn/ja/" class="header__logo">
-        <svg class="header__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#c9a84c"/>
-              <stop offset="100%" stop-color="#e8c87a"/>
-            </linearGradient>
-            <clipPath id="moonClip">
-              <circle cx="30" cy="24" r="16"/>
-            </clipPath>
-          </defs>
-          <!-- Crescent Moon: circle minus overlapping circle -->
-          <circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/>
-          <circle cx="37" cy="20" r="13" fill="#080c14"/>
-          <!-- TMG letters -->
-          <text x="4" y="32" font-family="Inter, -apple-system, sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-0.8">TMG</text>
-        </svg>
-        <span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
-      </a>
-      
-      <button class="header__toggle" id="navToggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
-      
-      <nav class="header__nav" id="mainNav">
-        <div class="header__dropdown">
-          <a href="https://www.tuyuesouxin.cn/ja/services/" class="header__dropdown-trigger header__nav-link">
-            Services <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 5L6 8L9 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </a>
-          <div class="header__dropdown-menu">
-            <a href="https://www.tuyuesouxin.cn/ja/services/baidu/" class="header__dropdown-item">Baidu SEM</a>
-            <a href="https://www.tuyuesouxin.cn/ja/services/douyin/" class="header__dropdown-item">Douyin Ads</a>
-            <a href="https://www.tuyuesouxin.cn/ja/services/xiaohongshu/" class="header__dropdown-item">Xiaohongshu Ads</a>
-            <a href="https://www.tuyuesouxin.cn/ja/services/bilibili/" class="header__dropdown-item">Bilibili Ads</a>
-            <a href="https://www.tuyuesouxin.cn/ja/services/wechat/" class="header__dropdown-item">WeChat Ads</a>
-            <a href="https://www.tuyuesouxin.cn/ja/services/bing/" class="header__dropdown-item">Bing China</a>
-            <a href="https://www.tuyuesouxin.cn/ja/geo/" class="header__dropdown-item">GEO Services</a>
-          </div>
-        </div>
-        <a href="https://www.tuyuesouxin.cn/ja/pricing/" class="header__nav-link">Pricing</a>
-        <a href="https://www.tuyuesouxin.cn/ja/client-stories/" class="header__nav-link">Client Stories</a>
-        <a href="https://www.tuyuesouxin.cn/ja/geo/" class="header__nav-link">GEO</a>
-        <a href="https://www.tuyuesouxin.cn/ja/blog/" class="header__nav-link header__nav-link--active">Blog</a>
-        <a href="https://www.tuyuesouxin.cn/ja/faqs/" class="header__nav-link">FAQ</a>
-        <div class="header__dropdown">
-          <a href="https://www.tuyuesouxin.cn/ja/about/" class="header__dropdown-trigger header__nav-link">
-            About <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 5L6 8L9 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </a>
-          <div class="header__dropdown-menu">
-            <a href="https://www.tuyuesouxin.cn/ja/about/team/" class="header__dropdown-item">Our Team</a>
-            <a href="https://www.tuyuesouxin.cn/ja/about/certifications/" class="header__dropdown-item">Certifications</a>
-            <a href="https://www.tuyuesouxin.cn/ja/about/partners/" class="header__dropdown-item">Partners</a>
-            <a href="https://www.tuyuesouxin.cn/ja/about/careers/" class="header__dropdown-item">Careers</a>
-          </div>
-        </div>
-      </nav>
-      
-      <a href="https://www.tuyuesouxin.cn/ja/contact/" class="btn btn--primary header__cta">Get a Quote</a>
-    </div>
-  </header>
-  
-  <!-- Article Hero -->
-  <section class="article-hero">
-    <div class="article-hero__inner">
-      <div class="article-hero__meta">
-        <span class="article-hero__cat">Paid Media Strategy</span>
-        <span class="article-hero__date">May 4, 2026</span>
-        <span style="color:var(--color-text-muted)">·</span>
-        <span class="article-hero__read-time">9 min read</span>
-      </div>
-      <h1 class="article-hero__title">Ad Billing Models Explained: CPM, CPC, CPA, oCPM and When to Use Each</h1>
-      <p class="article-hero__excerpt">
+<!-- Header -->
+<header class="header" id="header">
+<div class="container header__inner">
+<a class="header__logo" href="https://www.tuyuesouxin.cn/ja/">
+<svg class="header__logo-icon" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient id="moonGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#c9a84c"></stop>
+<stop offset="100%" stop-color="#e8c87a"></stop>
+</lineargradient>
+<clippath id="moonClip">
+<circle cx="30" cy="24" r="16"></circle>
+</clippath>
+</defs>
+<!-- Crescent Moon: circle minus overlapping circle -->
+<circle cx="30" cy="24" fill="url(#moonGrad)" r="16"></circle>
+<circle cx="37" cy="20" fill="#080c14" r="13"></circle>
+<!-- TMG letters -->
+<text fill="#f0f4ff" font-family="Inter, -apple-system, sans-serif" font-size="19" font-weight="800" letter-spacing="-0.8" x="4" y="32">TMG</text>
+</svg>
+<span class="header__logo-text">Tuyue Media Gateway <span></span></span>
+</a>
+<button aria-label="Toggle navigation" class="header__toggle" id="navToggle">
+<span></span><span></span><span></span>
+</button>
+<nav class="header__nav" id="mainNav">
+<div class="header__dropdown">
+<a class="header__dropdown-trigger header__nav-link" href="https://www.tuyuesouxin.cn/ja/services/">
+             <svg class="header__dropdown-arrow" fill="none" height="12" viewbox="0 0 12 12" width="12"><path d="M3 5L6 8L9 5" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path></svg>
+</a>
+<div class="header__dropdown-menu">
+<a class="header__dropdown-item" href="https://www.tuyuesouxin.cn/ja/services/baidu/">百度SEM</a>
+<a class="header__dropdown-item" href="https://www.tuyuesouxin.cn/ja/services/douyin/">抖音広告</a>
+<a class="header__dropdown-item" href="https://www.tuyuesouxin.cn/ja/services/xiaohongshu/">小紅書（RED）</a>
+<a class="header__dropdown-item" href="https://www.tuyuesouxin.cn/ja/services/bilibili/">Bilibili広告</a>
+<a class="header__dropdown-item" href="https://www.tuyuesouxin.cn/ja/services/wechat/">微信広告</a>
+<a class="header__dropdown-item" href="https://www.tuyuesouxin.cn/ja/services/bing/">Bing China</a>
+<a class="header__dropdown-item" href="https://www.tuyuesouxin.cn/ja/geo/">中国GEO</a>
+</div>
+</div>
+<a class="header__nav-link" href="https://www.tuyuesouxin.cn/ja/pricing/">料金</a>
+<a class="header__nav-link" href="https://www.tuyuesouxin.cn/ja/client-stories/">導入事例</a>
+<a class="header__nav-link" href="https://www.tuyuesouxin.cn/ja/geo/">中国GEO</a>
+<a class="header__nav-link header__nav-link--active" href="https://www.tuyuesouxin.cn/ja/blog/">ブログ</a>
+<a class="header__nav-link" href="https://www.tuyuesouxin.cn/ja/faqs/">FAQ</a>
+<div class="header__dropdown">
+<a class="header__dropdown-trigger header__nav-link" href="https://www.tuyuesouxin.cn/ja/about/">
+             <svg class="header__dropdown-arrow" fill="none" height="12" viewbox="0 0 12 12" width="12"><path d="M3 5L6 8L9 5" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path></svg>
+</a>
+<div class="header__dropdown-menu">
+<a class="header__dropdown-item" href="https://www.tuyuesouxin.cn/ja/about/team/">チーム</a>
+<a class="header__dropdown-item" href="https://www.tuyuesouxin.cn/ja/about/certifications/">認証</a>
+<a class="header__dropdown-item" href="https://www.tuyuesouxin.cn/ja/about/partners/">パートナー</a>
+<a class="header__dropdown-item" href="https://www.tuyuesouxin.cn/ja/about/careers/">採用情報</a>
+</div>
+</div>
+</nav>
+<a class="btn btn--primary header__cta" href="https://www.tuyuesouxin.cn/ja/contact/">お見積もり</a>
+</div>
+</header>
+<!-- Article Hero -->
+<section class="article-hero">
+<div class="article-hero__inner">
+<div class="article-hero__meta">
+<span class="article-hero__cat">市場動向</span>
+<span class="article-hero__date">2026年2月</span>
+<span style="color:var(--color-text-muted)">·</span>
+<span class="article-hero__read-time">2026年1月</span>
+</div>
+<h1 class="article-hero__title">中国の広告主は、他の地域よりもCPM入札の使用が少ない傾向があり、コンバージョンベースの入札が支配的です。</h1>
+<p class="article-hero__excerpt">
         すべての広告キャンペーンの背後には、支払い方法と、支払った分の成果が得られるかどうかを決める課金モデルが存在します。主要な課金モデルを分解し、実際の仕組みを解説し、適切な選択を支援します。
       </p>
-      <div class="article-hero__author">
-        <div class="article-hero__author-avatar">TMG</div>
-        <div class="article-hero__author-info">
-          <div class="article-hero__author-name">Tuyue Media Gateway</div>
-          <div class="article-hero__author-role">Paid Media Team · Shanghai</div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Article Body -->
-  <article class="article-body">
-    
-    <p class="emoji-lead">💰</p>
-    <p>
+<div class="article-hero__author">
+<div class="article-hero__author-avatar">TMG</div>
+<div class="article-hero__author-info">
+<div class="article-hero__author-name">Tuyue Media Gateway</div>
+<div class="article-hero__author-role">Paid Media Team · Shanghai</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Article Body -->
+<article class="article-body">
+<p class="emoji-lead">💰</p>
+<p>
       キャンペーン設定画面を見つめながら「CPMかCPCか、それともoCPMか」と悩んだことがあるなら、あなただけではありません。7桁規模の有料メディア予算を管理してきた経験から言えることは——
     </p>
-    
-    <p>
+<p>
       各モデルの詳細に入る前に、押さえておくべき2つの概念があります。第一に、広告課金モデルと広告タイプは別物です——しかし課金モデルが利用可能な広告タイプを決定します。第二に、
     </p>
-    
-    <div class="callout callout--info">
-      <div class="callout__title">📊 Two big categories</div>
-      <div class="callout__text">
+<div class="callout callout--info">
+<div class="callout__title">📊 Two big categories</div>
+<div class="callout__text">
         In paid media, we generally split campaigns into <strong>Brand Ads</strong> (awareness first) and <strong>Performance Ads</strong> (conversion first). The billing model you choose should match the category — not the other way around.
       </div>
-    </div>
-    
-    <h2>🎯 Brand Ads: You are paying for attention</h2>
-    
-    <p>
+</div>
+<h2>🎯 Brand Ads: You are paying for attention</h2>
+<p>
       ブランド広告とは「見られること」が目的です。今日のクリックや購入がゴールではなく、ブランド想起率、好意度、「第一想起」のポジショニングが重要です。消費者がいずれ必要になったとき——
     </p>
-    
-    <p>
+<p>
       購入しているもの：インプレッション、ビュー、視聴者の目の前にいる時間。
     </p>
-    
-    <p>
+<p>
       測定方法：インプレッション量、視聴完了率、エンゲージメント率、ブランド検索リフト、ブランド認知度調査。
     </p>
-    
-    <p>
+<p>
       典型的なシナリオ：新製品ローンチ、ブランド再ポジショニング、季節キャンペーン、カテゴリー支配戦略。
     </p>
-    
-    <p>
+<p>
       一言要約：ブランド広告＝「自分の存在を知ってもらうためにお金を払う」。
     </p>
-    
-    <h3>Brand billing models you will actually encounter</h3>
-    
-    <h4>1. CPM (Cost Per Mille) — Pay per 1,000 impressions</h4>
-    
-    <p>
+<h3>Brand billing models you will actually encounter</h3>
+<h4>1. CPM (Cost Per Mille) — Pay per 1,000 impressions</h4>
+<p>
       これが古典的なブランド広告の課金モデルです。クリックの有無に関わらず、広告が1,000回表示されるごとに料金が発生します。CPMはディスプレイ、動画、SNS認知キャンペーンの大半で標準——
     </p>
-    
-    <div class="highlights-grid">
-      <div class="highlight-card">
-        <span class="highlight-card__icon">📈</span>
-        <div class="highlight-card__title">How it works</div>
-        <div class="highlight-card__text">You pay a fixed rate per 1,000 impressions. If the CPM is ¥30 and you buy 100 CPM (= 100,000 impressions), your cost is ¥3,000.</div>
-      </div>
-      <div class="highlight-card">
-        <span class="highlight-card__icon">⏱️</span>
-        <div class="highlight-card__title">Delivery pattern</div>
-        <div class="highlight-card__text">Once you place the order, the platform locks in your impression volume. You might get all 100 CPM in one hour, or across a full day — the platform decides based on inventory.</div>
-      </div>
-      <div class="highlight-card">
-        <span class="highlight-card__icon">✅</span>
-        <div class="highlight-card__title">Best for</div>
-        <div class="highlight-card__text">Broad awareness, new market entry, launching a product where "being seen" matters more than immediate response.</div>
-      </div>
-      <div class="highlight-card">
-        <span class="highlight-card__icon">⚠️</span>
-        <div class="highlight-card__title">Watch out for</div>
-        <div class="highlight-card__text">CPM guarantees impressions, not attention. Your ad might load below the fold or in a spot users scroll past. Pair CPM with viewability metrics if the platform allows it.</div>
-      </div>
-    </div>
-    
-    <h4>2. CPD (Cost Per Day) — Pay per day for a fixed ad slot</h4>
-    
-    <p>
+<div class="highlights-grid">
+<div class="highlight-card">
+<span class="highlight-card__icon">📈</span>
+<div class="highlight-card__title">How it works</div>
+<div class="highlight-card__text">You pay a fixed rate per 1,000 impressions. If the CPM is ¥30 and you buy 100 CPM (= 100,000 impressions), your cost is ¥3,000.</div>
+</div>
+<div class="highlight-card">
+<span class="highlight-card__icon">⏱️</span>
+<div class="highlight-card__title">Delivery pattern</div>
+<div class="highlight-card__text">Once you place the order, the platform locks in your impression volume. You might get all 100 CPM in one hour, or across a full day — the platform decides based on inventory.</div>
+</div>
+<div class="highlight-card">
+<span class="highlight-card__icon">✅</span>
+<div class="highlight-card__title">Best for</div>
+<div class="highlight-card__text">Broad awareness, new market entry, launching a product where "being seen" matters more than immediate response.</div>
+</div>
+<div class="highlight-card">
+<span class="highlight-card__icon">⚠️</span>
+<div class="highlight-card__title">Watch out for</div>
+<div class="highlight-card__text">CPM guarantees impressions, not attention. Your ad might load below the fold or in a spot users scroll past. Pair CPM with viewability metrics if the platform allows it.</div>
+</div>
+</div>
+<h4>2. CPD (Cost Per Day) — Pay per day for a fixed ad slot</h4>
+<p>
       CPDはシンプルです：デジタルハイウェイの看板を借りるようなものです。特定の広告枠に対して1日固定料金を支払い、表示回数や視聴者数は問われません。
     </p>
-    
-    <p>
+<p>
       主なユースケース：スプラッシュ広告（アプリ起動時に表示される広告）、ホームページバナー、「確約枠」購入。
     </p>
-    
-    <p>
+<p>
       トレードオフ：広告の表示位置は確約されますが、何人見るかは保証されません。「量ベース」ではなく「時間ベース」の購入です。
     </p>
-    
-    <h4>3. CPT (Cost Per Time) — Pay for a specific time window</h4>
-    
-    <p>
+<h4>3. CPT (Cost Per Time) — Pay for a specific time window</h4>
+<p>
       CPTはCPDをより細分化したものです。1日丸ごとではなく、特定の時間枠——例えば金曜の20時〜22時——を購入します。デジタル動画プラットフォームでのテレビ型広告に一般的——
     </p>
-    
-    <p>
+<p>
       なぜ重要か：ゴールデンタイムは高コストですが、より多くの人にリーチできます。オーディエンスが予測可能であれば（例：全員が同じライブ配信を見る）、CPTで一気に捕まえられます。
     </p>
-    
-    <h4>4. CPV (Cost Per View) — Pay for valid video views</h4>
-    
-    <p>
+<h4>4. CPV (Cost Per View) — Pay for valid video views</h4>
+<p>
       CPVは、ユーザーが動画広告を一定時間以上視聴した場合にのみ課金されます。「有効ビュー」の定義はプラットフォームによって異なります：
     </p>
-    
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Platform</th>
-            <th>Valid view definition</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>YouTube</td>
-            <td>≥ 30 seconds (or full video if shorter than 30s)</td>
-          </tr>
-          <tr>
-            <td>Douyin / Kuaishou / Bilibili</td>
-            <td>≥ 3–5 seconds</td>
-          </tr>
-          <tr>
-            <td>Long-form video (iQiyi, Tencent Video, etc.)</td>
-            <td>Pre-roll ad completed</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    
-    <p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Valid view definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>YouTube</td>
+<td>≥ 30 seconds (or full video if shorter than 30s)</td>
+</tr>
+<tr>
+<td>Douyin / Kuaishou / Bilibili</td>
+<td>≥ 3–5 seconds</td>
+</tr>
+<tr>
+<td>Long-form video (iQiyi, Tencent Video, etc.)</td>
+<td>Pre-roll ad completed</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>
       CPVがCPMより高額なのは、「質の高い注目」に対して支払っているからです——0.3秒でスキップされたかもしれない単なるインプレッションではありません。
     </p>
-    
-    <h4>5. CPCV (Cost Per Completed View) — Pay only when they watch it all</h4>
-    
-    <p>
+<h4>5. CPCV (Cost Per Completed View) — Pay only when they watch it all</h4>
+<p>
       CPCVはCPVの厳格な兄弟と考えてください。ユーザーが動画広告を最後まで視聴した場合にのみ課金されます。スキップ不可、部分的なカウントもなし。
     </p>
-    
-    <p>
+<p>
       使うべき場面：メッセージ全体が重要な高関与商材——自動車の新発売、金融サービスの解説、プレミアムスキンケアライン。広告が15秒なら、15秒すべてを伝えたいはず——
     </p>
-    
-    <div class="callout callout--tip">
-      <div class="callout__title">💡 Pro tip from our team</div>
-      <div class="callout__text">
+<div class="callout callout--tip">
+<div class="callout__title">💡 Pro tip from our team</div>
+<div class="callout__text">
         Brand campaigns often blend CPM (for reach) with CPV or CPCV (for key launch moments). Don't put all your brand budget into one billing model — match the model to the creative format and the campaign phase.
       </div>
-    </div>
-    
-    <h2>🚀 Performance Ads: You are paying for action</h2>
-    
-    <p>
+</div>
+<h2>🚀 Performance Ads: You are paying for action</h2>
+<p>
       パフォーマンス広告はロジックを逆転させます。眼球ではなく「成果」に対して支払います——クリック、ダウンロード、フォーム送信、購入。ユーザーがアクションを起こさなければ——
     </p>
-    
-    <p>
+<p>
       購入しているもの：クリック、コンバージョン、売上、リード。
     </p>
-    
-    <p>
+<p>
       測定方法：クリック率（CTR）、コンバージョン率（CVR）、獲得単価（CPA）、広告費用対効果（ROAS）。
     </p>
-    
-    <p>
+<p>
       典型的なシナリオ：ECプロモーション、アプリユーザー獲得、リードジェネレーション、ダイレクトレスポンスキャンペーン。
     </p>
-    
-    <p>
+<p>
       一言要約：パフォーマンス広告＝「人に行動してもらうためにお金を払う」。
     </p>
-    
-    <h3>Performance billing models that actually move the needle</h3>
-    
-    <h4>1. CPC (Cost Per Click) — Pay per click</h4>
-    
-    <p>
+<h3>Performance billing models that actually move the needle</h3>
+<h4>1. CPC (Cost Per Click) — Pay per click</h4>
+<p>
       CPCは文字通りの意味です：誰かが広告をクリックしたときにのみ課金されます。インプレッションは無料、クリックにコストが発生します。
     </p>
-    
-    <p>
-      <strong>The math:</strong> If your ad gets 10,000 impressions, a 2% CTR = 200 clicks. At ¥2 per click, your total cost is ¥400.
+<p>
+<strong>The math:</strong> If your ad gets 10,000 impressions, a 2% CTR = 200 clicks. At ¥2 per click, your total cost is ¥400.
     </p>
-    
-    <div class="callout callout--warning">
-      <div class="callout__title">⚠️ The CPC trap</div>
-      <div class="callout__text">
+<div class="callout callout--warning">
+<div class="callout__title">⚠️ The CPC trap</div>
+<div class="callout__text">
         CPC is dangerously easy to scale — which means it is also dangerously easy to burn budget. CPC campaigns optimize for <em>click likelihood</em>, not <em>conversion likelihood</em>. You might get 2,000 curious clicks that go nowhere while your actual customers (who are more deliberative) never see your ad.
-        <br><br>
+        <br/><br/>
         In the industry, we joke that a poorly managed CPC campaign can burn "a house in 30 minutes" — and we have seen it happen.
       </div>
-    </div>
-    
-    <p>
+</div>
+<p>
       CPCが最も効果的な場面：検索広告。「ランニングシューズ 通販」と検索する時点で、その検索自体が意図です。そのキーワードへのCPC入札は理にかなっています——クリックはすでに検索意図によって質が担保さ——
     </p>
-    
-    <h4>2. oCPC (Optimized Cost Per Click) — CPC with a brain</h4>
-    
-    <p>
+<h4>2. oCPC (Optimized Cost Per Click) — CPC with a brain</h4>
+<p>
       oCPCはCPCの課金構造（クリック課金）を維持しながら、プラットフォームのアルゴリズムが「クリックしそうなユーザー」ではなく「コンバージョンしそうなユーザー」に広告を積極的に誘導します。
     </p>
-    
-    <p>
+<p>
       違い：CPCでは「誰が最もクリックしそうか」で最適化されます。oCPCでは、重視するコンバージョン（購入、フォーム送信、アプリインストール）をシステムに伝えると、それに応じて——
     </p>
-    
-    <p>
-      <strong>Result:</strong> Your cost per click might be higher, but your cost per <em>conversion</em> is usually lower.
+<p>
+<strong>Result:</strong> Your cost per click might be higher, but your cost per <em>conversion</em> is usually lower.
     </p>
-    
-    <h4>3. CPA (Cost Per Action) — Pay only for the conversion</h4>
-    
-    <p>
+<h4>3. CPA (Cost Per Action) — Pay only for the conversion</h4>
+<p>
       CPC is the holy grail for many advertisers: you only pay when a user completes a specific action you defined in advance — an app install, a form submission, an account registration, or a purchase.
     </p>
-    
-    <div class="callout callout--tip">
-      <div class="callout__title">✅ Why advertisers love CPA</div>
-      <div class="callout__text">
+<div class="callout callout--tip">
+<div class="callout__title">✅ Why advertisers love CPA</div>
+<div class="callout__text">
         "No result, no pay" — at least on paper. You tie ad spend directly to business outcomes. It is the closest thing to performance-based pricing in digital advertising.
       </div>
-    </div>
-    
-    <p>
+</div>
+<p>
       落とし穴：CPAキャンペーンは拡大が難しいことで知られています。プラットフォームが効果的に最適化するには十分なコンバージョンデータが必要です。過去データがゼロの新規広告主では、CPA入札は苦戦——
     </p>
-    
-    <p>
+<p>
       当社の経験則：プラットフォーム上で週に最低20–30件のコンバージョンが発生していない限り、CPAから始めるべきではありません。それ以下ではアルゴリズムに十分なシグナルがありません。
     </p>
-    
-    <h4>4. CPS (Cost Per Sale) — Pay a commission on actual sales</h4>
-    
-    <p>
+<h4>4. CPS (Cost Per Sale) — Pay a commission on actual sales</h4>
+<p>
       CPSはCPAをさらに一歩進めます：売上が発生したときにのみ支払い、通常は固定額ではなく売上の一定割合（コミッション）です。
     </p>
-    
-    <p>
+<p>
       CPSが光る場面：アフィリエイトマーケティングとインフルエンサー販売。淘宝客、京東アフィリエイト、拼多多の多多進宝、抖音精選連盟、小紅書クリエイターマーケットプレイスなど——
     </p>
-    
-    <p>
-      <strong>The math:</strong> If your product sells for ¥1,000 and your CPS commission rate is 10%, you pay ¥100 per sale. If the affiliate drives 100 sales, your total ad cost is ¥10,000 — and you only pay because the sales actually happened.
+<p>
+<strong>The math:</strong> If your product sells for ¥1,000 and your CPS commission rate is 10%, you pay ¥100 per sale. If the affiliate drives 100 sales, your total ad cost is ¥10,000 — and you only pay because the sales actually happened.
     </p>
-    
-    <h4>5. oCPM (Optimized Cost Per Mille) — The industry's workhorse</h4>
-    
-    <p>
+<h4>5. oCPM (Optimized Cost Per Mille) — The industry's workhorse</h4>
+<p>
       oCPMは現在、主要広告プラットフォームで最も広く使われているパフォーマンス課金モデルです。CPMの課金構造（1,000インプレッション課金）と、コンバージョンしそうなユーザーをターゲットにするアルゴリズム最適化を組み合わせ——
     </p>
-    
-    <div class="callout callout--info">
-      <div class="callout__title">🧠 How oCPM actually works</div>
-      <div class="callout__text">
-        <strong>Step 1:</strong> You tell the platform your target conversion (e.g., "I want app installs").<br>
-        <strong>Step 2:</strong> The algorithm shows your ad to different users and tracks who converts.<br>
-        <strong>Step 3:</strong> Over time, the system learns which user profiles convert and bids more aggressively to show your ad to similar users.<br>
-        <strong>Step 4:</strong> You pay per impression (CPM), but the impressions you buy are increasingly "smart" impressions.
+<div class="callout callout--info">
+<div class="callout__title">🧠 How oCPM actually works</div>
+<div class="callout__text">
+<strong>Step 1:</strong> You tell the platform your target conversion (e.g., "I want app installs").<br/>
+<strong>Step 2:</strong> The algorithm shows your ad to different users and tracks who converts.<br/>
+<strong>Step 3:</strong> Over time, the system learns which user profiles convert and bids more aggressively to show your ad to similar users.<br/>
+<strong>Step 4:</strong> You pay per impression (CPM), but the impressions you buy are increasingly "smart" impressions.
       </div>
-    </div>
-    
-    <p>
+</div>
+<p>
       支配的な理由：oCPMはプラットフォームに最大の最適化自由度を与えます。予算、入札額、在庫をバランスさせ、可能な限り多くのコンバージョンを提供できます。広告主としては——
     </p>
-    
-    <h2>📊 Which model should you actually use?</h2>
-    
-    <p>
+<h2>📊 Which model should you actually use?</h2>
+<p>
       TMGがクライアントと共に使用している判断フレームワークはこちらです：
     </p>
-    
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Your primary goal</th>
-            <th>Recommended billing model</th>
-            <th>Why</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Build brand awareness in a new market</td>
-            <td>CPM</td>
-            <td>You need volume and reach. Efficiency comes later.</td>
-          </tr>
-          <tr>
-            <td>Launch a new product with a hero video</td>
-            <td>CPV or CPCV</td>
-            <td>You want guaranteed attention, not just impressions.</td>
-          </tr>
-          <tr>
-            <td>Capture high-intent search traffic</td>
-            <td>CPC</td>
-            <td>The search query itself qualifies the click.</td>
-          </tr>
-          <tr>
-            <td>Drive e-commerce sales at scale</td>
-            <td>oCPM</td>
-            <td>Best balance of volume and conversion efficiency.</td>
-          </tr>
-          <tr>
-            <td>Generate leads (form fills, consultations)</td>
-            <td>oCPC or CPA</td>
-            <td>You pay for the action, not the click.</td>
-          </tr>
-          <tr>
-            <td>Scale through influencers / affiliates</td>
-            <td>CPS</td>
-            <td>Only pay when revenue is generated.</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    
-    <h2>🎯 The TMG perspective: It is not just about the model</h2>
-    
-    <p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Your primary goal</th>
+<th>Recommended billing model</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Build brand awareness in a new market</td>
+<td>CPM</td>
+<td>You need volume and reach. Efficiency comes later.</td>
+</tr>
+<tr>
+<td>Launch a new product with a hero video</td>
+<td>CPV or CPCV</td>
+<td>You want guaranteed attention, not just impressions.</td>
+</tr>
+<tr>
+<td>Capture high-intent search traffic</td>
+<td>CPC</td>
+<td>The search query itself qualifies the click.</td>
+</tr>
+<tr>
+<td>Drive e-commerce sales at scale</td>
+<td>oCPM</td>
+<td>Best balance of volume and conversion efficiency.</td>
+</tr>
+<tr>
+<td>Generate leads (form fills, consultations)</td>
+<td>oCPC or CPA</td>
+<td>You pay for the action, not the click.</td>
+</tr>
+<tr>
+<td>Scale through influencers / affiliates</td>
+<td>CPS</td>
+<td>Only pay when revenue is generated.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2>🎯 The TMG perspective: It is not just about the model</h2>
+<p>
       私たちは中国主要プラットフォームすべて——Baidu、Douyin、WeChat、小紅書（RED）、Bilibili、Bing China——で7桁規模の広告予算を運用してきました。そこから得た知見は：
     </p>
-    
-    <p>
+<p>
       課金モデルはトラッキング設定の質に依存します。oCPMやCPAは理論上素晴らしいですが——コンバージョントラッキングが壊れていれば、アルゴリズムはゴミデータで最適化します。実際に——
     </p>
-    
-    <p>
+<p>
       ブランド課金とパフォーマンス課金を同じキャンペーンで混ぜないでください。このミスを常に目にします。「ブランド認知」キャンペーンを作りながら「より近代的だから」とoCPM（パフォーマンス課金モデル）を選んでしまう——
     </p>
-    
-    <p>
+<p>
       シンプルに始めて、複雑さは後から。プラットフォームが初めてなら、CPCかoCPMから始めましょう——最も理解しやすくトラブルシューティングも容易です。コンバージョンデータが流れ始めたら、CPAや——
     </p>
-    
-    <div class="callout callout--tip">
-      <div class="callout__title">💡 One more thing</div>
-      <div class="callout__text">
+<div class="callout callout--tip">
+<div class="callout__title">💡 One more thing</div>
+<div class="callout__text">
         Platforms love to push "smart bidding" (oCPM, oCPC) because it makes their algorithm look good. But you still need a human who understands your business to set the right conversion events, cap the right bids, and interpret the data. Automation is powerful — but it is not a strategy.
       </div>
-    </div>
-    
-    <h2>Ready to make your ad budget work harder?</h2>
-    
-    <p>
-      At <strong>Tuyue Media Gateway</strong>, we run paid media across Baidu, Douyin, WeChat, Xiaohongshu, Bilibili, and Bing China for international agencies and brands entering the Chinese market. We do not just "set up campaigns" — we architect billing models, tracking setups, and creative strategies that actually match your business goals.
+</div>
+<h2>Ready to make your ad budget work harder?</h2>
+<p>
+      At <strong></strong>3,000万人以上の月間アクティブクリエイター
     </p>
-    
-    <p>
+<p>
       中国で初めてブランドを立ち上げる場合でも、既存のパフォーマンス施策を拡大する場合でも、適切な課金モデルの選択、万全なトラッキング設定、成果指標の最適化をサポートします。
     </p>
-    
-    <p>
+<p>
       キャンペーン設定についてご相談がありますか？お問い合わせください——現在の設定をレビューし、目標と予算に合った課金モデル戦略をご提案します。
     </p>
-    
-  </article>
-  
-  <!-- Related Posts -->
-  <section class="related">
-    <div class="container">
-      <h2 class="related__title">Related Articles</h2>
-      <div class="related__grid">
-        
-        <a href="https://www.tuyuesouxin.cn/ja/blog/cpm-ocpm-ecpm-explained" class="related-card">
-          <div class="related-card__cat">Paid Media Strategy</div>
-          <h3 class="related-card__title">CPM, oCPM, eCPM: The Three Metrics Every Paid Media Buyer Gets Wrong</h3>
-          <p class="related-card__excerpt">CPMはあなたが支払う額。oCPMはあなたの入札方法。eCPMはシステムがあなたをランク付けする方法。これらを混同すると、間違った数字を最適化することになります。</p>
-        </a>
-        
-        <a href="https://www.tuyuesouxin.cn/ja/blog/geo-channel-weight-2026" class="related-card">
-          <div class="related-card__cat">GEO / AI Search</div>
-          <h3 class="related-card__title">GEO Channel Weight Update 2026: 2 Types Rising, 3 Downgraded by AI</h3>
-          <p class="related-card__excerpt">2026年4月の豆包、DeepSeek、Kimiでのテストでは、AIプラットフォームがチャネルウェイトを再編したことが示されました。コンプライアンス準拠の業界特化サイトと地方自治体メディアが上昇。</p>
-        </a>
-        
-        <a href="https://www.tuyuesouxin.cn/ja/services/baidu/" class="related-card">
-          <div class="related-card__cat">Baidu SEM</div>
-          <h3 class="related-card__title">Baidu SEM Services</h3>
-          <p class="related-card__excerpt">国際ブランド向けにBaidu有料検索キャンペーンを管理——キーワード戦略からコンバージョントラッキング、ROI最適化まで。</p>
-        </a>
-        
-      </div>
-    </div>
-  </section>
-  
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div class="footer__section">
-          <h4 class="footer__title">About TMG</h4>
-          <p class="footer__description">
-            Your single point of access to China's $100B digital advertising market. We help international agencies navigate Chinese platforms with ease.
+</article>
+<!-- Related Posts -->
+<section class="related">
+<div class="container">
+<h2 class="related__title">基礎——GoogleやMeta広告で見られるものと同様——1,000インプレッションあたりの固定コストを支払います。</h2>
+<div class="related__grid">
+<a class="related-card" href="https://www.tuyuesouxin.cn/ja/blog/cpm-ocpm-ecpm-explained">
+<div class="related-card__cat">Paid Media Strategy</div>
+<h3 class="related-card__title">oCPM（最適化CPM）は、プラットフォームがAIを使用して広告結果を継続的に監視し、パフォーマンスシグナルに基づいてリアルタイムで入札を調整します。</h3>
+<p class="related-card__excerpt">CPMはあなたが支払う額。oCPMはあなたの入札方法。eCPMはシステムがあなたをランク付けする方法。これらを混同すると、間違った数字を最適化することになります。</p>
+</a>
+<a class="related-card" href="https://www.tuyuesouxin.cn/ja/blog/geo-channel-weight-2026">
+<div class="related-card__cat">GEO / AI Search</div>
+<h3 class="related-card__title">GEOチャネルウェイト2026：AI検索がコンテンツソースをどう評価しているか</h3>
+<p class="related-card__excerpt">2026年4月の豆包、DeepSeek、Kimiでのテストでは、AIプラットフォームがチャネルウェイトを再編したことが示されました。コンプライアンス準拠の業界特化サイトと地方自治体メディアが上昇。</p>
+</a>
+<a class="related-card" href="https://www.tuyuesouxin.cn/ja/services/baidu/">
+<div class="related-card__cat">Baidu SEM</div>
+<h3 class="related-card__title">Baidu SEM Services</h3>
+<p class="related-card__excerpt">国際ブランド向けにBaidu有料検索キャンペーンを管理——キーワード戦略からコンバージョントラッキング、ROI最適化まで。</p>
+</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="footer__grid">
+<div class="footer__section">
+<h4 class="footer__title">プラットフォームの平均注文金額は特に美容、スキンケア、ライフスタイルカテゴリで他のソーシャルプラットフォームを上回っています。</h4>
+<p class="footer__description">
+            収益への直接リンクなしでも、XHSは中国の女性消費者間のブランド認知構築に不可欠
           </p>
-        </div>
-        <div class="footer__section">
-          <h4 class="footer__title">Quick Links</h4>
-          <ul class="footer__links">
-            <li><a href="https://www.tuyuesouxin.cn/ja/services/" class="footer__link">Services</a></li>
-            <li><a href="https://www.tuyuesouxin.cn/ja/pricing/" class="footer__link">Pricing</a></li>
-            <li><a href="https://www.tuyuesouxin.cn/ja/about/" class="footer__link">About Us</a></li>
-            <li><a href="https://www.tuyuesouxin.cn/ja/client-stories" class="footer__link">Client Stories</a></li>
-            <li><a href="https://www.tuyuesouxin.cn/ja/faqs" class="footer__link">FAQ</a></li>
-          </ul>
-        </div>
-        <div class="footer__section">
-          <h4 class="footer__title">Contact</h4>
-          <ul class="footer__links">
-            <li>
-              <a href="mailto:tmg@tuyuesouxin.cn" class="footer__link footer__link--email">tmg@tuyuesouxin.cn</a>
-            </li>
-            <li>
-              <a href="#contactQR" class="footer__link">
-                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: text-bottom; margin-right: 4px;">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                </svg>
-                WhatsApp (Click to scan)
+</div>
+<div class="footer__section">
+<h4 class="footer__title">ユーザーの73%は購入前に毎月積極的に検索しており、プラットフォームの検索駆動型の性質を示しています。</h4>
+<ul class="footer__links">
+<li><a class="footer__link" href="https://www.tuyuesouxin.cn/ja/services/"></a></li>
+<li><a class="footer__link" href="https://www.tuyuesouxin.cn/ja/pricing/"></a></li>
+<li><a class="footer__link" href="https://www.tuyuesouxin.cn/ja/about/"></a></li>
+<li><a class="footer__link" href="https://www.tuyuesouxin.cn/ja/client-stories">Ocean Engineアカウント設定と広告フォーマットガイド。</a></li>
+<li><a class="footer__link" href="https://www.tuyuesouxin.cn/ja/faqs">FAQ</a></li>
+</ul>
+</div>
+<div class="footer__section">
+<h4 class="footer__title">小紅書の検索機能はますます洗練されており、長文クエリが前年比52%成長し、深い消費者リサーチ行動を示しています。</h4>
+<ul class="footer__links">
+<li>
+<a class="footer__link footer__link--email" href="mailto:tmg@tuyuesouxin.cn">中国の1,000億ドル規模デジタル広告市場への単一アクセスポイント。国際エージェンシーが中国プラットフォームを簡単にナビゲートできるよう支援します。</a>
+</li>
+<li>
+<a class="footer__link" href="#contactQR">
+<svg aria-hidden="true" fill="currentColor" height="16" style="vertical-align: text-bottom; margin-right: 4px;" viewbox="0 0 24 24" width="16">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+</svg>
+                © 2026 Tuyue Media Gateway. 無断転載を禁じます。
               </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__section">
-          <h4 class="footer__title">Legal</h4>
-          <ul class="footer__links">
-            <li class="footer__license">Business License Number: 91310114MADKG4UF0G</li>
-            <li class="footer__company-short">Tuyue Media Gateway</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p class="footer__copyright">© 2026 Tuyue Media Gateway. All rights reserved.</p>
-        <div class="footer__platforms">
-          <a href="https://ad.weixin.qq.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">WeChat</a>
-          <a href="https://www.oceanengine.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Douyin</a>
-          <a href="https://e.baidu.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Baidu</a>
-          <a href="https://www.xiaohongshu.com/brand" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Xiaohongshu</a>
-          <a href="https://member.bilibili.com/platform/ad" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bilibili</a>
-          <a href="https://ads.microsoft.com/zh-cn" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bing China</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  
-  <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
+</li>
+</ul>
+</div>
+<div class="footer__section">
+<h4 class="footer__title">プラットフォームは3,000万人以上のクリエイターをホストしており、ほとんどが本物の体験を共有するマイクロインフルエンサーです。</h4>
+<ul class="footer__links">
+<li class="footer__license"></li>
+<li class="footer__company-short"></li>
+</ul>
+</div>
+</div>
+<div class="footer__bottom">
+<p class="footer__copyright">XHSは中国女性消費者のゲートウェイとして機能し、多くのブランドのファネルトップの役割を果たす</p>
+<div class="footer__platforms">
+<a class="footer__platform-badge" href="https://ad.weixin.qq.com" rel="nofollow noopener noreferrer" target="_blank"></a>
+<a class="footer__platform-badge" href="https://www.oceanengine.com" rel="nofollow noopener noreferrer" target="_blank"></a>
+<a class="footer__platform-badge" href="https://e.baidu.com" rel="nofollow noopener noreferrer" target="_blank"></a>
+<a class="footer__platform-badge" href="https://www.xiaohongshu.com/brand" rel="nofollow noopener noreferrer" target="_blank"></a>
+<a class="footer__platform-badge" href="https://member.bilibili.com/platform/ad" rel="nofollow noopener noreferrer" target="_blank">
+
+## 🇰🇷 ocean-engine-overview.html — 한국어</a>
+<a class="footer__platform-badge" href="https://ads.microsoft.com/zh-cn" rel="nofollow noopener noreferrer" target="_blank"></a>
+</div>
+</div>
+</div>
+</footer>
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
@@ -1052,8 +965,7 @@
   "keywords": "ad, billing, models, explained"
 }
   </script>
-  
-  <script>
+<script>
     // ── Mobile nav toggle ──
     const navToggle = document.getElementById('navToggle');
     const mainNav = document.getElementById('mainNav');
@@ -1086,6 +998,5 @@
     // ── Reveal animation on scroll (disabled: content always visible) ──
     // Reveal animation removed - user prefers content always visible
   </script>
-  
 </body>
 </html>
