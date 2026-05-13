@@ -1620,7 +1620,7 @@ Douyin / Ocean Engine FAQ
             </div>
 </details>
 </div>
-<!-- Platform & Tools -->
+<!-- プラットフォーム & ツール -->
 <div class="faq-category" data-cat="platform">
 <div class="faq-cat-header">
 <div class="faq-cat-icon" style="background:rgba(201,168,76,.15)">
@@ -1978,7 +1978,7 @@ GEOの基礎
             </div>
 </details>
 </div>
-<!-- 料金 & Budget -->
+<!-- 料金 & 予算 -->
 <div class="faq-category" data-cat="geo-pricing">
 <div class="faq-cat-header">
 <div class="faq-cat-icon" style="background:rgba(139,92,246,.15)">
@@ -2025,7 +2025,7 @@ GEOの基礎
             </div>
 </details>
 </div>
-<!-- Service & Delivery -->
+<!-- サービス & 配信 -->
 <div class="faq-category" data-cat="geo-delivery">
 <div class="faq-cat-header">
 <div class="faq-cat-icon" style="background:rgba(139,92,246,.15)">
@@ -2449,12 +2449,12 @@ GEO vs SEOと戦略
             nav.classList.remove('active');
           });
         });
-        nav.querySelectorAll('.header__dropdown').forEach(function (dropdown) {
+        nav.querySelectorすべて('.header__dropdown').forEach(function (dropdown) {
           var trigger = dropdown.querySelector('.header__dropdown-trigger');
           if (trigger) {
             trigger.addEventListener('click', function (e) {
               e.preventDefault();
-              nav.querySelectorAll('.header__dropdown').forEach(function (d) {
+              nav.querySelectorすべて('.header__dropdown').forEach(function (d) {
                 if (d !== dropdown) d.classList.remove('open');
               });
               dropdown.classList.toggle('open');
@@ -2463,7 +2463,7 @@ GEO vs SEOと戦略
         });
         document.addEventListener('click', function (e) {
           if (!nav.contains(e.target)) {
-            nav.querySelectorAll('.header__dropdown').forEach(function (d) {
+            nav.querySelectorすべて('.header__dropdown').forEach(function (d) {
               d.classList.remove('open');
             });
           }
@@ -2530,8 +2530,8 @@ GEO vs SEOと戦略
   </footer>
 <script>
     // Platform tab switching
-    const tabs = document.querySelectorAll('.tab');
-    const platforms = document.querySelectorAll('.faq-platform');
+    const tabs = document.querySelectorすべて('.tab');
+    const platforms = document.querySelectorすべて('.faq-platform');
     const filterTabs = document.getElementById('filterTabs');
 
     const categories = ['account', 'fees', 'billing', 'compliance'];
