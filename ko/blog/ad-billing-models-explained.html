@@ -24,9 +24,6 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tuyue Media Gateway","alternateName":"TMG","url":"https://www.tuyuesouxin.cn/","description":"Digital advertising agency","email":"tmg@tuyuesouxin.cn","address":{"@type":"PostalAddress","streetAddress":"599-2F202 Wanzhen Road","addressLocality":"Shanghai","addressRegion":"Shanghai","postalCode":"201824","addressCountry":"CN"},"sameAs":[]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Tuyue Media Gateway","url":"https://www.tuyuesouxin.cn/"}</script>
-
 <style>
     :root {
       --color-bg: #080c14;
@@ -490,7 +487,6 @@
       border-color: var(--color-accent);
       transform: translateY(-2px);
   </style>
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
 </head>
 <body>
 <!-- Header -->
@@ -939,4 +935,39 @@
 </div>
 </footer>
 <!-- JSON-LD Structured Data -->
-</body></html>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tuyue Media Gateway","alternateName":"TMG","url":"https://www.tuyuesouxin.cn/","description":"국제 에이전시를 위한 중국 디지털 광고 통합 인터페이스. 하나의 연결로 모든 플랫폼 대응.","email":"tmg@tuyuesouxin.cn","address":{"@type":"PostalAddress","streetAddress":"599-2F202 Wanzhen Road","addressLocality":"Shanghai","addressRegion":"Shanghai","postalCode":"201824","addressCountry":"CN"},"sameAs":[]}</script>
+<script>
+    // ── Mobile nav toggle ──
+    const navToggle = document.getElementById('navToggle');
+    const mainNav = document.getElementById('mainNav');
+    
+    if (navToggle && mainNav) {
+      navToggle.addEventListener('click', () => {
+        navToggle.classList.toggle('active');
+        mainNav.classList.toggle('active');
+      });
+    }
+    
+    // ── Header border animation on scroll ──
+    const header = document.getElementById('header');
+    let lastScroll = 0;
+    
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      
+      if (header) {
+        if (currentScroll > 50) {
+          header.style.borderBottomColor = 'rgba(45, 107, 228, 0.3)';
+        } else {
+          header.style.borderBottomColor = 'var(--color-border)';
+        }
+      }
+      
+      lastScroll = currentScroll;
+    });
+    
+    // ── Reveal animation on scroll (disabled: content always visible) ──
+    // Reveal animation removed - user prefers content always visible
+  </script>
+</body>
+</html>
