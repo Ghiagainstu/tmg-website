@@ -281,6 +281,10 @@
       font-family: var(--font-family);
       transition: border-color var(--transition-fast);
     }
+    .form__select option {
+      background-color: var(--color-bg-card);
+      color: var(--color-text-primary);
+    }
     .form__input:focus,
     .form__textarea:focus,
     .form__select:focus {
@@ -861,6 +865,9 @@
       const form = document.getElementById('contactForm');
       const inputs = form.querySelectorAll('input[required], select[required], textarea[required]');
 
+      // Prevent browser native validation tooltips (shows in wrong language)
+      form.setAttribute('novalidate', '');
+
       // Validate on input blur
       inputs.forEach(input => {
         input.addEventListener('blur', () => {
@@ -880,10 +887,10 @@
 
         if (input.value.trim() === '') {
           isValid = false;
-          errorMsg = 'This field is required';
+          errorMsg = '필수 입력 항목입니다';
         } else if (input.type === 'email' && !isValidEmail(input.value)) {
           isValid = false;
-          errorMsg = 'Please enter a valid email address';
+          errorMsg = '유효한 이메일 주소를 입력해 주세요';
         }
 
         const formGroup = input.closest('.form__group');
@@ -952,12 +959,12 @@
             if (data.errors) {
               alert('Submission failed: ' + data.errors.map(e => e.message).join(', '));
             } else {
-              alert('There was an error submitting your form. Please email us directly at tmg@tuyuesouxin.cn');
+              alert('폼 제출 중 오류가 발생했습니다. 직접 이메일로 문의해 주세요: tmg@tuyuesouxin.cn');
             }
           }
         } catch (err) {
           // 🔌 Network error fallback
-          alert('Network error. Please email us directly at tmg@tuyuesouxin.cn');
+          alert('네트워크 오류가 발생했습니다. 직접 이메일로 문의해 주세요: tmg@tuyuesouxin.cn');
         } finally {
           submitBtn.disabled = false;
           submitBtn.textContent = originalText;

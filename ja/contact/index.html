@@ -280,6 +280,10 @@
       font-family: var(--font-family);
       transition: border-color var(--transition-fast);
     }
+    .form__select option {
+      background-color: var(--color-bg-card);
+      color: var(--color-text-primary);
+    }
     .form__input:focus,
     .form__textarea:focus,
     .form__select:focus {
@@ -862,6 +866,9 @@
       const form = document.getElementById('contactForm');
       const inputs = form.querySelectorAll('input[required], select[required], textarea[required]');
 
+      // Prevent browser native validation tooltips (shows in wrong language)
+      form.setAttribute('novalidate', '');
+
       // Validate on input blur
       inputs.forEach(input => {
         input.addEventListener('blur', () => {
@@ -881,10 +888,10 @@
 
         if (input.value.trim() === '') {
           isValid = false;
-          errorMsg = 'This field is required';
+          errorMsg = 'この項目は必須です';
         } else if (input.type === 'email' && !isValidEmail(input.value)) {
           isValid = false;
-          errorMsg = 'Please enter a valid email address';
+          errorMsg = '有効なメールアドレスを入力してください';
         }
 
         const formGroup = input.closest('.form__group');
@@ -953,12 +960,12 @@
             if (data.errors) {
               alert('Submission failed: ' + data.errors.map(e => e.message).join(', '));
             } else {
-              alert('There was an error submitting your form. Please email us directly at tmg@tuyuesouxin.cn');
+              alert('フォームの送信にエラーが発生しました。直接メールでお問い合わせください：tmg@tuyuesouxin.cn');
             }
           }
         } catch (err) {
           // 🔌 Network error fallback
-          alert('Network error. Please email us directly at tmg@tuyuesouxin.cn');
+          alert('ネットワークエラーが発生しました。直接メールでお問い合わせください：tmg@tuyuesouxin.cn');
         } finally {
           submitBtn.disabled = false;
           submitBtn.textContent = originalText;
