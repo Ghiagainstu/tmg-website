@@ -2158,7 +2158,7 @@ GEO vs SEOと戦略
 <div class="faq-cat-icon" style="background:rgba(0,128,157,.15)">
 <svg fill="none" stroke="#00809D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
 </div>
-<span class="faq-cat-title">User Demographics</span>
+<span class="faq-cat-title">ユーザー層</span>
 <span class="faq-cat-count">3件の質問</span>
 </div>
 <details class="faq-card">
@@ -2225,7 +2225,7 @@ GEO vs SEOと戦略
 <div class="faq-cat-icon" style="background:rgba(0,128,157,.15)">
 <svg fill="none" stitchlinejoin="round" stroke="#00809D" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
 </div>
-<span class="faq-cat-title">Advertising Opportunities</span>
+<span class="faq-cat-title">広告機会</span>
 <span class="faq-cat-count">2件の質問</span>
 </div>
 <details class="faq-card">
@@ -2443,7 +2443,7 @@ GEO vs SEOと戦略
           toggle.classList.toggle('active');
           nav.classList.toggle('active');
         });
-        nav.querySelectorAll('.header__nav-link').forEach(function (link) {
+        nav.querySelectorすべて('.header__nav-link').forEach(function (link) {
           link.addEventListener('click', function () {
             toggle.classList.remove('active');
             nav.classList.remove('active');
@@ -2552,18 +2552,18 @@ GEO vs SEOと戦略
     function buildFilterTabs(platform) {
       const cats = {
         'geo-basics': 'GEO Basics',
-        'geo-pricing': '料金 &amp; Budget',
-        'geo-delivery': 'Service &amp; Delivery',
+        'geo-pricing': '料金 & 予算',
+        'geo-delivery': 'サービス & 配信',
         'geo-vs-seo': 'GEO vs SEO &amp; Strategy',
-        'bing-demographics': 'User Demographics',
-        'bing-ads': 'Advertising Opportunities',
+        'bing-demographics': 'ユーザー層',
+        'bing-ads': '広告機会',
         account: 'アカウント・設定',
         fees: '料金・予算',
         billing: '請求・CPC',
         compliance: 'コンプライアンス・審査',
-        platform: 'Platform &amp; Tools'
+        platform: 'プラットフォーム & ツール'
       };
-      let html = '<button class="filter-tab active" data-cat="all">All</button>';
+      let html = '<button class="filter-tab active" data-cat="all">すべて</button>';
       for (const [k, v] of Object.entries(cats)) {
         html += '<button class="filter-tab" data-cat="' + k + '">' + v + '</button>';
       }
