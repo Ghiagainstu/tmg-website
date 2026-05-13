@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ad Billing Models Explained: CPM, CPC, CPA, oCPM and When to Use Each | Tuyue Media Gateway (TMG)</title>
   
@@ -24,8 +25,11 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tuyue Media Gateway","alternateName":"TMG","url":"https://www.tuyuesouxin.cn/","description":"Digital advertising agency","email":"tmg@tuyuesouxin.cn","address":{"@type":"PostalAddress","streetAddress":"599-2F202 Wanzhen Road","addressLocality":"Shanghai","addressRegion":"Shanghai","postalCode":"201824","addressCountry":"CN"},"sameAs":[]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Tuyue Media Gateway","url":"https://www.tuyuesouxin.cn/"}</script>
+
   <style>
     :root {
       --color-bg: #080c14;
@@ -490,6 +494,7 @@
       border-color: var(--color-accent);
       transform: translateY(-2px);
   </style>
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
 </head>
 <body>
   
@@ -1022,41 +1027,3 @@
   </footer>
   
   <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tuyue Media Gateway","alternateName":"TMG","url":"https://www.tuyuesouxin.cn/","description":"The unified media interface for international agencies entering China's digital advertising market. One connection, all platforms.","email":"tmg@tuyuesouxin.cn","address":{"@type":"PostalAddress","streetAddress":"599-2F202 Wanzhen Road","addressLocality":"Shanghai","addressRegion":"Shanghai","postalCode":"201824","addressCountry":"CN"},"sameAs":[]}</script>
-  
-  <script>
-    // ── Mobile nav toggle ──
-    const navToggle = document.getElementById('navToggle');
-    const mainNav = document.getElementById('mainNav');
-    
-    if (navToggle && mainNav) {
-      navToggle.addEventListener('click', () => {
-        navToggle.classList.toggle('active');
-        mainNav.classList.toggle('active');
-      });
-    }
-    
-    // ── Header border animation on scroll ──
-    const header = document.getElementById('header');
-    let lastScroll = 0;
-    
-    window.addEventListener('scroll', () => {
-      const currentScroll = window.pageYOffset;
-      
-      if (header) {
-        if (currentScroll > 50) {
-          header.style.borderBottomColor = 'rgba(45, 107, 228, 0.3)';
-        } else {
-          header.style.borderBottomColor = 'var(--color-border)';
-        }
-      }
-      
-      lastScroll = currentScroll;
-    });
-    
-    // ── Reveal animation on scroll (disabled: content always visible) ──
-    // Reveal animation removed - user prefers content always visible
-  </script>
-  
-</body>
-</html>

@@ -72,7 +72,7 @@ def get_json_ld_blocks(lang='en', is_homepage=False):
                 "closes": "18:00"
             },
             "priceRange": "$100-$10000"
-        }, separators=(',': ''), ensure_ascii=False)
+        }, separators=(',', ':'), ensure_ascii=False)
         blocks.append(('AdvertisingAgency', agency))
     
     return blocks
