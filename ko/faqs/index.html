@@ -2568,7 +2568,7 @@
         html += '<button class="filter-tab" data-cat="' + k + '">' + v + '</button>';
       }
       filterTabs.innerHTML = html;
-      filterTabs.querySelectorAll('.filter-tab').forEach(btn => {
+      filterTabs.querySelector전체('.filter-tab').forEach(btn => {
         btn.addEventListener('click', () => {
           document.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
           btn.classList.add('active');

@@ -1,33 +1,27 @@
 <!DOCTYPE html>
-
 <html lang="ja">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Attribution Models in Paid Media: How to Pick the Right One | Tuyue Media Gateway (TMG)</title>
-  <link href="/ja/blog/attribution-models-guide/" hreflang="ja" rel="alternate"/>
-  <link href="https://www.tuyuesouxin.cn/blog/attribution-models-guide/" hreflang="en" rel="alternate"/>
-  <link href="https://www.tuyuesouxin.cn/blog/attribution-models-guide/" hreflang="x-default" rel="alternate"/>
-<!-- Favicon -->
-<link href="/favicon.ico" rel="icon" type="image/x-icon"/>
-<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="/assets/og-image.png" rel="apple-touch-icon"/>
-<meta content="Bilibili広告" name="description"/>
-<link href="/ja/blog/attribution-models-guide/" rel="canonical"/>
-<meta content="Attribution Models in Paid Media: The Hidden Lever Behind Campaign Success" property="og:title"/>
-<meta content="Last-click, first-click, data-driven—which attribution model fits your campaign? A practical guide for international brands advertising in China." property="og:description"/>
-<meta content="article" property="og:type"/>
-<meta content="/ja/blog/attribution-models-guide/" property="og:url"/>
-<meta content="https://www.tuyuesouxin.cn/assets/og-image.png" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="https://www.tuyuesouxin.cn/assets/twitter-card.png" name="twitter:image"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tuyue Media Gateway","alternateName":"TMG","url":"https://www.tuyuesouxin.cn/","description":"デジタル広告代理店","email":"tmg@tuyuesouxin.cn","address":{"@type":"PostalAddress","streetAddress":"599-2F202 Wanzhen Road","addressLocality":"Shanghai","addressRegion":"Shanghai","postalCode":"201824","addressCountry":"CN"},"sameAs":[]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Tuyue Media Gateway","url":"https://www.tuyuesouxin.cn/"}</script>
-
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attribution Models in Paid Media: How to Pick the Right One | Tuyue Media Gateway (TMG)</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/ja/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/ja/favicon.svg">
+  <link rel="apple-touch-icon" href="/ja/assets/og-image.png">
+<meta name="description" content="Confused by attribution models in China's paid media? We break down 7 models, platform differences, and how to choose the right one for your campaign goals.">
+  <link rel="canonical" href="/ja/blog/attribution-models-guide/">
+  <meta property="og:title" content="Attribution Models in Paid Media: The Hidden Lever Behind Campaign Success">
+  <meta property="og:description" content="Last-click, first-click, data-driven—which attribution model fits your campaign? A practical guide for international brands advertising in China.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.tuyuesouxin.cn/ja/blog/attribution-models-guide/">
+  <meta property="og:image" content="https://www.tuyuesouxin.cn/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.tuyuesouxin.cn/assets/twitter-card.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
     :root {
       --color-bg: #080c14;
       --color-bg-alt: #0d1220;
@@ -482,11 +476,12 @@
       margin: 0;
     }
     .footer__links li { margin-bottom: var(--space-3); }
-    .footer__link { text-decoration: none !important; 
+    .footer__link {
       color: var(--color-text-secondary);
       font-size: var(--font-size-sm);
       transition: color var(--transition-fast);
       display: inline-block;
+      text-decoration: none !important;
     }
     .footer__link:hover { color: var(--color-accent-light); transform: translateX(4px); }
     .footer__link--email { color: var(--color-primary); font-weight: 500; }
@@ -545,4 +540,535 @@
     }
     /* reveal--visible disabled */
   </style>
-</body></html>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tuyue Media Gateway","alternateName":"TMG","url":"https://www.tuyuesouxin.cn/","description":"The unified media interface for international agencies entering China's digital advertising market. One connection, all platforms.","email":"tmg@tuyuesouxin.cn","address":{"@type":"PostalAddress","streetAddress":"599-2F202 Wanzhen Road","addressLocality":"Shanghai","addressRegion":"Shanghai","postalCode":"201824","addressCountry":"CN"},"sameAs":[]}</script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="/ja/" class="header__logo">
+          <svg class="header__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#c9a84c"/>
+                <stop offset="100%" stop-color="#e8c87a"/>
+              </linearGradient>
+              <clipPath id="moonClip">
+                <circle cx="30" cy="24" r="16"/>
+              </clipPath>
+            </defs>
+            <circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/>
+            <circle cx="37" cy="20" r="13" fill="#080c14"/>
+            <text x="4" y="32" font-family="Inter, -apple-system, sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-0.8">TMG</text>
+          </svg>
+          <span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
+        </a>
+        <button class="header__toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="header__nav">
+          <div class="header__dropdown">
+            <a href="/ja/services/" class="header__nav-link header__dropdown-trigger">
+              Services
+              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="header__dropdown-menu">
+              <a href="/ja/services/" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">All Services</a>
+              <a href="/ja/services/wechat/" class="header__dropdown-item">WeChat Ads</a>
+              <a href="/ja/services/douyin/" class="header__dropdown-item">Douyin Ads</a>
+              <a href="/ja/services/baidu/" class="header__dropdown-item">Baidu SEM</a>
+              <a href="/ja/services/bing/" class="header__dropdown-item">Bing China</a>
+              <a href="/ja/services/xiaohongshu/" class="header__dropdown-item">Xiaohongshu</a>
+              <a href="/ja/services/bilibili/" class="header__dropdown-item">Bilibili Ads</a>
+              <a href="/ja/geo/" class="header__dropdown-item">China GEO</a>
+            </div>
+          </div>
+          <a href="/ja/pricing/" class="header__nav-link">Pricing</a>
+          <a href="/ja/client-stories/" class="header__nav-link">Client Stories</a>
+          <a href="/ja/geo/" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
+          <a href="/ja/blog/" class="header__nav-link">Blog</a>
+          <a href="/ja/faqs/" class="header__nav-link">FAQ</a>
+          <div class="header__dropdown">
+            <a href="/ja/about/" class="header__nav-link header__dropdown-trigger">
+              About
+              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="header__dropdown-menu">
+              <a href="/ja/why-tmg/" class="header__dropdown-item">Why TMG</a>
+              <a href="/ja/about/" class="header__dropdown-item">About Us</a>
+              <a href="/ja/contact/" class="header__dropdown-item">Contact</a>
+            </div>
+          </div>
+        </nav>
+        <div class="header__cta">
+          <a href="/ja/contact/" class="btn btn--primary">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Article Hero -->
+  <section class="article-hero">
+  <div class="container">
+    <div class="article-meta">
+      <span class="article-category">Paid Media Strategy</span>
+      <span class="article-date">May 4, 2026</span>
+      <span class="article-read-time">6 min read</span>
+    </div>
+    <h1 class="article-hero__title">
+      Attribution Models in Paid Media: <span>Why Your Campaign Data Might Be Lying to You</span>
+    </h1>
+    <p class="article-hero__intro">
+      You launch a campaign across Douyin, WeChat, and Baidu. A user sees your ad on Douyin, clicks a WeChat article later, then converts via Baidu search. Which platform gets the credit? The answer changes everything about how you optimize campaigns—and it's probably wrong.
+    </p>
+
+      <div class="article-hero__author">
+        <div class="article-hero__author-avatar">TMG</div>
+        <div class="article-hero__author-info">
+          <div class="article-hero__author-name">Tuyue Media Gateway</div>
+          <div class="article-hero__author-role">Paid Media Team · Shanghai</div>
+        </div>
+      </div>
+  </div>
+</section>
+<!-- Article Body -->
+<main class="article-body">
+  <div class="container">
+    <article class="article-content reveal">
+    <h2 id="why-it-matters">アトリビューションが重要な理由 📊</h2>
+
+    <p>I learned this the hard way. A few years back, I was managing a campaign for an international skincare brand entering China. We were running ads across Douyin, WeChat, and Baidu. The data looked great on Douyin—high conversion rates, low CPA. So I doubled down on Douyin and cut budgets on the other platforms.</p>
+
+    <p>Big mistake. 💥</p>
+
+    <p>Two weeks later, overall conversions dropped by 40%. What happened? Our attribution model was "last-click"—giving all the credit to the last ad the user clicked. But in reality, users were discovering the brand on Douyin, researching on WeChat, then finally converting via Baidu search. By cutting WeChat and Baidu, we killed the funnel that fed Douyin's conversions.</p>
+
+    <p>That's when I realized: <strong>attribution isn't just a data problem—it's a strategy problem</strong>. The model you choose determines which platforms get credit, which campaigns get budget, and ultimately, whether your strategy actually makes sense.</p>
+
+    <div class="callout callout--accent">
+      <div class="callout__label">🎯 Key Insight</div>
+      <p>Your attribution model shapes your reality. If you're measuring wrong, you're optimizing wrong.</p>
+    </div>
+
+    <h2 id="7-models">7つのアトリビューションモデル 🔍</h2>
+
+    <p>Here's the thing: there's no "right" attribution model. Each one tells a different story about your customer journey. The question is: which story helps you make better decisions?</p>
+
+    <p>Let me break down the 7 models I use when advising clients, and when each one makes sense.</p>
+
+    <h3 id="last-click">1. ラストクリック・アトリビューション</h3>
+
+    <p><strong>The logic:</strong> 100% credit goes to the last ad the user clicked before converting.</p>
+
+    <p><strong>When it works:</strong> Direct response campaigns with short customer journeys. If you're selling a low-consideration product (like a $10 snack) and most conversions happen within one session, last-click is simple and actionable.</p>
+
+    <p><strong>The problem:</strong> It completely ignores the "discovery" phase. In the skincare example above, Douyin got all the credit, but WeChat and Baidu did the heavy lifting of building trust and consideration.</p>
+
+    <div class="callout">
+      <div class="callout__label">💡 Pro Tip</div>
+      <p>If you're using last-click, you're probably overvaluing "harvesting" ads and undervaluing "planting" ads. Keep that in mind when allocating budget.</p>
+    </div>
+
+    <h3 id="first-click">2. ファーストクリック・アトリビューション</h3>
+
+    <p><strong>The logic:</strong> 100% credit goes to the first ad the user clicked.</p>
+
+    <p><strong>When it works:</strong> Brand awareness campaigns. If your goal is to understand which channels are best at introducing new customers to your brand, first-click tells you that.</p>
+
+    <p><strong>The problem:</strong> It ignores the rest of the journey. A user might click your ad, then ignore you for 3 weeks before converting via a different channel. First-click gives all the credit to that initial click, even if 5 other touchpoints influenced the decision.</p>
+
+    <h3 id="linear">3. リニア・アトリビューション</h3>
+
+    <p><strong>The logic:</strong> Credit is split equally across all touchpoints.</p>
+
+    <p><strong>When it works:</strong> When you want a "fair" view of the whole funnel, and you're not sure which touchpoints matter most. It's a good starting point if you're new to a market and don't have enough data for data-driven models yet.</p>
+
+    <p><strong>The problem:</strong> It dilutes the impact of critical touchpoints. If your data shows that 80% of conversions involve a Douyin ad in the awareness phase and a Baidu search in the conversion phase, linear attribution treats a random mid-funnel impression the same as those key moments.</p>
+
+    <h3 id="time-decay">4. タイムディケイ・アトリビューション</h3>
+
+    <p><strong>The logic:</strong> Touchpoints closer to the conversion get more credit. The exact formula varies, but typically it's exponential—a touchpoint 1 day before conversion gets much more credit than one 10 days before.</p>
+
+    <p><strong>When it works:</strong> Longer consideration cycles (like B2B, real estate, or high-ticket items). It acknowledges that awareness matters, but conversion is still driven by what happened recently.</p>
+
+    <p><strong>The problem:</strong> The "decay rate" is subjective. Platforms often use different formulas, so comparing attribution across platforms becomes tricky.</p>
+
+    <h3 id="position-based">5. ポジションベース（U字型）アトリビューション</h3>
+
+    <p><strong>The logic:</strong> 40% credit to first touchpoint, 40% to last, and the remaining 20% split across the middle.</p>
+
+    <p><strong>When it works:</strong> When you want to balance "discovery" and "conversion". This is my go-to model for most full-funnel campaigns because it acknowledges that both the first impression and the final click matter.</p>
+
+    <p><strong>The problem:</strong> The 40-20-40 split is arbitrary. For some brands, the first touchpoint might be 60% of the value; for others, it might be 20%. But most platforms don't let you customize the weights.</p>
+
+    <div class="callout callout--accent">
+      <div class="callout__label">🏆 My Recommendation</div>
+      <p>For most international brands entering China, start with position-based (40-20-40). It's a good balance of recognizing awareness and conversion. Then, as you gather data, move to data-driven attribution.</p>
+    </div>
+
+    <h3 id="data-driven">6. データドリブン・アトリビューション（DDA）</h3>
+
+    <p><strong>The logic:</strong> An algorithm analyzes your historical data and assigns credit based on each touchpoint's actual contribution to conversion.</p>
+
+    <p><strong>When it works:</strong> When you have enough conversion data (typically 1000+ conversions per month). DDA can uncover non-obvious patterns—maybe your WeChat ads aren't driving many last-clicks, but they're present in 80% of conversion paths. That's valuable insight.</p>
+
+    <p><strong>The problem:</strong> It's a black box. You don't know exactly how the algorithm is weighting touchpoints. Also, if your data is messy (duplicate conversions, incorrect tracking), DDA will give you wrong answers.</p>
+
+    <h3 id="custom">7. カスタム・アトリビューション</h3>
+
+    <p><strong>The logic:</strong> You define the rules. Maybe you want to give 50% credit to the first touchpoint, 30% to the last, and 20% to any touchpoint on Douyin (because you know Douyin drives engagement even if it doesn't get the last click).</p>
+
+    <p><strong>When it works:</strong> When you have a deep understanding of your customer journey and want to encode that into your attribution model.</p>
+
+    <p><strong>The problem:</strong> It requires ongoing maintenance. As your strategy changes, your custom rules might become outdated. Also, most self-serve platforms don't offer custom attribution—you'll need to use a third-party attribution tool.</p>
+
+    <h2 id="comparison">クイック比較表 📋</h2>
+
+    <p>Here's a side-by-side view to help you choose:</p>
+
+    <div class="table-wrapper" style="overflow-x:auto; margin: 2rem 0;">
+      <table style="width:100%; border-collapse: collapse; font-size:0.9rem;">
+        <thead>
+          <tr style="background: rgba(201,168,76,0.1); color: var(--color-accent); text-align:left;">
+            <th style="padding:12px 16px; border-bottom: 2px solid var(--color-accent);">Model</th>
+            <th style="padding:12px 16px; border-bottom: 2px solid var(--color-accent);">Best For</th>
+            <th style="padding:12px 16px; border-bottom: 2px solid var(--color-accent);">Pros</th>
+            <th style="padding:12px 16px; border-bottom: 2px solid var(--color-accent);">Cons</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid var(--color-border);">
+            <td style="padding:10px 16px; color:var(--color-text-primary); font-weight:500;">Last-Click</td>
+            <td style="padding:10px 16px;">Short customer journeys, low-consideration products</td>
+            <td style="padding:10px 16px;">Simple, actionable</td>
+            <td style="padding:10px 16px; color:var(--color-text-muted);">Ignores awareness</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--color-border); background:rgba(255,255,255,0.02);">
+            <td style="padding:10px 16px; color:var(--color-text-primary); font-weight:500;">First-Click</td>
+            <td style="padding:10px 16px;">Brand awareness campaigns</td>
+            <td style="padding:10px 16px;">Highlights discovery</td>
+            <td style="padding:10px 16px; color:var(--color-text-muted);">Ignores rest of journey</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--color-border);">
+            <td style="padding:10px 16px; color:var(--color-text-primary); font-weight:500;">Linear</td>
+            <td style="padding:10px 16px;">New to market, limited data</td>
+            <td style="padding:10px 16px;">Fair, full-funnel view</td>
+            <td style="padding:10px 16px; color:var(--color-text-muted);">Dilutes key touchpoints</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--color-border); background:rgba(255,255,255,0.02);">
+            <td style="padding:10px 16px; color:var(--color-text-primary); font-weight:500;">Time Decay</td>
+            <td style="padding:10px 16px;">Long consideration cycles</td>
+            <td style="padding:10px 16px;">Balances awareness & conversion</td>
+            <td style="padding:10px 16px; color:var(--color-text-muted);">Subjective decay rate</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--color-border);">
+            <td style="padding:10px 16px; color:var(--color-text-primary); font-weight:500;">Position-Based</td>
+            <td style="padding:10px 16px;">Full-funnel campaigns (RECOMMENDED)</td>
+            <td style="padding:10px 16px;">Balanced view</td>
+            <td style="padding:10px 16px; color:var(--color-text-muted);">Arbitrary weight split</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--color-border); background:rgba(255,255,255,0.02);">
+            <td style="padding:10px 16px; color:var(--color-text-primary); font-weight:500;">Data-Driven</td>
+            <td style="padding:10px 16px;">1000+ conversions/month</td>
+            <td style="padding:10px 16px;">Data-backed, adaptive</td>
+            <td style="padding:10px 16px; color:var(--color-text-muted);">Black box, needs clean data</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--color-border);">
+            <td style="padding:10px 16px; color:var(--color-text-primary); font-weight:500;">Custom</td>
+            <td style="padding:10px 16px;">Deep customer journey insights</td>
+            <td style="padding:10px 16px;">Tailored to your business</td>
+            <td style="padding:10px 16px; color:var(--color-text-muted);">High maintenance, needs 3rd-party tool</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="platform-differences">プラットフォームごとの違い 🌐</h2>
+
+    <p>Here's something that confuses a lot of advertisers: <strong>different platforms use different attribution models by default</strong>. And if you're comparing CPA across platforms, you're probably comparing apples to oranges.</p>
+
+    <p>Let me give you a practical example. On one platform, the default might be "last-click within 7 days". On another, it might be "last-click within 1 day". If you're comparing CPA between these two platforms, the second one will look much more efficient—but that's because it's not counting conversions that happened 2-7 days after the click.</p>
+
+    <div class="callout">
+      <div class="callout__label">⚠️ Watch Out</div>
+      <p>Always check the default attribution window (click-through window and view-through window) before comparing platform performance. A 7-day click window vs. a 1-day click window can make your CPA look 3x different.</p>
+    </div>
+
+    <p>Broadly speaking, here's what I see across the major China platforms:</p>
+
+    <ul>
+      <li><strong>Douyin (Ocean Engine):</strong> Offers multiple attribution options. The default is often "last-click", but you can switch to position-based or data-driven if you have enough data.</li>
+      <li><strong>WeChat Ads:</strong> Supports click attribution, view attribution, and data-driven attribution. The view-through window is particularly important for WeChat because Moments ads often drive awareness rather than immediate clicks.</li>
+      <li><strong>Baidu SEM:</strong> Traditionally last-click, but with their Smart Bidding products, they're moving toward data-driven attribution behind the scenes.</li>
+      <li><strong>Xiaohongshu (Little Red Book):</strong> Their attribution is still evolving. Currently, they tend to use a combination of last-click and time-decay, but it varies by ad product.</li>
+    </ul>
+
+    <p>The bottom line: <strong>don't trust platform-reported CPA at face value</strong>. Always triangulate with your own tracking (ideally a third-party attribution tool or at least Google Analytics / your own CRM data).</p>
+
+    <h2 id="how-to-choose">正しいモデルの選び方 🎯</h2>
+
+    <p>Okay, enough theory. Here's how I actually choose attribution models for the brands I work with:</p>
+
+    <h3>ステップ1：カスタマージャーニーを理解する</h3>
+
+    <p>Before picking a model, you need to know: how do your customers actually buy? For some brands, it's a 1-day journey (see ad → click → buy). For others, it's a 30-day journey (see ad → research → compare → buy).</p>
+
+    <p>If you don't know, use a neutral model (like linear) for the first 2-3 months while you gather data.</p>
+
+    <h3>ステップ2：キャンペーン目標にモデルを合わせる</h3>
+
+    <div class="table-wrapper" style="overflow-x:auto; margin: 2rem 0;">
+      <table style="width:100%; border-collapse: collapse; font-size:0.9rem;">
+        <thead>
+          <tr style="background: rgba(45,107,228,0.1); color: var(--color-primary); text-align:left;">
+            <th style="padding:12px 16px; border-bottom: 2px solid var(--color-primary);">Campaign Goal</th>
+            <th style="padding:12px 16px; border-bottom: 2px solid var(--color-primary);">Recommended Model</th>
+            <th style="padding:12px 16px; border-bottom: 2px solid var(--color-primary);">Why</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid var(--color-border);">
+            <td style="padding:10px 16px; color:var(--color-text-primary); font-weight:500;">Brand Awareness</td>
+            <td style="padding:10px 16px;">First-Click or Position-Based</td>
+            <td style="padding:10px 16px;">Recognizes the value of introducing new customers</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--color-border); background:rgba(255,255,255,0.02);">
+            <td style="padding:10px 16px; color:var(--color-text-primary); font-weight:500;">Lead Generation</td>
+            <td style="padding:10px 16px;">Last-Click or Position-Based</td>
+            <td style="padding:10px 16px;">Focuses on conversion; position-based also values awareness</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--color-border);">
+            <td style="padding:10px 16px; color:var(--color-text-primary); font-weight:500;">E-commerce (Short Cycle)</td>
+            <td style="padding:10px 16px;">Last-Click</td>
+            <td style="padding:10px 16px;">Simple, actionable for fast-moving consumer goods</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--color-border); background:rgba(255,255,255,0.02);">
+            <td style="padding:10px 16px; color:var(--color-text-primary); font-weight:500;">E-commerce (Long Cycle)</td>
+            <td style="padding:10px 16px;">Position-Based or Time Decay</td>
+            <td style="padding:10px 16px;">Acknowledges that awareness and consideration take time</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--color-border);">
+            <td style="padding:10px 16px; color:var(--color-text-primary); font-weight:500;">Mature Campaign (1000+ conv/month)</td>
+            <td style="padding:10px 16px;">Data-Driven</td>
+            <td style="padding:10px 16px;">Uses your own data to optimize attribution</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>ステップ3：テストと改善</h3>
+
+    <p>Attribution isn't "set it and forget it". Every 3-6 months, I revisit the model and ask:</p>
+
+    <ul>
+      <li>Are our best-performing campaigns getting the budget they deserve?</li>
+      <li>Are we under-investing in awareness because our model doesn't give it credit?</li>
+      <li>If we switched to a different model, which platforms would look better/worse?</li>
+    </ul>
+
+    <p>I also run "attribution sensitivity tests"—basically, I compare campaign performance under different attribution models to see how sensitive my decisions are to the model choice. If a campaign looks great under last-click but terrible under position-based, that's a red flag—it means the campaign is good at "closing" but not at "opening", which might hurt you long-term.</p>
+
+    <h2 id="common-mistakes">よくある間違い 🪣</h2>
+
+    <p>Let me save you some pain. Here are the most common attribution mistakes I see international brands make in China:</p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-card__num">1</div>
+        <div class="feature-card__title">Using Platform-Reported CPA Without Questioning It</div>
+        <div class="feature-card__desc">Platforms want to make themselves look good. Always triangulate with your own data. I've seen brands overspend on a platform by 3x because they trusted the platform's attribution.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__num">2</div>
+        <div class="feature-card__title">Switching Models Too Often</div>
+        <div class="feature-card__desc">If you change attribution models every month, you'll never have stable data to learn from. Pick a model, commit to it for at least 3-6 months, then evaluate.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__num">3</div>
+        <div class="feature-card__title">Ignoring View-Through Conversions</div>
+        <div class="feature-card__desc">Some platforms only count clicks. But what about that user who saw your ad, didn't click, but converted 3 days later? If you're ignoring view-through, you're undervaluing awareness.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__num">4</div>
+        <div class="feature-card__title">Not Setting Up Proper Tracking</div>
+        <div class="feature-card__desc">Data-driven attribution needs clean data. If your conversion tracking is broken (or you're double-counting conversions), DDA will give you garbage results. Fix your tracking first.</div>
+      </div>
+    </div>
+
+    <h2 id="conclusion">結論 💡</h2>
+
+    <p>Attribution is messy. There's no perfect model, and anyone who tells you otherwise is selling something.</p>
+
+    <p>But here's what I've learned from managing $10M+ in ad spend across China's platforms: <strong>the goal isn't to find the "right" model—it's to find a model that helps you make better decisions</strong>. And that means understanding the strengths and blind spots of whatever model you're using.</p>
+
+    <p>If you're running campaigns across multiple platforms in China, here's my advice:</p>
+
+    <ol>
+      <li><strong>Start with position-based (40-20-40).</strong> It's a reasonable default that balances awareness and conversion.</li>
+      <li><strong>Triangulate with your own data.</strong> Don't trust platform-reported numbers. Use a third-party attribution tool or at least your own CRM data.</li>
+      <li><strong>Revisit your model every 6 months.</strong> As your brand grows and your customer journey changes, your attribution model should evolve too.</li>
+      <li><strong>Run sensitivity tests.</strong> Compare performance under different models to understand how much your decisions depend on the model choice.</li>
+    </ol>
+
+    <hr style="border:none; border-top:1px solid var(--color-border); margin:2rem 0;">
+
+    <p style="font-size:1.1rem; line-height:1.8; color:var(--color-text-primary);">
+      <strong>Running paid media across Baidu, Douyin, WeChat, Xiaohongshu, Bilibili, and Bing China for international agencies and brands—we see these attribution challenges every day. If you're confused by conflicting data across platforms, or you suspect your attribution model is hiding the true performance of your campaigns, <a href="/ja/contact/" style="color:var(--color-accent);">let's talk</a>. We'll help you cut through the noise and build a measurement framework that actually makes sense for your business.
+    </strong></p>
+
+    <p style="margin-top:1.5rem; padding:1.5rem; background:rgba(201,168,76,0.08); border-left:3px solid var(--color-accent); border-radius:0 var(--radius-md) var(--radius-md) 0;">
+      <strong>Next Steps:</strong> Not sure which attribution model fits your campaign? Send us your campaign data, and we'll run an attribution audit—free for the first 10 brands that reach out this month. <a href="/ja/contact/" class="btn btn--primary" style="margin-left:1rem;">Get in Touch →</a>
+    </p>
+
+
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="article-sidebar">
+      <nav class="toc">
+        
+    <div class="toc__title">In This Article</div>
+    <ul class="toc__list">
+      <li><a class="toc__link" href="#why-it-matters">Why Attribution Matters</a></li>
+      <li><a class="toc__link" href="#7-models">The 7 Attribution Models</a></li>
+      <li><a class="toc__link" href="#comparison">Quick Comparison Table</a></li>
+      <li><a class="toc__link" href="#platform-differences">How Platforms Differ</a></li>
+      <li><a class="toc__link" href="#how-to-choose">How to Choose</a></li>
+      <li><a class="toc__link" href="#common-mistakes">Common Mistakes</a></li>
+      <li><a class="toc__link" href="#conclusion">The Bottom Line</a></li>
+    </ul>
+  
+      </nav>
+      <div class="sidebar-cta">
+        <p>Confused by attribution data across platforms? We audit your setup and build a measurement framework that makes sense.</p>
+        <a href="/ja/contact/" class="btn btn--primary">Talk to Us</a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+  <!-- Related Posts placeholder -->
+  <section class="related">
+    <div class="container">
+      <div class="related__title">More from the Blog</div>
+      <div class="related__grid">
+        <a href="/ja/blog/ad-billing-models-explained/" class="related-card">
+          <div class="related-card__cat">Paid Media Basics</div>
+          <div class="related-card__title">Ad Billing Models Explained</div>
+          <p class="related-card__desc">CPM, CPC, oCPC, CPA—which billing model fits your campaign? A practical guide for international brands.</p>
+        </a>
+        <a href="/ja/blog/smart-bidding-strategies-explained/" class="related-card">
+          <div class="related-card__cat">Campaign Optimization</div>
+          <div class="related-card__title">Smart Bidding Strategies</div>
+          <p class="related-card__desc">From oCPM to tROI—how to pick the right bid for every campaign objective.</p>
+        </a>
+        <a href="/ja/faqs#platform-douyin/" class="related-card">
+          <div class="related-card__cat">Douyin Ads</div>
+          <div class="related-card__title">Douyin Advertising FAQ</div>
+          <p class="related-card__desc">14 questions on account setup, budgets, ad formats, and attribution—answered by TMG.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__section">
+          <h4 class="footer__title">About TMG</h4>
+          <p class="footer__description">
+            Your single point of access to China's $100B digital advertising market. We help international agencies navigate Chinese platforms with ease.
+          </p>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="/ja/services/" class="footer__link">Services</a></li>
+            <li><a href="/ja/pricing/" class="footer__link">Pricing</a></li>
+            <li><a href="/ja/about/" class="footer__link">About Us</a></li>
+            <li><a href="/ja/client-stories/" class="footer__link">Client Stories</a></li>
+            <li><a href="/ja/faqs/" class="footer__link">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Contact</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="mailto:tmg@tuyuesouxin.cn" class="footer__link footer__link--email">tmg@tuyuesouxin.cn</a>
+            </li>
+            <li>
+              <a href="#contactQR" class="footer__link">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: text-bottom; margin-right: 4px;">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp (Click to scan)
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Legal</h4>
+          <ul class="footer__links">
+            <li class="footer__license">Business License Number: 91310114MADKG4UF0G</li>
+            <li class="footer__company-short">Tuyue Media Gateway</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Tuyue Media Gateway. All rights reserved.</p>
+        <div class="footer__platforms">
+          <a href="https://ad.weixin.qq.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">WeChat</a>
+          <a href="https://www.oceanengine.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Douyin</a>
+          <a href="https://e.baidu.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Baidu</a>
+          <a href="https://www.xiaohongshu.com/brand" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Xiaohongshu</a>
+          <a href="https://member.bilibili.com/platform/ad" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bilibili</a>
+          <a href="https://ads.microsoft.com/zh-cn" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bing China</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  // Mobile Menu & Dropdown Toggle
+  (function () {
+    var toggle = document.querySelector('.header__toggle');
+    var nav = document.querySelector('.header__nav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', function () {
+        toggle.classList.toggle('active');
+        nav.classList.toggle('active');
+      });
+    }
+    nav.querySelectorAll('.header__dropdown').forEach(function (dropdown) {
+      var trigger = dropdown.querySelector('.header__dropdown-trigger');
+      if (trigger) {
+        trigger.addEventListener('click', function (e) {
+          e.preventDefault();
+          nav.querySelectorAll('.header__dropdown').forEach(function (d) {
+            if (d !== dropdown) d.classList.remove('open');
+          });
+          dropdown.classList.toggle('open');
+        });
+      }
+    });
+    document.addEventListener('click', function (e) {
+      if (!nav.contains(e.target)) {
+        nav.querySelectorAll('.header__dropdown').forEach(function (d) {
+          d.classList.remove('open');
+        });
+      }
+    });
+  })();
+
+  // Scroll Reveal (disabled: content always visible)
+  (function () {
+    // Reveal animation removed - user prefers content always visible
+  })();
+  </script>
+</body>
+</html>
