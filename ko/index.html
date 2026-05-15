@@ -48,8 +48,8 @@
       --color-bg-alt: #0d1220;
       --color-bg-card: #111827;
       --color-text-primary: #f0f4ff;
-      --color-text-secondary: #a3b1cc;
-      --color-text-muted: #64748b;
+      --color-text-secondary: #b3c0d8;
+      --color-text-muted: #8899b5;
       --color-primary: #2d6be4;
       --color-primary-hover: #1e55c4;
       --color-primary-light: #5b8ef0;
@@ -2263,7 +2263,7 @@
           </svg>
           <span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
         </a>
-        <button class="header__toggle" aria-label="Toggle navigation">
+        <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
           <span></span>
           <span></span>
           <span></span>
@@ -2318,6 +2318,7 @@
       </div>
     </div>
   </header>
+<main id="main-content">
 
   <!-- Hero -->
   <section class="hero reveal">
@@ -2687,7 +2688,7 @@
             <a href="/ko/client-stories/farmskins/" class="case-study__client-link">
               <div class="case-study__client">
                   <div class="case-study__logo">
-                    <img src="https://www.tuyuesouxin.cn/assets/farmskins-logo.jpg" alt="Farmskins" class="case-study__logo-img">
+                    <img loading="lazy" src="https://www.tuyuesouxin.cn/assets/farmskins-logo.jpg" alt="Farmskins" class="case-study__logo-img">
                   </div>
                 <div class="case-study__client-info">
                   <h3 class="case-study__client-name">Farmskins</h3>
@@ -2855,7 +2856,7 @@
 
             <div class="contact__qr" id="contactQR" style="display: block;">
               <h3 class="contact__qr-title">WhatsApp에 추가하려면 스캔하세요</h3>
-              <img src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https://wa.me/8618930383550" alt="WhatsApp QR Code" class="contact__qr-image">
+              <img loading="lazy" src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https://wa.me/8618930383550" alt="WhatsApp QR Code" class="contact__qr-image">
             </div>
           </div>
 
@@ -2986,7 +2987,9 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  </main>
+
+<footer class="footer">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__section">
@@ -3038,6 +3041,7 @@
           <a href="https://www.xiaohongshu.com/brand" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">샤오홍슈(RED)</a>
           <a href="https://member.bilibili.com/platform/ad" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bilibili</a>
           <a href="https://ads.microsoft.com/zh-cn" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bing China</a>
+          <a href="/zh/" class="header__lang-item"><span class="header__lang-flag">🇨🇳</span>中文 (简体)</a>
         </div>
       </div>
     </div>

@@ -32,7 +32,7 @@
   <style>
     :root {
       --color-bg: #080c14; --color-bg-alt: #0d1220; --color-bg-card: #111827;
-      --color-text-primary: #f0f4ff; --color-text-secondary: #a3b1cc; --color-text-muted: #64748b;
+      --color-text-primary: #f0f4ff; --color-text-secondary: #b3c0d8; --color-text-muted: #8899b5;
       --color-primary: #2d6be4; --color-primary-hover: #1e55c4; --color-primary-light: #5b8ef0;
       --color-accent: #c9a84c; --color-accent-light: #e8c87a;
       --color-success: #22c55e; --color-error: #ef4444;
@@ -621,7 +621,7 @@
         <div class="header__cta">
           <a href="/ko/contact/" class="btn btn--primary">시작하기</a>
         </div>
-        <button class="header__toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
       </div>
     </div>
   </header>
@@ -685,7 +685,7 @@
                 <div class="contact__method-content">
                   <h4 id="contactQR">WhatsApp</h4>
                   <p>Scan to chat</p>
-                  <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://wa.me/8618930383550" alt="WhatsApp QR Code" style="border-radius: 8px; margin-top: 8px;">
+                  <img loading="lazy" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://wa.me/8618930383550" alt="WhatsApp QR Code" style="border-radius: 8px; margin-top: 8px;">
                 </div>
               </div>
             </div>
@@ -859,6 +859,7 @@
           <a href="https://www.xiaohongshu.com/brand" target="_blank" rel="noopener noreferrer" class="footer__platform-badge">샤오홍슈(RED)</a>
           <a href="https://member.bilibili.com/platform/ad" target="_blank" rel="noopener noreferrer" class="footer__platform-badge">Bilibili</a>
                   <a href="https://ads.microsoft.com/zh-cn" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bing China</a>
+          <a href="/zh/" class="header__lang-item"><span class="header__lang-flag">🇨🇳</span>中文 (简体)</a>
         </div>
       </div>
     </div>
