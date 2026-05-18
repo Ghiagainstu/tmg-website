@@ -220,7 +220,78 @@
 
 
 
-</style>
+
+    /* ── Language Switcher Dropdown ── */
+    .header__lang-wrap {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      margin-left: 8px;
+    }
+    .header__lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 10px;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--c-accent, #c9a84c);
+      background: transparent;
+      border: 1px solid var(--c-accent, #c9a84c);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background .15s;
+      line-height: 1.4;
+    }
+    .header__lang-btn:hover { background: rgba(201,168,76,.1); }
+    .header__lang-btn svg { transition: transform .15s; }
+    .header__lang-wrap:hover .header__lang-btn svg,
+    .header__lang-wrap.active .header__lang-btn svg { transform: rotate(180deg); }
+    .header__lang-menu {
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      min-width: 140px;
+      background: #111827;
+      border: 1px solid #1e2d45;
+      border-radius: 8px;
+      padding: 4px;
+      display: none;
+      opacity: 0;
+      box-shadow: 0 4px 20px rgba(0,0,0,.4);
+      z-index: 300;
+    }
+    .header__lang-wrap:hover .header__lang-menu,
+    .header__lang-wrap.active .header__lang-menu {
+      display: flex;
+      flex-direction: column;
+      opacity: 1;
+    }
+    .header__lang-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 10px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #a3b1cc;
+      text-decoration: none !important;
+      border-radius: 5px;
+      transition: background .15s, color .15s;
+      white-space: nowrap;
+    }
+    .header__lang-item:hover {
+      background: rgba(201,168,76,.1);
+      color: #e8c87a;
+      text-decoration: none !important;
+    }
+    .header__lang-item--cur {
+      color: #e8c87a;
+      background: rgba(201,168,76,.08);
+    }
+    .header__lang-flag { font-size: 15px; line-height: 1; }
+    </style>
 </head>
 <body>
   <header class="header"><div class="container"><div class="header__inner"><a href="/" class="header__logo"><svg class="header__logo-icon" viewBox="0 0 48 48" fill="none"><defs><linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#c9a84c"/><stop offset="100%" stop-color="#e8c87a"/></linearGradient></defs><circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/><circle cx="37" cy="20" r="13" fill="#080c14"/><text x="4" y="32" font-family="Inter,sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-.8">TMG</text></svg><span class="header__logo-text">Tuyue Media <span>Gateway</span></span></a><nav class="header__nav"><div class="header__dropdown"><a href="/services/" class="header__nav-link header__dropdown-trigger active">Services <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a><div class="header__dropdown-menu"><a href="/services/" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">All Services</a><a href="/services/wechat/" class="header__dropdown-item">WeChat Ads</a><a href="/services/douyin/" class="header__dropdown-item">Douyin Ads</a><a href="/services/baidu/" class="header__dropdown-item header__dropdown-item--active">Baidu SEM</a><a href="/services/bing/" class="header__dropdown-item">Bing China</a><a href="/services/xiaohongshu/" class="header__dropdown-item">Xiaohongshu</a><a href="/services/bilibili/" class="header__dropdown-item">Bilibili Ads</a><a href="/geo/" class="header__dropdown-item">China GEO</a></div></div><a href="/pricing/" class="header__nav-link">Pricing</a><a href="/client-stories/" class="header__nav-link">Client Stories</a><a href="/geo/" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a><a href="/blog/" class="header__nav-link">Blog</a><a href="/faqs/" class="header__nav-link">FAQ</a><div class="header__dropdown"><a href="/about/" class="header__nav-link header__dropdown-trigger">About <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a><div class="header__dropdown-menu"><a href="/why-tmg/" class="header__dropdown-item">Why TMG</a><a href="/about/" class="header__dropdown-item">About Us</a><a href="/contact/" class="header__dropdown-item">Contact</a></div></div></nav>
