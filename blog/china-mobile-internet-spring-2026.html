@@ -528,6 +528,19 @@
       transition: none;
     }
     /* reveal--visible disabled */
+  
+    .header__lang-wrap { position: relative; display: inline-flex; align-items: center; margin-left: 8px; }
+    .header__lang-btn { display: inline-flex; align-items: center; gap: 4px; padding: 6px 10px; background: transparent; border: 1px solid var(--color-border); border-radius: 6px; color: var(--color-text-primary); font-size: 12px; font-weight: 500; cursor: pointer; transition: all 150ms ease; }
+    .header__lang-btn:hover { border-color: var(--color-accent); color: var(--color-accent); }
+    .header__lang-btn svg { transition: transform .15s; }
+    .header__lang-wrap:hover .header__lang-btn svg,
+    .header__lang-wrap.active .header__lang-btn svg { transform: rotate(180deg); }
+    .header__lang-menu { position: absolute; top: calc(100% + 4px); right: 0; background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 8px; padding: 4px; min-width: 140px; display: none; flex-direction: column; box-shadow: 0 4px 16px rgba(0,0,0,0.4); z-index: 100; }
+    .header__lang-wrap:hover .header__lang-menu,
+    .header__lang-wrap.active .header__lang-menu { display: flex; }
+    .header__lang-item { display: flex; align-items: center; gap: 6px; padding: 6px 10px; border-radius: 4px; color: var(--color-text-secondary); font-size: 12px; font-weight: 500; text-decoration: none !important; transition: all 150ms ease; }
+    .header__lang-item:hover { background: rgba(201,168,76,0.1); color: var(--color-accent); }
+    .header__lang-flag { font-size: 14px; line-height: 1; }
   </style>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tuyue Media Gateway","alternateName":"TMG","url":"https://www.tuyuesouxin.cn/","description":"The unified media interface for international agencies entering China's digital advertising market. One connection, all platforms.","email":"tmg@tuyuesouxin.cn","address":{"@type":"PostalAddress","streetAddress":"599-2F202 Wanzhen Road","addressLocality":"Shanghai","addressRegion":"Shanghai","postalCode":"201824","addressCountry":"CN"},"sameAs":[]}</script>
 </head>
@@ -593,7 +606,17 @@
             </div>
           </div>
         </nav>
-        <div class="header__cta">
+        <div class="header__lang-wrap">
+          <button class="header__lang-btn" onclick="this.parentElement.classList.toggle('active')">
+            <span class="header__lang-flag">🇺🇸</span>English
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 3.5l3 4 3-4"/></svg>
+          </button>
+          <div class="header__lang-menu">
+            <a href="/ja/blog/" class="header__lang-item"><span class="header__lang-flag">🇯🇵</span>日本語</a>
+            <a href="/ko/blog/" class="header__lang-item"><span class="header__lang-flag">🇰🇷</span>한국어</a>
+          </div>
+        </div>
+<div class="header__cta">
           <a href="/contact/" class="btn btn--primary">Get Started</a>
         </div>
       </div>
