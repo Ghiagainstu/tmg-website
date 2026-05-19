@@ -622,75 +622,84 @@
 </head>
 <body>
 <!-- Header -->
-<header class="header" id="header">
-<div class="container header__inner">
-<a class="header__logo" href="/ko/">
-<svg class="header__logo-icon" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<defs>
-<lineargradient id="moonGrad" x1="0%" x2="100%" y1="0%" y2="100%">
-<stop offset="0%" stop-color="#c9a84c"></stop>
-<stop offset="100%" stop-color="#e8c87a"></stop>
-</lineargradient>
-<clippath id="moonClip">
-<circle cx="30" cy="24" r="16"></circle>
-</clippath>
-</defs>
-<!-- Crescent Moon: circle minus overlapping circle -->
-<circle cx="30" cy="24" fill="url(#moonGrad)" r="16"></circle>
-<circle cx="37" cy="20" fill="#080c14" r="13"></circle>
-<!-- TMG letters -->
-<text fill="#f0f4ff" font-family="Inter, -apple-system, sans-serif" font-size="19" font-weight="800" letter-spacing="-0.8" x="4" y="32">TMG</text>
-</svg>
-<span class="header__logo-text">Tuyue Media Gateway <span></span></span>
-</a>
-<button aria-label="Toggle navigation" class="header__toggle" id="navToggle">
-<span></span><span></span><span></span>
-</button>
-<nav class="header__nav" id="mainNav">
-<div class="header__dropdown">
-<a class="header__dropdown-trigger header__nav-link" href="/ko/services/">
-            서비스 <svg class="header__dropdown-arrow" fill="none" height="12" viewbox="0 0 12 12" width="12"><path d="M3 5L6 8L9 5" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path></svg>
-</a>
-<div class="header__dropdown-menu">
-<a class="header__dropdown-item" href="/ko/services/baidu/">Baidu SEM</a>
-<a class="header__dropdown-item" href="/ko/services/douyin/">Douyin 광고</a>
-<a class="header__dropdown-item" href="/ko/services/xiaohongshu/">샤오홍슈(RED) Ads</a>
-<a class="header__dropdown-item" href="/ko/services/bilibili/">Bilibili 광고</a>
-<a class="header__dropdown-item" href="/ko/services/wechat/">WeChat 광고</a>
-<a class="header__dropdown-item" href="/ko/services/bing/">Bing China</a>
-<a class="header__dropdown-item" href="/ko/geo/">중국 GEO</a>
-</div>
-</div>
-<a class="header__nav-link" href="/ko/pricing/">요금</a>
-<a class="header__nav-link" href="/ko/client-stories/">고객 사례</a>
-<a class="header__nav-link" href="/ko/geo/">중국 GEO <span class="nav-badge">NEW</span></a>
-<a class="header__nav-link header__nav-link--active" href="/ko/blog/">블로그</a>
-<a class="header__nav-link" href="/ko/faqs/">FAQ</a>
-<div class="header__dropdown">
-<a class="header__dropdown-trigger header__nav-link" href="/ko/about/">
-            회사 소개 <svg class="header__dropdown-arrow" fill="none" height="12" viewbox="0 0 12 12" width="12"><path d="M3 5L6 8L9 5" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path></svg>
-</a>
-<div class="header__dropdown-menu">
-<a class="header__dropdown-item" href="/ko/about/team/">팀</a>
-<a class="header__dropdown-item" href="/ko/about/certifications/">인증</a>
-<a class="header__dropdown-item" href="/ko/about/partners/">파트너</a>
-<a class="header__dropdown-item" href="/ko/about/careers/">채용 정보</a>
-</div>
-</div>
-</nav>
-<div class="header__lang-wrap">
-<button class="header__lang-btn" onclick="this.parentElement.classList.toggle('active')">
-<span class="header__lang-flag">🇰🇷</span>한국어
-  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 3.5l3 4 3-4"></path></svg>
-</button>
-<div class="header__lang-menu">
-  <a href="https://www.tuyuesouxin.cn/" class="header__lang-item"><span class="header__lang-flag">🇺🇸</span>English</a>
-  <a href="https://www.tuyuesouxin.cn/ja/" class="header__lang-item"><span class="header__lang-flag">🇯🇵</span>日本語</a>
-</div>
-</div>
-    견적 받기</a>
-</div>
-</header>
+<header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="/ko/" class="header__logo">
+          <svg class="header__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#c9a84c"/>
+                <stop offset="100%" stop-color="#e8c87a"/>
+              </linearGradient>
+              <clipPath id="moonClip">
+                <!-- Full circle -->
+                <circle cx="30" cy="24" r="16"/>
+              </clipPath>
+            </defs>
+            <!-- Crescent Moon: circle minus overlapping circle -->
+            <circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/>
+            <circle cx="37" cy="20" r="13" fill="#080c14"/>
+            <!-- TMG letters inside/near the crescent -->
+            <text x="4" y="32" font-family="Inter, -apple-system, sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-0.8">TMG</text>
+          </svg>
+          <span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
+        </a>
+        <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="header__nav">
+          <div class="header__dropdown">
+            <a href="/ko/services/" class="header__nav-link header__dropdown-trigger">
+              서비스
+              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="header__dropdown-menu">
+              <a href="/ko/services/" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">전체 서비스</a>
+              <a href="/ko/services/wechat/" class="header__dropdown-item">WeChat 광고</a>
+              <a href="/ko/services/douyin/" class="header__dropdown-item">Douyin 광고</a>
+              <a href="/ko/services/baidu/" class="header__dropdown-item">Baidu SEM</a>
+              <a href="/ko/services/bing/" class="header__dropdown-item">Bing China</a>
+              <a href="/ko/services/xiaohongshu/" class="header__dropdown-item">샤오홍슈(RED)</a>
+              <a href="/ko/services/bilibili/" class="header__dropdown-item">Bilibili 광고</a>
+              <a href="/ko/geo/" class="header__dropdown-item">중국 GEO</a>
+            </div>
+          </div>
+          <a href="/ko/pricing/" class="header__nav-link">요금</a>
+          <a href="/ko/client-stories/" class="header__nav-link">고객 사례</a>
+          <a href="/ko/geo/" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
+          <a href="/ko/blog/" class="header__nav-link">블로그</a>
+          <a href="/ko/faqs/" class="header__nav-link">FAQ</a>
+          <div class="header__dropdown">
+            <a href="/ko/about/" class="header__nav-link header__dropdown-trigger">
+              회사 소개
+              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="header__dropdown-menu">
+              <a href="/ko/why-tmg/" class="header__dropdown-item">TMG를 선택해야 하는 이유</a>
+              <a href="/ko/about/" class="header__dropdown-item">회사 소개</a>
+              <a href="/ko/contact/" class="header__dropdown-item">문의하기</a>
+            </div>
+          </div>
+        </nav>
+        <div class="header__lang-wrap">
+        <button class="header__lang-btn" onclick="this.parentElement.classList.toggle('active')">
+          <span class="header__lang-flag">🇰🇷</span>한국어
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 3.5l3 4 3-4"/></svg>
+        </button>
+        <div class="header__lang-menu">
+          <a href="https://www.tuyuesouxin.cn" class="header__lang-item"><span class="header__lang-flag">🇺🇸</span>English</a>
+          <a href="https://www.tuyuesouxin.cn/ja" class="header__lang-item"><span class="header__lang-flag">🇯🇵</span>日本語</a>
+        </div>
+      </div>
+        <div class="header__cta">
+          <a href="/ko/contact/" class="btn btn--primary">시작하기</a>
+        </div>
+      </div>
+    </div>
+  </header>
 <!-- Article Hero -->
 <section class="article-hero">
 <div class="container">
@@ -1134,61 +1143,61 @@
 </section>
 <!-- Footer -->
 <footer class="footer">
-<div class="container">
-<div class="footer__grid">
-<div class="footer__section">
-<h4 class="footer__title">TMG 소개</h4>
-<p class="footer__description">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__section">
+          <h4 class="footer__title">TMG 소개</h4>
+          <p class="footer__description">
             중국 1,000억 달러 디지털 광고 시장으로의 단일 액세스 포인트. 국제 에이전시가 중국 플랫폼을 쉽게 탐색할 수 있도록 지원합니다.
           </p>
-</div>
-<div class="footer__section">
-<h4 class="footer__title">바로가기</h4>
-<ul class="footer__links">
-<li><a class="footer__link" href="/ko/services/">서비스</a></li>
-<li><a class="footer__link" href="/ko/pricing/">요금</a></li>
-<li><a class="footer__link" href="/ko/about/">회사 소개</a></li>
-<li><a class="footer__link" href="/ko/client-stories/">고객 사례</a></li>
-<li><a class="footer__link" href="/ko/faqs/">FAQ</a></li>
-</ul>
-</div>
-<div class="footer__section">
-<h4 class="footer__title">문의하기</h4>
-<ul class="footer__links">
-<li>
-<a class="footer__link footer__link--email" href="mailto:tmg@tuyuesouxin.cn">중국 1,000억 달러 규모 디지털 광고 시장으로의 단일 액세스 포인트. 국제 에이전시가 중국 플랫폼을 쉽게 탐색할 수 있도록 지원합니다.</a>
-</li>
-<li>
-<a class="footer__link" href="#contactQR">
-<svg aria-hidden="true" fill="currentColor" height="16" style="vertical-align: text-bottom; margin-right: 4px;" viewbox="0 0 24 24" width="16">
-<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.149-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
-</svg>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">바로가기</h4>
+          <ul class="footer__links">
+            <li><a href="/ko/services/" class="footer__link">서비스</a></li>
+            <li><a href="/ko/pricing/" class="footer__link">요금</a></li>
+            <li><a href="/ko/about/" class="footer__link">회사 소개</a></li>
+            <li><a href="/ko/client-stories/" class="footer__link">고객 사례</a></li>
+            <li><a href="/ko/faqs/" class="footer__link">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">문의하기</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="mailto:tmg@tuyuesouxin.cn" class="footer__link footer__link--email">tmg@tuyuesouxin.cn</a>
+            </li>
+            <li>
+              <a href="#contactQR" class="footer__link">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: text-bottom; margin-right: 4px;">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
                 WhatsApp (클릭하여 스캔)
               </a>
-</li>
-</ul>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">법적 고지</h4>
+          <ul class="footer__links">
+            <li class="footer__license">사업자 등록 번호: 91310114MADKG4UF0G</li>
+            <li class="footer__company-short">Tuyue Media Gateway</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Tuyue Media Gateway. 모든 권리 보유.</p>
+        <div class="footer__platforms">
+          <a href="https://ad.weixin.qq.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">WeChat</a>
+          <a href="https://www.oceanengine.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Douyin</a>
+          <a href="https://e.baidu.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Baidu</a>
+          <a href="https://www.xiaohongshu.com/brand" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">샤오홍슈(RED)</a>
+          <a href="https://member.bilibili.com/platform/ad" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bilibili</a>
+          <a href="https://ads.microsoft.com/zh-cn" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bing China</a>
 </div>
-<div class="footer__section">
-<h4 class="footer__title">법적 고지</h4>
-<ul class="footer__links">
-<li class="footer__license">사업자 등록 번호: 91310114MADKG4UF0G</li>
-<li class="footer__company-short"></li>
-</ul>
-</div>
-</div>
-<div class="footer__bottom">
-<p class="footer__copyright">XHS는 중국 여성 소비자의 게이트웨이 역할을 하며, 많은 브랜드의 퍼널 톱 역할 수행</p>
-<div class="footer__platforms">
-<a class="footer__platform-badge" href="https://ad.weixin.qq.com" rel="nofollow noopener noreferrer" target="_blank">WeChat</a>
-<a class="footer__platform-badge" href="https://www.oceanengine.com" rel="nofollow noopener noreferrer" target="_blank">Douyin</a>
-<a class="footer__platform-badge" href="https://e.baidu.com" rel="nofollow noopener noreferrer" target="_blank">Baidu</a>
-<a class="footer__platform-badge" href="https://www.xiaohongshu.com/brand" rel="nofollow noopener noreferrer" target="_blank">샤오홍슈(RED)</a>
-<a class="footer__platform-badge" href="https://member.bilibili.com/platform/ad" rel="nofollow noopener noreferrer" target="_blank">Bilibili</a>
-<a class="footer__platform-badge" href="https://ads.microsoft.com/zh-cn" rel="nofollow noopener noreferrer" target="_blank">Bing China</a>
-</div>
-</div>
-</div>
-</footer>
+      </div>
+    </div>
+  </footer>
 <script>
   // Mobile Menu & Dropdown Toggle
   (function () {
