@@ -25,6 +25,11 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <style>
+  
+
+  .skip-link{position:absolute;top:-40px;left:0;background:var(--color-accent);color:var(--color-bg);padding:8px 16px;z-index:10000;text-decoration:none;transition:top 0.3s;font-weight:600;}
+  .skip-link:focus{top:0;}
+
     :root{--c-bg:#080c14;--c-bg-alt:#0d1220;--c-card:#111827;--c-t1:#f0f4ff;--c-t2:#a3b1cc;--c-t3:#64748b;--c-primary:#2d6be4;--c-primary-h:#1e55c4;--c-accent:#c9a84c;--c-accent-l:#e8c87a;--c-border:#1e2d45;--c-border-h:#2d4060;--c-baidu:#4152dd;--c-xhs:#e8202a;--c-wechat:#07c160;--c-ocean:#c9a84c;--c-bilibili:#4DD0E1;--c-geo:#8B5CF6;--c-bing:#00809D;--ff:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--r-sm:.375rem;--r-md:.5rem;--r-lg:.75rem;--r-xl:1rem;--tr:.25s;--space-1:0.25rem;--space-2:0.5rem;--space-3:0.75rem;--space-4:1rem;--space-5:1.25rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;--space-12:3rem;--space-16:4rem;--space-20:5rem;--font-size-xs:.75rem;--font-size-sm:.875rem;--font-size-base:1rem;--font-size-lg:1.125rem;--font-size-xl:1.25rem;--font-size-2xl:1.5rem;--font-size-3xl:1.875rem;--transition-fast: 150ms ease;--transition-normal: .3s;--transition-slow: .5s;--color-bg:var(--c-bg);--color-bg-secondary:var(--c-bg-alt);--color-bg-alt:var(--c-bg-alt);--color-bg-card:var(--c-card);--color-text-primary:var(--c-t1);--color-text-secondary:var(--c-t2);--color-text-muted:var(--c-t3);--color-primary:var(--c-primary);--color-primary-light:var(--c-primary);--color-accent:var(--c-accent);--color-accent-light:var(--c-accent-l);--color-border:var(--c-border);--font-family:var(--ff)}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
@@ -587,9 +592,45 @@
     }
     .header__lang-flag { font-size: 15px; line-height: 1; }
 
+  
+  @media print{
+    *{box-shadow:none!important;text-shadow:none!important;}
+    body{background:white!important;color:black!important;}
+    .header,.footer,nav,.sidebar,iframe{display:none!important;}
+    main,article,section,.container{max-width:100%!important;margin:0!important;padding:10px!important;}
+    h1,h2,h3,h4,h5,h6{page-break-after:avoid;page-break-inside:avoid;}
+    img{max-width:100%!important;page-break-inside:avoid;}
+    a{color:black!important;text-decoration:underline;}
+    p,blockquote,ul,ol,dl,table{page-break-inside:avoid;}
+    @page{margin:2cm;}
+  }
   </style>
-</head>
+
+    <style>
+ 
+<a href="#main-content" class="skip-to-content">Skip to main content</a>
+     .skip-to-content {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: var(--color-accent);
+        color: var(--color-bg);
+        padding: 8px 16px;
+        z-index: 10000;
+        transition: top 0.3s;
+      }
+      .skip-to-content:focus {
+        top: 0;
+      }
+    </style>
+  </head>
 <body>
+  <!-- Skip to main content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  
+  
+
 <header class="header">
     <div class="container">
       <div class="header__inner">
@@ -618,7 +659,7 @@
           <span></span>
           <span></span>
         </button>
-        <nav class="header__nav">
+        <nav class="header__nav" id="main-nav">
           <div class="header__dropdown">
             <a href="/ko/services/" class="header__nav-link header__dropdown-trigger">
               서비스
@@ -668,7 +709,7 @@
       </div>
     </div>
   </header>
-<main>
+<main id="main-content">
 <section class="hero">
 <div class="hero__glow"></div>
 <div class="container">
@@ -2323,7 +2364,7 @@
 <div class="contact__trust">
 <div class="contact__map">
 <div class="contact__map-embed" id="mapContainer">
-<iframe allowfullscreen="" class="contact__map-iframe" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=599-2F202+Wanzhen+Rd,+Jia+Ding+Qu,+Shanghai+Shi,+China,+201824&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed">
+<iframe allowfullscreen="" class="contact__map-iframe" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=599-2F202+Wanzhen+Rd,+Jia+Ding+Qu,+Shanghai+Shi,+China,+201824&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed" title="Google Maps location of TMG office">
 </iframe>
 </div>
 <div class="contact__address">

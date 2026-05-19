@@ -25,6 +25,11 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <style>
+  
+
+  .skip-link{position:absolute;top:-40px;left:0;background:var(--color-accent);color:var(--color-bg);padding:8px 16px;z-index:10000;text-decoration:none;transition:top 0.3s;font-weight:600;}
+  .skip-link:focus{top:0;}
+
     :root {
       --color-bg: #080c14;
       --color-bg-alt: #0d1220;
@@ -610,10 +615,46 @@
       background: rgba(201,168,76,.08);
     }
     .header__lang-flag { font-size: 15px; line-height: 1; }
+  
+  @media print{
+    *{box-shadow:none!important;text-shadow:none!important;}
+    body{background:white!important;color:black!important;}
+    .header,.footer,nav,.sidebar,iframe{display:none!important;}
+    main,article,section,.container{max-width:100%!important;margin:0!important;padding:10px!important;}
+    h1,h2,h3,h4,h5,h6{page-break-after:avoid;page-break-inside:avoid;}
+    img{max-width:100%!important;page-break-inside:avoid;}
+    a{color:black!important;text-decoration:underline;}
+    p,blockquote,ul,ol,dl,table{page-break-inside:avoid;}
+    @page{margin:2cm;}
+  }
   </style>
 <script type="application/ld+json"></script>
-</head>
+
+    <style>
+ 
+<a href="#main-content" class="skip-to-content">Skip to main content</a>
+     .skip-to-content {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: var(--color-accent);
+        color: var(--color-bg);
+        padding: 8px 16px;
+        z-index: 10000;
+        transition: top 0.3s;
+      }
+      .skip-to-content:focus {
+        top: 0;
+      }
+    </style>
+  </head>
 <body>
+  <!-- Skip to main content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  
+  
+
 <!-- Header -->
 <header class="header">
     <div class="container">
@@ -643,7 +684,7 @@
           <span></span>
           <span></span>
         </button>
-        <nav class="header__nav">
+        <nav class="header__nav" id="main-nav">
           <div class="header__dropdown">
             <a href="/ko/services/" class="header__nav-link header__dropdown-trigger">
               서비스
@@ -711,7 +752,7 @@
 </div>
 </section>
 <!-- Article Body -->
-<main class="article-body">
+<main id="main-content" class="article-body">
 <div class="container">
 <article class="article-content reveal">
 <p>중국 미디어 바이어를 위한 핵심 플랫폼——Google Ads가 Google 프로퍼티에 해당하는 것과 유사합니다.</p>
@@ -922,8 +963,9 @@
     var nav = document.querySelector('.header__nav');
     if (toggle && nav) {
       toggle.addEventListener('click', function () {
-        toggle.classList.toggle('active');
-        nav.classList.toggle('active');
+        const isOpen = toggle.classList.toggle('active');
+        nav.classList.toggle('active', isOpen);
+        toggle.setAttribute('aria-expanded', String(isOpen));
       });
     }
     nav.querySelectorAll('.header__dropdown').forEach(function (dropdown) {

@@ -25,6 +25,11 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <style>
+  
+
+  .skip-link{position:absolute;top:-40px;left:0;background:var(--color-accent);color:var(--color-bg);padding:8px 16px;z-index:10000;text-decoration:none;transition:top 0.3s;font-weight:600;}
+  .skip-link:focus{top:0;}
+
     :root {
       --color-bg: #080c14;
       --color-bg-alt: #0d1220;
@@ -610,10 +615,46 @@
       background: rgba(201,168,76,.08);
     }
     .header__lang-flag { font-size: 15px; line-height: 1; }
+  
+  @media print{
+    *{box-shadow:none!important;text-shadow:none!important;}
+    body{background:white!important;color:black!important;}
+    .header,.footer,nav,.sidebar,iframe{display:none!important;}
+    main,article,section,.container{max-width:100%!important;margin:0!important;padding:10px!important;}
+    h1,h2,h3,h4,h5,h6{page-break-after:avoid;page-break-inside:avoid;}
+    img{max-width:100%!important;page-break-inside:avoid;}
+    a{color:black!important;text-decoration:underline;}
+    p,blockquote,ul,ol,dl,table{page-break-inside:avoid;}
+    @page{margin:2cm;}
+  }
   </style>
 <script type="application/ld+json">Pangle은 10억+ 사용자에게 도달하는 ByteDance의 글로벌 광고 네트워크. 국제 앱 개발자를 위해 Ocean Engine을 어떻게 보완하는지——</script>
-</head>
+
+    <style>
+ 
+<a href="#main-content" class="skip-to-content">Skip to main content</a>
+     .skip-to-content {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: var(--color-accent);
+        color: var(--color-bg);
+        padding: 8px 16px;
+        z-index: 10000;
+        transition: top 0.3s;
+      }
+      .skip-to-content:focus {
+        top: 0;
+      }
+    </style>
+  </head>
 <body>
+  <!-- Skip to main content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  
+  
+
 <!-- Header -->
 <header class="header">
     <div class="container">
@@ -643,7 +684,7 @@
           <span></span>
           <span></span>
         </button>
-        <nav class="header__nav">
+        <nav class="header__nav" id="main-nav">
           <div class="header__dropdown">
             <a href="/ko/services/" class="header__nav-link header__dropdown-trigger">
               서비스
@@ -715,7 +756,7 @@
 </div>
 </section>
 <!-- Article Body -->
-<main class="article-body">
+<main id="main-content" class="article-body">
 <div class="container">
 <article class="article-content reveal">
 <p>동남아시아, 남아시아, 중동, 라틴아메리카에서 특히 강력한 입지를 갖고 있어 중국 밖으로 도달 범위를 확장하려는 앱 개발자에게 이상적입니다. <strong>Pangle</strong> (穿山甲) is one of the most powerful platforms you've probably never worked with directly—but almost certainly encountered.</p>
@@ -973,8 +1014,9 @@
     var nav = document.querySelector('.header__nav');
     if (toggle && nav) {
       toggle.addEventListener('click', function () {
-        toggle.classList.toggle('active');
-        nav.classList.toggle('active');
+        const isOpen = toggle.classList.toggle('active');
+        nav.classList.toggle('active', isOpen);
+        toggle.setAttribute('aria-expanded', String(isOpen));
       });
     }
     nav.querySelectorAll('.header__dropdown').forEach(function (dropdown) {
