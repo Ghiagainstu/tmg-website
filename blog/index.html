@@ -718,6 +718,7 @@
     p,blockquote,ul,ol,dl,table{page-break-inside:avoid;}
     @page{margin:2cm;}
   }
+  .blog-filter{display:flex;flex-wrap:wrap;gap:8px;padding:0 0 32px;justify-content:center}.blog-filter__btn{font-family:inherit;font-size:13px;font-weight:500;padding:6px 16px;border-radius:20px;border:1px solid var(--color-border);background:transparent;color:var(--color-text-secondary);cursor:pointer;transition:all .2s ease}.blog-filter__btn:hover{border-color:var(--color-accent);color:var(--color-accent)}.blog-filter__btn--active{background:var(--color-accent);color:var(--color-bg);border-color:var(--color-accent)}
   </style>
 
     <style>
@@ -819,24 +820,25 @@
       </div>
     </div>
 
+        <div class="blog-filter">
+          <button class="blog-filter__btn blog-filter__btn--active" data-cat="all">All</button>
+          <button class="blog-filter__btn" data-cat="Tencent Ads">Tencent Ads</button>
+          <button class="blog-filter__btn" data-cat="China Ad Platforms">China Ad Platforms</button>
+          <button class="blog-filter__btn" data-cat="GEO / AI Search">GEO / AI Search</button>
+          <button class="blog-filter__btn" data-cat="Douyin / Ocean Engine">Douyin / Ocean Engine</button>
+          <button class="blog-filter__btn" data-cat="Bilibili / Gen Z Marketing">Bilibili / Gen Z</button>
+          <button class="blog-filter__btn" data-cat="Xiaohongshu / Consumer Insights">Xiaohongshu</button>
+          <button class="blog-filter__btn" data-cat="China Search Ads">China Search Ads</button>
+          <button class="blog-filter__btn" data-cat="Search Engine">Search Engine</button>
+          <button class="blog-filter__btn" data-cat="China Market Insights">Market Insights</button>
+          <button class="blog-filter__btn" data-cat="Paid Media Strategy">Paid Media</button>
+          <button class="blog-filter__btn" data-cat="Platform Overview">Platform Overview</button>
+          <button class="blog-filter__btn" data-cat="App Monetization">App Monetization</button>
+        </div>
     <section class="posts-section">
       <div class="container">
         <div class="posts-grid">
-        <!-- Post: Search Is the New Storefront (NEW) -->
-        <a href="/blog/search-new-storefront/" class="post-card reveal">
-          <div class="post-card__header">
-            <span class="post-card__cat post-card__cat--ocean">Tencent Ads</span>
-            <span class="post-card__date">May 4, 2026</span>
-          </div>
-          <h2 class="post-card__title">Search Is the New Storefront: How Home &amp; Furnishing Brands Win with Tencent Search Ads</h2>
-          <p class="post-card__excerpt">Search is the ultimate expression of user intent. Discover how home &amp; furnishing brands can win with Tencent Search Ads.</p>
-          <div class="post-card__footer">
-            <span class="post-card__read-time">7 min read</span>
-            <span class="post-card__arrow">Read more →</span>
-          </div>
-        </a>
-        
-                <!-- Post: WeChat Moments Ads (NEW) -->
+        <!-- Post: WeChat Moments Ads (NEW) -->
         <a href="/blog/wechat-moments-ads/" class="post-card reveal">
           <div class="post-card__header">
             <span class="post-card__cat post-card__cat--ocean">Tencent Ads</span>
@@ -849,7 +851,7 @@
             <span class="post-card__arrow">Read more &rarr;</span>
           </div>
         </a>
-                <!-- Post: WeChat Mini Games Go Desktop (NEW) -->
+        <!-- Post: WeChat Mini Games Go Desktop (NEW) -->
         <a href="/blog/wechat-mini-games-desktop/" class="post-card reveal">
           <div class="post-card__header">
             <span class="post-card__cat post-card__cat--ocean">Tencent Ads</span>
@@ -862,7 +864,7 @@
             <span class="post-card__arrow">Read more &rarr;</span>
           </div>
         </a>
-                <!-- Post: WeChat Channels for Consumer Electronics (NEW) -->
+        <!-- Post: WeChat Channels for Consumer Electronics (NEW) -->
         <a href="/blog/wechat-channels-consumer-electronics/" class="post-card reveal">
           <div class="post-card__header">
             <span class="post-card__cat post-card__cat--ocean">Tencent Ads</span>
@@ -875,7 +877,7 @@
             <span class="post-card__arrow">Read more &rarr;</span>
           </div>
         </a>
-                <!-- Post: Tencent's AIM+ (NEW) -->
+        <!-- Post: Tencent's AIM+ (NEW) -->
         <a href="/blog/tencent-aimplus/" class="post-card reveal">
           <div class="post-card__header">
             <span class="post-card__cat post-card__cat--ocean">Tencent Ads</span>
@@ -888,7 +890,7 @@
             <span class="post-card__arrow">Read more &rarr;</span>
           </div>
         </a>
-                <!-- Post: Why Chinese Influencer Marketing Works Differently (NEW) -->
+        <!-- Post: Why Chinese Influencer Marketing Works Differently (NEW) -->
         <a href="/blog/chinese-influencer-marketing/" class="post-card reveal">
           <div class="post-card__header">
             <span class="post-card__cat post-card__cat--ocean">Tencent Ads</span>
@@ -901,7 +903,7 @@
             <span class="post-card__arrow">Read more &rarr;</span>
           </div>
         </a>
-                <!-- Post: From Mass to Personal (NEW) -->
+        <!-- Post: From Mass to Personal (NEW) -->
         <a href="/blog/mass-to-personal/" class="post-card reveal">
           <div class="post-card__header">
             <span class="post-card__cat post-card__cat--ocean">Tencent Ads</span>
@@ -914,7 +916,19 @@
             <span class="post-card__arrow">Read more &rarr;</span>
           </div>
         </a>
-                <!-- Post: DeepSeek Image Recognition GEO (NEW) -->
+        <a href="https://www.tuyuesouxin.cn/blog/tencent-ads-home-furnishing/" class="post-card reveal">
+        <div class="post-card__header">
+            <span class="post-card__cat post-card__cat--ocean">Tencent Ads</span>
+            <span class="post-card__date">May 18, 2026</span>
+        </div>
+        <h2 class="post-card__title">Tencent Ads Home & Furnishing Influencer Marketing: A Complete Playbook for 2026</h2>
+        <p class="post-card__excerpt">A complete playbook for home & furnishing brands using Tencent Ads influencer marketing on Video Account in 2026.</p>
+        <div class="post-card__footer">
+            <span class="post-card__read-time">12 min read</span>
+            <span class="post-card__arrow">Read more →</span>
+        </div>
+    </a>
+        <!-- Post: DeepSeek Image Recognition GEO (NEW) -->
         <a href="/blog/deepseek-image-recognition-geo/" class="post-card reveal">
           <div class="post-card__header">
             <span class="post-card__cat post-card__cat--geo">GEO / AI Search</span>
@@ -927,19 +941,6 @@
             <span class="post-card__arrow">Read more &rarr;</span>
           </div>
         </a>
-    <a href="https://www.tuyuesouxin.cn/blog/tencent-ads-home-furnishing/" class="post-card reveal">
-        <div class="post-card__header">
-            <span class="post-card__cat post-card__cat--ocean">Tencent Ads</span>
-            <span class="post-card__date">May 18, 2026</span>
-        </div>
-        <h2 class="post-card__title">Tencent Ads Home & Furnishing Influencer Marketing: A Complete Playbook for 2026</h2>
-        <p class="post-card__excerpt">A complete playbook for home & furnishing brands using Tencent Ads influencer marketing on Video Account in 2026.</p>
-        <div class="post-card__footer">
-            <span class="post-card__read-time">12 min read</span>
-            <span class="post-card__arrow">Read more →</span>
-        </div>
-    </a>
-
         <!-- Post: Doubao Ads GEO Still Worth It (NEW) -->
         <a href="/blog/doubao-ads-geo-still-worth-it/" class="post-card reveal">
           <div class="post-card__header">
@@ -953,7 +954,6 @@
             <span class="post-card__arrow">Read more →</span>
           </div>
         </a>
-        
         <!-- Post: Doubao GEO (NEW) -->
         <a href="/blog/doubao-paid-what-it-means-for-geo/" class="post-card reveal">
           <div class="post-card__header">
@@ -967,7 +967,19 @@
             <span class="post-card__arrow">Read more →</span>
           </div>
         </a>
-        
+        <!-- Post: Search Is the New Storefront (NEW) -->
+        <a href="/blog/search-new-storefront/" class="post-card reveal">
+          <div class="post-card__header">
+            <span class="post-card__cat post-card__cat--ocean">Tencent Ads</span>
+            <span class="post-card__date">May 4, 2026</span>
+          </div>
+          <h2 class="post-card__title">Search Is the New Storefront: How Home &amp; Furnishing Brands Win with Tencent Search Ads</h2>
+          <p class="post-card__excerpt">Search is the ultimate expression of user intent. Discover how home &amp; furnishing brands can win with Tencent Search Ads.</p>
+          <div class="post-card__footer">
+            <span class="post-card__read-time">7 min read</span>
+            <span class="post-card__arrow">Read more →</span>
+          </div>
+        </a>
         <!-- Post: Kuaishou Demographics (NEW) -->
         <a href="/blog/kuaishou-demographics-who-are-these-400m-users/" class="post-card reveal">
           <div class="post-card__header">
@@ -981,7 +993,6 @@
             <span class="post-card__arrow">Read more →</span>
           </div>
         </a>
-        
         <!-- Post: XHS Demographics (NEW) -->
         <a href="/blog/xiaohongshu-demographics-who-are-these-350m-users/" class="post-card reveal">
           <div class="post-card__header">
@@ -995,7 +1006,6 @@
             <span class="post-card__arrow">Read more →</span>
           </div>
         </a>
-        
         <!-- Post: Baidu Demographics (NEW) -->
         <a href="/blog/baidu-demographics-who-are-these-735m-users/" class="post-card reveal">
           <div class="post-card__header">
@@ -1009,7 +1019,6 @@
             <span class="post-card__arrow">Read more →</span>
           </div>
         </a>
-        
         <!-- Post: Bilibili Demographics (NEW) -->
         <a href="/blog/bilibili-demographics-who-are-these-gen-z-users/" class="post-card reveal">
           <div class="post-card__header">
@@ -1023,11 +1032,8 @@
             <span class="post-card__arrow">Read more →</span>
           </div>
         </a>
-        
-
-          
-          <!-- Post: Bing China Demographics (NEW) -->
-          <a href="/blog/bing-china-demographics-who-are-these-users/" class="post-card reveal">
+        <!-- Post: Bing China Demographics (NEW) -->
+        <a href="/blog/bing-china-demographics-who-are-these-users/" class="post-card reveal">
             <div class="post-card__header">
               <span class="post-card__cat post-card__cat--baidu">China Search Ads</span>
               <span class="post-card__date">May 4, 2026</span>
@@ -1039,8 +1045,8 @@
               <span class="post-card__arrow">Read more →</span>
             </div>
           </a>
-<!-- Post: Bing China Premium Audience (NEW) -->
-          <a href="/blog/bing-china-premium-audience-guide/" class="post-card reveal">
+        <!-- Post: Bing China Premium Audience (NEW) -->
+        <a href="/blog/bing-china-premium-audience-guide/" class="post-card reveal">
             <div class="post-card__header">
               <span class="post-card__cat post-card__cat--baidu">China Search Ads</span>
               <span class="post-card__date">May 4, 2026</span>
@@ -1052,9 +1058,8 @@
               <span class="post-card__arrow">Read more →</span>
             </div>
           </a>
-
-          <!-- Post: Attribution Models Guide (NEW) -->
-          <a href="/blog/attribution-models-guide/" class="post-card reveal">
+        <!-- Post: Attribution Models Guide (NEW) -->
+        <a href="/blog/attribution-models-guide/" class="post-card reveal">
             <div class="post-card__header">
               <span class="post-card__cat post-card__cat--ocean">Paid Media Strategy</span>
               <span class="post-card__date">May 4, 2026</span>
@@ -1066,9 +1071,8 @@
               <span class="post-card__arrow">Read more →</span>
             </div>
           </a>
-
-          <!-- Post: Smart Bidding Strategies -->
-          <a href="/blog/smart-bidding-strategies-explained/" class="post-card reveal">
+        <!-- Post: Smart Bidding Strategies -->
+        <a href="/blog/smart-bidding-strategies-explained/" class="post-card reveal">
             <div class="post-card__header">
               <span class="post-card__cat post-card__cat--baidu">Paid Media Strategy</span>
               <span class="post-card__date">May 4, 2026</span>
@@ -1080,9 +1084,8 @@
               <span class="post-card__arrow">Read more →</span>
             </div>
           </a>
-
-          <!-- Post: Ad Billing Models Explained -->
-          <a href="/blog/ad-billing-models-explained/" class="post-card reveal">
+        <!-- Post: Ad Billing Models Explained -->
+        <a href="/blog/ad-billing-models-explained/" class="post-card reveal">
             <div class="post-card__header">
               <span class="post-card__cat post-card__cat--baidu">Paid Media Strategy</span>
               <span class="post-card__date">May 4, 2026</span>
@@ -1094,9 +1097,8 @@
               <span class="post-card__arrow">Read more →</span>
             </div>
           </a>
-
-          <!-- Post: GEO Channel Weight 2026 -->
-          <a href="/blog/geo-channel-weight-2026/" class="post-card reveal">
+        <!-- Post: GEO Channel Weight 2026 -->
+        <a href="/blog/geo-channel-weight-2026/" class="post-card reveal">
             <div class="post-card__header">
               <span class="post-card__cat post-card__cat--geo">GEO / AI Search</span>
               <span class="post-card__date">May 3, 2026</span>
@@ -1108,9 +1110,8 @@
               <span class="post-card__arrow">Read more →</span>
             </div>
           </a>
-
-          <!-- Post: CPM, oCPM, eCPM Explained -->
-          <a href="/blog/cpm-ocpm-ecpm-explained/" class="post-card reveal">
+        <!-- Post: CPM, oCPM, eCPM Explained -->
+        <a href="/blog/cpm-ocpm-ecpm-explained/" class="post-card reveal">
             <div class="post-card__header">
               <span class="post-card__cat post-card__cat--baidu">Paid Media Strategy</span>
               <span class="post-card__date">May 3, 2026</span>
@@ -1122,9 +1123,8 @@
               <span class="post-card__arrow">Read more →</span>
             </div>
           </a>
-
-          <!-- Post: Is a Rising CPM Really That Bad? -->
-          <a href="/blog/cpm-is-rising-bad/" class="post-card reveal">
+        <!-- Post: Is a Rising CPM Really That Bad? -->
+        <a href="/blog/cpm-is-rising-bad/" class="post-card reveal">
             <div class="post-card__header">
               <span class="post-card__cat post-card__cat--baidu">Paid Media Strategy</span>
               <span class="post-card__date">May 3, 2026</span>
@@ -1136,9 +1136,8 @@
               <span class="post-card__arrow">Read more →</span>
             </div>
           </a>
-
-          <!-- Post 0: China Mobile Internet Spring 2026 -->
-          <a href="/blog/china-mobile-internet-spring-2026/" class="post-card reveal">
+        <!-- Post 0: China Mobile Internet Spring 2026 -->
+        <a href="/blog/china-mobile-internet-spring-2026/" class="post-card reveal">
             <div class="post-card__header">
               <span class="post-card__cat post-card__cat--ocean">China Market Insights</span>
               <span class="post-card__date">April 30, 2026</span>
@@ -1150,93 +1149,8 @@
               <span class="post-card__arrow">Read more →</span>
             </div>
           </a>
-
-          <!-- Post 1: Ocean Engine AI Assistant -->
-          <a href="/blog/ocean-engine-ai-assistant/" class="post-card reveal">
-            <div class="post-card__header">
-              <span class="post-card__cat post-card__cat--ocean">Douyin / Ocean Engine</span>
-              <span class="post-card__date">April 23, 2026</span>
-            </div>
-            <h2 class="post-card__title">Meet Zhitu Xing: Ocean Engine's Built-In AI Advertising Assistant</h2>
-            <p class="post-card__excerpt">ByteDance has embedded an AI assistant directly into the Ocean Engine App. It offers smart Q&amp;A, multi-account analysis, natural-language data queries, and one-click diagnostic tools for Douyin advertisers.</p>
-            <div class="post-card__footer">
-              <span class="post-card__read-time">5 min read</span>
-              <span class="post-card__arrow">Read more →</span>
-            </div>
-          </a>
-
-          <!-- Post 2: Ocean Engine Local Reach -->
-          <a href="/blog/ocean-engine-local-reach/" class="post-card reveal">
-            <div class="post-card__header">
-              <span class="post-card__cat post-card__cat--ocean">Douyin / Ocean Engine</span>
-              <span class="post-card__date">April 23, 2026</span>
-            </div>
-            <h2 class="post-card__title">Ocean Engine Local Reach: Douyin's All-in-One Local Marketing Platform</h2>
-            <p class="post-card__excerpt">How ByteDance's dedicated local marketing tool helps brick-and-mortar businesses reach nearby customers through short video and live streaming ads—with minimal operational overhead.</p>
-            <div class="post-card__footer">
-              <span class="post-card__read-time">8 min read</span>
-              <span class="post-card__arrow">Read more →</span>
-            </div>
-          </a>
-
-          <!-- Post 3: Ocean Engine Overview -->
-          <a href="/blog/ocean-engine-overview/" class="post-card reveal">
-            <div class="post-card__header">
-              <span class="post-card__cat post-card__cat--ocean">Platform Overview</span>
-              <span class="post-card__date">April 23, 2026</span>
-            </div>
-            <h2 class="post-card__title">Ocean Engine: Douyin's Unified Digital Marketing Platform Explained</h2>
-            <p class="post-card__excerpt">From Douyin and Toutiao to Xigua Video, Pangle, and 懂车帝—Ocean Engine is ByteDance's all-in-one ad platform covering 10+ products and 600M+ users.</p>
-            <div class="post-card__footer">
-              <span class="post-card__read-time">7 min read</span>
-              <span class="post-card__arrow">Read more →</span>
-            </div>
-          </a>
-
-          <!-- Post 4: Douyin Enterprise Account -->
-          <a href="/blog/douyin-enterprise-account/" class="post-card reveal">
-            <div class="post-card__header">
-              <span class="post-card__cat post-card__cat--ocean">Douyin / Ocean Engine</span>
-              <span class="post-card__date">April 23, 2026</span>
-            </div>
-            <h2 class="post-card__title">Douyin Enterprise Accounts: The Complete Guide for International Brands</h2>
-            <p class="post-card__excerpt">What every international brand needs to know about Douyin Enterprise Accounts—the verified business profile that unlocks Blue V status, audience insights, and 600M+ daily active users.</p>
-            <div class="post-card__footer">
-              <span class="post-card__read-time">6 min read</span>
-              <span class="post-card__arrow">Read more →</span>
-            </div>
-          </a>
-
-          <!-- Post 5: Pangle Ads -->
-          <a href="/blog/pangle-ads/" class="post-card reveal">
-            <div class="post-card__header">
-              <span class="post-card__cat post-card__cat--ocean">App Monetization</span>
-              <span class="post-card__date">April 23, 2026</span>
-            </div>
-            <h2 class="post-card__title">Pangle Ads: ByteDance's Global App Monetization Platform</h2>
-            <p class="post-card__excerpt">800M+ users reached, 63B daily ad requests, 110B daily impressions—Pangle is ByteDance's global app network that advertisers can access through Ocean Engine.</p>
-            <div class="post-card__footer">
-              <span class="post-card__read-time">7 min read</span>
-              <span class="post-card__arrow">Read more →</span>
-            </div>
-          </a>
-
-          <!-- Post 6: Bilibili Gen Z Marketing -->
-          <a href="/blog/bilibili-genz-marketing/" class="post-card reveal">
-            <div class="post-card__header">
-              <span class="post-card__cat post-card__cat--ocean">Bilibili / Gen Z Marketing</span>
-              <span class="post-card__date">April 23, 2026</span>
-            </div>
-            <h2 class="post-card__title">Why Bilibili is China's Most Undervalued Marketing Platform for Gen Z</h2>
-            <p class="post-card__excerpt">While international advertisers rush to Douyin, they're overlooking the platform where China's Generation Z spends 107 minutes daily: 366M users, 70% post-90s, and unmatched youth engagement.</p>
-            <div class="post-card__footer">
-              <span class="post-card__read-time">8 min read</span>
-              <span class="post-card__arrow">Read more →</span>
-            </div>
-          </a>
-
-          <!-- Post 7: Xiaohongshu Consumer Research -->
-          <a href="/blog/xiaohongshu-consumer-research/" class="post-card reveal">
+        <!-- Post 7: Xiaohongshu Consumer Research -->
+        <a href="/blog/xiaohongshu-consumer-research/" class="post-card reveal">
             <div class="post-card__header">
               <span class="post-card__cat post-card__cat--ocean">Xiaohongshu / Consumer Insights</span>
               <span class="post-card__date">April 24, 2026</span>
@@ -1248,8 +1162,84 @@
               <span class="post-card__arrow">Read more →</span>
             </div>
           </a>
-
-        </div>
+        <!-- Post 1: Ocean Engine AI Assistant -->
+        <a href="/blog/ocean-engine-ai-assistant/" class="post-card reveal">
+            <div class="post-card__header">
+              <span class="post-card__cat post-card__cat--ocean">Douyin / Ocean Engine</span>
+              <span class="post-card__date">April 23, 2026</span>
+            </div>
+            <h2 class="post-card__title">Meet Zhitu Xing: Ocean Engine's Built-In AI Advertising Assistant</h2>
+            <p class="post-card__excerpt">ByteDance has embedded an AI assistant directly into the Ocean Engine App. It offers smart Q&amp;A, multi-account analysis, natural-language data queries, and one-click diagnostic tools for Douyin advertisers.</p>
+            <div class="post-card__footer">
+              <span class="post-card__read-time">5 min read</span>
+              <span class="post-card__arrow">Read more →</span>
+            </div>
+          </a>
+        <!-- Post 2: Ocean Engine Local Reach -->
+        <a href="/blog/ocean-engine-local-reach/" class="post-card reveal">
+            <div class="post-card__header">
+              <span class="post-card__cat post-card__cat--ocean">Douyin / Ocean Engine</span>
+              <span class="post-card__date">April 23, 2026</span>
+            </div>
+            <h2 class="post-card__title">Ocean Engine Local Reach: Douyin's All-in-One Local Marketing Platform</h2>
+            <p class="post-card__excerpt">How ByteDance's dedicated local marketing tool helps brick-and-mortar businesses reach nearby customers through short video and live streaming ads—with minimal operational overhead.</p>
+            <div class="post-card__footer">
+              <span class="post-card__read-time">8 min read</span>
+              <span class="post-card__arrow">Read more →</span>
+            </div>
+          </a>
+        <!-- Post 3: Ocean Engine Overview -->
+        <a href="/blog/ocean-engine-overview/" class="post-card reveal">
+            <div class="post-card__header">
+              <span class="post-card__cat post-card__cat--ocean">Platform Overview</span>
+              <span class="post-card__date">April 23, 2026</span>
+            </div>
+            <h2 class="post-card__title">Ocean Engine: Douyin's Unified Digital Marketing Platform Explained</h2>
+            <p class="post-card__excerpt">From Douyin and Toutiao to Xigua Video, Pangle, and 懂车帝—Ocean Engine is ByteDance's all-in-one ad platform covering 10+ products and 600M+ users.</p>
+            <div class="post-card__footer">
+              <span class="post-card__read-time">7 min read</span>
+              <span class="post-card__arrow">Read more →</span>
+            </div>
+          </a>
+        <!-- Post 4: Douyin Enterprise Account -->
+        <a href="/blog/douyin-enterprise-account/" class="post-card reveal">
+            <div class="post-card__header">
+              <span class="post-card__cat post-card__cat--ocean">Douyin / Ocean Engine</span>
+              <span class="post-card__date">April 23, 2026</span>
+            </div>
+            <h2 class="post-card__title">Douyin Enterprise Accounts: The Complete Guide for International Brands</h2>
+            <p class="post-card__excerpt">What every international brand needs to know about Douyin Enterprise Accounts—the verified business profile that unlocks Blue V status, audience insights, and 600M+ daily active users.</p>
+            <div class="post-card__footer">
+              <span class="post-card__read-time">6 min read</span>
+              <span class="post-card__arrow">Read more →</span>
+            </div>
+          </a>
+        <!-- Post 5: Pangle Ads -->
+        <a href="/blog/pangle-ads/" class="post-card reveal">
+            <div class="post-card__header">
+              <span class="post-card__cat post-card__cat--ocean">App Monetization</span>
+              <span class="post-card__date">April 23, 2026</span>
+            </div>
+            <h2 class="post-card__title">Pangle Ads: ByteDance's Global App Monetization Platform</h2>
+            <p class="post-card__excerpt">800M+ users reached, 63B daily ad requests, 110B daily impressions—Pangle is ByteDance's global app network that advertisers can access through Ocean Engine.</p>
+            <div class="post-card__footer">
+              <span class="post-card__read-time">7 min read</span>
+              <span class="post-card__arrow">Read more →</span>
+            </div>
+          </a>
+        <!-- Post 6: Bilibili Gen Z Marketing -->
+        <a href="/blog/bilibili-genz-marketing/" class="post-card reveal">
+            <div class="post-card__header">
+              <span class="post-card__cat post-card__cat--ocean">Bilibili / Gen Z Marketing</span>
+              <span class="post-card__date">April 23, 2026</span>
+            </div>
+            <h2 class="post-card__title">Why Bilibili is China's Most Undervalued Marketing Platform for Gen Z</h2>
+            <p class="post-card__excerpt">While international advertisers rush to Douyin, they're overlooking the platform where China's Generation Z spends 107 minutes daily: 366M users, 70% post-90s, and unmatched youth engagement.</p>
+            <div class="post-card__footer">
+              <span class="post-card__read-time">8 min read</span>
+              <span class="post-card__arrow">Read more →</span>
+            </div>
+          </a>
       </div>
     </section>
 
@@ -1345,6 +1335,29 @@
       </div>
     </div>
   </footer>
+
+  // Blog category filter
+  (function() {
+    var filter = document.querySelector('.blog-filter');
+    if (!filter) return;
+    var btns = filter.querySelectorAll('.blog-filter__btn');
+    var cards = document.querySelectorAll('.post-card');
+    btns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        btns.forEach(function(b) { b.classList.remove('blog-filter__btn--active'); });
+        btn.classList.add('blog-filter__btn--active');
+        var cat = btn.getAttribute('data-cat');
+        cards.forEach(function(card) {
+          var cardCat = card.querySelector('.post-card__cat');
+          if (cat === 'all' || !cardCat) {
+            card.style.display = '';
+          } else {
+            card.style.display = cardCat.textContent.trim() === cat ? '' : 'none';
+          }
+        });
+      });
+    });
+  })();
 
   <script>
     // Mobile menu toggle
