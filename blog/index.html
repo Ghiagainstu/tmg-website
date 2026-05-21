@@ -718,7 +718,7 @@
     p,blockquote,ul,ol,dl,table{page-break-inside:avoid;}
     @page{margin:2cm;}
   }
-  .blog-filter{display:flex;flex-wrap:wrap;gap:8px;padding:0 0 32px;justify-content:center}.blog-filter__btn{font-family:inherit;font-size:13px;font-weight:500;padding:6px 16px;border-radius:20px;border:1px solid var(--color-border);background:transparent;color:var(--color-text-secondary);cursor:pointer;transition:all .2s ease}.blog-filter__btn:hover{border-color:var(--color-accent);color:var(--color-accent)}.blog-filter__btn--active{background:var(--color-accent);color:var(--color-bg);border-color:var(--color-accent)}
+  .blog-filter{display:flex;flex-wrap:wrap;gap:6px;padding:0 0 28px;justify-content:center}.blog-filter__btn{font-family:inherit;font-size:12px;font-weight:500;padding:4px 12px;border-radius:16px;border:1px solid var(--color-border);background:transparent;color:var(--color-text-secondary);cursor:pointer;transition:all .2s ease}.blog-filter__btn:hover{border-color:var(--color-accent);color:var(--color-accent)}.blog-filter__btn--active{background:var(--color-accent);color:var(--color-bg);border-color:var(--color-accent)}.blog-filter__btn{font-family:inherit;font-size:13px;font-weight:500;padding:6px 16px;border-radius:20px;border:1px solid var(--color-border);background:transparent;color:var(--color-text-secondary);cursor:pointer;transition:all .2s ease}.blog-filter__btn:hover{border-color:var(--color-accent);color:var(--color-accent)}.blog-filter__btn--active{background:var(--color-accent);color:var(--color-bg);border-color:var(--color-accent)}
   </style>
 
     <style>
@@ -820,20 +820,20 @@
       </div>
     </div>
 
-                <div class="blog-filter">
+                        <div class="blog-filter">
           <button class="blog-filter__btn blog-filter__btn--active" data-cat="all">🏠 All</button>
-          <button class="blog-filter__btn" data-cat="Tencent Ads">📺 Tencent Ads</button>
-          <button class="blog-filter__btn" data-cat="China Ad Platforms">📱 China Platforms</button>
-          <button class="blog-filter__btn" data-cat="GEO / AI Search">🌍 GEO/AI Search</button>
+          <button class="blog-filter__btn" data-cat="Tencent Ads">📺 Tencent</button>
+          <button class="blog-filter__btn" data-cat="China Ad Platforms">📱 Platforms</button>
+          <button class="blog-filter__btn" data-cat="GEO / AI Search">🌍 GEO/AI</button>
           <button class="blog-filter__btn" data-cat="Douyin / Ocean Engine">🎵 Douyin/OE</button>
-          <button class="blog-filter__btn" data-cat="Bilibili / Gen Z Marketing">👾 Bilibili/GenZ</button>
+          <button class="blog-filter__btn" data-cat="Bilibili / Gen Z Marketing">👾 Bilibili</button>
           <button class="blog-filter__btn" data-cat="Xiaohongshu / Consumer Insights">📕 Xiaohongshu</button>
-          <button class="blog-filter__btn" data-cat="China Search Ads">🔍 Search Ads</button>
-          <button class="blog-filter__btn" data-cat="Search Engine">🔎 Search Engine</button>
-          <button class="blog-filter__btn" data-cat="China Market Insights">📊 Market Insights</button>
-          <button class="blog-filter__btn" data-cat="Paid Media Strategy">💰 Paid Media</button>
+          <button class="blog-filter__btn" data-cat="China Search Ads">🔍 Search</button>
+          <button class="blog-filter__btn" data-cat="Search Engine">🔎 Engine</button>
+          <button class="blog-filter__btn" data-cat="China Market Insights">📊 Insights</button>
+          <button class="blog-filter__btn" data-cat="Paid Media Strategy">💰 Paid</button>
           <button class="blog-filter__btn" data-cat="Platform Overview">🏗️ Platform</button>
-          <button class="blog-filter__btn" data-cat="App Monetization">📲 App Monet</button>
+          <button class="blog-filter__btn" data-cat="App Monetization">📲 Monet</button>
         </div>
     <section class="posts-section">
       <div class="container">
@@ -1336,30 +1336,25 @@
     </div>
   </footer>
 
+
+  <script>
   // Blog category filter
   (function() {
-    var filter = document.querySelector('.blog-filter');
-    if (!filter) return;
-    var btns = filter.querySelectorAll('.blog-filter__btn');
-    var cards = document.querySelectorAll('.post-card');
-    btns.forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        btns.forEach(function(b) { b.classList.remove('blog-filter__btn--active'); });
-        btn.classList.add('blog-filter__btn--active');
-        var cat = btn.getAttribute('data-cat');
-        cards.forEach(function(card) {
-          var cardCat = card.querySelector('.post-card__cat');
-          if (cat === 'all' || !cardCat) {
-            card.style.display = '';
-          } else {
-            card.style.display = cardCat.textContent.trim() === cat ? '' : 'none';
-          }
+    var f = document.querySelector('.blog-filter');
+    if (!f) return;
+    f.querySelectorAll('.blog-filter__btn').forEach(function(b) {
+      b.addEventListener('click', function() {
+        f.querySelectorAll('.blog-filter__btn').forEach(function(x) { x.classList.remove('blog-filter__btn--active'); });
+        b.classList.add('blog-filter__btn--active');
+        var cat = b.getAttribute('data-cat');
+        document.querySelectorAll('.post-card').forEach(function(c) {
+          var cc = c.querySelector('.post-card__cat');
+          c.style.display = (cat === 'all' || !cc || cc.textContent.trim() === cat) ? '' : 'none';
         });
       });
     });
   })();
 
-  <script>
     // Mobile menu toggle
     (function () {
       const toggle = document.querySelector('.header__toggle');
