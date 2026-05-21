@@ -1,5 +1,4 @@
 {
-  "trailingSlash": true,
   "redirects": [
     {
       "source": "/(.*)",
@@ -10,6 +9,26 @@
         }
       ],
       "destination": "https://www.tuyuesouxin.cn/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(ja|ko)/(about|contact|pricing|geo|faqs|why-tmg|services|client-stories|blog)",
+      "destination": "/$1/$2/",
+      "permanent": true
+    },
+    {
+      "source": "/(ja|ko)/(services)/(baidu|wechat|douyin|xiaohongshu|bilibili|bing)",
+      "destination": "/$1/$2/$3/",
+      "permanent": true
+    },
+    {
+      "source": "/(about|contact|pricing|geo|faqs|why-tmg|services|client-stories|blog)",
+      "destination": "/$1/",
+      "permanent": true
+    },
+    {
+      "source": "/(services)/(baidu|wechat|douyin|xiaohongshu|bilibili|bing)",
+      "destination": "/$1/$2/",
       "permanent": true
     }
   ],
@@ -37,21 +56,6 @@
     {
       "source": "/ko/blog/:slug/",
       "destination": "/ko/blog/:slug.html"
-    },
-    {
-      "source": "/(ja|ko)/(about|contact|pricing|geo|faqs|why-tmg|services|client-stories|blog)",
-      "destination": "/$1/$2/",
-      "permanent": true
-    },
-    {
-      "source": "/(ja|ko)/(services)/(baidu|wechat|douyin|xiaohongshu|bibili|bing)",
-      "destination": "/$1/$2/$3/",
-      "permanent": true
-    },
-    {
-      "source": "/(about|contact|pricing|geo|faqs|why-tmg|services|client-stories|blog)",
-      "destination": "/$1/",
-      "permanent": true
     }
   ]
 }
