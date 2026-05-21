@@ -43,7 +43,7 @@
       "permanent": true
     },
     {
-      "source": "/(ja|ko)/(services)/(baidu|wechat|douyin|xiaohongshu|bilibili|bing)",
+      "source": "/(ja|ko)/(services)/(baidu|wechat|douyin|xiaohongshu|bibili|bing)",
       "destination": "/$1/$2/$3/",
       "permanent": true
     },
@@ -51,35 +51,6 @@
       "source": "/(about|contact|pricing|geo|faqs|why-tmg|services|client-stories|blog)",
       "destination": "/$1/",
       "permanent": true
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "s-maxage=60, stale-while-revalidate=300"
-        }
-      ]
-    },
-    {
-      "source": "/assets/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "s-maxage=31536000, immutable"
-        }
-      ]
-    },
-    {
-      "source": "/favicon\\.(ico|svg)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "s-maxage=86400, stale-while-revalidate=604800"
-        }
-      ]
     }
   ]
 }
