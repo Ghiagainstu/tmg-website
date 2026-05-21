@@ -824,6 +824,23 @@
           중국 디지털 광고 환경에 대한 전문가 분석 — SEM 전략, 플랫폼 업데이트, 시장 인사이트 및 당사 팀의 사례 연구.
         </p>
 </div>
+
+        <div class="blog-filter">
+          <button class="blog-filter__btn blog-filter__btn--active" data-cat="all">🏠 All</button>
+          <button class="blog-filter__btn" data-cat="Tencent Ads">📺 Tencent Ads</button>
+          <button class="blog-filter__btn" data-cat="China Ad Platforms">📱 China Platforms</button>
+          <button class="blog-filter__btn" data-cat="GEO / AI Search">🌍 GEO/AI Search</button>
+          <button class="blog-filter__btn" data-cat="Douyin / Ocean Engine">🎵 Douyin/OE</button>
+          <button class="blog-filter__btn" data-cat="Bilibili / Gen Z Marketing">👾 Bilibili/GenZ</button>
+          <button class="blog-filter__btn" data-cat="Xiaohongshu / Consumer Insights">📕 Xiaohongshu</button>
+          <button class="blog-filter__btn" data-cat="China Search Ads">🔍 Search Ads</button>
+          <button class="blog-filter__btn" data-cat="Search Engine">🔎 Search Engine</button>
+          <button class="blog-filter__btn" data-cat="China Market Insights">📊 Market Insights</button>
+          <button class="blog-filter__btn" data-cat="Paid Media Strategy">💰 Paid Media</button>
+          <button class="blog-filter__btn" data-cat="Platform Overview">🏗️ Platform</button>
+          <button class="blog-filter__btn" data-cat="App Monetization">📲 App Monet</button>
+        </div>
+
 </div>
 <section class="posts-section">
 <div class="container">
@@ -1322,7 +1339,30 @@
       </div>
     </div>
   </footer>
-<script>
+  // Blog category filter
+  (function() {
+    var filter = document.querySelector('.blog-filter');
+    if (!filter) return;
+    var btns = filter.querySelectorAll('.blog-filter__btn');
+    var cards = document.querySelectorAll('.post-card');
+    btns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        btns.forEach(function(b) { b.classList.remove('blog-filter__btn--active'); });
+        btn.classList.add('blog-filter__btn--active');
+        var cat = btn.getAttribute('data-cat');
+        cards.forEach(function(card) {
+          var cardCat = card.querySelector('.post-card__cat');
+          if (cat === 'all' || !cardCat) {
+            card.style.display = '';
+          } else {
+            card.style.display = cardCat.textContent.trim() === cat ? '' : 'none';
+          }
+        });
+      });
+    });
+  })();
+
+  <script>
     // Mobile menu toggle
     (function () {
       const toggle = document.querySelector('.header__toggle');
