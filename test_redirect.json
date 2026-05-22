@@ -1,0 +1,5 @@
+{
+  "redirects": [
+    {"source": "/ko", "destination": "/ko/", "permanent": true}
+  ]
+}
