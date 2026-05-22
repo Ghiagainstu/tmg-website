@@ -30,6 +30,11 @@
       "source": "/(services)/(baidu|wechat|douyin|xiaohongshu|bilibili|bing)",
       "destination": "/$1/$2/",
       "permanent": true
+    },
+    {
+      "source": "/(.*)/index.html",
+      "destination": "/$1/",
+      "permanent": true
     }
   ],
   "rewrites": [
