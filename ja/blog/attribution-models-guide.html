@@ -786,7 +786,7 @@
 
     <p>2週間後、全体のコンバージョンが40%減少しました。何が起きたのか？当社のアトリビューションモデルは「ラストクリック」でした——ユーザーが最後にクリックした広告に全成果を帰属させていました。しかし実際には、ユーザーはDouyinでブランドを発見し、WeChatで調査し、最終的にBaidu検索でコンバージョンしていました。WeChatとBaiduを削減することで、Douyinのコンバージョンを支えていたファネルを壊してしまったのです。</p>
 
-    <p>That's when I realized: <strong>attribution isn't just a data problem—it's a strategy problem</strong>. The model you choose determines which platforms get credit, which campaigns get budget, and ultimately, whether your strategy actually makes sense.</p>
+    <p>アトリビューションは単なるデータの問題ではなく—戦略の問題です。選択するモデルによって、各チャネルにクレジットが割り当てられ、予算配分の判断が変わります。</p>
 
     <div class="callout callout--accent">
       <div class="callout__label">🎯 Key Insight</div>
@@ -801,11 +801,11 @@
 
     <h3 id="last-click">1. ラストクリック・アトリビューション</h3>
 
-    <p><strong>The logic:</strong> 100% credit goes to the last ad the user clicked before converting.</p>
+    <p>ロジック：コンバージョン前にユーザーがクリックした最後の広告に100%のクレジットが帰属します。</p>
 
-    <p><strong>When it works:</strong> Direct response campaigns with short customer journeys. If you're selling a low-consideration product (like a $10 snack) and most conversions happen within one session, last-click is simple and actionable.</p>
+    <p>有効な場面：カスタマージャーニーが短いダイレクトレスポンスキャンペーン。低関与製品を販売していて、クリックから購入までの時間が短い場合に最適です。</p>
 
-    <p><strong>The problem:</strong> It completely ignores the "discovery" phase. In the skincare example above, Douyin got all the credit, but WeChat and Baidu did the heavy lifting of building trust and consideration.</p>
+    <p>問題点：「発見」段階を完全に無視します。上のスキンケアの例では、Douyinが認知を生み出しましたが、クレジットはすべてブランド検索に帰属します。</p>
 
     <div class="callout">
       <div class="callout__label">💡 Pro Tip</div>
@@ -814,35 +814,35 @@
 
     <h3 id="first-click">2. ファーストクリック・アトリビューション</h3>
 
-    <p><strong>The logic:</strong> 100% credit goes to the first ad the user clicked.</p>
+    <p>ロジック：ユーザーが最初にクリックした広告に100%のクレジットが帰属します。</p>
 
-    <p><strong>When it works:</strong> Brand awareness campaigns. If your goal is to understand which channels are best at introducing new customers to your brand, first-click tells you that.</p>
+    <p><strong>有効な場面：</strong>ブランド認知キャンペーン。どのチャネルがブランドへの新規顧客紹介に最適かを理解したい場合、ファーストクリックがそれを教えてくれます。</p>
 
-    <p><strong>The problem:</strong> It ignores the rest of the journey. A user might click your ad, then ignore you for 3 weeks before converting via a different channel. First-click gives all the credit to that initial click, even if 5 other touchpoints influenced the decision.</p>
+    <p>問題点：ジャーニーの残りを無視します。ユーザーが広告をクリックした後、3週間無視し、その後ブランド名を検索して購入した場合—最初のクリックにクレジットが全て帰属します。</p>
 
     <h3 id="linear">3. リニア・アトリビューション</h3>
 
-    <p><strong>The logic:</strong> Credit is split equally across all touchpoints.</p>
+    <p>ロジック：すべてのタッチポイントに均等にクレジットが分配されます。</p>
 
-    <p><strong>When it works:</strong> When you want a "fair" view of the whole funnel, and you're not sure which touchpoints matter most. It's a good starting point if you're new to a market and don't have enough data for data-driven models yet.</p>
+    <p>有効な場面：ファネル全体の「公平な」ビューが必要で、どのタッチポイントが最も重要かわからない場合です。</p>
 
-    <p><strong>The problem:</strong> It dilutes the impact of critical touchpoints. If your data shows that 80% of conversions involve a Douyin ad in the awareness phase and a Baidu search in the conversion phase, linear attribution treats a random mid-funnel impression the same as those key moments.</p>
+    <p>問題点：重要なタッチポイントの影響を希薄化します。データが会話の80%が2つのタッチポイントから発生していることを示している場合でも、均等に分配されます。</p>
 
     <h3 id="time-decay">4. タイムディケイ・アトリビューション</h3>
 
-    <p><strong>The logic:</strong> Touchpoints closer to the conversion get more credit. The exact formula varies, but typically it's exponential—a touchpoint 1 day before conversion gets much more credit than one 10 days before.</p>
+    <p>ロジック：コンバージョンに近いタッチポイントにより多くのクレジットが割り当てられます。具体的な式は異なりますが、通常は指数減衰を使用します。</p>
 
-    <p><strong>When it works:</strong> Longer consideration cycles (like B2B, real estate, or high-ticket items). It acknowledges that awareness matters, but conversion is still driven by what happened recently.</p>
+    <p>有効な場面：より長い検討サイクル（B2B、不動産、高額品など）。コンバージョンに近いタッチポイントが重要であることを認識しています。</p>
 
-    <p><strong>The problem:</strong> The "decay rate" is subjective. Platforms often use different formulas, so comparing attribution across platforms becomes tricky.</p>
+    <p>問題点：「減衰率」は主観的です。プラットフォームは異なる式を使用することが多いため、アトリビューションを比較することが困難になります。</p>
 
     <h3 id="position-based">5. ポジションベース（U字型）アトリビューション</h3>
 
-    <p><strong>The logic:</strong> 40% credit to first touchpoint, 40% to last, and the remaining 20% split across the middle.</p>
+    <p>ロジック：最初のタッチポイントに40%、最後に40%、残りの20%を中間のタッチポイントに分配します。</p>
 
-    <p><strong>When it works:</strong> When you want to balance "discovery" and "conversion". This is my go-to model for most full-funnel campaigns because it acknowledges that both the first impression and the final click matter.</p>
+    <p>有効な場面：「発見」と「コンバージョン」のバランスを取りたい場合。ほとんどの中国市場キャンペーンにとって推奨モデルです。</p>
 
-    <p><strong>The problem:</strong> The 40-20-40 split is arbitrary. For some brands, the first touchpoint might be 60% of the value; for others, it might be 20%. But most platforms don't let you customize the weights.</p>
+    <p>問題点：40-20-40の分配は任意です。ブランドによっては、最初のタッチポイントがコンバージョンの60%を占める場合があります。</p>
 
     <div class="callout callout--accent">
       <div class="callout__label">🏆 My Recommendation</div>
@@ -851,19 +851,19 @@
 
     <h3 id="data-driven">6. データドリブン・アトリビューション（DDA）</h3>
 
-    <p><strong>The logic:</strong> An algorithm analyzes your historical data and assigns credit based on each touchpoint's actual contribution to conversion.</p>
+    <p>ロジック：アルゴリズムが履歴データを分析し、各タッチポイントのコンバージョンへの実際の貢献度に基づいてクレジットを割り当てます。</p>
 
-    <p><strong>When it works:</strong> When you have enough conversion data (typically 1000+ conversions per month). DDA can uncover non-obvious patterns—maybe your WeChat ads aren't driving many last-clicks, but they're present in 80% of conversion paths. That's valuable insight.</p>
+    <p>有効な場面：十分なコンバージョンデータがある場合（通常は月間1,000件以上）。DDAはプラットフォームの機械学習能力を活用します。</p>
 
-    <p><strong>The problem:</strong> It's a black box. You don't know exactly how the algorithm is weighting touchpoints. Also, if your data is messy (duplicate conversions, incorrect tracking), DDA will give you wrong answers.</p>
+    <p>問題点：ブラックボックスです。アルゴリズムがタッチポイントにどのように重み付けしているかわかりません。また、十分なデータがない場合は機能しません。</p>
 
     <h3 id="custom">7. カスタム・アトリビューション</h3>
 
-    <p><strong>The logic:</strong> You define the rules. Maybe you want to give 50% credit to the first touchpoint, 30% to the last, and 20% to any touchpoint on Douyin (because you know Douyin drives engagement even if it doesn't get the last click).</p>
+    <p>ロジック：ルールを定義します。最初のタッチポイントに50%、最後に30%、残りを中間に割り当てるなど。</p>
 
-    <p><strong>When it works:</strong> When you have a deep understanding of your customer journey and want to encode that into your attribution model.</p>
+    <p>有効な場面：カスタマージャーニーを深く理解し、それをアトリビューションルールにエンコードしたい場合です。</p>
 
-    <p><strong>The problem:</strong> It requires ongoing maintenance. As your strategy changes, your custom rules might become outdated. Also, most self-serve platforms don't offer custom attribution—you'll need to use a third-party attribution tool.</p>
+    <p>問題点：継続的なメンテナンスが必要です。戦略が変化すると、カスタムルールが古くなる可能性があります。</p>
 
     <h2 id="comparison">クイック比較表 📋</h2>
 
@@ -928,7 +928,7 @@
 
     <h2 id="platform-differences">プラットフォームごとの違い 🌐</h2>
 
-    <p>Here's something that confuses a lot of advertisers: <strong>different platforms use different attribution models by default</strong>. And if you're comparing CPA across platforms, you're probably comparing apples to oranges.</p>
+    <p>多くの広告主を混乱させるポイント：異なるプラットフォームが異なるアトリビューションモデルを使用します。Baiduは最後のクリック、Douyinはデータドリブン、WeChatはファーストタッチベース—すべてのプラットフォームで同じコンバージョンを異なる方法でカウントします。</p>
 
     <p>実例を挙げます。あるプラットフォームではデフォルトが「7日以内のラストクリック」かもしれません。別のプラットフォームでは「1日以内のラストクリック」かもしれません。この2つのプラットフォームのCPAを比較すると、後者の方がはるかに効率的に見えます——しかしそれはクリックから2〜7日後に発生したコンバージョンをカウントしていないからです。</p>
 
@@ -946,7 +946,7 @@
       <li><strong>Xiaohongshu (Little Red Book):</strong> Their attribution is still evolving. Currently, they tend to use a combination of last-click and time-decay, but it varies by ad product.</li>
     </ul>
 
-    <p>The bottom line: <strong>don't trust platform-reported CPA at face value</strong>. Always triangulate with your own tracking (ideally a third-party attribution tool or at least Google Analytics / your own CRM data).</p>
+    <p>結論：プラットフォームが報告するCPAを額面通りに信頼しないでください。常に独自のトラッキングデータと三角測量してください。</p>
 
     <h2 id="how-to-choose">正しいモデルの選び方 🎯</h2>
 
@@ -1042,7 +1042,7 @@
 
     <p>アトリビューションは完璧ではありません。完璧なモデルなど存在せず、そう言う人は何かを売りつけようとしています。</p>
 
-    <p>But here's what I've learned from managing $10M+ in ad spend across China's platforms: <strong>the goal isn't to find the "right" model—it's to find a model that helps you make better decisions</strong>. And that means understanding the strengths and blind spots of whatever model you're using.</p>
+    <p>中国のプラットフォームで1,000万ドル以上を管理して学んだこと：<strong>目標は「正しい」モデルを見つけることではなく—より良い意思決定を助けるモデルを見つけること</strong>です。つまり、使用しているモデルの強みと盲点を理解することです。</p>
 
     <p>中国の複数プラットフォームでキャンペーンを展開しているなら、これが私のアドバイスです：</p>
 
@@ -1055,9 +1055,7 @@
 
     <hr style="border:none; border-top:1px solid var(--color-border); margin:2rem 0;">
 
-    <p style="font-size:1.1rem; line-height:1.8; color:var(--color-text-primary);">
-      <strong>Running paid media across Baidu, Douyin, WeChat, Xiaohongshu, Bilibili, and Bing China for international agencies and brands—we see these attribution challenges every day. If you're confused by conflicting data across platforms, or you suspect your attribution model is hiding the true performance of your campaigns, <a href="/ja/contact/" style="color:var(--color-accent);">let's talk</a>. We'll help you cut through the noise and build a measurement framework that actually makes sense for your business.
-    </strong></p>
+    <p style="font-size:1.1rem; line-height:1.8; color:var(--color-text-primary);">中国市場に参入する国際的なエージェンシーやブランド向けに、Baidu、Douyin、WeChat、小紅書、Bilibili、Bing Chinaで有料メディアを運用しています。<a href="/ja/contact/">お問い合わせ</a>ください。</p>
 
     <p style="margin-top:1.5rem; padding:1.5rem; background:rgba(201,168,76,0.08); border-left:3px solid var(--color-accent); border-radius:0 var(--radius-md) var(--radius-md) 0;">
       <strong>Next Steps:</strong> Not sure which attribution model fits your campaign? Send us your campaign data, and we'll run an attribution audit—free for the first 10 brands that reach out this month. <a href="/ja/contact/" class="btn btn--primary" style="margin-left:1rem;">お問い合わせ →</a>

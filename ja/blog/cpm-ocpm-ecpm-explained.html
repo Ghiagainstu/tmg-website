@@ -789,19 +789,15 @@
 
         <div class="callout" style="margin-bottom: var(--space-8);">
           <div class="callout__label">The Short Version</div>
-          <p><strong>CPM</strong> = what you actually pay. <strong>oCPM</strong> = how you tell the system what you want to pay. <strong>eCPM</strong> = how the system decides who wins. Three layers, one funnel.</p>
+          <p>CPM = 実際に支払う金額。oCPM = システムに支払い意思を伝える方法。eCPM = システムが在庫を評価する方法。</p>
         </div>
 
         <h2 id="cpm">💰 CPM — 価格タグ（そして嘘の理由）</h2>
         <p>
           CPMはCost Per Mille——千回表示あたりのコスト。どのダッシュボードでも最も目立つ指標で、最初にチェックされるものです。
         </p>
-        <p>
-          <strong>The formula:</strong> CPM = spend ÷ impressions × 1000. If you spend ¥100 on 10,000 impressions, your CPM is ¥10.
-        </p>
-        <p>
-          <strong>Two flavors:</strong> In programmatic (search, social, OTT), CPM is dynamic — it fluctuates with competition, audience quality, and time of day. In brand advertising, CPM is usually fixed — you buy a rate card for a specific placement.
-        </p>
+        <p>計算式：CPM = 費用 ÷ インプレッション × 1000。100円で10,000インプレッションを購入した場合、CPMは10円です。</p>
+        <p>2種類のCPM：プログラマティック（検索、ソーシャル、OTT）では、CPMは動的—競争、タイミング、在庫に基づいて変動します。従来のディスプレイ広告では、CPMは固定—事前に合意されたレートです。</p>
         <p>
           しかしここが厄介なところ。低いCPMが自動的に良いわけではなく、高いCPMが自動的に悪いわけではありません。
         </p>
@@ -812,31 +808,23 @@
         </div>
 
         <h2 id="ocpm">🎯 oCPM — 入札額、コストじゃない</h2>
-        <p>
-          oCPM stands for Optimized Cost Per Mille. It is not a metric — it is a <strong>bidding method</strong>.
-        </p>
-        <p>
-          <strong>How it works:</strong> you tell the system what you are willing to pay for a desired action (a purchase, a registration, a lead). The system adjusts its bids in real time to try to hit your target.
-        </p>
-        <p>
-          <strong>Example:</strong> You set an oCPM bid with a target CPA of ¥100 for purchases. The system looks at every available impression, estimates the likelihood of a purchase, and decides how much to bid. If the user looks like a buyer, it might bid ¥150 CPM to win the impression. If the user looks unlikely to convert, it bids ¥20. On average, you pay ¥100 per purchase.
-        </p>
+        <p>oCPMはOptimized Cost Per Milleの略です。これは指標ではなく—入札モードです。システムに「このコンバージョンイベントに対してこれだけ支払う意思がある」と伝え、システムが自動的に入札を最適化します。</p>
+        <p>仕組み：システムに望ましいアクション（購入、リード、アプリインストール）に対して支払う意思を伝えます。システムはコンバージョンする可能性が最も高いユーザーに広告を表示するために、自動的に入札を調整します。</p>
+        <p>例：購入の目標CPA 100円でoCPM入札を設定します。システムはコンバージョン確率に基づいて入札を調整し—一部のインプレッションには120円、他のインプレッションには80円を入札します。平均CPMは予想より高くなるかもしれませんが、コンバージョン単価は低くなります。</p>
         <p>
           だから「最適化（Optimized）」と呼ばれるのです——システムが入札管理の重労働を引き受けます。BaiduではoCPC/oCPM、DouyinのOcean EngineではoCPM、Metaでは「最小単価」戦略——
         </p>
 
         <div class="callout">
           <div class="callout__label">Common Mistake</div>
-          <p>Many people treat oCPM as a target for their actual CPM. They watch the dashboard and panic when realized CPM is above their oCPM bid. But oCPM is your <em>bid input</em>, not your <em>cost output</em>. Your actual CPM can and will vary — what matters is whether your CPA is on track.</p>
+          <p>多くの人がoCPMを実際のCPMの目標として扱います。ダッシュボードでCPMがoCPM入札より高いと心配しますが、それは指標の使い方が間違っています。oCPMは入札戦略であり—実際のCPMの目標ではありません。</p>
         </div>
 
         <h2 id="ecpm">🧠 eCPM — システムの秘密のランキングスコア</h2>
         <p>
           eCPMはEffective Cost Per Milleの略。CPMが表層データ、oCPMが広告主とシステムの対話なら、eCPMはシステム内部のランキングエンジンです。
         </p>
-        <p>
-          Platforms have a limited amount of ad inventory and far more advertisers who want it. So they need a way to decide: <em>who gets this impression?</em> The answer is eCPM.
-        </p>
+        <p>プラットフォームには限られた広告在庫があり、より多くの広告主が表示を望んでいます。システムは各インプレッションから最大の収益を得る必要があります。</p>
         <p>
           <strong>簡略化された計算式：</strong>
         </p>
@@ -848,9 +836,7 @@
         <p>
           システムはユーザーがクリックするかコンバージョンするかを確実には知りません——予測します。その予測はユーザー行動、クリエイティブパフォーマンス、広告関連性の履歴データから構築されます。
         </p>
-        <p>
-          <strong>This is where it gets interesting:</strong> a lower bid can beat a higher bid, because eCPM is the real gatekeeper.
-        </p>
+        <p>ここが面白いところ：低い入札が高い入札に勝つことがあります。なぜなら、eCPMが指標だからです。プラットフォームは1,000インプレッションあたりの予想収益を最大化したいと考えています。</p>
 
         <div style="overflow-x: auto; margin: var(--space-6) 0;">
           <table style="width: 100%; border-collapse: collapse; background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden;">
@@ -900,9 +886,7 @@
         </p>
 
         <div style="text-align: center; padding: var(--space-6); background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-lg); margin: var(--space-6) 0;">
-          <p style="font-size: var(--font-size-lg); font-weight: 600; color: var(--color-accent-light);">
-            Advertiser bids via <strong>oCPM</strong> → System ranks by <strong>eCPM</strong> → Cost shows as <strong>CPM</strong>
-          </p>
+          <p style="font-size: var(--font-size-lg); font-weight: 600; color: var(--color-accent-light);">広告主がoCPMで入札 → システムがeCPMでランク付け — コストがCPMとして表示されます</p>
         </div>
 
         <table style="width: 100%; border-collapse: collapse; background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden; margin: var(--space-6) 0;">
@@ -969,9 +953,7 @@
           <p>Baidu（oCPC/oCPM）やOcean Engine（oCPM）などの中国プラットフォームでも同じロジックが適用されます。命名規則は若干異なりますが、入札→ランキング→価格設定のパイプラインは同じです。</p>
         </div>
 
-        <p>
-          We run paid media across Baidu, Douyin, WeChat, Xiaohongshu, Bilibili, and Bing China for international agencies and brands. If you want to talk through your campaign data — or just want a second set of eyes — <a href="/ja/contact/">reach out</a>.
-        </p>
+        <p>中国市場に参入する国際的なエージェンシーやブランド向けに、Baidu、Douyin、WeChat、小紅書、Bilibili、Bing Chinaで有料メディアを運用しています。<a href="/ja/contact/">お問い合わせ</a>ください。</p>
 
       </article>
 
