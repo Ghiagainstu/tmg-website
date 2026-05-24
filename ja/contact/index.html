@@ -815,23 +815,23 @@
                 <label class="form__label" for="salutation">敬称<span class="form__required">*</span></label>
                 <select class="form__select" id="salutation" name="敬称" required>
                   <option value="">敬称を選択</option>
-                  <option value="Mr.">Mr.</option>
-                  <option value="Ms.">Ms.</option>
-                  <option value="Mrs.">Mrs.</option>
+                  <option value="Mr.">様（男性）</option>
+                  <option value="Ms.">様（女性）</option>
+                  <option value="Mrs.">様（女性・既婚）</option>
                   <option value="Dr.">Dr.</option>
                   <option value="その他">その他</option>
                 </select>
               </div>
               <div class="form__group">
-                <label class="form__label" for="fullName">Full Name<span class="form__required">*</span></label>
-                <input class="form__input" type="text" id="fullName" name="Full Name" required placeholder="Your full name">
+                <label class="form__label" for="fullName">お名前<span class="form__required">*</span></label>
+                <input class="form__input" type="text" id="fullName" name="Full Name" required placeholder="お名前を入力してください">
               </div>
               <div class="form__group">
                 <label class="form__label" for="company">会社名<span class="form__required">*</span></label>
                 <input class="form__input" type="text" id="company" name="会社名" required placeholder="Your company name">
               </div>
               <div class="form__group">
-                <label class="form__label" for="type">Identity<span class="form__required">*</span></label>
+                <label class="form__label" for="type">役職 / 属性<span class="form__required">*</span></label>
                 <select class="form__select" id="type" name="Type" required>
                   <option value="">役職を選択</option>
                   <option value="Agency">広告代理店</option>
@@ -842,7 +842,7 @@
               </div>
               <div class="form__group">
                 <label class="form__label" for="email">メールアドレス<span class="form__required">*</span></label>
-                <input class="form__input" type="email" id="email" name="Email" required placeholder="your@email.com">
+                <input class="form__input" type="email" id="email" name="Email" required placeholder="example@domain.jp">
               </div>
               <div class="form__group">
                 <label class="form__label" for="service">必要なサービス<span class="form__required">*</span></label>
@@ -860,7 +860,7 @@
               </div>
               <div class="form__group">
                 <label class="form__label" for="comments">コメント（任意）</label>
-                <textarea class="form__textarea" id="comments" name="Comments" placeholder="Any additional information..."></textarea>
+                <textarea class="form__textarea" id="comments" name="Comments" placeholder="その他補足情報があればご記入ください"></textarea>
               </div>
               <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">送信する</button>
             </form>
@@ -954,10 +954,10 @@
 
         if (input.value.trim() === '') {
           isValid = false;
-          errorMsg = 'This field is required';
+          errorMsg = '必須項目です';
         } else if (input.type === 'email' && !isValidEmail(input.value)) {
           isValid = false;
-          errorMsg = 'Please enter a valid email address';
+          errorMsg = '有効なメールアドレスを入力してください';
         }
 
         const formGroup = input.closest('.form__group');
@@ -1002,7 +1002,7 @@
         const submitBtn = form.querySelector('[type="submit"]');
         const originalText = submitBtn.textContent;
         submitBtn.disabled = true;
-        submitBtn.textContent = 'Sending...';
+        submitBtn.textContent = '送信中...';
         submitBtn.style.opacity = '0.7';
 
         try {
@@ -1024,14 +1024,14 @@
             // ⚠️ Server error fallback
             const data = await response.json();
             if (data.errors) {
-              alert('Submission failed: ' + data.errors.map(e => e.message).join(', '));
+              alert('送信に失敗しました：' + data.errors.map(e => e.message).join(', '));
             } else {
-              alert('There was an error submitting your form. Please email us directly at tmg@tuyuesouxin.cn');
+              alert('送信中にエラーが発生しました。tmg@tuyuesouxin.cn まで直接ご連絡ください');
             }
           }
         } catch (err) {
           // 🔌 Network error fallback
-          alert('Network error. Please email us directly at tmg@tuyuesouxin.cn');
+          alert('ネットワークエラーが発生しました。tmg@tuyuesouxin.cn まで直接ご連絡ください');
         } finally {
           submitBtn.disabled = false;
           submitBtn.textContent = originalText;

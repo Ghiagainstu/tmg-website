@@ -593,7 +593,7 @@
 
     <style>
  
-<a href="#main-content" class="skip-to-content">Skip to main content</a>
+<a href="#main-content" class="skip-to-content">메인 콘텐츠로 건너뛰기</a>
      .skip-to-content {
         position: absolute;
         top: -40px;
@@ -610,8 +610,8 @@
     </style>
   </head>
 <body>
-  <!-- Skip to main content -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- 메인 콘텐츠로 건너뛰기 -->
+  <a href="#main-content" class="skip-link">메인 콘텐츠로 건너뛰기</a>
 
   
   
@@ -821,15 +821,15 @@
                 <label class="form__label" for="salutation">호称呼<span class="form__required">*</span></label>
                 <select class="form__select" id="salutation" name="Salutation" required>
                   <option value="">직함 선택</option>
-                  <option value="Mr.">Mr.</option>
-                  <option value="Ms.">Ms.</option>
-                  <option value="Mrs.">Mrs.</option>
+                  <option value="Mr.">님 (남성)</option>
+                  <option value="Ms.">님 (여성)</option>
+                  <option value="Mrs.">님 (여성·기혼)</option>
                   <option value="Dr.">Dr.</option>
-                  <option value="Other">Other</option>
+                  <option value="Other">기타</option>
                 </select>
               </div>
               <div class="form__group">
-                <label class="form__label" for="fullName">성명<span class="form__required">*</span></label>
+                <label class="form__label" for="fullName">성함<span class="form__required">*</span></label>
                 <input class="form__input" type="text" id="fullName" name="Full Name" required placeholder="Your full name">
               </div>
               <div class="form__group">
@@ -843,12 +843,12 @@
                   <option value="Agency">광고 에이전시</option>
                   <option value="Brand">Brand Owner</option>
                   <option value="Media">Media Publisher</option>
-                  <option value="Other">Other</option>
+                  <option value="Other">기타</option>
                 </select>
               </div>
               <div class="form__group">
                 <label class="form__label" for="email">이메일 주소<span class="form__required">*</span></label>
-                <input class="form__input" type="email" id="email" name="Email" required placeholder="your@email.com">
+                <input class="form__input" type="email" id="email" name="Email" required placeholder="example@domain.kr">
               </div>
               <div class="form__group">
                 <label class="form__label" for="service">필요 서비스<span class="form__required">*</span></label>
@@ -856,7 +856,7 @@
                   <option value="">서비스 유형 선택</option>
                   <option value="Recharge Only">Recharge Only</option>
                   <option value="Account Setup">Account Setup</option>
-                  <option value="Full Service">Full Service</option>
+                  <option value="Full Service">풀 서비스</option>
                   <option value="Other">기타 / 확실하지 않음</option>
                 </select>
               </div>
@@ -866,7 +866,7 @@
               </div>
               <div class="form__group">
                 <label class="form__label" for="comments">메시지 (선택사항)</label>
-                <textarea class="form__textarea" id="comments" name="Comments" placeholder="Any additional information..."></textarea>
+                <textarea class="form__textarea" id="comments" name="Comments" placeholder="추가 정보가 있다면 기재해주세요"></textarea>
               </div>
               <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">문의 제출</button>
             </form>
@@ -1011,7 +1011,7 @@
         const submitBtn = form.querySelector('[type="submit"]');
         const originalText = submitBtn.textContent;
         submitBtn.disabled = true;
-        submitBtn.textContent = 'Sending...';
+        submitBtn.textContent = '전송 중...';
         submitBtn.style.opacity = '0.7';
 
         try {
@@ -1033,7 +1033,7 @@
             // ⚠️ Server error fallback
             const data = await response.json();
             if (data.errors) {
-              alert('Submission failed: ' + data.errors.map(e => e.message).join(', '));
+              alert('제출 실패: ' + data.errors.map(e => e.message).join(', '));
             } else {
               alert('폼 제출 중 오류가 발생했습니다. 직접 이메일로 문의해 주세요: tmg@tuyuesouxin.cn');
             }
