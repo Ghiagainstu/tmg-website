@@ -244,7 +244,6 @@
     /* ── Article Layout ── */
     .article-hero {
       padding: 100px 0 var(--space-12);
-      border-bottom: 1px solid var(--color-border);
     }
     .article-hero .container { max-width: 860px; }
     .article-meta {
@@ -297,6 +296,7 @@
     /* ── Article Body ── */
     .article-body {
       padding: var(--space-16) 0;
+      background: #000;
     }
     .article-body .container {
       max-width: 860px;
@@ -308,7 +308,7 @@
     .article-content h2 {
       font-size: var(--font-size-2xl); font-weight: 700;
       color: var(--color-text-primary); margin: var(--space-10) 0 var(--space-4);
-      padding-top: var(--space-6); border-top: 1px solid var(--color-border);
+      padding-top: var(--space-6);
     }
     .article-content h2:first-child { margin-top: 0; padding-top: 0; border-top: none; }
     .article-content h3 {
@@ -865,12 +865,12 @@
 
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); margin: var(--space-6) 0;">
           <div style="background: var(--color-bg-card); border: 1px solid rgba(34,197,94,.3); border-radius: var(--radius-lg); padding: var(--space-5);">
-            <div style="font-size: 1.5rem; margin-bottom: var(--space-2);">📈 CPM ↑  📈 CTR ↑</div>
+            <div style="font-size: 1.5rem; margin-bottom: var(--space-2);">📈 CPM (trending up)  📈 CTR (trending up)</div>
             <div style="font-size: var(--font-size-sm); color: #22c55e; font-weight: 600; margin-bottom: var(--space-2);">Good sign ✅</div>
             <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin: 0;">より良いクリエイティブ、より良いターゲティング。CPAを監視。CPAが維持または低下すれば、スケールアップ。</p>
           </div>
           <div style="background: var(--color-bg-card); border: 1px solid rgba(239,68,68,.3); border-radius: var(--radius-lg); padding: var(--space-5);">
-            <div style="font-size: 1.5rem; margin-bottom: var(--space-2);">📈 CPM ↑  📉 CTR →/↓</div>
+            <div style="font-size: 1.5rem; margin-bottom: var(--space-2);">📈 CPM (trending up)  📉 CTR →/↓</div>
             <div style="font-size: var(--font-size-sm); color: #ef4444; font-weight: 600; margin-bottom: var(--space-2);">Bad sign ❌</div>
             <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin: 0;">同じ（またはより悪い）エンゲージメントにより高いコスト。競合急増またはクリエイティブ疲労。クリエイティブを修正するか一時停止。</p>
           </div>
@@ -880,7 +880,7 @@
             <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin: 0;">誰も欲しがらない安いトラフィック。広告が間違った人の前に表示されている。ターゲティングを確認するかクリエイティブを更新。</p>
           </div>
           <div style="background: var(--color-bg-card); border: 1px solid rgba(34,197,94,.3); border-radius: var(--radius-lg); padding: var(--space-5);">
-            <div style="font-size: 1.5rem; margin-bottom: var(--space-2);">📉 CPM ↓  📈 CTR ↑</div>
+            <div style="font-size: 1.5rem; margin-bottom: var(--space-2);">📉 CPM ↓  📈 CTR (trending up)</div>
             <div style="font-size: var(--font-size-sm); color: #22c55e; font-weight: 600; margin-bottom: var(--space-2);">Ideal ✅✅</div>
             <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin: 0;">スイートスポットを見つけた。低競合＋高関連性。予算を倍にして波に乗る。</p>
           </div>

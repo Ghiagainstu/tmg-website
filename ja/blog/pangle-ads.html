@@ -244,7 +244,6 @@
     /* ── Article Layout ── */
     .article-hero {
       padding: 100px 0 var(--space-12);
-      border-bottom: 1px solid var(--color-border);
     }
     .article-hero .container { max-width: 860px; }
     .article-meta {
@@ -297,6 +296,7 @@
     /* ── Article Body ── */
     .article-body {
       padding: var(--space-16) 0;
+      background: #000;
     }
     .article-body .container {
       max-width: 860px;
@@ -308,7 +308,7 @@
     .article-content h2 {
       font-size: var(--font-size-2xl); font-weight: 700;
       color: var(--color-text-primary); margin: var(--space-10) 0 var(--space-4);
-      padding-top: var(--space-6); border-top: 1px solid var(--color-border);
+      padding-top: var(--space-6);
     }
     .article-content h2:first-child { margin-top: 0; padding-top: 0; border-top: none; }
     .article-content h3 {
@@ -703,255 +703,7 @@
           <div class="header__dropdown">
             <a href="https://www.tuyuesouxin.cn/ja/services/" class="header__nav-link header__dropdown-trigger">
               サービス
-              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </a>
-            <div class="header__dropdown-menu">
-              <a href="https://www.tuyuesouxin.cn/ja/services" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">すべてのサービス</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/wechat" class="header__dropdown-item">WeChat広告</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/douyin" class="header__dropdown-item">Douyin広告</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/baidu" class="header__dropdown-item">Baidu SEM</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/bing" class="header__dropdown-item">Bing China</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/xiaohongshu" class="header__dropdown-item">小紅書（RED）</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/bilibili" class="header__dropdown-item">Bilibili広告</a>
-              <a href="https://www.tuyuesouxin.cn/ja/geo/" class="header__dropdown-item">中国GEO</a>
-            </div>
-          </div>
-          <a href="https://www.tuyuesouxin.cn/ja/pricing/" class="header__nav-link">料金</a>
-          <a href="https://www.tuyuesouxin.cn/ja/client-stories/" class="header__nav-link">導入事例</a>
-          <a href="https://www.tuyuesouxin.cn/ja/geo/" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
-          <a href="https://www.tuyuesouxin.cn/ja/blog/" class="header__nav-link">ブログ</a>
-          <a href="https://www.tuyuesouxin.cn/ja/faqs" class="header__nav-link">FAQ</a>
-          <div class="header__dropdown">
-            <a href="https://www.tuyuesouxin.cn/ja/about/" class="header__nav-link header__dropdown-trigger">
-              会社概要
-              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </a>
-            <div class="header__dropdown-menu">
-              <a href="https://www.tuyuesouxin.cn/ja/why-tmg/" class="header__dropdown-item">TMGを選ぶ理由</a>
-              <a href="https://www.tuyuesouxin.cn/ja/about/" class="header__dropdown-item">会社概要</a>
-              <a href="https://www.tuyuesouxin.cn/ja/contact/" class="header__dropdown-item">お問い合わせ</a>
-            </div>
-          </div>
-        </nav>
-                  <div class="header__lang-wrap">
-        <button class="header__lang-btn" onclick="this.parentElement.classList.toggle('active')">
-          <span class="header__lang-flag">🇯🇵</span>日本語
-          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 3.5l3 4 3-4"/></svg>
-        </button>
-        <div class="header__lang-menu">
-          <a href="https://www.tuyuesouxin.cn/" class="header__lang-item"><span class="header__lang-flag">🇺🇸</span>English</a>
-          <a href="https://www.tuyuesouxin.cn/ko/" class="header__lang-item"><span class="header__lang-flag">🇰🇷</span>한국어</a>
-        </div>
-      </div>
-        <div class="header__cta">
-          <a href="https://www.tuyuesouxin.cn/ja/contact/" class="btn btn--primary">お問い合わせ</a>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Article Hero -->
-  <section class="article-hero">
-  <div class="container">
-    <div class="article-meta">
-      <span class="article-category">アプリマネタイゼーション</span>
-      <span class="article-date">May 2026</span>
-      <span class="article-read-time">読了まで約10分</span>
-    </div>
-    <h1 class="article-hero__title">Pangle Ads：ByteDanceのグローバルアプリマネタイズプラットフォーム</h1>
-    <p class="article-hero__intro">
-      For mobile app developers and advertisers seeking high-quality user acquisition at scale, <strong>Pangle</strong> (穿山甲) is one of the most powerful platforms you've probably never worked with directly—but almost certainly encountered.
-    </p>
-
-      <div class="article-hero__author">
-        <div class="article-hero__author-avatar">TMG</div>
-        <div class="article-hero__author-info">
-          <div class="article-hero__author-name">Tuyue Media Gateway</div>
-          <div class="article-hero__author-role">ペイドメディアチーム · 上海</div>
-        </div>
-      </div>
-  </div>
-</section>
-
-<!-- Article Body -->
-<main id="main-content" class="article-body">
-  <div class="container">
-    <article class="article-content reveal">
-
-    <p>For mobile app developers and advertisers seeking high-quality user acquisition at scale, <strong>Pangle</strong> (穿山甲) is one of the most powerful platforms you've probably never worked with directly—but almost certainly encountered.</p>
-
-    <p>ByteDanceのグローバルアプリ収益化・ユーザーグロースプラットフォームとして、Pangleは世界中の数十万のアプリにわたる広告を支えています。</p>
-
-    <p>ゲームアプリ内の全画面インタースティシャル広告で、高いエンゲージメント率を実現します。</p>
-
-    <h2 id="scale">Pangleの規模</h2>
-
-    <p>アプリインターフェースにシームレスに統合されたバナー広告で、UXへの混乱を最小限に抑えます。</p>
-
-    <div class="stat-bar">
-      <div class="stat">
-        <span class="stat__num">800M+</span>
-        <span class="stat__label">Active Users</span>
-      </div>
-      <div class="stat">
-        <span class="stat__num">—</span>
-        <span class="stat__label">Active Users</span>
-      </div>
-      <div class="stat">
-        <span class="stat__num">—</span>
-        <span class="stat__label">Active Users</span>
-      </div>
-      <div class="stat">
-        <span class="stat__num">—</span>
-        <span class="stat__label">Active Users</span>
-      </div>
-      <div class="stat">
-        <span class="stat__num">—</span>
-        <span class="stat__label">Active Users</span>
-      </div>
-    </div>
-
-    <p>注目すべきは、トップティアの広告主がプラットフォームの総広告費の90%を占めていることです—つまり、インベントリの品質は高く、プレースメントをめぐる競争は激しいです。</p>
-
-    <h2 id="advertisers">広告主にPangleが提供するもの</h2>
-
-    <p>Pangleは主にアプリパブリッシャー向けのサプライサイドプラットフォーム（SSP）として知られていますが、広告主向けの機能もますます堅牢になっています。</p>
-
-    <ul>
-      <li><strong>Massive, high-quality inventory</strong> from 100,000+ apps across ByteDance's ecosystem and beyond</li>
-      <li><strong>Advanced targeting</strong> powered by ByteDance's AI recommendation engine, originally developed for TikTok and Douyin</li>
-      <li><strong>Optimized bidding models</strong> that balance user acquisition cost with LTV (Lifetime Value) outcomes</li>
-      <li><strong>Access to exclusive content partnerships</strong> and native ad formats unique to the ByteDance ecosystem</li>
-      <li><strong>Full-funnel attribution</strong> across install, activation, and post-install events</li>
-    </ul>
-
-    <div class="callout">
-      <span class="callout__icon">&#128161;</span>
-      <p>国際的な広告主向け：Pangleは中国だけでなくグローバルに展開しています。モバイルユーザーキャンペーンを実行している場合、Pangleは複数地域のプレミアムインアプリインベントリへのアクセスを提供します。</p>
-    </div>
-
-    <h2 id="ad-formats">Pangleの仕組み</h2>
-
-    <p>Pangleは全スペクトラムのアプリ内広告形式をサポートし、ブランドとアプリ開発者がグローバルにユーザーを獲得・維持できるようにする。</p>
-
-    <div class="format-grid">
-      <div class="format-card">
-        <span class="format-card__icon">&#9654;</span>
-        <div>
-          <div class="format-card__name">In-Feed Ads</div>
-          <div class="format-card__note">ネイティブ, scrollable within content</div>
-        </div>
-      </div>
-      <div class="format-card">
-        <span class="format-card__icon">&#9744;</span>
-        <div>
-          <div class="format-card__name">バナー Ads</div>
-          <div class="format-card__note">Static display, persistent position</div>
-        </div>
-      </div>
-      <div class="format-card">
-        <span class="format-card__icon">&#9632;</span>
-        <div>
-          <div class="format-card__name">インタースティシャル Ads</div>
-          <div class="format-card__note">Full-screen between transitions</div>
-        </div>
-      </div>
-      <div class="format-card">
-        <span class="format-card__icon">&#9733;</span>
-        <div>
-          <div class="format-card__name">Splash Ads</div>
-          <div class="format-card__note">Full-screen on app launch</div>
-        </div>
-      </div>
-      <div class="format-card">
-        <span class="format-card__icon">&#9889;</span>
-        <div>
-          <div class="format-card__name">報酬付き動画</div>
-          <div class="format-card__note">User opt-in, highest completion rate</div>
-        </div>
-      </div>
-      <div class="format-card">
-        <span class="format-card__icon">&#9633;</span>
-        <div>
-          <div class="format-card__name">Full-Screen Video</div>
-          <div class="format-card__note">Non-skippable, high-impact</div>
-        </div>
-      </div>
-      <div class="format-card">
-        <span class="format-card__icon">&#9731;</span>
-        <div>
-          <div class="format-card__name">Immersive Video</div>
-          <div class="format-card__note">Interactive, high-engagement format</div>
-        </div>
-      </div>
-    </div>
-
-    <p>リワード動画は、アプリ開発者やゲーム会社にとって特に注目すべきフォーマットです：ユーザーはインアプリ報酬と引き換えにフル広告視聴を選択し、より高いエンゲージメントと完了率を実現します。</p>
-
-    <h2 id="pricing">広告フォーマット</h2>
-
-    <p>一方、Ocean Engineは中国市場向けのブランド認知、eコマース、ローカルビジネス目標に焦点を当てています。</p>
-
-    <div class="pricing-grid">
-      <div class="pricing-chip">
-        <span class="pricing-chip__model">CPC</span>
-        <span class="pricing-chip__desc">—</span>
-      </div>
-      <div class="pricing-chip">
-        <span class="pricing-chip__model">CPM</span>
-        <span class="pricing-chip__desc">—</span>
-      </div>
-      <div class="pricing-chip">
-        <span class="pricing-chip__model">—</span>
-        <span class="pricing-chip__desc">—</span>
-      </div>
-      <div class="pricing-chip">
-        <span class="pricing-chip__model">—</span>
-        <span class="pricing-chip__desc">—</span>
-      </div>
-    </div>
-
-    <p>OCPCとOCPMモデルは、パフォーマンス広告主にとって特に価値があります：クリック確率だけでなく、コンバージョンの可能性に基づいて入札を機械学習で最適化します。</p>
-
-    <h2 id="getting-started">Ocean Engineとの違い</h2>
-
-    <h3>国際アプリ開発者向け推奨戦略</h3>
-    <p>Pangleは、アクティブなアプリを持つすべての法人エンティティに開放されています。個人開発者は受け入れられません。統合は主にOcean Engineのデマンドサイドプラットフォームを通じて行われます。</p>
-
-    <h3>まとめ</h3>
-    <p>国際的な広告主は、Ocean Engineのデマンドサイドプラットフォームを通じて、またはPangleの独自広告管理インターフェースを通じて、Pangleのインベントリにアクセスできます。</p>
-
-    <h2 id="implications">Pangleを使うべき場合</h2>
-
-    <p>Pangleは西側以外で最大かつ最も洗練されたモバイル広告エコシステムの一つを代表する。</p>
-
-    <ul>
-      <li><strong>Access to ByteDance's proprietary audience data</strong> across 800M+ users—data that is not available through Western ad platforms</li>
-      <li><strong>Premium app inventory</strong> with 90% of budgets coming from top-tier advertisers ensures a high-quality environment</li>
-      <li><strong>Rewarded video format</strong> delivers the highest engagement rates of any in-app format—ideal for gaming, fintech, and subscription apps</li>
-      <li><strong>Global reach</strong> across 150+ countries, with strong coverage in Southeast Asia, India, Latin America, and the Middle East</li>
-      <li><strong>OCPC/OCPM optimization</strong> means you can bid toward real business outcomes, not just surface-level metrics</li>
-    </ul>
-
-    <div class="takeaways">
-      <h2>制限事項</h2>
-      <ul>
-        <li><strong>Pangle reaches 800M+ users</strong> with 63B daily ad requests and 110B daily impressions—making it one of the top three mobile ad networks globally by volume.</li>
-        <li><strong>Seven ad format types</strong> (feed, banner, interstitial, splash, rewarded video, full-screen, immersive) cover every campaign objective from brand awareness to direct response.</li>
-        <li><strong>OCPC and OCPM bidding</strong> enable performance-focused campaigns that optimize toward actual conversions, not just clicks.</li>
-        <li><strong>Rewarded video is the standout format</strong> for user acquisition in gaming, edtech, and subscription apps—highest completion rate, fully opt-in, premium brand-safe environment.</li>
-        <li><strong>Global reach</strong> makes Pangle relevant not just for China campaigns, but for any international mobile marketing strategy targeting emerging markets.</li>
-      </ul>
-    </div>
-
-    <blockquote>
-      "Pangle is where ByteDance's recommendation engine meets global app inventory—a combination that gives advertisers audience intelligence and scale rarely matched elsewhere."
-    </blockquote>
-
-    <p style="margin-top:2rem; color:var(--text-muted); font-size:.875rem; border-top:1px solid var(--border); padding-top:1.5rem;">
-      <strong>Source:</strong> Ocean Engine Encyclopedia — 穿山甲广告 entry. Published July 16, 2021.<br>
-      <strong>Prepared by:</strong> Tuyue Media Gateway — China's paid media partner for international brands.
-    </p>
+              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
 
   </article>
 
