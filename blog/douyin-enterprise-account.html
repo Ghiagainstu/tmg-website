@@ -552,7 +552,6 @@
       .feature-grid { grid-template-columns: 1fr; }
       .related__grid { grid-template-columns: 1fr; }
     }
-    }
 
     /* ── Scroll Reveal (disabled: content always visible) ── */
     .reveal {
@@ -632,6 +631,32 @@
     }
     .header__lang-flag { font-size: 15px; line-height: 1; }
     
+    /* ── Takeaways ── */
+    .takeaways {
+      background: rgba(201,168,76,.06); border: 1px solid rgba(201,168,76,.2);
+      border-radius: var(--radius-lg); padding: var(--space-6);
+      margin: var(--space-8) 0;
+    }
+    .takeaways h2 {
+      font-size: var(--font-size-xl); color: var(--color-accent) !important;
+      margin: 0 0 var(--space-4) !important; padding: 0 !important;
+      border: none !important;
+    }
+    .takeaways ul { margin: 0 0 0 var(--space-6); }
+    .takeaways li { margin-bottom: var(--space-3); }
+
+    /* ── Blockquote ── */
+    .article-content blockquote {
+      border-left: 3px solid var(--color-accent);
+      background: rgba(201,168,76,.04);
+      padding: var(--space-5) var(--space-6);
+      margin: var(--space-8) 0;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      font-style: italic;
+      color: var(--color-text-secondary);
+    }
+    .article-content blockquote p { margin-bottom: 0; }
+
   @media print{
     *{box-shadow:none!important;text-shadow:none!important;}
     body{background:white!important;color:black!important;}
@@ -647,9 +672,7 @@
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tuyue Media Gateway","alternateName":"TMG","url":"https://www.tuyuesouxin.cn/","description":"The unified media interface for international agencies entering China's digital advertising market. One connection, all platforms.","email":"tmg@tuyuesouxin.cn","address":{"@type":"PostalAddress","streetAddress":"599-2F202 Wanzhen Road","addressLocality":"Shanghai","addressRegion":"Shanghai","postalCode":"201824","addressCountry":"CN"},"sameAs":[]}</script>
 
     <style>
- 
-<a href="#main-content" class="skip-to-content">Skip to main content</a>
-     .skip-to-content {
+      .skip-to-content {
         position: absolute;
         top: -40px;
         left: 0;
@@ -760,7 +783,7 @@
       Douyin Enterprise Accounts: The Complete Guide for International Brands
     </h1>
     <p class="article-hero__intro">
-      
+      With 600M+ daily active users, Douyin is China's dominant short-video platform. But competing effectively starts with one prerequisite: a verified Enterprise Account. Here's everything international brands need to know.
     </p>
 
       <div class="article-hero__author">
@@ -862,58 +885,41 @@
     <p>Douyin Enterprise Accounts are not just a box to check. They deliver tangible strategic value:</p>
 
     <div class="feature-grid">
-      <div class="feature-card">
-        <div class="feature-card__icon">&#9989;</div>
-        <h3>1. Easy Entry for Any Business Size</h3>
-        <p>Whether you are a multinational corporation or an SME with a Chinese subsidiary, Douyin Enterprise Accounts are open to all PRC-registered entities—including foreign-invested enterprises and individual businesses.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-card__icon">&#128187;</div>
-        <h3>2. Low-Cost Operations</h3>
-        <p>Core account management runs entirely on the Douyin mobile app. No specialized hardware or software required—just a smartphone. Budget and creative planning can be managed from anywhere.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-card__icon">&#128101;</div>
-        <h3>3. Access to 600M+ Daily Active Users</h3>
-        <p>As of 2020, Douyin exceeded 600M DAU—a figure that has only grown. A verified Enterprise Account gives your brand direct access to this massive, highly engaged audience through content and advertising.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-card__icon">&#128176;</div>
-        <h3>4. Direct Revenue Path</h3>
-        <p>Enterprise Accounts integrate with Douyin Store (抖音小店) and local business tools, enabling direct online sales, offline store traffic generation, and full-funnel attribution—from awareness to transaction.</p>
-      </div>
+      <div class="feature-card"><div class="feature-card__num">1</div><div class="feature-card__title">Easy Entry for Any Business Size</div><div class="feature-card__desc">Whether you are a multinational corporation or an SME with a Chinese subsidiary, Douyin Enterprise Accounts are open to all PRC-registered entities — including foreign-invested enterprises and individual businesses.</div></div>
+      <div class="feature-card"><div class="feature-card__num">2</div><div class="feature-card__title">Low-Cost Operations</div><div class="feature-card__desc">Core account management runs entirely on the Douyin mobile app. No specialized hardware or software required — just a smartphone. Budget and creative planning can be managed from anywhere.</div></div>
+      <div class="feature-card"><div class="feature-card__num">3</div><div class="feature-card__title">Access to 600M+ Daily Active Users</div><div class="feature-card__desc">A verified Enterprise Account gives your brand direct access to this massive, highly engaged audience through content and advertising.</div></div>
+      <div class="feature-card"><div class="feature-card__num">4</div><div class="feature-card__title">Direct Revenue Path</div><div class="feature-card__desc">Enterprise Accounts integrate with Douyin Store (抖音小店) and local business tools, enabling direct online sales, offline store traffic generation, and full-funnel attribution.</div></div>
     </div>
 
     <h2 id="implications">What This Means for Your Brand Strategy</h2>
 
     <p>For international media buyers and brand managers, the Douyin Enterprise Account is the foundation of your Douyin presence. Here is the strategic sequence:</p>
 
-    <ol>
-      <li><strong>Register first.</strong> Get your Enterprise Account set up and verified before launching any content or ad campaigns. The Blue V badge and data tools are available from Day 1.</li>
-      <li><strong>Build organic momentum.</strong> Use the account's native tools to post content, grow followers, and test creative concepts before spending on paid amplification.</li>
-      <li><strong>Layer in paid media.</strong> Once you have organic data from your Enterprise Account, use Ocean Engine's demand-side platform to run targeted Douyin Ads against your audience insights.</li>
-      <li><strong>Connect to commerce.</strong> Link your Douyin Store and leverage local business tools to create a direct path from video views to purchases.</li>
-    </ol>
+    <div class="scenario-list">
+      <li><div class="scenario-list__icon">1️⃣</div><div class="scenario-list__content"><strong>Register first</strong><span>Get your Enterprise Account set up and verified before launching any content or ad campaigns. The Blue V badge and data tools are available from Day 1.</span></div></li>
+      <li><div class="scenario-list__icon">2️⃣</div><div class="scenario-list__content"><strong>Build organic momentum</strong><span>Use the account's native tools to post content, grow followers, and test creative concepts before spending on paid amplification.</span></div></li>
+      <li><div class="scenario-list__icon">3️⃣</div><div class="scenario-list__content"><strong>Layer in paid media</strong><span>Once you have organic data from your Enterprise Account, use Ocean Engine's demand-side platform to run targeted Douyin Ads against your audience insights.</span></div></li>
+      <li><div class="scenario-list__icon">4️⃣</div><div class="scenario-list__content"><strong>Connect to commerce</strong><span>Link your Douyin Store and leverage local business tools to create a direct path from video views to purchases.</span></div></li>
+    </div>
 
     <div class="takeaways">
       <h2>Key Takeaways</h2>
       <ul>
-        <li><strong>5M+ enterprise accounts</strong> and counting—Douyin Business is mainstream and competitive. International brands need to be present and verified.</li>
+        <li><strong>5M+ enterprise accounts</strong> and counting — Douyin Business is mainstream and competitive. International brands need to be present and verified.</li>
         <li><strong>Four progressive tiers</strong> mean you can start free and upgrade as your China operations mature. Even a Basic account unlocks the Blue V and audience data.</li>
         <li><strong>The Blue V is a trust multiplier</strong> for international brands in China's digital landscape, where authenticity concerns are high.</li>
-        <li><strong>Mobile-first operations</strong> mean your brand team can manage Douyin content and community directly from a smartphone—no heavy infrastructure needed.</li>
+        <li><strong>Mobile-first operations</strong> mean your brand team can manage Douyin content and community directly from a smartphone — no heavy infrastructure needed.</li>
         <li><strong>The full-funnel path</strong> (content → followers → Douyin Store → sales) makes Enterprise Accounts the central hub for any Douyin media strategy.</li>
       </ul>
     </div>
 
-    <blockquote>
-      "In China's short video economy, your Enterprise Account is not just a profile—it is the digital headquarters of your brand on Douyin."
-    </blockquote>
+    <blockquote>"In China's short video economy, your Enterprise Account is not just a profile — it is the digital headquarters of your brand on Douyin."</blockquote>
 
-    <p style="margin-top:2rem; color:var(--text-muted); font-size:.875rem; border-top:1px solid var(--border); padding-top:1.5rem;">
-      <strong>Source:</strong> Ocean Engine Encyclopedia — 抖音企业号 entry. Published July 16, 2021.<br>
-      <strong>Prepared by:</strong> Tuyue Media Gateway — China's paid media partner for international brands.
-    </p>
+    <div class="callout callout--accent">
+      <div class="callout__label">Ready to Set Up Your Douyin Enterprise Account?</div>
+      <p style="margin-bottom:var(--space-4);">TMG helps international brands navigate the Douyin Enterprise Account registration process — from Blue V verification to Ocean Engine setup to Douyin Store integration. We handle the complexity so you can focus on content and growth.</p>
+      <a href="/contact/" class="btn btn--primary">Talk to a Specialist →</a>
+    </div>
 
   </article>
 
