@@ -552,7 +552,73 @@
       .feature-grid { grid-template-columns: 1fr; }
       .related__grid { grid-template-columns: 1fr; }
     }
+
+    /* ── Platform Grid ── */
+    .platform-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: var(--space-4); margin: var(--space-6) 0;
     }
+    .platform-card {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5);
+      transition: border-color var(--transition-base);
+    }
+    .platform-card:hover { border-color: rgba(201,168,76,.4); }
+    .platform-card__name {
+      font-size: var(--font-size-base); font-weight: 600;
+      color: var(--color-text-primary); margin-bottom: var(--space-2);
+    }
+    .platform-card__desc {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.6;
+    }
+
+    /* ── Mission Block ── */
+    .mission {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-6);
+      margin: var(--space-6) 0; text-align: center;
+    }
+    .mission__brand {
+      display: inline-block; padding: 4px 16px;
+      background: rgba(201,168,76,.15); border: 1px solid rgba(201,168,76,.3);
+      border-radius: 20px; font-size: var(--font-size-xs); font-weight: 600;
+      color: var(--color-accent); text-transform: uppercase; letter-spacing: .08em;
+      margin-bottom: var(--space-4);
+    }
+    .mission__mission, .mission__vision {
+      font-size: var(--font-size-lg); color: var(--color-text-primary);
+      font-weight: 600; margin-bottom: var(--space-2);
+    }
+    .mission__tagline {
+      font-size: var(--font-size-base); color: var(--color-accent-light);
+      font-style: italic; margin-top: var(--space-4);
+    }
+
+    /* ── Takeaways ── */
+    .takeaways {
+      background: rgba(201,168,76,.06); border: 1px solid rgba(201,168,76,.2);
+      border-radius: var(--radius-lg); padding: var(--space-6);
+      margin: var(--space-8) 0;
+    }
+    .takeaways h2 {
+      font-size: var(--font-size-xl); color: var(--color-accent) !important;
+      margin: 0 0 var(--space-4) !important; padding: 0 !important;
+      border: none !important;
+    }
+    .takeaways ul { margin: 0 0 0 var(--space-6); }
+    .takeaways li { margin-bottom: var(--space-3); }
+
+    /* ── Blockquote ── */
+    .article-content blockquote {
+      border-left: 3px solid var(--color-accent);
+      background: rgba(201,168,76,.04);
+      padding: var(--space-5) var(--space-6);
+      margin: var(--space-8) 0;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      font-style: italic;
+      color: var(--color-text-secondary);
+    }
+    .article-content blockquote p { margin-bottom: 0; }
 
     /* ── Scroll Reveal (disabled: content always visible) ── */
     .reveal {
@@ -647,9 +713,7 @@
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tuyue Media Gateway","alternateName":"TMG","url":"https://www.tuyuesouxin.cn/","description":"The unified media interface for international agencies entering China's digital advertising market. One connection, all platforms.","email":"tmg@tuyuesouxin.cn","address":{"@type":"PostalAddress","streetAddress":"599-2F202 Wanzhen Road","addressLocality":"Shanghai","addressRegion":"Shanghai","postalCode":"201824","addressCountry":"CN"},"sameAs":[]}</script>
 
     <style>
- 
-<a href="#main-content" class="skip-to-content">Skip to main content</a>
-     .skip-to-content {
+      .skip-to-content {
         position: absolute;
         top: -40px;
         left: 0;
@@ -760,7 +824,7 @@
       Ocean Engine: Douyin's Unified Digital Marketing Platform Explained
     </h1>
     <p class="article-hero__intro">
-      
+      Ocean Engine is ByteDance's unified digital marketing platform, connecting Douyin, Toutiao, Xigua Video, and 8+ other properties. One access point to one of the largest and most sophisticated audiences in the world.
     </p>
 
       <div class="article-hero__author">
@@ -898,10 +962,11 @@
       "For international advertisers, Ocean Engine is not just an ad platform—it is access to the world's most sophisticated recommendation-driven media ecosystem, all under one roof."
     </blockquote>
 
-    <p style="margin-top:2rem; color:var(--text-muted); font-size:.875rem; border-top:1px solid var(--border); padding-top:1.5rem;">
-      <strong>Source:</strong> Ocean Engine Encyclopedia — 巨量引擎 entry. Published July 16, 2021.<br>
-      <strong>Prepared by:</strong> Tuyue Media Gateway — China's paid media partner for international brands.
-    </p>
+    <div class="callout callout--accent">
+      <div class="callout__label">Ready to Explore Ocean Engine?</div>
+      <p style="margin-bottom:var(--space-4);">TMG manages Ocean Engine campaigns for international brands entering China. From account setup to campaign optimization to cross-platform strategy — we handle the complexity so you can focus on results.</p>
+      <a href="/contact/" class="btn btn--primary">Talk to a Specialist →</a>
+    </div>
 
   </article>
 
