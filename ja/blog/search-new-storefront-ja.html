@@ -14,21 +14,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#080c14">
-  <title>検索こそが新たな店舗入口：住宅・インテリアブランドが Tencent 検索広告で勝つ方法 | Tuyue Media Gateway (TMG)</title>
+  <title>検索そこが新たな店舗入口：住宅・インテリアブランドがTencent検索広告で勝つ方法 | Tuyue Media Gateway (TMG)</title>
   
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/assets/og-image.png">
-  <meta name="description" content="Search Is the New Storefront: How Home & Furnishing Brands Win with Tencent Search Ads...">
+<meta name="description" content="TencentのAIM+（如翼）は、GoogleのPerformance MaxやMetaのAdvantage+が未だに解決できていないプログラマティック広告の課題を、ソーシャルエコシステムの中で解決している。">
   <link rel="canonical" href="https://www.tuyuesouxin.cn/ja/blog/search-new-storefront/">
   <link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/search-new-storefront/">
   <link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/search-new-storefront/">
   <link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/search-new-storefront/">
   <link rel="alternate" hreflang="x-default" href="https://www.tuyuesouxin.cn/ja/blog/search-new-storefront/">
 
-<meta property="og:title" content="検索こそが新たな店舗入口：住宅・インテリアブランドが Tencent 検索広告で勝つ方法">
-  <meta property="og:description" content="Search Is the New Storefront: How Home & Furnishing Brands Win with Tencent Search Ads...">
+<meta property="og:title" content="検索そこが新たな店舗入口：住宅・インテリアブランドがTencent検索広告で勝つ方法">
+  <meta property="og:description" content="TencentのAIM+（如翼）は、GoogleのPerformance MaxやMetaのAdvantage+が未だに解決できていないプログラマティック広告の課題を、ソーシャルエコシステムの中で解決している。">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.tuyuesouxin.cn/ja/blog/search-new-storefront-ja/">
   <meta property="og:image" content="https://www.tuyuesouxin.cn/assets/og-image.png">
@@ -168,7 +168,7 @@
       gap: 4px; background: none; border: none; cursor: pointer; padding: 8px;
     }
     .header__toggle span { width: 24px; height: 2px; background: var(--color-text-primary); transition: all .3s; }
-    .header__toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .header__toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
     .header__toggle.active span:nth-child(2) { opacity: 0; }
     .header__toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
 
@@ -367,32 +367,25 @@
     .callout--accent .callout__label { color: var(--color-accent); }
     .callout p { margin: 0; font-size: var(--font-size-sm); }
 
-    /* Table styles */
-    .table-wrapper { overflow-x: auto; margin: var(--space-6) 0; }
-    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
-    th {
-      padding: 12px 16px; border-bottom: 2px solid var(--color-accent);
-      background: rgba(201,168,76,0.1); color: var(--color-accent); text-align: left;
+    /* Scenario steps */
+    .scenario-list {
+      list-style: none; margin: var(--space-4) 0 var(--space-6); padding: 0;
     }
-    td { padding: 10px 16px; border-bottom: 1px solid var(--color-border); }
-    tr:nth-child(even) { background: rgba(255,255,255,0.02); }
-
-    /* Stats grid */
-    .stats-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: var(--space-4); margin: var(--space-6) 0;
+    .scenario-list li {
+      display: flex; gap: var(--space-4); padding: var(--space-4) 0;
+      border-bottom: 1px solid var(--color-border);
     }
-    .stat-card {
-      background: var(--color-bg-card); border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg); padding: var(--space-5); text-align: center;
+    .scenario-list li:last-child { border-bottom: none; }
+    .scenario-list__icon {
+      width: 36px; height: 36px; flex-shrink: 0;
+      background: rgba(201,168,76,.1); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; margin-top: 2px;
     }
-    .stat-card__number {
-      font-size: var(--font-size-3xl); font-weight: 700; color: var(--color-accent);
-      margin-bottom: var(--space-2);
+    .scenario-list__content strong {
+      display: block; font-size: var(--font-size-base); color: var(--color-text-primary);
+      margin-bottom: 2px;
     }
-    .stat-card__label {
-      font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.4;
-    }
+    .scenario-list__content span { font-size: var(--font-size-sm); }
 
     /* ── Sidebar TOC ── */
     .article-sidebar {
@@ -487,8 +480,7 @@
     .footer__title::after {
       content: '';
       position: absolute;
-      bottom: 0;
-      left: 0;
+      bottom: 0; left: 0;
       width: 40px; height: 2px;
       background: linear-gradient(90deg, var(--color-accent), transparent);
       opacity: 0.8;
@@ -722,7 +714,7 @@
           <a href="/ja/pricing/" class="header__nav-link">料金</a>
           <a href="/ja/client-stories/" class="header__nav-link">導入事例</a>
           <a href="/ja/geo/" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
-          <a href="/ja/blog/" class="header__nav-link header__nav-link--active">ブログ</a>
+          <a href="/ja/blog/" class="header__nav-link">ブログ</a>
           <a href="/ja/faqs/" class="header__nav-link">FAQ</a>
           <div class="header__dropdown">
             <a href="/ja/about/" class="header__nav-link header__dropdown-trigger">
@@ -757,196 +749,174 @@
   <section class="article-hero">
   <div class="container">
     <div class="article-meta">
-      <span class="article-category">ペイドメディア戦略</span>
-      <span class="article-date">May 4, 2026</span>
+      <span class="article-category">検索広告</span>
+      <span class="article-date">2026年5月4日</span>
       <span class="article-read-time">読了まで約7分</span>
     </div>
-    <h1 class="article-hero__title">検索こそが新たな店舗入口：住宅・インテリアブランドが Tencent 検索広告で勝つ方法</h1>
+    <h1 class="article-hero__title">検索そこが新たな店舗入口：<span>住宅・インテリアブランドがTencent検索広告で勝つ方法</span></h1>
     <p class="article-hero__intro">
-      Douyinで広告を出しながらBilibiliを無視しているなら、中国で最も価値の高い若年消費者層を見逃しています。平均年齢26歳、男女比1:1、毎日107分の利用時間—BilibiliはZ世代の生活インフラです。
+      消費者がアクティブにブランドを検索するとき、彼らは既に「半コミット」ゾーンに到達している。Tencentの検索エコスウェムは住宅インテリアブランドに「デジタル店舗入口」を提供する。
     </p>
-
-      <div class="article-hero__author">
-        <div class="article-hero__author-avatar">TMG</div>
-        <div class="article-hero__author-info">
-          <div class="article-hero__author-name">Tuyue Media Gateway</div>
-          <div class="article-hero__author-role">ペイドメディアチーム · 上海</div>
-        </div>
+    <div class="article-hero__author">
+      <div class="article-hero__author-avatar">TMG</div>
+      <div class="article-hero__author-info">
+        <div class="article-hero__author-name">Tuyue Media Gateway</div>
+        <div class="article-hero__author-role">ペイドメディアチーム · 上海</div>
       </div>
+    </div>
   </div>
 </section>
-
 <!-- Article Body -->
 <main id="main-content" class="article-body">
   <div class="container">
     <article class="article-content reveal">
-<div class="article-section" id="why-this-matters">
-<h2>検索こそが新たな店舗入口：住宅・インテリアブランドが Tencent 検索広告で勝つ方法</h2>
+
 <div class="callout callout--accent">
-
-<p>本稿の意義</p>
-<p>Tencent's search ecosystem — anchored by WeChat Search (搜一搜) and the Super Brand Zone (超级品专) — gives home and building materials brands a unique advantage: a "digital storefront" that captures intent across every WeChat touchpoint, from chats to Moments to Official Accounts.</p>
-
-</div>
-</div>
-<div class="article-section" id="the-digital-storefront-architecture">
-<h2>検索は、ユーザー意図の究極の表現である。消費者が能動的にあなたのブランドを検索するとき、彼らはすでに「半コミット」ゾーン——購買決定までの道のりの半ば——に到達している。高関与型商品を扱う住宅・インテリアブランドにとって、この意図を適切な瞬間に捕捉することは、匿名の関心を測定可能な収益へと転換する力を持つ。</h2>
-<p><strong>WeChat 検索（搜一搜）と Super Brand Zone（超级品专）を中核とする Tencent の検索エコシステムは、住宅・建材ブランドに独自の優位性をもたらす——チャットから Moments、Official Accounts に至るまで、あらゆる WeChat タッチポイントで意図を捕捉する「デジタル店舗入口」である。</strong></p>
-<ul class="article-list">
-<li>検索こそが新たな店舗入口：住宅・インテリアブランドが Tencent 検索広告で勝つ方法</li>
-</ul>
-<p><strong>デジタル店舗入口アーキテクチャ</strong></p>
-<ul class="article-list">
-<li>本稿の意義</li>
-</ul>
-<p><strong>レイヤー1：オーディエンス構築</strong></p>
-<ul class="article-list">
-<li>検索は、ユーザー意図の究極の表現である。消費者が能動的にあなたのブランドを検索するとき、彼らはすでに「半コミット」ゾーン——購買決定までの道のりの半ば——に到達している。高関与型商品を扱う住宅・インテリアブランドにとって、この意図を適切な瞬間に捕捉することは、匿名の関心を測定可能な収益へと転換する力を持つ。</li>
-</ul>
-</div>
-<div class="article-section" id="wechat-search-800m-high-value-users">
-<h2>プレミアムコンテンツとインフルエンサーマーケティングがファネル上部を充足
-主要領域でのブランド認知と信頼性を確立</h2>
-<p>レイヤー2：検索の瞬間</p>
-<p>ユーザーがブランドを検索すると、リッチなブランド体験と出会う
-Super Brand Zone が WeChat 内の「デジタル旗艦店」となる</p>
-
-<p>レイヤー3：コンバージョンとリターゲティング</p>
-<p>深いコンバージョンコンポーネント（ミニプログラム、店舗検索、EC）
-競合リターゲティングが競合ブランドを検索するユーザーを捕捉</p>
-<p>WeChat 検索：8億人超のハイバリューユーザー</p>
-<p>WeChat 検索は単なる検索バーではない——WeChat のエコシステム全体を横断し、あらゆるコンテンツタイプを結びつける検索エンジンである。</p>
-<p>属性  |  プロフィール</p>
+<div class="callout__label">💡 これが重要な理由</div>
+<p>検索はユーザー意図の究極の表現だ。消費者がアクティブにブランドを検索するとき、彼らは既に「半コミット」ゾーンに到達している。WeChat検索（搜一搜）とSuper Brand Zone（超級品専）を中核とするTencentの検索エコスウェムは、あらゆるWeChatタッチポイントで意図を捕捉する「デジタル店舗入口」を提供する。</p>
 </div>
 
-<p>月間アクティブユーザー  |  8億人超（かつ急速に成長中）</p>
-<div class="article-section" id="super-brand-zone-your-all-in-one-digital-flagship">
-<h2>年齢  |  従来型検索ユーザーより若年層中心、40代以上も充実</h2>
-<h3>学歴  |  大卒以上、高等教育層</h3>
-<p>The Super Brand Zone (超级品专) is a premium, branded search result that appears when users search your brand name on WeChat. It's your "digital storefront" — a rich, customizable landing experience that:</p>
-<ul class="article-list">
-<li>WeChat 検索（搜一搜）と Super Brand Zone（超级品专）を中核とする Tencent の検索エコシステムは、住宅・建材ブランドに独自の優位性をもたらす——チャットから Moments、Official Accounts に至るまで、あらゆる WeChat タッチポイントで意図を捕捉する「デジタル店舗入口」である。</li>
-</ul>
-<h3>都市  |  一線都市への集中度高</h3>
-<p>消費力  |  高消費層</p>
-<p><strong>Webページのみをインデックスする従来の検索エンジンとは異なり、WeChat 検索は Official Accounts、ミニプログラム、Video Account コンテンツ、ブランドストアを接続する——ひとつの場所で検索可能な完全なユニバースを創出している。</strong></p>
-<ul class="article-list">
-<li>Chat search (边聊边搜) — searching within conversations
-Service search — searching for services</li>
-</ul>
-<p><strong>Super Brand Zone：オールインワンのデジタル旗艦店</strong></p>
-<ul class="article-list">
-<li>Moments search (朋友圈搜) — searching within social feeds
-Video Account search — searching within content</li>
-</ul>
-<p>機能概要</p>
-</div>
-<div class="article-section" id="case-studies">
-<h2>Super Brand Zone（超级品专）は、ユーザーが WeChat でブランド名を検索した際に表示される、プレミアムなブランド検索結果である。それはあなたの「デジタル店舗入口」——リッチでカスタマイズ可能なランディング体験であり：</h2>
-<h3>Case: Nippon Paint (立邦) — Premium Paint Brand</h3>
-<p>ブランド検索トラフィックの100%を捕捉（PVR = 100%）
-ミニプログラムストア、Video Account、Official Account、店舗検索など全ブランドタッチポイントにリンク
-WeChat 全域で10以上の検索入口をサポート
-リッチなビジュアル、動画ハイライト、直接的なCTAボタンを提供</p>
-<p><strong>デジタル店舗入口アーキテクチャ</strong></p>
-<ul class="article-list">
-<li>レイヤー1：オーディエンス構築</li>
-</ul>
-<p><strong>プレミアムコンテンツとインフルエンサーマーケティングがファネル上部を充足
-主要領域でのブランド認知と信頼性を確立</strong></p>
-<ul class="article-list">
-<li>レイヤー2：検索の瞬間</li>
-</ul>
-<h3>Case: Dulux (多乐士) — Online-to-Offline Integration</h3>
-<p>検索入口——ユーザーが検索するすべての場所</p>
-<p><strong>ユーザーがブランドを検索すると、リッチなブランド体験と出会う
-Super Brand Zone が WeChat 内の「デジタル旗艦店」となる</strong></p>
-<ul class="article-list">
-<li>レイヤー3：コンバージョンとリターゲティング</li>
-</ul>
-<p><strong>深いコンバージョンコンポーネント（ミニプログラム、店舗検索、EC）
-競合リターゲティングが競合ブランドを検索するユーザーを捕捉</strong></p>
-<ul class="article-list">
-<li>WeChat 検索：8億人超のハイバリューユーザー</li>
-</ul>
-</div>
-<div class="article-section" id="why-this-works-for-home-furnishing">
-<h2>WeChat ユーザーはあらゆる場所で検索する——Super Brand Zone はそのすべてをカバーする。</h2>
-<ol>
-<li>WeChat 検索は単なる検索バーではない——WeChat のエコシステム全体を横断し、あらゆるコンテンツタイプを結びつける検索エンジンである。</li>
-<li>属性  |  プロフィール</li>
+<h2 id="architecture">🏗️ デジタル店舗入口アーキテクチャ</h2>
 
-<li>月間アクティブユーザー  |  8億人超（かつ急速に成長中）</li>
-</ol>
+<div class="feature-grid">
+<div class="feature-card"><div class="feature-card__num">1</div><div class="feature-card__title">オーディエンス構築</div><div class="feature-card__desc">プレミアムコンテンツとインフルエンサーマーケティングでファネル上部を充実。主要垂直分野でブランド認知と信頼性を確立。</div></div>
+<div class="feature-card"><div class="feature-card__num">2</div><div class="feature-card__title">検索の瞬間</div><div class="feature-card__desc">ユーザーがブランドを検索すると、リッチなブランド体験と出会う。Super Brand ZoneがWeChat内の「デジタル旗艦店」となる。</div></div>
+<div class="feature-card"><div class="feature-card__num">3</div><div class="feature-card__title">コンバージョン & リターゲティング</div><div class="feature-card__desc">深いコンバージョンコンポーネント（ミニプログラム、店舗検索、EC）。競合リターゲティングで競合ブランドを検索するユーザーを捕捉。</div></div>
 </div>
-<div class="article-section" id="recommendations">
-<h2>プライベートシナリオ：</h2>
+
+<h2 id="wechat-search">🔍 WeChat検索：8億人超のハイバリューユーザー</h2>
+
+<p>WeChat検索は単なる検索バーではない——WeChatのエコスウェム全体を横断し、あらゆるコンテンツタイプを結ぶける検索エンジンだ。</p>
+
+<div style="overflow-x:auto; margin: var(--space-6) 0;">
+<table style="width:100%; border-collapse:collapse; font-size:0.9rem;">
+<thead>
+<tr style="background:rgba(201,168,76,0.1); color:var(--color-accent); text-align:left;">
+<th style="padding:12px 16px; border-bottom:2px solid var(--color-accent);">属性</th>
+<th style="padding:12px 16px; border-bottom:2px solid var(--color-accent);">プロフィール</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom:1px solid var(--color-border);">
+<td style="padding:10px 16px; font-weight:600; color:var(--color-text-primary);">月間アクティブユーザー</td>
+<td style="padding:10px 16px; color:var(--color-accent-light);">8億人超（急速に成長中）</td>
+</tr>
+<tr style="border-bottom:1px solid var(--color-border); background:rgba(255,255,255,0.02);">
+<td style="padding:10px 16px; font-weight:600; color:var(--color-text-primary);">年齢</td>
+<td style="padding:10px 16px;">従来型検索ユーザーより若年層中心、40代以上も充実</td>
+</tr>
+<tr style="border-bottom:1px solid var(--color-border);">
+<td style="padding:10px 16px; font-weight:600; color:var(--color-text-primary);">学歴</td>
+<td style="padding:10px 16px;">大卒以上、高等教育層</td>
+</tr>
+<tr style="border-bottom:1px solid var(--color-border); background:rgba(255,255,255,0.02);">
+<td style="padding:10px 16px; font-weight:600; color:var(--color-text-primary);">都市</td>
+<td style="padding:10px 16px;">一線都市への集中度高</td>
+</tr>
+<tr style="border-bottom:1px solid var(--color-border);">
+<td style="padding:10px 16px; font-weight:600; color:var(--color-text-primary);">消費力</td>
+<td style="padding:10px 16px;">高消費層</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>Webページのみをインデックスする従来型検索エンジンと異なり、WeChat検索はOfficial Accounts、ミニプログラム、Video Accountコンテンツ、ブランドストアを接続する。</p>
+
+<h2 id="super-brand-zone">🏪 Super Brand Zone：デジタル旗艦店</h2>
+
+<p>Super Brand Zone（超級品専）は、ユーザーがWeChatでブランド名を検索した際に表示されるプレミアムなブランド検索結果だ。ブランド検索トラフィックの<strong>100%</strong>を捕捉し、すべてのブランドタッチポイントにリンクする。</p>
+
+<div class="callout">
+<div class="callout__label">検索エントリポイント</div>
+<p style="margin-bottom:var(--space-3);"><strong>プライベートシナリオ：</strong>チャット検索（边聊边搜）、サービス検索</p>
+<p style="margin:0;"><strong>パブリックシナリオ：</strong>Moments検索（朋友圈搜）、Video Account検索——すべての意図、すべての瞬間を捕捉。</p>
+</div>
+
+<h2 id="cases">📋 事例研究</h2>
+
+<h3>Nippon Paint（立邦）——プレミアム塗料ブランド</h3>
+
+<div class="scenario-list">
+<li><div class="scenario-list__icon">🎯</div><div class="scenario-list__content"><strong>課題</strong><span>ブランドのハイエンドポジショニングに合わせたプレミアムなデジタルアイデンティティを構築する。</span></div></li>
+<li><div class="scenario-list__icon">✅</div><div class="scenario-list__content"><strong>成果</strong><span>プレミアム動画ショウケース + ミニプログラム直接ジャンプ。PVR: 100%。CTR: 60%超（業界平均約2.4%に対して）。</span></div></li>
+</div>
+
+<h3>Dulux（多乐士）——オンライントゥウオフライン統合</h3>
+
+<div class="scenario-list">
+<li><div class="scenario-list__icon">🎯</div><div class="scenario-list__content"><strong>課題</strong><span>オンラインの検索関心をECと実店の両方に接続する。</span></div></li>
+<li><div class="scenario-list__icon">✅</div><div class="scenario-list__content"><strong>成果</strong><span>地域店舗検索機能 + WeChat Mini Store統合のSuper Brand Zone。PVR: 100%。CTR: 70%超。オンライン・オフラインのアトリビューションがシームレスに。</span></div></li>
+</div>
+
+<h2 id="why-home">🏠 住宅・インテリアに効く理由</h2>
+
+<div class="feature-grid">
+<div class="feature-card"><div class="feature-card__num">1</div><div class="feature-card__title">高関与型 = 高検索型</div><div class="feature-card__desc">消費者は家具購入前に広く調べる。検索時に存在することは不可欠だ。</div></div>
+<div class="feature-card"><div class="feature-card__num">2</div><div class="feature-card__title">信頼はWeChat内で構築される</div><div class="feature-card__desc">WeChatは消費者が既に会話、読読、購買している場所。ブランド検索結果は独立検索エンジンの広告よりも重みを持つ。</div></div>
+<div class="feature-card"><div class="feature-card__num">3</div><div class="feature-card__title">フルファネル可視性</div><div class="feature-card__desc">インフルエンサーコンテンツ → ブランド検索 → Super Brand Zone → 購買 → リターゲティング、全ジャーニーが1つの測定可能なエコスウェム内で完結する。</div></div>
+<div class="feature-card"><div class="feature-card__num">4</div><div class="feature-card__title">競合防御</div><div class="feature-card__desc">ユーザーが競合ブランドを検索するとき、競合リターゲティングで高意図トラフィックを捕捉する。</div></div>
+</div>
+
+<h2 id="recommendations">💡 推奨事項</h2>
+
+<div class="scenario-list">
+<li><div class="scenario-list__icon">🏗️</div><div class="scenario-list__content"><strong>Super Brand Zoneを今すぐ構築する</strong><span>単一で最も高いROIを生むインフラ投資。プレミアム体験でブランド検索の100%を捕捉する。</span></div></li>
+<li><div class="scenario-list__icon">🔗</div><div class="scenario-list__content"><strong>すべてのタッチポイントを統合する</strong><span>ミニプログラムストア、Video Account、店舗検索、Official Accountをリンク。</span></div></li>
+<li><div class="scenario-list__icon">📢</div><div class="scenario-list__content"><strong>検索ファネルにデータを送る</strong><span>検索投資は人々が検索している場合だけ機能する。コンテンツとインフルエンサーマーケティングに投資してファネル上部のブランド認知を先に構築する。</span></div></li>
+<li><div class="scenario-list__icon">🎯</div><div class="scenario-list__content"><strong>競合リターゲティングを活用する</strong><span>カテゴリや競合ブランドキーワードで入札し、高意図トラフィックを拦截する。</span></div></li>
+<li><div class="scenario-list__icon">📊</div><div class="scenario-list__content"><strong>フルファネルを測定する</strong><span>コンテンツインプレッション → 検索 → Super Brand Zoneクリック → ミニプログム購買を追跡する。データはある——活用しよ。</span></div></li>
+</div>
+
 <div class="callout callout--accent">
-
-<ol>
-<li>年齢  |  従来型検索ユーザーより若年層中心、40代以上も充実</li>
-<li>学歴  |  大卒以上、高等教育層</li>
-<li>都市  |  一線都市への集中度高</li>
-<li>消費力  |  高消費層</li>
-<li>Webページのみをインデックスする従来の検索エンジンとは異なり、WeChat 検索は Official Accounts、ミニプログラム、Video Account コンテンツ、ブランドストアを接続する——ひとつの場所で検索可能な完全なユニバースを創出している。</li>
-</ol>
-
-</div>
+<div class="callout__label">デジタル店舗入口を構築する準備はできていますか？</div>
+<p style="margin-bottom:var(--space-4);">TMGは国際ブランドのSuper Brand ZoneセットアップとTencentプラットフォーム上の検索戦略構築を支援します。</p>
+<a href="/ja/contact/" class="btn btn--primary">専門家に相談する →</a>
 </div>
 
-<p>チャット検索（边聊边搜）——会話中の検索
-サービス検索——サービスの検索</p>
 </article>
-    <!-- Sidebar -->
+   <!-- Sidebar -->
     <aside class="article-sidebar">
       <nav class="toc">
-        
     <div class="toc__title">この記事について</div>
     <ul class="toc__list">
-      <li><a class="toc__link" href="#why-this-matters">検索こそが新たな店舗入口：住宅・インテリアブランドが Tencent 検索広告で勝つ方法</a></li>
-      <li><a class="toc__link" href="#the-digital-storefront-architecture">検索は、ユーザー意図の究極の表現である。消費者が能動的にあなたのブランドを検索するとき、彼らはすでに「半コミット」ゾーン——購買決定までの道のりの半ば——に到達している。高関与型商品を扱う住宅・インテリアブランドにとって、この意図を適切な瞬間に捕捉することは、匿名の関心を測定可能な収益へと転換する力を持つ。</a></li>
-      <li><a class="toc__link" href="#wechat-search-800m-high-value-users">プレミアムコンテンツとインフルエンサーマーケティングがファネル上部を充足
-主要領域でのブランド認知と信頼性を確立</a></li>
-      <li><a class="toc__link" href="#super-brand-zone-your-all-in-one-digital-flagship">年齢  |  従来型検索ユーザーより若年層中心、40代以上も充実</a></li>
-      <li><a class="toc__link" href="#case-studies">Super Brand Zone（超级品专）は、ユーザーが WeChat でブランド名を検索した際に表示される、プレミアムなブランド検索結果である。それはあなたの「デジタル店舗入口」——リッチでカスタマイズ可能なランディング体験であり：</a></li>
-      <li><a class="toc__link" href="#why-this-works-for-home-furnishing">WeChat ユーザーはあらゆる場所で検索する——Super Brand Zone はそのすべてをカバーする。</a></li>
-      <li><a class="toc__link" href="#recommendations">プライベートシナリオ：</a></li>
+      <li><a class="toc__link" href="#architecture">デジタル店舗入口アーキテクチャ</a></li>
+      <li><a class="toc__link" href="#wechat-search">WeChat検索</a></li>
+      <li><a class="toc__link" href="#super-brand-zone">Super Brand Zone</a></li>
+      <li><a class="toc__link" href="#cases">事例研究</a></li>
+      <li><a class="toc__link" href="#why-home">住宅・インテリアに効く理由</a></li>
+      <li><a class="toc__link" href="#recommendations">推奨事項</a></li>
     </ul>
-  
       </nav>
       <div class="sidebar-cta">
-        <p>Confused by China's platform demographics? We help you choose the right platforms for your target audience.</p>
-        <a href="/ja/contact/" class="btn btn--primary">問い合わせ</a>
+        <p>Super Brand Zoneの構築をサポートします。</p>
+        <a href="/ja/contact/" class="btn btn--primary">お問い合わせ</a>
       </div>
     </aside>
   </div>
 </main>
 
   <!-- Related Posts placeholder -->
-    <!-- Related Posts -->
   <section class="related">
     <div class="container">
       <div class="related__title">さらに読む</div>
-      <div class="related__grid">
-        <a href="/ja/blog/bing-china-demographics-who-are-these-users/" class="related-card">
-          <div class="related-card__cat">China Ad Platforms</div>
-          <div class="related-card__title">Bing China人口統計</div>
-          <p class="related-card__desc">75%+ college-educated, high income, urban-focused. Essential for premium audience targeting.</p>
-        </a>
-        <a href="/ja/services/bilibili/" class="related-card">
-          <div class="related-card__cat">Bilibili Advertising</div>
-          <div class="related-card__title">Bilibili Ads Services</div>
-          <p class="related-card__desc">Reach China's most engaged Gen Z audience through authentic, community-driven campaigns.</p>
-        </a>
-        <a href="/ja/blog/china-mobile-internet-spring-2026/" class="related-card">
-          <div class="related-card__cat">中国デジタルトレンド</div>
-          <div class="related-card__title">2026年中国モバイルインターネット春</div>
-          <p class="related-card__desc">今年、すべての国際ブランドが知っておくべき主要トレンド、ユーザー行動、プラットフォームアップデート。</p>
-        </a>
-      </div>
+      <a href="/ja/blog/wechat-channels-consumer-electronics-ja/" class="related-card">
+        <div class="related-card__cat">WeChat広告</div>
+        <div class="related-card__title">WeChat Channels × 家電</div>
+        <p class="related-card__desc">WeChat Channelsは家電ブランドに信頼ベースのエコスウェムを提供する。</p>
+      </a>
+      <a href="/ja/blog/tencent-aimplus-ja/" class="related-card">
+        <div class="related-card__cat">ペイドメディア戦略</div>
+        <div class="related-card__title">Tencent AIM+: AI広告スタック</div>
+        <p class="related-card__desc">TencentのAIM+（如翼）の構造と欧米プラットフォームとの違い。</p>
+      </a>
+      <a href="/ja/blog/china-mobile-internet-spring-2026/" class="related-card">
+        <div class="related-card__cat">中国デジタルトレンド</div>
+        <div class="related-card__title">2026年中国モバイルインターネット春</div>
+        <p class="related-card__desc">今年、すべての国際ブランドが知っておくべき主要トレンド。</p>
+      </a>
     </div>
   </section>
-
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
@@ -976,7 +946,7 @@ Super Brand Zone が WeChat 内の「デジタル旗艦店」となる</strong><
             <li>
               <a href="#contactQR" class="footer__link">
                 <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: text-bottom; margin-right: 4px;">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.149-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                 </svg>
                 WhatsApp (Click to scan)
               </a>
