@@ -20,17 +20,17 @@
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/assets/og-image.png">
-<meta name="description" content="QuestMobile Spring 2026 report: China's 1.28B mobile users, AI boom (+84.1%), and the platforms reshaping the digital ad landscape. Key insights for advertisers.">
+<meta name="description" content="TencentのAIM+（如翼）は、GoogleのPerformance MaxやMetaのAdvantage+が未だに解決できていないプログラマティック広告の課題を、ソーシャルエコシステムの中で解決している。">
   <link rel="canonical" href="https://www.tuyuesouxin.cn/ja/blog/china-mobile-internet-spring-2026/">
-  <link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/china-mobile-internet-spring-2026.html">
-  <link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/china-mobile-internet-spring-2026.html">
-  <link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/china-mobile-internet-spring-2026.html">
-  <link rel="alternate" hreflang="x-default" href="https://www.tuyuesouxin.cn/blog/china-mobile-internet-spring-2026.html">
+  <link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/china-mobile-internet-spring-2026/">
+  <link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/china-mobile-internet-spring-2026/">
+  <link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/china-mobile-internet-spring-2026/">
+  <link rel="alternate" hreflang="x-default" href="https://www.tuyuesouxin.cn/ja/blog/china-mobile-internet-spring-2026/">
 
 <meta property="og:title" content="2026年春の中国インターネット展望">
-  <meta property="og:description" content="QuestMobile's Spring 2026 report breaks down China's 1.276 billion internet users, their 192 hours of monthly screen time, the ¥168 billion Q1 ad market, and what it means for brands entering China.">
+  <meta property="og:description" content="TencentのAIM+（如翼）は、GoogleのPerformance MaxやMetaのAdvantage+が未だに解決できていないプログラマティック広告の課題を、ソーシャルエコシステムの中で解決している。">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://www.tuyuesouxin.cn/ja/blog/">
+  <meta property="og:url" content="https://www.tuyuesouxin.cn/ja/blog/china-mobile-internet-spring-2026-ja/">
   <meta property="og:image" content="https://www.tuyuesouxin.cn/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://www.tuyuesouxin.cn/assets/twitter-card.png">
@@ -107,6 +107,7 @@
     a { color: var(--color-primary); text-decoration: none !important; }
     a:hover { text-decoration: underline; }
 
+    /* ── Buttons ── */
     .btn {
       display: inline-flex; align-items: center; justify-content: center;
       gap: var(--space-2); padding: var(--space-3) var(--space-5);
@@ -132,6 +133,7 @@
       text-decoration: none !important;
     }
 
+    /* ── Header ── */
     .header {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       background-color: rgba(8,12,20,.85);
@@ -239,6 +241,7 @@
       .header__dropdown-item:hover { background: rgba(201,168,76,.08); color: var(--color-accent); }
     }
 
+    /* ── Article Layout ── */
     .article-hero {
       padding: 100px 0 var(--space-12);
     }
@@ -290,6 +293,7 @@
       line-height: 1.75; max-width: 760px;
     }
 
+    /* ── Article Body ── */
     .article-body {
       padding: var(--space-16) 0;
       background: #000;
@@ -320,6 +324,7 @@
     .article-content a { color: var(--color-primary); }
     .article-content a:hover { text-decoration: underline; }
 
+    /* Feature card grid */
     .feature-grid {
       display: grid; grid-template-columns: 1fr 1fr;
       gap: var(--space-4); margin: var(--space-6) 0;
@@ -344,25 +349,7 @@
       font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.6;
     }
 
-    .data-card {
-      background: var(--color-bg-card); border: 1px solid var(--color-border);
-      border-left: 3px solid var(--color-accent);
-      border-radius: var(--radius-md); padding: var(--space-5);
-      margin: var(--space-6) 0;
-    }
-    .data-card__num {
-      font-size: var(--font-size-3xl); font-weight: 700;
-      color: var(--color-accent); line-height: 1.1; margin-bottom: var(--space-1);
-    }
-    .data-card__label {
-      font-size: var(--font-size-sm); color: var(--color-text-muted);
-      margin-bottom: var(--space-1);
-    }
-    .data-card__change {
-      font-size: var(--font-size-xs); font-weight: 600;
-      color: #22c55e; /* green for positive change */
-    }
-
+    /* Callout / tip box */
     .callout {
       background: rgba(45,107,228,.08); border: 1px solid rgba(45,107,228,.2);
       border-left: 3px solid var(--color-primary);
@@ -380,6 +367,27 @@
     .callout--accent .callout__label { color: var(--color-accent); }
     .callout p { margin: 0; font-size: var(--font-size-sm); }
 
+    /* Scenario steps */
+    .scenario-list {
+      list-style: none; margin: var(--space-4) 0 var(--space-6); padding: 0;
+    }
+    .scenario-list li {
+      display: flex; gap: var(--space-4); padding: var(--space-4) 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .scenario-list li:last-child { border-bottom: none; }
+    .scenario-list__icon {
+      width: 36px; height: 36px; flex-shrink: 0;
+      background: rgba(201,168,76,.1); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; margin-top: 2px;
+    }
+    .scenario-list__content strong {
+      display: block; font-size: var(--font-size-base); color: var(--color-text-primary);
+      margin-bottom: 2px;
+    }
+    .scenario-list__content span { font-size: var(--font-size-sm); }
+
+    /* ── Sidebar TOC ── */
     .article-sidebar {
       position: sticky; top: 88px;
     }
@@ -411,6 +419,7 @@
     }
     .sidebar-cta .btn { width: 100%; justify-content: center; }
 
+    /* ── Related Posts ── */
     .related {
       padding: var(--space-12) 0;
       background: var(--color-bg);
@@ -442,6 +451,7 @@
       font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.5;
     }
 
+    /* ── Footer ── */
     .footer {
       padding: var(--space-10) 0 var(--space-8);
       background: var(--color-bg);
@@ -487,7 +497,7 @@
       margin: 0;
     }
     .footer__links li { margin-bottom: var(--space-3); }
-    .footer__link {
+    .footer__link { text-decoration: none; 
       color: var(--color-text-secondary);
       font-size: var(--font-size-sm);
       transition: color var(--transition-fast);
@@ -532,6 +542,7 @@
       transform: translateY(-2px);
     }
 
+    /* ── Responsive ── */
     @media (max-width: 900px) {
       .article-body .container { grid-template-columns: 1fr; }
       .article-sidebar { display: none; }
@@ -548,7 +559,8 @@
       transition: none;
     }
     /* reveal--visible disabled */
-  
+
+    /* ── Language Switcher Dropdown ── */
     .header__lang-wrap {
       position: relative;
       display: inline-flex;
@@ -618,7 +630,7 @@
       background: rgba(201,168,76,.08);
     }
     .header__lang-flag { font-size: 15px; line-height: 1; }
-
+    
   @media print{
     *{box-shadow:none!important;text-shadow:none!important;}
     body{background:white!important;color:black!important;}
@@ -660,7 +672,7 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a href="/ja/" class="header__logo">
+        <a href="/" class="header__logo">
           <svg class="header__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -668,14 +680,11 @@
                 <stop offset="100%" stop-color="#e8c87a"/>
               </linearGradient>
               <clipPath id="moonClip">
-                <!-- Full circle -->
                 <circle cx="30" cy="24" r="16"/>
               </clipPath>
             </defs>
-            <!-- Crescent Moon: circle minus overlapping circle -->
             <circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/>
             <circle cx="37" cy="20" r="13" fill="#080c14"/>
-            <!-- TMG letters inside/near the crescent -->
             <text x="4" y="32" font-family="Inter, -apple-system, sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-0.8">TMG</text>
           </svg>
           <span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
@@ -687,50 +696,50 @@
         </button>
         <nav class="header__nav" id="main-nav">
           <div class="header__dropdown">
-            <a href="https://www.tuyuesouxin.cn/ja/services/" class="header__nav-link header__dropdown-trigger">
+            <a href="/ja/services/" class="header__nav-link header__dropdown-trigger">
               サービス
               <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </a>
             <div class="header__dropdown-menu">
-              <a href="https://www.tuyuesouxin.cn/ja/services/" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">すべてのサービス</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/wechat/" class="header__dropdown-item">WeChat広告</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/douyin/" class="header__dropdown-item">Douyin広告</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/baidu/" class="header__dropdown-item">Baidu SEM</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/bing/" class="header__dropdown-item">Bing China</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/xiaohongshu/" class="header__dropdown-item">小紅書（RED）</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/bilibili/" class="header__dropdown-item">Bilibili広告</a>
-              <a href="https://www.tuyuesouxin.cn/ja/geo/" class="header__dropdown-item">中国GEO</a>
+              <a href="/ja/services/" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">すべてのサービス</a>
+              <a href="/ja/services/wechat/" class="header__dropdown-item">WeChat広告</a>
+              <a href="/ja/services/douyin/" class="header__dropdown-item">Douyin広告</a>
+              <a href="/ja/services/baidu/" class="header__dropdown-item">Baidu SEM</a>
+              <a href="/ja/services/bing/" class="header__dropdown-item">Bing China</a>
+              <a href="/ja/services/xiaohongshu/" class="header__dropdown-item">小紅書（RED）</a>
+              <a href="/ja/services/bilibili/" class="header__dropdown-item">Bilibili広告</a>
+              <a href="/ja/geo/" class="header__dropdown-item">中国GEO</a>
             </div>
           </div>
-          <a href="https://www.tuyuesouxin.cn/ja/pricing/" class="header__nav-link">料金</a>
-          <a href="https://www.tuyuesouxin.cn/ja/client-stories/" class="header__nav-link">導入事例</a>
-          <a href="https://www.tuyuesouxin.cn/ja/geo/" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
-          <a href="https://www.tuyuesouxin.cn/ja/blog/" class="header__nav-link">ブログ</a>
-          <a href="https://www.tuyuesouxin.cn/ja/faqs/" class="header__nav-link">FAQ</a>
+          <a href="/ja/pricing/" class="header__nav-link">料金</a>
+          <a href="/ja/client-stories/" class="header__nav-link">導入事例</a>
+          <a href="/ja/geo/" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
+          <a href="/ja/blog/" class="header__nav-link">ブログ</a>
+          <a href="/ja/faqs/" class="header__nav-link">FAQ</a>
           <div class="header__dropdown">
-            <a href="https://www.tuyuesouxin.cn/ja/about/" class="header__nav-link header__dropdown-trigger">
+            <a href="/ja/about/" class="header__nav-link header__dropdown-trigger">
               会社概要
               <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </a>
             <div class="header__dropdown-menu">
-              <a href="https://www.tuyuesouxin.cn/ja/why-tmg/" class="header__dropdown-item">TMGを選ぶ理由</a>
-              <a href="https://www.tuyuesouxin.cn/ja/about/" class="header__dropdown-item">会社概要</a>
-              <a href="https://www.tuyuesouxin.cn/ja/contact/" class="header__dropdown-item">お問い合わせ</a>
+              <a href="/ja/why-tmg/" class="header__dropdown-item">TMGを選ぶ理由</a>
+              <a href="/ja/about/" class="header__dropdown-item">会社概要</a>
+              <a href="/ja/contact/" class="header__dropdown-item">お問い合わせ</a>
             </div>
           </div>
         </nav>
-                  <div class="header__lang-wrap">
-        <button class="header__lang-btn" onclick="this.parentElement.classList.toggle('active')">
-          <span class="header__lang-flag">🇯🇵</span>日本語
-          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 3.5l3 4 3-4"/></svg>
-        </button>
-        <div class="header__lang-menu">
-          <a href="https://www.tuyuesouxin.cn/" class="header__lang-item"><span class="header__lang-flag">🇺🇸</span>English</a>
-          <a href="https://www.tuyuesouxin.cn/ko/" class="header__lang-item"><span class="header__lang-flag">🇰🇷</span>한국어</a>
+        <div class="header__lang-wrap">
+          <button class="header__lang-btn" onclick="this.parentElement.classList.toggle('active')">
+            <span class="header__lang-flag">🇺🇸</span>English
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 3.5l3 4 3-4"/></svg>
+          </button>
+          <div class="header__lang-menu">
+            <a href="/ja/blog/" class="header__lang-item"><span class="header__lang-flag">🇯🇵</span>日本語</a>
+            <a href="/ko/blog/" class="header__lang-item"><span class="header__lang-flag">🇰🇷</span>한국어</a>
+          </div>
         </div>
-      </div>
-        <div class="header__cta">
-          <a href="https://www.tuyuesouxin.cn/ja/contact/" class="btn btn--primary">お問い合わせ</a>
+<div class="header__cta">
+          <a href="/ja/contact/" class="btn btn--primary">お問い合わせ →</a>
         </div>
       </div>
     </div>
@@ -738,226 +747,219 @@
 
   <!-- Article Hero -->
   <section class="article-hero">
-    <div class="container">
-      <div class="article-meta">
-        <span class="article-category">中国市場インサイト</span>
-        <span class="article-date">April 30, 2026</span>
-        <span class="article-read-time">読了まで約9分</span>
-      </div>
-      <h1 class="article-hero__title">2026年春の中国インターネット展望</h1>
-      <p class="article-hero__intro">
-        中国には現在12億8,000M人がオンラインです。月間192時間をスマートフォンに費やしています。このレポートの核心は—ユーザー成長ではなく、エンゲージメントの深化にあります。
-      </p>
-
-      <div class="article-hero__author">
-        <div class="article-hero__author-avatar">TMG</div>
-        <div class="article-hero__author-info">
-          <div class="article-hero__author-name">Tuyue Media Gateway</div>
-          <div class="article-hero__author-role">ペイドメディアチーム · 上海</div>
-        </div>
+  <div class="container">
+    <div class="article-meta">
+      <span class="article-category">中国マーケットインサイト</span>
+      <span class="article-date">2026年4月30日</span>
+      <span class="article-read-time">読了まで約8分</span>
+    </div>
+    <h1 class="article-hero__title">2026年春の中国インターネット展望</h1>
+    <p class="article-hero__intro">
+      中国には現在12億8,000万人がオンラインだ。月間192時間をスマートフォンに費やしている。ユーザー成長ではなく、エンゲージメントの深化にある。
+    </p>
+    <div class="article-hero__author">
+      <div class="article-hero__author-avatar">TMG</div>
+      <div class="article-hero__author-info">
+        <div class="article-hero__author-name">Tuyue Media Gateway</div>
+        <div class="article-hero__author-role">ペイドメディアチーム · 上海</div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+<!-- Article Body -->
+<main id="main-content" class="article-body">
+  <div class="container">
+    <article class="article-content reveal">
 
-  <!-- Article Body -->
-  <main id="main-content" class="article-body">
-    <div class="container">
-      <article class="article-content reveal">
+<div class="callout callout--accent">
+<div class="callout__label">📊 データソース</div>
+<p>QuestMobile——中国で最も広く引用されるモバイルデータインテリジェンスプラットフォームの最新レポートに基づく。</p>
+</div>
 
-        <p>
-          毎年春、QuestMobileは中国モバイルインターネット春季レポートを発表しています——これは国のオンライン人口がどのように振る舞うか、何を使っているか、どこに資金が流れているかを示すデータ豊富なスナップショットです。2026年版が発表されたばかりで、中国でデジタルキャンペーンを運営または計画している方にとって分析すべき点が多岐にわたります。
-        </p>
-        <p>
-          私たちが全文を読んだので、あなたは読む必要がありません。以下は重要な数字、注目すべきトレンド、そして今中国で広告予算をどこに配分すべきかを考えている国際ブランドにとってそれらが意味することです。
-        </p>
+<h2 id="users">👥 12億8,000万人のユーザー、まだ成長中</h2>
 
-        <div class="callout callout--accent">
-          <div class="callout__label">Source</div>
-          <p>この記事のすべてのデータはQuestMobileの「2026年中国モバイルインターネット春季レポート」（中国移动互联网春季大報告）から引用。QuestMobileは中国で最も広く引用されるモバイルile data intelligence platforms.</p>
-        </div>
+<div style="overflow-x:auto; margin: var(--space-6) 0;">
+<table style="width:100%; border-collapse:collapse; font-size:0.9rem;">
+<thead>
+<tr style="background:rgba(201,168,76,0.1); color:var(--color-accent); text-align:left;">
+<th style="padding:12px 16px; border-bottom:2px solid var(--color-accent);">指標</th>
+<th style="padding:12px 16px; border-bottom:2px solid var(--color-accent);">数値</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom:1px solid var(--color-border);">
+<td style="padding:10px 16px; font-weight:600; color:var(--color-text-primary);">オンライン人口</td>
+<td style="padding:10px 16px; color:var(--color-accent-light);">12億8,000万人</td>
+</tr>
+<tr style="border-bottom:1px solid var(--color-border); background:rgba(255,255,255,0.02);">
+<td style="padding:10px 16px; font-weight:600; color:var(--color-text-primary);">月間スマフォ使用時間</td>
+<td style="padding:10px 16px;">192.2時間</td>
+</tr>
+<tr style="border-bottom:1px solid var(--color-border);">
+<td style="padding:10px 16px; font-weight:600; color:var(--color-text-primary);">Q1広告市場規模</td>
+<td style="padding:10px 16px; color:var(--color-accent-light);">1,680億元</td>
+</tr>
+</tbody>
+</table>
+</div>
 
-        <h2 id="users">12.8億ユーザー、成長中</h2>
-        <p>2026年3月時点で、中国のインターネットユーザー数は12億7,600M人に達しました。前年比1.4%増です。注目すべきは成長率ではなく、その規模です。中国の人口の約89%がすでにオンラインです。</p>
-        <p>より大きなストーリーはエンゲージメントです。月間一人当たりの使用時間は192.2時間に上昇—前年比9.3%増です。中国のユーザーはインターネットを「採用」しているのではなく、さらに深く「統合」しています。</p>
+<p>ユーザー成長は減速しているが、エンゲージメントが深まっている。広告主にとっての意味は明確だ：リーチの幅ではなく、エンゲージメントの質で競争する必要がある。</p>
 
-        <div class="data-card">
-          <div class="data-card__num">1.276B</div>
-          <div class="data-card__label">中国のインターネットユーザー総数（2026年3月）</div>
-          <div class="data-card__change">+1.4% YoY</div>
-        </div>
-        <div class="data-card">
-          <div class="data-card__num">192.2 hrs</div>
-          <div class="data-card__label">月間一人当たり使用時間</div>
-          <div class="data-card__change">+9.3% YoY</div>
-        </div>
+<h2 id="ad-market">💰 広告市場：四半期で1,680億元</h2>
 
-        <p>実際的な意味：中国のユーザーは新しい波でインターネットを採用しているのではありません。ほぼ全員がすでにオンラインです。差別化は「リーチ」ではなく「深さ」にあります—ユーザーがプラットフォームに費やす時間と、その時間の質にあります。</p>
+<div class="callout">
+<div class="callout__label">広告主にとっての意味</div>
+<p>プレミアム・ラグザリーカテゴリが成長を牵引している。伝統的なカテゴリは横四みまたは減少。マーケティングの季節性が変化している。</p>
+</div>
 
-        <h2 id="ad-market">広告市場：1四半期で1680億</h2>
-        <p>中国のオンライン広告市場は2026年第1四半期に1,683億5,000M元に達しました。前年比5.8%増です。この成長は主に動画広告とEコマース広告によって牽引されています。</p>
-        <p>
-          レポートから注目すべきパターンは：
-        </p>
-        <ul>
-          <li><strong>Premium and luxury categories</strong> are driving growth. High-end consumption sectors like luxury goods, jewelry, and home appliances are increasing ad spend. This is not your typical FMCG-heavy China ad market anymore.</li>
-          <li><strong>Traditional categories are flat or declining.</strong> Basic consumer staples, the kind of products that used to dominate Chinese ad budgets, are not growing nearly as fast.</li>
-          <li><strong>Marketing seasonality is shifting.</strong> The Spring Festival (Chinese New Year) peak came later than usual in 2026, driven by shifting beauty, auto, and luxury brand campaigns. Late March saw a significant lift driven by spring home-renovation season.</li>
-        </ul>
+<h2 id="mobile-video">🎬 動画が一切を食った：全使用時間の40%以上</h2>
 
-        <div class="callout">
-          <div class="callout__label">これが重要な理由</div>
-          <p>5.8%の成長率は単体では控えめに見えますが、文脈に入れると：米国デジタル広告市場は2026年Q1に約7-8%成長。中国市場はすでに年間1,000億ドル超でなお拡大中です。</p>
-        </div>
+<p>モバイル動画の利用が引続き急成長。ショート動画プラットフォームとしてのDouyinは引き続き支配的な地位を確立しているが、新しいチャレンジャーも登場している。</p>
 
-        <h2 id="mobile-video">動画がすべてを飲み込んだ：ユーザー時間の40%以上</h2>
-        <p>モバイル動画は現在、中国の全インターネットユーザー時間の40%以上を占めています。これは単なる統計ではなく—消費者がコンテンツを消費し、製品を発見し、購入決定を下す方法の根本的な変化を示しています。</p>
-        <p>
-          動画エコシステム内では、短尺動画が支配的で、オンライン動画プラットフォームが2位を堅調に維持。 But there is an interesting new entrant in the top four: <strong>Hongguo Free Short Dramas</strong> (红果免费短剧), a vertical short-drama platform that has muscled its way into the top ranks of user time spent. Short dramas -- snackable, fast-paced, often addictive -- are a genuinely Chinese content format that has exploded in the past year.
-        </p>
-        <p>
-          広告主にとって、メッセージはシンプルです：中国のメディアプランに動画コンポーネントが含まれていないなら、あなたは注目が集まる場所を見逃しています。Douyinは依然としてデフォルトのスタートポイントですが、状況は多様化しています。
-        </p>
+<p>上位4アプリに注目すべき新参加者：<strong>紅果無料短劇（红果免费短剧）</strong>——ByteDanceの無料短劇アプリ。1フォロワーで1億人以上のアクティブユーザーを確保した。</p>
 
-        <h2 id="social">ソーシャルメディア：大きな変化はないが、ニッチで着実な成長</h2>
-        <p>
-          中国のトップレベルのソーシャルメディア状況は安定しています。WeChat、Douyin、小紅書はその地位を維持しています。面白い動きはその下で起きています。
-        </p>
-        <p>
-          QuestMobileのデータは特に2つのアプリを指摘しています：
-        </p>
-        <ul>
-          <li><strong>Duoshan (多闪)</strong> -- ByteDance's social app, which piggybacks on Douyin's user base, now has over <strong>28 million overlapping users with Douyin</strong> and grew <strong>19x year over year</strong>. It is still small relative to the giants, but the trajectory is worth watching.</li>
-          <li><strong>Qiandao (千岛)</strong> -- a community app targeting young women around interests like anime, food, and sharing. It is a reminder that niche communities in China can scale fast when they hit the right cultural nerve.</li>
-        </ul>
-        <p>
-          ブランドにとって、最大のプラットフォームで「spray and pray」型の広告投入はまだ機能しますが、ターゲットを絞ったコミュニティ駆動型アプローチ——特に明確なオーディエンスプロフィールを持つブランド——で成長機会が増えています。
-        </p>
+<h2 id="social">💬 ソーシャルメディア：大きなドラマはないがニッチで成長</h2>
 
-        <h2 id="ai">AIブームは本物：月間4.13億ユーザー</h2>
-        <p>これがレポートから飛び出す見出しです。中国のAIネイティブアプリは2026年3月時点で5億以上のMAUに達しました。DeepSeek、Doubao、Kimiなどのアプリが、ユーザーの情報発見方法を変えています。</p>
-        <p>
-          Doubao (豆包) is the clear category leader, adding 100 million active users in Q1 alone. Qianwen (千问) sits at 170 million, DeepSeek at 130 million. Chinese consumers have adopted AI tools at a pace that surprised even the optimists.
-        </p>
-        <p>
-          AIユーザーベースも多様化しています。AIアプリユーザーの64.6%は男性（前年比4.5ポイント増）。60歳以上のユーザーは1,660M人増加。ティー3以下の都市のユーザーは9,126M人増加しました。AIは中国で若年都市男性の現象でなくなりました——人口統計を超えて主流になりつつあります。
-        </p>
+<p>ソーシャルメディア全体の成長は安定しているが、ニッチアプリに注目した値がある。</p>
 
-        <div class="callout callout--accent">
-          <div class="callout__label">The Advertising Angle</div>
-          <p>中国におけるAIネイティブアプリの台頭は、デジタル広告にとって直接的な影響を持ちます。AI検索が従来の検索を置き換えるにつれ、ブランドはAI回答に引用されるコンテンツを最適化する必要があります。</p>
-        </div>
+<div class="feature-grid">
+<div class="feature-card"><div class="feature-card__num">📸</div><div class="feature-card__title">闪山（多闪）</div><div class="feature-card__desc">ByteDanceのソーシャルアプリ。若者層で成長中。</div></div>
+<div class="feature-card"><div class="feature-card__num">🎯</div><div class="feature-card__title">千島（千岛）</div><div class="feature-card__desc">若年女性をターゲットにしたコミュニティアアプリ。</div></div>
+</div>
 
-        <h2 id="silver">シルバー経済はもはやおまけではない</h2>
-        <p>
-          QuestMobileのデータによると、46歳以上の人口はインターネットユーザーに占めるシェアを着実に伸ばしています。彼らの支出力も向上しています——オンライン消費とデバイス価格帯の両面で。
-        </p>
-        <p>
-          広告主にとって重要なのは、中国の「シニア」層は西洋とは全く異なること。中国のシニアはよりデジタルに積極的で、オンライン支出意欲が高く、ブランド忠誠度が低い——
-        </p>
+<h2 id="ai">🤖 AIブームは本物：月間4億1,300万ユーザー</h2>
 
-        <h2 id="cross-device">スマホの先：スマートTVとEVが1000M台以上の成長</h2>
-        <p>レポートは、スマートTVと新エネルギー車の接続デバイスの両方が成長を示していると指摘しています。中国のIoTエコシステムは拡大を続けており、新しい広告在庫の機会を提供しています。</p>
-        <p>
-          広告主にとって、クロスデバイスの側面は重要です。中国のモバイルファーストの物語は依然として真実ですが、それはもはや全てではありません。車内インフォテインメント、スマートTV、さらにはスマートホームデバイスが、洗練されたキャンペーンがタップし始めている新しい広告インベントリを生み出しています。
-        </p>
+<p>AIツールの利用が爆発的に成長。主要プレイヤー：</p>
 
-        <h2 id="mini-games">ミニゲーム：意外な明るい話題</h2>
-        <p>
-          One data point worth mentioning: the WeChat mini-game "Endless Winter" (无尽冬日) hit <strong>100 million monthly active users</strong> in February 2026, up 93.1% month-over-month. Multiple top-tier WeChat mini-games saw significant volume increases in February.
-        </p>
-        <p>
-          WeChatミニゲームは——ゲーム会社向けではなく、ゲーム内報酬をスポンサーしたりプロダクトプレイスメントを統合したりするブランド向けに——驚くほど効果的な広告チャネルになっています。中国特有のエコシステムに注意を払っていないと見逃しやすいチャネルです。
-        </p>
+<div style="overflow-x:auto; margin: var(--space-6) 0;">
+<table style="width:100%; border-collapse:collapse; font-size:0.9rem;">
+<thead>
+<tr style="background:rgba(45,107,228,0.1); color:var(--color-primary); text-align:left;">
+<th style="padding:12px 16px; border-bottom:2px solid var(--color-primary);">アプリ</th>
+<th style="padding:12px 16px; border-bottom:2px solid var(--color-primary);">月間アクティブユーザー</th>
+<th style="padding:12px 16px; border-bottom:2px solid var(--color-primary);">特徴</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom:1px solid var(--color-border);">
+<td style="padding:10px 16px; font-weight:600; color:var(--color-text-primary);">豆包（Doubao）</td>
+<td style="padding:10px 16px; color:var(--color-accent-light);">在1億人以上のQ1増加</td>
+<td style="padding:10px 16px;">カテゴリリーダー</td>
+</tr>
+<tr style="border-bottom:1px solid var(--color-border); background:rgba(255,255,255,0.02);">
+<td style="padding:10px 16px; font-weight:600; color:var(--color-text-primary);">通義千问（Qianwen）</td>
+<td style="padding:10px 16px;">1億7,000万</td>
+<td style="padding:10px 16px;">アリババのAIツール</td>
+</tr>
+<tr style="border-bottom:1px solid var(--color-border);">
+<td style="padding:10px 16px; font-weight:600; color:var(--color-text-primary);">DeepSeek</td>
+<td style="padding:10px 16px; color:var(--color-accent-light);">1億3,000万</td>
+<td style="padding:10px 16px;">開放ソースモデル</td>
+</tr>
+</tbody>
+</table>
+</div>
 
-        <h2 id="what-this-means">これらはあなたのブランドに何を意味するのか？</h2>
-        <p>
-          個々のデータポイントから離れて、いくつか目立つ点があります：
-        </p>
-        <p>中国のインターネットは成熟していますが、静的ではありません。ユーザー成長は鈍化していますが、エンゲージメントは深化しています。プラットフォームがユーザーの注意を引く競争が激化するにつれ、広告主はより精密なターゲティングとより質の高いコンテンツが必要になります。</p>
-        <p>動画がデフォルトフォーマットです。中国市場向けのショートフォーム動画コンテンツを作成していない場合、すでに遅れをとっています。Douyin、WeChat Channels、Bilibiliが消費者エンゲージメントの主要チャネルです。</p>
-        <p>中国におけるAIネイティブアプリの台頭は、デジタル広告にとって直接的な影響を持ちます。AI検索が従来の検索を置き換えるにつれ、ブランドはAI回答に引用されるコンテンツを最適化する必要があります。</p>
-        <p>ニッチでコミュニティ主導のチャネルが注目を集めています。大手プラットフォームが飽和するにつれ、特定の興味関心を持つコミュニティがエンゲージメントの高い場所になっています。</p>
-        <p>オーディエンスは高齢化し多様化しています。シルバーエコノミー、3都市、AIネイティブユーザーが新しい成長セグメントです。</p>
+<div class="callout callout--accent">
+<div class="callout__label">💰 広告の視点</div>
+<p>AIツールへの広告機会が拡大している。広告主はより精密なターゲティングとより質の高いコンテンツが必要になる。</p>
+</div>
 
-        <div class="callout callout--accent">
-          <div class="callout__label">この市場のナビゲーションに助けが必要ですか？</div>
-          <p>
-            At <strong>Tuyue Media Gateway</strong>, we help international brands and agencies run campaigns across every major Chinese digital platform -- Douyin, WeChat, Baidu, Xiaohongshu, Bilibili, and Bing China. We also offer China GEO services to help your brand get cited by AI-powered search tools. If you are looking at this data and wondering where to start, <a href="/ja/contact/">お問い合わせ</a> and we will walk you through it.
-          </p>
-        </div>
+<h2 id="silver">🧓 シルバーエコノミーはもうサイドショーではない</h2>
 
-        <p>
-          QuestMobileの完全レポートには、成長率別トップ10アプリランキング、ブランドマーケティング熱度などのより詳細なデータが含まれています maps, and detailed demographic breakdowns. We have pulled out the highlights most relevant to advertisers, but if there is a specific question you are trying to answer, feel free to <a href="/ja/contact/">お問い合わせ</a> and we can dig deeper.
-        </p>
+<p>中国のシニア層はよりデジタルに積極的で、オンライン支出意欲が高く、ブランド忠誠度が低い。広告主にとっては新たなターゲットセグメントとなる。</p>
 
-      </article>
+<h2 id="cross-device">📺 スマホの先：スマートTVとEVが1,000万台以上成長</h2>
 
-      <!-- Sidebar -->
-      <aside class="article-sidebar">
-        <nav class="toc">
-          <div class="toc__title">この記事について</div>
-          <ul class="toc__list">
-            <li><a href="#users" class="toc__link">12.8億ユーザー</a></li>
-            <li><a href="#ad-market" class="toc__link">広告市場：1,680億人民元</a></li>
-            <li><a href="#mobile-video" class="toc__link">モバイル動画優位</a></li>
-            <li><a href="#social" class="toc__link">ソーシャルメディア風景</a></li>
-            <li><a href="#ai" class="toc__link">AIブーム</a></li>
-            <li><a href="#silver" class="toc__link">シルバーエコノミー</a></li>
-            <li><a href="#cross-device" class="toc__link">クロスデバイス成長</a></li>
-            <li><a href="#mini-games" class="toc__link">ミニゲーム</a></li>
-            <li><a href="#what-this-means" class="toc__link">これが意味すること</a></li>
-          </ul>
-        </nav>
-        <div class="sidebar-cta">
-          <p>中国市場への参入を計画していますか？国際ブランドが中国の主要なデジタルプラットフォームすべてをナビゲートできるよう支援します。</p>
-          <a href="/ja/contact/" class="btn btn--primary">お問い合わせ</a>
-        </div>
-      </aside>
-    </div>
-  </main>
+<div class="feature-grid">
+<div class="feature-card"><div class="feature-card__num">📺</div><div class="feature-card__title">スマートTV</div><div class="feature-card__desc">世帯カバレッジが拡大。プライム時間帯の広告機会。</div></div>
+<div class="feature-card"><div class="feature-card__num">🚗</div><div class="feature-card__title">EV（電気自動車）</div><div class="feature-card__desc">車載インフォテインメントの広告チャンネルが拡大。</div></div>
+</div>
 
-  <!-- Related Posts -->
+<h2 id="mini-games">🎮 ミニゲーム：意外の明るいポイント</h2>
+
+<p>WeChatミニゲーム「無尽冬日（无尽冬日）」が月間1億人以上のアクティブユーザーを達成。カジュアルゲームの広告市場として注目されている。</p>
+
+<h2 id="what-this-means">🎯 これはあなたのブランドにとって何を意味するのか</h2>
+
+<div class="scenario-list">
+<li><div class="scenario-list__icon">1</div><div class="scenario-list__content"><strong>エンゲージメントで競争する</strong><span>リーチの幅ではなく、エンゲージメントの質で勝負する。</span></div></li>
+<li><div class="scenario-list__icon">2</div><div class="scenario-list__content"><strong>プレミアム・ラグザリーを確保</strong><span>成長しているカテゴリに予算を集中させる。</span></div></li>
+<li><div class="scenario-list__icon">3</div><div class="scenario-list__content"><strong>AIツールへの広告を検討</strong><span>AIツールへの広告機会が拡大している。</span></div></li>
+<li><div class="scenario-list__icon">4</div><div class="scenario-list__content"><strong>シルバージェネを確保</strong><span>高齢化ユーザーへのリーチを設計する。</span></div></li>
+<li><div class="scenario-list__icon">5</div><div class="scenario-list__content"><strong>クロスデバイスを検討</strong><span>TV、EV、ミニゲームにも広告チャンネルを広げる。</span></div></li>
+</div>
+
+<div class="callout callout--accent">
+<div class="callout__label">この市場のナビゲーションに助けが必要ですか？</div>
+<p style="margin-bottom:var(--space-4);">TMGは中国の主要デジタルプラットフォーム全で広告キャンペーンを運用します。具体的な質問があれば、お気軽にお問い合わせください。</p>
+<a href="/ja/contact/" class="btn btn--primary">専門家に相談する →</a>
+</div>
+
+</article>
+   <!-- Sidebar -->
+    <aside class="article-sidebar">
+      <nav class="toc">
+    <div class="toc__title">この記事について</div>
+    <ul class="toc__list">
+      <li><a class="toc__link" href="#users">ユーザー数</a></li>
+      <li><a class="toc__link" href="#ad-market">広告市場</a></li>
+      <li><a class="toc__link" href="#mobile-video">動画の支配</a></li>
+      <li><a class="toc__link" href="#social">ソーシャルメディア</a></li>
+      <li><a class="toc__link" href="#ai">AIブーム</a></li>
+      <li><a class="toc__link" href="#silver">シルバーエコノミー</a></li>
+      <li><a class="toc__link" href="#cross-device">クロスデバイス</a></li>
+      <li><a class="toc__link" href="#mini-games">ミニゲーム</a></li>
+      <li><a class="toc__link" href="#what-this-means">まとめ</a></li>
+    </ul>
+      </nav>
+      <div class="sidebar-cta">
+        <p>中国モバイル市場の最新トレンドを広告戦略に活用します。</p>
+        <a href="/ja/contact/" class="btn btn--primary">お問い合わせ</a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+  <!-- Related Posts placeholder -->
   <section class="related">
     <div class="container">
       <div class="related__title">さらに読む</div>
-      <div class="related__grid">
-        <a href="/ja/blog/xiaohongshu-consumer-research/" class="related-card">
-          <div class="related-card__cat">Xiaohongshu / Consumer Insights</div>
-          <div class="related-card__title">Why 170 Million Chinese Consumers Ask Xiaohongshu Before Buying</div>
-          <p class="related-card__desc">월간 73% 검색율, 116노트 의사결정 여정——小紅書が中国で最も影響力のある製品調査プラットフォームになった方法。</p>
-        </a>
-        <a href="/ja/blog/ocean-engine-overview/" class="related-card">
-          <div class="related-card__cat">Platform Overview</div>
-          <div class="related-card__title">Ocean Engine: Douyin's Unified Ad Platform Explained</div>
-          <p class="related-card__desc">ByteDance의 광고 플랫폼이 10+ 제품과 6억+ 사용자를 커버하는 방법과 광고주에게 의미하는 것.</p>
-        </a>
-        <a href="/ja/geo/" class="related-card">
-          <div class="related-card__cat">GEO</div>
-          <div class="related-card__title">China GEO: AI Search Optimization</div>
-          <p class="related-card__desc">DoubaoやDeepSeekのようなAIネイティブアプリが月間4億人のユーザーを超えるにつれて、GEOは中国市場参入に不可欠になっています。</p>
-        </a>
-      </div>
+      <a href="/ja/blog/tencent-aimplus-ja/" class="related-card">
+        <div class="related-card__cat">ペイドメディア戦略</div>
+        <div class="related-card__title">Tencent AIM+: AI広告スタック</div>
+        <p class="related-card__desc">TencentのAIM+（如翼）の構造と欧米プラットフォームとの違い。</p>
+      </a>
+      <a href="/ja/blog/deepseek-image-recognition-geo/" class="related-card">
+        <div class="related-card__cat">GEO</div>
+        <div class="related-card__title">DeepSeekが画像認識を開始</div>
+        <p class="related-card__desc">DeepSeekが画像を「見て」理解できるようになった。</p>
+      </a>
+      <a href="/ja/blog/bilibili-genz-marketing/" class="related-card">
+        <div class="related-card__cat">Bilibili</div>
+        <div class="related-card__title">BilibiliでZ世代にリーチ</div>
+        <p class="related-card__desc">BilibiliのZ世代エンゲージメントを活用したマーケティング戦略。</p>
+      </a>
     </div>
   </section>
-
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__section">
-          <h4 class="footer__title">TMGについて</h4>
+          <h4 class="footer__title">About TMG</h4>
           <p class="footer__description">
-            中国の1,000億ドル規模のデジタル広告市場へのシングルアクセスポイント。国際エージェンシーが中国プラットフォームを容易に運用できるよう支援します。
+            中国の1,000億ドル規模デジタル広告市場への単一アクセスポイント。国際的なエージェンシーが中国プラットフォームを簡単にナビゲートできるよう支援します。
           </p>
         </div>
         <div class="footer__section">
-          <h4 class="footer__title">クイックリンク</h4>
+          <h4 class="footer__title">Quick Links</h4>
           <ul class="footer__links">
-            <li><a href="https://www.tuyuesouxin.cn/ja/services/" class="footer__link">サービス</a></li>
-            <li><a href="https://www.tuyuesouxin.cn/ja/pricing/" class="footer__link">料金</a></li>
-            <li><a href="https://www.tuyuesouxin.cn/ja/about/" class="footer__link">会社概要</a></li>
-            <li><a href="https://www.tuyuesouxin.cn/ja/client-stories/" class="footer__link">導入事例</a></li>
-            <li><a href="https://www.tuyuesouxin.cn/ja/faqs/" class="footer__link">FAQ</a></li>
+            <li><a href="/ja/services/" class="footer__link">Services</a></li>
+            <li><a href="/ja/pricing/" class="footer__link">料金</a></li>
+            <li><a href="/ja/about/" class="footer__link">会社概要</a></li>
+            <li><a href="/ja/client-stories/" class="footer__link">導入事例</a></li>
+            <li><a href="/ja/faqs/" class="footer__link">FAQ</a></li>
           </ul>
         </div>
         <div class="footer__section">
@@ -971,21 +973,21 @@
                 <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: text-bottom; margin-right: 4px;">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                 </svg>
-                WhatsApp（クリックしてスキャン）
+                WhatsApp (Click to scan)
               </a>
             </li>
           </ul>
         </div>
         <div class="footer__section">
-          <h4 class="footer__title">法務情報</h4>
+          <h4 class="footer__title">Legal</h4>
           <ul class="footer__links">
-            <li class="footer__license">営業許可証番号： 91310114MADKG4UF0G</li>
+            <li class="footer__license">Business License Number: 91310114MADKG4UF0G</li>
             <li class="footer__company-short">Tuyue Media Gateway</li>
           </ul>
         </div>
       </div>
       <div class="footer__bottom">
-        <p class="footer__copyright">© 2026 Tuyue Media Gateway. 無断転載を禁じます。</p>
+        <p class="footer__copyright">© 2026 Tuyue Media Gateway. All rights reserved.</p>
         <div class="footer__platforms">
           <a href="https://ad.weixin.qq.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">WeChat</a>
           <a href="https://www.oceanengine.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Douyin</a>
@@ -999,6 +1001,7 @@
   </footer>
 
   <script>
+  // Mobile Menu & Dropdown Toggle
   (function () {
     var toggle = document.querySelector('.header__toggle');
     var nav = document.querySelector('.header__nav');
