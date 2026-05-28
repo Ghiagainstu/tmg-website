@@ -642,6 +642,61 @@
     p,blockquote,ul,ol,dl,table{page-break-inside:avoid;}
     @page{margin:2cm;}
   }
+
+    /* ── Tables ── */
+    .table-wrap {
+      overflow-x: auto; margin: 2rem 0;
+      border: 1px solid var(--color-border); border-radius: var(--radius-lg);
+    }
+    .table-wrap table {
+      width: 100%; border-collapse: collapse; font-size: var(--font-size-sm);
+    }
+    .table-wrap th {
+      background: var(--color-bg-alt); padding: 0.875rem 1rem;
+      text-align: left; font-weight: 600; color: var(--color-text-primary);
+      border-bottom: 1px solid var(--color-border); white-space: nowrap;
+    }
+    .table-wrap td {
+      padding: 0.875rem 1rem; border-bottom: 1px solid var(--color-border);
+      color: var(--color-text-secondary); vertical-align: top;
+    }
+    .table-wrap tr:last-child td { border-bottom: none; }
+    .table-wrap tr:hover td { background: rgba(255,255,255,0.02); }
+
+    /* ── Highlight Cards ── */
+    .highlights-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 2rem 0;
+    }
+    .highlight-card {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5);
+    }
+    .highlight-card__icon { font-size: 1.5rem; margin-bottom: 0.5rem; display: block; }
+    .highlight-card__title {
+      font-size: var(--font-size-base); font-weight: 600;
+      color: var(--color-text-primary); margin-bottom: 0.5rem;
+    }
+    .highlight-card__text {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.6;
+    }
+
+    /* ── Callout Variants ── */
+    .callout--info { background: rgba(45,107,228,0.08); border-left-color: var(--color-primary); }
+    .callout--warning { background: rgba(201,168,76,0.08); border-left-color: var(--color-accent); }
+    .callout--tip { background: rgba(45,107,228,0.06); border-left-color: #2d6be4; }
+    .callout__title {
+      font-size: var(--font-size-sm); font-weight: 700;
+      margin-bottom: var(--space-2); display: block;
+    }
+    .callout--info .callout__title { color: #6ea8fe; }
+    .callout--warning .callout__title { color: var(--color-accent-light); }
+    .callout--tip .callout__title { color: #6ea8fe; }
+    .callout__text { font-size: var(--font-size-sm); line-height: 1.6; }
+
+    @media (max-width: 640px) {
+      .highlights-grid { grid-template-columns: 1fr; }
+    }
+
   </style>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tuyue Media Gateway","alternateName":"TMG","url":"https://www.tuyuesouxin.cn/","description":"The unified media interface for international agencies entering China's digital advertising market. One connection, all platforms.","email":"tmg@tuyuesouxin.cn","address":{"@type":"PostalAddress","streetAddress":"599-2F202 Wanzhen Road","addressLocality":"Shanghai","addressRegion":"Shanghai","postalCode":"201824","addressCountry":"CN"},"sameAs":[]}</script>
 
