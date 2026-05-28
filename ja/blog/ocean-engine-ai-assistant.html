@@ -14,23 +14,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#080c14">
-  <title>Meet Zhitu Xing：Ocean Engine 内蔵 AI 広告アシスタント | Tuyue Media Gateway (TMG)</title>
+  <title>Zhitu Xingを知る：Ocean Engine内蔵AI広告アシスタント | Tuyue Media Gateway (TMG)</title>
   
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/assets/og-image.png">
-<meta name="description" content="Ocean Engine's AI assistant Zhitu Xing offers Q&A, multi-account analysis, data queries, and one-click diagnostics inside the  ad platform for advertisers.">
+<meta name="description" content="TencentのAIM+（如翼）は、GoogleのPerformance MaxやMetaのAdvantage+が未だに解決できていないプログラマティック広告の課題を、ソーシャルエコシステムの中で解決している。">
   <link rel="canonical" href="https://www.tuyuesouxin.cn/ja/blog/ocean-engine-ai-assistant/">
-  <link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/ocean-engine-ai-assistant.html">
-  <link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/ocean-engine-ai-assistant.html">
-  <link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/ocean-engine-ai-assistant.html">
-  <link rel="alternate" hreflang="x-default" href="https://www.tuyuesouxin.cn/blog/ocean-engine-ai-assistant.html">
+  <link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/ocean-engine-ai-assistant/">
+  <link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/ocean-engine-ai-assistant/">
+  <link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/ocean-engine-ai-assistant/">
+  <link rel="alternate" hreflang="x-default" href="https://www.tuyuesouxin.cn/ja/blog/ocean-engine-ai-assistant/">
 
-<meta property="og:title" content="Meet Zhitu Xing：Ocean Engine 内蔵 AI 広告アシスタント">
-  <meta property="og:description" content="Ocean Engine's AI assistant offers smart Q&A, multi-account analysis, data queries, and one-click diagnostic tools directly inside the Douyin ad app.">
+<meta property="og:title" content="Zhitu Xingを知る：Ocean Engine内蔵AI広告アシスタント">
+  <meta property="og:description" content="TencentのAIM+（如翼）は、GoogleのPerformance MaxやMetaのAdvantage+が未だに解決できていないプログラマティック広告の課題を、ソーシャルエコシステムの中で解決している。">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://www.tuyuesouxin.cn/ja/blog/">
+  <meta property="og:url" content="https://www.tuyuesouxin.cn/ja/blog/ocean-engine-ai-assistant-ja/">
   <meta property="og:image" content="https://www.tuyuesouxin.cn/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://www.tuyuesouxin.cn/assets/twitter-card.png">
@@ -497,7 +497,7 @@
       margin: 0;
     }
     .footer__links li { margin-bottom: var(--space-3); }
-    .footer__link {
+    .footer__link { text-decoration: none; 
       color: var(--color-text-secondary);
       font-size: var(--font-size-sm);
       transition: color var(--transition-fast);
@@ -552,7 +552,6 @@
       .feature-grid { grid-template-columns: 1fr; }
       .related__grid { grid-template-columns: 1fr; }
     }
-    }
 
     /* ── Scroll Reveal (disabled: content always visible) ── */
     .reveal {
@@ -560,7 +559,8 @@
       transition: none;
     }
     /* reveal--visible disabled */
-  
+
+    /* ── Language Switcher Dropdown ── */
     .header__lang-wrap {
       position: relative;
       display: inline-flex;
@@ -630,7 +630,7 @@
       background: rgba(201,168,76,.08);
     }
     .header__lang-flag { font-size: 15px; line-height: 1; }
-
+    
   @media print{
     *{box-shadow:none!important;text-shadow:none!important;}
     body{background:white!important;color:black!important;}
@@ -672,7 +672,7 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a href="/ja/" class="header__logo">
+        <a href="/" class="header__logo">
           <svg class="header__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -680,14 +680,11 @@
                 <stop offset="100%" stop-color="#e8c87a"/>
               </linearGradient>
               <clipPath id="moonClip">
-                <!-- Full circle -->
                 <circle cx="30" cy="24" r="16"/>
               </clipPath>
             </defs>
-            <!-- Crescent Moon: circle minus overlapping circle -->
             <circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/>
             <circle cx="37" cy="20" r="13" fill="#080c14"/>
-            <!-- TMG letters inside/near the crescent -->
             <text x="4" y="32" font-family="Inter, -apple-system, sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-0.8">TMG</text>
           </svg>
           <span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
@@ -699,50 +696,50 @@
         </button>
         <nav class="header__nav" id="main-nav">
           <div class="header__dropdown">
-            <a href="https://www.tuyuesouxin.cn/ja/services/" class="header__nav-link header__dropdown-trigger">
+            <a href="/ja/services/" class="header__nav-link header__dropdown-trigger">
               サービス
               <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </a>
             <div class="header__dropdown-menu">
-              <a href="https://www.tuyuesouxin.cn/ja/services/" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">すべてのサービス</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/wechat/" class="header__dropdown-item">WeChat広告</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/douyin/" class="header__dropdown-item">Douyin広告</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/baidu/" class="header__dropdown-item">Baidu SEM</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/bing/" class="header__dropdown-item">Bing China</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/xiaohongshu/" class="header__dropdown-item">小紅書（RED）</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/bilibili/" class="header__dropdown-item">Bilibili広告</a>
-              <a href="https://www.tuyuesouxin.cn/ja/geo/" class="header__dropdown-item">中国GEO</a>
+              <a href="/ja/services/" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">すべてのサービス</a>
+              <a href="/ja/services/wechat/" class="header__dropdown-item">WeChat広告</a>
+              <a href="/ja/services/douyin/" class="header__dropdown-item">Douyin広告</a>
+              <a href="/ja/services/baidu/" class="header__dropdown-item">Baidu SEM</a>
+              <a href="/ja/services/bing/" class="header__dropdown-item">Bing China</a>
+              <a href="/ja/services/xiaohongshu/" class="header__dropdown-item">小紅書（RED）</a>
+              <a href="/ja/services/bilibili/" class="header__dropdown-item">Bilibili広告</a>
+              <a href="/ja/geo/" class="header__dropdown-item">中国GEO</a>
             </div>
           </div>
-          <a href="https://www.tuyuesouxin.cn/ja/pricing/" class="header__nav-link">料金</a>
-          <a href="https://www.tuyuesouxin.cn/ja/client-stories/" class="header__nav-link">導入事例</a>
-          <a href="https://www.tuyuesouxin.cn/ja/geo/" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
-          <a href="https://www.tuyuesouxin.cn/ja/blog/" class="header__nav-link">ブログ</a>
-          <a href="https://www.tuyuesouxin.cn/ja/faqs/" class="header__nav-link">FAQ</a>
+          <a href="/ja/pricing/" class="header__nav-link">料金</a>
+          <a href="/ja/client-stories/" class="header__nav-link">導入事例</a>
+          <a href="/ja/geo/" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
+          <a href="/ja/blog/" class="header__nav-link">ブログ</a>
+          <a href="/ja/faqs/" class="header__nav-link">FAQ</a>
           <div class="header__dropdown">
-            <a href="https://www.tuyuesouxin.cn/ja/about/" class="header__nav-link header__dropdown-trigger">
+            <a href="/ja/about/" class="header__nav-link header__dropdown-trigger">
               会社概要
               <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </a>
             <div class="header__dropdown-menu">
-              <a href="https://www.tuyuesouxin.cn/ja/why-tmg/" class="header__dropdown-item">TMGを選ぶ理由</a>
-              <a href="https://www.tuyuesouxin.cn/ja/about/" class="header__dropdown-item">会社概要</a>
-              <a href="https://www.tuyuesouxin.cn/ja/contact/" class="header__dropdown-item">お問い合わせ</a>
+              <a href="/ja/why-tmg/" class="header__dropdown-item">TMGを選ぶ理由</a>
+              <a href="/ja/about/" class="header__dropdown-item">会社概要</a>
+              <a href="/ja/contact/" class="header__dropdown-item">お問い合わせ</a>
             </div>
           </div>
         </nav>
-                  <div class="header__lang-wrap">
-        <button class="header__lang-btn" onclick="this.parentElement.classList.toggle('active')">
-          <span class="header__lang-flag">🇯🇵</span>日本語
-          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 3.5l3 4 3-4"/></svg>
-        </button>
-        <div class="header__lang-menu">
-          <a href="https://www.tuyuesouxin.cn/" class="header__lang-item"><span class="header__lang-flag">🇺🇸</span>English</a>
-          <a href="https://www.tuyuesouxin.cn/ko/" class="header__lang-item"><span class="header__lang-flag">🇰🇷</span>한국어</a>
+        <div class="header__lang-wrap">
+          <button class="header__lang-btn" onclick="this.parentElement.classList.toggle('active')">
+            <span class="header__lang-flag">🇺🇸</span>English
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 3.5l3 4 3-4"/></svg>
+          </button>
+          <div class="header__lang-menu">
+            <a href="/ja/blog/" class="header__lang-item"><span class="header__lang-flag">🇯🇵</span>日本語</a>
+            <a href="/ko/blog/" class="header__lang-item"><span class="header__lang-flag">🇰🇷</span>한국어</a>
+          </div>
         </div>
-      </div>
-        <div class="header__cta">
-          <a href="https://www.tuyuesouxin.cn/ja/contact/" class="btn btn--primary">お問い合わせ</a>
+<div class="header__cta">
+          <a href="/ja/contact/" class="btn btn--primary">お問い合わせ →</a>
         </div>
       </div>
     </div>
@@ -750,258 +747,159 @@
 
   <!-- Article Hero -->
   <section class="article-hero">
-    <div class="container">
-      <div class="article-meta">
-        <span class="article-category">Ocean Engine</span>
-        <span class="article-date">2026年5月23日</span>
-        <span class="article-read-time">読了まで約8分</span>
-      </div>
-      <h1 class="article-hero__title">Meet Zhitu Xing：Ocean Engine 内蔵 AI 広告アシスタント</h1>
-      <p class="article-hero__intro">
-        ByteDance has embedded an AI assistant directly into the Ocean Engine App. It is called Zhitu Xing (智投星) — literally "Smart Investment Star" — and it is designed to give advertisers on-demand answers, data queries, and account diagnostics without leaving the app. Here is what it does, how it works, and why it matters for international brands running campaigns on Douyin.
-      </p>
-
-      <div class="article-hero__author">
-        <div class="article-hero__author-avatar">TMG</div>
-        <div class="article-hero__author-info">
-          <div class="article-hero__author-name">Tuyue Media Gateway</div>
-          <div class="article-hero__author-role">ペイドメディアチーム · 上海</div>
-        </div>
+  <div class="container">
+    <div class="article-meta">
+      <span class="article-category">Ocean Engine</span>
+      <span class="article-date">2026年5月23日</span>
+      <span class="article-read-time">読了まで約7分</span>
+    </div>
+    <h1 class="article-hero__title"><span>Zhitu Xing</span>を知る：Ocean Engine内蔵<span>AI広告アシスタント</span></h1>
+    <p class="article-hero__intro">
+      ByteDanceがOcean EngineアプリにAIアシスタントを直接組み込んだ。広告アカウントの問題を語るとき、データを引き出すとき、アプリを離れずに回答してくれる。
+    </p>
+    <div class="article-hero__author">
+      <div class="article-hero__author-avatar">TMG</div>
+      <div class="article-hero__author-info">
+        <div class="article-hero__author-name">Tuyue Media Gateway</div>
+        <div class="article-hero__author-role">ペイドメディアチーム · 上海</div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+<!-- Article Body -->
+<main id="main-content" class="article-body">
+  <div class="container">
+    <article class="article-content reveal">
 
-  <!-- Article Body -->
-  <main id="main-content" class="article-body">
-    <div class="container">
-      <article class="article-content reveal">
+<div class="callout callout--accent">
+<div class="callout__label">🤖 Zhitu Xingとは</div>
+<p>Zhitu Xing（智图星）はOcean Engineアプリ（巨量引擎APP）にネイティブに組み込まれたAIアシスタント。ホーム画面のフローティングボタンから、コンテキストエントリポイントを通じてアクセスできる。広告アカウントの問題を語るとき、データを引き出すとき、アプリを離れずに回答してくれる。</p>
+</div>
 
-        <h2 id="what-is">Zhitu Xingとは？</h2>
-        <p>
-          Zhitu XingはOcean Engineアプリにネイティブに組み込まれたAIアシスタントだ——ByteDanceのモバイルプラットフォーム——
-        </p>
-        <p>
-          アシスタントはホーム画面のフローティングボタンと、コンテキストエントリーポイントを通じてアクセスできる。
-        </p>
+<h2 id="four-capabilities">📋 4つのコア機能</h2>
 
-        <div class="callout callout--accent">
-          <div class="callout__label">Platform Note</div>
-          <p>Zhitu Xing is part of the Ocean Engine App (巨量引擎APP), not the Ocean Engine web dashboard. You need the app to access it. The app is available on iOS and Android via Chinese app stores or through a QR code scan from a certified agency.</p>
-        </div>
+<p>ByteDanceは公式製品マニュアルでZhitu Xingの4つの主なユースケースを文書化している：</p>
 
-        <h2 id="four-capabilities">4つのコア機能</h2>
-        <p>
-          ByteDanceは公式製品マニュアルでZhitu Xingの4つの主なユースケースを文書化している。それぞれが異なる広告運用の効率化に貢献する。
-        </p>
+<div class="feature-grid">
+<div class="feature-card"><div class="feature-card__num">1</div><div class="feature-card__title">スマートQ&A（智能问答）</div><div class="feature-card__desc">ヘルプドキュメントを探し回る必要はない。Zhitu Xingに質問すれば、記憶した知識ベースから即座に回答してくれる。</div></div>
+<div class="feature-card"><div class="feature-card__num">2</div><div class="feature-card__title">アカウント分析（単/多アカウント解読）</div><div class="feature-card__desc">複数の広告アカウントを持つ場合、アカウント横断でのサマリーを得る。個別アカウントのデータも詳細に確認。</div></div>
+<div class="feature-card"><div class="feature-card__num">3</div><div class="feature-card__title">スマートデータ検索（智能问数）</div><div class="feature-card__desc">テーブルを引き出す必要はない。自然言語で質問すれば、広告データを即座に取得。</div></div>
+<div class="feature-card"><div class="feature-card__num">4</div><div class="feature-card__title">診断分析（警报ダッシュボード）</div><div class="feature-card__desc">アカウントの健康状態をリアルタイムで監視。問題があれば警告し、侮実につなげる。</div></div>
+</div>
 
-        <div class="feature-grid">
-          <div class="feature-card">
-            <div class="feature-card__num">1</div>
-            <div class="feature-card__title">スマートQ&A（智能问答）</div>
-            <p class="feature-card__desc">テキストまたは音声で広告に関する質問をするだけで、Zhitu Xingが平易な言葉で回答する——ヘルプドキュメントを探し回る必要はない。</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card__num">2</div>
-            <div class="feature-card__title">アカウント分析（さら/複数アカウント解读）</div>
-            <p class="feature-card__desc">1つまたは複数のアカウント全体のマクロパフォーマンスを要約。異常を発見し、トップとアンダーパフォーマーの——</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card__num">3</div>
-            <div class="feature-card__title">スマートデータ検索（智能問数）</div>
-            <p class="feature-card__desc">自然言語でキャンペーンデータをクエリ。時間、広告ユニット、クリエイティブID、マーケティングシナリオでのフィルタリングをサポート。</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card__num">4</div>
-            <div class="feature-card__title">診断分析（诊断分析）</div>
-            <p class="feature-card__desc">低パフォーマンスのクリエイティブと広告を特定し、非効率的な支出のワンクリック削除を提案。</p>
-          </div>
-        </div>
+<h2 id="smart-qa">💬 1. スマートQ&A——インライン知識ベース</h2>
 
-        <h2 id="smart-qa">アカウント権限と地域のロールアウト状況を確認してください。TMGが設定を支援します。 — Your Inline Knowledge Base</h2>
-        <p>
-          スマートQ&A機能では、質問を入力または音声で話し、構造化された平易な言語の回答を得られる。
-        </p>
-        <p>
-          実践では、運用上の質問に最も役立つ：なぜ広告が審査中なのか、この指標は何を意味するのか、どうやって——
-        </p>
-        <p>
-          監査関連の問題や人間審査のエスカレーションについては、ByteDanceがそれをJuliangwenwen（巨量问问）と呼ばれる別のシステムにルーティングします。Zhitu Xingは一般的な知識とアカウントの質問を処理し、Juliangwenwenはコンプライアンスと審査状況を処理します。
-        </p>
+<p>Zhitu XingのスマートQ&A機能は、単なるFAQ検索ではない。アカウントの実際のデータを理解し、文脈を踏まえた回答を提供する。例えば「昨日のCTRはどれくらい？」と質問すれば、実際の数値とトレンドを答えてくれる。</p>
 
-        <h2 id="account-analysis">Ocean Engine広告を運用中または計画中ですか？国際ブランド向けにOcean Engineキャンペーンを管理します。 — One Summary Across All Your Accounts</h2>
-        <p>
-          複数の広告主アカウントを管理しているなら——ほとんどの代理店や大型ブランドがそうだが——マルチアカウント機能が不可欠だ。
-        </p>
-        <p>
-          ユーザーは中国語で自然言語の質問を入力でき、システムは文脈を理解し、関連する回答を即座に提供します。
-        </p>
-        <ul>
-          <li>Ocean Engineマーケティングセンター——ログインしてアクセス</li>
-          <li>Ocean Engine AI機能の概要</li>
-          
-          <li>TMG中国デジタル広告用語集</li>
-        </ul>
-        <p>
-          業界ベンチマーク比較は注目すべき追加機能だ。分析が内部にとどまらず——
-        </p>
+<div class="callout">
+<div class="callout__label">使い方</div>
+<p>Ocean Engineアプリ内のフローティングボタンをタップするか、コンテキストエントリポイントから問いかける。言語は中国語のみ。</p>
+</div>
 
-        <h2 id="smart-data-query">AI支援広告管理、データクエリ、診断ツールに関するTMGのサービスを探る。 — Talk to Your Data</h2>
-        <p>
-          データクエリ機能は基本的にキャンペーンデータベースへの自然言語インターフェースだ。
-        </p>
-        <p>この機能は、複数のブランドや地域を管理するエージェンシーや大規模広告主にとって特に価値があります。</p>
-        <ul>
-          <li>TMG Ocean Engineサービス概要</li>
-          <li>中国のAI広告技術は模倣品に過ぎないと思っている欧米マーケターに警告。AIM+はPerformance Maxでは実現できないことを実現している。</li>
-          <li>はい、Ocean Engine広告アカウントを持つ広告主が無料で利用できます。</li>
-          <li>Zhitu Xingは英語に対応？</li>
-        </ul>
-        <p>
-          サポートされるディメンションには時間、広告ユニット、クリエイティブID、マーケティングシナリオが含まれる。サポートされる——
-        </p>
+<h2 id="account-analysis">📊 2. アカウント分析——全アカウントのサマリー</h2>
 
-        <div class="callout">
-          <div class="callout__label">実践上这意味着什么</div>
-          <p>メディアバイヤーが昼休みに「今朝のアカウント別支出対日次予算消化率」を1回の質問で取得し、午後に再確認することなく予算調整の意思決定ができる——手動のダッシュボード操作にかかっていた時間が削減される。</p>
-        </div>
+<p>複数の広告アカウントを管理している場合、個別にデータを確認する必要はない。Zhitu Xingがアカウント横断でのサマリーを提供する。</p>
 
-        <h2 id="diagnostic">TMGがOcean Engine、Douyin、Toutiaoにわたり国際ブランドの広告キャンペーンを管理する方法。 — From Insight to Action</h2>
-        <p>
-          この対話的アプローチはデータ分析の障壁を下げ、より多くのチームメンバーが洞察にアクセスできるようにします。
-        </p>
-        <p>
-          <strong>ワンクリッククリーンアップ（一键清理）：</strong> アシスタントはパフォーマンスのしきい値に基づいて低効率な広告とクリエイティブを特定します。各ユニットを手動で監査する代わりに、低パフォーマンスの一括削除が可能です。何百ものアクティブなクリエイティブを実行しているアカウントにとって、これは大きな運用時間を節約します。
-        </p>
-        <p>
-          <strong>ワンクリック修正と再リリース（一键修复和投放）：</strong> 審査システムによって拒否されたクリエイティブについては、Zhitu Xingが拒否の理由を診断し、修正を適用し、再送信できます — すべてアプリ内から。審査キューが長く、手動の再送信が遅いハイプレッシャー期間中に特に便利です。
-        </p>
-        <p>
-          診断ツールはアカウント規模に合わせて調整される。より多くの支出のあるアカウントはより詳細な内訳を受け取る。
-        </p>
+<h2 id="smart-data-query">📈 3. スマートデータ検索——データに語る</h2>
 
-        <h2 id="account-management">Connecting to the Broader App: 中国デジタル広告市場を理解するためのTMG包括ガイド。</h2>
-        <p>
-          Zhitu Xingは単独で存在するわけではない。Ocean Engineアプリのより広範なアップグレードの一部だ——
-        </p>
-        <ul>
-          <li><strong>アカウント制限：</strong> 1つのデバイスに最大5つのアカウントを同時にログインできます。追加のアカウントは認証を通じて管理されます。</li>
-          <li><strong>ダッシュボードビュー：</strong> ホーム画面はリストビュー（期間ごとのトレンド付き）とカードビューの両方をサポートします。表示される指標をカスタマイズできます。</li>
-          <li><strong>予算管理：</strong> 予算の調整は、アカウント概要ページから直接、または長押しショートカット（Juliangmarketingのみ）で行えます。</li>
-          <li><strong>クイックツール：</strong> コメント管理とリード管理は、ホーム → すべてのアカウント → アカウント → 共通ツールに移動しました。</li>
-        </ul>
+<p>自然言語で広告データを取得できる。「先週のコンバージョン率をプラットフォーム別で表示して」と計れば、テーブルとグラフで返してくれる。</p>
 
-        <h2 id="access">中国の1,000億ドル規模デジタル広告市場への単一アクセスポイント。 Zhitu Xing</h2>
-        <p>
-          Zhitu XingはアクティブなOcean Engineアカウントを持つ広告主と代理店が利用できる。エントリーポイント——
-        </p>
-        <ul class="scenario-list">
-          <li>
-            <div class="scenario-list__icon">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
-            </div>
-            <div class="scenario-list__content">
-              <strong>ホーム画面のフローティングボタン</strong>
-              <span></span>
-            </div>
-          </li>
-          <li>
-            <div class="scenario-list__icon">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            </div>
-            <div class="scenario-list__content">
-              <strong>コンテキストシーンボタン</strong>
-              <span>キャンペーン、クリエイティブ、アカウントレポートを閲覧中にコンテキストに応じて表示。 Tap to get AI analysis of whatever you are currently viewing.</span>
-            </div>
-          </li>
-        </ul>
+<h2 id="diagnostic">🔍 4. 診断分析——インサイトからアクションへ</h2>
 
-        <h2 id="agency-perspective">制限事項</h2>
-        <p>
-          <>
-        </p>
-        <p>
-          第一に、データに関する質問の回答時間を短縮する。レポートサイクルを待つ代わりに、即座に質問して回答を得られる。
-        </p>
-        <p>
-          第二に、診断とクリーンアップ機能が大規模クリエイティブポートフォリオ管理の手動オーバーヘッドを削減する。
-        </p>
-        <p>
-          アカウント分析機能の業界ベンチマーク比較も注目に値する。
-        </p>
+<p>アカウントの健康状態をリアルタイムで監視し、問題があれば警告する。例えばCTRが急落下した場合、原因を分析して改善策を提案してくれる。</p>
 
-        <div class="callout callout--accent">
-          <div class="callout__label">TMG Note</div>
-          <p>当社はZhitu Xingを含むOcean Engineアプリツールを標準的なキャンペーン監視ワークフローの一部として使用している。</p>
-        </div>
+<div class="callout">
+<div class="callout__label">実践的な意味</div>
+<p>広告パフォーマンスの問題を語るとき、データを引き出すとき、アプリを離れずに回答してくれる。培訓の必要がなく、即座に業務に活用できる。</p>
+</div>
 
-      </article>
+<h2 id="access">🚀 Zhitu Xingへのアクセス方法</h2>
 
-      <!-- Sidebar -->
-      <aside class="article-sidebar">
-        <nav class="toc">
-          <div class="toc__title">この記事について</div>
-          <ul class="toc__list">
-            <li><a href="#what-is" class="toc__link">智図星とは？</a></li>
-            <li><a href="#four-capabilities" class="toc__link">4つのコア機能</a></li>
-            <li><a href="#smart-qa" class="toc__link">1. スマートQ&A</a></li>
-            <li><a href="#account-analysis" class="toc__link">2. アカウント分析</a></li>
-            <li><a href="#smart-data-query" class="toc__link">3. スマートデータクエリ</a></li>
-            <li><a href="#diagnostic" class="toc__link">4. 診断分析</a></li>
-            <li><a href="#account-management" class="toc__link">マルチアカウント管理</a></li>
-            <li><a href="#access" class="toc__link">アクセス方法</a></li>
-            <li><a href="#agency-perspective" class="toc__link">© 2026 Tuyue Media Gateway. 無断転載を禁じます。</a></li>
-          </ul>
-        </nav>
-        <div class="sidebar-cta">
-          <p>日常業務を自動化——定期的なアカウントチェックやデータクエリを自動化して時間を節約</p>
-          <a href="/ja/contact/" class="btn btn--primary">お問い合わせ →</a>
-        </div>
-      </aside>
-    </div>
-  </main>
+<div class="scenario-list">
+<li><div class="scenario-list__icon">1</div><div class="scenario-list__content"><strong>Ocean Engineアプリをダウンロード</strong><span>App StoreまたはAndroidマーケットから。</span></div></li>
+<li><div class="scenario-list__icon">2</div><div class="scenario-list__content"><strong>フローティングボタンをタップ</strong><span>ホーム画面に表示されるAIアシスタントアイコンをタップ。</span></div></li>
+<li><div class="scenario-list__icon">3</div><div class="scenario-list__content"><strong>中国語で質問</strong><span>自然言語で質問すれば、AIがアカウントデータを基に回答。</span></div></li>
+<li><div class="scenario-list__icon">4</div><div class="scenario-list__content"><strong>コンテキストエントリを活用</strong><span>ダッシュボードやレポート画面のコンテキストで質問することも可能。</span></div></li>
+</div>
+
+<h2 id="agency-perspective">🌍 国際広告主への意味</h2>
+
+<p>Zhitu Xingは中国語のみで動作するが、国際広告主にとって大きな価値を提供する：</p>
+
+<div class="feature-grid">
+<div class="feature-card"><div class="feature-card__num">⚙️</div><div class="feature-card__title">運用効率の向上</div><div class="feature-card__desc">データ取得や診断をAIが担うため、オペレーターの負担が軽減。</div></div>
+<div class="feature-card"><div class="feature-card__num">📊</div><div class="feature-card__title">データアクセスの平氖化</div><div class="feature-card__desc">中国語で質問すれば複雜なデータも取得可能。言語壁が低下する。</div></div>
+<div class="feature-card"><div class="feature-card__num">🏆</div><div class="feature-card__title">競争優位</div><div class="feature-card__desc">Zhitu Xingを活用している広告主はまだ少ない。先行したブランドが優位を取る。</div></div>
+</div>
+
+<div class="callout callout--accent">
+<div class="callout__label">Ocean Engine広告を運用中または計画中ですか？</div>
+<p style="margin-bottom:var(--space-4);">TMGは国際ブランド向けにOcean Engineキャンペーンを管理します。Zhitu Xingの活用方法もサポートします。</p>
+<a href="/ja/contact/" class="btn btn--primary">専門家に相談する →</a>
+</div>
+
+</article>
+   <!-- Sidebar -->
+    <aside class="article-sidebar">
+      <nav class="toc">
+    <div class="toc__title">この記事について</div>
+    <ul class="toc__list">
+      <li><a class="toc__link" href="#four-capabilities">4つのコア機能</a></li>
+      <li><a class="toc__link" href="#smart-qa">スマートQ&A</a></li>
+      <li><a class="toc__link" href="#account-analysis">アカウント分析</a></li>
+      <li><a class="toc__link" href="#smart-data-query">スマートデータ検索</a></li>
+      <li><a class="toc__link" href="#diagnostic">診断分析</a></li>
+      <li><a class="toc__link" href="#access">アクセス方法</a></li>
+      <li><a class="toc__link" href="#agency-perspective">国際広告主への意味</a></li>
+    </ul>
+      </nav>
+      <div class="sidebar-cta">
+        <p>Zhitu Xingの活用をサポートします。</p>
+        <a href="/ja/contact/" class="btn btn--primary">お問い合わせ</a>
+      </div>
+    </aside>
+  </div>
+</main>
 
   <!-- Related Posts placeholder -->
   <section class="related">
     <div class="container">
       <div class="related__title">さらに読む</div>
-      <div class="related__grid">
-        <a href="/ja/faqs#platform-ocean/" class="related-card">
-          <div class="related-card__cat">Douyin / Ocean Engine</div>
-          <div class="related-card__title">Douyin Advertising FAQ</div>
-          <p class="related-card__desc">診断を活用——手動レビューの前にワンクリック診断を実行して問題を早期発見</p>
-        </a>
-        <a href="/ja/services/douyin/" class="related-card">
-          <div class="related-card__cat">Services</div>
-          <div class="related-card__title">Douyin Ads — TMG Service</div>
-          <p class="related-card__desc">推奨を検証——AIの提案を必ずテストし、独自のデータと照合して確認</p>
-        </a>
-        <a href="/ja/geo/" class="related-card">
-          <div class="related-card__cat">GEO</div>
-          <div class="related-card__title">China GEO: AI Search Optimization</div>
-          <p class="related-card__desc">Zhitu Xingは、Ocean Engineのより広範なAI機能推進の一環であり、広告運用チームの効率を向上させ、反復的な手動タスクを削減することを目指しています。</p>
-        </a>
-      </div>
+      <a href="/ja/blog/douyin-enterprise-account/" class="related-card">
+        <div class="related-card__cat">Douyin広告</div>
+        <div class="related-card__title">Douyin企業アカウント完全ガイド</div>
+        <p class="related-card__desc">国際ブランドのための制度的価値と4つのティア。</p>
+      </a>
+      <a href="/ja/blog/tencent-aimplus-ja/" class="related-card">
+        <div class="related-card__cat">ペイドメディア戦略</div>
+        <div class="related-card__title">Tencent AIM+: AI広告スタック</div>
+        <p class="related-card__desc">TencentのAIM+（如翼）の構造と欧米プラットフォームとの違い。</p>
+      </a>
+      <a href="/ja/blog/doubao-ads-geo-still-worth-it/" class="related-card">
+        <div class="related-card__cat">GEO</div>
+        <div class="related-card__title">豆包に広告が追加された——GEOはまだ価値があるか？</div>
+        <p class="related-card__desc">豆包検索に広告が追加された今、GEO戦略の侵先性を解析。</p>
+      </a>
     </div>
   </section>
-
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__section">
-          <h4 class="footer__title">TMGについて</h4>
+          <h4 class="footer__title">About TMG</h4>
           <p class="footer__description">
-            中国の1,000億ドル規模のデジタル広告市場へのシングルアクセスポイント。国際エージェンシーが中国プラットフォームを容易に運用できるよう支援します。
+            中国の1,000億ドル規模デジタル広告市場への単一アクセスポイント。国際的なエージェンシーが中国プラットフォームを簡単にナビゲートできるよう支援します。
           </p>
         </div>
         <div class="footer__section">
-          <h4 class="footer__title">クイックリンク</h4>
+          <h4 class="footer__title">Quick Links</h4>
           <ul class="footer__links">
-            <li><a href="https://www.tuyuesouxin.cn/ja/services/" class="footer__link">サービス</a></li>
-            <li><a href="https://www.tuyuesouxin.cn/ja/pricing/" class="footer__link">料金</a></li>
-            <li><a href="https://www.tuyuesouxin.cn/ja/about/" class="footer__link">会社概要</a></li>
-            <li><a href="https://www.tuyuesouxin.cn/ja/client-stories/" class="footer__link">導入事例</a></li>
-            <li><a href="https://www.tuyuesouxin.cn/ja/faqs/" class="footer__link">FAQ</a></li>
+            <li><a href="/ja/services/" class="footer__link">Services</a></li>
+            <li><a href="/ja/pricing/" class="footer__link">料金</a></li>
+            <li><a href="/ja/about/" class="footer__link">会社概要</a></li>
+            <li><a href="/ja/client-stories/" class="footer__link">導入事例</a></li>
+            <li><a href="/ja/faqs/" class="footer__link">FAQ</a></li>
           </ul>
         </div>
         <div class="footer__section">
@@ -1015,21 +913,21 @@
                 <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: text-bottom; margin-right: 4px;">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                 </svg>
-                WhatsApp（クリックしてスキャン）
+                WhatsApp (Click to scan)
               </a>
             </li>
           </ul>
         </div>
         <div class="footer__section">
-          <h4 class="footer__title">法務情報</h4>
+          <h4 class="footer__title">Legal</h4>
           <ul class="footer__links">
-            <li class="footer__license">営業許可証番号： 91310114MADKG4UF0G</li>
+            <li class="footer__license">Business License Number: 91310114MADKG4UF0G</li>
             <li class="footer__company-short">Tuyue Media Gateway</li>
           </ul>
         </div>
       </div>
       <div class="footer__bottom">
-        <p class="footer__copyright">© 2026 Tuyue Media Gateway. 無断転載を禁じます。</p>
+        <p class="footer__copyright">© 2026 Tuyue Media Gateway. All rights reserved.</p>
         <div class="footer__platforms">
           <a href="https://ad.weixin.qq.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">WeChat</a>
           <a href="https://www.oceanengine.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Douyin</a>
