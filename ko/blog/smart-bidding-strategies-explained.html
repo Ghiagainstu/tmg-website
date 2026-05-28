@@ -227,12 +227,12 @@
       background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
       border-bottom: 1px solid var(--color-border);
     }
-    .article-hero__inner { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
-    .article-hero__meta {
+    .container { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
+    .article-meta {
       display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;
       font-size: var(--font-size-sm); color: var(--color-text-muted);
     }
-    .article-hero__cat {
+    .article-category {
       display: inline-block; padding: .25rem .75rem;
       background: rgba(201,168,76,.12); color: var(--color-accent);
       border-radius: 2rem; font-size: var(--font-size-xs); font-weight: 600;
@@ -247,7 +247,7 @@
     @media (max-width: 767px) {
       .article-hero__title { font-size: var(--font-size-3xl); }
     }
-    .article-hero__excerpt {
+    .article-hero__intro {
       font-size: var(--font-size-lg); line-height: 1.6;
       color: var(--color-text-secondary); max-width: 640px;
     }
@@ -411,7 +411,7 @@
       margin-bottom: .5rem; font-size: var(--font-size-base);
       line-height: 1.4;
     }
-    .related-card__excerpt {
+    .related-card__desc {
       font-size: var(--font-size-sm); color: var(--color-text-muted);
       line-height: 1.5;
     }
@@ -606,7 +606,7 @@
   </head>
 <body>
   <!-- Skip to main content -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
 
   
   
@@ -676,12 +676,12 @@
         </nav>
         <div class="header__lang-wrap">
         <button class="header__lang-btn" onclick="this.parentElement.classList.toggle('active')">
-          <span class="header__lang-flag">🇰🇷</span>한국어
+          <span class="header__lang-flag">🇺🇸</span>English
           <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 3.5l3 4 3-4"/></svg>
         </button>
         <div class="header__lang-menu">
-          <a href="https://www.tuyuesouxin.cn" class="header__lang-item"><span class="header__lang-flag">🇺🇸</span>English</a>
-          <a href="https://www.tuyuesouxin.cn/ja" class="header__lang-item"><span class="header__lang-flag">🇯🇵</span>日本語</a>
+          <a href="/ko/blog/" class="header__lang-item header__lang-item--cur"><span class="header__lang-flag">🇰🇷</span>한국어</a>
+          <a href="/ja/blog/" class="header__lang-item"><span class="header__lang-flag">🇯🇵</span>日本語</a>
         </div>
       </div>
         <div class="header__cta">
@@ -690,31 +690,10 @@
       </div>
     </div>
   </header>
-<main id="main-content">
-<!-- Article Hero -->
-<section class="article-hero">
-<div class="article-hero__inner">
-<div class="article-hero__meta">
-<span class="article-category">유료 미디어</span>
-<span class="article-date">2026년 4월 16일</span>
-<span class="article-read-time">8분 읽기</span>
-</div>
-<h1 class="article-hero__title">스마트 입찰 전략: oCPM부터 tROI까지 — 모든 캠페인에 적합한 입찰을 선택하는 방법</h1>
-<p class="article-hero__excerpt">
-        특정 목표 CPA 이내에서 전환량 최대화를 목표로 설계되었습니다.
-      </p>
-<div class="article-hero__author">
-<div class="article-hero__author-avatar">TMG</div>
-<div class="article-hero__author-info">
-<div class="article-hero__author-name">Tuyue Media Gateway</div>
-<div class="article-hero__author-role">유료 미디어 팀 · 상해</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Article Body -->
-<article class="article-body">
-<p class="emoji-lead">🎯</p>
+  <main id="main-content" class="article-body">
+    <div class="container">
+      <article class="article-content reveal">
+
 <p>
       예산 보호 역할을 하며, 전환은 상한 가격 이하일 때만 계산됩니다.
     </p>
@@ -958,9 +937,25 @@
       서비스
     </p>
 </article>
+   <!-- Sidebar -->
+    <aside class="article-sidebar">
+      <nav class="toc">
+    <div class="toc__title">이 기사에 대해</div>
+    <ul class="toc__list">
+      <li><a class="toc__link" href="#h2-1">🧱 기본 입찰 모델</a></li>
+      <li><a class="toc__link" href="#h2-2">🚀 스마트 입찰</a></li>
+      <li><a class="toc__link" href="#h2-3">📊 입찰 전략 선택</a></li>
+      <li><a class="toc__link" href="#h2-4">⚠️ 흔한 실수</a></li>
+    </ul>
+      </nav>
+      <div class="sidebar-cta">
+        <p>중국 디지털 광고 입찰 전략에 대해 상담이 필요하신가요?</p>
+        <a href="/ko/contact/" class="btn btn--primary">문의하기</a>
+      </div>
+    </aside>
+    </div>
+  </main>
 <!-- Related Posts -->
-</main>
-
   <section class="related">
 <div class="container">
 <h2 class="related__title">더보기</h2>
@@ -968,17 +963,17 @@
 <a class="related-card" href="/ko/blog/ad-billing-models-explained/">
 <div class="related-card__cat">유료 미디어 전략</div>
 <h3 class="related-card__title">광고 청구 모델 설명: CPM, CPC, CPA, oCPM 및 각각 사용 시기</h3>
-<p class="related-card__excerpt">스마트 입찰 전략에 대한 상세 가이드.</p>
+<p class="related-card__desc">스마트 입찰 전략에 대한 상세 가이드.</p>
 </a>
 <a class="related-card" href="/ko/blog/cpm-ocpm-ecpm-explained/">
 <div class="related-card__cat">유료 미디어 전략</div>
 <h3 class="related-card__title">oCPM(최적화 CPM)은 플랫폼이 AI를 사용해 광고 결과를 지속적으로 모니터링하고 성과 신호에 기반해 실시간으로 입찰을 조정합니다.</h3>
-<p class="related-card__excerpt">스마트 입찰 전략에 대한 상세 가이드.</p>
+<p class="related-card__desc">스마트 입찰 전략에 대한 상세 가이드.</p>
 </a>
 <a class="related-card" href="/ko/services/douyin/">
 <div class="related-card__cat">Douyin 광고</div>
 <h3 class="related-card__title">플랫폼 AI가 입찰을 최적화하므로 전환 목표에 대해 가장 효율적인 CPM을 지불합니다.</h3>
-<p class="related-card__excerpt">스마트 입찰 전략에 대한 상세 가이드.</p>
+<p class="related-card__desc">스마트 입찰 전략에 대한 상세 가이드.</p>
 </a>
 </div>
 </div>
