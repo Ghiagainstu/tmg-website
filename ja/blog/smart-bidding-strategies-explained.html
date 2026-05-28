@@ -20,27 +20,23 @@
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/assets/og-image.png">
-  
-  <meta name="description" content="Plain-English guide to smart bidding strategies in China's paid media: oCPC, tROI, cost cap, and more. Learn when to use each bid type and how to avoid common pitfalls.">
+<meta name="description" content="中国の主要広告プラットフォームで実際に遭遇する入札戦略を実践的に解説。oCPC、tROI、コストキャップなど、各入札タイプの機能と適切な使用場面を学ぶ。">
   <link rel="canonical" href="https://www.tuyuesouxin.cn/ja/blog/smart-bidding-strategies-explained/">
-  <link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/smart-bidding-strategies-explained.html">
-  <link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/smart-bidding-strategies-explained.html">
-  <link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/smart-bidding-strategies-explained.html">
-  <link rel="alternate" hreflang="x-default" href="https://www.tuyuesouxin.cn/blog/smart-bidding-strategies-explained.html">
+  <link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/smart-bidding-strategies-explained/">
+  <link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/smart-bidding-strategies-explained/">
+  <link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/smart-bidding-strategies-explained/">
+  <link rel="alternate" hreflang="x-default" href="https://www.tuyuesouxin.cn/blog/smart-bidding-strategies-explained/">
 
 <meta property="og:title" content="スマート入札戦略：oCPMからtROIまで——キャンペーン別の最適な入札選択">
-  <meta property="og:description" content="Plain-English guide to smart bidding in China's paid media: oCPC, tROI, cost cap, and more. Learn when to use each bid type.">
+  <meta property="og:description" content="中国の主要広告プラットフォームで実際に遭遇する入札戦略を実践的に解説。oCPC、tROI、コストキャップなど、各入札タイプの機能と適切な使用場面を学ぶ。">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://www.tuyuesouxin.cn/ja/blog/">
+  <meta property="og:url" content="https://www.tuyuesouxin.cn/ja/blog/smart-bidding-strategies-explained/">
   <meta property="og:image" content="https://www.tuyuesouxin.cn/assets/og-image.png">
-  
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://www.tuyuesouxin.cn/assets/twitter-card.png">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  
   <style>
   
 
@@ -224,38 +220,49 @@
         display: block; width: 100%; padding: 14px 40px 14px 24px;
         border-bottom: 1px solid var(--color-border); font-size: 1.1rem;
       }
+      .header__dropdown { position: static; width: 100%; 
+       }
+      .header__dropdown-trigger {
+        display: flex; align-items: center; justify-content: space-between;
+        width: 100%; padding: 14px 40px 14px 24px;
+        border-bottom: 1px solid var(--color-border); font-size: 1.1rem;
+      }
+      .header__dropdown-arrow { transition: transform var(--transition-fast); }
+      .header__dropdown.active .header__dropdown-arrow,
+      .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
+      .header__dropdown-menu { display: none; flex-direction: column; background: rgba(0,0,0,.25); padding: 0; }
+      .header__dropdown.active .header__dropdown-menu,
+      .header__dropdown.open .header__dropdown-menu { display: flex; }
+      .header__dropdown-item {
+        display: block; width: 100%; padding: 12px 40px;
+        font-size: 1rem; color: var(--color-text-secondary);
+        border-bottom: 1px solid rgba(255,255,255,.06);
+      }
+      .header__dropdown-item:hover { background: rgba(201,168,76,.08); color: var(--color-accent); }
     }
 
-    /* ── Article Hero ── */
+    /* ── Article Layout ── */
     .article-hero {
-      padding: 4rem 0 3rem;
-      background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
-      border-bottom: 1px solid var(--color-border);
+      padding: 100px 0 var(--space-12);
     }
-    .article-hero__inner { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
-    .article-hero__meta {
-      display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;
+    .article-hero .container { max-width: 860px; }
+    .article-meta {
+      display: flex; align-items: center; gap: var(--space-3);
+      flex-wrap: wrap; margin-bottom: var(--space-6);
+    }
+    .article-category {
+      display: inline-block; padding: 4px 12px;
+      background: rgba(201,168,76,.15); border: 1px solid rgba(201,168,76,.3);
+      border-radius: 20px; font-size: var(--font-size-xs); font-weight: 600;
+      color: var(--color-accent); text-transform: uppercase; letter-spacing: .08em;
+    }
+    .article-date {
       font-size: var(--font-size-sm); color: var(--color-text-muted);
     }
-    .article-hero__cat {
-      display: inline-block; padding: .25rem .75rem;
-      background: rgba(201,168,76,.12); color: var(--color-accent);
-      border-radius: 2rem; font-size: var(--font-size-xs); font-weight: 600;
-      letter-spacing: .02em; text-transform: uppercase;
+    .article-read-time {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
     }
-    .article-hero__date { color: var(--color-text-muted); }
-    .article-hero__title {
-      font-size: var(--font-size-4xl); font-weight: 700;
-      line-height: 1.2; color: var(--color-text-primary);
-      margin-bottom: 1.5rem;
-    }
-    @media (max-width: 767px) {
-      .article-hero__title { font-size: var(--font-size-3xl); }
-    }
-    .article-hero__excerpt {
-      font-size: var(--font-size-lg); line-height: 1.6;
-      color: var(--color-text-secondary); max-width: 640px;
-    }
+
     .article-hero__author {
       display: flex; align-items: center; gap: 1rem;
       margin-top: 2rem; padding-top: 2rem;
@@ -276,154 +283,178 @@
       font-size: var(--font-size-xs); color: var(--color-text-muted);
     }
 
+    .article-hero__title {
+      font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700;
+      color: var(--color-text-primary); line-height: 1.25; margin-bottom: var(--space-6);
+    }
+    .article-hero__title span { color: var(--color-accent); }
+    .article-hero__intro {
+      font-size: var(--font-size-lg); color: var(--color-text-secondary);
+      line-height: 1.75; max-width: 760px;
+    }
+
     /* ── Article Body ── */
     .article-body {
-      max-width: 760px; margin: 0 auto; padding: 3rem 1.5rem 4rem;
+      padding: var(--space-16) 0;
+      background: #000;
     }
-    .article-body h2 {
+    .article-body .container {
+      max-width: 860px;
+      display: grid;
+      grid-template-columns: 1fr 260px;
+      gap: var(--space-12);
+      align-items: start;
+    }
+    .article-content h2 {
       font-size: var(--font-size-2xl); font-weight: 700;
-      color: var(--color-text-primary); margin: 3rem 0 1.5rem;
-      line-height: 1.3;
+      color: var(--color-text-primary); margin: var(--space-10) 0 var(--space-4);
+      padding-top: var(--space-6);
     }
-    .article-body h3 {
+    .article-content h2:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+    .article-content h3 {
       font-size: var(--font-size-xl); font-weight: 600;
-      color: var(--color-text-primary); margin: 2.5rem 0 1rem;
+      color: var(--color-text-primary); margin: var(--space-8) 0 var(--space-3);
     }
-    .article-body p {
-      margin-bottom: 1.5rem; color: var(--color-text-secondary);
-      line-height: 1.7;
+    .article-content p { margin-bottom: var(--space-4); color: var(--color-text-secondary); }
+    .article-content strong { color: var(--color-text-primary); font-weight: 600; }
+    .article-content ul, .article-content ol {
+      margin: var(--space-4) 0 var(--space-6) var(--space-6);
     }
-    .article-body ul, .article-body ol {
-      margin-bottom: 1.5rem; padding-left: 1.5rem;
-    }
-    .article-body li {
-      margin-bottom: .75rem; color: var(--color-text-secondary);
-      line-height: 1.6;
-    }
-    .article-body strong { color: var(--color-text-primary); font-weight: 600; }
-    .article-body em { color: var(--color-accent); font-style: normal; }
+    .article-content li { margin-bottom: var(--space-2); color: var(--color-text-secondary); }
+    .article-content a { color: var(--color-primary); }
+    .article-content a:hover { text-decoration: underline; }
 
-    /* Callout boxes */
-    .callout {
-      padding: 1.5rem; border-radius: var(--radius-lg);
-      margin: 2rem 0; border-left: 4px solid;
+    /* Feature card grid */
+    .feature-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: var(--space-4); margin: var(--space-6) 0;
     }
-    .callout--tip {
-      background: rgba(201,168,76,.08); border-color: var(--color-accent);
-    }
-    .callout--info {
-      background: rgba(45,107,228,.08); border-color: var(--color-primary);
-    }
-    .callout--warning {
-      background: rgba(250,81,81,.08); border-color: #fa5151;
-    }
-    .callout__title {
-      font-weight: 700; margin-bottom: .5rem;
-      color: var(--color-text-primary); font-size: var(--font-size-base);
-    }
-    .callout__text {
-      font-size: var(--font-size-sm); color: var(--color-text-secondary);
-      line-height: 1.6;
-    }
-
-    /* Tables */
-    .table-wrap {
-      overflow-x: auto; margin: 2rem 0;
-      border: 1px solid var(--color-border); border-radius: var(--radius-lg);
-    }
-    .table-wrap table {
-      width: 100%; border-collapse: collapse; font-size: var(--font-size-sm);
-    }
-    .table-wrap th {
-      background: var(--color-bg-alt); padding: .875rem 1rem;
-      text-align: left; font-weight: 600; color: var(--color-text-primary);
-      border-bottom: 1px solid var(--color-border); white-space: nowrap;
-    }
-    .table-wrap td {
-      padding: .875rem 1rem; border-bottom: 1px solid var(--color-border);
-      color: var(--color-text-secondary); vertical-align: top;
-    }
-    .table-wrap tr:last-child td { border-bottom: none; }
-    .table-wrap tr:hover td { background: rgba(255,255,255,.02); }
-
-    /* Highlight cards */
-    .highlights-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
-      margin: 2rem 0;
-    }
-    @media (max-width: 640px) {
-      .highlights-grid { grid-template-columns: 1fr; }
-    }
-    .highlight-card {
-      padding: 1.5rem; border-radius: var(--radius-lg);
+    .feature-card {
       background: var(--color-bg-card); border: 1px solid var(--color-border);
-      transition: border-color .2s, transform .2s;
+      border-radius: var(--radius-lg); padding: var(--space-5);
+      transition: border-color var(--transition-base);
     }
-    .highlight-card:hover {
-      border-color: var(--color-border-hover); transform: translateY(-2px);
+    .feature-card:hover { border-color: rgba(201,168,76,.4); }
+    .feature-card__num {
+      display: inline-block; width: 28px; height: 28px; line-height: 28px;
+      text-align: center; background: rgba(201,168,76,.15);
+      color: var(--color-accent); font-size: var(--font-size-sm);
+      font-weight: 700; border-radius: 50%; margin-bottom: var(--space-3);
     }
-    .highlight-card__icon {
-      font-size: 1.5rem; margin-bottom: .75rem; display: block;
+    .feature-card__title {
+      font-size: var(--font-size-base); font-weight: 600;
+      color: var(--color-text-primary); margin-bottom: var(--space-2);
     }
-    .highlight-card__title {
-      font-weight: 700; color: var(--color-text-primary);
-      margin-bottom: .5rem; font-size: var(--font-size-base);
-    }
-    .highlight-card__text {
-      font-size: var(--font-size-sm); color: var(--color-text-secondary);
-      line-height: 1.5;
+    .feature-card__desc {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.6;
     }
 
-    /* Emoji lead-in */
-    .emoji-lead {
-      font-size: 1.5rem; margin-bottom: .5rem; display: inline-block;
+    /* Callout / tip box */
+    .callout {
+      background: rgba(45,107,228,.08); border: 1px solid rgba(45,107,228,.2);
+      border-left: 3px solid var(--color-primary);
+      border-radius: var(--radius-md); padding: var(--space-5);
+      margin: var(--space-6) 0;
     }
+    .callout--accent {
+      background: rgba(201,168,76,.06); border: 1px solid rgba(201,168,76,.2);
+      border-left: 3px solid var(--color-accent);
+    }
+    .callout__label {
+      font-size: var(--font-size-xs); font-weight: 700; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--color-primary); margin-bottom: var(--space-2);
+    }
+    .callout--accent .callout__label { color: var(--color-accent); }
+    .callout p { margin: 0; font-size: var(--font-size-sm); }
+
+    /* Scenario steps */
+    .scenario-list {
+      list-style: none; margin: var(--space-4) 0 var(--space-6); padding: 0;
+    }
+    .scenario-list li {
+      display: flex; gap: var(--space-4); padding: var(--space-4) 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .scenario-list li:last-child { border-bottom: none; }
+    .scenario-list__icon {
+      width: 36px; height: 36px; flex-shrink: 0;
+      background: rgba(201,168,76,.1); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; margin-top: 2px;
+    }
+    .scenario-list__content strong {
+      display: block; font-size: var(--font-size-base); color: var(--color-text-primary);
+      margin-bottom: 2px;
+    }
+    .scenario-list__content span { font-size: var(--font-size-sm); }
+
+    /* ── Sidebar TOC ── */
+    .article-sidebar {
+      position: sticky; top: 88px;
+    }
+    .toc {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5);
+    }
+    .toc__title {
+      font-size: var(--font-size-xs); font-weight: 700; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--color-text-muted); margin-bottom: var(--space-4);
+    }
+    .toc__list { list-style: none; }
+    .toc__list li + li { margin-top: var(--space-2); }
+    .toc__link {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+      text-decoration: none !important; display: block; line-height: 1.4;
+      transition: color var(--transition-fast);
+    }
+    .toc__link:hover { color: var(--color-text-primary); text-decoration: none !important; }
+
+    .sidebar-cta {
+      margin-top: var(--space-6); background: var(--color-bg-card);
+      border: 1px solid var(--color-border); border-radius: var(--radius-lg);
+      padding: var(--space-5); text-align: center;
+    }
+    .sidebar-cta p {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary);
+      margin-bottom: var(--space-4); line-height: 1.5;
+    }
+    .sidebar-cta .btn { width: 100%; justify-content: center; }
 
     /* ── Related Posts ── */
     .related {
-      padding: 4rem 0; background: var(--color-bg);
+      padding: var(--space-12) 0;
+      background: var(--color-bg);
       border-top: 1px solid var(--color-border);
     }
     .related__title {
       font-size: var(--font-size-2xl); font-weight: 700;
-      color: var(--color-text-primary); margin-bottom: 2rem;
+      color: var(--color-text-primary); margin-bottom: var(--space-8);
     }
-    .related__grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; }
-    @media (max-width: 900px) {
-      .related__grid { grid-template-columns: 1fr 1fr; }
-    }
-    @media (max-width: 600px) {
-      .related__grid { grid-template-columns: 1fr; }
+    .related__grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6);
     }
     .related-card {
-      display: block; padding: 1.5rem;
       background: var(--color-bg-card); border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg); transition: border-color .2s, transform .2s;
-      text-decoration: none !important;
+      border-radius: var(--radius-lg); padding: var(--space-5);
+      text-decoration: none !important; display: block;
+      transition: border-color var(--transition-base), transform var(--transition-base);
     }
-    .related-card:hover {
-      border-color: var(--color-accent); transform: translateY(-2px);
-      text-decoration: none !important;
-    }
+    .related-card:hover { border-color: rgba(201,168,76,.4); transform: translateY(-2px); text-decoration: none !important; }
     .related-card__cat {
-      display: inline-block; padding: .2rem .6rem;
-      background: rgba(201,168,76,.12); color: var(--color-accent);
-      border-radius: 2rem; font-size: var(--font-size-xs); font-weight: 600;
-      margin-bottom: .75rem;
+      font-size: var(--font-size-xs); font-weight: 600; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--color-accent); margin-bottom: var(--space-3);
     }
     .related-card__title {
-      font-weight: 700; color: var(--color-text-primary);
-      margin-bottom: .5rem; font-size: var(--font-size-base);
-      line-height: 1.4;
+      font-size: var(--font-size-base); font-weight: 600;
+      color: var(--color-text-primary); line-height: 1.4; margin-bottom: var(--space-2);
     }
-    .related-card__excerpt {
-      font-size: var(--font-size-sm); color: var(--color-text-muted);
-      line-height: 1.5;
+    .related-card__desc {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.5;
     }
 
     /* ── Footer ── */
     .footer {
-      padding: 4rem 0 2rem; background: var(--color-bg-alt);
+      padding: var(--space-10) 0 var(--space-8);
+      background: var(--color-bg);
       border-top: 1px solid var(--color-border);
     }
     .footer__grid {
@@ -466,7 +497,7 @@
       margin: 0;
     }
     .footer__links li { margin-bottom: var(--space-3); }
-    .footer__link {
+    .footer__link { text-decoration: none; 
       color: var(--color-text-secondary);
       font-size: var(--font-size-sm);
       transition: color var(--transition-fast);
@@ -509,7 +540,27 @@
       background-color: rgba(201, 168, 76, 0.2);
       border-color: var(--color-accent);
       transform: translateY(-2px);
-  
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .article-body .container { grid-template-columns: 1fr; }
+      .article-sidebar { display: none; }
+    }
+    @media (max-width: 767px) {
+      .article-hero { padding: 90px 0 var(--space-10); }
+      .feature-grid { grid-template-columns: 1fr; }
+      .related__grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── Scroll Reveal (disabled: content always visible) ── */
+    .reveal {
+      opacity: 1; transform: none;
+      transition: none;
+    }
+    /* reveal--visible disabled */
+
+    /* ── Language Switcher Dropdown ── */
     .header__lang-wrap {
       position: relative;
       display: inline-flex;
@@ -579,7 +630,7 @@
       background: rgba(201,168,76,.08);
     }
     .header__lang-flag { font-size: 15px; line-height: 1; }
-
+    
   @media print{
     *{box-shadow:none!important;text-shadow:none!important;}
     body{background:white!important;color:black!important;}
@@ -592,6 +643,7 @@
     @page{margin:2cm;}
   }
   </style>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tuyue Media Gateway","alternateName":"TMG","url":"https://www.tuyuesouxin.cn/","description":"The unified media interface for international agencies entering China's digital advertising market. One connection, all platforms.","email":"tmg@tuyuesouxin.cn","address":{"@type":"PostalAddress","streetAddress":"599-2F202 Wanzhen Road","addressLocality":"Shanghai","addressRegion":"Shanghai","postalCode":"201824","addressCountry":"CN"},"sameAs":[]}</script>
 
     <style>
       .skip-to-content {
@@ -608,20 +660,20 @@
         top: 0;
       }
     </style>
-  </head>
+  
+</head>
 <body>
   <!-- Skip to main content -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
 
   
   
 
-  
   <!-- Header -->
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a href="/ja/" class="header__logo">
+        <a href="/" class="header__logo">
           <svg class="header__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -629,14 +681,11 @@
                 <stop offset="100%" stop-color="#e8c87a"/>
               </linearGradient>
               <clipPath id="moonClip">
-                <!-- Full circle -->
                 <circle cx="30" cy="24" r="16"/>
               </clipPath>
             </defs>
-            <!-- Crescent Moon: circle minus overlapping circle -->
             <circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/>
             <circle cx="37" cy="20" r="13" fill="#080c14"/>
-            <!-- TMG letters inside/near the crescent -->
             <text x="4" y="32" font-family="Inter, -apple-system, sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-0.8">TMG</text>
           </svg>
           <span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
@@ -648,35 +697,35 @@
         </button>
         <nav class="header__nav" id="main-nav">
           <div class="header__dropdown">
-            <a href="https://www.tuyuesouxin.cn/ja/services/" class="header__nav-link header__dropdown-trigger">
+            <a href="/ja/services/" class="header__nav-link header__dropdown-trigger">
               サービス
               <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </a>
             <div class="header__dropdown-menu">
-              <a href="https://www.tuyuesouxin.cn/ja/services/" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">すべてのサービス</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/wechat/" class="header__dropdown-item">WeChat広告</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/douyin/" class="header__dropdown-item">Douyin広告</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/baidu/" class="header__dropdown-item">Baidu SEM</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/bing/" class="header__dropdown-item">Bing China</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/xiaohongshu/" class="header__dropdown-item">小紅書（RED）</a>
-              <a href="https://www.tuyuesouxin.cn/ja/services/bilibili/" class="header__dropdown-item">Bilibili広告</a>
-              <a href="https://www.tuyuesouxin.cn/ja/geo/" class="header__dropdown-item">中国GEO</a>
+              <a href="/ja/services/" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">すべてのサービス</a>
+              <a href="/ja/services/wechat/" class="header__dropdown-item">WeChat広告</a>
+              <a href="/ja/services/douyin/" class="header__dropdown-item">Douyin広告</a>
+              <a href="/ja/services/baidu/" class="header__dropdown-item">Baidu SEM</a>
+              <a href="/ja/services/bing/" class="header__dropdown-item">Bing China</a>
+              <a href="/ja/services/xiaohongshu/" class="header__dropdown-item">小紅書（RED）</a>
+              <a href="/ja/services/bilibili/" class="header__dropdown-item">Bilibili広告</a>
+              <a href="/ja/geo/" class="header__dropdown-item">中国GEO</a>
             </div>
           </div>
-          <a href="https://www.tuyuesouxin.cn/ja/pricing/" class="header__nav-link">料金</a>
-          <a href="https://www.tuyuesouxin.cn/ja/client-stories/" class="header__nav-link">導入事例</a>
-          <a href="https://www.tuyuesouxin.cn/ja/geo/" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
-          <a href="https://www.tuyuesouxin.cn/ja/blog/" class="header__nav-link">ブログ</a>
-          <a href="https://www.tuyuesouxin.cn/ja/faqs/" class="header__nav-link">FAQ</a>
+          <a href="/ja/pricing/" class="header__nav-link">料金</a>
+          <a href="/ja/client-stories/" class="header__nav-link">導入事例</a>
+          <a href="/ja/geo/" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
+          <a href="/ja/blog/" class="header__nav-link">ブログ</a>
+          <a href="/ja/faqs/" class="header__nav-link">FAQ</a>
           <div class="header__dropdown">
-            <a href="https://www.tuyuesouxin.cn/ja/about/" class="header__nav-link header__dropdown-trigger">
+            <a href="/ja/about/" class="header__nav-link header__dropdown-trigger">
               会社概要
               <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </a>
             <div class="header__dropdown-menu">
-              <a href="https://www.tuyuesouxin.cn/ja/why-tmg/" class="header__dropdown-item">TMGを選ぶ理由</a>
-              <a href="https://www.tuyuesouxin.cn/ja/about/" class="header__dropdown-item">会社概要</a>
-              <a href="https://www.tuyuesouxin.cn/ja/contact/" class="header__dropdown-item">お問い合わせ</a>
+              <a href="/ja/why-tmg/" class="header__dropdown-item">TMGを選ぶ理由</a>
+              <a href="/ja/about/" class="header__dropdown-item">会社概要</a>
+              <a href="/ja/contact/" class="header__dropdown-item">お問い合わせ</a>
             </div>
           </div>
         </nav>
@@ -686,12 +735,12 @@
             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 3.5l3 4 3-4"/></svg>
           </button>
           <div class="header__lang-menu">
-            <a href="/ja/blog/" class="header__lang-item header__lang-item--cur"><span class="header__lang-flag">🇯🇵</span>日本語</a>
+            <a href="/ja/blog/" class="header__lang-item"><span class="header__lang-flag">🇯🇵</span>日本語</a>
             <a href="/ko/blog/" class="header__lang-item"><span class="header__lang-flag">🇰🇷</span>한국어</a>
           </div>
         </div>
-        <div class="header__cta">
-          <a href="https://www.tuyuesouxin.cn/ja/contact/" class="btn btn--primary">お問い合わせ</a>
+<div class="header__cta">
+          <a href="/ja/contact/" class="btn btn--primary">お問い合わせ →</a>
         </div>
       </div>
     </div>
@@ -703,13 +752,13 @@
     <div class="article-hero__inner">
       <div class="article-hero__meta">
         <span class="article-hero__cat">ペイドメディア</span>
-        <span class="article-hero__date">May 2026</span>
+        <span class="article-hero__date">2026年5月4日</span>
         <span style="color:var(--color-text-muted)">·</span>
-        <span class="article-hero__read-time">読了まで約10分</span>
+        <span class="article-hero__read-time">読了まで約8分</span>
       </div>
       <h1 class="article-hero__title">スマート入札戦略：oCPMからtROIまで——キャンペーン別の最適な入札選択</h1>
       <p class="article-hero__excerpt">
-        基本的な入札は簡単です。スマート入札は強力です—ただし、各モデルの仕組みと適切な使用場面を理解している場合のみです。
+        基本的な入札は簡単です。スマート入札は強力です——ただし、各入札タイプの実際の動作を理解している場合に限ります。oCPC、tROI、コストキャップなど、中国の主要広告プラットフォームで実際に遭遇する入札戦略を実践的に解説します。
       </p>
       <div class="article-hero__author">
         <div class="article-hero__author-avatar">TMG</div>
@@ -725,294 +774,319 @@
   <article class="article-body">
     
     <p>
-      キャンペーン設定時に「とりあえずCPCで入札して、プラットフォームに任せよう」と思ったことがあるなら——その考えを捨てるべきだ。
+      キャンペーンを設定するとき、「とりあえずCPCで入札して、あとはプラットフォームに任せよう」と思った経験はないだろうか——その考えが必ずしもうまくいくとは限らない。Baidu、Douyin、WeChat、小紅書（RED）、Bilibili、Bing Chinaでペイドメディア予算を運用してきた中で、単に入札戦略を間違えただけで多大なコストを浪費するチームを数多く見てきた。あるいは、スマート入札に切り替えれば成果が倍増するにもかかわらず、基本的な入札に固執しているケースも多い。
     </p>
     
     <p>
-      本ガイドでは、中国の主要広告プラットフォームで実際に出会う入札戦略を分解する。
+      本ガイドでは、中国の主要広告プラットフォームで実際に遭遇する入札戦略を分解する——各戦略の機能、適切な使用場面、そして落とし穴まで。これは理論ではなく、クライアントと共に日々使用している実践的な戦略である。
     </p>
     
     <h2>🧱 基礎編：基本的な入札モデル</h2>
     
     <p>
-      「スマート入札」について話す前に、用語の確認をしよう。これを理解していないと、プラットフォームが自動最適化を謳っていても実際のパフォーマンスは期待を下回る。
+      「スマート入札」について話す前に、まず基礎を押さえておこう。これらはすべてのプラットフォームがその上に構築している構成要素である。
     </p>
     
     <div class="table-wrap">
       <table>
         <thead>
           <tr>
-            <th>スマートビディング戦略：oCPMからtROIまで — キャンペーンに最適な入札方式の選び方</th>
-            <th>料金体系</th>
-            <th>スマートビディング戦略：oCPMからtROIまで — キャンペーンに最適な入札方式の選び方</th>
-            <th>本記事の重要性</th>
+            <th>モデル</th>
+            <th>支払い対象</th>
+            <th>プラットフォームの要件</th>
+            <th>主な用途</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><strong>CPT</strong> (Cost Per Time)</td>
-            <td>中国におけるスマートビディングの全体像</td>
-            <td>1. oCPC / oCPM（最適化CPM/CPC）</td>
-            <td>概要：プラットフォームがリアルタイムでCPC／CPM入札額を自動調整し、予算内で目標成果（コンバージョンまたはクリック）を最大化する。</td>
+            <td><strong>CPT</strong>（Cost Per Time）</td>
+            <td>特定の時間枠</td>
+            <td>在庫スケジューリング</td>
+            <td>ゴールデンタイムの動画枠、スプラッシュ広告</td>
           </tr>
           <tr>
-            <td><strong>CPM</strong> (Cost Per Mille)</td>
-            <td>使用すべき場面：</td>
-            <td>明確なコンバージョンイベントが存在する（フォーム送信、購入、アプリインストール）</td>
-            <td>十分なコンバージョンデータがある（プラットフォームは通常、スマートビディングが効果的に機能するには7日間で20件以上のコンバージョンを推奨）</td>
+            <td><strong>CPM</strong>（Cost Per Mille）</td>
+            <td>1,000インプレッション</td>
+            <td>特になし</td>
+            <td>ブランド認知、リーチキャンペーン</td>
           </tr>
           <tr>
-            <td><strong>CPC</strong> (Cost Per Click)</td>
-            <td>1. oCPC / oCPM（最適化CPM/CPC）</td>
-            <td>使用すべきでない場面：</td>
-            <td>リーチがコンバージョンより重要なブランド認知キャンペーン</td>
+            <td><strong>CPC</strong>（Cost Per Click）</td>
+            <td>クリック</td>
+            <td>クリック率（CTR）予測</td>
+            <td>検索広告、シンプルなトラフィック誘導</td>
           </tr>
           <tr>
-            <td><strong>CPA</strong> (Cost Per Action)</td>
-            <td>2. tROI（目標広告費用対効果）</td>
-            <td>概要：目標ROASを設定すると（例：ROAS 300% = 1元の支出ごとに3元の収益）、プラットフォームはその制約内で収益を最大化するよう入札する。</td>
-            <td>仕組み：アルゴリズムは、総コンバージョン数が減少しても、高額コンバージョンを生み出す可能性の高いユーザーを優先的にターゲティングする。コンバージョンボリュームよりも利益率が重要な高客単価（AOV）商品に適している。</td>
+            <td><strong>CPA</strong>（Cost Per Action）</td>
+            <td>コンバージョン</td>
+            <td>CTR + コンバージョン率（CVR）予測</td>
+            <td>リード獲得、アプリインストール、直接レスポンス</td>
           </tr>
           <tr>
-            <td><strong>CPS</strong> (Cost Per Sale)</td>
-            <td>AOVの高い（500元以上）ECブランド</td>
-            <td>明確な利益率と取引額を持つ商品</td>
-            <td>アルゴリズムが価値パターンを学習するのに十分な取引データがある</td>
+            <td><strong>CPS</strong>（Cost Per Sale）</td>
+            <td>売上の一定割合</td>
+            <td>CTR + CVR + 平均注文額予測</td>
+            <td>アフィリエイトプログラム、インフルエンサーコマース</td>
           </tr>
         </tbody>
       </table>
     </div>
     
     <div class="callout callout--info">
-      <div class="callout__title">使用すべきでない場面：</div>
+      <div class="callout__title">💡 スマート入札の前に——基本を理解せよ</div>
       <div class="callout__text">
-        すべての「スマート」入未ストラテジーはこれらの基本の上に構築されています。プラットフォームはまだ CPT、CPM、CPAを使用しており、各インプレションごとの入未金額の決定だけを自動化しているだけです。
+        すべての「スマート」入札戦略はこれらの基本の上に構築されている。プラットフォームは内部的にCPT、CPM、CPAを引き続き使用しており、各インプレッションに対する<em>入札金額</em>の決定だけを自動化しているに過ぎない。
       </div>
     </div>
     
     <h2>🚀 スマート入札編：プラットフォームに重労働を任せる</h2>
     
     <p>
-      スマート入札戦略では、入札額ではなく目標をプラットフォームに伝える。プラットフォームのアルゴリズムが——
+      スマート入札戦略では、入札額ではなく<strong>目標</strong>をプラットフォームに伝える。プラットフォームのアルゴリズムが、各オークションにおいて、そのインプレッションが目標達成につながる可能性に基づいてリアルタイムで入札額を調整する。
     </p>
     
-    <h3>約束された露出に対して固定価格を支払うため、最も予測可能です。</h3>
+    <h3>最大化シリーズ：入札額ではなく予算を伝える</h3>
     
     <p>
-      これらの戦略は設定が最も簡単で、実行が最もリスクが高い。プラットフォームにこう伝える：「これが私の入札額だ——
+      これらの戦略は設定が最も簡単で、実行が最もリスクが高い。プラットフォームにこう伝える：「これが1日の予算です。好きなように使ってください。私の目標は[X]を最大化することです。」
     </p>
     
     <div class="highlights-grid">
       <div class="highlight-card">
         <span class="highlight-card__icon">🥇</span>
-        <div class="highlight-card__title">コンバージョン価値が大きく変動するリード獲得</div>
-        <div class="highlight-card__text">3. コストキャップ／予算キャップ入札</div>
+        <div class="highlight-card__title">クリック数の最大化</div>
+        <div class="highlight-card__text">予算内でできるだけ多くのクリックを獲得するよう最適化。トラフィック生成には良いが、コンバージョン品質を重視する場合は不向き。</div>
       </div>
       <div class="highlight-card">
         <span class="highlight-card__icon">📈</span>
-        <div class="highlight-card__title">概要：特定の成果に対して支払う最大コストを設定する。プラットフォームはその制約内で入札する。</div>
-        <div class="highlight-card__text">仕組み：保守的だが予測可能。上限を設定し、プラットフォームはその範囲内で運用する。サプライズはないが、最適化によるアップサイドもない。</div>
+        <div class="highlight-card__title">コンバージョン数の最大化</div>
+        <div class="highlight-card__text">コンバージョンする可能性が最も高いユーザーを優先。ボリュームは得られるが、コンバージョン単価を一切コントロールできない。</div>
       </div>
       <div class="highlight-card">
         <span class="highlight-card__icon">💰</span>
-        <div class="highlight-card__title">使用すべき場面：</div>
-        <div class="highlight-card__text">最適化前に予測可能な支出を求める新規キャンペーン</div>
+        <div class="highlight-card__title">コンバージョン価値の最大化</div>
+        <div class="highlight-card__text">最高額のコンバージョン（例：最大カート金額）を追求。ECに適しているが、プラットフォームに確実な価値トラッキングが必要。</div>
       </div>
       <div class="highlight-card">
         <span class="highlight-card__icon">🏆</span>
-        <div class="highlight-card__title">限られた予算で新商品や新たなオーディエンスをテストする場合</div>
-        <div class="highlight-card__text">コストに規制上またはコンプライアンス上の制約がある場合</div>
+        <div class="highlight-card__title">最上位表示の最大化</div>
+        <div class="highlight-card__text">検索結果のトップに広告を表示するため積極的に入札。ブランド検索や競合ローンチに最適。</div>
       </div>
     </div>
     
     <div class="callout callout--warning">
-      <div class="callout__title">4. クリック数最大化／リーチ最大化</div>
+      <div class="callout__title">⚠️ 「目標なし」の罠</div>
       <div class="callout__text">
-        概要：プラットフォームが予算内で最も多くのクリック（またはリーチ）を獲得するよう最適化する。
+        最大化戦略は予算を急速に消費する可能性がある。コスト目標を設定しない場合、プラットフォームは効率性を追求するインセンティブを持たず——結果が良くても悪くても、全予算を使い切る。以下の場合にのみ使用すべきである：(a) 効率性ではなくボリューム目標がある場合、または (b) 予算が小さすぎて浪費のリスクが低いと確信できる場合。
       </div>
     </div>
     
-    <h3>中国の入札プラットフォームでは、CPMの入札額を変更してもクリエイティブの重みシグナルは変わりません。プラットフォームは依然としてCTRとCVRに基づいて最もパフォーマンスの高いクリエイティブを決定します。</h3>
+    <h3>oCPXシリーズ：コストはあなたがコントロールし、配信はプラットフォームに任せる</h3>
     
     <p>
-      これは中国の有料メディアで最も広く使われているスマート入札カテゴリーだ。プラットフォームにこう伝える：——
+      これは中国の有料メディアで最も広く使われているスマート入札カテゴリーである。プラットフォームにこう伝える：「[希望するアクション]あたり約[X]元を支払いたい。そのコストで成果を出せるユーザーを見つけるのは任せる。」
     </p>
     
-    <h4>Quoraがバイラルになった後、oCPMは中国の広告主の間で最も人気のある入札戦略になりました。</h4>
+    <h4>oCPC / oCPM —— 目標コンバージョン単価</h4>
     
     <p>
-      コンバージョン単価（CPA）をターゲットに設定する。プラットフォームはコンバージョンしそうなユーザーにより高い入札を——
+      目標コンバージョン単価（CPA）を設定する。プラットフォームはコンバージョンしそうなユーザーに対して高く入札し、そうでないユーザーには低く入札する。システムの目標は、実際のCPAを目標CPAに近づけることである。
     </p>
-    
-    <p>最適：ほとんどのパフォーマンスキャンペーン—アプリインストール、リードジェネレーション、EC。これはほとんどのプラットフォームのデフォルト入札戦略です。</p>
-    
-    <h4>優れた出発点——パフォーマンスデータを収集しながら比較的低リスクです。</h4>
     
     <p>
-      コンバージョン単価をターゲットにする代わりに、リターン比率をターゲットにする。例：「1元投資するごとに3元の売上を上げる」。
+      <strong>最適な用途：</strong>ほとんどのパフォーマンスキャンペーン——アプリインストール、リードジェネレーション、EC。Douyin、Baidu、WeChatで新規広告主に推奨するデフォルトのスマート入札戦略である。
     </p>
     
-    <p>最適：信頼性の高いコンバージョン値トラッキングを持つECブランド。tROIは、コンバージョン値が注文ごとに大きく異なるEC広告主にとって推奨入札方式になりつつあります。</p>
+    <h4>tROI / tROAS —— 目標広告費用対効果</h4>
+    
+    <p>
+      コンバージョン単価ではなく、リターン比率をターゲットにする。例：「1元投資するごとに、最低3元の売上を得たい」。プラットフォームは各ユーザーの予測購入額に応じて入札額を変動させる。
+    </p>
+    
+    <p>
+      <strong>最適な用途：</strong>信頼性の高いコンバージョン価値トラッキングを持つECブランド。tROIは中国の主要プラットフォーム全体で標準的な入札戦略になりつつあり——プラットフォームの最適化をビジネスの収益に直接紐づける。
+    </p>
     
     <div class="callout callout--tip">
-      <div class="callout__title">プラットフォーム: Baidu | スマートビディングオプション: oCPC、targetCPA、targetROAS | 備考: 成熟しており、豊富な履歴データを持つ</div>
+      <div class="callout__title">🧠 どちらから始めるべきか？</div>
       <div class="callout__text">
-        ご捨物としてのカウント: <strong>oCPC/oCPM</strong> (target CPA) から始めましょう。最も理解しやすく、最もデバッグしやすく、最广くサンプリングタイプで務まるためです。週50件以上のコンバージョンと信頼する売上トラッキングがあれば、tROI/tROASにアップグラードしましょう。
+        TMGの経験則：<strong>oCPC/oCPM</strong>（目標CPA）から始めること。最も理解しやすく、トラブルシューティングが容易で、最も多くのキャンペーンタイプで機能する。週50件以上のコンバージョンと信頼できる売上トラッキングが確立したら、tROI/tROASにアップグレードする。
       </div>
     </div>
     
-    <h3>インプレッションのみのシグナルに焦点を当て、クリックやコンバージョン行動のシグナルはありません。</h3>
+    <h3>マルチ目標入札：コストとボリュームのバランス</h3>
     
-    <p>コストと量の両方を制御したい場合は？ここがマルチオブジェクティブ入札の出番です。コンバージョン単価とコンバージョン数の両方を最適化する戦略です。</p>
+    <p>
+      コスト<em>と</em>ボリュームの両方をコントロールしたい場合は？ここでマルチ目標入札の出番である。中国のプラットフォームおよびMetaのようなグローバルな競合は、コストキャップとボリューム目標を組み合わせたバリエーションを提供している。
+    </p>
     
     <div class="table-wrap">
       <table>
         <thead>
           <tr>
-            <th>十分なコンバージョンデータがある（プラットフォームは通常、スマートビディングが効果的に機能するには7日間で20件以上のコンバージョンを推奨）</th>
-            <th>直接レスポンスキャンペーンを実施している</th>
-            <th>プラットフォーム: RED (Xiaohongshu) | スマートビディングオプション: oCPC、CPC | 備考: スマートビディングは新しいが改善中</th>
+            <th>戦略</th>
+            <th>プラットフォーム</th>
+            <th>仕組み</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>よくある落とし穴</td>
+            <td>最低コスト</td>
             <td>Meta</td>
-            <td>1. コンバージョンデータの不足</td>
+            <td>「コンバージョン最大化」と同等——コスト制御なし</td>
           </tr>
           <tr>
-            <td>使用すべきでない場面：</td>
-            <td>スマートビディングには学習のためのデータが必要である。20件以上のコンバージョンが蓄積される前にoCPCに切り替えると、アルゴリズムが不安定に動作し -- CPAが下がるどころか、むしろ上昇することが多い。</td>
-            <td>解決策：CPCで7〜14日間データを蓄積してから、oCPCに切り替える。</td>
+            <td>コストキャップ</td>
+            <td>Meta / ByteDance（最適コスト）</td>
+            <td>最大CPAを設定。プラットフォームはこれを達成しようとするが、コストが上限を超えると配信を停止する場合がある</td>
           </tr>
           <tr>
-            <td>Bid cap</td>
+            <td>入札キャップ</td>
             <td>Meta</td>
-            <td>2. 入札戦略とキャンペーン目的のミスマッチ</td>
+            <td>インプレッションごとの絶対的な最大入札額を設定。コストキャップより制限的</td>
           </tr>
           <tr>
-            <td>ボリュームが必要なのにtROIを設定する（またはブランドリーチが必要なのにoCPCを設定する）と、インセンティブにズレが生じる。アルゴリズムは実際のビジネス目標ではなく、指定された目標に向けて最適化する。</td>
+            <td>目標コスト</td>
             <td>Meta</td>
-            <td>解決策：入札戦略をキャンペーン目的に明示的に合わせる。</td>
+            <td>oCPMと同等——プラットフォームが目標付近で安定したCPAを維持</td>
           </tr>
         </tbody>
       </table>
     </div>
     
     <div class="callout callout--info">
-      <div class="callout__title">3. キャンペーン途中での入札戦略変更</div>
+      <div class="callout__title">🎯 マルチ目標入札が重要な理由</div>
       <div class="callout__text">
-        oCPCからCPCに途中変更すると、アルゴリズムの学習がリセットされる。2〜3週間分の最適化の蓄積が失われる。
+        実際には、「最大化」シリーズは予算を制御するがコストは制御せず、「oCPX」シリーズはコストを制御するが予算は制御しない。マルチ目標入札は両方を提供しようとする試みであり——Douyin（最適コスト）やMeta（コストキャップ）などのプラットフォームで急速に標準になりつつある。
       </div>
     </div>
     
-    <h2>📊 高度な最適化編：制約の導入</h2>
+    <h2>📊 入札戦略の選び方</h2>
     
     <p>
-      中国のすべての主要プラットフォームでキャンペーンを運用した結果、TMGが使っている意思決定フレームワークは：
+      中国の全主要プラットフォームでキャンペーンを運用した結果、TMGが使用している意思決定フレームワークがこちら：
     </p>
     
     <div class="table-wrap">
       <table>
         <thead>
           <tr>
-            <th>解決策：キャンペーン開始時に入札戦略を決定し、最低4週間はコミットする。</th>
-            <th>4. 矛盾するシグナル</th>
-            <th>Why</th>
+            <th>状況</th>
+            <th>推奨入札戦略</th>
+            <th>理由</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>アグレッシブなtargetCPAでoCPCを実行しながら低予算を設定すると、矛盾するシグナルが生じる。アルゴリズムは狭い予算内で低コストと高ボリュームの両方を最適化できない。</td>
-            <td>解決策：目標を現実的に設定する。ボリュームが必要なら予算を増やす。低CPAが必要なら、低ボリュームを受け入れる。</td>
-            <td>意思決定フレームワーク</td>
+            <td>新規アカウント、コンバージョンデータゼロ</td>
+            <td>CPC または クリック数最大化</td>
+            <td>コンバージョン最適化の前に、プラットフォームにデータを蓄積させる</td>
           </tr>
           <tr>
-            <td>主要なポイント</td>
-            <td>oCPCは大多数のパフォーマンスキャンペーンにおけるデフォルトの選択肢 -- ただし、十分なコンバージョンデータが蓄積された後に限る</td>
-            <td>高AOVのECブランドにおけるtROIは過小評価されている -- oCPCより優れた利益率をもたらすことが多い</td>
+            <td>コンバージョントラッキング済みの既存アカウント、安定した成果を求める</td>
+            <td>oCPC / oCPM（目標CPA）</td>
+            <td>ボリュームとコスト制御の最適なバランス</td>
           </tr>
           <tr>
-            <td>途中変更は避ける -- 入札戦略の切り替えはアルゴリズムをリセットし、数週間分の最適化を失う</td>
-            <td>入札戦略を目的に合わせる -- 入札戦略とキャンペーン目標のミスマッチはすべてコストにつながる</td>
-            <td>直接レスポンスキャンペーンを実施している</td>
+            <td>信頼できる売上データを持つEC</td>
+            <td>tROI / tROAS</td>
+            <td>プラットフォームの最適化を損益に直結させる</td>
           </tr>
           <tr>
-            <td>使用すべきでない場面：</td>
-            <td>リーチがコンバージョンより重要なブランド認知キャンペーン</td>
-            <td>アルゴリズムが学習するのに十分なコンバージョンデータがない</td>
+            <td>新商品ローンチ、早期の認知度向上が必要</td>
+            <td>最上位表示最大化 / コンバージョン数最大化</td>
+            <td>効率性よりスピードとボリュームを優先</td>
           </tr>
           <tr>
-            <td>2. tROI（目標広告費用対効果）</td>
-            <td>概要：目標ROASを設定すると（例：ROAS 300% = 1元の支出ごとに3元の収益）、プラットフォームはその制約内で収益を最大化するよう入札する。</td>
-            <td>仕組み：アルゴリズムは、総コンバージョン数が減少しても、高額コンバージョンを生み出す可能性の高いユーザーを優先的にターゲティングする。コンバージョンボリュームよりも利益率が重要な高客単価（AOV）商品に適している。</td>
+            <td>厳しいCPA目標、限られた予算</td>
+            <td>コストキャップ / 最適コスト</td>
+            <td>マルチ目標：コストを制御しながら予算を保護</td>
           </tr>
           <tr>
-            <td>使用すべき場面：</td>
-            <td>AOVの高い（500元以上）ECブランド</td>
-            <td>明確な利益率と取引額を持つ商品</td>
+            <td>柔軟な予算での季節的な需要急増</td>
+            <td>コンバージョン数最大化（1日予算無制限）</td>
+            <td>期間中の全需要を捕捉</td>
           </tr>
         </tbody>
       </table>
     </div>
     
-    <h2>⚖️ 高度な最適化編：量と質のバランス</h2>
+    <h2>⚠️ 現場で日常的に見るよくある失敗</h2>
     
     <p>
-      代理店やブランドが基本入札からスマート入札に移行する際に私が最もよく見かけるミス：設定した後そのまま放置すること。スマート入札は「設定して忘れる」ものではない——定期的な入札調整とクリエイティブ更新が必要。
+      代理店やブランドが中国のプラットフォームで基本入札からスマート入札に移行する際に、最もよく見られるミス：
     </p>
     
-    <p>1. 信頼性の高いトラッキングなしでtROIに飛びつく。tROIは正確なコンバージョン値データが必要です。ECでない場合、または注文ごとの値が大きく異なる場合、tROIはうまく機能しません。</p>
+    <p>
+      <strong>1. 信頼性の低いトラッキングでtROIに飛びつく。</strong>tROIには正確なコンバージョン価値データが必要である。購入確定ではなくページ読み込み時に売上トラッキングが発火している場合、「tROI」キャンペーンは誤ったシグナルに対して最適化してしまう。切り替える前にトラッキングを修正すること。
+    </p>
     
-    <p>2. 過去のコンバージョンゼロでoCPCを実行する。oCPCにはデータが必要です。過去のコンバージョンデータなしでoCPCをローンチすると、アルゴリズムが最適化するのに十分なデータがなく、予算を使い切るのが難しくなります。</p>
+    <p>
+      <strong>2. コンバージョン履歴ゼロでoCPCを実行する。</strong>oCPCにはデータが必要である。システムにコンバージョンがゼロの状態でローンチすると、アルゴリズムに学習材料がなく機能しない。CPCまたはクリック数最大化から始め、20〜30件のコンバージョンを蓄積してからoCPCに切り替える。
+    </p>
     
-    <p>3. CPA目標を攻撃的に設定しすぎる。目標CPAが現在の実際のCPAより大幅に低い場合、プラットフォームは入札を低く保ちすぎるため、インプレッションが得られなくなります。</p>
+    <p>
+      <strong>3. CPA目標を攻撃的に設定しすぎる。</strong>目標CPAがプラットフォームの過去の実績CPAより大幅に低い場合、アルゴリズムは入札を低く保ちすぎて配信されない。よくある失敗：プラットフォームの過去平均が80元なのに50元の目標を設定する。結果？「配信されていません」——そしてキャンペーン期間の1日を無駄にする。
+    </p>
     
-    <p>4. 1つの入札戦略でブランド目標とパフォーマンス目標を混在させる。これを何度も見てきました。ブランド認知キャンペーンを作成しながら、oCPMを選択するケースです。</p>
+    <p>
+      <strong>4. ブランド目標とパフォーマンス目標を1つの入札戦略に混在させる。</strong>これを何度も見てきた：ブランド認知キャンペーンを「コンバージョン数最大化」に設定するケース。プラットフォームはほとんど存在しないコンバージョンシグナルに対して最適化し、ブランドインプレッションは発生しない。認知キャンペーンはCPMまたはCPVで運用し、パフォーマンスキャンペーンはoCPCまたはtROIで。混在させてはいけない。
+    </p>
     
     <div class="callout callout--tip">
-      <div class="callout__title">3. コストキャップ／予算キャップ入札</div>
+      <div class="callout__title">💡 「ブラックボックス」入札についてもう一つ</div>
       <div class="callout__text">
-        概要：特定の成果に対して支払う最大コストを設定する。プラットフォームはその制約内で入札する。
+        プラットフォームは入札システムをブラックボックスとして扱う傾向を強めている。最新世代は強化学習と生成モデルを使用して、人間が手動で計算できない入札判断を行う。これは強力だが——結果をより注意深く監視する必要があることも意味する。誤った指標に対して最適化するブラックボックスは、理解できるシンプルな入札戦略よりも悪い結果をもたらす。
       </div>
     </div>
     
-    <h2>🧭 ディシジョンツリー：どのような場合にどの入札を使用するか</h2>
-    
-    <p>Tuyue Media Gatewayでは、中国市場に参入する国際的なエージェンシーやブランド向けに、Baidu、Douyin、WeChat、小紅書、Bilibili、Bing Chinaで有料メディアを運用しています。<a href="/ja/contact/">お問い合わせ</a>ください。</p>
+    <h2>入札戦略を最適化する準備はできているか？</h2>
     
     <p>
-      Douyinで初めてのキャンペーンを走らせる場合でも、複数のプラットフォームで成熟したプログラムを——
+      <strong>Tuyue Media Gateway</strong>では、中国市場に参入する国際的なエージェンシーやブランド向けに、Baidu、Douyin、WeChat、小紅書（RED）、Bilibili、Bing Chinaでペイドメディアを運用している。「キャンペーンを設定する」だけではない——現在の入札設定を監査し、各キャンペーン目的に適した戦略を推奨し、スマート入札を実際に機能させるためのトラッキングインフラを構築する。
     </p>
     
-    <p>入札設定をレビューしましょうか？<a href="/ja/contact/">お問い合わせ</a>ください。現在の入札戦略を分析し、最適化のご提案をします。</p>
+    <p>
+      Douyinでの初めてのキャンペーンでも、複数プラットフォームでの成熟したプログラムの拡大でも、適切な入札戦略の選択と、予算を浪費するコストのかかるミスの回避を支援する。
+    </p>
     
-  </article>
+    <p>
+      <strong>入札設定のレビューをご希望ですか？</strong><a href="/ja/contact/" style="color:var(--color-accent);">お問い合わせ</a>ください——現在の入札戦略を分析し、目標に合った入札戦略プランをご提案します。
+    </p>
+    
   
-  <!-- Related Posts -->
-</main>
+    <!-- CTA Section -->
+    <div style="background: linear-gradient(135deg, rgba(201,168,76,0.15) 0%, rgba(201,168,76,0.05) 100%); border: 1px solid rgba(201,168,76,0.3); border-radius: 16px; padding: 48px 40px; margin: 48px 0; text-align: center;">
+      <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--color-text-primary); margin-bottom: 16px;">入札の自動化を始める準備はできていますか？</h3>
+      <p style="font-size: 1rem; color: var(--color-text-secondary); margin-bottom: 24px; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.7;">Baidu、Douyin、WeChatでROIを最大化するスマート入札戦略を実装します。</p>
+      <a href="/ja/contact/" style="display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; background: linear-gradient(135deg, #c9a84c, #e8c87a); color: #0d1220; font-weight: 600; font-size: 1rem; border-radius: 8px; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;">スマート入札設定を依頼する <span style="font-size: 1.2em;">&#8594;</span></a>
+    </div>
+      </article>
+  
+  </main>
+
 
     <section class="related">
     <div class="container">
-      <h2 class="related__title">基礎——GoogleやMeta広告で見られるものと同様——1,000インプレッションあたりの固定コストを支払います。</h2>
+      <h2 class="related__title">関連記事</h2>
       <div class="related__grid">
         
         <a href="/ja/blog/ad-billing-models-explained/" class="related-card">
-          <div class="related-card__cat">Paid Media Strategy</div>
-          <h3 class="related-card__title">中国の広告主は、他の地域よりもCPM入札の使用が少ない傾向があり、コンバージョンベースの入札が支配的です。</h3>
-          <p class="related-card__excerpt">CPMは支払う金額です。oCPMは入札方法です。eCPMはシステムがランク付けする方法です。これらを混同すると、間違った数字に対して最適化してしまいます。</p>
+          <div class="related-card__cat">ペイドメディア戦略</div>
+          <h3 class="related-card__title">広告課金モデル解説：CPM、CPC、CPA、oCPMの使い分け</h3>
+          <p class="related-card__excerpt">CPMは支払う金額。oCPMは入札方法。eCPMはシステムのランク付け方法。これらを混同すると、誤った指標に対して最適化してしまう。</p>
         </a>
         
         <a href="/ja/blog/cpm-ocpm-ecpm-explained/" class="related-card">
-          <div class="related-card__cat">Paid Media Strategy</div>
-          <h3 class="related-card__title">oCPM（最適化CPM）は、プラットフォームがAIを使用して広告結果を継続的に監視し、パフォーマンスシグナルに基づいてリアルタイムで入札を調整します。</h3>
-          <p class="related-card__excerpt">CPMは支払う金額です。oCPMは入札方法です。eCPMはシステムがランク付けする方法です。これらを混同すると、間違った数字に対して最適化してしまいます。</p>
+          <div class="related-card__cat">ペイドメディア戦略</div>
+          <h3 class="related-card__title">CPM、oCPM、eCPM：ペイドメディアバイヤーが間違えやすい3つの指標</h3>
+          <p class="related-card__excerpt">CPMは支払う金額。oCPMは入札方法。eCPMはシステムのランク付け方法。これらを混同すると、誤った指標に対して最適化してしまう。</p>
         </a>
         
         <a href="/ja/services/douyin/" class="related-card">
-          <div class="related-card__cat">TMG Service</div>
-          <h3 class="related-card__title">プラットフォームのAIが入札を最適化するため、コンバージョン目標に対して最も効率的なCPMを支払います。</h3>
-          <p class="related-card__excerpt">当社は国際ブランド向けにDouyin広告キャンペーンを管理している——キャンペーン設定とクリエイティブ・ローカライゼーションから継続的な最適化とレポートまで。中国の有料メディアについてご質問があればお気軽にご連絡ください。</p>
+          <div class="related-card__cat">Douyin広告</div>
+          <h3 class="related-card__title">Douyin広告サービス</h3>
+          <p class="related-card__excerpt">国際ブランド向けにDouyin広告キャンペーンを管理——キャンペーン設定・入札戦略からコンバージョントラッキング・クリエイティブ最適化まで。</p>
         </a>
         
       </div>
@@ -1080,7 +1154,7 @@
   </footer>
   
   <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tuyue Media Gateway","alternateName":"TMG","url":"https://www.tuyuesouxin.cn/","description":"The unified media interface for international agencies entering China's digital advertising market. One connection, all platforms.","email":"tmg@tuyuesouxin.cn","address":{"@type":"PostalAddress","streetAddress":"599-2F202 Wanzhen Road","addressLocality":"Shanghai","addressRegion":"Shanghai","postalCode":"201824","addressCountry":"CN"},"sameAs":[]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"スマート入札戦略：oCPMからtROIまで——キャンペーン別の最適な入札選択","description":"中国の主要広告プラットフォームで実際に遭遇する入札戦略を実践的に解説。oCPC、tROI、コストキャップなど、各入札タイプの機能と適切な使用場面を学ぶ。","datePublished":"2026-05-04","dateModified":"2026-05-28","author":{"@type":"Organization","name":"Tuyue Media Gateway"},"publisher":{"@type":"Organization","name":"Tuyue Media Gateway","logo":{"@type":"ImageObject","url":"https://www.tuyuesouxin.cn/assets/og-image.png"}},"image":"https://www.tuyuesouxin.cn/assets/og-image.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.tuyuesouxin.cn/ja/blog/smart-bidding-strategies-explained/"}}</script>
   
   <script>
     // ── Mobile nav toggle ──
