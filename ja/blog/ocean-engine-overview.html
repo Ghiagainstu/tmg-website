@@ -1,34 +1,55 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P5RQGYPTGP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P5RQGYPTGP');
+</script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[MISSING: i=76/53]</title>
+  <meta name="theme-color" content="#080c14">
+  <title>Ocean Engine：Douyinの統合デジタルマーケティングプラットフォーム解説 | Tuyue Media Gateway (TMG)</title>
   
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/assets/og-image.png">
-<meta name="description" content="Ocean Engine is ByteDance's marketing platform powering ads across Douyin, Toutiao, and Xigua Video. A complete overview for advertisers entering China.">
+<meta name="description" content="TencentのAIM+（如翼）は、GoogleのPerformance MaxやMetaのAdvantage+が未だに解決できていないプログラマティック広告の課題を、ソーシャルエコシステムの中で解決している。">
   <link rel="canonical" href="https://www.tuyuesouxin.cn/ja/blog/ocean-engine-overview/">
-  <meta property="og:title" content="Ocean Engine: Douyin's Unified Digital Marketing Platform Explained">
-  <meta property="og:description" content="Ocean Engine spans Douyin, Toutiao, Xigua Video, and 8+ other properties. Learn the platform's mission, product ecosystem, and what it means for international advertisers.">
+  <link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/ocean-engine-overview/">
+  <link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/ocean-engine-overview/">
+  <link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/ocean-engine-overview/">
+  <link rel="alternate" hreflang="x-default" href="https://www.tuyuesouxin.cn/ja/blog/ocean-engine-overview/">
+
+<meta property="og:title" content="Ocean Engine：Douyinの統合デジタルマーケティングプラットフォーム解説">
+  <meta property="og:description" content="TencentのAIM+（如翼）は、GoogleのPerformance MaxやMetaのAdvantage+が未だに解決できていないプログラマティック広告の課題を、ソーシャルエコシステムの中で解決している。">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://www.tuyuesouxin.cn/blog/ocean-engine-overview/">
+  <meta property="og:url" content="https://www.tuyuesouxin.cn/ja/blog/ocean-engine-overview-ja/">
   <meta property="og:image" content="https://www.tuyuesouxin.cn/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://www.tuyuesouxin.cn/assets/twitter-card.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <style>
+  
+
+  .skip-link{position:absolute;top:-100px;left:0;background:var(--color-accent);color:var(--color-bg);padding:8px 16px;z-index:10000;text-decoration:none;transition:top 0.3s;font-weight:600;}
+  .skip-link:focus{top:0;}
+
     :root {
       --color-bg: #080c14;
       --color-bg-alt: #0d1220;
       --color-bg-card: #111827;
       --color-text-primary: #f0f4ff;
-      --color-text-secondary: #a3b1cc;
-      --color-text-muted: #64748b;
+      --color-text-secondary: #b3c0d8;
+      --color-text-muted: #8899b5;
       --color-primary: #2d6be4;
       --color-primary-hover: #1e55c4;
       --color-accent: #c9a84c;
@@ -401,7 +422,7 @@
     /* ── Related Posts ── */
     .related {
       padding: var(--space-12) 0;
-      background: var(--color-bg-alt);
+      background: var(--color-bg);
       border-top: 1px solid var(--color-border);
     }
     .related__title {
@@ -476,11 +497,12 @@
       margin: 0;
     }
     .footer__links li { margin-bottom: var(--space-3); }
-    .footer__link { text-decoration: none !important; 
+    .footer__link { text-decoration: none; 
       color: var(--color-text-secondary);
       font-size: var(--font-size-sm);
       transition: color var(--transition-fast);
       display: inline-block;
+      text-decoration: none !important;
     }
     .footer__link:hover { color: var(--color-accent-light); transform: translateX(4px); }
     .footer__link--email { color: var(--color-primary); font-weight: 500; }
@@ -530,7 +552,6 @@
       .feature-grid { grid-template-columns: 1fr; }
       .related__grid { grid-template-columns: 1fr; }
     }
-    }
 
     /* ── Scroll Reveal (disabled: content always visible) ── */
     .reveal {
@@ -538,16 +559,188 @@
       transition: none;
     }
     /* reveal--visible disabled */
+
+    /* ── Language Switcher Dropdown ── */
+    .header__lang-wrap {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      margin-left: 8px;
+    }
+    .header__lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 10px;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--c-accent, #c9a84c);
+      background: transparent;
+      border: 1px solid var(--c-accent, #c9a84c);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background .15s;
+      line-height: 1.4;
+    }
+    .header__lang-btn:hover { background: rgba(201,168,76,.1); }
+    .header__lang-btn svg { transition: transform .15s; }
+    .header__lang-wrap:hover .header__lang-btn svg,
+    .header__lang-wrap.active .header__lang-btn svg { transform: rotate(180deg); }
+    .header__lang-menu {
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      min-width: 140px;
+      background: #111827;
+      border: 1px solid #1e2d45;
+      border-radius: 8px;
+      padding: 4px;
+      display: none;
+      opacity: 0;
+      box-shadow: 0 4px 20px rgba(0,0,0,.4);
+      z-index: 300;
+    }
+    .header__lang-wrap:hover .header__lang-menu,
+    .header__lang-wrap.active .header__lang-menu {
+      display: flex;
+      flex-direction: column;
+      opacity: 1;
+    }
+    .header__lang-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 10px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #a3b1cc;
+      text-decoration: none !important;
+      border-radius: 5px;
+      transition: background .15s, color .15s;
+      white-space: nowrap;
+    }
+    .header__lang-item:hover {
+      background: rgba(201,168,76,.1);
+      color: #e8c87a;
+      text-decoration: none !important;
+    }
+    .header__lang-item--cur {
+      color: #e8c87a;
+      background: rgba(201,168,76,.08);
+    }
+    .header__lang-flag { font-size: 15px; line-height: 1; }
+    
+  @media print{
+    *{box-shadow:none!important;text-shadow:none!important;}
+    body{background:white!important;color:black!important;}
+    .header,.footer,nav,.sidebar,iframe{display:none!important;}
+    main,article,section,.container{max-width:100%!important;margin:0!important;padding:10px!important;}
+    h1,h2,h3,h4,h5,h6{page-break-after:avoid;page-break-inside:avoid;}
+    img{max-width:100%!important;page-break-inside:avoid;}
+    a{color:black!important;text-decoration:underline;}
+    p,blockquote,ul,ol,dl,table{page-break-inside:avoid;}
+    @page{margin:2cm;}
+  }
   </style>
-    <script type="application/ld+json">[MISSING: i=82/53]</script>
-</head>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tuyue Media Gateway","alternateName":"TMG","url":"https://www.tuyuesouxin.cn/","description":"The unified media interface for international agencies entering China's digital advertising market. One connection, all platforms.","email":"tmg@tuyuesouxin.cn","address":{"@type":"PostalAddress","streetAddress":"599-2F202 Wanzhen Road","addressLocality":"Shanghai","addressRegion":"Shanghai","postalCode":"201824","addressCountry":"CN"},"sameAs":[]}</script>
+
+    <style>
+      .skip-to-content {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: var(--color-accent);
+        color: var(--color-bg);
+        padding: 8px 16px;
+        z-index: 10000;
+        transition: top 0.3s;
+      }
+      .skip-to-content:focus {
+        top: 0;
+      }
+    </style>
+  </head>
 <body>
+  <!-- Skip to main content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  
+  
 
   <!-- Header -->
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        [MISSING: i=55/53]
+        <a href="/" class="header__logo">
+          <svg class="header__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#c9a84c"/>
+                <stop offset="100%" stop-color="#e8c87a"/>
+              </linearGradient>
+              <clipPath id="moonClip">
+                <circle cx="30" cy="24" r="16"/>
+              </clipPath>
+            </defs>
+            <circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/>
+            <circle cx="37" cy="20" r="13" fill="#080c14"/>
+            <text x="4" y="32" font-family="Inter, -apple-system, sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-0.8">TMG</text>
+          </svg>
+          <span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
+        </a>
+        <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="header__nav" id="main-nav">
+          <div class="header__dropdown">
+            <a href="/ja/services/" class="header__nav-link header__dropdown-trigger">
+              サービス
+              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="header__dropdown-menu">
+              <a href="/ja/services/" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">すべてのサービス</a>
+              <a href="/ja/services/wechat/" class="header__dropdown-item">WeChat広告</a>
+              <a href="/ja/services/douyin/" class="header__dropdown-item">Douyin広告</a>
+              <a href="/ja/services/baidu/" class="header__dropdown-item">Baidu SEM</a>
+              <a href="/ja/services/bing/" class="header__dropdown-item">Bing China</a>
+              <a href="/ja/services/xiaohongshu/" class="header__dropdown-item">小紅書（RED）</a>
+              <a href="/ja/services/bilibili/" class="header__dropdown-item">Bilibili広告</a>
+              <a href="/ja/geo/" class="header__dropdown-item">中国GEO</a>
+            </div>
+          </div>
+          <a href="/ja/pricing/" class="header__nav-link">料金</a>
+          <a href="/ja/client-stories/" class="header__nav-link">導入事例</a>
+          <a href="/ja/geo/" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
+          <a href="/ja/blog/" class="header__nav-link">ブログ</a>
+          <a href="/ja/faqs/" class="header__nav-link">FAQ</a>
+          <div class="header__dropdown">
+            <a href="/ja/about/" class="header__nav-link header__dropdown-trigger">
+              会社概要
+              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="header__dropdown-menu">
+              <a href="/ja/why-tmg/" class="header__dropdown-item">TMGを選ぶ理由</a>
+              <a href="/ja/about/" class="header__dropdown-item">会社概要</a>
+              <a href="/ja/contact/" class="header__dropdown-item">お問い合わせ</a>
+            </div>
+          </div>
+        </nav>
+        <div class="header__lang-wrap">
+          <button class="header__lang-btn" onclick="this.parentElement.classList.toggle('active')">
+            <span class="header__lang-flag">🇺🇸</span>English
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 3.5l3 4 3-4"/></svg>
+          </button>
+          <div class="header__lang-menu">
+            <a href="/ja/blog/" class="header__lang-item"><span class="header__lang-flag">🇯🇵</span>日本語</a>
+            <a href="/ko/blog/" class="header__lang-item"><span class="header__lang-flag">🇰🇷</span>한국어</a>
+          </div>
+        </div>
+<div class="header__cta">
+          <a href="/ja/contact/" class="btn btn--primary">お問い合わせ →</a>
+        </div>
       </div>
     </div>
   </header>
@@ -556,174 +749,96 @@
   <section class="article-hero">
   <div class="container">
     <div class="article-meta">
-      [MISSING: i=73/53]
+      <span class="article-category">プラットフォーム概要</span>
+      <span class="article-date">2026年4月23日</span>
+      <span class="article-read-time">読了まで約7分</span>
     </div>
-    <h1 class="article-hero__title">
-      Ocean Engine: Douyin's Unified Digital Marketing Platform Explained
-    </h1>
+    <h1 class="article-hero__title">Ocean Engine：<span>Douyinの統合デジタルマーケティングプラットフォーム解説</span></h1>
     <p class="article-hero__intro">
-      
+      Ocean EngineはByteDanceの統合デジタルマーケティングプラットフォーム。Douyin、トウティア、西瓜視頻、他8以上のプロパティを接続する1つのアクセスポイント。
     </p>
-
-      <div class="article-hero__author">
-        <div class="article-hero__author-avatar">TMG</div>
-        <div class="article-hero__author-info">
-          <div class="article-hero__author-name">[MISSING: i=54/53]</div>
-          <div class="article-hero__author-role">Paid Media Team · Shanghai</div>
-        </div>
+    <div class="article-hero__author">
+      <div class="article-hero__author-avatar">TMG</div>
+      <div class="article-hero__author-info">
+        <div class="article-hero__author-name">Tuyue Media Gateway</div>
+        <div class="article-hero__author-role">ペイドメディアチーム · 上海</div>
       </div>
+    </div>
   </div>
 </section>
 <!-- Article Body -->
-<main class="article-body">
+<main id="main-content" class="article-body">
   <div class="container">
     <article class="article-content reveal">
 
-    <p>中国のメディアバイヤー向けのコアプラットフォーム——Google AdsがGoogleプロパティにとってのそれに似ています。</p>
+<div class="callout callout--accent">
+<div class="callout__label">💡 Ocean Engineとは</div>
+<p>Ocean EngineはByteDanceの統合デジタルマーケティングプラットフォーム。Douyin、トウティア、西瓜視頻、他8以上のプロパティを接続。世界最大級のオーディエンスへの単一アクセスポイント。</p>
+</div>
 
-    <p>中国向け製品カテゴリ：</p>
+<h2 id="mission">🎯 ミッション・ビジョン・タグライン</h2>
 
-    <p>Ocean Engine広告管理プラットフォーム（ADプラットフォーム）</p>
+<div class="feature-grid">
+<div class="feature-card"><div class="feature-card__num">🎯</div><div class="feature-card__title">ミッション</div><div class="feature-card__desc">持続可能な価値を創造し、テクノロジーとマーケティングを通じて広告主とユーザーを接続する。</div></div>
+<div class="feature-card"><div class="feature-card__num">👁️</div><div class="feature-card__title">ビジョン</div><div class="feature-card__desc">広告の後にある人々の生活を豊かにする技術。</div></div>
+<div class="feature-card"><div class="feature-card__num">📝</div><div class="feature-card__title">タグライン</div><div class="feature-card__desc">「生活を終わらせる技術、広告を開始する技術」</div></div>
+</div>
 
-    <h2 id="what">Ocean Engineとは？</h2>
+<h2 id="ecosystem">🌐 完全な製品エコスウェム</h2>
 
-    <p>TikTok for Business——グローバルTikTok広告プラットフォーム</p>
+<p>Ocean Engineは6つの主要プラットフォームを提供している：</p>
 
-    <p>Ocean Engine Qianchuan（数千川）</p>
-    <ul>
-      <li>eコマース広告主向け——ライブコマース最適化と製品フィード管理をサポートします。</li>
-      <li>ブランドとDouyinクリエイターをつなぐ公式プラットフォームで、スポンサーコンテンツコラボレーションを円滑にします。</li>
-      <li>広告主の入札、予算、オーディエンス設定を管理する技術バックエンドです。</li>
-      <li>広告主監査システム——広告主がプラットフォームの資格要件を満たしていることを保証します。</li>
-      <li>業界カテゴリに基づくコンテンツ審査とコンプライアンスチェックを管理します。</li>
-    </ul>
+<div class="feature-grid">
+<div class="feature-card"><div class="feature-card__num">🎬</div><div class="feature-card__title">Douyin（抖音）</div><div class="feature-card__desc">ショート動画・ライブコマース。6億DAU。</div></div>
+<div class="feature-card"><div class="feature-card__num">📰</div><div class="feature-card__title">トウティア（头条）</div><div class="feature-card__desc">ニュースフィード・情報プラットフォーム。</div></div>
+<div class="feature-card"><div class="feature-card__num">📺</div><div class="feature-card__title">西瓜視頻（西瓜视频）</div><div class="feature-card__desc">長尺動画コンテンツプラットフォーム。</div></div>
+<div class="feature-card"><div class="feature-card__num">📱</div><div class="feature-card__title">トウティアステップ</div><div class="feature-card__desc">ソーシャルアプリ。</div></div>
+<div class="feature-card"><div class="feature-card__num">🎮</div><div class="feature-card__title">パングレ</div><div class="feature-card__desc">グローバル広告ネットワーク。</div></div>
+<div class="feature-card"><div class="feature-card__num">📊</div><div class="feature-card__title">巨量引擎</div><div class="feature-card__desc">広告配信・オプティマイズプラットフォーム。</div></div>
+</div>
 
-    <h2 id="mission">ミッション、ビジョン、タグライン</h2>
+<h2 id="china-products">🇨🇳 中国向け製品</h2>
 
-    <div class="mission">
-      <span class="mission__brand">Ocean Engine</span>
-      <div class="mission__mission">Mission: Spark creativity. Drive business growth.</div>
-      <div class="mission__vision">Vision: Drive sustainable business growth and become a global partner for clients worldwide.</div>
-      <div class="mission__tagline">"Spark new possibilities for your business"</div>
-    </div>
+<div class="feature-grid">
+<div class="feature-card"><div class="feature-card__num">1</div><div class="feature-card__title">巨量引擎推薦</div><div class="feature-card__desc">AI駆動のオーディエンスターゲティング。</div></div>
+<div class="feature-card"><div class="feature-card__num">2</div><div class="feature-card__title">広告ツール</div><div class="feature-card__desc">クリエイティブ作成・テスト・最適化。</div></div>
+<div class="feature-card"><div class="feature-card__num">3</div><div class="feature-card__title">データ分析</div><div class="feature-card__desc">パフォーマンス測定・アトリビューション。</div></div>
+</div>
 
-    <p>Ocean Engine Xingtu（星图）</p>
+<h2 id="global">🌍 グローバルリーチ</h2>
 
-    <div class="callout">
-      <span class="callout__icon">&#128161;</span>
-      <p>Ocean Engine Cloud Map（云图）</p>
-    </div>
+<p>Ocean Engineは中国国内のみならず、グローバル広告主にもサービスを提供している。特にパングレは世界250以上の市場で広告配信をサポートしている。</p>
 
-    <h2 id="ecosystem">完全な製品エコシステム</h2>
+<h2 id="implications">💪 国際広告主への意味</h2>
 
-    <p>Ocean Engineマーケティングサイエンス（营销科学）</p>
+<div class="scenario-list">
+<li><div class="scenario-list__icon">🔗</div><div class="scenario-list__content"><strong>統合されたアクセス</strong><span>1つのアカウントでDouyin、トウティア、西瓜視頻など全プラットフォームを管理。</span></div></li>
+<li><div class="scenario-list__icon">🤖</div><div class="scenario-list__content"><strong>AI駆動の最適化</strong><span>オーディエンスターゲティング、クリエイティブ自動生成、入札最適化。</span></div></li>
+<li><div class="scenario-list__icon">🌍</div><div class="scenario-list__content"><strong>グローバルリーチ</strong><span>中国市場への広告はもちろん、パングレ経由で世界250市場へも対応。</span></div></li>
+</div>
 
-    <div class="platform-grid">
-      <div class="platform-card">
-        <div class="platform-card__name">&#127917; Douyin (抖音)</div>
-        <div class="platform-card__desc">Short video and live commerce platform with 600M+ DAU. The core of ByteDance's commercial ecosystem and the primary driver of Ocean Engine ad revenue.</div>
-      </div>
-      <div class="platform-card">
-        <div class="platform-card__name">&#128240; Toutiao (今日头条)</div>
-        <div class="platform-card__desc">General-purpose content aggregation platform connecting people to information. Key for news, feature articles, and upper-funnel brand reach.</div>
-      </div>
-      <div class="platform-card">
-        <div class="platform-card__name">&#127909; Xigua Video (西瓜视频)</div>
-        <div class="platform-card__desc">China's leading PUGC video platform. Longer-form video content for deeper engagement and niche audience segments.</div>
-      </div>
-      <div class="platform-card">
-        <div class="platform-card__name">&#128664;懂车帝 (Dongched)</div>
-        <div class="platform-card__desc">One-stop automotive media platform covering vehicle discovery, comparison, and purchasing decisions. Ideal for auto, EV, and mobility brands.</div>
-      </div>
-      <div class="platform-card">
-        <div class="platform-card__name">&#128247; FaceU & 轻颜 (Qingyan)</div>
-        <div class="platform-card__desc">AR camera apps with social features. Large young female user base; effective for beauty, cosmetics, and lifestyle brands.</div>
-      </div>
-      <div class="platform-card">
-        <div class="platform-card__name">&#128054; 皮皮虾 (Pipi Xia)</div>
-        <div class="platform-card__desc">Community-driven entertainment platform targeting young male users. Strong for gaming, tech, and entertainment brands.</div>
-      </div>
-    </div>
+<div class="callout callout--accent">
+<div class="callout__label">Ocean Engineを探索する準備はできていますか？</div>
+<p style="margin-bottom:var(--space-4);">TMGはOcean Engineエコスウェムの専門家です。アカウント設定から広告運用まで支援します。</p>
+<a href="/ja/contact/" class="btn btn--primary">専門家に相談する →</a>
+</div>
 
-    <h2 id="china-ecosystem">中国向け製品</h2>
-
-    <div class="platform-grid">
-      <div class="platform-card">
-        <div class="platform-card__name">&#127969; 住小帮 (Zhu Xiao Bang)</div>
-        <div class="platform-card__desc">Home improvement and interior design lifestyle app. Connects home improvement brands with consumers in renovation and decor decisions.</div>
-      </div>
-      <div class="platform-card">
-        <div class="platform-card__name">&#127970; 幸福里 (Xingfuli)</div>
-        <div class="platform-card__desc">Real estate information and services platform. Property listings, neighborhood insights, and home-buying tools for Chinese consumers.</div>
-      </div>
-      <div class="platform-card">
-        <div class="platform-card__name">&#9889; 穿山甲 (Pangle)</div>
-        <div class="platform-card__desc">Global app monetization network reaching 800M+ users. Access to 100,000+ apps for mobile user acquisition and cross-platform retargeting.</div>
-      </div>
-    </div>
-
-    <h2 id="global">グローバルリーチ</h2>
-
-    <p>グローバル展開：</p>
-    <ul>
-      <li>業界固有のルールとポリシーによるコンプライアンス監視。</li>
-      <li>キャンペーンの作成は、マーケティング目標の選択と予算、ターゲティング、クリエイティブの設定から始まります。</li>
-      <li>ブランド認知からコンバージョンまで、さまざまなマーケティング目標をサポートします。</li>
-    </ul>
-
-    <p>Pangle——グローバルアプリマネタイズネットワーク</p>
-
-    <h2 id="implications">中国向け製品はByteDanceの国内プラットフォームにわたる広告をカバーします。</h2>
-
-    <p>Ocean Engine is the most comprehensive paid media platform in China. Here is the strategic picture:</p>
-
-    <ol>
-      <li>CPM（インプレッション課金）、CPC（クリック課金）、OCPM（最適化CPM）を含む複数の入札モデル。</li>
-      <li>広告フォーマットは、フィード内動画から検索広告、ブランドエフェクトまで、各プラットフォームに合わせて調整されています。</li>
-      <li>ByteDanceエコシステムのネイティブAI最適化がパフォーマンスを向上させます。</li>
-      <li>Douyin、Toutiao、Xigua Videoにわたるクロスプラットフォームキャンペーンを単一プラットフォームで管理できます。</li>
-      <li>セルフサービスプラットフォームとして、広告主はキャンペーンを直接管理し、代理店の仲介を不要にします。</li>
-    </ol>
-
-    <div class="takeaways">
-      <h2>グローバル製品はPangleやTikTok for Businessを含みます。</h2>
-      <ul>
-        <li>継続的なプラットフォーム更新で新機能と改善された最適化ツールを導入します。</li>
-        <li>[MISSING: i=56/53]</li>
-        <li>Ocean Engineで広告運用中ですか？国際ブランドのOcean Engineキャンペーンを管理します。</li>
-        <li>Ocean Engine AIツールと入札最適化に関するTMGのサービス。</li>
-        <li>ローカルビジネスのためのDouyinマーケティング詳細ガイド。</li>
-      </ul>
-    </div>
-
-    <blockquote>
-      "For international advertisers, Ocean Engine is not just an ad platform—it is access to the world's most sophisticated recommendation-driven media ecosystem, all under one roof."
-    </blockquote>
-
-    <p style="margin-top:2rem; color:var(--text-muted); font-size:.875rem; border-top:1px solid var(--border); padding-top:1.5rem;">
-      <strong>Source:</strong> Ocean Engine Encyclopedia — 巨量引擎 entry. Published July 16, 2021.<br>
-      <strong>Prepared by:</strong> Tuyue Media Gateway — China's paid media partner for international brands.
-    </p>
-
-  </article>
-
-    <!-- Sidebar -->
+</article>
+   <!-- Sidebar -->
     <aside class="article-sidebar">
       <nav class="toc">
-        
-    <div class="toc__title">In This Article</div>
+    <div class="toc__title">この記事について</div>
     <ul class="toc__list">
-      <li><a class="toc__link" href="#what">What Is Ocean Engine?</a></li>
-      <li><a class="toc__link" href="#mission">Mission, Vision & Tagline</a></li>
-      <li><a class="toc__link" href="#ecosystem">The Full Product Ecosystem</a></li>
-      <li><a class="toc__link" href="#china-ecosystem">China-Focused Products</a></li>
-      <li><a class="toc__link" href="#global">Global Reach</a></li>
-      <li><a class="toc__link" href="#implications">What This Means for International Advertisers</a></li>
+      <li><a class="toc__link" href="#mission">ミッション・ビジョン</a></li>
+      <li><a class="toc__link" href="#ecosystem">製品エコスウェム</a></li>
+      <li><a class="toc__link" href="#china-products">中国向け製品</a></li>
+      <li><a class="toc__link" href="#global">グローバルリーチ</a></li>
+      <li><a class="toc__link" href="#implications">国際広告主への意味</a></li>
     </ul>
-  
       </nav>
       <div class="sidebar-cta">
-        [MISSING: i=77/53]
+        <p>Ocean Engineのセットアップをサポートします。</p>
+        <a href="/ja/contact/" class="btn btn--primary">お問い合わせ</a>
       </div>
     </aside>
   </div>
@@ -732,71 +847,78 @@
   <!-- Related Posts placeholder -->
   <section class="related">
     <div class="container">
-      <div class="related__title">[MISSING: i=68/53]</div>
-      <div class="related__grid">
-        <a href="https://www.tuyuesouxin.cn/faqs#platform-ocean" class="related-card">
-          <div class="related-card__cat">[MISSING: i=78/53]</div>
-          <div class="related-card__title">Douyin Advertising FAQ</div>
-          <p class="related-card__desc">各プラットフォームに合わせた多様な広告フォーマット。</p>
-        </a>
-        <a href="https://www.tuyuesouxin.cn/services/douyin" class="related-card">
-          <div class="related-card__cat">[MISSING: i=57/53]</div>
-          <div class="related-card__title">[MISSING: i=60/53]</div>
-          <p class="related-card__desc">詳細なターゲティング——デモグラフィック、関心、行動、デバイス。</p>
-        </a>
-        <a href="https://www.tuyuesouxin.cn/geo" class="related-card">
-          <div class="related-card__cat">GEO</div>
-          <div class="related-card__title">[MISSING: i=65/53]</div>
-          <p class="related-card__desc">豊富な分析とレポートでキャンペーンの効果を測定。</p>
-        </a>
-      </div>
+      <div class="related__title">さらに読む</div>
+      <a href="/ja/blog/ocean-engine-local-reach/" class="related-card">
+        <div class="related-card__cat">Ocean Engine</div>
+        <div class="related-card__title">Ocean Engine Local Reach</div>
+        <p class="related-card__desc">ローカルビジネスのためのハイパーローカルターゲティング。</p>
+      </a>
+      <a href="/ja/blog/ocean-engine-ai-assistant/" class="related-card">
+        <div class="related-card__cat">Ocean Engine</div>
+        <div class="related-card__title">Zhitu Xing: AI広告アシスタント</div>
+        <p class="related-card__desc">Ocean Engine内蔵のAIアシスタントの4つのコア機能。</p>
+      </a>
+      <a href="/ja/blog/douyin-enterprise-account/" class="related-card">
+        <div class="related-card__cat">Douyin広告</div>
+        <div class="related-card__title">Douyin企業アカウント完全ガイド</div>
+        <p class="related-card__desc">国際ブランドのための制度的価値と4つのティア。</p>
+      </a>
     </div>
   </section>
-
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__section">
-          <h4 class="footer__title">ミッション：持続可能な価値を創造し、あらゆるビジネスの成長を支援。</h4>
+          <h4 class="footer__title">About TMG</h4>
           <p class="footer__description">
-            メインダッシュボードで、広告主がキャンペーンを作成、監視、最適化します。詳細な分析とレポート機能を含みます。
+            中国の1,000億ドル規模デジタル広告市場への単一アクセスポイント。国際的なエージェンシーが中国プラットフォームを簡単にナビゲートできるよう支援します。
           </p>
         </div>
         <div class="footer__section">
-          <h4 class="footer__title">ビジョン：世界最大の商業情報流通プラットフォーム。</h4>
+          <h4 class="footer__title">Quick Links</h4>
           <ul class="footer__links">
-            <li><a href="https://www.tuyuesouxin.cn/services/" class="footer__link">Services</a></li>
-            <li>[MISSING: i=66/53]</li>
-            <li>[MISSING: i=69/53]</li>
-            <li><a href="https://www.tuyuesouxin.cn/client-stories" class="footer__link">Client Stories</a></li>
-            <li><a href="https://www.tuyuesouxin.cn/faqs" class="footer__link">FAQ</a></li>
+            <li><a href="/ja/services/" class="footer__link">Services</a></li>
+            <li><a href="/ja/pricing/" class="footer__link">料金</a></li>
+            <li><a href="/ja/about/" class="footer__link">会社概要</a></li>
+            <li><a href="/ja/client-stories/" class="footer__link">導入事例</a></li>
+            <li><a href="/ja/faqs/" class="footer__link">FAQ</a></li>
           </ul>
         </div>
         <div class="footer__section">
-          <h4 class="footer__title">Contact</h4>
+          <h4 class="footer__title">お問い合わせ</h4>
           <ul class="footer__links">
             <li>
-              中国の1,000億ドル規模デジタル広告市場への単一アクセスポイント。国際エージェンシーが中国プラットフォームを簡単にナビゲートできるよう支援します。
+              <a href="mailto:tmg@tuyuesouxin.cn" class="footer__link footer__link--email">tmg@tuyuesouxin.cn</a>
             </li>
             <li>
-              © 2026 Tuyue Media Gateway. 無断転載を禁じます。
+              <a href="#contactQR" class="footer__link">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: text-bottom; margin-right: 4px;">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp (Click to scan)
+              </a>
             </li>
           </ul>
         </div>
         <div class="footer__section">
-          <h4 class="footer__title">広告主がByteDanceのプロパティにわたりキャンペーンを作成、管理、最適化するための単一の統合ポータルです。</h4>
+          <h4 class="footer__title">Legal</h4>
           <ul class="footer__links">
-            <li class="footer__license">[MISSING: i=53/53]</li>
+            <li class="footer__license">Business License Number: 91310114MADKG4UF0G</li>
             <li class="footer__company-short">Tuyue Media Gateway</li>
           </ul>
         </div>
       </div>
       <div class="footer__bottom">
-        <p class="footer__copyright">ローカル実店舗ビジネス向けに特化設計され、来店とロケーションターゲティングに焦点を当てています。</p>
+        <p class="footer__copyright">© 2026 Tuyue Media Gateway. All rights reserved.</p>
         <div class="footer__platforms">
-          [MISSING: i=62/53]
-        </div>
+          <a href="https://ad.weixin.qq.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">WeChat</a>
+          <a href="https://www.oceanengine.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Douyin</a>
+          <a href="https://e.baidu.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Baidu</a>
+          <a href="https://www.xiaohongshu.com/brand" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">小紅書（RED）</a>
+          <a href="https://member.bilibili.com/platform/ad" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bilibili</a>
+          <a href="https://ads.microsoft.com/zh-cn" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bing China</a>
+</div>
       </div>
     </div>
   </footer>
@@ -808,8 +930,9 @@
     var nav = document.querySelector('.header__nav');
     if (toggle && nav) {
       toggle.addEventListener('click', function () {
-        toggle.classList.toggle('active');
-        nav.classList.toggle('active');
+        const isOpen = toggle.classList.toggle('active');
+        nav.classList.toggle('active', isOpen);
+        toggle.setAttribute('aria-expanded', String(isOpen));
       });
     }
     nav.querySelectorAll('.header__dropdown').forEach(function (dropdown) {
