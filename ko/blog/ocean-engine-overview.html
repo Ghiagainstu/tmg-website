@@ -557,6 +557,42 @@
       margin: var(--space-8) 0;
     }
 
+    /* ── Stats Grid (enhanced) ── */
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: var(--space-4); margin: var(--space-6) 0;
+    }
+    .stat-card {
+      background: linear-gradient(135deg, rgba(201,168,76,.08) 0%, rgba(45,107,228,.06) 100%);
+      border: 1px solid rgba(201,168,76,.2);
+      border-radius: var(--radius-lg); padding: var(--space-5) var(--space-4);
+      text-align: center; transition: all var(--transition-base);
+      position: relative; overflow: hidden;
+    }
+    .stat-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
+      opacity: 0.6;
+    }
+    .stat-card:hover {
+      border-color: var(--color-accent);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(201,168,76,.15);
+    }
+    .stat-card__number {
+      font-size: var(--font-size-4xl); font-weight: 800;
+      background: linear-gradient(135deg, #c9a84c 0%, #e8c87a 50%, #c9a84c 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text; margin-bottom: var(--space-2);
+      line-height: 1.1;
+    }
+    .stat-card__label {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+      font-weight: 500; letter-spacing: 0.02em;
+    }
+    @media (max-width: 767px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    }
     /* ── Scroll Reveal (disabled: content always visible) ── */
     .reveal {
       opacity: 1; transform: none;
@@ -741,7 +777,9 @@
           <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 3.5l3 4 3-4"/></svg>
         </button>
         <div class="header__lang-menu">
-          <a href="https://www.tuyuesouxin.cn/ja/blog/ocean-engine-overview/" class="header__lang-item"><span class="header__lang-flag">🇺🇸</span>English</a>
+          <a href="/blog/ocean-engine-overview/" class="header__lang-item"><span class="header__lang-flag">🇺🇸</span>English</a>
+            <a href="/ja/blog/ocean-engine-overview/" class="header__lang-item"><span class="header__lang-flag">🇯🇵</span>日本語</a>
+            <a href="/ko/blog/ocean-engine-overview/" class="header__lang-item header__lang-item--cur"><span class="header__lang-flag">🇰🇷</span>한국어</a>
           <a href="https://www.tuyuesouxin.cn/ja/blog/ocean-engine-overview/" class="header__lang-item"><span class="header__lang-flag">🇯🇵</span>日本語</a>
         </div>
       </div>
@@ -775,6 +813,14 @@
 <p>중국 미디어 바이어를 위한 핵심 플랫폼——Google Ads가 Google 프로퍼티에 해당하는 것과 유사합니다.</p>
 <p>중국 특화 제품 카테고리:</p>
 <p>Ocean Engine 광고 관리 플랫폼(AD 플랫폼)</p>
+
+<div class="stats-grid">
+<div class="stat-card"><div class="stat-card__number">10억+</div><div class="stat-card__label">월간 활성 사용자</div></div>
+<div class="stat-card"><div class="stat-card__number">500만+</div><div class="stat-card__label">광고주</div></div>
+<div class="stat-card"><div class="stat-card__number">¥5,000억+</div><div class="stat-card__label">연간 광고 매출</div></div>
+<div class="stat-card"><div class="stat-card__number">7개</div><div class="stat-card__label">핵심 플랫폼</div></div>
+</div>
+
 <h2 id="what"></h2>
 <p>TikTok for Business——글로벌 TikTok 광고 플랫폼</p>
 <p>Ocean Engine 천출(千川)</p>
@@ -829,15 +875,15 @@
 <div class="platform-grid">
 <div class="platform-card">
 <div class="platform-card__name">🏡 住小帮 (Zhu Xiao Bang)</div>
-<div class="platform-card__desc">Home improvement and interior design lifestyle app. Connects home improvement brands with consumers in renovation and decor decisions.</div>
+<div class="platform-card__desc">인테리어 개선 및 홈 데코 라이프스타일 앱. 리모델링·인테리어 결정 단계의 소비자와 홈 브랜드를 연결합니다.</div>
 </div>
 <div class="platform-card">
 <div class="platform-card__name">🏢 幸福里 (Xingfuli)</div>
-<div class="platform-card__desc">Real estate information and services platform. Property listings, neighborhood insights, and home-buying tools for Chinese consumers.</div>
+<div class="platform-card__desc">부동산 정보·서비스 플랫폼. 매물 목록, 지역 분석, 구매 도구를 중국 소비자에게 제공합니다.</div>
 </div>
 <div class="platform-card">
 <div class="platform-card__name">⚡ 穿山甲 (Pangle)</div>
-<div class="platform-card__desc">Global app monetization network reaching 800M+ users. Access to 100,000+ apps for mobile user acquisition and cross-platform retargeting.</div>
+<div class="platform-card__desc">8억+ 사용자에게 도달하는 글로벌 앱 수익화 네트워크. 10만+ 앱에서 모바일 사용자 획득 및 크로스플랫폼 리타게팅.</div>
 </div>
 </div>
 <h2 id="global">글로벌 도달</h2>
@@ -889,6 +935,8 @@
 </ul>
 </nav>
 <div class="sidebar-cta">
+<p>Ocean Engine 캠페인 설정과 최적화에 대해 상담이 필요하신가요?</p>
+<a class="btn btn--primary" href="/ko/contact/">Ocean Engine 상담하기</a>
 </div>
 </aside>
 </div>
