@@ -2506,18 +2506,18 @@
           toggle.classList.toggle('active');
           nav.classList.toggle('active');
         });
-        nav.querySelector전체('.header__nav-link').forEach(function (link) {
+        nav.querySelectorAll('.header__nav-link').forEach(function (link) {
           link.addEventListener('click', function () {
             toggle.classList.remove('active');
             nav.classList.remove('active');
           });
         });
-        nav.querySelector전체('.header__dropdown').forEach(function (dropdown) {
+        nav.querySelectorAll('.header__dropdown').forEach(function (dropdown) {
           var trigger = dropdown.querySelector('.header__dropdown-trigger');
           if (trigger) {
             trigger.addEventListener('click', function (e) {
               e.preventDefault();
-              nav.querySelector전체('.header__dropdown').forEach(function (d) {
+              nav.querySelectorAll('.header__dropdown').forEach(function (d) {
                 if (d !== dropdown) d.classList.remove('open');
               });
               dropdown.classList.toggle('open');
@@ -2526,7 +2526,7 @@
         });
         document.addEventListener('click', function (e) {
           if (!nav.contains(e.target)) {
-            nav.querySelector전체('.header__dropdown').forEach(function (d) {
+            nav.querySelectorAll('.header__dropdown').forEach(function (d) {
               d.classList.remove('open');
             });
           }
@@ -2593,8 +2593,8 @@
   </footer>
 <script>
     // Platform tab switching
-    const tabs = document.querySelector전체('.tab');
-    const platforms = document.querySelector전체('.faq-platform');
+    const tabs = document.querySelectorAll('.tab');
+    const platforms = document.querySelectorAll('.faq-platform');
     const filterTabs = document.getElementById('filterTabs');
 
     const categories = ['account', 'fees', 'billing', 'compliance'];
@@ -2631,7 +2631,7 @@
         html += '<button class="filter-tab" data-cat="' + k + '">' + v + '</button>';
       }
       filterTabs.innerHTML = html;
-      filterTabs.querySelector전체('.filter-tab').forEach(btn => {
+      filterTabs.querySelectorAll('.filter-tab').forEach(btn => {
         btn.addEventListener('click', () => {
           document.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
