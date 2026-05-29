@@ -380,6 +380,122 @@
     .callout--accent .callout__label { color: var(--color-accent); }
     .callout p { margin: 0; font-size: var(--font-size-sm); }
 
+    /* ── Stats Grid ── */
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--space-4); margin: var(--space-6) 0;
+    }
+    .stat-card {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5); text-align: center;
+      transition: border-color var(--transition-base);
+    }
+    .stat-card:hover { border-color: rgba(201,168,76,.4); }
+    .stat-card__num {
+      font-size: var(--font-size-4xl); font-weight: 700;
+      color: var(--color-accent); line-height: 1.1; margin-bottom: var(--space-2);
+    }
+    .stat-card__label {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+      line-height: 1.4;
+    }
+
+    /* ── Platform Cards ── */
+    .platform-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: var(--space-4); margin: var(--space-6) 0;
+    }
+    .platform-card {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5);
+      transition: border-color var(--transition-base), transform var(--transition-base);
+      position: relative; overflow: hidden;
+    }
+    .platform-card:hover {
+      border-color: rgba(201,168,76,.4);
+      transform: translateY(-2px);
+    }
+    .platform-card__header {
+      display: flex; align-items: center; gap: var(--space-3);
+      margin-bottom: var(--space-4);
+    }
+    .platform-card__icon {
+      width: 40px; height: 40px; border-radius: var(--radius-md);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; font-weight: 700; color: #fff;
+    }
+    .platform-card__name {
+      font-size: var(--font-size-lg); font-weight: 700;
+      color: var(--color-text-primary);
+    }
+    .platform-card__product {
+      font-size: var(--font-size-xs); color: var(--color-text-muted);
+    }
+    .platform-card__strategy {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary);
+      line-height: 1.6; margin-bottom: var(--space-4);
+    }
+    .platform-card__metric {
+      background: rgba(201,168,76,.08); border: 1px solid rgba(201,168,76,.15);
+      border-radius: var(--radius-sm); padding: var(--space-3);
+      font-size: var(--font-size-xs); color: var(--color-accent);
+      font-weight: 600; text-align: center;
+    }
+
+    /* ── Article Table ── */
+    .article-table {
+      width: 100%; border-collapse: collapse;
+      font-size: var(--font-size-sm); margin: var(--space-6) 0;
+    }
+    .article-table th {
+      padding: 12px 16px; border-bottom: 2px solid var(--color-accent);
+      background: rgba(201,168,76,.08); color: var(--color-accent);
+      text-align: left; font-weight: 600; font-size: var(--font-size-xs);
+      text-transform: uppercase; letter-spacing: .05em;
+    }
+    .article-table td {
+      padding: 12px 16px; border-bottom: 1px solid var(--color-border);
+      color: var(--color-text-secondary);
+    }
+    .article-table tr:nth-child(even) td {
+      background: rgba(255,255,255,.02);
+    }
+    .article-table tr:hover td {
+      background: rgba(201,168,76,.04);
+    }
+    .article-table strong { color: var(--color-text-primary); }
+
+    /* ── Callout variants ── */
+    .callout--warning {
+      background: rgba(234,179,8,.06); border: 1px solid rgba(234,179,8,.2);
+      border-left: 3px solid #eab308;
+    }
+    .callout--warning .callout__label { color: #eab308; }
+
+    /* ── Key Takeaway Banner ── */
+    .takeaway-banner {
+      background: linear-gradient(135deg, rgba(201,168,76,.1), rgba(45,107,228,.08));
+      border: 1px solid rgba(201,168,76,.25);
+      border-radius: var(--radius-lg); padding: var(--space-6);
+      margin: var(--space-8) 0; text-align: center;
+    }
+    .takeaway-banner__title {
+      font-size: var(--font-size-xs); font-weight: 700;
+      text-transform: uppercase; letter-spacing: .1em;
+      color: var(--color-accent); margin-bottom: var(--space-3);
+    }
+    .takeaway-banner__text {
+      font-size: var(--font-size-lg); color: var(--color-text-primary);
+      font-weight: 500; line-height: 1.6; max-width: 680px; margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      .platform-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+      .article-table { font-size: var(--font-size-xs); }
+      .article-table th, .article-table td { padding: 8px 10px; }
+    }
+
     .article-sidebar {
       position: sticky; top: 88px;
     }
@@ -780,17 +896,19 @@
         <!-- Section 1: Key Numbers -->
         <h2 id="key-numbers">📊 Baidu Q1 2026: The Key Numbers</h2>
 
-        <div class="data-card">
-          <div class="data-card__num">32.1B</div>
-          <div class="data-card__label">Total Q1 2026 Revenue (RMB)</div>
-        </div>
-        <div class="data-card">
-          <div class="data-card__num">52%</div>
-          <div class="data-card__label">AI Revenue Share (first time above 50%)</div>
-        </div>
-        <div class="data-card">
-          <div class="data-card__num">13.6B</div>
-          <div class="data-card__label">AI-Related Revenue (RMB)</div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-card__num">32.1B</div>
+            <div class="stat-card__label">Total Q1 Revenue (RMB)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__num">52%</div>
+            <div class="stat-card__label">AI Revenue Share</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__num">13.6B</div>
+            <div class="stat-card__label">AI Revenue (RMB)</div>
+          </div>
         </div>
 
         <p>
@@ -849,47 +967,71 @@
           Here is a side-by-side view of how each company approaches AI monetization:
         </p>
 
-        <table class="article-table">
-          <thead>
-            <tr>
-              <th>Platform</th>
-              <th>AI Product</th>
-              <th>Monetization</th>
-              <th>Commerce Route</th>
-              <th>Core Logic</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Baidu</strong></td>
-              <td>Wenxin</td>
-              <td>Intelligent Cloud</td>
-              <td>Wenxin + JD.com</td>
-              <td>Sell AI capabilities to enterprises</td>
-            </tr>
-            <tr>
-              <td><strong>Alibaba</strong></td>
-              <td>Qianwen</td>
-              <td>Cloud + E-commerce</td>
-              <td>Qianwen + Taobao</td>
-              <td>AI + e-commerce data loop</td>
-            </tr>
-            <tr>
-              <td><strong>Tencent</strong></td>
-              <td>Hunyuan</td>
-              <td>Ads + Social</td>
-              <td>WeChat Ecosystem</td>
-              <td>AI hidden inside legacy products</td>
-            </tr>
-            <tr>
-              <td><strong>ByteDance</strong></td>
-              <td>Doubao</td>
-              <td>Short Video + Live</td>
-              <td>Doubao + Douyin</td>
-              <td>AI decision + transaction loop</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="platform-grid">
+          <div class="platform-card">
+            <div class="platform-card__header">
+              <div class="platform-card__icon" style="background: linear-gradient(135deg, #2563eb, #1d4ed8);">B</div>
+              <div>
+                <div class="platform-card__name">Baidu</div>
+                <div class="platform-card__product">Wenxin LLM</div>
+              </div>
+            </div>
+            <p class="platform-card__strategy">Uses search advertising cash flow to fund AI expansion. Intelligent Cloud is the primary monetization channel, selling AI capabilities to enterprises.</p>
+            <div class="platform-card__metric">Cloud + Enterprise AI</div>
+          </div>
+          <div class="platform-card">
+            <div class="platform-card__header">
+              <div class="platform-card__icon" style="background: linear-gradient(135deg, #f97316, #ea580c);">A</div>
+              <div>
+                <div class="platform-card__name">Alibaba</div>
+                <div class="platform-card__product">Qianwen LLM</div>
+              </div>
+            </div>
+            <p class="platform-card__strategy">Feeds massive e-commerce data into Qianwen for product recommendations, customer service, and supply chain optimization across Taobao and Tmall.</p>
+            <div class="platform-card__metric">AI + E-commerce Data Loop</div>
+          </div>
+          <div class="platform-card">
+            <div class="platform-card__header">
+              <div class="platform-card__icon" style="background: linear-gradient(135deg, #22c55e, #16a34a);">T</div>
+              <div>
+                <div class="platform-card__name">Tencent</div>
+                <div class="platform-card__product">Hunyuan LLM</div>
+              </div>
+            </div>
+            <p class="platform-card__strategy">No standalone AI product. Instead, AI upgrades all existing businesses: ad targeting, video recommendations, and WeCom customer service within the WeChat ecosystem.</p>
+            <div class="platform-card__metric">AI Embedded in Legacy Products</div>
+          </div>
+          <div class="platform-card">
+            <div class="platform-card__header">
+              <div class="platform-card__icon" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">D</div>
+              <div>
+                <div class="platform-card__name">ByteDance</div>
+                <div class="platform-card__product">Doubao AI</div>
+              </div>
+            </div>
+            <p class="platform-card__strategy">Doubao serves as both a consumer AI assistant and an internal optimization engine for Douyin's ad platform. Short video and live commerce data feeds real-time AI models.</p>
+            <div class="platform-card__metric">AI Decision + Transaction Loop</div>
+          </div>
+        </div>
+
+        <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); text-align: center; margin-top: calc(-1 * var(--space-2));">
+          Each platform is betting on AI, but the monetization paths are fundamentally different.
+        </p>
+
+        <details style="margin: var(--space-6) 0;">
+          <summary style="cursor: pointer; font-size: var(--font-size-sm); color: var(--color-accent); font-weight: 600; padding: var(--space-3) 0;">View full comparison table</summary>
+          <table class="article-table" style="margin-top: var(--space-4);">
+            <thead>
+              <tr><th>Platform</th><th>AI Product</th><th>Monetization</th><th>Core Logic</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Baidu</strong></td><td>Wenxin</td><td>Intelligent Cloud</td><td>Sell AI to enterprises</td></tr>
+              <tr><td><strong>Alibaba</strong></td><td>Qianwen</td><td>Cloud + E-commerce</td><td>AI + e-commerce data loop</td></tr>
+              <tr><td><strong>Tencent</strong></td><td>Hunyuan</td><td>Ads + Social</td><td>AI inside legacy products</td></tr>
+              <tr><td><strong>ByteDance</strong></td><td>Doubao</td><td>Video + Live</td><td>AI decision + transaction</td></tr>
+            </tbody>
+          </table>
+        </details>
 
         <!-- Section 4: Traffic Allocator -->
         <h2 id="traffic-allocator">🌐 AI Is the New Traffic Allocator</h2>
@@ -911,6 +1053,12 @@
         <p>
           This is not a future trend. It is happening now. Baidu's 52% AI revenue share proves that AI-driven commercial traffic has already reached critical mass. The question is no longer whether AI matters for marketing, but how quickly you adapt.
         </p>
+
+        <!-- Key Takeaway -->
+        <div class="takeaway-banner">
+          <div class="takeaway-banner__title">The One Thing to Remember</div>
+          <p class="takeaway-banner__text">AI is no longer a side project for China's tech giants. It is the growth engine. Baidu's 52% AI revenue share is the proof point. The question is not whether to adapt, but how fast.</p>
+        </div>
 
         <!-- Section 5: Bottom Line + CTA -->
         <h2 id="bottom-line">🚀 The Bottom Line</h2>
@@ -940,8 +1088,8 @@
           <ul class="toc__list">
             <li><a href="#key-numbers" class="toc__link">Baidu Q1 2026: Key Numbers</a></li>
             <li><a href="#four-strategies" class="toc__link">The Four AI Strategies</a></li>
-            <li><a href="#comparison" class="toc__link">Platform Comparison</a></li>
-            <li><a href="#traffic-allocator" class="toc__link">AI Is the New Traffic Allocator</a></li>
+            <li><a href="#comparison" class="toc__link">Four Platforms Compared</a></li>
+            <li><a href="#traffic-allocator" class="toc__link">AI = Traffic Allocator</a></li>
             <li><a href="#bottom-line" class="toc__link">The Bottom Line</a></li>
           </ul>
         </nav>
