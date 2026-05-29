@@ -558,6 +558,42 @@
       margin: var(--space-8) 0;
     }
 
+    /* ── Stats Grid (enhanced) ── */
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: var(--space-4); margin: var(--space-6) 0;
+    }
+    .stat-card {
+      background: linear-gradient(135deg, rgba(201,168,76,.08) 0%, rgba(45,107,228,.06) 100%);
+      border: 1px solid rgba(201,168,76,.2);
+      border-radius: var(--radius-lg); padding: var(--space-5) var(--space-4);
+      text-align: center; transition: all var(--transition-base);
+      position: relative; overflow: hidden;
+    }
+    .stat-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
+      opacity: 0.6;
+    }
+    .stat-card:hover {
+      border-color: var(--color-accent);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(201,168,76,.15);
+    }
+    .stat-card__number {
+      font-size: var(--font-size-4xl); font-weight: 800;
+      background: linear-gradient(135deg, #c9a84c 0%, #e8c87a 50%, #c9a84c 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text; margin-bottom: var(--space-2);
+      line-height: 1.1;
+    }
+    .stat-card__label {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+      font-weight: 500; letter-spacing: 0.02em;
+    }
+    @media (max-width: 767px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    }
     /* ── Scroll Reveal (disabled: content always visible) ── */
     .reveal {
       opacity: 1; transform: none;
@@ -786,11 +822,19 @@
 <li><strong>월간 활성 사용자:</strong> 366 백만 (+8% YoY)</li>
 <li><strong>평균 연령:</strong> 26세</li>
 <li><strong>일일 사용:</strong> 사용자당 107분</li>
-<li><strong>성비:</strong> 1:1 balanced</li>
+<li><strong>성비:</strong> 1:1 균형</li>
 <li><strong>1~2선 도시 집중:</strong> 60%+</li>
 <li><strong>월간 결제 사용자:</strong> 35.66 백만+</li>
 <li><strong>12개월 리텐션:</strong> 80%</li>
 </ul>
+
+<div class="stats-grid">
+<div class="stat-card"><div class="stat-card__number">3.66억</div><div class="stat-card__label">월간 활성 사용자</div></div>
+<div class="stat-card"><div class="stat-card__number">107분</div><div class="stat-card__label">일일 평균 사용 시간</div></div>
+<div class="stat-card"><div class="stat-card__number">26세</div><div class="stat-card__label">평균 연령</div></div>
+<div class="stat-card"><div class="stat-card__number">80%</div><div class="stat-card__label">12개월 리텐션</div></div>
+</div>
+
 <div class="callout">
 <span class="callout__icon">💡</span>
 <p>중요한 이유: Bilibili는 다른 곳이 도달의 넓이를 제공할 때, 참여의 깊이를 제공합니다. 중국 청년을 타겟팅하는 브랜드에게 이는 더 강한 커뮤니티 충성도와 더 높은 평생 가치로 이어집니다.</p>
@@ -811,7 +855,7 @@
 </ul>
 <h2 id="ecosystem">멀티 디바이스 생태계</h2>
 <p>Bilibili의 도달 범위는 모바일을 넘어 PC, OTT TV(스마트 TV), 차량 내 시스템까지 확장됩니다. 플랫폼의 'OTT단(운청시소TV)'은 중국 OTT 시장 DAU 1위, 가구 커버리지 80%+——</p>
-<h2 id="strategy">© 2026 Tuyue Media Gateway. 모든 권리 보유.</h2>
+<h2 id="strategy">핵심 전략 권장사항</h2>
 <p>중국 청년 마케팅을 모색하는 브랜드:</p>
 <ol>
 <li><strong>숏폼을 넘어:</strong> 타겟 오디언스에게 교육하거나 즐거움을 주는 5-15분 콘텐츠를 개발하세요</li>
@@ -821,13 +865,13 @@
 <li><strong>풀 생태계 고려:</strong> 더 넓은 도달을 위해 OTT와 차량 시스템으로 캠페인을 확장하세요</li>
 </ol>
 <div class="takeaways">
-<h2>주요 내용</h2>
+<h2>핵심 요약</h2>
 <ul>
-<li>중국에서 가장 강력한 크리에이터들은 다르게 작동한다. 그들은 WeChat에서 콘텐츠를 축적한다 — 그리고 모든 협업이 희석되지 않고 복합적으로 증가한다. 한 연구에 따르면, WeChat 사용자의 **86%가 팔로우하는 크리에이터의 추천을 신뢰**한다. 동일한 청중을 대상으로 한 브랜드 광고의 신뢰도는 40%에도 미치지 못한다.</li>
-<li>이 격차의 원인은 콘텐츠 품질이 아니다. 소셜 아키텍처이다.</li>
-<li>신뢰 아키텍처: WeChat을 다르게 만드는 것</li>
-<li>구조적인 비대칭성</li>
-<li>서구 플랫폼에서 인플루언서 콘텐츠는 피드에 나타난다 — 그리고 사라진다. Instagram, TikTok, YouTube 모두 알고리즘에 의해 콘텐츠가 거의 즉시 희석된다. 크리에이터는 매일 새로운 콘텐츠를 생산해야 하며, 과거의 협업은 관련성을 잃는다.</li>
+<li><strong>Bilibili는 도달이 아닌 참여의 플랫폼</strong> — 3억 6,600만 MAU, 사용자당 107분, 12개월 리텐션 80%</li>
+<li><strong>중편 영상이 핵심</strong> — 상위 콘텐츠의 80%가 10분+로, 깊이 있는 스토리텔링이 가능한 유일한 중국 플랫폼</li>
+<li><strong>커뮤니티 우선</strong> — 7,000+ 관심 시나리오, 탄막 시스템, 화훠 크리에이터 마켓플레이스</li>
+<li><strong>AI 도구 생태계</strong> — 비리비다 전략 센터로 캠페인 설정 시간 70% 단축</li>
+<li><strong>풀 디바이스 도달</strong> — 모바일, PC, OTT TV(가구 커버리지 80%+), 차량 내 시스템</li>
 </ul>
 </div>
 <p style="margin-top:2rem; color:var(--color-text-secondary); font-size:.875rem; border-top:1px solid var(--color-border); padding-top:1.5rem;">
@@ -849,7 +893,7 @@
 </nav>
 <div class="sidebar-cta">
 <p>Bilibili 광고를 운영 중이거나 계획 중이신가요? 국제 브랜드를 위한 Bilibili 캠페인을 운영합니다.</p>
-<a class="btn btn--primary" href="/ko/contact/"></a>
+<a class="btn btn--primary" href="/ko/contact/">Bilibili 광고 상담하기</a>
 </div>
 </aside>
 </div>
