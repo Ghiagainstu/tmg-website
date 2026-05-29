@@ -42,6 +42,30 @@
   .skip-link{position:absolute;top:-100px;left:0;background:var(--color-accent);color:var(--color-bg);padding:8px 16px;z-index:10000;text-decoration:none;transition:top 0.3s;font-weight:600;}
   .skip-link:focus{top:0;}
 
+  .article-table { width:100%; border-collapse:separate; border-spacing:0; border-radius:0.75rem; overflow:hidden; border:1px solid #1e2d45; margin:1.5rem 0; font-size:0.875rem; }
+  .article-table th { background:#0d1220; color:#c9a84c; font-weight:700; padding:1rem 1.25rem; text-align:left; border-bottom:2px solid #1e2d45; }
+  .article-table td { padding:0.75rem 1.25rem; border-bottom:1px solid #1e2d45; color:#b3c0d8; }
+  .article-table tr:last-child td { border-bottom:none; }
+  .article-table tr:hover td { background:rgba(45,107,228,0.05); }
+
+  .article-section { margin-bottom:3rem; }
+  .article-section h2 { font-size:1.5rem; font-weight:700; margin-bottom:1rem; color:#f0f4ff; }
+  .article-section h3 { font-size:1.125rem; font-weight:600; margin-top:1.5rem; margin-bottom:0.75rem; color:#f0f4ff; }
+  .article-section h4 { font-size:1rem; font-weight:600; margin-top:1.25rem; margin-bottom:0.5rem; color:#f0f4ff; }
+  .article-section p { margin-bottom:1rem; line-height:1.7; }
+  .article-section ul { margin-bottom:1rem; padding-left:1.5rem; }
+  .article-section li { margin-bottom:0.5rem; line-height:1.6; }
+
+  .article-callout { border-radius:0.75rem; padding:1.5rem; margin:1.5rem 0; border-left:4px solid; }
+  .article-callout--info { background:rgba(45,107,228,0.08); border-color:#2d6be4; }
+  .article-callout--tip { background:rgba(201,168,76,0.08); border-color:#c9a84c; }
+  .article-callout--warning { background:rgba(239,68,68,0.08); border-color:#ef4444; }
+  .article-callout h4 { font-size:1.125rem; font-weight:600; margin-bottom:0.75rem; color:#f0f4ff; }
+  .article-callout p { margin-bottom:0.5rem; }
+
+  .article-cta { background:#111827; border:1px solid #1e2d45; border-radius:0.75rem; padding:2rem; text-align:center; margin-top:2rem; }
+  .article-cta h3 { font-size:1.25rem; margin-bottom:0.75rem; }
+
     :root {
       --color-bg: #080c14;
       --color-bg-alt: #0d1220;
@@ -695,297 +719,174 @@
     <div class="container">
       <article class="article-content reveal">
 
-<p>
-      캠페인 설정 화면을 보며 'CPM, CPC, 아니면 oCPM?'이라고 고민해 본 적이 있다면, 당신만 그런 게 아닙니다. 7자리 규모의 유료 미디어 예산을 관리해 온 경험에서 말씀드리자면——
-    </p>
-<p>
-      각 모델을 자세히 살펴보기 전에 이해해야 할 두 가지 개념이 있습니다. 첫째, 광고 청구 모델과 광고 유형은 다릅니다——하지만 청구 모델이 사용 가능한 광고 유형을 결정합니다. 둘째,
-    </p>
-<div class="callout callout--info">
-<div class="callout__title">📊 두 가지 큰 카테고리</div>
-<div class="callout__text">
-        유료 미디어에서 우리는 일반적으로 캠페인을 <strong>브랜드 광고</strong> (인지도 우선)와 <strong>성과 광고</strong> (전환 우선)로 나눕니다. 선택하는 과금 모델은 카테고리와 일치해야 합니다 — 그 반대가 아닙니다.
-      </div>
-</div>
-<h2>🎯 브랜드 광고: 주목도에 비용을 지불</h2>
-<p>
-      브랜드 광고는 '보여지는 것'이 목적입니다. 오늘의 클릭이나 구매가 목표가 아니라, 브랜드 회상률, 호감도, '최우선 인지' 포지셔닝이 핵심입니다. 소비자가 궁극적으로 필요할 때——
-    </p>
-<p>
-      구매하는 것: 노출 수, 조회 수, 시청자 앞에 있는 시간.
-    </p>
-<p>
-      측정 방법: 노출량, 시청 완료율, 참여율, 브랜드 검색 상승률, 브랜드 인지도 조사.
-    </p>
-<p>
-      일반적인 시나리오: 신제품 출시, 브랜드 리포지셔닝, 시즌 캠페인, 카테고리 선점 전략.
-    </p>
-<p>
-      한 줄 요약: 브랜드 광고 = '내가 존재한다는 것을 알리기 위해 비용을 지불한다'.
-    </p>
-<h3>실제로 마주하는 브랜드 과금 모델</h3>
-<h4>1. CPM (1,000노출당 비용) — 1,000노출당 비용</h4>
-<p>
-      이것이 전형적인 브랜드 광고 청구 모델입니다. 클릭 여부와 관계없이 광고가 1,000회 게재될 때마다 비용이 발생합니다. CPM은 대부분의 디스플레이, 동영상, 소셜 인지도 캠페인에서 기본값——
-    </p>
-<div class="highlights-grid">
-<div class="highlight-card">
-<span class="highlight-card__icon">📈</span>
-<div class="highlight-card__title">작동 방식</div>
-<div class="highlight-card__text">1,000노출당 고정 요율을 지불합니다. CPM이 ¥30이고 100 CPM(= 100,000노출)을 구매하면 비용은 ¥3,000입니다.</div>
-</div>
-<div class="highlight-card">
-<span class="highlight-card__icon">⏱️</span>
-<div class="highlight-card__title">전달 패턴</div>
-<div class="highlight-card__text">주문하면 플랫폼이 노출량을 확보합니다. 100 CPM을 한 시간 만에 받을 수도 있고, 하루 종일에 걸쳐 받을 수도 있습니다 — 플랫폼이 재고에 따라 결정합니다.</div>
-</div>
-<div class="highlight-card">
-<span class="highlight-card__icon">✅</span>
-<div class="highlight-card__title">최적 사용 시점</div>
-<div class="highlight-card__text">광범위한 인지도, 신규 시장 진출, 즉각적인 반응보다 "보이는 것"이 더 중요한 제품 출시.</div>
-</div>
-<div class="highlight-card">
-<span class="highlight-card__icon">⚠️</span>
-<div class="highlight-card__title">주의 사항</div>
-<div class="highlight-card__text">CPM은 노출을 보장하지, 주의를 보장하지 않습니다. 광고가 폴더 아래나 사용자가 스크롤하는 위치에 로드될 수 있습니다. 플랫폼이 허용한다면 CPM을 가시성 지표와 함께 사용하세요.</div>
-</div>
-</div>
-<h4>크리에이티브 품질, AIGC 도구, 입찰 전략, 캠페인 실행에 관한 20개 실전 질문. 🐧 Tencent Ads Marketing Academy 기반.</h4>
-<p>
-      CPD는 간단합니다: 디지털 고속도로의 광고판을 임대하는 것과 같습니다. 특정 광고 슬롯에 대해 하루 고정 요금을 지불하며, 노출 횟수나 시청자 수는 중요하지 않습니다.
-    </p>
-<p>
-      주요 사용 사례: 스플래시 광고(앱 실행 시 표시되는 광고), 홈페이지 배너, '보장된 게재 위치' 구매.
-    </p>
-<p>
-      트레이드오프: 광고 위치는 확실하지만, 얼마나 많은 사람이 볼지는 보장되지 않습니다. '수량 기반'이 아닌 '시간 기반' 구매입니다.
-    </p>
-<h4>3. CPT (시간당 비용) — 특정 시간 창구에 비용 지불</h4>
-<p>
-      CPT는 CPD를 더 세분화한 버전입니다. 하루 전체가 아닌 특정 시간대——예를 들어 금요일 오후 8시~10시——를 구매합니다. 디지털 동영상 플랫폼의 TV 스타일 광고에서 일반적——
-    </p>
-<p>
-      중요한 이유: 프라임 타임 슬롯은 비용이 더 들지만, 더 많은 사람에게 도달합니다. 타겟 고객이 예측 가능하다면(예: 모두가 같은 라이브 스트림을 시청), CPT로 한 번에 잡을 수 있습니다.
-    </p>
+<p>모델 자체에 들어가기 전에, 두 가지 개념을 먼저 잡아야 합니다. 첫째, <strong>광고 과금 모델은 광고 유형과 같지 않습니다</strong> — 하지만 어떤 유형을 사용할 수 있는지에 영향을 줍니다. 둘째, <strong>선택한 과금 모델이 광고 플랫폼 알고리즘의 우선순위를 결정합니다</strong>. 잘못 선택하면 잘못된 결과에 비용을 지불하게 됩니다.</p>
 
-<p>
-      CPV는 사용자가 동영상 광고를 최소 시간 이상 시청한 경우에만 비용이 청구됩니다. '유효 조회'의 정의는 플랫폼마다 다릅니다:
-    </p>
-<div class="table-wrap">
-<table>
-<thead>
-<tr>
+<div class="article-callout article-callout--info">
+<h4>📊 두 가지 큰 카테고리</h4>
+<p>유료 미디어에서 캠페인은 일반적으로 <strong>브랜드 광고</strong>(인지도 우선)와 <strong>퍼포먼스 광고</strong>(전환 우선)로 나눕니다. 선택한 과금 모델은 카테고리에 맞아야 합니다 — 그 반대가 아닙니다.</p>
+</div>
 
-<th>💬 WeChat Moments 광고 성과로 고민 중입니까? 크리에이티브 품질, AIGC 파생, 입찰 전략, 캠페인 실행까지, 20개 실전 질문과 답변.</th>
-</tr>
-</thead>
+<div class="article-section" id="brand-ads">
+<h2>🎯 브랜드 광고: 주의에 비용을 지불</h2>
+<p>브랜드 광고는 <strong>보이는 것</strong>에 관한 것입니다. 목표는 오늘의 클릭이나 구매가 아닙니다 — 브랜드 회상, 호감도, "가장 먼저 떠오르는" 포지셔닝입니다. 소비자가 eventually 여러분이 파는 것을 필요로 할 때, 여러분을 먼저 떠올리게 하고 싶습니다.</p>
+<p><strong>구매하는 것:</strong> 노출, 조회수, 눈앞에 있는 시간.</p>
+<p><strong>측정 방법:</strong> 노출량, 시청 완료율, 참여율, 브랜드 검색 상승, 브랜드 인지도 조사.</p>
+<p><strong>일반적 시나리오:</strong> 신제품 출시, 브랜드 리포지셔닝, 시즌 캠페인, 카테고리 장악.</p>
+<p><strong>한 줄 요약:</strong> 브랜드 광고 = <em>사람들이 여러분의 존재를 알도록 비용을 지불</em>.</p>
+
+<h3>실제로 마주치게 될 브랜드 과금 모델</h3>
+
+<h4>1. CPM (Cost Per Mille) — 1,000노출당 지불</h4>
+<p>이것은 고전적인 브랜드 광고 과금 모델입니다. 클릭 여부에 관계없이 광고가 1,000번 제공될 때마다 비용을 지불합니다. CPM은 대부분의 디스플레이, 동영상, 소셜 인지도 캠페인의 기본값입니다.</p>
+<div class="article-callout article-callout--info">
+<h4>📈 작동 방식</h4>
+<p>1,000노출당 고정 요율을 지불합니다. CPM이 ¥30이고 100 CPM(= 100,000노출)을 구매하면 비용은 ¥3,000입니다.</p>
+</div>
+<div class="article-callout article-callout--tip">
+<h4>⏱️ 전달 패턴</h4>
+<p>주문하면 플랫폼이 노출량을 확보합니다. 100 CPM을 한 시간 만에 받을 수도 있고, 하루 종일에 걸쳐 받을 수도 있습니다 — 플랫폼이 재고에 따라 결정합니다.</p>
+</div>
+<div class="article-callout article-callout--info">
+<h4>✅ 최적 사용 시점</h4>
+<p>광범위한 인지도, 신규 시장 진출, 즉각적인 반응보다 "보이는 것"이 더 중요한 제품 출시.</p>
+</div>
+<div class="article-callout article-callout--warning">
+<h4>⚠️ 주의 사항</h4>
+<p>CPM은 노출을 보장하지, 주의를 보장하지 않습니다. 광고가 폴더 아래나 사용자가 스크롤하는 위치에 로드될 수 있습니다. 플랫폼이 허용한다면 CPM을 가시성 지표와 함께 사용하세요.</p>
+</div>
+
+<h4>2. CPD (Cost Per Day) — 하루당 고정 슬롯 비용</h4>
+<p>CPD는 간단합니다: 디지털 고속도로의 광고판을 임대하는 것과 같습니다. 특정 광고 슬롯에 대해 하루 고정 요금을 지불하며, 노출 횟수나 시청자 수는 중요하지 않습니다.</p>
+<p><strong>주요 사용 사례:</strong> 스플래시 광고(앱 실행 시 표시되는 광고), 홈페이지 배너, '보장된 게재 위치' 구매.</p>
+<p><strong>트레이드오프:</strong> 광고 위치는 확실하지만, 얼마나 많은 사람이 볼지는 보장되지 않습니다. '수량 기반'이 아닌 '시간 기반' 구매입니다.</p>
+
+<h4>3. CPT (Cost Per Time) — 특정 시간 창구에 비용 지불</h4>
+<p>CPT는 CPD를 더 세분화한 버전입니다. 하루 전체가 아닌 특정 시간대 — 예를 들어 금요일 오후 8시~10시 — 를 구매합니다. 디지털 동영상 플랫폼의 TV 스타일 광고에서 일반적입니다.</p>
+<p><strong>중요한 이유:</strong> 프라임 타임 슬롯은 비용이 더 들지만, 더 많은 사람에게 도달합니다. 타겟 고객이 예측 가능하다면(예: 모두가 같은 라이브 스트림을 시청), CPT로 한 번에 잡을 수 있습니다.</p>
+
+<h4>4. CPV (Cost Per View) — 유효 동영상 시청에 비용 지불</h4>
+<p>CPV는 사용자가 동영상 광고를 최소 시간 이상 시청한 경우에만 비용이 청구됩니다. '유효 조회'의 정의는 플랫폼마다 다릅니다:</p>
+<table class="article-table">
+<thead><tr><th>플랫폼</th><th>유효 조회 정의</th></tr></thead>
 <tbody>
-<tr>
-<td>Q1: 크리에이티브 품질이 노출에 영향을 미칩니까?</td>
-
-</tr>
-<tr>
-<td>💬 WeChat Moments 광고 20개 실전 Q&A: 크리에이티브 품질, AIGC 도구, 입찰 및 캠페인 최적화.</td>
-<td>2. 상호작용: 고상호작용 크리에이티브(클릭, 좋아요, 댓글)는 반복 최적화 가능.</td>
-</tr>
-<tr>
-<td>💬 WeChat Moments 광고: 캠페인 성공을 위한 20개 실전 Q&A</td>
-<td>By Tuyue Media Gateway Insights Team | 2026년 5월</td>
-</tr>
+<tr><td>YouTube</td><td>≥ 30초 (30초 미만 동영상은 전부 시청)</td></tr>
+<tr><td>Douyin / Kuaishou / Bilibili</td><td>≥ 3~5초</td></tr>
+<tr><td>장편 동영상 (iQiyi, Tencent Video 등)</td><td>프리롤 광고 완료</td></tr>
 </tbody>
 </table>
+<p>CPV가 CPM보다 비싼 이유는 '질 높은 관심'에 비용을 지불하기 때문입니다 — 0.3초 만에 스킵되었을 수도 있는 단순한 노출이 아닙니다.</p>
+
+<h4>5. CPCV (Cost Per Completed View) — 전체 시청에만 비용 지불</h4>
+<p>CPCV는 CPV의 더 엄격한 형제입니다. 사용자가 동영상 광고를 끝까지 시청한 경우에만 비용이 청구됩니다. 스킵도, 부분 인정도 없습니다.</p>
+<p><strong>사용 시점:</strong> 전체 메시지가 중요한 고관여 제품 — 자동차 출시, 금융 서비스 설명, 프리미엄 스킨케어 라인. 광고가 15초라면, 15초 전체를 전달해야 합니다.</p>
+<div class="article-callout article-callout--tip">
+<h4>💡 우리 팀의 전문가 팁</h4>
+<p>브랜드 캠페인은 종종 CPM(도달용)과 CPV 또는 CPCV(핵심 출시 순간용)를 혼합합니다. 모든 브랜드 예산을 하나의 과금 모델에 넣지 마세요 — 크리에이티브 형식과 캠페인 단계에 맞게 모델을 매칭하세요.</p>
 </div>
-<p>
-      CPV가 CPM보다 비싼 이유는 '질 높은 관심'에 비용을 지불하기 때문입니다——0.3초 만에 스킵되었을 수도 있는 단순한 노출이 아닙니다.
-    </p>
-<h4>🎯 이것이 중요한 이유</h4>
-<p>
-      CPCV는 CPV의 더 엄격한 형제라고 생각하세요. 사용자가 동영상 광고를 끝까지 시청한 경우에만 비용이 청구됩니다. 스킵도, 부분 인정도 없습니다.
-    </p>
-<p>
-      사용 시점: 전체 메시지가 중요한 고관여 제품——자동차 출시, 금융 서비스 설명, 프리미엄 스킨케어 라인. 광고가 15초라면, 15초 전체를 전달해야 합니다——
-    </p>
-<div class="callout callout--tip">
-<div class="callout__title">💡 우리 팀의 전문가 팁</div>
-<div class="callout__text">
-        💬 WeChat Moments 광고는 세계에서 가장 신뢰받는 광고 환경 중 하나입니다. 하지만 큰 기회에는 복잡성도 따릅니다: 크리에이티브 품질, 입찰 전략, 캠페인 설정 질문은 경험 많은 마케터도 괴롭힙니다.
-      </div>
 </div>
+
+<div class="article-section" id="performance-ads">
 <h2>🚀 퍼포먼스 광고: 행동에 비용을 지불</h2>
-<p>
-      퍼포먼스 광고는 논리를 뒤집습니다. 시선이 아닌 '결과'에 비용을 지불합니다——클릭, 다운로드, 양식 제출, 구매. 사용자가 행동하지 않으면——
-    </p>
-<p>
-      구매하는 것: 클릭, 전환, 매출, 리드.
-    </p>
-<p>
-      측정 방법: 클릭률(CTR), 전환율(CVR), 획득당 비용(CPA), 광고 투자 수익률(ROAS).
-    </p>
-<p>
-      일반적인 시나리오: 이커머스 프로모션, 앱 사용자 획득, 리드 생성, 다이렉트 리스폰스 캠페인.
-    </p>
-<p>
-      한 줄 요약: 퍼포먼스 광고 = '사람들이 무언가 행동하도록 비용을 지불한다'.
-    </p>
+<p>퍼포먼스 광고는 논리를 뒤집습니다. 시선이 아닌 <strong>결과</strong>에 비용을 지불합니다 — 클릭, 다운로드, 양식 제출, 구매. 사용자가 행동하지 않으면 비용을 지불하지 않습니다(또는 훨씬 적게 지불).</p>
+<p><strong>구매하는 것:</strong> 클릭, 전환, 매출, 리드.</p>
+<p><strong>측정 방법:</strong> 클릭률(CTR), 전환율(CVR), 획득당 비용(CPA), 광고 투자 수익률(ROAS).</p>
+<p><strong>일반적 시나리오:</strong> 이커머스 프로모션, 앱 사용자 획득, 리드 생성, 다이렉트 리스폰스 캠페인.</p>
+<p><strong>한 줄 요약:</strong> 퍼포먼스 광고 = <em>사람들이 무언가 행동하도록 비용을 지불</em>.</p>
+
 <h3>실제로 성과를 내는 퍼포먼스 과금 모델</h3>
-<h4>1. CPC (클릭당 비용) — 클릭당 지불</h4>
-<p>
-      CPC는 말 그대로입니다: 누군가 광고를 클릭할 때만 비용을 지불합니다. 노출은 무료, 클릭에 비용이 발생합니다.
-    </p>
-<p>
-<strong>계산:</strong> 관광과 10,000이 발생하에, CTR 2% = 200클릭. 클릭다스 2월에, 총 비용은 400월입니다.
-    </p>
-<div class="callout callout--warning">
-<div class="callout__title">⚠️ CPC 함정</div>
-<div class="callout__text">
-        CPC는 위험할 정도로 쉽게 스케일업할 수 있습니다 — 이는 예산을 태우기도 위험할 정도로 쉽다는 것을 의미합니다. CPC 캠페인은 <em>클릭 가능성</em>이 아닌 <em>전환 가능성</em>을 위해 최적화됩니다. 호기심 많은 2,000개의 클릭을 받을 수 있지만 실제로는 아무데도 가지 않고 실제 고객(더 신중한 고객)은 광고를 보지 못할 수 있습니다.
-        <br/><br/>
-        업계에서 우리는 관리되지 않는 CPC 캠페인이 "30분 안에 집을 태울 수 있다"고 농담합니다 — 그리고 실제로 그런 일이 일어나는 것을 보았습니다.
-      </div>
+
+<h4>1. CPC (Cost Per Click) — 클릭당 지불</h4>
+<p>CPC는 말 그대로입니다: 누군가 광고를 클릭할 때만 비용을 지불합니다. 노출은 무료, 클릭에 비용이 발생합니다.</p>
+<p><strong>계산:</strong> 광고가 10,000노출을 받고, CTR 2% = 200클릭. 클릭당 ¥2이면 총 비용은 ¥400입니다.</p>
+<div class="article-callout article-callout--warning">
+<h4>⚠️ CPC 함정</h4>
+<p>CPC는 위험할 정도로 쉽게 스케일업할 수 있습니다 — 이는 예산을 태우기도 위험할 정도로 쉽다는 것을 의미합니다. CPC 캠페인은 <em>클릭 가능성</em>을 위해 최적화되지, <em>전환 가능성</em>을 위해 최적화되지 않습니다. 호기심 많은 2,000개의 클릭을 받을 수 있지만 실제로는 아무데도 가지 않고, 실제 고객(더 신중한 고객)은 광고를 보지 못할 수 있습니다.</p>
+<p>업계에서 우리는 관리되지 않는 CPC 캠페인이 "30분 안에 집을 태울 수 있다"고 농담합니다 — 그리고 실제로 그런 일이 일어나는 것을 보았습니다.</p>
 </div>
-<p>
-      CPC가 가장 효과적인 경우: 검색 광고. '러닝화 온라인 구매'라고 검색할 때, 그 검색 자체가 의도입니다. 해당 키워드에 CPC 입찰하는 것은 의미가 있습니다——클릭이 이미 검색 의도에 의해 검증되었으므로——
-    </p>
-<h4>2. oCPC (최적화된 클릭당 비용) — CPC with a brain</h4>
-<p>
-      oCPC는 CPC 청구 구조(클릭당 과금)를 유지하면서, 플랫폼 알고리즘이 '클릭할 가능성이 높은 사용자'가 아닌 '전환할 가능성이 높은 사용자'에게 광고를 적극 유도합니다.
-    </p>
-<p>
-      차이점: CPC는 '누가 가장 클릭할 가능성이 높은가'로 최적화됩니다. oCPC에서는 원하는 전환(구매, 양식 제출, 앱 설치)을 시스템에 알려주면, 그에 따라 입찰이——
-    </p>
-<p>
-<strong>결과:</strong> 클릭당 비용은 더 높을 수 있지만 전환당 비용은 일반적으로 낮아집니다.
-    </p>
-<h4>3. CPA (액션당 비용) — 전환에만 비용 지불</h4>
-<p>
-      CPC는 많은 광고주에게 성배입니다: 사전에 정의한 특정 액션(앱 설치, 양식 제출, 계정 등록, 구매)이 완료되었을 때만 비용을 지불합니다.
-    </p>
-<div class="callout callout--tip">
-<div class="callout__title">✅ Why advertisers love CPA</div>
-<div class="callout__text">
-        Q1: 크리에이티브 품질이 노출에 영향을 미칩니까?
-      </div>
+<p><strong>CPC가 가장 효과적인 경우:</strong> 검색 광고. '러닝화 온라인 구매'라고 검색할 때, 그 검색 자체가 의도입니다. 해당 키워드에 CPC 입찰하는 것은 의미가 있습니다 — 클릭이 이미 검색 의도에 의해 검증되었으므로.</p>
+
+<h4>2. oCPC (Optimized CPC) — 두뇌를 가진 CPC</h4>
+<p>oCPC는 CPC 청구 구조(클릭당 과금)를 유지하면서, 플랫폼 알고리즘이 '클릭할 가능성이 높은 사용자'가 아닌 '전환할 가능성이 높은 사용자'에게 광고를 적극 유도합니다.</p>
+<p><strong>차이점:</strong> CPC는 '누가 가장 클릭할 가능성이 높은가'로 최적화됩니다. oCPC에서는 원하는 전환(구매, 양식 제출, 앱 설치)을 시스템에 알려주면, 해당 액션을 완료할 가능성에 따라 다른 사용자에게 다르게 입찰합니다.</p>
+<p><strong>결과:</strong> 클릭당 비용은 더 높을 수 있지만 전환당 비용은 일반적으로 낮아집니다.</p>
+
+<h4>3. CPA (Cost Per Action) — 전환에만 비용 지불</h4>
+<p>CPA는 많은 광고주에게 성배입니다: 사전에 정의한 특정 액션(앱 설치, 양식 제출, 계정 등록, 구매)이 완료되었을 때만 비용을 지불합니다.</p>
+<div class="article-callout article-callout--tip">
+<h4>✅ 광고주가 CPA를 사랑하는 이유</h4>
+<p>"결과 없으면 지불 없음" — 적어도 이론적으로는. 광고 지출을 비즈니스 결과에 직접 연결합니다. 디지털 광고에서 성과 기반 가격에 가장 가까운 것입니다.</p>
 </div>
-<p>
-      함정: CPA 캠페인은 확장이 어렵기로 악명 높습니다. 플랫폼이 효과적으로 최적화하려면 충분한 전환 데이터가 필요합니다. 과거 데이터가 전혀 없는 신규 광고주는 CPA 입찰에 어려움을 겪을——
-    </p>
-<p>
-      당사의 경험 법칙: 플랫폼에서 주당 최소 20~30건의 전환이 발생하고 있지 않다면 CPA로 시작하지 마세요. 그 이하로는 알고리즘이 작동할 충분한 신호를 얻지 못합니다.
-    </p>
-<h4>여. 크리에이티브 품질은 3가지 측면에서 노출에 영향을 미칩니다:</h4>
-<p>
-      CPS는 CPA를 한 단계 더 발전시킵니다: 판매가 발생한 경우에만 지불하며, 일반적으로 고정 금액이 아닌 수익의 일정 비율(수수료)입니다.
-    </p>
-<p>
-      CPS가 빛나는 분야: 제휴 마케팅과 인플루언서 주도 판매. 타오바오 제휴, JD 제휴, 핀둬둬의 둬둬진바오, Douyin 셀렉트 얼라이언스, 샤오홍슈(RED) 크리에이터 마켓플레이스 등——
-    </p>
-<p>
-<strong>계산:</strong> 제품가 1,000월, CPS 수식를 10%인 경우, 거래 1건에 100월을 지금합니다. 앰피에이트가 100건 구맨하지 만나면, 총 관고 비용은 10,000월 — and you only pay because the sales actually happened.
-    </p>
-<h4>1. 신선도: 크리에이티브를 오랜 시간 동안 업데이트하지 않으면 사용자는 미적 피로를 느낌 → CTR 하락 → 시스템이 노출 가중치를 낮춤.</h4>
-<p>
-      oCPM은 현재 주요 광고 플랫폼에서 가장 널리 사용되는 퍼포먼스 청구 모델입니다. CPM 청구 구조(1,000노출당 과금)와 전환 가능성이 높은 사용자를 타겟팅하는 알고리즘 최적화를 결합——
-    </p>
-<div class="callout callout--info">
-<div class="callout__title">🧠 How oCPM actually works</div>
-<div class="callout__text">
-<strong>Step 1:</strong> You tell the platform your target conversion (e.g., "I want app installs").<br/>
-<strong>Step 2:</strong> The algorithm shows your ad to different users and tracks who converts.<br/>
-<strong>Step 3:</strong> Over time, the system learns which user profiles convert and bids more aggressively to show your ad to similar users.<br/>
-<strong>Step 4:</strong> You pay per impression (CPM), but the impressions you buy are increasingly "smart" impressions.
-      </div>
+<p><strong>함정:</strong> CPA 캠페인은 확장이 어렵기로 악명 높습니다. 플랫폼이 효과적으로 최적화하려면 충분한 전환 데이터가 필요합니다. 과거 데이터가 전혀 없는 신규 광고주는 CPA 입찰에 예산을 쓰는 것조차 어려울 수 있습니다 — 잘 쓰는 것은 말할 것도 없고요.</p>
+<p><strong>당사의 경험 법칙:</strong> 플랫폼에서 주당 최소 20~30건의 전환이 발생하고 있지 않다면 CPA로 시작하지 마세요. 그 이하로는 알고리즘이 작동할 충분한 신호를 얻지 못합니다.</p>
+
+<h4>4. CPS (Cost Per Sale) — 실제 매출에 수수료 지불</h4>
+<p>CPS는 CPA를 한 단계 더 발전시킵니다: <em>판매</em>가 발생한 경우에만 지불하며, 일반적으로 고정 금액이 아닌 수익의 일정 비율(수수료)입니다.</p>
+<p><strong>CPS가 빛나는 분야:</strong> 제휴 마케팅과 인플루언서 주도 판매. 타오바오 제휴, JD 제휴, 핀둬둬의 둬둬진바오, Douyin 셀렉트 얼라이언스, 샤오홍슈(RED) 크리에이터 마켓플레이스 등이 CPS 유사 모델로 운영됩니다.</p>
+<p><strong>계산:</strong> 제품이 ¥1,000에 판매되고 CPS 수수료율이 10%이면, 판매 1건당 ¥100을 지불합니다. 제휴가 100건의 매출을 올리면 총 광고 비용은 ¥10,000 — 매출이 실제로 발생했기 때문에 지불하는 것입니다.</p>
+
+<h4>5. oCPM (Optimized CPM) — 업계의 일꾼</h4>
+<p>oCPM은 현재 주요 광고 플랫폼에서 <strong>가장 널리 사용되는 퍼포먼스 과금 모델</strong>입니다. CPM 청구 구조(1,000노출당 과금)와 전환 가능성이 높은 사용자를 타겟팅하는 알고리즘 최적화를 결합합니다.</p>
+<div class="article-callout article-callout--info">
+<h4>🧠 oCPM 실제 작동 방식</h4>
+<p><strong>1단계:</strong> 플랫폼에 목표 전환을 알림 (예: "앱 설치 원함").</p>
+<p><strong>2단계:</strong> 알고리즘이 다른 사용자에게 광고를 보여주고 누가 전환하는지 추적.</p>
+<p><strong>3단계:</strong> 시간이 지나면서, 시스템이 어떤 사용자 프로필이 전환하는지 학습하고 유사 사용자에게 더 적극적으로 입찰.</p>
+<p><strong>4단계:</strong> 노출당 비용(CPM)을 지불하지만, 구매하는 노출은 점점 더 "스마트한" 노출이 됩니다.</p>
 </div>
-<p>
-      지배적인 이유: oCPM은 플랫폼에 최대의 최적화 유연성을 제공합니다. 예산, 입찰가, 인벤토리를 균형 있게 조정하여 최대한 많은 전환을 제공할 수 있습니다. 광고주 입장에서는——
-    </p>
+<p><strong>지배적인 이유:</strong> oCPM은 플랫폼에 최대의 최적화 유연성을 제공합니다. 예산, 입찰가, 인벤토리를 균형 있게 조정하여 최대한 많은 전환을 제공할 수 있습니다. 광고주 입장에서는 볼륨과 효율을 모두 얻을 수 있습니다 — 트래킹이 올바르게 설정되어 있다면.</p>
+</div>
+
+<div class="article-section" id="which-model">
 <h2>📊 실제로 어떤 모델을 사용해야 할까?</h2>
-<p>
-      TMG가 클라이언트와 함께 사용하는 의사결정 프레임워크입니다:
-    </p>
-<div class="table-wrap">
-<table>
-<thead>
-<tr>
-<th>3. 부정적 피드백: 저품질 또는 부적절한 크리에이티브는 사용자 불만을 유발 → 높은 부정적 피드백 비율 → 시스템이 노출 제한.</th>
-<th>교훈: 정기적으로 크리에이티브를 업데이트하고 CTR 트렌드를 모니터링하십시오.</th>
-<th>Why</th>
-</tr>
-</thead>
+<p>TMG가 클라이언트와 함께 사용하는 의사결정 프레임워크입니다:</p>
+<table class="article-table">
+<thead><tr><th>주요 목표</th><th>추천 과금 모델</th><th>이유</th></tr></thead>
 <tbody>
-<tr>
-<td>Q2: AIGC 파생이 원본 이미지를 크게 변경합니까?</td>
-<td>CPM</td>
-<td>아니요. 🐧 Tencent Ads의 AIGC 파생 제품은 Miaosi Max입니다. 원본 이미지를 기반으로 파생 크리에이티브를 생성하거나 서로 다른 크리에이티브 크기를 지원합니다. 크게 변경하지 않습니다.</td>
-</tr>
-<tr>
-<td>사용 사례: 하나의 히어로 이미지를 업로드 → Miaosi Max가 9:16, 16:9, 1:1 변형을 자동 생성.</td>
-<td>Q3: 광고 그룹당 몇 개의 크리에이티브가 최적입니까? 어떤 크리에이티브를 함께 배치하는 것이 좋습니까?</td>
-<td>• ▸ 단일 광고 그룹은 최대 10개 동영상 또는 이미지 지원.</td>
-</tr>
-<tr>
-<td>• ▸ 초기 테스트 단계에서投放端에서 "크리에이티브 형식 지정"을 체크할 수 있습니다.</td>
-<td>CPC</td>
-<td>• ▸ 일반적으로, 크리에이티브 형식을 지정하지 마십시오 — 시스템이 최상의 조합을 찾도록 하십시오.</td>
-</tr>
-<tr>
-<td>• ▸ 권장: 계정당 평균 5-8개 광고를 온라인으로 유지, 각 광고에 5-8개 크리에이티브 그룹, 각각 2-3개 동영상/이미지 × 2-3개 카피 변형(조합 테스트).</td>
-<td>oCPM</td>
-<td>Q4: 나인-그리드 광고(九图) — 심사에서 거절됩니까?</td>
-</tr>
-<tr>
-<td>피하십시오. 사용자 경험을 보장하고 랜딩 페이지로 점프할 때 첫 번째 이미지가 불완전해지는 것을 방지하기 위해, 분할 이미지(拼图)를投放에 사용하지 마십시오.</td>
-<td>심사 거절이 발생한 경우:</td>
-<td>1. 심사 규칙을 엄격히 준수하십시오</td>
-</tr>
-<tr>
-<td>2. Miaosi 도구를 사용하여 거절된 크리에이티브 수정 지원 및 페널티 위험 감소</td>
-<td>CPS</td>
-<td>Part 2: 동영상 크리에이티브 & 랜딩 페이지</td>
-</tr>
+<tr><td>신규 시장에서 브랜드 인지도 구축</td><td><strong>CPM</strong></td><td>볼륨과 도달이 필요. 효율은 나중에.</td></tr>
+<tr><td>히어로 동영상으로 신제품 출시</td><td><strong>CPV 또는 CPCV</strong></td><td>단순 노출이 아닌 보장된 주의 원함.</td></tr>
+<tr><td>고의도 검색 트래픽 확보</td><td><strong>CPC</strong></td><td>검색 쿼리 자체가 클릭을 검증.</td></tr>
+<tr><td>이커머스 매출 규모 확대</td><td><strong>oCPM</strong></td><td>볼륨과 전환 효율의 최적 균형.</td></tr>
+<tr><td>리드 생성 (양식, 상담)</td><td><strong>oCPC 또는 CPA</strong></td><td>클릭이 아닌 액션에 비용 지불.</td></tr>
+<tr><td>인플루언서/제휴로 확장</td><td><strong>CPS</strong></td><td>매출이 발생할 때만 지불.</td></tr>
 </tbody>
 </table>
 </div>
+
+<div class="article-section" id="tmg-perspective">
 <h2>🎯 TMG의 관점: 모델만의 문제가 아니다</h2>
-<p>
-      저희는 중국 모든 주요 플랫폼——Baidu, Douyin, WeChat, 샤오홍슈(RED), Bilibili, Bing China——에서 7자리 규모의 광고 예산을 운영해 왔습니다. 그로부터 얻은 인사이트:
-    </p>
-<p>
-      청구 모델은 트래킹 설정이 얼마나 잘 되어 있느냐에 달려 있습니다. oCPM과 CPA는 이론적으로 훌륭하지만——전환 트래킹이 망가져 있으면 알고리즘은 쓰레기 데이터로 최적화합니다. 실제로——
-    </p>
-<p>
-      브랜드 청구와 퍼포먼스 청구를 같은 캠페인에서 혼합하지 마세요. 이 실수를 끊임없이 봅니다. '브랜드 인지도' 캠페인을 만들고서 '더 현대적이라서'라는 이유로 oCPM(퍼포먼스 청구 모델)을 선택하는 경우——
-    </p>
-<p>
-      단순하게 시작하고, 복잡성은 나중에 더하세요. 플랫폼이 처음이라면 CPC 또는 oCPM으로 시작하세요——이해하기 가장 쉽고 문제 해결도 용이합니다. 전환 데이터가 흐르기 시작하면, CPA 또는——
-    </p>
-<div class="callout callout--tip">
-<div class="callout__title">💡 One more thing</div>
-<div class="callout__text">
-        Q5: 동영상 길이는 몇 초가 가장 좋습니까?
-      </div>
+<p>저희는 중국 모든 주요 플랫폼 — Baidu, Douyin, WeChat, 샤오홍슈(RED), Bilibili, Bing China — 에서 7자리 규모의 광고 예산을 운영해 왔습니다. 그로부터 얻은 인사이트:</p>
+<p><strong>과금 모델은 트래킹 설정만큼만 좋습니다.</strong> oCPM과 CPA는 이론적으로 훌륭하지만, 전환 트래킹이 망가져 있으면 알고리즘은 쓰레기 데이터로 최적화합니다. 실제로 "전환"의 40%가 중복 이벤트나 봇 트래픽인 캠페인을 보았습니다. 트래킹부터 수정하세요 — 그 다음 과금 모델을 선택하세요.</p>
+<p><strong>브랜드와 퍼포먼스 과금을 같은 캠페인에서 혼합하지 마세요.</strong> 이 실수를 끊임없이 봅니다. '브랜드 인지도' 캠페인을 만들고서 '더 효율적이라서'라는 이유로 oCPM(퍼포먼스 과금 모델)을 선택합니다. 이제 알고리즘이 전환을 위해 최적화하고, 브랜드 노출 목표가 타격을 받습니다. 브랜드 캠페인은 CPM/CPV로. 퍼포먼스 캠페인은 oCPM/CPA/CPC로. 스트림을 혼합하지 마세요.</p>
+<p><strong>단순하게 시작하고, 복잡성은 나중에 더하세요.</strong> 플랫폼이 처음이라면 CPC 또는 oCPM으로 시작하세요 — 이해하기 가장 쉽고 문제 해결도 용이합니다. 전환 데이터가 흐르기 시작하면, CPA 또는 CPS를 테스트하세요. 첫날부터 역사적 데이터 없이 CPA를 실행하려는 것은 조향을 배우기도 전에 차를 몰려는 것과 같습니다.</p>
+<div class="article-callout article-callout--tip">
+<h4>💡 한 가지 더</h4>
+<p>플랫폼은 "스마트 입찰"(oCPM, oCPC)을 밀어내기를 좋아합니다 — 알고리즘을 좋게 보이게 만들기 때문입니다. 하지만 올바른 전환 이벤트를 설정하고, 입찰가를 적절히 제한하고, 데이터를 해석하려면 비즈니스를 이해하는 사람이 여전히 필요합니다. 자동화는 강력하지만 전략은 아닙니다.</p>
 </div>
-<h2>광고 예산을 더 현명하게 쓸 준비가 되셨나요?</h2>
-<p>
-      At <strong></strong>, we run paid media across Baidu, Douyin, WeChat, 샤오홍슈(RED), Bilibili, and Bing China for international agencies and brands entering the Chinese market. We do not just "set up campaigns" — we architect billing models, tracking setups, and creative strategies that actually match your business goals.
-    </p>
-<p>
-      중국에서 처음 브랜드를 론칭하든, 기존 퍼포먼스 프로그램을 확장하든, 적절한 청구 모델 선택, 철저한 트래킹 설정, 성과 지표 최적화를 지원합니다.
-    </p>
-<p>
-      캠페인 설정에 대해 상담하고 싶으신가요? 문의하세요——현재 설정을 검토하고 목표와 예산에 맞는 청구 모델 전략을 제안해 드립니다.
-    </p>
+</div>
+
+<div class="article-section" id="next-steps">
+<h2>🚀 광고 예산을 더 현명하게 쓸 준비가 되셨나요?</h2>
+<p><strong>Tuyue Media Gateway</strong>는 중국 시장에 진출하는 국제 에이전시와 브랜드를 위해 Baidu, Douyin, WeChat, 샤오홍슈(RED), Bilibili, Bing China에서 유료 미디어를 운영합니다. 단순히 "캠페인을 설정"하지 않습니다 — 비즈니스 목표에 실제로 맞는 과금 모델, 트래킹 설정, 크리에이티브 전략을 설계합니다.</p>
+<p>중국에서 브랜드를 처음 출시하든, 기존 퍼포먼스 프로그램을 확장하든, 올바른 과금 모델 선택, 방탄 트래킹 설정, 비즈니스에 실제로 중요한 지표 최적화를 도와드릴 수 있습니다.</p>
+<div class="article-cta">
+<h3>전문가와 상담하기</h3>
+<p>중국 디지털 광고 과금 모델에 대해 궁금한 점이 있으신가요? 메시지를 보내주세요. 모든 이메일을 확인하며, 국제 브랜드 캠페인에서 배운 인사이트를 공유해 드리겠습니다. <a href="/ko/contact/" class="btn btn--primary">문의하기 →</a></p>
+</div>
+</div>
+
 </article>
    <!-- Sidebar -->
     <aside class="article-sidebar">
       <nav class="toc">
-    <div class="toc__title">이 기사에 대해</div>
-    <ul class="toc__list">
-      <li><a class="toc__link" href="#h2-1">🎯 브랜드 광고</a></li>
-      <li><a class="toc__link" href="#h2-2">🚀 성과 광고</a></li>
-      <li><a class="toc__link" href="#h2-3">📊 어떤 모델을?</a></li>
-      <li><a class="toc__link" href="#h2-4">🎯 TMG의 시각</a></li>
-    </ul>
-      </nav>
+<div class="toc__title">이 기사에서</div>
+<ul class="toc__list">
+<li><a class="toc__link" href="#brand-ads">🎯 브랜드 광고: 주의에 비용을 지불</a></li>
+<li><a class="toc__link" href="#performance-ads">🚀 퍼포먼스 광고: 행동에 비용을 지불</a></li>
+<li><a class="toc__link" href="#which-model">📊 어떤 모델을 사용해야 할까?</a></li>
+<li><a class="toc__link" href="#tmg-perspective">🎯 TMG의 관점</a></li>
+<li><a class="toc__link" href="#next-steps">🚀 다음 단계</a></li>
+</ul>
+</nav>
       <div class="sidebar-cta">
         <p>중국 디지털 광고 에코시스템에 어려움을 겪고 계신가요? TMG가 최적의 과금 모델 전략을 지원합니다.</p>
         <a href="/ko/contact/" class="btn btn--primary">문의하기</a>
