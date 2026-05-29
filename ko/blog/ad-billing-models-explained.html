@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="ko">
 <head>
 <!-- Google tag (gtag.js) -->
@@ -12,59 +11,44 @@
   gtag('config', 'G-P5RQGYPTGP');
 </script>
 
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>광고 청구 모델 설명: CPM, CPC, CPA, oCPM 및 각각 사용 시기 | Tuyue Media Gateway (TMG)</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080c14">
+  <title>광고 과금 모델 완벽 가이드: CPM부터 CPA까지 | TMG</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/assets/og-image.png">
+<meta name="description" content="브랜드 광고와 퍼포먼스 광고의 과금 모델을 완벽 정리. CPM, CPD, CPT, CPV, CPCV, CPC, oCPC, CPA, CPS, oCPM의 차이점과 실제 사용 사례.">
+  <link rel="canonical" href="https://www.tuyuesouxin.cn/ko/blog/ad-billing-models-explained/">
+  <link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/tencent-aimplus/">
+  <link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ja/blog/tencent-aimplus/">
+  <link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/tencent-aimplus/">
+  <link rel="alternate" hreflang="x-default" href="https://www.tuyuesouxin.cn/ko/blog/tencent-aimplus/">
 
-<!-- Favicon -->
-<link href="/favicon.ico" rel="icon" type="image/x-icon"/>
-<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="/assets/og-image.png" rel="apple-touch-icon"/>
-<meta content="A practical guide to ad billing models in paid media: CPM, CPC, CPA, oCPM and more. Learn which pricing model fits your campaign goals and how to avoid burning budget on the wrong one." name="description"/>
-<link href="https://www.tuyuesouxin.cn/ko/blog/ad-billing-models-explained/" rel="canonical"/>
-<link href="https://www.tuyuesouxin.cn/ko/blog/ad-billing-models-explained/" hreflang="ko" rel="alternate"/>
-<link href="https://www.tuyuesouxin.cn/blog/ad-billing-models-explained/" hreflang="en" rel="alternate"/>
-<link href="https://www.tuyuesouxin.cn/ja/blog/ad-billing-models-explained/" hreflang="ja" rel="alternate"/>
-<link href="https://www.tuyuesouxin.cn/blog/ad-billing-models-explained/" hreflang="x-default" rel="alternate"/>
-<meta content="광고 청구 모델 설명: CPM, CPC, CPA, oCPM 및 각각 사용 시기" property="og:title"/>
-<meta content="유료 미디어의 광고 과금 모델 실용 가이드: CPM, CPC, CPA, oCPM 등. 어떤 가격 모델이 캠페인 목표에 맞는지 알아보세요." property="og:description"/>
-<meta content="article" property="og:type"/>
-<meta content="https://www.tuyuesouxin.cn/ko/blog/ad-billing-models-explained/" property="og:url"/>
-<meta content="https://www.tuyuesouxin.cn/assets/og-image.png" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="https://www.tuyuesouxin.cn/assets/twitter-card.png" name="twitter:image"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<style>
+<meta property="og:title" content="광고 과금 모델 완벽 가이드">
+  <meta property="og:description" content="브랜드 광고와 퍼포먼스 광고의 과금 모델을 완벽 정리.">
+  <link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/wechat-moments-ads/">
+  <link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/wechat-moments-ads/">
+  <link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/wechat-moments-ads-ko/">
+  <link rel="alternate" hreflang="x-default" href="https://www.tuyuesouxin.cn/blog/wechat-moments-ads/">
+<link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/ad-billing-models-explained/">
+  <link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/ad-billing-models-explained/">
+  <link rel="alternate" hreflang="x-default" href="https://www.tuyuesouxin.cn/blog/ad-billing-models-explained/">
+<meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.tuyuesouxin.cn/ko/blog/ad-billing-models-explained/">
+  <meta property="og:image" content="https://www.tuyuesouxin.cn/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.tuyuesouxin.cn/assets/twitter-card.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <style>
   
 
   .skip-link{position:absolute;top:-100px;left:0;background:var(--color-accent);color:var(--color-bg);padding:8px 16px;z-index:10000;text-decoration:none;transition:top 0.3s;font-weight:600;}
   .skip-link:focus{top:0;}
-
-  .article-table { width:100%; border-collapse:separate; border-spacing:0; border-radius:0.75rem; overflow:hidden; border:1px solid #1e2d45; margin:1.5rem 0; font-size:0.875rem; }
-  .article-table th { background:#0d1220; color:#c9a84c; font-weight:700; padding:1rem 1.25rem; text-align:left; border-bottom:2px solid #1e2d45; }
-  .article-table td { padding:0.75rem 1.25rem; border-bottom:1px solid #1e2d45; color:#b3c0d8; }
-  .article-table tr:last-child td { border-bottom:none; }
-  .article-table tr:hover td { background:rgba(45,107,228,0.05); }
-
-  .article-section { margin-bottom:3rem; }
-  .article-section h2 { font-size:1.5rem; font-weight:700; margin-bottom:1rem; color:#f0f4ff; }
-  .article-section h3 { font-size:1.125rem; font-weight:600; margin-top:1.5rem; margin-bottom:0.75rem; color:#f0f4ff; }
-  .article-section h4 { font-size:1rem; font-weight:600; margin-top:1.25rem; margin-bottom:0.5rem; color:#f0f4ff; }
-  .article-section p { margin-bottom:1rem; line-height:1.7; }
-  .article-section ul { margin-bottom:1rem; padding-left:1.5rem; }
-  .article-section li { margin-bottom:0.5rem; line-height:1.6; }
-
-  .article-callout { border-radius:0.75rem; padding:1.5rem; margin:1.5rem 0; border-left:4px solid; }
-  .article-callout--info { background:rgba(45,107,228,0.08); border-color:#2d6be4; }
-  .article-callout--tip { background:rgba(201,168,76,0.08); border-color:#c9a84c; }
-  .article-callout--warning { background:rgba(239,68,68,0.08); border-color:#ef4444; }
-  .article-callout h4 { font-size:1.125rem; font-weight:600; margin-bottom:0.75rem; color:#f0f4ff; }
-  .article-callout p { margin-bottom:0.5rem; }
-
-  .article-cta { background:#111827; border:1px solid #1e2d45; border-radius:0.75rem; padding:2rem; text-align:center; margin-top:2rem; }
-  .article-cta h3 { font-size:1.25rem; margin-bottom:0.75rem; }
 
     :root {
       --color-bg: #080c14;
@@ -243,38 +227,49 @@
         display: block; width: 100%; padding: 14px 40px 14px 24px;
         border-bottom: 1px solid var(--color-border); font-size: 1.1rem;
       }
+      .header__dropdown { position: static; width: 100%; 
+       }
+      .header__dropdown-trigger {
+        display: flex; align-items: center; justify-content: space-between;
+        width: 100%; padding: 14px 40px 14px 24px;
+        border-bottom: 1px solid var(--color-border); font-size: 1.1rem;
+      }
+      .header__dropdown-arrow { transition: transform var(--transition-fast); }
+      .header__dropdown.active .header__dropdown-arrow,
+      .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
+      .header__dropdown-menu { display: none; flex-direction: column; background: rgba(0,0,0,.25); padding: 0; }
+      .header__dropdown.active .header__dropdown-menu,
+      .header__dropdown.open .header__dropdown-menu { display: flex; }
+      .header__dropdown-item {
+        display: block; width: 100%; padding: 12px 40px;
+        font-size: 1rem; color: var(--color-text-secondary);
+        border-bottom: 1px solid rgba(255,255,255,.06);
+      }
+      .header__dropdown-item:hover { background: rgba(201,168,76,.08); color: var(--color-accent); }
     }
 
-    /* ── Article Hero ── */
+    /* ── Article Layout ── */
     .article-hero {
-      padding: 4rem 0 3rem;
-      background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
-      border-bottom: 1px solid var(--color-border);
+      padding: 100px 0 var(--space-12);
     }
-    .container { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
+    .article-hero .container { max-width: 860px; }
     .article-meta {
-      display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;
-      font-size: var(--font-size-sm); color: var(--color-text-muted);
+      display: flex; align-items: center; gap: var(--space-3);
+      flex-wrap: wrap; margin-bottom: var(--space-6);
     }
     .article-category {
-      display: inline-block; padding: .25rem .75rem;
-      background: rgba(201,168,76,.12); color: var(--color-accent);
-      border-radius: 2rem; font-size: var(--font-size-xs); font-weight: 600;
-      letter-spacing: .02em; text-transform: uppercase;
+      display: inline-block; padding: 4px 12px;
+      background: rgba(201,168,76,.15); border: 1px solid rgba(201,168,76,.3);
+      border-radius: 20px; font-size: var(--font-size-xs); font-weight: 600;
+      color: var(--color-accent); text-transform: uppercase; letter-spacing: .08em;
     }
-    .article-hero__date { color: var(--color-text-muted); }
-    .article-hero__title {
-      font-size: var(--font-size-4xl); font-weight: 700;
-      line-height: 1.2; color: var(--color-text-primary);
-      margin-bottom: 1.5rem;
+    .article-date {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
     }
-    @media (max-width: 767px) {
-      .article-hero__title { font-size: var(--font-size-3xl); }
+    .article-read-time {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
     }
-    .article-hero__여. 크리에이티브 품질은 3가지 측면에서 노출에 영향을 미칩니다: {
-      font-size: var(--font-size-lg); line-height: 1.6;
-      color: var(--color-text-secondary); max-width: 640px;
-    }
+
     .article-hero__author {
       display: flex; align-items: center; gap: 1rem;
       margin-top: 2rem; padding-top: 2rem;
@@ -295,155 +290,177 @@
       font-size: var(--font-size-xs); color: var(--color-text-muted);
     }
 
+    .article-hero__title {
+      font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700;
+      color: var(--color-text-primary); line-height: 1.25; margin-bottom: var(--space-6);
+    }
+    .article-hero__title span { color: var(--color-accent); }
+    .article-hero__intro {
+      font-size: var(--font-size-lg); color: var(--color-text-secondary);
+      line-height: 1.75; max-width: 760px;
+    }
+
     /* ── Article Body ── */
     .article-body {
-      max-width: 760px; margin: 0 auto; padding: 3rem 1.5rem 4rem;
+      padding: var(--space-16) 0;
       background: #000;
     }
-    .article-body h2 {
+    .article-body .container {
+      max-width: 860px;
+      display: grid;
+      grid-template-columns: 1fr 260px;
+      gap: var(--space-12);
+      align-items: start;
+    }
+    .article-content h2 {
       font-size: var(--font-size-2xl); font-weight: 700;
-      color: var(--color-text-primary); margin: 3rem 0 1.5rem;
-      line-height: 1.3;
+      color: var(--color-text-primary); margin: var(--space-10) 0 var(--space-4);
     }
-    .article-body h3 {
+    .article-content h2:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+    .article-content h3 {
       font-size: var(--font-size-xl); font-weight: 600;
-      color: var(--color-text-primary); margin: 2.5rem 0 1rem;
+      color: var(--color-text-primary); margin: var(--space-8) 0 var(--space-3);
     }
-    .article-body p {
-      margin-bottom: 1.5rem; color: var(--color-text-secondary);
-      line-height: 1.7;
+    .article-content p { margin-bottom: var(--space-4); color: var(--color-text-secondary); }
+    .article-content strong { color: var(--color-text-primary); font-weight: 600; }
+    .article-content ul, .article-content ol {
+      margin: var(--space-4) 0 var(--space-6) var(--space-6);
     }
-    .article-body ul, .article-body ol {
-      margin-bottom: 1.5rem; padding-left: 1.5rem;
-    }
-    .article-body li {
-      margin-bottom: .75rem; color: var(--color-text-secondary);
-      line-height: 1.6;
-    }
-    .article-body strong { color: var(--color-text-primary); font-weight: 600; }
-    .article-body em { color: var(--color-accent); font-style: normal; }
+    .article-content li { margin-bottom: var(--space-2); color: var(--color-text-secondary); }
+    .article-content a { color: var(--color-primary); }
+    .article-content a:hover { text-decoration: underline; }
 
-    /* Callout boxes */
-    .callout {
-      padding: 1.5rem; border-radius: var(--radius-lg);
-      margin: 2rem 0; border-left: 4px solid;
+    /* Feature card grid */
+    .feature-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: var(--space-4); margin: var(--space-6) 0;
     }
-    .callout--tip {
-      background: rgba(201,168,76,.08); border-color: var(--color-accent);
-    }
-    .callout--info {
-      background: rgba(45,107,228,.08); border-color: var(--color-primary);
-    }
-    .callout--warning {
-      background: rgba(250,81,81,.08); border-color: #fa5151;
-    }
-    .callout__title {
-      font-weight: 700; margin-bottom: .5rem;
-      color: var(--color-text-primary); font-size: var(--font-size-base);
-    }
-    .callout__text {
-      font-size: var(--font-size-sm); color: var(--color-text-secondary);
-      line-height: 1.6;
-    }
-
-    /* Tables */
-    .table-wrap {
-      overflow-x: auto; margin: 2rem 0;
-      border: 1px solid var(--color-border); border-radius: var(--radius-lg);
-    }
-    .table-wrap table {
-      width: 100%; border-collapse: collapse; font-size: var(--font-size-sm);
-    }
-    .table-wrap th {
-      background: var(--color-bg-alt); padding: .875rem 1rem;
-      text-align: left; font-weight: 600; color: var(--color-text-primary);
-      border-bottom: 1px solid var(--color-border); white-space: nowrap;
-    }
-    .table-wrap td {
-      padding: .875rem 1rem; border-bottom: 1px solid var(--color-border);
-      color: var(--color-text-secondary); vertical-align: top;
-    }
-    .table-wrap tr:last-child td { border-bottom: none; }
-    .table-wrap tr:hover td { background: rgba(255,255,255,.02); }
-
-    /* Highlight cards */
-    .highlights-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
-      margin: 2rem 0;
-    }
-    @media (max-width: 640px) {
-      .highlights-grid { grid-template-columns: 1fr; }
-    }
-    .highlight-card {
-      padding: 1.5rem; border-radius: var(--radius-lg);
+    .feature-card {
       background: var(--color-bg-card); border: 1px solid var(--color-border);
-      transition: border-color .2s, transform .2s;
+      border-radius: var(--radius-lg); padding: var(--space-5);
+      transition: border-color var(--transition-base);
     }
-    .highlight-card:hover {
-      border-color: var(--color-border-hover); transform: translateY(-2px);
+    .feature-card:hover { border-color: rgba(201,168,76,.4); }
+    .feature-card__num {
+      display: inline-block; width: 28px; height: 28px; line-height: 28px;
+      text-align: center; background: rgba(201,168,76,.15);
+      color: var(--color-accent); font-size: var(--font-size-sm);
+      font-weight: 700; border-radius: 50%; margin-bottom: var(--space-3);
     }
-    .highlight-card__icon {
-      font-size: 1.5rem; margin-bottom: .75rem; display: block;
+    .feature-card__title {
+      font-size: var(--font-size-base); font-weight: 600;
+      color: var(--color-text-primary); margin-bottom: var(--space-2);
     }
-    .highlight-card__title {
-      font-weight: 700; color: var(--color-text-primary);
-      margin-bottom: .5rem; font-size: var(--font-size-base);
-    }
-    .highlight-card__text {
-      font-size: var(--font-size-sm); color: var(--color-text-secondary);
-      line-height: 1.5;
+    .feature-card__desc {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.6;
     }
 
-    /* Emoji lead-in */
-    .emoji-lead {
-      font-size: 1.5rem; margin-bottom: .5rem; display: inline-block;
+    /* Callout / tip box */
+    .callout {
+      background: rgba(45,107,228,.08); border: 1px solid rgba(45,107,228,.2);
+      border-left: 3px solid var(--color-primary);
+      border-radius: var(--radius-md); padding: var(--space-5);
+      margin: var(--space-6) 0;
     }
+    .callout--accent {
+      background: rgba(201,168,76,.06); border: 1px solid rgba(201,168,76,.2);
+      border-left: 3px solid var(--color-accent);
+    }
+    .callout__label {
+      font-size: var(--font-size-xs); font-weight: 700; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--color-primary); margin-bottom: var(--space-2);
+    }
+    .callout--accent .callout__label { color: var(--color-accent); }
+    .callout p { margin: 0; font-size: var(--font-size-sm); }
+
+    /* Scenario steps */
+    .scenario-list {
+      list-style: none; margin: var(--space-4) 0 var(--space-6); padding: 0;
+    }
+    .scenario-list li {
+      display: flex; gap: var(--space-4); padding: var(--space-4) 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .scenario-list li:last-child { border-bottom: none; }
+    .scenario-list__icon {
+      width: 36px; height: 36px; flex-shrink: 0;
+      background: rgba(201,168,76,.1); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; margin-top: 2px;
+    }
+    .scenario-list__content strong {
+      display: block; font-size: var(--font-size-base); color: var(--color-text-primary);
+      margin-bottom: 2px;
+    }
+    .scenario-list__content span { font-size: var(--font-size-sm); }
+
+    /* ── Sidebar TOC ── */
+    .article-sidebar {
+      position: sticky; top: 88px;
+    }
+    .toc {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5);
+    }
+    .toc__title {
+      font-size: var(--font-size-xs); font-weight: 700; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--color-text-muted); margin-bottom: var(--space-4);
+    }
+    .toc__list { list-style: none; }
+    .toc__list li + li { margin-top: var(--space-2); }
+    .toc__link {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+      text-decoration: none !important; display: block; line-height: 1.4;
+      transition: color var(--transition-fast);
+    }
+    .toc__link:hover { color: var(--color-text-primary); text-decoration: none !important; }
+
+    .sidebar-cta {
+      margin-top: var(--space-6); background: var(--color-bg-card);
+      border: 1px solid var(--color-border); border-radius: var(--radius-lg);
+      padding: var(--space-5); text-align: center;
+    }
+    .sidebar-cta p {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary);
+      margin-bottom: var(--space-4); line-height: 1.5;
+    }
+    .sidebar-cta .btn { width: 100%; justify-content: center; }
 
     /* ── Related Posts ── */
     .related {
-      padding: 4rem 0; background: var(--color-bg);
+      padding: var(--space-12) 0;
+      background: var(--color-bg);
       border-top: 1px solid var(--color-border);
     }
     .related__title {
       font-size: var(--font-size-2xl); font-weight: 700;
-      color: var(--color-text-primary); margin-bottom: 2rem;
+      color: var(--color-text-primary); margin-bottom: var(--space-8);
     }
-    .related__grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; }
-    @media (max-width: 900px) {
-      .related__grid { grid-template-columns: 1fr 1fr; }
-    }
-    @media (max-width: 600px) {
-      .related__grid { grid-template-columns: 1fr; }
+    .related__grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6);
     }
     .related-card {
-      display: block; padding: 1.5rem;
       background: var(--color-bg-card); border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg); transition: border-color .2s, transform .2s;
-      text-decoration: none !important;
+      border-radius: var(--radius-lg); padding: var(--space-5);
+      text-decoration: none !important; display: block;
+      transition: border-color var(--transition-base), transform var(--transition-base);
     }
-    .related-card:hover {
-      border-color: var(--color-accent); transform: translateY(-2px);
-      text-decoration: none !important;
-    }
+    .related-card:hover { border-color: rgba(201,168,76,.4); transform: translateY(-2px); text-decoration: none !important; }
     .related-card__cat {
-      display: inline-block; padding: .2rem .6rem;
-      background: rgba(201,168,76,.12); color: var(--color-accent);
-      border-radius: 2rem; font-size: var(--font-size-xs); font-weight: 600;
-      margin-bottom: .75rem;
+      font-size: var(--font-size-xs); font-weight: 600; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--color-accent); margin-bottom: var(--space-3);
     }
     .related-card__title {
-      font-weight: 700; color: var(--color-text-primary);
-      margin-bottom: .5rem; font-size: var(--font-size-base);
-      line-height: 1.4;
+      font-size: var(--font-size-base); font-weight: 600;
+      color: var(--color-text-primary); line-height: 1.4; margin-bottom: var(--space-2);
     }
     .related-card__desc {
-      font-size: var(--font-size-sm); color: var(--color-text-muted);
-      line-height: 1.5;
+      font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.5;
     }
 
     /* ── Footer ── */
     .footer {
-      padding: 4rem 0 2rem; background: var(--color-bg-alt);
+      padding: var(--space-10) 0 var(--space-8);
+      background: var(--color-bg);
       border-top: 1px solid var(--color-border);
     }
     .footer__grid {
@@ -486,11 +503,12 @@
       margin: 0;
     }
     .footer__links li { margin-bottom: var(--space-3); }
-    .footer__link { text-decoration: none !important; 
+    .footer__link { text-decoration: none; 
       color: var(--color-text-secondary);
       font-size: var(--font-size-sm);
       transition: color var(--transition-fast);
       display: inline-block;
+      text-decoration: none !important;
     }
     .footer__link:hover { color: var(--color-accent-light); transform: translateX(4px); }
     .footer__link--email { color: var(--color-primary); font-weight: 500; }
@@ -528,7 +546,87 @@
       background-color: rgba(201, 168, 76, 0.2);
       border-color: var(--color-accent);
       transform: translateY(-2px);
-  .header__lang-wrap {
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .article-body .container { grid-template-columns: 1fr; }
+      .article-sidebar { display: none; }
+    }
+    @media (max-width: 767px) {
+      .article-hero { padding: 90px 0 var(--space-10); background: linear-gradient(180deg, #0a1628 0%, #080c14 100%); }
+      .feature-grid { grid-template-columns: 1fr; }
+      .related__grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── Article Divider ── */
+    hr.article-divider, .article-content hr {
+      border: none; border-top: 1px solid rgba(255,255,255,0.08);
+      margin: var(--space-8) 0;
+    }
+
+    /* ── Stats Grid (enhanced) ── */
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: var(--space-4); margin: var(--space-6) 0;
+    }
+    .stat-card {
+      background: linear-gradient(135deg, rgba(201,168,76,.08) 0%, rgba(45,107,228,.06) 100%);
+      border: 1px solid rgba(201,168,76,.2);
+      border-radius: var(--radius-lg); padding: var(--space-5) var(--space-4);
+      text-align: center; transition: all var(--transition-base);
+      position: relative; overflow: hidden;
+    }
+    .stat-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
+      opacity: 0.6;
+    }
+    .stat-card:hover {
+      border-color: var(--color-accent);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(201,168,76,.15);
+    }
+    .stat-card__number {
+      font-size: var(--font-size-4xl); font-weight: 800;
+      background: linear-gradient(135deg, #c9a84c 0%, #e8c87a 50%, #c9a84c 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text; margin-bottom: var(--space-2);
+      line-height: 1.1;
+    }
+    .stat-card__label {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+      font-weight: 500; letter-spacing: 0.02em;
+    }
+    @media (max-width: 767px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    /* ── Article Table ── */
+    .article-table {
+      width: 100%; border-collapse: collapse;
+      margin: var(--space-6) 0; font-size: var(--font-size-sm);
+    }
+    .article-table thead th {
+      background: rgba(201,168,76,.12); color: var(--color-accent);
+      font-weight: 700; text-align: left; padding: var(--space-3) var(--space-4);
+      border-bottom: 2px solid rgba(201,168,76,.3);
+    }
+    .article-table tbody td {
+      padding: var(--space-3) var(--space-4);
+      border-bottom: 1px solid var(--color-border);
+      color: var(--color-text-secondary);
+    }
+    .article-table tbody tr:hover { background: rgba(255,255,255,.02); }
+    .article-table tbody td:first-child { font-weight: 600; color: var(--color-text-primary); }
+    /* ── Scroll Reveal (disabled: content always visible) ── */
+    .reveal {
+      opacity: 1; transform: none;
+      transition: none;
+    }
+    /* reveal--visible disabled */
+
+    /* ── Language Switcher Dropdown ── */
+    .header__lang-wrap {
       position: relative;
       display: inline-flex;
       align-items: center;
@@ -597,7 +695,7 @@
       background: rgba(201,168,76,.08);
     }
     .header__lang-flag { font-size: 15px; line-height: 1; }
-  
+    
   @media print{
     *{box-shadow:none!important;text-shadow:none!important;}
     body{background:white!important;color:black!important;}
@@ -610,9 +708,10 @@
     @page{margin:2cm;}
   }
   </style>
+    
 
     <style>
-      .skip-to-content {
+     .skip-to-content {
         position: absolute;
         top: -40px;
         left: 0;
@@ -626,15 +725,12 @@
         top: 0;
       }
     </style>
+          <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"광고 과금 모델 완벽 가이드: CPM부터 CPA까지","description":"브랜드 광고와 퍼포먼스 광고의 과금 모델을 완벽 정리.","url":"https://www.tuyuesouxin.cn/ko/blog/ad-billing-models-explained/","author":{"@type":"Organization","name":"Tuyue Media Gateway"},"publisher":{"@type":"Organization","name":"Tuyue Media Gateway"},"datePublished":"2026-05-10","mainEntityOfPage":"https://www.tuyuesouxin.cn/ko/blog/ad-billing-models-explained/"}</script>
   </head>
 <body>
-  <!-- 본문으로 건너뛰기 -->
+  <!-- Skip to main content -->
   <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
 
-  
-  
-
-<!-- Header -->
 <header class="header">
     <div class="container">
       <div class="header__inner">
@@ -646,14 +742,11 @@
                 <stop offset="100%" stop-color="#e8c87a"/>
               </linearGradient>
               <clipPath id="moonClip">
-                <!-- Full circle -->
                 <circle cx="30" cy="24" r="16"/>
               </clipPath>
             </defs>
-            <!-- Crescent Moon: circle minus overlapping circle -->
             <circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/>
             <circle cx="37" cy="20" r="13" fill="#080c14"/>
-            <!-- TMG letters inside/near the crescent -->
             <text x="4" y="32" font-family="Inter, -apple-system, sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-0.8">TMG</text>
           </svg>
           <span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
@@ -703,227 +796,185 @@
           <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 3.5l3 4 3-4"/></svg>
         </button>
         <div class="header__lang-menu">
-          <a href="https://www.tuyuesouxin.cn/ja/blog/ad-billing-models-explained/" class="header__lang-item"><span class="header__lang-flag">🇺🇸</span>English</a>
-          <a href="https://www.tuyuesouxin.cn/ja/blog/ad-billing-models-explained/" class="header__lang-item"><span class="header__lang-flag">🇯🇵</span>日本語</a>
+          <a href="https://www.tuyuesouxin.cn/ja/blog/" class="header__lang-item"><span class="header__lang-flag">🇺🇸</span>English</a>
+          <a href="https://www.tuyuesouxin.cn/ja/blog/" class="header__lang-item"><span class="header__lang-flag">🇯🇵</span>日本語</a>
         </div>
       </div>
-        <div class="header__cta">
-          <a href="/ko/contact/" class="btn btn--primary">시작하기</a>
+<div class="header__cta">
+          <a href="/ko/contact/" class="btn btn--primary">문의하기 →</a>
         </div>
       </div>
     </div>
   </header>
-  <main id="main-content" class="article-body">
-    <div class="container">
-      <article class="article-content reveal">
 
-<p>모델 자체에 들어가기 전에, 두 가지 개념을 먼저 잡아야 합니다. 첫째, <strong>광고 과금 모델은 광고 유형과 같지 않습니다</strong> — 하지만 어떤 유형을 사용할 수 있는지에 영향을 줍니다. 둘째, <strong>선택한 과금 모델이 광고 플랫폼 알고리즘의 우선순위를 결정합니다</strong>. 잘못 선택하면 잘못된 결과에 비용을 지불하게 됩니다.</p>
+<!-- Article Hero -->
+  <section class="article-hero">
+  <div class="container">
+    <div class="article-meta">
+      <span class="article-category">광고 과금</span>
+      <span class="article-date">2026년 5월</span>
+      <span class="article-read-time">약 12분 소요</span>
+    </div>
+    <h1 class="article-hero__title">광고 과금 모델 완벽 가이드: CPM부터 CPA까지</h1>
+    <p class="article-hero__intro">
+      중국 디지털 광고에서 과금 모델을 이해하는 것은 예산 효율의 핵심입니다. 브랜드 광고와 퍼포먼스 광고의 10가지 주요 과금 모델을 완벽 정리합니다.
+    </p>
+    <div class="article-hero__author">
+      <div class="article-hero__author-avatar">TMG</div>
+      <div class="article-hero__author-info">
+        <div class="article-hero__author-name">Tuyue Media Gateway</div>
+        <div class="article-hero__author-role">유료 미디어 팀 · 상하이</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="article-callout article-callout--info">
-<h4>📊 두 가지 큰 카테고리</h4>
-<p>유료 미디어에서 캠페인은 일반적으로 <strong>브랜드 광고</strong>(인지도 우선)와 <strong>퍼포먼스 광고</strong>(전환 우선)로 나눕니다. 선택한 과금 모델은 카테고리에 맞아야 합니다 — 그 반대가 아닙니다.</p>
+<!-- Article Body -->
+<main id="main-content" class="article-body">
+  <div class="container">
+    <article class="article-content reveal">
+
+<p>중국 디지털 광고를 처음 접하는 많은 마케터가 과금 모델의 미로에서 길을 잃습니다. 플랫폼마다 다른 용어, 다른 최적화 방식, 다른 ROI 계산법. 이 가이드에서는 실제로 마주하게 되는 10가지 과금 모델을 두 카테고리로 정리합니다.</p>
+
+<div class="callout callout--accent">
+<div class="callout__label">핵심 구분</div>
+<p><strong>브랜드 광고</strong> = 관심(attention)에 대해 지불. <strong>퍼포먼스 광고</strong> = 행동(action)에 대해 지불. 어떤 과금 모델을 선택하느냐에 따라 캠페인 구조와 성과 측정 방식이 완전히 달라집니다.</p>
 </div>
 
-<div class="article-section" id="brand-ads">
-<h2>🎯 브랜드 광고: 주의에 비용을 지불</h2>
-<p>브랜드 광고는 <strong>보이는 것</strong>에 관한 것입니다. 목표는 오늘의 클릭이나 구매가 아닙니다 — 브랜드 회상, 호감도, "가장 먼저 떠오르는" 포지셔닝입니다. 소비자가 언젠가 여러분이 파는 것을 필요로 할 때, 여러분을 먼저 떠올리게 하고 싶습니다.</p>
-<p><strong>구매하는 것:</strong> 노출, 조회수, 눈앞에 있는 시간.</p>
-<p><strong>측정 방법:</strong> 노출량, 시청 완료율, 참여율, 브랜드 검색 상승, 브랜드 인지도 조사.</p>
-<p><strong>일반적 시나리오:</strong> 신제품 출시, 브랜드 리포지셔닝, 시즌 캠페인, 카테고리 장악.</p>
-<p><strong>한 줄 요약:</strong> 브랜드 광고 = <em>사람들이 여러분의 존재를 알도록 비용을 지불</em>.</p>
+<h2 id="brand">🎯 브랜드 광고: 관심에 대해 지불</h2>
+<p>브랜드 광고의 목표는 인지도와 기억입니다. 구매를 직접 유도하기보다 가능한 많은 관심 있는 오디언스에게 브랜드를 노출하는 것이 목적입니다.</p>
 
-<h3>실제로 마주치게 될 브랜드 과금 모델</h3>
+<h3>실제로 마주하게 되는 브랜드 과금 모델</h3>
 
-<h4>1. CPM (Cost Per Mille) — 1,000노출당 지불</h4>
-<p>이것은 고전적인 브랜드 광고 과금 모델입니다. 클릭 여부에 관계없이 광고가 1,000번 제공될 때마다 비용을 지불합니다. CPM은 대부분의 디스플레이, 동영상, 소셜 인지도 캠페인의 기본값입니다.</p>
-<div class="article-callout article-callout--info">
-<h4>📈 작동 방식</h4>
-<p>1,000노출당 고정 요율을 지불합니다. CPM이 ¥30이고 100 CPM(= 100,000노출)을 구매하면 비용은 ¥3,000입니다.</p>
-</div>
-<div class="article-callout article-callout--tip">
-<h4>⏱️ 전달 패턴</h4>
-<p>주문하면 플랫폼이 노출량을 확보합니다. 100 CPM을 한 시간 만에 받을 수도 있고, 하루 종일에 걸쳐 받을 수도 있습니다 — 플랫폼이 재고에 따라 결정합니다.</p>
-</div>
-<div class="article-callout article-callout--info">
-<h4>✅ 최적 사용 시점</h4>
-<p>광범위한 인지도, 신규 시장 진출, 즉각적인 반응보다 "보이는 것"이 더 중요한 제품 출시.</p>
-</div>
-<div class="article-callout article-callout--warning">
-<h4>⚠️ 주의 사항</h4>
-<p>CPM은 노출을 보장하지, 주의를 보장하지 않습니다. 광고가 폴더 아래나 사용자가 스크롤하는 위치에 로드될 수 있습니다. 플랫폼이 허용한다면 CPM을 가시성 지표와 함께 사용하세요.</p>
-</div>
+<h4>1. CPM (Cost Per Mille) — 천 회 노출당 비용</h4>
+<p>가장 기본적인 과금 모델입니다. 광고가 1,000번 표시될 때마다 비용을 지불합니다. 노출 자체에 대한 비용이지, 클릭이나 전환에 대한 것이 아닙니다.</p>
+<p><strong>典型 사용 사례:</strong> 인지도 캠페인, 리타겟팅, 대규모 도달이 필요한 브랜드 프로모션.</p>
 
-<h4>2. CPD (Cost Per Day) — 하루당 고정 슬롯 비용</h4>
-<p>CPD는 간단합니다: 디지털 고속도로의 광고판을 임대하는 것과 같습니다. 특정 광고 슬롯에 대해 하루 고정 요금을 지불하며, 노출 횟수나 시청자 수는 중요하지 않습니다.</p>
-<p><strong>주요 사용 사례:</strong> 스플래시 광고(앱 실행 시 표시되는 광고), 홈페이지 배너, '보장된 게재 위치' 구매.</p>
-<p><strong>트레이드오프:</strong> 광고 위치는 확실하지만, 얼마나 많은 사람이 볼지는 보장되지 않습니다. '수량 기반'이 아닌 '시간 기반' 구매입니다.</p>
+<h4>2. CPD (Cost Per Day) — 일당 고정 광고 비용</h4>
+<p>디지털 고속도로의 광고판을 임대하는 것과 같습니다. 특정 광고 배치에 대해 고정 일일 요금을 지불합니다.</p>
+<p><strong>典型 사용 사례:</strong> 스플래시 광고(앱 실행 시 광고), 홈페이지 배너, 보장된 배치 구매.</p>
 
-<h4>3. CPT (Cost Per Time) — 특정 시간 창구에 비용 지불</h4>
-<p>CPT는 CPD를 더 세분화한 버전입니다. 하루 전체가 아닌 특정 시간대 — 예를 들어 금요일 오후 8시~10시 — 를 구매합니다. 디지털 동영상 플랫폼의 TV 스타일 광고에서 일반적입니다.</p>
-<p><strong>중요한 이유:</strong> 프라임 타임 슬롯은 비용이 더 들지만, 더 많은 사람에게 도달합니다. 타겟 고객이 예측 가능하다면(예: 모두가 같은 라이브 스트림을 시청), CPT로 한 번에 잡을 수 있습니다.</p>
+<h4>3. CPT (Cost Per Time) — 특정 시간대 비용</h4>
+<p>CPD의 더 세분화된 버전입니다. 하루 전체가 아닌 특정 시간대(예: 금요일 오후 8-10시)를 구매합니다.</p>
+<p><strong>왜 중요한가:</strong> 프라임타임 시간대는 비용이 높지만 더 많은 사람에게 도달합니다.</p>
 
-<h4>4. CPV (Cost Per View) — 유효 동영상 시청에 비용 지불</h4>
-<p>CPV는 사용자가 동영상 광고를 최소 시간 이상 시청한 경우에만 비용이 청구됩니다. '유효 조회'의 정의는 플랫폼마다 다릅니다:</p>
+<h4>4. CPV (Cost Per View) — 유효 동영상 조회당 비용</h4>
+<p>사용자가 동영상 광고를 최소 시간 이상 시청할 때만 과금됩니다. 플랫폼마다 유효 조회의 정의가 다릅니다:</p>
+
 <table class="article-table">
 <thead><tr><th>플랫폼</th><th>유효 조회 정의</th></tr></thead>
 <tbody>
-<tr><td>YouTube</td><td>≥ 30초 (30초 미만 동영상은 전부 시청)</td></tr>
+<tr><td>YouTube</td><td>≥ 30초 (30초 미만 영상은 전체 시청)</td></tr>
 <tr><td>Douyin / Kuaishou / Bilibili</td><td>≥ 3~5초</td></tr>
 <tr><td>장편 동영상 (iQiyi, Tencent Video 등)</td><td>프리롤 광고 완료</td></tr>
 </tbody>
 </table>
-<p>CPV가 CPM보다 비싼 이유는 '질 높은 관심'에 비용을 지불하기 때문입니다 — 0.3초 만에 스킵되었을 수도 있는 단순한 노출이 아닙니다.</p>
 
-<h4>5. CPCV (Cost Per Completed View) — 전체 시청에만 비용 지불</h4>
-<p>CPCV는 CPV의 더 엄격한 형제입니다. 사용자가 동영상 광고를 끝까지 시청한 경우에만 비용이 청구됩니다. 스킵도, 부분 인정도 없습니다.</p>
-<p><strong>사용 시점:</strong> 전체 메시지가 중요한 고관여 제품 — 자동차 출시, 금융 서비스 설명, 프리미엄 스킨케어 라인. 광고가 15초라면, 15초 전체를 전달해야 합니다.</p>
-<div class="article-callout article-callout--tip">
-<h4>💡 우리 팀의 전문가 팁</h4>
-<p>브랜드 캠페인은 종종 CPM(도달용)과 CPV 또는 CPCV(핵심 출시 순간용)를 혼합합니다. 모든 브랜드 예산을 하나의 과금 모델에 넣지 마세요 — 크리에이티브 형식과 캠페인 단계에 맞게 모델을 매칭하세요.</p>
-</div>
-</div>
+<h4>5. CPCV (Cost Per Completed View) — 완전 시청 시에만 과금</h4>
+<p>CPV의 프리미엄 버전입니다. 사용자가 동영상 광고를 끝까지 시청할 때만 비용을 지불합니다. 가장 비싸지만 가장 높은 참여도를 보장합니다.</p>
 
-<div class="article-section" id="performance-ads">
-<h2>🚀 퍼포먼스 광고: 행동에 비용을 지불</h2>
-<p>퍼포먼스 광고는 논리를 뒤집습니다. 시선이 아닌 <strong>결과</strong>에 비용을 지불합니다 — 클릭, 다운로드, 양식 제출, 구매. 사용자가 행동하지 않으면 비용을 지불하지 않습니다(또는 훨씬 적게 지불).</p>
-<p><strong>구매하는 것:</strong> 클릭, 전환, 매출, 리드.</p>
-<p><strong>측정 방법:</strong> 클릭률(CTR), 전환율(CVR), 획득당 비용(CPA), 광고 투자 수익률(ROAS).</p>
-<p><strong>일반적 시나리오:</strong> 이커머스 프로모션, 앱 사용자 획득, 리드 생성, 다이렉트 리스폰스 캠페인.</p>
-<p><strong>한 줄 요약:</strong> 퍼포먼스 광고 = <em>사람들이 무언가 행동하도록 비용을 지불</em>.</p>
+<h2 id="performance">🚀 퍼포먼스 광고: 행동에 대해 지불</h2>
+<p>퍼포먼스 광고는 결과에 대해 지불합니다. 클릭, 설치, 구매 등 사용자의 특정 행동이 발생할 때만 비용이 발생합니다.</p>
 
 <h3>실제로 성과를 내는 퍼포먼스 과금 모델</h3>
 
-<h4>1. CPC (Cost Per Click) — 클릭당 지불</h4>
-<p>CPC는 말 그대로입니다: 누군가 광고를 클릭할 때만 비용을 지불합니다. 노출은 무료, 클릭에 비용이 발생합니다.</p>
-<p><strong>계산:</strong> 광고가 10,000노출을 받고, CTR 2% = 200클릭. 클릭당 ¥2이면 총 비용은 ¥400입니다.</p>
-<div class="article-callout article-callout--warning">
-<h4>⚠️ CPC 함정</h4>
-<p>CPC는 위험할 정도로 쉽게 스케일업할 수 있습니다 — 이는 예산을 태우기도 위험할 정도로 쉽다는 것을 의미합니다. CPC 캠페인은 <em>클릭 가능성</em>을 위해 최적화되지, <em>전환 가능성</em>을 위해 최적화되지 않습니다. 호기심 많은 2,000개의 클릭을 받을 수 있지만 실제로는 아무데도 가지 않고, 실제 고객(더 신중한 고객)은 광고를 보지 못할 수 있습니다.</p>
-<p>업계에서 우리는 관리되지 않는 CPC 캠페인이 "30분 안에 집을 태울 수 있다"고 농담합니다 — 그리고 실제로 그런 일이 일어나는 것을 보았습니다.</p>
-</div>
-<p><strong>CPC가 가장 효과적인 경우:</strong> 검색 광고. '러닝화 온라인 구매'라고 검색할 때, 그 검색 자체가 의도입니다. 해당 키워드에 CPC 입찰하는 것은 의미가 있습니다 — 클릭이 이미 검색 의도에 의해 검증되었으므로.</p>
+<h4>1. CPC (Cost Per Click) — 클릭당 비용</h4>
+<p>사용자가 광고를 클릭할 때만 비용을 지불합니다. 검색 광고의 기본 모델이며, 의도가 명확한 오디언스에게 가장 효과적입니다.</p>
 
-<h4>2. oCPC (Optimized CPC) — 두뇌를 가진 CPC</h4>
-<p>oCPC는 CPC 청구 구조(클릭당 과금)를 유지하면서, 플랫폼 알고리즘이 '클릭할 가능성이 높은 사용자'가 아닌 '전환할 가능성이 높은 사용자'에게 광고를 적극 유도합니다.</p>
-<p><strong>차이점:</strong> CPC는 '누가 가장 클릭할 가능성이 높은가'로 최적화됩니다. oCPC에서는 원하는 전환(구매, 양식 제출, 앱 설치)을 시스템에 알려주면, 해당 액션을 완료할 가능성에 따라 다른 사용자에게 다르게 입찰합니다.</p>
-<p><strong>결과:</strong> 클릭당 비용은 더 높을 수 있지만 전환당 비용은 일반적으로 낮아집니다.</p>
+<h4>2. oCPC (Optimized Cost Per Click) — AI가 최적화하는 CPC</h4>
+<p>일반 CPC에 AI 최적화가 추가된 모델입니다. 시스템이 전환 가능성이 높은 사용자에게 자동으로 입찰을 조정합니다. 중국 플랫폼(Baidu, Douyin)에서 가장 널리 사용되는 모델입니다.</p>
 
-<h4>3. CPA (Cost Per Action) — 전환에만 비용 지불</h4>
-<p>CPA는 많은 광고주에게 성배입니다: 사전에 정의한 특정 액션(앱 설치, 양식 제출, 계정 등록, 구매)이 완료되었을 때만 비용을 지불합니다.</p>
-<div class="article-callout article-callout--tip">
-<h4>✅ 광고주가 CPA를 사랑하는 이유</h4>
-<p>"결과 없으면 지불 없음" — 적어도 이론적으로는. 광고 지출을 비즈니스 결과에 직접 연결합니다. 디지털 광고에서 성과 기반 가격에 가장 가까운 것입니다.</p>
-</div>
-<p><strong>함정:</strong> CPA 캠페인은 확장이 어렵기로 악명 높습니다. 플랫폼이 효과적으로 최적화하려면 충분한 전환 데이터가 필요합니다. 과거 데이터가 전혀 없는 신규 광고주는 CPA 입찰에 예산을 쓰는 것조차 어려울 수 있습니다 — 잘 쓰는 것은 말할 것도 없고요.</p>
-<p><strong>당사의 경험 법칙:</strong> 플랫폼에서 주당 최소 20~30건의 전환이 발생하고 있지 않다면 CPA로 시작하지 마세요. 그 이하로는 알고리즘이 작동할 충분한 신호를 얻지 못합니다.</p>
+<h4>3. CPA (Cost Per Action) — 전환 시에만 과금</h4>
+<p>사용자가 특정 행동(회원가입, 앱 설치, 리드 제출 등)을 완료할 때만 비용을 지불합니다. 광고주에게 가장 안전한 모델이지만, 플랫폼에서 제공하는 트래픽이 제한적일 수 있습니다.</p>
 
-<h4>4. CPS (Cost Per Sale) — 실제 매출에 수수료 지불</h4>
-<p>CPS는 CPA를 한 단계 더 발전시킵니다: <em>판매</em>가 발생한 경우에만 지불하며, 일반적으로 고정 금액이 아닌 수익의 일정 비율(수수료)입니다.</p>
-<p><strong>CPS가 빛나는 분야:</strong> 제휴 마케팅과 인플루언서 주도 판매. 타오바오 제휴, JD 제휴, 핀둬둬의 둬둬진바오, Douyin 셀렉트 얼라이언스, 샤오홍슈(RED) 크리에이터 마켓플레이스 등이 CPS 유사 모델로 운영됩니다.</p>
-<p><strong>계산:</strong> 제품이 ¥1,000에 판매되고 CPS 수수료율이 10%이면, 판매 1건당 ¥100을 지불합니다. 제휴가 100건의 매출을 올리면 총 광고 비용은 ¥10,000 — 매출이 실제로 발생했기 때문에 지불하는 것입니다.</p>
+<h4>4. CPS (Cost Per Sale) — 실제 매출에 대한 수수료</h4>
+<p>실제 판매가 발생할 때만 비용을 지불합니다. 이커머스와 제휴 마케팅에서 일반적이며, 광고주에게 가장 낮은 리스크를 제공합니다.</p>
 
-<h4>5. oCPM (Optimized CPM) — 업계의 일꾼</h4>
-<p>oCPM은 현재 주요 광고 플랫폼에서 <strong>가장 널리 사용되는 퍼포먼스 과금 모델</strong>입니다. CPM 청구 구조(1,000노출당 과금)와 전환 가능성이 높은 사용자를 타겟팅하는 알고리즘 최적화를 결합합니다.</p>
-<div class="article-callout article-callout--info">
-<h4>🧠 oCPM 실제 작동 방식</h4>
-<p><strong>1단계:</strong> 플랫폼에 목표 전환을 알림 (예: "앱 설치 원함").</p>
-<p><strong>2단계:</strong> 알고리즘이 다른 사용자에게 광고를 보여주고 누가 전환하는지 추적.</p>
-<p><strong>3단계:</strong> 시간이 지나면서, 시스템이 어떤 사용자 프로필이 전환하는지 학습하고 유사 사용자에게 더 적극적으로 입찰.</p>
-<p><strong>4단계:</strong> 노출당 비용(CPM)을 지불하지만, 구매하는 노출은 점점 더 "스마트한" 노출이 됩니다.</p>
-</div>
-<p><strong>지배적인 이유:</strong> oCPM은 플랫폼에 최대의 최적화 유연성을 제공합니다. 예산, 입찰가, 인벤토리를 균형 있게 조정하여 최대한 많은 전환을 제공할 수 있습니다. 광고주 입장에서는 볼륨과 효율을 모두 얻을 수 있습니다 — 트래킹이 올바르게 설정되어 있다면.</p>
+<h4>5. oCPM (Optimized Cost Per Mille) — 업계의 워크호스</h4>
+<p>시스템에 전환 목표를 알려주면, AI가 최적의 오디언스를 찾아 자동으로 입찰합니다. 현재 중국 디지털 광고에서 가장 많이 사용되는 모델입니다.</p>
+
+<div class="callout callout--accent">
+<div class="callout__label">oCPM vs oCPC 차이점</div>
+<p><strong>oCPC</strong>는 클릭을 기반으로 최적화합니다. <strong>oCPM</strong>은 노출을 기반으로 최적화합니다. 둘 다 AI가 입찰을 관리하지만, oCPM이 더 넓은 범위의 오디언스를 탐색할 수 있어 일반적으로 더 효율적입니다.</p>
 </div>
 
-<div class="article-section" id="which-model">
-<h2>📊 실제로 어떤 모델을 사용해야 할까?</h2>
-<p>TMG가 클라이언트와 함께 사용하는 의사결정 프레임워크입니다:</p>
+<h2 id="comparison">📊 어떤 모델을 사용해야 할까?</h2>
+
 <table class="article-table">
-<thead><tr><th>주요 목표</th><th>추천 과금 모델</th><th>이유</th></tr></thead>
+<thead><tr><th>목표</th><th>추천 모델</th><th>이유</th></tr></thead>
 <tbody>
-<tr><td>신규 시장에서 브랜드 인지도 구축</td><td><strong>CPM</strong></td><td>볼륨과 도달이 필요. 효율은 나중에.</td></tr>
-<tr><td>히어로 동영상으로 신제품 출시</td><td><strong>CPV 또는 CPCV</strong></td><td>단순 노출이 아닌 보장된 주의 원함.</td></tr>
-<tr><td>고의도 검색 트래픽 확보</td><td><strong>CPC</strong></td><td>검색 쿼리 자체가 클릭을 검증.</td></tr>
-<tr><td>이커머스 매출 규모 확대</td><td><strong>oCPM</strong></td><td>볼륨과 전환 효율의 최적 균형.</td></tr>
-<tr><td>리드 생성 (양식, 상담)</td><td><strong>oCPC 또는 CPA</strong></td><td>클릭이 아닌 액션에 비용 지불.</td></tr>
-<tr><td>인플루언서/제휴로 확장</td><td><strong>CPS</strong></td><td>매출이 발생할 때만 지불.</td></tr>
+<tr><td>브랜드 인지도</td><td>CPM / CPD</td><td>최대 도달과 노출에 집중</td></tr>
+<tr><td>동영상 참여</td><td>CPV / CPCV</td><td>실제 시청 보장</td></tr>
+<tr><td>웹사이트 트래픽</td><td>CPC / oCPC</td><td>클릭에만 과금</td></tr>
+<tr><td>앱 설치</td><td>oCPM / CPA</td><td>전환 최적화</td></tr>
+<tr><td>직접 판매</td><td>CPS</td><td>매출 발생 시에만 과금</td></tr>
 </tbody>
 </table>
+
+<h2 id="tmg">🎯 TMG 관점: 모델만이 아니다</h2>
+<p>과금 모델은 하나의 레버에 불과합니다. 진정한 성과는 모델 선택 × 크리에이티브 품질 × 오디언스 타겟팅 × 입찰 전략의 조합에서 나옵니다.</p>
+<p>중국 플랫폼의 과금 모델은 서구 플랫폼과 다른 점이 많습니다. Baidu의 oCPC, Douyin의 oCPM, WeChat의 CPC 모두 미묘한 차이가 있으며, 이를 이해하는 것이 예산 효율의 핵심입니다.</p>
+
+<div class="callout callout--accent">
+<div class="callout__label">🚀 광고 과금 전략 상담</div>
+<p>중국 시장에서 어떤 과금 모델이 적합한지 상담이 필요하시면 TMG에 문의하세요.</p>
+<p><a href="/ko/contact/" class="btn btn--primary">문의하기 →</a></p>
 </div>
 
-<div class="article-section" id="tmg-perspective">
-<h2>🎯 TMG의 관점: 모델만의 문제가 아니다</h2>
-<p>저희는 중국 모든 주요 플랫폼 — Baidu, Douyin, WeChat, 샤오홍슈(RED), Bilibili, Bing China — 에서 7자리 규모의 광고 예산을 운영해 왔습니다. 그로부터 얻은 인사이트:</p>
-<p><strong>과금 모델은 트래킹 설정만큼만 좋습니다.</strong> oCPM과 CPA는 이론적으로 훌륭하지만, 전환 트래킹이 망가져 있으면 알고리즘은 쓰레기 데이터로 최적화합니다. 실제로 "전환"의 40%가 중복 이벤트나 봇 트래픽인 캠페인을 보았습니다. 트래킹부터 수정하세요 — 그 다음 과금 모델을 선택하세요.</p>
-<p><strong>브랜드와 퍼포먼스 과금을 같은 캠페인에서 혼합하지 마세요.</strong> 이 실수를 끊임없이 봅니다. '브랜드 인지도' 캠페인을 만들고서 '더 효율적이라서'라는 이유로 oCPM(퍼포먼스 과금 모델)을 선택합니다. 이제 알고리즘이 전환을 위해 최적화하고, 브랜드 노출 목표가 타격을 받습니다. 브랜드 캠페인은 CPM/CPV로. 퍼포먼스 캠페인은 oCPM/CPA/CPC로. 스트림을 혼합하지 마세요.</p>
-<p><strong>단순하게 시작하고, 복잡성은 나중에 더하세요.</strong> 플랫폼이 처음이라면 CPC 또는 oCPM으로 시작하세요 — 이해하기 가장 쉽고 문제 해결도 용이합니다. 전환 데이터가 흐르기 시작하면, CPA 또는 CPS를 테스트하세요. 첫날부터 역사적 데이터 없이 CPA를 실행하려는 것은 조향을 배우기도 전에 차를 몰려는 것과 같습니다.</p>
-<div class="article-callout article-callout--tip">
-<h4>💡 한 가지 더</h4>
-<p>플랫폼은 "스마트 입찰"(oCPM, oCPC)을 밀어내기를 좋아합니다 — 알고리즘을 좋게 보이게 만들기 때문입니다. 하지만 올바른 전환 이벤트를 설정하고, 입찰가를 적절히 제한하고, 데이터를 해석하려면 비즈니스를 이해하는 사람이 여전히 필요합니다. 자동화는 강력하지만 전략은 아닙니다.</p>
+<div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--color-border); font-size: 0.875rem; color: var(--color-text-muted);">
+<strong>작성:</strong> Tuyue Media Gateway — 국제 브랜드를 위한 중국 유료 미디어 전문 파트너
 </div>
-</div>
-
-<div class="article-section" id="next-steps">
-<h2>🚀 광고 예산을 더 현명하게 쓸 준비가 되셨나요?</h2>
-<p><strong>Tuyue Media Gateway</strong>는 중국 시장에 진출하는 국제 에이전시와 브랜드를 위해 Baidu, Douyin, WeChat, 샤오홍슈(RED), Bilibili, Bing China에서 유료 미디어를 운영합니다. 단순히 "캠페인을 설정"하지 않습니다 — 비즈니스 목표에 실제로 맞는 과금 모델, 트래킹 설정, 크리에이티브 전략을 설계합니다.</p>
-<p>중국에서 브랜드를 처음 출시하든, 기존 퍼포먼스 프로그램을 확장하든, 올바른 과금 모델 선택, 방탄 트래킹 설정, 비즈니스에 실제로 중요한 지표 최적화를 도와드릴 수 있습니다.</p>
-<div class="article-cta">
-<h3>전문가와 상담하기</h3>
-<p>중국 디지털 광고 과금 모델에 대해 궁금한 점이 있으신가요? 메시지를 보내주세요. 모든 이메일을 확인하며, 국제 브랜드 캠페인에서 배운 인사이트를 공유해 드리겠습니다. <a href="/ko/contact/" class="btn btn--primary">문의하기 →</a></p>
-</div>
-</div>
-
 </article>
-   <!-- Sidebar -->
     <aside class="article-sidebar">
       <nav class="toc">
-<div class="toc__title">이 기사에서</div>
-<ul class="toc__list">
-<li><a class="toc__link" href="#brand-ads">🎯 브랜드 광고: 주의에 비용을 지불</a></li>
-<li><a class="toc__link" href="#performance-ads">🚀 퍼포먼스 광고: 행동에 비용을 지불</a></li>
-<li><a class="toc__link" href="#which-model">📊 어떤 모델을 사용해야 할까?</a></li>
-<li><a class="toc__link" href="#tmg-perspective">🎯 TMG의 관점</a></li>
-<li><a class="toc__link" href="#next-steps">🚀 다음 단계</a></li>
-</ul>
+    <div class="toc__title">이 기사에서</div>
+    <ul class="toc__list">
+      <li><a class="toc__link" href="#brand">브랜드 광고 과금 모델</a></li>
+      <li><a class="toc__link" href="#performance">퍼포먼스 광고 과금 모델</a></li>
+      <li><a class="toc__link" href="#comparison">모델 비교 가이드</a></li>
+      <li><a class="toc__link" href="#tmg">TMG 관점</a></li>
+    </ul>
 </nav>
       <div class="sidebar-cta">
-        <p>중국 디지털 광고 에코시스템에 어려움을 겪고 계신가요? TMG가 최적의 과금 모델 전략을 지원합니다.</p>
+        <p>광고 과금 모델 선택에 대해 상담이 필요하신가요?</p>
         <a href="/ko/contact/" class="btn btn--primary">문의하기</a>
       </div>
     </aside>
-    </div>
-  </main>
-<!-- Related Posts -->
-  <section class="related">
-<div class="container">
-<h2 class="related__title">더보기</h2>
-<div class="related__grid">
-<a class="related-card" href="/ko/blog/cpm-ocpm-ecpm-explained/">
-<div class="related-card__cat">유료 미디어 전략</div>
-<h3 class="related-card__title">CPM, oCPM, eCPM: 모든 유료 미디어 바이어가 혼동하는 세 가지 지표</h3>
-<p class="related-card__desc">CPM은 지불하는 금액. oCPM은 입찰 방식. eCPM은 시스템이 순위를 매기는 방식. 이 셋을 혼동하면 잘못된 숫자를 최적화하게 됩니다.</p>
-</a>
-<a class="related-card" href="/ko/blog/geo-channel-weight-2026/">
-<div class="related-card__cat">GEO / AI Search</div>
-<h3 class="related-card__title">GEO 채널 가중치 업데이트 2026: 2개 유형 상승, 3개 AI에 의해 하락</h3>
-<p class="related-card__desc">2026년 4월 Doubao, DeepSeek, Kimi 테스트 결과, AI 플랫폼이 채널 가중치를 재조정한 것으로 나타났습니다. 컴플라이언스 수직 사이트와 지방 정부 미디어의 비중이 상승.</p>
-</a>
-<a class="related-card" href="/ko/services/baidu/">
-<div class="related-card__cat">Baidu SEM</div>
-<h3 class="related-card__title">Baidu SEM 서비스</h3>
-<p class="related-card__desc">국제 브랜드를 위한 Baidu 유료 검색 캠페인 관리——키워드 전략부터 전환 트래킹, ROI 최적화까지.</p>
-</a>
-</div>
-</div>
-</section>
-<!-- Footer -->
+  </div>
+</main>
 
-<footer class="footer">
+  <!-- Related Posts -->
+  <section class="related">
+    <div class="container">
+      <div class="related__title">더보기</div>
+      <div class="related__grid">
+        <a href="/ko/blog/cpm-ocpm-ecpm-explained/" class="related-card">
+          <div class="related-card__cat">광고 과금</div>
+          <div class="related-card__title">CPM, oCPM, eCPM: 광고주가 자꾸 헷갈리는 3가지 지표</div>
+          <p class="related-card__desc">세 지표의 차이점과 실제 최적화 방법을 분석합니다.</p>
+        </a>
+        <a href="/ko/blog/cpm-is-rising-bad/" class="related-card">
+          <div class="related-card__cat">광고 과금</div>
+          <div class="related-card__title">CPM 상승은 항상 나쁠까?</div>
+          <p class="related-card__desc">CPM 상승의 원인과 대응 전략을 분석합니다.</p>
+        </a>
+        <a href="/ko/blog/attribution-models-guide/" class="related-card">
+          <div class="related-card__cat">측정</div>
+          <div class="related-card__title">어트리뷰션 모델 가이드</div>
+          <p class="related-card__desc">7가지 어트리뷰션 모델 비교와 선택 방법.</p>
+        </a>
+      </div>
+    </div>
+</section>
+
+<!-- Footer -->
+  <footer class="footer">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__section">
           <h4 class="footer__title">TMG 소개</h4>
           <p class="footer__description">
-            중국 1,000억 달러 디지털 광고 시장으로의 단일 액세스 포인트. 국제 에이전시가 중국 플랫폼을 쉽게 탐색할 수 있도록 지원합니다.
+            중국의 1,000억 달러 규모 디지털 광고 시장에 대한 단일 접근점. 국제 대행사가 중국 플랫폼을 쉽게 탐색할 수 있도록 지원합니다.
           </p>
         </div>
         <div class="footer__section">
@@ -973,40 +1024,44 @@
       </div>
     </div>
   </footer>
-<!-- JSON-LD Structured Data -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tuyue Media Gateway","alternateName":"TMG","url":"https://www.tuyuesouxin.cn/","description":"국제 에이전시를 위한 중국 디지털 광고 통합 인터페이스. 하나의 연결로 모든 플랫폼 대응.","email":"tmg@tuyuesouxin.cn","address":{"@type":"PostalAddress","streetAddress":"599-2F202 Wanzhen Road","addressLocality":"Shanghai","addressRegion":"Shanghai","postalCode":"201824","addressCountry":"CN"},"sameAs":[]}</script>
-<script>
-    // ── Mobile nav toggle ──
-    const navToggle = document.getElementById('navToggle');
-    const mainNav = document.getElementById('mainNav');
-    
-    if (navToggle && mainNav) {
-      navToggle.addEventListener('click', () => {
-        navToggle.classList.toggle('active');
-        mainNav.classList.toggle('active');
+
+  <script>
+  // Mobile Menu & Dropdown Toggle
+  (function () {
+    var toggle = document.querySelector('.header__toggle');
+    var nav = document.querySelector('.header__nav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', function () {
+        const isOpen = toggle.classList.toggle('active');
+        nav.classList.toggle('active', isOpen);
+        toggle.setAttribute('aria-expanded', String(isOpen));
       });
     }
-    
-    // ── Header border animation on scroll ──
-    const header = document.getElementById('header');
-    let lastScroll = 0;
-    
-    window.addEventListener('scroll', () => {
-      const currentScroll = window.pageYOffset;
-      
-      if (header) {
-        if (currentScroll > 50) {
-          header.style.borderBottomColor = 'rgba(45, 107, 228, 0.3)';
-        } else {
-          header.style.borderBottomColor = 'var(--color-border)';
-        }
+    nav.querySelectorAll('.header__dropdown').forEach(function (dropdown) {
+      var trigger = dropdown.querySelector('.header__dropdown-trigger');
+      if (trigger) {
+        trigger.addEventListener('click', function (e) {
+          e.preventDefault();
+          nav.querySelectorAll('.header__dropdown').forEach(function (d) {
+            if (d !== dropdown) d.classList.remove('open');
+          });
+          dropdown.classList.toggle('open');
+        });
       }
-      
-      lastScroll = currentScroll;
     });
-    
-    // ── Reveal animation on scroll (disabled: content always visible) ──
+    document.addEventListener('click', function (e) {
+      if (!nav.contains(e.target)) {
+        nav.querySelectorAll('.header__dropdown').forEach(function (d) {
+          d.classList.remove('open');
+        });
+      }
+    });
+  })();
+
+  // Scroll Reveal (disabled: content always visible)
+  (function () {
     // Reveal animation removed - user prefers content always visible
+  })();
   </script>
 </body>
 </html>
