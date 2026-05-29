@@ -27,7 +27,7 @@
 <link href="https://www.tuyuesouxin.cn/ja/blog/pangle-ads/" hreflang="ja" rel="alternate"/>
 <link href="https://www.tuyuesouxin.cn/blog/pangle-ads/" hreflang="x-default" rel="alternate"/>
 <meta content="Pangle 광고: ByteDance의 글로벌 앱 수익화 플랫폼" property="og:title"/>
-<meta content="Pangle reaches 800M+ active users, 63B daily ad requests, and 110B daily impressions. Everything advertisers and develop..." property="og:description"/>
+<meta content="Pangle: 8억+ 활성 사용자, 630억 일일 광고 요청, 1,100억 일일 노출. ByteDance의 글로벌 앱 수익화 플랫폼의 광고주와 개발자를 위한 가이드." property="og:description"/>
 <meta content="article" property="og:type"/>
 <meta content="https://www.tuyuesouxin.cn/ko/blog/pangle-ads/" property="og:url"/>
 <meta content="https://www.tuyuesouxin.cn/assets/og-image.png" property="og:image"/>
@@ -41,6 +41,31 @@
 
   .skip-link{position:absolute;top:-100px;left:0;background:var(--color-accent);color:var(--color-bg);padding:8px 16px;z-index:10000;text-decoration:none;transition:top 0.3s;font-weight:600;}
   .skip-link:focus{top:0;}
+
+  .article-table { width:100%; border-collapse:separate; border-spacing:0; border-radius:0.75rem; overflow:hidden; border:1px solid #1e2d45; margin:1.5rem 0; font-size:0.875rem; }
+  .article-table th { background:#0d1220; color:#c9a84c; font-weight:700; padding:1rem 1.25rem; text-align:left; border-bottom:2px solid #1e2d45; }
+  .article-table td { padding:0.75rem 1.25rem; border-bottom:1px solid #1e2d45; color:#b3c0d8; }
+  .article-table tr:last-child td { border-bottom:none; }
+  .article-table tr:hover td { background:rgba(45,107,228,0.05); }
+
+  .article-section { margin-bottom:3rem; }
+  .article-section h2 { font-size:1.5rem; font-weight:700; margin-bottom:1rem; color:#f0f4ff; }
+  .article-section h3 { font-size:1.125rem; font-weight:600; margin-top:1.5rem; margin-bottom:0.75rem; color:#f0f4ff; }
+  .article-section p { margin-bottom:1rem; line-height:1.7; }
+  .article-section ul { margin-bottom:1rem; padding-left:1.5rem; }
+  .article-section li { margin-bottom:0.5rem; line-height:1.6; }
+
+  .article-callout { border-radius:0.75rem; padding:1.5rem; margin:1.5rem 0; border-left:4px solid; }
+  .article-callout--info { background:rgba(45,107,228,0.08); border-color:#2d6be4; }
+  .article-callout--tip { background:rgba(201,168,76,0.08); border-color:#c9a84c; }
+  .article-callout h4 { font-size:1.125rem; font-weight:600; margin-bottom:0.75rem; color:#f0f4ff; }
+  .article-callout p { margin-bottom:0.5rem; }
+  .article-callout ul { margin-bottom:0; padding-left:1.25rem; }
+
+  .article-cta { background:#111827; border:1px solid #1e2d45; border-radius:0.75rem; padding:2rem; text-align:center; margin-top:2rem; }
+  .article-cta h3 { font-size:1.25rem; margin-bottom:0.75rem; }
+
+  .article-table-wrap { overflow-x:auto; margin:1.5rem 0; }
 
     :root {
       --color-bg: #080c14;
@@ -776,165 +801,124 @@
 <main id="main-content" class="article-body">
 <div class="container">
 <article class="article-content reveal">
-<p>동남아시아, 남아시아, 중동, 라틴아메리카에서 특히 강력한 입지를 갖고 있어 중국 밖으로 도달 범위를 확장하려는 앱 개발자에게 이상적입니다. <strong>Pangle</strong> (穿山甲) is one of the most powerful platforms you've probably never worked with directly—but almost certainly encountered.</p>
-<p>ByteDance의 AI 주도 타겟팅 기술을 활용해 앱 간 광고 형식, 컨텍스트, 사용자 행동에 기반하여 광고를 게재합니다.</p>
-<p>게임 앱 내 전면 화면 인터스티셜 광고로 높은 참여율 달성.</p>
-<h2 id="scale">Pangle의 규모</h2>
-<p>앱 인터페이스에 매끄럽게 통합된 배너 광고로 UX 혼란 최소화.</p>
-<div class="stat-bar">
-<div class="stat">
-<span class="stat__num">8억+</span>
-<span class="stat__label">도달 활성 사용자</span>
+
+<p>ByteDance의 글로벌 앱 수익화 및 사용자 성장 플랫폼인 Pangle은 전 세계 수십만 개 앱에서 광고를 운영하며, <strong>630억 일일 광고 요청</strong>과 <strong>8억+ 활성 사용자</strong>에게 도달합니다. 매일 사용하는 많은 앱背后的 광고 엔진입니다.</p>
+
+<div class="article-section" id="scale">
+<h2>📊 Pangle의 규모</h2>
+<div class="stats-grid">
+<div class="stat-card"><div class="stat-card__number">8억+</div><div class="stat-card__label">활성 사용자</div></div>
+<div class="stat-card"><div class="stat-card__number">630억+</div><div class="stat-card__label">일일 요청</div></div>
+<div class="stat-card"><div class="stat-card__number">1,100억+</div><div class="stat-card__label">일일 노출</div></div>
+<div class="stat-card"><div class="stat-card__number">10만+</div><div class="stat-card__label">수익화된 앱</div></div>
+<div class="stat-card"><div class="stat-card__number">10.5만+</div><div class="stat-card__label">광고주</div></div>
 </div>
-<div class="stat">
-<span class="stat__num">630억+</span>
-<span class="stat__label">일일 광고 요청</span>
-</div>
-<div class="stat">
-<span class="stat__num">1,100억+</span>
-<span class="stat__label">일일 광고 노출</span>
-</div>
-<div class="stat">
-<span class="stat__num">10만+</span>
-<span class="stat__label">수익화된 앱</span>
-</div>
-<div class="stat">
-<span class="stat__num">10.5만+</span>
-<span class="stat__label">글로벌 광고주</span>
+<div class="article-callout article-callout--info">
+<h4>💡 주목할 점</h4>
+<p><strong>최상위 광고주가 플랫폼 전체 광고 지출의 90%</strong>를 차지합니다. 즉, 인벤토리 품질이 높고,背后的 예산이 진지하다는 뜻입니다.</p>
 </div>
 </div>
-<p>Notably, <strong>top-tier advertisers account for 90% of total ad spend</strong> on the platform—meaning the inventory quality is high, and the budgets behind it are serious.</p>
-<h2 id="advertisers">광고주에게 Pangle이 제공하는 것</h2>
-<p>앱 콘텐츠 흐름 내에 자연스럽게 표시되는 네이티브 광고로 혼란을 줄이고 참여도 향상.</p>
+
+<div class="article-section" id="advertisers">
+<h2>🎯 광고주에게 Pangle이 제공하는 것</h2>
+<p>Pangle은 주로 앱 퍼블리셔를 위한 <strong>공급 사이드 플랫폼(SSP)</strong>으로 알려져 있지만, 광고주를 위한 기능도 상당합니다:</p>
 <ul>
-<li>성과 데이터에 따라 지역별 크리에이티브 현지화——한 시장에서 통하는 것이 다른 시장에서도 통하지 않을 수 있습니다.</li>
-<li>출처: ByteDance Pangle 플랫폼 개요——글로벌 앱 수익화 가이드. Tuyue Media Gateway 작성.</li>
-<li>Pangle 또는 Ocean Engine에서 광고 운영 예정이신가요? 국제 앱 프로모션 Pangle 캠페인을 관리합니다.</li>
-<li>TMG의 앱 수익화와 크로스보더 광고 서비스를 살펴보세요.</li>
-<li>TMG가 Ocean Engine으로 국제 브랜드의 중국 광고 캠페인을 관리하는 방법.</li>
+<li><strong>방대한 고품질 인벤토리</strong> — ByteDance 에코시스템 전반에 걸친 10만+ 앱. 서양 네트워크에서는 찾을 수 없는 프리미엄 배치.</li>
+<li><strong>고급 AI 타겟팅</strong> — TikTok과 Douyin을 위해 구축된 ByteDance의 추천 엔진이 이제 앱 간 오디언스 매칭을 운영합니다.</li>
+<li><strong>LTV 최적화 입찰</strong> — 사용자 획득 비용과 평생 가치(LTV) 결과를 균형 있게 맞추는 입찰 모델. 저렴한 설치만이 아닙니다.</li>
+<li><strong>독점 콘텐츠 파트너십</strong> — ByteDance 에코시스템에 고유한 네이티브 광고 형식. 경쟁사가 복제할 수 없는 인벤토리 접근.</li>
+<li><strong>풀퍼널 어트리뷰션</strong> — 설치, 활성화, 설치 후 이벤트 전반에 걸쳐 추적. 전체 전환 경로를 확인.</li>
 </ul>
-<div class="callout">
-<span class="callout__icon">💡</span>
-<p>TikTok 네이티브 플레이어블 — 사용자가 설치 전 광고 내에서 미니 게임이나 앱 미리보기를 체험.</p>
-</div>
-<h2 id="ad-formats">Pangle의 작동 방식</h2>
-<p>Pangle은 주로 <strong>공급-side 플랫폼(SSP)</strong>으로 알려져 있지만, 광고주를 위한 기능도 상당합니다.</p>
-<div class="format-grid">
-<div class="format-card">
-<span class="format-card__icon">▶</span>
-<div>
-<div class="format-card__name">In-Feed Ads</div>
-<div class="format-card__note">Native, scrollable within content</div>
+<div class="article-callout article-callout--tip">
+<h4>🌏 글로벌 도달</h4>
+<p>Pangle은 중국뿐만 아니라 전 세계에서 운영됩니다. 아시아, 라틴아메리카, 신흥 시장에서 모바일 사용자 획득 캠페인을 운영 중이라면, Pangle의 앱 간 네트워크가 150+ 국가에서 ByteDance의 독점 오디언스 데이터에 대한 접근을 제공합니다.</p>
 </div>
 </div>
-<div class="format-card">
-<span class="format-card__icon">☐</span>
-<div>
-<div class="format-card__name">Banner Ads</div>
-<div class="format-card__note">Static display, persistent position</div>
+
+<div class="article-section" id="ad-formats">
+<h2>📺 지원 광고 형식</h2>
+<p>Pangle은 인앱 광고 형식의 전체 스펙트럼을 지원합니다:</p>
+<div class="article-table-wrap">
+<table class="article-table">
+<thead><tr><th>형식</th><th>설명</th><th>특징</th></tr></thead>
+<tbody>
+<tr><td><strong>인피드 광고</strong></td><td>콘텐츠 내 네이티브 스크롤</td><td>자연스러운 통합</td></tr>
+<tr><td><strong>배너 광고</strong></td><td>정적 디스플레이, 고정 위치</td><td>지속적 노출</td></tr>
+<tr><td><strong>전면 광고</strong></td><td>전환 사이 풀스크린</td><td>높은 주의도</td></tr>
+<tr><td><strong>스플래시 광고</strong></td><td>앱 실행 시 풀스크린</td><td>첫 인상</td></tr>
+<tr><td><strong>리워드 동영상</strong></td><td>사용자 옵트인, 최고 완료율</td><td>게임/핀테크에 최적</td></tr>
+<tr><td><strong>풀스크린 동영상</strong></td><td>스킵 불가, 고임팩트</td><td>브랜드 인지도</td></tr>
+<tr><td><strong>몰입형 동영상</strong></td><td>인터랙티브, 고관여</td><td>높은 참여도</td></tr>
+</tbody>
+</table>
+</div>
+<div class="article-callout article-callout--info">
+<h4>🏆 리워드 동영상이 특히 강력합니다</h4>
+<p>사용자가 인앱 보상(코인, 생명, 프리미엄 콘텐츠)을 받기 위해 전체 광고를 시청하도록 옵트인합니다. 모바일 에코시스템에서 가장 높은 완료율과 가장 안전한 브랜드 참여를 생성합니다. 게임, 에듀테크, 구독 앱에 특히 가치 있습니다.</p>
 </div>
 </div>
-<div class="format-card">
-<span class="format-card__icon">■</span>
-<div>
-<div class="format-card__name">Interstitial Ads</div>
-<div class="format-card__note">Full-screen between transitions</div>
+
+<div class="article-section" id="pricing">
+<h2>💰 입찰 모델</h2>
+<div class="stats-grid">
+<div class="stat-card"><div class="stat-card__number">CPC</div><div class="stat-card__label">클릭당 비용</div></div>
+<div class="stat-card"><div class="stat-card__number">CPM</div><div class="stat-card__label">1,000회 노출당 비용</div></div>
+<div class="stat-card"><div class="stat-card__number">oCPC</div><div class="stat-card__label">최적화 CPC (전환 기반)</div></div>
+<div class="stat-card"><div class="stat-card__number">oCPM</div><div class="stat-card__label">최적화 CPM (전환 기반)</div></div>
+</div>
+<p><strong>oCPC 및 oCPM 모델</strong>은 퍼포먼스 광고주에게 특히 가치 있습니다. 머신러닝을 사용해 클릭이나 노출이 아닌 특정 전환 이벤트(앱 설치, 인앱 구매, 가입)를 향해 입찰 전달을 최적화합니다.</p>
+</div>
+
+<div class="article-section" id="getting-started">
+<h2>🚀 Pangle 시작하기</h2>
+<div class="article-callout article-callout--info">
+<h4>앱 개발자 (공급 사이드)</h4>
+<p>활성 앱이 있는 법인에 개방. 개인 개발자는 지원 불가. SDK를 통한 통합. <a href="https://www.pangle.cn" target="_blank" rel="noopener">pangle.cn</a>에서 등록.</p>
+</div>
+<div class="article-callout article-callout--tip">
+<h4>광고주 (수요 사이드)</h4>
+<p>Ocean Engine의 수요 사이드 플랫폼을 통해 Pangle의 인벤토리에 접근하거나, ByteDance의 글로벌 광고 네트워크를 통해 직접 접근할 수 있습니다.</p>
 </div>
 </div>
-<div class="format-card">
-<span class="format-card__icon">★</span>
-<div>
-<div class="format-card__name">Splash Ads</div>
-<div class="format-card__note">Full-screen on app launch</div>
-</div>
-</div>
-<div class="format-card">
-<span class="format-card__icon">⚡</span>
-<div>
-<div class="format-card__name">Rewarded Video</div>
-<div class="format-card__note">User opt-in, highest completion rate</div>
-</div>
-</div>
-<div class="format-card">
-<span class="format-card__icon">□</span>
-<div>
-<div class="format-card__name">Full-Screen Video</div>
-<div class="format-card__note">Non-skippable, high-impact</div>
-</div>
-</div>
-<div class="format-card">
-<span class="format-card__icon">☃</span>
-<div>
-<div class="format-card__name">Immersive Video</div>
-<div class="format-card__note">Interactive, high-engagement format</div>
-</div>
-</div>
-</div>
-<p>Pangle의 주요 목적은 글로벌 앱 설치와 참여 촉진입니다.</p>
-<h2 id="pricing">광고 형식</h2>
-<p>반면 Ocean Engine은 중국 시장 대상 브랜드 인지, 이커머스, 로컬 비즈니스 목표에 초점을 맞춥니다.</p>
-<div class="pricing-grid">
-<div class="pricing-chip">
-<span class="pricing-chip__model">CPC</span>
-<span class="pricing-chip__desc">클릭당 비용</span>
-</div>
-<div class="pricing-chip">
-<span class="pricing-chip__model">CPM</span>
-<span class="pricing-chip__desc">1,000회 노출당 비용</span>
-</div>
-<div class="pricing-chip">
-<span class="pricing-chip__model">oCPC</span>
-<span class="pricing-chip__desc">최적화된 CPC (전환 기반)</span>
-</div>
-<div class="pricing-chip">
-<span class="pricing-chip__model">oCPM</span>
-<span class="pricing-chip__desc">최적화된 CPM (전환 기반)</span>
-</div>
-</div>
-<p>서비스</p>
-<h2 id="getting-started"></h2>
-<h3>국제 앱 개발자를 위한 권장 전략</h3>
-<p>Pangle은 Ocean Engine과 동일한 ByteDance 인프라 위에 구축되었지만, 다른 사용자 기반과 광고 목표를 대상으로 합니다.</p>
-<h3>광고주용 (수요 사이드)</h3>
-<p>Pangle은 중국 외 사용자 기반을 확장하려는 앱 개발자와 브랜드에 가장 적합합니다.</p>
-<h2 id="implications">광고주를 위한 의미</h2>
-<p>브랜드가 중국 시장만을 타겟팅한다면 Ocean Engine으로 충분하며 Pangle은 불필요할 수 있습니다.</p>
+
+<div class="article-section" id="implications">
+<h2>📋 광고주를 위한 의미</h2>
+<p>Pangle은 서양 듀오폴리(Google/Meta) 밖에서 가장 크고 정교한 모바일 광고 에코시스템 중 하나를 대표합니다. 국제 광고주에게 뚜렷한 이점을 제공합니다:</p>
+<div class="article-callout article-callout--info">
+<h4>핵심 포인트</h4>
 <ul>
-<li>중국 디지털 광고의 상세 입찰 전략 가이드.</li>
-<li>ByteDance 광고 에코시스템을 이해하기 위한 TMG 종합 가이드.</li>
-<li>중국 1,000억 달러 규모 디지털 광고 시장으로의 단일 액세스 포인트. 국제 에이전시가 중국 플랫폼을 쉽게 탐색할 수 있도록 지원합니다.</li>
-<li>XHS는 중국 여성 소비자의 게이트웨이 역할을 하며, 많은 브랜드의 퍼널 톱 역할 수행</li>
-<li><strong>oCPC/oCPM 최적화</strong>는 실제 비즈니스 성과를 향해 입찰할 수 있게 해줍니다—표면적 수치가 아닌.</li>
-</ul>
-<div class="takeaways">
-<h2>주요 내용</h2>
-<ul>
-<li><strong>Pangle은 8억+ 사용자</strong>에게 도달하며, 일일 630억 건의 광고 요청과 1,100억 건의 노출을 제공합니다—글로벌 모바일 광고 네트워크 중 상위 3위 안에 듭니다.</li>
-<li><strong>7가지 광고 형식</strong>(피드, 배너, 전면, 스플래시, 리워드 동영상, 전체 화면, 몰입형)은 브랜드 인지도부터 직접 반응까지 모든 캠페인 목표를 포괄합니다.</li>
-<li><strong>oCPC 및 oCPM 입찰</strong>은 실제 전환을 향해 최적화되는 퍼포먼스 중심 캠페인을 가능하게 합니다.</li>
-<li><strong>리워드 동영상</strong>은 게임, 에듀테크, 구독 앱의 사용자 획득에 가장 적합합니다—최고 완료율, 완전 옵트인, 프리미엄 브랜드 안전 환경.</li>
-<li><strong>글로벌 도달</strong>은 중국 캠페인뿐만 아니라 신흥 시장을 타겟팅하는 모든 국제 모바일 마케팅 전략에 Pangle을 relevant하게 만듭니다.</li>
+<li><strong>8억+ 사용자</strong>에 630억 일일 광고 요청, 1,100억 일일 노출 — 글로벌 모바일 광고 네트워크 중 상위 3위.</li>
+<li><strong>7가지 광고 형식</strong>이 브랜드 인지도부터 직접 반응까지 모든 캠페인 목표를 포괄합니다.</li>
+<li><strong>oCPC/oCPM 입찰</strong>이 실제 전환을 향해 최적화합니다.</li>
+<li><strong>리워드 동영상</strong>이 가장 높은 완료율을 제공합니다.</li>
+<li><strong>150+ 국가</strong> 도달로 신흥 시장을 타겟팅하는 모든 국제 모바일 전략에 관련성 있습니다.</li>
 </ul>
 </div>
-<blockquote>
-      "Pangle is where ByteDance's recommendation engine meets global app inventory—a combination that gives advertisers audience intelligence and scale rarely matched elsewhere."
-    </blockquote>
-<p style="margin-top:2rem; color:var(--text-muted); font-size:.875rem; border-top:1px solid var(--border); padding-top:1.5rem;">
-<strong>출처:</strong> Pangle은 중국 국내 도달을 제공하지 않습니다——글로벌 도달은 중국 본토를 명시적으로 제외합니다.<br/>
-<strong>Prepared by:</strong> Tuyue Media Gateway — China's paid media partner for international brands.
-    </p>
+</div>
+
+<div class="article-section" id="next-steps">
+<h2>🚀 다음 단계</h2>
+<blockquote>"Pangle은 ByteDance의 추천 엔진이 글로벌 앱 인벤토리와 만나는 곳입니다. 광고주에게 다른 곳에서는 거의 볼 수 없는 오디언스 인텔리전스와 규모를 제공하는 조합입니다."</blockquote>
+<p>Pangle의 글로벌 도달은 중국 본토를 명시적으로 제외합니다. 동남아시아, 남아시아, 중동, 라틴아메리카에서 특히 강력한 입지를 갖고 있어, 중국 밖으로 도달 범위를 확장하려는 앱 개발자에게 이상적입니다.</p>
+<div class="article-cta">
+<h3>Pangle 광고를 탐색할 준비가 되셨나요?</h3>
+<p>TMG는 Ocean Engine과 ByteDance의 글로벌 광고 네트워크를 통해 국제 브랜드가 Pangle의 인벤토리에 접근하도록 지원합니다. 계정 설정부터 캠페인 최적화까지 — 복잡성을 처리합니다. <a href="/ko/contact/" class="btn btn--primary">전문가 상담 →</a></p>
+</div>
+</div>
+
 </article>
 <!-- Sidebar -->
 <aside class="article-sidebar">
 <nav class="toc">
 <div class="toc__title">이 기사에서</div>
 <ul class="toc__list">
-<li><a class="toc__link" href="#scale">Pangle의 규모</a></li>
-<li><a class="toc__link" href="#advertisers">광고주에게 Pangle이 제공하는 것</a></li>
-<li><a class="toc__link" href="#ad-formats">Pangle의 작동 방식</a></li>
-<li><a class="toc__link" href="#pricing">광고 형식</a></li>
-<li><a class="toc__link" href="#getting-started">Ocean Engine과의 차이점</a></li>
-<li><a class="toc__link" href="#implications">광고주를 위한 의미</a></li>
+<li><a class="toc__link" href="#scale">📊 Pangle의 규모</a></li>
+<li><a class="toc__link" href="#advertisers">🎯 광고주에게 Pangle이 제공하는 것</a></li>
+<li><a class="toc__link" href="#ad-formats">📺 지원 광고 형식</a></li>
+<li><a class="toc__link" href="#pricing">💰 입찰 모델</a></li>
+<li><a class="toc__link" href="#getting-started">🚀 Pangle 시작하기</a></li>
+<li><a class="toc__link" href="#implications">📋 광고주를 위한 의미</a></li>
+<li><a class="toc__link" href="#next-steps">🚀 다음 단계</a></li>
 </ul>
 </nav>
 <div class="sidebar-cta">
@@ -951,12 +935,12 @@
 <div class="related__grid">
 <a class="related-card" href="/ko/faqs#platform-ocean/">
 <div class="related-card__cat">Douyin / Ocean Engine</div>
-<div class="related-card__title">Douyin Advertising FAQ</div>
+<div class="related-card__title">Douyin 광고 FAQ</div>
 <p class="related-card__desc">일부 지역의 CPM은 주요 애드 네트워크보다 낮을 수 있지만, 도달 범위는 동등합니다.</p>
 </a>
 <a class="related-card" href="/ko/services/douyin/">
 <div class="related-card__cat">Douyin / Ocean Engine</div>
-<div class="related-card__title">Douyin 광고 — TMG Service</div>
+<div class="related-card__title">Douyin 광고 — TMG 서비스</div>
 <p class="related-card__desc">Pangle의 플랫폼 인터페이스는 주로 개발자용이며, 순수 브랜드 광고주에게는 직관적이지 않을 수 있습니다.</p>
 </a>
 <a class="related-card" href="/ko/geo/">
