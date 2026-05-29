@@ -557,6 +557,23 @@
       margin: var(--space-8) 0;
     }
 
+    /* ── Article Table ── */
+    .article-table {
+      width: 100%; border-collapse: collapse;
+      margin: var(--space-6) 0; font-size: var(--font-size-sm);
+    }
+    .article-table thead th {
+      background: rgba(201,168,76,.12); color: var(--color-accent);
+      font-weight: 700; text-align: left; padding: var(--space-3) var(--space-4);
+      border-bottom: 2px solid rgba(201,168,76,.3);
+    }
+    .article-table tbody td {
+      padding: var(--space-3) var(--space-4);
+      border-bottom: 1px solid var(--color-border);
+      color: var(--color-text-secondary);
+    }
+    .article-table tbody tr:hover { background: rgba(255,255,255,.02); }
+    .article-table tbody td:first-child { font-weight: 600; color: var(--color-text-primary); }
     /* ── Stats Grid (enhanced) ── */
     .stats-grid {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -793,13 +810,14 @@
 <section class="article-hero">
 <div class="container">
 <div class="article-meta">
-<span class="article-category"></span>
-<span class="article-date"></span>
-<span class="article-read-time">GEO 전략</span>
+<span class="article-category">더우인 광고</span>
+<span class="article-date">2026년 5월</span>
+<span class="article-read-time">약 10분 소요</span>
 </div>
 <h1 class="article-hero__title">더우인 엔터프라이즈 계정: 국제 브랜드를 위한 완벽 가이드</h1>
 <p class="article-hero__intro">
-</p>
+      브랜드가 중국 소비자에게 진지하게 도달하려면 Douyin은 필수입니다. Douyin 기업 계정(抖音企业号)은 플랫폼에서 효과적으로 경쟁하는 데 필요한 신뢰성, 도구, 데이터를 브랜드에 제공하는 공식 인증 비즈니스 프로필입니다.
+    </p>
 <div class="article-hero__author">
 <div class="article-hero__author-avatar">TMG</div>
 <div class="article-hero__author-info">
@@ -847,41 +865,39 @@
 <p>국제 브랜드에게 Blue V는 특히 가치 있습니다——미인증 계정에 신중한 중국 소비자와 외국 브랜드 사이에 존재하는 신뢰 격차를 메워줍니다.</p>
 <h2 id="tiers">4가지 계정 등급: 무료 체험부터 완전 인증까지</h2>
 <p>Douyin 기업 계정에는 4가지 등급이 있습니다. 브랜드는 단계별로 진급하며 각 등급마다 더 많은 기능을 잠금 해제할 수 있습니다. 한 계정은 항상 하나의 등급을 보유합니다.</p>
-<table class="tier-table">
+<table class="article-table">
 <thead>
 <tr>
-<th>Tier</th>
+<th>등급</th>
 <th>비용</th>
-<th>사용자가 브랜드를 검색할 때 풍부한 브랜드 경험 제공
-WeChat 내의 디지털 플래그십 스토어 역할</th>
-<th>레이어 3: 전환 및 리타겟팅</th>
+<th>요구사항</th>
+<th>주요 기능</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>딥 전환 컴포넌트(미니 프로그램, 매장 로케이터, 이커머스)
-경쟁 브랜드를 검색하는 사용자 포착을 위한 경쟁 리타겟팅</strong></td>
+<td><strong>Basic (기본)</strong></td>
 <td>무료</td>
-<td>WeChat Search: 8억+ 고가치 사용자</td>
-<td>WeChat Search는 모든 콘텐츠 유형을 연결하는 WeChat 생태계 전체의 검색 엔진입니다.</td>
+<td>핸드폰 번호로 간편 가입</td>
+<td>기본 프로필, 콘텐츠 업로드, 팔로우 기능</td>
 </tr>
 <tr>
-<td><strong>Basic</strong> (开通)</td>
+<td><strong>Verified (인증)</strong></td>
 <td>무료</td>
-<td>——</td>
-<td>월간 활성 유저  |  8억+(그리고 빠르게 성장 중)</td>
+<td>사업자등록증 + 법인 계좌 인증 또는 법정대표자 얼굴 스캔</td>
+<td>Blue V 배지, 오디언스 인사이트, Douyin Store 접근</td>
 </tr>
 <tr>
-<td><strong>Verified</strong> (验证 / "Plus")</td>
-<td>무료</td>
-<td>Business license + corporate bank account verification <em>or</em> legal representative face scan</td>
-<td>도시  |  1선 도시 집중도 높음</td>
-</tr>
-<tr>
-<td><strong>Certified</strong> (认证)</td>
+<td><strong>Certified (공식 인증)</strong></td>
 <td>유료</td>
-<td>웹페이지만 인덱싱하는 기존 검색 엔진과 달리, WeChat Search는 공식 계정, Mini Program, 동영상 계정, 브랜드 스토어를 한 곳에서 검색 가능하게 연결합니다.</td>
-<td>Super Brand Zone: 올인원 디지털 플래그십 스토어</td>
+<td>상표 등록증 또는 브랜드 권한 문서</td>
+<td>Super Brand Zone, 고급 데이터 분석, 우선 광고 배치</td>
+</tr>
+<tr>
+<td><strong>Enterprise (엔터프라이즈)</strong></td>
+<td>유료</td>
+<td>법인 자격 + 보증금</td>
+<td>풀퍼널 전환 도구, 경쟁 리타겟팅, 맞춤형 CRM 통합</td>
 </tr>
 </tbody>
 </table>
