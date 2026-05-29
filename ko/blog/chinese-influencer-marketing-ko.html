@@ -91,7 +91,7 @@
     body {
       font-family: var(--font-family);
       font-size: 1rem;
-      line-height: 1.7;
+      line-height: 1.8;
       color: var(--color-text-secondary);
       background: var(--color-bg);
       -webkit-font-smoothing: antialiased;
@@ -267,7 +267,6 @@
     .article-hero__author {
       display: flex; align-items: center; gap: 1rem;
       margin-top: 2rem; padding-top: 2rem;
-      border-top: 1px solid var(--color-border);
     }
     .article-hero__author-avatar {
       width: 48px; height: 48px; border-radius: 50%;
@@ -308,7 +307,6 @@
     .article-content h2 {
       font-size: var(--font-size-2xl); font-weight: 700;
       color: var(--color-text-primary); margin: var(--space-10) 0 var(--space-4);
-      padding-top: var(--space-6); border-top: 1px solid var(--color-border);
     }
     .article-content h2:first-child { margin-top: 0; padding-top: 0; border-top: none; }
     .article-content h3 {
@@ -548,10 +546,16 @@
       .article-sidebar { display: none; }
     }
     @media (max-width: 767px) {
-      .article-hero { padding: 90px 0 var(--space-10); }
+      .article-hero { padding: 90px 0 var(--space-10); background: linear-gradient(180deg, #0a1628 0%, #080c14 100%); }
       .feature-grid { grid-template-columns: 1fr; }
       .related__grid { grid-template-columns: 1fr; }
     }
+    }
+
+    /* ── Article Divider ── */
+    hr.article-divider, .article-content hr {
+      border: none; border-top: 1px solid rgba(255,255,255,0.08);
+      margin: var(--space-8) 0;
     }
 
     /* ── Scroll Reveal (disabled: content always visible) ── */
@@ -778,7 +782,6 @@
 <p>WeChat 사용자의 86%가 인플루언서 추천을 신뢰한다. 그 차이는 플랫폼 규모가 아닌 소셜 아키텍처에 있다. 서구 브랜드가 계속 중국을 오해하는 이유를 분석한다.</p>
 <p>중국 AI 광고 기술이 단순한 모방품이라고 생각하는 서구 마케터들에게 경고한다. AIM+는 Performance Max가 아직 하지 못하는 일을 해내고 있다.</p>
 
-<hr class="article-divider">
 <p>서구 마케터들은 인플루언서 마케팅을 미디어 구매처럼 취급한다. WeChat에서는 콘텐츠가 축적된다. 모든 협업이 영구적인 자산을 구축하며, 이곳에서 관계가 전환을 이끄는 엔진이 된다.</p>
 
 
@@ -819,7 +822,6 @@
 <p>서구 마케터들은 공식 계정, 커뮤니티, 기업 WeChat을 의미하는 '프라이빗 도메인'을 듣고 CRM이라고 생각한다. 이는 오해이다.</p>
 <p>CRM은 푸시 알림이다. 프라이빗 도메인은 지속적인 존재이다. 차이점을 보여주는 예시:</p>
 </div>
-<hr class="article-divider">
 <div class="article-section" id="why-this-matters">
 <h2>Douyin에서의 뷰티 브랜드:</h2>
 <div class="callout callout--accent">
@@ -852,7 +854,6 @@
 
 </div>
 </div>
-<hr class="article-divider">
 <p>서구 크리에이터 도구가 복제할 수 없는 것</p>
 </article>
     <!-- Sidebar -->

@@ -91,7 +91,7 @@
     body {
       font-family: var(--font-family);
       font-size: 1rem;
-      line-height: 1.7;
+      line-height: 1.8;
       color: var(--color-text-secondary);
       background: var(--color-bg);
       -webkit-font-smoothing: antialiased;
@@ -267,7 +267,6 @@
     .article-hero__author {
       display: flex; align-items: center; gap: 1rem;
       margin-top: 2rem; padding-top: 2rem;
-      border-top: 1px solid var(--color-border);
     }
     .article-hero__author-avatar {
       width: 48px; height: 48px; border-radius: 50%;
@@ -308,7 +307,6 @@
     .article-content h2 {
       font-size: var(--font-size-2xl); font-weight: 700;
       color: var(--color-text-primary); margin: var(--space-10) 0 var(--space-4);
-      padding-top: var(--space-6); border-top: 1px solid var(--color-border);
     }
     .article-content h2:first-child { margin-top: 0; padding-top: 0; border-top: none; }
     .article-content h3 {
@@ -556,9 +554,15 @@
       .article-sidebar { display: none; }
     }
     @media (max-width: 767px) {
-      .article-hero { padding: 90px 0 var(--space-10); }
+      .article-hero { padding: 90px 0 var(--space-10); background: linear-gradient(180deg, #0a1628 0%, #080c14 100%); }
       .feature-grid { grid-template-columns: 1fr; }
       .related__grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── Article Divider ── */
+    hr.article-divider, .article-content hr {
+      border: none; border-top: 1px solid rgba(255,255,255,0.08);
+      margin: var(--space-8) 0;
     }
 
     /* ── Scroll Reveal (disabled: content always visible) ── */
@@ -820,7 +824,6 @@ Super Brand Zone은 WeChat 내의 '디지털 플래그십 스토어'가 됨</p>
 <p>월간 활성 유저 | 8억+(그리고 빠르게 성장 중)</p>
 <p>연령 | 일반적인 검색 유저보다 젊음; 40세 이상 강력한 포지션</p>
 </div>
-<hr class="article-divider">
 <p>학력 | 대졸 이상, 높은 교육 수준</p>
 <div class="article-section" id="super-brand-zone-your-all-in-one-digital-flagship">
 <h2>도시 | 1선 도시 집중도 높음</h2>
@@ -897,7 +900,6 @@ CTR: 60%+(Super Brand Zone이 아닌 노출 대비 업계 평균 약 2.4%)</h2>
 
 </div>
 </div>
-<hr class="article-divider">
 <p>사례: Dulux(多乐士) — 온·오프라인 통합</p>
 </article>
     <!-- Sidebar -->

@@ -91,7 +91,7 @@
     body {
       font-family: var(--font-family);
       font-size: 1rem;
-      line-height: 1.7;
+      line-height: 1.8;
       color: var(--color-text-secondary);
       background: var(--color-bg);
       -webkit-font-smoothing: antialiased;
@@ -267,7 +267,6 @@
     .article-hero__author {
       display: flex; align-items: center; gap: 1rem;
       margin-top: 2rem; padding-top: 2rem;
-      border-top: 1px solid var(--color-border);
     }
     .article-hero__author-avatar {
       width: 48px; height: 48px; border-radius: 50%;
@@ -308,7 +307,6 @@
     .article-content h2 {
       font-size: var(--font-size-2xl); font-weight: 700;
       color: var(--color-text-primary); margin: var(--space-10) 0 var(--space-4);
-      padding-top: var(--space-6); border-top: 1px solid var(--color-border);
     }
     .article-content h2:first-child { margin-top: 0; padding-top: 0; border-top: none; }
     .article-content h3 {
@@ -548,10 +546,16 @@
       .article-sidebar { display: none; }
     }
     @media (max-width: 767px) {
-      .article-hero { padding: 90px 0 var(--space-10); }
+      .article-hero { padding: 90px 0 var(--space-10); background: linear-gradient(180deg, #0a1628 0%, #080c14 100%); }
       .feature-grid { grid-template-columns: 1fr; }
       .related__grid { grid-template-columns: 1fr; }
     }
+    }
+
+    /* ── Article Divider ── */
+    hr.article-divider, .article-content hr {
+      border: none; border-top: 1px solid rgba(255,255,255,0.08);
+      margin: var(--space-8) 0;
     }
 
     /* ── Scroll Reveal (disabled: content always visible) ── */
@@ -783,7 +787,6 @@
 <p><Tencentの「新電図」データが示すChannelsで勝っている家電カテゴリー：></p>
 <p>크리에이티브 품질, AIGC 도구, 입찰 전략, 캠페인 실행에 관한 20개 실전 질문. 🐧 Tencent Ads Marketing Academy 기반.</p>
 <p><生活家電  |  検討重視型 → 長尺フォーマットがデモに最適></p>
-<hr class="article-divider">
 <div class="article-section" id="why-this-matters">
 
 <div class="callout callout--accent">
@@ -826,7 +829,6 @@
 <p>WeChat에서는 한 번의 라이브스트림 구매가 고객 관계가 된다. Mini Shop 구매는 서드파티 물류 파일 속으로 사라지지 않는다. 프라이빗 도메인 리타게팅의 출발점이 된다.</p>
 <p>Channels에서 공기 청정기를 판매하는 가전 브랜드는 청정기 한 대만 파는 것이 아니다. 다음을 할 고객을 얻는다:</p>
 </div>
-<hr class="article-divider">
 <p>공식 계정을 통해 유지보수 알림을 받음
 기업 WeChat을 통해 필터 교체 제안을 받음
 공기질에 대해 논의하는 500명의 소유자 커뮤니티에 참여
