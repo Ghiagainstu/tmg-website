@@ -560,6 +560,28 @@
       .related__grid { grid-template-columns: 1fr; }
     }
 
+    /* ── Article Table ── */
+    .article-table {
+      width: 100%; border-collapse: collapse;
+      margin: var(--space-6) 0; font-size: var(--font-size-sm);
+    }
+    .article-table thead th {
+      background: rgba(201,168,76,.12); color: var(--color-accent);
+      font-weight: 700; text-align: left; padding: var(--space-3) var(--space-4);
+      border-bottom: 2px solid rgba(201,168,76,.3);
+    }
+    .article-table tbody td {
+      padding: var(--space-3) var(--space-4);
+      border-bottom: 1px solid var(--color-border);
+      color: var(--color-text-secondary);
+    }
+    .article-table tbody tr:hover {
+      background: rgba(255,255,255,.02);
+    }
+    .article-table tbody td:first-child {
+      font-weight: 600; color: var(--color-text-primary);
+    }
+
     /* ── Article Divider ── */
     hr.article-divider, .article-content hr {
       border: none; border-top: 1px solid rgba(255,255,255,0.08);
@@ -816,15 +838,24 @@
 <h2 id="categories">실제로 팔리고 있는 것</h2>
 <p>Tencent의 '신전도(新電圖)' 데이터가 보여주는 Channels에서 승리하는 가전 카테고리:</p>
 
-<table class="article-table">
-<thead><tr><th>카테고리</th><th>Channels 이점</th></tr></thead>
-<tbody>
-<tr><td>스마트홈</td><td>높은 신뢰 요구 → Channels의 소셜 프루프 이점</td></tr>
-<tr><td>생활가전</td><td>고려 집중형 → 긴 포맷이 데모에 최적</td></tr>
-<tr><td>퍼스널 일렉트로닉스</td><td>높은 객단가 → 신뢰 크리에이터 추천이 전환 주도</td></tr>
-<tr><td>키친 테크</td><td>시연 효과 → 긴 콘텐츠로 승부</td></tr>
-</tbody>
-</table>
+<div class="feature-grid">
+<div class="feature-card">
+<div class="feature-card__title">🏠 스마트홈</div>
+<div class="feature-card__desc">높은 신뢰 요구 → Channels의 소셜 프루프 이점. 스마트 기기는 설치·연동·사용법 설명이 필수적이라 긴 포맷이 유리합니다.</div>
+</div>
+<div class="feature-card">
+<div class="feature-card__title">🧹 생활가전</div>
+<div class="feature-card__desc">고려 집중형 → 긴 포맷이 데모에 최적. 공기청정기·로봇청소기 등은 실제 사용 장면 시연이 구매 결정을 좌우합니다.</div>
+</div>
+<div class="feature-card">
+<div class="feature-card__title">📱 퍼스널 일렉트로닉스</div>
+<div class="feature-card__desc">높은 객단가 → 신뢰 크리에이터 추천이 전환 주도. 프리미엄 이어폰·스마트워치는 신뢰할 수 있는 리뷰가 필수입니다.</div>
+</div>
+<div class="feature-card">
+<div class="feature-card__title">🍳 키친 테크</div>
+<div class="feature-card__desc">시연 효과 → 긴 콘텐츠로 승부. 조리기구·주방가전은 실제 요리 과정을 보여주는 라이브가 전환율이 가장 높습니다.</div>
+</div>
+</div>
 
 <p>패턴은 명확하다: 신뢰가 중요한 카테고리일수록 Channels가 압도적으로 유리해진다.</p>
 
