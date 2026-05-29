@@ -557,6 +557,28 @@
       .related__grid { grid-template-columns: 1fr; }
     }
 
+    /* ── Stats Grid ── */
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-4); margin: var(--space-6) 0;
+    }
+    .stat-card {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5);
+      text-align: center; transition: border-color var(--transition-base);
+    }
+    .stat-card:hover { border-color: rgba(201,168,76,.4); }
+    .stat-card__number {
+      font-size: var(--font-size-3xl); font-weight: 800;
+      color: var(--color-accent); margin-bottom: var(--space-2);
+    }
+    .stat-card__label {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+    }
+    @media (max-width: 767px) {
+      .stats-grid { grid-template-columns: 1fr; }
+    }
+
     /* ── Scroll Reveal (disabled: content always visible) ── */
     .reveal {
       opacity: 1; transform: none;
@@ -767,7 +789,7 @@
         <div class="article-hero__author-avatar">TMG</div>
         <div class="article-hero__author-info">
           <div class="article-hero__author-name">Tuyue Media Gateway</div>
-          <div class="article-hero__author-role">ペイドメディアチーム · 上海</div>
+          <div class="article-hero__author-role">유료 미디어 팀 · 상하이</div>
         </div>
       </div>
   </div>
@@ -796,15 +818,45 @@
 </ul>
 
 <h2 id="numbers">아무도 말하지 않는 숫자</h2>
-<p>2025년 베이징에서 열린 Tencent AI 광고 발전 포럼에서, 회사는 첫 번째 "AI+광고" 산업 보고서를 발표했다. 주요 발견 사항:</p>
-<ul>
-<li>AIM+를 도입한 광고주들은 수동 입찰 대비 <strong>40%~60%의 전환율 향상</strong>을 보고</li>
-<li>AI 생성 크리에이티브 변형은 정적 광고 대비 <strong>2.3배의 참여율</strong>을 기록</li>
-<li>오디언스 디스커버리 모델이 광고 인터랙션뿐 아니라 소셜 행동 패턴을 분석해 기존에는 도달 불가능했던 고가치 세그먼트를 발굴</li>
-</ul>
+<p>2025년 베이징에서 열린 Tencent AI 광고 발전 포럼에서, 회사는 첫 번째 "AI+광고" 산업 보고서를 발표했다.</p>
+
+<div class="stats-grid">
+<div class="stat-card">
+<div class="stat-card__number">40~60%</div>
+<div class="stat-card__label">전환율 향상 (수동 입찰 대비)</div>
+</div>
+<div class="stat-card">
+<div class="stat-card__number">2.3×</div>
+<div class="stat-card__label">참여율 (정적 광고 대비)</div>
+</div>
+<div class="stat-card">
+<div class="stat-card__number">풀퍼널</div>
+<div class="stat-card__label">어트리뷰션 (첫 노출→구매→충성)</div>
+</div>
+</div>
+
 <p>이는 Tencent의 내부 데이터가 아니다. 가전, 뷰티, 식음료 분야의 서드파티 이커머스 클라이언트의 수치다.</p>
 
 <h2 id="features">AIM+의 실제 기능</h2>
+
+<div class="feature-grid">
+<div class="feature-card">
+<div class="feature-card__num">1</div>
+<div class="feature-card__title">AI 기반 오디언스 디스커버리</div>
+<div class="feature-card__desc">WeChat, Tencent Video, 뉴스 피드 전반의 콘텐츠 소비 패턴과 소셜 그래프를 분석해 초정밀 세그먼트를 실시간으로 생성합니다.</div>
+</div>
+<div class="feature-card">
+<div class="feature-card__num">2</div>
+<div class="feature-card__title">동적 크리에이티브 어셈블리</div>
+<div class="feature-card__desc">사용자 인구통계, 시간대, 디바이스, 고객 여정 위치에 기반해 수천 개의 크리에이티브 조합을 자동 생성하고 우선순위를 부여합니다.</div>
+</div>
+<div class="feature-card">
+<div class="feature-card__num">3</div>
+<div class="feature-card__title">실시간 입찰 인텔리전스</div>
+<div class="feature-card__desc">노출 단위로 전환 확률, 고객 생애 가치, 브랜드 자산 영향을 예측하여 최적 입찰가를 결정합니다.</div>
+</div>
+</div>
+
 <h3>AI 기반 오디언스 디스커버리</h3>
 <p>이는 룩어라이크 모델링의 초강화판이라 할 수 있다. 시스템이 분석하는 것:</p>
 <ul>
