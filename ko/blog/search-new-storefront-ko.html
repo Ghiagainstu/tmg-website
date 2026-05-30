@@ -582,6 +582,42 @@
     }
     .article-table tbody tr:hover { background: rgba(255,255,255,.02); }
     .article-table tbody td:first-child { font-weight: 600; color: var(--color-text-primary); }
+    /* ── Stats Grid ── */
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: var(--space-4); margin: var(--space-6) 0;
+    }
+    .stat-card {
+      background: linear-gradient(135deg, rgba(201,168,76,.08) 0%, rgba(45,107,228,.06) 100%);
+      border: 1px solid rgba(201,168,76,.2);
+      border-radius: var(--radius-lg); padding: var(--space-5) var(--space-4);
+      text-align: center; transition: all var(--transition-base);
+      position: relative; overflow: hidden;
+    }
+    .stat-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
+      opacity: 0.6;
+    }
+    .stat-card:hover {
+      border-color: var(--color-accent);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(201,168,76,.15);
+    }
+    .stat-card__number {
+      font-size: var(--font-size-4xl); font-weight: 800;
+      background: linear-gradient(135deg, #c9a84c 0%, #e8c87a 50%, #c9a84c 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text; margin-bottom: var(--space-2);
+      line-height: 1.1;
+    }
+    .stat-card__label {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+      font-weight: 500; letter-spacing: 0.02em;
+    }
+    @media (max-width: 767px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    }
     /* ── Scroll Reveal (disabled: content always visible) ── */
     .reveal {
       opacity: 1; transform: none;
@@ -829,18 +865,23 @@
 <h2 id="super-brand-zone">🏪 Super Brand Zone: 올인원 디지털 플래그십</h2>
 <p>Super Brand Zone(超级品专)은 사용자가 WeChat에서 브랜드명을 검색할 때 나타나는 프리미엄 맞춤형 검색 결과입니다. WeChat 내의 디지털 쇼윈도로서 풍부하고 맞춤 설정 가능한 랜딩 경험을 제공합니다.</p>
 
+<div class="article-callout article-callout--info">
+<h4>📊 Super Brand Zone 핵심 수치</h4>
 <div class="stats-grid">
 <div class="stat-card"><div class="stat-card__number">100%</div><div class="stat-card__label">브랜드 검색 트래픽 포착 (PVR)</div></div>
 <div class="stat-card"><div class="stat-card__number">60%+</div><div class="stat-card__label">CTR (업계 평균 2.4%)</div></div>
 <div class="stat-card"><div class="stat-card__number">8억+</div><div class="stat-card__label">WeChat Search 사용자</div></div>
 </div>
+</div>
 
-<p><strong>Super Brand Zone의 핵심 기능:</strong></p>
+<div class="article-callout article-callout--tip">
+<h4>🚀 Super Brand Zone의 핵심 기능</h4>
 <ul>
 <li>브랜드 검색 트래픽 100% 포착 (PVR = 100%)</li>
 <li>모든 브랜드 터치포인트 링크: 미니 프로그램 스토어, Video Account, Official Account, 매장 로케이터</li>
 <li>풍부한 비주얼, 동영상 하이라이트, 다이렉트 CTA 버튼 제공</li>
 </ul>
+</div>
 
 <h2 id="search-entry">🔎 검색 진입점: 사용자가 검색하는 모든 곳</h2>
 <p>WeChat 사용자는 모든 곳에서 검색합니다. Super Brand Zone은 모든 진입점을 커버합니다.</p>
@@ -859,17 +900,20 @@
 
 <h2 id="case-study">📋 사례: Nippon Paint(立邦) — 프리미엄 페인트 브랜드</h2>
 
-<div class="callout">
-<div class="callout__label">과제</div>
+<div class="article-callout article-callout--warning">
+<h4>🎯 과제</h4>
 <p>브랜드의 하이엔드 포지셔닝에 부합하는 프리미엄 디지털 아이덴티티 구축.</p>
 </div>
 
 <p><strong>솔루션:</strong> 프리미엄 동영상 쇼케이스 + 다이렉트 미니 프로그램 점프 기능을 갖춘 Super Brand Zone을 구축했습니다.</p>
 
+<div class="article-callout article-callout--info">
+<h4>📊 Nippon Paint 결과</h4>
 <div class="stats-grid">
 <div class="stat-card"><div class="stat-card__number">100%</div><div class="stat-card__label">PVR 페이지뷰 도달률</div></div>
 <div class="stat-card"><div class="stat-card__number">60%+</div><div class="stat-card__label">CTR 클릭률</div></div>
 <div class="stat-card"><div class="stat-card__number">25x</div><div class="stat-card__label">업계 평균(2.4%) 대비</div></div>
+</div>
 </div>
 
 <h2 id="dulux">📋 사례: Dulux(多乐士) — 온·오프라인 통합</h2>
