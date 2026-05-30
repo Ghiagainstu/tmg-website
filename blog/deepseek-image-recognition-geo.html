@@ -686,17 +686,22 @@
 <div class="container">
 <div class="header__inner">
 <a class="header__logo" href="/">
-<svg class="header__logo-icon" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<svg class="header__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <defs>
-<lineargradient id="moonGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+<linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
 <stop offset="0%" stop-color="#c9a84c"></stop>
 <stop offset="100%" stop-color="#e8c87a"></stop>
-</lineargradient>
-<clippath id="moonClip">
+</linearGradient>
+<clipPath id="moonClip">
 <circle cx="30" cy="24" r="16"></circle>
-</clippath>
+</clipPath>
 </defs>
-<circle cx="30" cy="24" fill="url(#moonGrad)" r="16"></circle>
+<circle cx="30" cy="24" r="16" fill="url(#moonGrad)"></circle>
+<circle cx="37" cy="20" r="13" fill="#080c14"></circle>
+<text x="4" y="32" font-family="Inter, -apple-system, sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-0.8">TMG</text>
+</svg>
+<span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
+</a>
 <circle cx="37" cy="20" fill="#080c14" r="13"></circle>
 <text fill="#f0f4ff" font-family="Inter, -apple-system, sans-serif" font-size="19" font-weight="800" letter-spacing="-0.8" x="4" y="32">TMG</text>
 </svg>
