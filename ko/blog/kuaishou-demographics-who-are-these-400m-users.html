@@ -203,8 +203,24 @@
       background: var(--color-accent);
       transition: width .15s;
     }
-    .header__nav-link:hover::after,
     .header__nav-link.active::after { width: 100%; }
+    .nav-badge {
+      display: inline-block;
+      margin-left: 5px;
+      padding: 1px 5px;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #080c14;
+      background: var(--color-accent);
+      border-radius: 3px;
+      vertical-align: baseline;
+      white-space: nowrap;
+      animation: badgePulse 2s ease-in-out infinite;
+    }
+    @keyframes badgePulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.65; } }
     .header__cta { display: none; }
     .header__toggle {
       display: none; flex-direction: column; justify-content: center;
