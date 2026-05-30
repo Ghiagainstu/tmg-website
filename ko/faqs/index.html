@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="ko">
 <head>
@@ -61,6 +61,17 @@
     .header__nav{display:flex;gap:2rem}
     .header__nav-link{font-size:.875rem;font-weight:500;color:var(--c-t2);transition:color .15s;text-decoration:none !important; display: inline-flex; align-items: center; position: relative;}
     .header__nav-link:hover{color:var(--c-t1);text-decoration:none}
+    .header__nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--color-accent);
+      transition: width .15s;
+    }
+    .header__nav-link.active::after { width: 100%; }
     .header__nav-link--active{color:var(--c-accent-light)}
     .header__nav-link::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--c-accent);transition:width .15s}
     .header__nav-link:hover::after,.header__nav-link--active::after{width:100%}
