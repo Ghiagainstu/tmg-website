@@ -406,6 +406,21 @@
     }
     .toc__link:hover { color: var(--color-text-primary); text-decoration: none !important; }
 
+    .article-section { margin-bottom:3rem; }
+    .article-section h2 { font-size:1.5rem; font-weight:700; margin-bottom:1rem; color:#f0f4ff; }
+    .article-section h3 { font-size:1.125rem; font-weight:600; margin-top:1.5rem; margin-bottom:0.75rem; color:#f0f4ff; }
+    .article-section p { margin-bottom:1rem; line-height:1.7; }
+    .article-section ul { margin-bottom:1rem; padding-left:1.5rem; }
+    .article-section li { margin-bottom:0.5rem; line-height:1.6; }
+
+    .article-callout { border-radius:0.75rem; padding:1.5rem; margin:1.5rem 0; border-left:4px solid; }
+    .article-callout--info { background:rgba(45,107,228,0.08); border-color:#2d6be4; }
+    .article-callout--tip { background:rgba(201,168,76,0.08); border-color:#c9a84c; }
+    .article-callout--warning { background:rgba(239,68,68,0.08); border-color:#ef4444; }
+    .article-callout h4 { font-size:1.125rem; font-weight:600; margin-bottom:0.75rem; color:#f0f4ff; }
+    .article-callout p { margin-bottom:0.5rem; }
+    .article-callout ul { margin-bottom:0; padding-left:1.25rem; }
+
     .sidebar-cta {
       margin-top: var(--space-6); background: var(--color-bg-card);
       border: 1px solid var(--color-border); border-radius: var(--radius-lg);
@@ -829,17 +844,16 @@
 </div>
 </div>
 <div class="article-section" id="thinking-with-visual-primitives">
-<h2>기존 멀티모달 모델은 '지시적 간극'에 어려움을 겪는다 — 추론 체인에서 '왼쪽에 있는 큰 것'과 같은 모호한 언어를 사용한다. DeepSeek는 시각 요소를 '사고의 기본 단위'로서 추론 체인에 직접 통합한다.</h2>
-<p>DeepSeek's approach is notably different from other multimodal models. 기술 보고서에 따르면, the team developed a framework called <strong>"Thinking with Visual Primitives"</strong>.</p>
+<h2>🔬 기술: 시각 프리미티브로의 사고</h2>
+<p>기존 멀티모달 모델은 '지시적 간극'에 어려움을 겪는다 — 추론 체인에서 '왼쪽에 있는 큰 것'과 같은 모호한 언어를 사용한다. DeepSeek는 시각 요소를 '사고의 기본 단위'로서 추론 체인에 직접 통합한다.</p>
+<p>DeepSeek의 접근 방식은 다른 멀티모달 모델과显著하게 다릅니다. 기술 보고서에 따르면, 팀은 <strong>"시각 프리미티브로의 사고"</strong>라는 프레임워크를 개발했습니다.</p>
 <p>800x800 이미지당 약 90토큰 (GPT/Claude 870~1100 대비) — 비전 작업에서 10배 효율적</p>
-<p>DeepSeek's solution is elegant: it incorporates <strong>visual elements directly into its reasoning chain</strong>. Points, bounding boxes, and spatial coordinates become the "basic units of thought" — like a cybernetic finger pointing at exactly what it's analyzing.</p>
-<div class="callout">
-<div class="callout__label">🔬 How It Works</div>
+<p>DeepSeek의 해결책은 우아합니다: <strong>시각적 요소를 추론 체인에 직접 통합</strong>합니다. 점, 바운딩 박스, 공간 좌표가 "사고의 기본 단위"가 됩니다 — 정확히 분석하고 있는 것을指向하는 것처럼.</p>
+<div class="article-callout article-callout--info">
+<h4>🔬 작동 방식</h4>
 <ol>
-<li>1. 이미지 대응 GEO</li>
-<li>AI 검색 최적화 시, 이미지가 어떻게 해석될지를 고려해야 한다. 모든 주요 이미지에 설명 캡션을 추가하라. 적절한 alt 텍스트를 사용하라.</li>
-<li>2. 비주얼 검색 쿼리의 도래</li>
-<li>DeepSeek의 이미지 인식은 새로운 유형의 검색을 가능하게 한다: 비주얼 쿼리. 사용자는 제품 사진을 찍어 DeepSeek에 질문할 수 있다.</li>
+<li>이미지 대응 GEO — AI 검색 최적화 시, 이미지가 어떻게 해석될지를 고려해야 합니다. 모든 주요 이미지에 설명 캡션을 추가하세요. 적절한 alt 텍스트를 사용하세요.</li>
+<li>비주얼 검색 쿼리의 도래 — DeepSeek의 이미지 인식은 새로운 유형의 검색을 가능하게 합니다: 비주얼 쿼리. 사용자는 제품 사진을 찍어 DeepSeek에 질문할 수 있습니다.</li>
 </ol>
 </div>
 <p>3. 텍스트 + 이미지 = AI 신뢰도 향상</p>
@@ -850,10 +864,13 @@
 </ul>
 </div>
 <div class="article-section" id="what-this-means-for-content-strategy">
-<h2>블로그 URL: https://www.tuyuesouxin.cn/blog/deepseek-image-recognition-geo/</h2>
-<h3>출처: IT之家 DeepSeek 기사 (WeChat, 2026년 5월 9일)</h3>
-<p>DeepSeek는 텍스트 콘텐츠와 비주얼 콘텐츠를 상호 참조할 수 있다. 관련성 있고 잘 구조화된 이미지가 있는 블로그 게시물은 더 높은 가중치를 받는다.</p>
-<p><strong>실행:</strong> 모든 주요 이미지에 설명 캡션을 추가하세요. 적절한 alt 텍스트를 사용하세요. AI가 쉽게 파싱할 수 있도록 비주얼 콘텐츠를 구조화하세요.</p>
+<h2>📋 콘텐츠 전략에这意味着什么</h2>
+<h3>1. 이미지 대응 GEO</h3>
+<p>AI 검색 최적화 시, 이미지가 어떻게 해석될지를 고려해야 합니다. 모든 주요 이미지에 설명 캡션을 추가하세요. 적절한 alt 텍스트를 사용하세요. AI가 쉽게 파싱할 수 있도록 비주얼 콘텐츠를 구조화하세요.</p>
+<h3>2. 비주얼 검색 쿼리의 도래</h3>
+<p>DeepSeek의 이미지 인식은 새로운 유형의 검색을 가능하게 합니다: 비주얼 쿼리. 사용자는 제품 사진을 찍어 DeepSeek에 질문할 수 있습니다. "이 신발은 어디서 사나요?" "이 라벨에 무엇이 쓰여 있나요?"</p>
+<h3>3. 텍스트 + 이미지 = 더 강력한 AI 신뢰</h3>
+<p>DeepSeek는 텍스트 콘텐츠와 비주얼 콘텐츠를 상호 참조할 수 있습니다. 관련성 있고 잘 구조화된 이미지가 있는 블로그 게시물은 더 높은 가중치를 받습니다.</p>
 <ul class="scenario-list">
 <li>
 <div class="scenario-list__icon">📸</div>
