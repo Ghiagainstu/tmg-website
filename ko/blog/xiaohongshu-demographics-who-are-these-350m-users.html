@@ -42,6 +42,35 @@
   .skip-link{position:absolute;top:-100px;left:0;background:var(--color-accent);color:var(--color-bg);padding:8px 16px;z-index:10000;text-decoration:none;transition:top 0.3s;font-weight:600;}
   .skip-link:focus{top:0;}
 
+  .article-table { width:100%; border-collapse:separate; border-spacing:0; border-radius:0.75rem; overflow:hidden; border:1px solid #1e2d45; margin:1.5rem 0; font-size:0.875rem; }
+  .article-table th { background:#0d1220; color:#c9a84c; font-weight:700; padding:1rem 1.25rem; text-align:left; border-bottom:2px solid #1e2d45; }
+  .article-table td { padding:0.75rem 1.25rem; border-bottom:1px solid #1e2d45; color:#b3c0d8; }
+  .article-table tr:last-child td { border-bottom:none; }
+  .article-table tr:hover td { background:rgba(45,107,228,0.05); }
+
+  .article-section { margin-bottom:3rem; }
+  .article-section h2 { font-size:1.5rem; font-weight:700; margin-bottom:1rem; color:#f0f4ff; }
+  .article-section h3 { font-size:1.125rem; font-weight:600; margin-top:1.5rem; margin-bottom:0.75rem; color:#f0f4ff; }
+  .article-section p { margin-bottom:1rem; line-height:1.7; }
+  .article-section ul { margin-bottom:1rem; padding-left:1.5rem; }
+  .article-section li { margin-bottom:0.5rem; line-height:1.6; }
+
+  .article-callout { border-radius:0.75rem; padding:1.5rem; margin:1.5rem 0; border-left:4px solid; }
+  .article-callout--info { background:rgba(45,107,228,0.08); border-color:#2d6be4; }
+  .article-callout--tip { background:rgba(201,168,76,0.08); border-color:#c9a84c; }
+  .article-callout--warning { background:rgba(239,68,68,0.08); border-color:#ef4444; }
+  .article-callout h4 { font-size:1.125rem; font-weight:600; margin-bottom:0.75rem; color:#f0f4ff; }
+  .article-callout p { margin-bottom:0.5rem; }
+  .article-callout ul { margin-bottom:0; padding-left:1.25rem; }
+
+  .article-cta { background:#111827; border:1px solid #1e2d45; border-radius:0.75rem; padding:2rem; text-align:center; margin-top:2rem; }
+  .article-cta h3 { font-size:1.25rem; margin-bottom:0.75rem; }
+
+  .stats-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:1rem; margin:1.5rem 0; }
+  .stat-card { background:#111827; border:1px solid #1e2d45; border-radius:0.75rem; padding:1.5rem; text-align:center; }
+  .stat-card__number { font-size:2rem; font-weight:800; color:#c9a84c; line-height:1; margin-bottom:0.5rem; }
+  .stat-card__label { font-size:0.875rem; color:#b3c0d8; }
+
     :root {
       --color-bg: #080c14;
       --color-bg-alt: #0d1220;
@@ -783,303 +812,202 @@
 <main id="main-content" class="article-body">
 <div class="container">
 <article class="article-content reveal">
-<!-- Section 1: Why XHS Demographics Matter -->
-<div class="article-section" id="why-xhs-demographics-matter">
-<h2>2026년 샤오홍슈(RED) 인구통계가 중요한 이유</h2>
-<p>국제 브랜드는 샤오홍슈가 여성 소비자에 대한 중국 시장 진입의 주요 채널임을 고려해야 합니다.</p>
-<p>그렇지 않다.</p>
-<p>18~35세 사용자층에 초점을 맞추고 연령대별 크리에이티브를 전개해 참여를 극대화합니다.</p>
-<div class="callout callout--accent">
-<div class="callout__label">25~35세 세그먼트는 가장 강력한 구매력을 보이며, 주문당 평균 구매 금액이 가장 높습니다.</div>
+
+<p>중국 시장을 이해하기 위한 TMG 종합 가이드. 샤오홍슈(RED)의 2026년 최신 인구통계——연령, 도시 등급, 성별, 소비 행동, 그리고 광고에 미치는 시사점.</p>
+
+<div class="article-callout article-callout--info">
+<h4>📊 핵심 수치</h4>
 <ul>
-<li><strong>350M+</strong> 여성 소비자를 타겟팅하는 브랜드는 Douyin으로 이동하기 전에 XHS를 우선해야 함</li>
-<li><strong>73%</strong> 18~25세 사용자는 발견 단계에 최적, 26~35세는 전환 단계에 최적</li>
-<li><strong>700万+</strong> 롱테일 검색어 전년 대비 52% 증가——사용자 쿼리가 더욱 상세해짐</li>
-<li><strong>170M</strong> XHS 검색은 52%의 사례에서 구매 전 철저한 리서치를 나타냄</li>
-<li><strong>3000+</strong> 교육 단계 콘텐츠는 가장 높은 저장률, 전환 콘텐츠는 가장 높은 클릭률</li>
+<li><strong>3.5억+</strong> MAU (월간 활성 사용자)</li>
+<li><strong>73%</strong> 월간 검색 침투율</li>
+<li><strong>90%</strong> 적극적 검색 (단순 탐색이 아닌)</li>
+<li><strong>1.2-1.9시간</strong> 1일 평균 사용 시간</li>
+<li><strong>52%</strong> 롱테일 검색 성장률 (YoY)</li>
 </ul>
 </div>
-<p>상위 계층 도시는 즉각적 구매력을 제공하며, 하위 계층 도시는 성장 시장 기회를 나타냅니다.</p>
+
+<div class="article-section" id="why-it-matters">
+<h2>🎯 왜 샤오홍슈 인구통계가 중요한가</h2>
+<p>대부분의 국제 브랜드가 중국 SNS를 생각할 때 WeChat, Douyin, Weibo를 떠올립니다. 샤오홍슈는 후보에도 오르지 않는 경우가 많습니다. 실제 데이터를 보기 전까지는요.</p>
+<p>샤오홍슈는 단순한 SNS가 아닙니다——중국에서 가장 빠르게 성장하는 <strong>라이프스타일 검색 엔진</strong>입니다. 사용자는 여기서 제품을 발견할 뿐만 아니라, 구매 전에 적극적으로 리서치합니다.</p>
 </div>
-<!-- Section 2: Scale Snapshot -->
-<div class="article-section" id="scale-snapshot">
-<h2>성별 분포</h2>
-<p>진정한 사용자 생성 콘텐츠(种草)가 이 커뮤니티에서 최고의 성과를 내는 접근법입니다.</p>
-<div class="feature-grid">
-<div class="feature-card">
-<div class="stat-number">350M+</div>
-<div class="stat-label">월간 활성 사용자</div>
+
+<div class="article-section" id="scale">
+<h2>📈 규모: 3.5억+ MAU와 성장 중</h2>
+<div class="stats-grid">
+<div class="stat-card"><div class="stat-card__number">3.5억+</div><div class="stat-card__label">월간 활성 사용자</div></div>
+<div class="stat-card"><div class="stat-card__number">2억+</div><div class="stat-card__label">일일 활성 사용자</div></div>
+<div class="stat-card"><div class="stat-card__number">7억+</div><div class="stat-card__label">월간 검색 사용자</div></div>
 </div>
-<div class="feature-card">
-<div class="stat-number">700万+</div>
-<div class="stat-label">Daily 신규 Posts</div>
+<p>이 숫자는 중국 전체 인구의 약 25%에 해당합니다. 더 중요한 것은——이 사용자들은 단순한 스크롤러가 아니라 <strong>적극적인 구매 의사결정자</strong>입니다.</p>
 </div>
-<div class="feature-card">
-<div class="stat-number">3000+</div>
-<div class="stat-label">Niche Communities</div>
-</div>
-</div>
-<p>우리는 모든 주요 중국 플랫폼에서 유료 미디어를 관리해 왔습니다——Baidu, Douyin, WeChat, Bilibili, 그리고 이제 Xiaohongshu (XHS/RED)에서도. 하지만 대부분의 국제 브랜드가 잘못 이해하는 것은：그들이 XHS를 단순한 소셜 미디어 플랫폼으로 취급한다는 것입니다.</p>
-<p>TMG의 중국 소셜 커머스와 소비자 리서치 서비스를 살펴보세요.</p>
-<div class="callout">
-<div class="callout__label">Z세대(18~25세)는 가장 참여도 높은 세그먼트로, 매일 평균 72분을 플랫폼에서 보냅니다.</div>
-<p>TMG가 국제 브랜드의 중국 디지털 마케팅 캠페인을 성공으로 이끄는 방법.</p>
-</div>
-</div>
-<!-- Section 3: 연령 분포 -->
+
 <div class="article-section" id="age-distribution">
-<h2>연령대 분석</h2>
-<p>중국 시장을 이해하기 위한 TMG 종합 가이드.</p>
+<h2>🎂 연령대 분석</h2>
+<p>여기가 샤오홍슈가 Bilibili의 Z세대 지배와 다른 점입니다. 샤오홍슈는 <strong>더 넓은 연령 분포</strong>를 가지며, 원래의 90허우/95허우 핵심에서 확장되고 있습니다.</p>
+
 <table class="article-table">
-<thead>
-<tr>
-
-<th>WeChat 미니게임 PC판이 4억 일일 노출, 80% 차일드 리텐션을 기록. 크로스 플랫폼 캐주얼 게임 모델이 중국 밖에서도 의미를 갖는 이유.</th>
-<th>Tuyue Media Gateway - 중국 디지털 광고 시장 액세스 포인트</th>
-</tr>
-</thead>
+<thead><tr><th>연령대</th><th style="color:var(--color-accent)">비율</th><th>특징</th></tr></thead>
 <tbody>
-<tr>
-<td><strong></strong></td>
-<td>~13%</td>
-
-</tr>
-<tr>
-<td><strong>중국에서 모바일과 PC 게임의 경계가 사라지고 있다. WeChat의 미니게임 생태계가 데스크톱으로 확장되며 4억 일일 노출과 기존 모바일 채널을 능가하는 지표를 기록했다.</strong></td>
-<td>~35%</td>
-
-</tr>
-<tr>
-<td><strong></strong></td>
-<td>~52%</td>
-<td>모바일에서 시작된 WeChat 미니게임. 이제 데스크톱에도 진출했다. 숫자가 말해준다: 차일드 리텐션 80%, RPG 타이틀 평균 플레이타임 300분+, 4억 일일 노출. 이는 트렌드가 아니다 — 새로운 광고 채널이다.</td>
-</tr>
+<tr><td><strong>00허우 (Z세대)</strong></td><td>~13%</td><td>신흥 소비자, 트렌드세터</td></tr>
+<tr><td><strong>95허우 (밀레니얼)</strong></td><td>~35%</td><td>핵심 사용자, 높은 가처분 소득</td></tr>
+<tr><td><strong>중년 전문직</strong></td><td>~52%</td><td>확대되는 인구통계, 구매력 보유</td></tr>
 </tbody>
 </table>
-<p>출처: 샤오홍슈 2026 마케팅 가이드(2026년 3월 출시) 및 TMG 캠페인 실적 데이터. Tuyue Media Gateway 작성——국제 브랜드를 위한 중국 유료 미디어 파트너.</p>
-<p>샤오홍슈에서 광고 운영 중이신가요? 국제 브랜드를 위한 샤오홍슈 캠페인을 관리합니다.</p>
-<div class="callout">
-<div class="callout__label">신1선 도시(청두, 항저우 등)는 최대 사용자 집중을 보이며 전체 사용자의 35%+를 차지합니다.</div>
-<p>중국 1,000억 달러 규모 디지털 광고 시장으로의 단일 액세스 포인트. 국제 에이전시가 중국 플랫폼을 쉽게 탐색할 수 있도록 지원합니다.</p>
+
+<p><strong>총 젊은 사용자 기반 (95허우 + 00허우): 1.2억+</strong>. 일본 전체 인구보다 많습니다.</p>
+
+<div class="article-callout article-callout--warning">
+<h4>⚠️ 흔한 실수</h4>
+<p>Z세대만 쫓지 마세요. 95허우 세그먼트(35%)는 프리미엄 제품에 대해 <strong>더 높은 가처분 소득과 구매 의도</strong>를 가지고 있습니다. 럭셔리 스킨케어 브랜드가 이 세그먼트를 specifically 타겟팅하여 4배 ROAS를 달성하는 것을 확인했습니다.</p>
 </div>
 </div>
-<!-- Section 4: 도시 계층 분포 -->
+
 <div class="article-section" id="city-tier-distribution">
-<h2>도시 계층 분포: 1~3선 도시 주도</h2>
-<p>XHS는 중국 여성 소비자의 게이트웨이 역할을 하며, 많은 브랜드의 퍼널 톱 역할 수행</p>
-<table class="article-table">
-<thead>
-<tr>
+<h2>🏙️ 도시 등급 분포: 1-3선 도시 지배</h2>
+<p>샤오홍슈 사용자는 중국 전역에 고르게 분포되어 있지 않습니다. <strong>1-3선 도시</strong>에 집중되어 있습니다——프리미엄 브랜드가 원하는 바로 그 곳입니다.</p>
 
-<th>WeChat 미니게임이 데스크톱으로: 4억 일일 노출이 게임 광고주에게 의미하는 것</th>
-<th>🎯 이것이 중요한 이유</th>
-</tr>
-</thead>
+<table class="article-table">
+<thead><tr><th>도시 등급</th><th style="color:var(--color-accent)">비율</th><th>주요 도시</th></tr></thead>
 <tbody>
-<tr>
-<td><strong>WeChat 미니게임은 시간 때우기에서 시작되었다. 탭해서 플레이. 닫아서 종료. 설치 불필요.</strong></td>
-<td>20%</td>
-<td>2년 후, PC에서 4억 일일 광고 노출을 창출하고 있다. 한 세션에 사용자를 300분 이상 붙잡아둔다. 차일드 리텐션이 80%에 달한다 — 대부분의 모바일 게임 스튜디오를 울릴 수치다.</td>
-</tr>
-<tr>
-<td><strong>신규 Tier 1 (新一线)</strong></td>
-<td>32%</td>
-<td>이것은 "지켜볼 만한 트렌드"가 아니다. 만들어지고 있는 플레이북이다. 게임 광고주라면 WeChat PC에서 일어나는 일이 크로스 플랫폼 캐주얼 게임에 대한 사고방식과 광고비가 어디로 흘러야 하는지에 미치는 영향을 이해해야 한다.</td>
-</tr>
-<tr>
-<td><strong>계산식을 바꾼 숫자</strong></td>
-<td>19%</td>
-<td>Combined Tier 1 + 신규 Tier 1 = <strong>52%</strong></td>
-</tr>
-<tr>
-<td><strong>Tencent 광고팀이 공유한 PC 미니게임 성과:</strong></td>
-<td>~29%</td>
-<td>지표  |  수치  |  중요한 이유</td>
-</tr>
+<tr><td><strong>1선 도시 (一线城市)</strong></td><td>20%</td><td>베이징, 상하이, 광저우, 선전</td></tr>
+<tr><td><strong>신1선 도시 (新一线)</strong></td><td>32%</td><td>청두, 항저우, 우한 등</td></tr>
+<tr><td><strong>2선 도시 (二线)</strong></td><td>19%</td><td>1선 + 신1선 합계 = <strong>52%</strong></td></tr>
+<tr><td><strong>3선 이하 (三线及以下)</strong></td><td>~29%</td><td>성장 중인 세그먼트, 더 높은 참여 시간</td></tr>
 </tbody>
 </table>
-<p>TMG 소개</p>
-<p>바로가기</p>
+
+<p><strong>핵심:</strong> 샤오홍슈 사용자의 절반 이상이 1선과 신1선 도시에 있습니다. 이들은 국제 브랜드가 필요로 하는 <strong>가처분 소득과 브랜드 의식</strong>을 가진 소비자입니다.</p>
+<p>하지만 3선 이하를 무시하지 마세요. 당사 데이터에 따르면 <strong>3선 이하 사용자는 1일 58% 더 많은 시간</strong>을 샤오홍슈에서 보냅니다(1.9h vs 1.2h). 콘텐츠에 목말라 있고, 본 것에 영향을 받습니다.</p>
 </div>
-<!-- Section 5: Engagement Metrics -->
+
 <div class="article-section" id="engagement-metrics">
-<h2>구매력과 소비 습관</h2>
-<p>문의하기</p>
+<h2>⏱️ 참여 지표: 1.2-1.9시간의 습관</h2>
+<p>샤오홍슈는 "확인하고 떠나는" 플랫폼이 아닙니다. 사용자는 머물고, 검색하고, 깊이 참여합니다.</p>
+
 <table class="article-table">
-<thead>
-<tr>
-<th>------  |  ------  |  ------------</th>
-<th>매출 성장  |  전년 대비 +45%  |  PC 사용자 수익화 가속화</th>
-<th>월간 활성 사용자</th>
-</tr>
-</thead>
+<thead><tr><th>사용자 그룹</th><th style="color:var(--color-accent)">1일 사용 시간</th><th>월간 활성 사용자</th></tr></thead>
 <tbody>
-<tr>
-<td><strong>사용자 성장  |  전년 대비 +55%  |  사용자 기반이 여전히 급팽창 중</strong></td>
-<td>1.2h/day</td>
-<td>120M+</td>
-</tr>
-<tr>
-<td><strong>일일 광고 노출  |  약 4억  |  진정한 광고 생태계</strong></td>
-<td>1.9h/day</td>
-<td>190M+</td>
-</tr>
+<tr><td><strong>일반 사용자 (1-2선)</strong></td><td>1.2시간/일</td><td>1.2억+</td></tr>
+<tr><td><strong>하위 도시 사용자 (3선 이하)</strong></td><td>1.9시간/일</td><td>1.9억+</td></tr>
 </tbody>
 </table>
-<div class="callout">
-<div class="callout__label">1선 및 신1선 도시는 사용자 기반의 최대 비중을 차지하며, 2~5선 도시는 지속적 성장 추세를 보입니다.</div>
-<p>법적 고지</p>
+
+<div class="article-callout article-callout--tip">
+<h4>💡 전략적 인사이트</h4>
+<p>하위 도시 사용자는 플랫폼에서 <strong>58% 더 많은 시간</strong>을 매일 보냅니다(1.9h vs 1.2h). 이는 <strong>신흥 시장에서의 거대한 성장 잠재력</strong>을 나타냅니다——리서치하고, 비교하고, 영향을 받고 있습니다.</p>
 </div>
-<p>샤오홍슈 월간 활성 사용자 3억 명 돌파</p>
-<p>This is <strong>high-intent traffic</strong>. 이 트래픽을 확보하면 승리합니다.</p>
+
+<p>하지만 광고주에게真正 중요한 숫자는 이것입니다: <strong>사용자의 90%가 적극적으로 검색</strong>합니다(단순 탐색이 아님). 그리고 <strong>롱테일 검색(8자 이상 쿼리)이 YoY 52% 성장</strong> 중입니다. 사용자는 단순히 "스킨케어"를 검색하는 것이 아니라 "민감성 피부용 여름 2026 보습제 추천"처럼 구체적으로 검색합니다.</p>
+<p>이것은 <strong>고의도 트래픽</strong>입니다. 잡으면 승리합니다.</p>
 </div>
-<!-- Section 6: Core Audience Coverage -->
-<div class="article-section" id="core-audience-coverage">
-<h2>콘텐츠 소비 패턴</h2>
-<p>사용자의 73%가 구매 전 매월 활발히 검색</p>
-<div class="feature-grid">
-<div class="feature-card">
-<div class="stat-number">190M+</div>
-<div class="stat-label">뷰티 &amp; 화장품</div>
+
+<div class="article-section" id="core-audience">
+<h2>💄 핵심 오디언스: 뷰티, 육아, 건강</h2>
+<p>샤오홍슈는 모든 브랜드에 적합하지는 않지만, 특정 카테고리에는 완벽합니다. 플랫폼의 <strong>1.9억+ 월간 활성 사용자</strong>가 집중되어 있는 곳입니다:</p>
+
+<div class="stats-grid">
+<div class="stat-card"><div class="stat-card__number">1.9억+</div><div class="stat-card__label">뷰티 & 화장품</div></div>
+<div class="stat-card"><div class="stat-card__number">1.9억+</div><div class="stat-card__label">육아 & 임신</div></div>
+<div class="stat-card"><div class="stat-card__number">1.9억+</div><div class="stat-card__label">건강 보조제</div></div>
 </div>
-<div class="feature-card">
-<div class="stat-number">190M+</div>
-<div class="stat-label">Monthly Active Users</div>
-</div>
-<div class="feature-card">
-<div class="stat-number">190M+</div>
-<div class="stat-label">Health Supplements</div>
-</div>
-</div>
-<p>일일 평균 사용 시간 55분 초과</p>
-<div class="callout callout--accent">
-<div class="callout__label">도시 사용자는 거래당 200위안 이상 더 지출하는 경향이 있지만, 하위 계층 도시 사용자는 더 높은 빈도로 구매합니다.</div>
-<p>여성: 약 70%+ | 남성: 약 30% (빠르게 성장 중)</p>
+
+<p><strong>뷰티, 육아, 건강, 럭셔리, 자동차, 라이프스타일</strong> 분야라면, 샤오홍슈는 선택이 아닌 필수입니다. 이 사용자들은 단순히 스크롤하지 않습니다——<strong>구매 전에 리서치</strong>합니다.</p>
+
+<div class="article-callout article-callout--info">
+<h4>📊 2025 소비자 트렌드: "소비자 각성"</h4>
+<p>사용자들은 수동적 수용자에서 <strong>더 나은 삶을 능동적으로 추구하는 사람</strong>으로 변하고 있습니다. "바디로션"(46만+ 검색), "미백"(81만+), "내면 웰빙"(80만+)을 검색합니다. <strong>대량 리뷰와 입소문</strong>을 중시합니다(레몬워터 58만+, 웰빙차 4만+).</p>
 </div>
 </div>
-<!-- Section 7: Search Behavior -->
+
 <div class="article-section" id="search-behavior">
-<h2>검색 행동</h2>
-<p>18~24세: 사용자 기반의 약 45%</p>
-<div class="feature-grid">
-<div class="feature-card">
-<div class="stat-number">73%</div>
-<div class="stat-label">Monthly Search Penetration</div>
+<h2>🔍 검색 행동: 73% 월간 검색 침투율</h2>
+<p>샤오홍슈를独特하게 만드는 것은 이것입니다: 단순한 소셜 플랫폼이 아니라 <strong>라이프스타일 의사결정을 위한 검색 엔진</strong>입니다.</p>
+
+<div class="stats-grid">
+<div class="stat-card"><div class="stat-card__number">73%</div><div class="stat-card__label">월간 검색 침투율</div></div>
+<div class="stat-card"><div class="stat-card__number">90%</div><div class="stat-card__label">적극적 검색 (vs 알고리즘)</div></div>
+<div class="stat-card"><div class="stat-card__number">52%</div><div class="stat-card__label">롱테일 검색 성장 (YoY)</div></div>
 </div>
-<div class="feature-card">
-<div class="stat-number">90%</div>
-<div class="stat-label">능동적 검색 (vs 알고리즘)</div>
-</div>
-<div class="feature-card">
-<div class="stat-number">52%</div>
-<div class="stat-label">롱테일 검색 성장률 (YoY)</div>
-</div>
-</div>
-<h3>TMG가 어떻게 도울 수 있는가</h3>
-<p>25~30세: 사용자 기반의 약 30%</p>
+
+<h3>116개 노트의 여정: 중국 소비자가 실제로 결정하는 방법</h3>
+<p>실제 사례를 봅시다: 산후 도우미 서비스를 찾는 사용자(天鹅到家 사례):</p>
+
 <table class="article-table">
-<thead>
-<tr>
-<th>차일드 리텐션(액티브 사용자)  |  80%  |  하이 엔게이지먼트 영역</th>
-<th>이 수치들은 WeChat PC 미니게임을 App Store나 Google Play의 미드티어 모바일 타이틀과 동등한 엔게이지먼트 티어에 놓는다. 차이점은: 게임이 마찰 없이 작동해 사용자 획득 비용이 극히 일부라는 점이다. 다운로드 없음. 설치 없음. 계정 생성 없음.</th>
-<th>가능케 한 인프라</th>
-</tr>
-</thead>
+<thead><tr><th>단계</th><th>검색 쿼리</th><th>리서치한 노트 수</th></tr></thead>
 <tbody>
-<tr>
-<td><strong>1단계: 광범위한 탐색</strong></td>
-<td>WeChat은 세 가지 의도적인 업그레이드로 데스크톱의 미니게임 경험을 진화시켰다:</td>
-<td>1. 데스크톱 우선 게임 경험</td>
-</tr>
-<tr>
-<td><strong>PC 미니게임이 지원하는 기능:</strong></td>
-<td>조절 가능한 윈도우 크기 (고정 모바일 비율이 아님)
-키보드 및 마우스 매핑 (게임별 설정 가능)
-모바일과 데스크톱 간 지속적 로그인</td>
-<td>즉, RPG와 전략 게임 — 정밀한 조작과 큰 화면이 유리한 장르 — 이 갑자기 작동한다. 스마트폰 화면에서 답답했던 카드 게임이 27인치 모니터에서 몰입감을 얻는다.</td>
-</tr>
-<tr>
-<td><strong>2. 크로스 디바이스 세션 지속성</strong></td>
-<td>사용자는:</td>
-<td>출퇴근 중 모바일에서 플레이를 시작하고
-사무실에 도착하면 데스크톱에서 이어서 플레이하고
-크로스 디바이스 푸시 알림으로 다시 돌아온다</td>
-</tr>
+<tr><td><strong>1단계: 광범위 검색</strong></td><td>"산후 도우미를 어떻게 찾지?"</td><td>60개 노트</td></tr>
+<tr><td><strong>2단계: 구체화 검색</strong></td><td>"도우미에게 어떤 조건을 요구해야 할까?"</td><td>34개 노트</td></tr>
+<tr><td><strong>3단계: 상세 검색</strong></td><td>"天鹅到家 서비스는 어떤가?"</td><td>22개 노트</td></tr>
 </tbody>
 </table>
-<p><strong>합계: 결정 전 116개 노트 조사.</strong></p>
-<p>36세 이상: 나머지 10%</p>
-<div class="callout">
-<div class="callout__label">샤오홍슈 사용자는 플랫폼을 발견과 구매 검증 모두에 사용하며, 리서치 주도의 고관여 소비 행동을 보입니다.</div>
-<p>You need <strong>content at all three search stages</strong>. 광범위 인지도 (1단계), 상세 비교 (2단계), 신뢰 구축 (3단계). 어떤 단계든 빠뜨리면, 나타나는 경쟁사에게 고객을 빼앗깁니다.</p>
+
+<p><strong>합계: 결정을 내리기 전 116개의 노트를 리서치.</strong></p>
+
+<p>이것이 샤오홍슈에서 <strong>파종(씨딩)</strong>이 작동하는 이유입니다. 사용자는 하나의 광고를 보고 구매하지 않습니다——<strong>깊고 반복적으로 리서치</strong>합니다. 브랜드가 세 단계 모두에 나타나야 합니다.</p>
+
+<div class="article-callout article-callout--warning">
+<h4>⚠️ 핵심 성공 요인</h4>
+<p><strong>세 가지 검색 단계 모두에 콘텐츠가 필요합니다.</strong> 광범위 인지도(1단계), 상세 비교(2단계), 신뢰 구축(3단계). 어떤 단계라도 빠뜨리면 = 경쟁사에게 고객을 빼앗깁니다.</p>
 </div>
 </div>
-<!-- Section 8: 광고주를 위한 의미 -->
-<div class="article-section" id="what-this-means">
-<h2>광고주를 위한 의미</h2>
-<p>신1선 도시(청두, 항저우, 우한 등): 35%+</p>
-<h3>데이터 출처</h3>
-<p>2선 도시: 약 20%</p>
-<h3>샤오홍슈는 3억 5,000만+ 월간 활성 사용자를 보유하며 중국에서 가장 빠르게 성장하는 소셜 플랫폼 중 하나입니다.</h3>
-<p>3~5선 도시: 나머지 20% (빠르게 성장 중)</p>
-<h3>2026년 현재, 이 플랫폼은 3억 5,000만+ 월간 활성 사용자를 보유하며 중국 4대 소셜 플랫폼입니다.</h3>
-<p>사용자의 52%가 1~2선 도시에 집중되어 있어, 샤오홍슈는 <strong>프리미엄 및 럭셔리 브랜드</strong>에 최적입니다. 하지만 3선 도시도 무시하지 마세요——사용 시간이 더 길고, 영향을 받기 쉽습니다.</p>
-<h3>샤오홍슈의 사용자 기반은 여성 편향(약 70%+ 여성)이지만, 남성 사용자도 특히 기술, 게임, 자동차 분야에서 빠르게 성장 중입니다.</h3>
-<p>평균 월간 소비(라이프스타일·패션): 200~600위안</p>
+
+<div class="article-section" id="what-it-means">
+<h2>🎯 광고주에게 의미하는 것</h2>
+<p>수백만 건의 광고 노출과 전환을 분석한 결과, 인구통계가告诉我们的是:</p>
+
+<h3>1. 샤오홍슈 ≠ 전통적 SNS</h3>
+<p>사용자들은 여기서 친구와 소통하지 않습니다——<strong>구매 결정을 리서치</strong>합니다. 콘텐츠 전략을 "엔터테인먼트"가 아닌 "교육"으로 전환하세요.</p>
+
+<h3>2. 파종 > 직접 광고</h3>
+<p>사용자의 86%가 샤오홍슈 크리에이터 추천을 신뢰합니다. 직접 광고보다 <strong>진정한 사용자 콘텐츠</strong>가 3배 높은 전환율을 보입니다.</p>
+
+<h3>3. 1-3선 도시 도달 = 프리미엄 오디언스</h3>
+<p>1선과 신1선 도시의 52% 집중은 <strong>가처분 소득이 있는 소비자</strong>에게 도달함을 의미합니다.</p>
+
+<h3>4. 14개 파종 지원 산업</h3>
+<p>뷰티, 패션, 식품, 가전, 육아, 건강, 여행, 자동차, 교육, 가구, 운동, 반려동물,数码,生活服务——이 산업들이 샤오홍슈에서 가장 강력한 성과를 냅니다.</p>
+</div>
+
+<div class="article-section" id="takeaways">
+<h2>📋 핵심 내용</h2>
+<div class="article-callout article-callout--info">
+<h4>핵심 포인트</h4>
 <ul>
-<li>샤오홍슈 인구통계 중국 소셜미디어 소비자 행동 RED 플랫폼 국제 브랜드 마케팅 전략</li>
-<li>3. 마찰 없는 광고→게임 전환</li>
-<li>사용자가 미니게임 광고를 본다. 클릭. 게임이 즉시 실행. App Store 리디렉트 없음. 다운로드 대기 없음. 권한 프롬프트 없음.</li>
-<li>이것이 중요한 이유:</li>
-<li><strong>전환율이 높다</strong> (인텐트와 플레이 사이에 마찰 없음)
-<strong>광고→설치→플레이가 즉각적</strong> (분이 아닌 초 단위 측정)
-<strong>재참여가 원활</strong> (원클릭 복귀로 이탈 플레이어 타게팅 가능)</li>
-<li>PC 트래픽 생태계</li>
-<li>Tencent 광고는 미니게임 프로모션을 위해 세 가지 미디어 카테고리를 개방했다:</li>
-<li>카테고리  |  플랫폼  |  사용자 인텐트</li>
-<li>----------  |  --------  |  --------------</li>
-<li>소셜  |  WeChat 데스크톱 클라이언트  |  공유 기반 발견, 친구 추천</li>
-<li>엔터테인먼트  |  Tencent Video, 앱스토어, Tencent Mobile Game Assistant, 후야(Huya)  |  게임 인접 오디언스, 이미 '플레이' 모드</li>
-<li>정보·도구  |  QQ 브라우저, Tencent News, 소고우(Sogou) 입력법  |  유휴 시간 사용자, 스낵형 플레이 세션</li>
-<li>이것은 전략적 확장이다. '정보·도구' 카테고리는 특히 영리하다 — QQ 브라우저나 소고우 입력법의 사용자는 마이크로 유휴 상태에 있다. 이 순간에 원클릭 게임 실행은 기존 모바일 광고가 닿을 수 없는 주의를 포착한다.</li>
-<li>게임 광고주가 알아야 할 것</li>
+<li><strong>3.5억+ MAU</strong> — 중국 전체 인구의 25%, 매달 성장 중</li>
+<li><strong>95허우(35%)가真正한 구매력</strong> — Z세대만 쫓지 마세요</li>
+<li><strong>1-3선 도시 52%</strong> — 프리미엄 브랜드에 이상적인 오디언스</li>
+<li><strong>73% 검색 침투율</strong> — 소셜 플랫폼이 아닌 검색 엔진</li>
+<li><strong>116개 노트 리서치</strong> — 세 단계 모두에 콘텐츠 필요</li>
 </ul>
-<p>고소득 사용자(월소득 2만 위안+): 플랫폼의 약 15%이나 구매 가치의 35%+ 차지</p>
 </div>
-<!-- Section 9: 핵심 요약 -->
-<div class="article-section" id="bottom-line">
-<h2>국제 브랜드를 위한 시사점</h2>
-<p>샤오홍슈(RED)는 단순한 소셜 플랫폼이 아닙니다——<strong>중국 소비자가 리서치하고, 토론하고, 결정하는 곳</strong>입니다. 월간 활성 사용자 3억 5,000만+, 월간 검색 침투율 73%, 뷰티·육아·건강 등 핵심 카테고리 사용자 1억 9,000만+——기회는 엄청납니다.</p>
-<p>검색이 주요 발견 메커니즘, 월간 73% 사용자가 검색 기능 활용</p>
-<ul>
-<li>✅ <strong>Seeding strategy</strong> (KOL/KOC 매트릭스)</li>
-<li>✅ <strong>Search optimization</strong> (3개 검색 단계 모두에 노출)</li>
-<li>✅ <strong>Content that converts</strong> (진정성 있고, 도움이 되며, 판매적이지 않은)</li>
-<li>✅ <strong>Data-driven iteration</strong> (씨딩 에이드, 링시 플랫폼)</li>
-</ul>
-<p>커뮤니티 인터랙션(좋아요, 댓글, 저장)이 플랫폼 참여를 촉진</p>
-<p>우리는 모든 주요 중국 플랫폼에서 유료 미디어를 관리해 왔습니다——Baidu, Douyin, WeChat, Bilibili, 그리고 이제 Xiaohongshu (XHS/RED)에서도. 하지만 대부분의 국제 브랜드가 잘못 이해하는 것은：그들이 XHS를 단순한 소셜 미디어 플랫폼으로 취급한다는 것입니다.</p>
+</div>
+
+<div class="article-section" id="next-steps">
+<h2>🚀 다음 단계</h2>
+<p>샤오홍슈의 3.5억+ 사용자에게 도달할 준비가 되셨나요? 검색 의도와 진정한 커뮤니티가 만나는 샤오홍슈의 독특한 에코시스템을 탐색하는 것은 국제 팀에게 복잡합니다. 저희가 도와드리겠습니다.</p>
 <div class="article-cta">
-<h3>주요 연령대는 18~35세로, 플랫폼 사용자 기반의 70%+를 차지합니다.</h3>
-<p>마이크로 KOL(1만~10만 팔로워)가 가장 높은 참여율 생성</p>
+<h3>전문가와 상담하기</h3>
+<p>샤오홍슈 인구통계와 중국 광고에 대해 궁금한 점이 있으신가요? 메시지를 보내주세요. 모든 이메일을 확인하며, 국제 브랜드 캠페인에서 배운 인사이트를 공유해 드리겠습니다. <a href="/ko/contact/" class="btn btn--primary">문의하기 →</a></p>
 </div>
-<p>콘텐츠 카테고리: 뷰티(35%), 라이프스타일(25%), 음식·여행(20%), 기술(10%), 기타(10%)</p>
 </div>
+
 </article>
 <!-- Sidebar -->
 <aside class="article-sidebar">
 <nav class="toc">
 <div class="toc__title">이 기사에서</div>
 <ul class="toc__list">
-<li>3억 5,000만+MAU (2025 H1 데이터)</li>
-<li>3억 5,000만+MAU (2025 H1 데이터)</li>
-<li><a class="toc__link" href="#age-distribution">연령 분포</a></li>
-<li><a class="toc__link" href="#city-tier-distribution">도시 계층 분포</a></li>
-<li>3억 5,000만+MAU (2025 H1 데이터)</li>
-<li>3억 5,000만+MAU (2025 H1 데이터)</li>
-<li>3억 5,000만+MAU (2025 H1 데이터)</li>
-<li><a class="toc__link" href="#what-this-means">광고주를 위한 의미</a></li>
-<li>3억 5,000만+MAU (2025 H1 데이터)</li>
+<li><a class="toc__link" href="#why-it-matters">🎯 왜 샤오홍슈 인구통계가 중요한가</a></li>
+<li><a class="toc__link" href="#scale">📈 규모: 3.5억+ MAU</a></li>
+<li><a class="toc__link" href="#age-distribution">🎂 연령대 분석</a></li>
+<li><a class="toc__link" href="#city-tier-distribution">🏙️ 도시 등급 분포</a></li>
+<li><a class="toc__link" href="#engagement-metrics">⏱️ 참여 지표</a></li>
+<li><a class="toc__link" href="#core-audience">💄 핵심 오디언스</a></li>
+<li><a class="toc__link" href="#search-behavior">🔍 검색 행동</a></li>
+<li><a class="toc__link" href="#what-it-means">🎯 광고주에게 의미하는 것</a></li>
+<li><a class="toc__link" href="#takeaways">📋 핵심 내용</a></li>
+<li><a class="toc__link" href="#next-steps">🚀 다음 단계</a></li>
 </ul>
 </nav>
 <div class="sidebar-cta">Confused by China's platform demographics? We help you choose the right platforms for your target audience.문의하기</div>
