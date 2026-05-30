@@ -44,6 +44,35 @@
   .skip-link{position:absolute;top:-100px;left:0;background:var(--color-accent);color:var(--color-bg);padding:8px 16px;z-index:10000;text-decoration:none;transition:top 0.3s;font-weight:600;}
   .skip-link:focus{top:0;}
 
+  .article-table { width:100%; border-collapse:separate; border-spacing:0; border-radius:0.75rem; overflow:hidden; border:1px solid #1e2d45; margin:1.5rem 0; font-size:0.875rem; }
+  .article-table th { background:#0d1220; color:#c9a84c; font-weight:700; padding:1rem 1.25rem; text-align:left; border-bottom:2px solid #1e2d45; }
+  .article-table td { padding:0.75rem 1.25rem; border-bottom:1px solid #1e2d45; color:#b3c0d8; }
+  .article-table tr:last-child td { border-bottom:none; }
+  .article-table tr:hover td { background:rgba(45,107,228,0.05); }
+
+  .article-section { margin-bottom:3rem; }
+  .article-section h2 { font-size:1.5rem; font-weight:700; margin-bottom:1rem; color:#f0f4ff; }
+  .article-section h3 { font-size:1.125rem; font-weight:600; margin-top:1.5rem; margin-bottom:0.75rem; color:#f0f4ff; }
+  .article-section p { margin-bottom:1rem; line-height:1.7; }
+  .article-section ul { margin-bottom:1rem; padding-left:1.5rem; }
+  .article-section li { margin-bottom:0.5rem; line-height:1.6; }
+
+  .article-callout { border-radius:0.75rem; padding:1.5rem; margin:1.5rem 0; border-left:4px solid; }
+  .article-callout--info { background:rgba(45,107,228,0.08); border-color:#2d6be4; }
+  .article-callout--tip { background:rgba(201,168,76,0.08); border-color:#c9a84c; }
+  .article-callout--warning { background:rgba(239,68,68,0.08); border-color:#ef4444; }
+  .article-callout h4 { font-size:1.125rem; font-weight:600; margin-bottom:0.75rem; color:#f0f4ff; }
+  .article-callout p { margin-bottom:0.5rem; }
+  .article-callout ul { margin-bottom:0; padding-left:1.25rem; }
+
+  .article-cta { background:#111827; border:1px solid #1e2d45; border-radius:0.75rem; padding:2rem; text-align:center; margin-top:2rem; }
+  .article-cta h3 { font-size:1.25rem; margin-bottom:0.75rem; }
+
+  .stats-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:1rem; margin:1.5rem 0; }
+  .stat-card { background:#111827; border:1px solid #1e2d45; border-radius:0.75rem; padding:1.5rem; text-align:center; }
+  .stat-card__number { font-size:2rem; font-weight:800; color:#c9a84c; line-height:1; margin-bottom:0.5rem; }
+  .stat-card__label { font-size:0.875rem; color:#b3c0d8; }
+
     :root {
       --color-bg: #080c14;
       --color-bg-alt: #0d1220;
@@ -777,521 +806,249 @@
 <main id="main-content" class="article-body">
 <div class="container">
 <article class="article-content reveal">
-<!-- TOC -->
-<nav class="toc">
-<h3>목차</h3>
-<ul>
-<li><a href="#why-kuaishou-demographics-matter">사용자 기반 개요</a></li>
-<li><a href="#scale-snapshot">스케일 스냅샷: 4억 명 이상의 사용자 기반</a></li>
-<li><a href="#age-distribution">연령 분포: 젊고 다양함</a></li>
-<li><a href="#city-tier-distribution">도시 계층 분포: 신 1선 도시가 주도</a></li>
-<li><a href="#provincial-distribution">지역별 분포: 지역 파워하우스</a></li>
-<li><a href="#engagement-metrics">참여 지표: 숫자 너머로</a></li>
-<li><a href="#consumer-profile">소비자 프로필: 9000만 위안 이상 소비자</a></li>
-<li><a href="#search-behavior">검색 행동: 4억 명 이상의 활성 검색자</a></li>
-<li><a href="#what-this-means">크리에이터 이코노미</a></li>
-</ul>
-</nav>
-<!-- Section 1: Why 콰이쇼우 인구통계 Matter -->
-<section id="why-kuaishou-demographics-matter">
-<h2>사용자 기반 개요</h2>
-<p>Douyin의 세련된 도시 중심 콘텐츠와 달리, Kuaishou는 진정성으로 번성합니다. 사용자 기반은 중국의 '신 티어' 도시(3-5선)에 편중되어 있으며, 구매력이 빠르게 상승하고 브랜드 충성도가——</p>
-<p>이 글에서는 2025년 춘절 기간의 신선한 데이터를 사용해——사용자 활동이 정점에 달하고 소비자 행동이 완전히 드러나는 시기——Kuaishou의 인구통계를 분석합니다.</p>
-<p>마지막까지 읽으면, 당신의 타겟 오디언스가 Kuaishou에 있는지——그리고 어떻게 도달할지——정확히 알게 될 것입니다.</p>
-<p>큰 그림부터 시작합시다. Kuaishou는 단순한 '또 하나의 숏폼 앱'이 아니라, 존중받아 마땅한 숫자를 가진 소셜 커머스 강국입니다.</p>
-</section>
-<!-- Section 2: Scale Snapshot -->
-<section id="scale-snapshot">
-<h2>스케일 스냅샷: 4억 명 이상의 사용자 기반</h2>
-<p>2025년 춘절 사이클(1월 15일~2월 4일)이 드러낸 Kuaishou의 진정한 규모:</p>
-<div class="feature-grid">
-<div class="feature-card">
-<div class="stat-number">400M+</div>
-<div class="stat-label">Total Users (CNY 2025)</div>
-</div>
-<div class="feature-card">
-<div class="stat-number">90M+</div>
-<div class="stat-label">CNY Shoppers (Nearly 90 Million)</div>
-</div>
-<div class="feature-card">
-<div class="stat-number">140M+</div>
-<div class="stat-label">Daily Active Searchers</div>
-</div>
-<div class="feature-card">
-<div class="stat-number">12.8%</div>
-<div class="stat-label">Shopper Growth (YoY)</div>
-</div>
-</div>
-<h3>춘절 기간: 사용 폭발</h3>
-<p>The <strong>2025 CNY cycle (Jan 15 – Feb 4)</strong> revealed Kuaishou's true scale:</p>
-<ul>
-<li><strong>Daily active users</strong> consistently higher than the same period in 2024</li>
-<li><strong>신규 Year's Eve (Chuxi)</strong> marked the peak—when families gather and screen time soars</li>
-<li><strong>Two daily peaks</strong>: 12-1 PM and 6-9 PM (plus a late-night surge on 신규 Year's Eve, 10 PM – 1 AM)</li>
-</ul>
-<div class="callout callout--insight">
-<div class="callout__label">Z세대(18~25세)는 가장 참여도 높은 세그먼트로, 매일 평균 72분을 플랫폼에서 보냅니다.</div>
-<p>Kuaishou의 연령 분포는 '젊을수록 좋다'는 고정관념을 깹니다. 물론 젊은 사용자가 지배적——하지만 플랫폼의 진짜 강점은 세대 간 어필입니다.</p>
-</div>
-</section>
-<!-- Section 3: 연령 분포 -->
-<section id="age-distribution">
-<h2>연령 분포: 젊고 다양함</h2>
-<p>2025년 춘절 중 18-23세와 50세+가 일상 행동 대비 가장 강한 소비 성향을 보였습니다. 하나의 플랫폼, 두 개의 놀라운 고전환 연령층.</p>
-<h3>숫자</h3>
-<table>
-<thead>
-<tr>
 
+<p>중국 숏폼 플랫폼에 광고비를 계획 중이라면, Douyin은 이미 알고 있을 것입니다. 하지만 <strong>콰이쇼우(Kuaishou/Kwai)</strong>——4억+ 사용자와 독특하게 충성스러운 "라오티(老铁)" 커뮤니티——는 2026년에 주목할 가치가 있습니다.</p>
 
-<th>중국에서 모바일과 PC 게임의 경계가 사라지고 있다. WeChat의 미니게임 생태계가 데스크톱으로 확장되며 4억 일일 노출과 기존 모바일 채널을 능가하는 지표를 기록했다.</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>18-23</strong></td>
-<td>~15%</td>
+<p>Douyin의 세련된, 도시 중심 콘텐츠와 달리, 콰이쇼우는 진정성에서 번성합니다. 사용자 기반은 중국의 "신타이어(新梯队)" 도시(3-5선)로 기울어져 있으며, 여기서 구매력은 빠르게 상승하고 브랜드 충성도는 깊습니다.</p>
 
-</tr>
-<tr>
-<td><strong>24-30</strong></td>
+<div class="article-callout article-callout--info">
+<h4>📊 핵심 수치 (CNY 2025)</h4>
+<ul>
+<li><strong>4억+</strong> 총 사용자</li>
+<li><strong>9,000만+</strong> CNY 쇼핑객</li>
+<li><strong>1.4억+</strong> 일일 활성 검색자</li>
+<li><strong>12.8%</strong> 쇼핑객 성장률 (YoY)</li>
+</ul>
+</div>
 
-<td>모바일에서 시작된 WeChat 미니게임. 이제 데스크톱에도 진출했다. 숫자가 말해준다: 차일드 리텐션 80%, RPG 타이틀 평균 플레이타임 300분+, 4억 일일 노출. 이는 트렌드가 아니다 — 새로운 광고 채널이다.</td>
-</tr>
-<tr>
-<td><strong>31-40</strong></td>
+<div class="article-section" id="scale">
+<h2>📈 규모: 4억+ 사용자 기반</h2>
+<p>콰이쇼우는 단순히 "또 다른 숏폼 앱"이 아닙니다——존중을 요구하는 숫자를 가진 소셜 커머스 파워하우스입니다.</p>
 
-<td>WeChat 미니게임이 데스크톱으로: 4억 일일 노출이 게임 광고주에게 의미하는 것</td>
-</tr>
-<tr>
-<td><strong>41-49</strong></td>
-<td>~18%</td>
-<td>🎯 이것이 중요한 이유</td>
-</tr>
-<tr>
-<td><strong>50+</strong></td>
-<td>~14%</td>
-<td>WeChat 미니게임은 시간 때우기에서 시작되었다. 탭해서 플레이. 닫아서 종료. 설치 불필요.</td>
-</tr>
-</tbody>
-</table>
-<h3>이것이 의미하는 것</h3>
-<ul>
-<li><strong>18-30 연령대</strong> = ~40% of active users (your core digital natives)</li>
-<li><strong>31-40 연령대</strong> = highest per-capita spending (family decision-maker)</li>
-<li><strong>50+ users</strong> = surprisingly active, with strong preference for fresh food, health products, and alcohol</li>
-</ul>
-<div class="callout callout--data">
-<div class="callout__label">📊 Data Point</div>
-<p>Kuaishou가 Douyin과 가장 다른 점: 사용자 기반이 불균형하게 중국의 신 티어·하위 티어 도시(3-5선)에 집중되어 있습니다.</p>
+<div class="stats-grid">
+<div class="stat-card"><div class="stat-card__number">4억+</div><div class="stat-card__label">총 사용자 (CNY 2025)</div></div>
+<div class="stat-card"><div class="stat-card__number">9,000만+</div><div class="stat-card__label">CNY 쇼핑객</div></div>
+<div class="stat-card"><div class="stat-card__number">1.4억+</div><div class="stat-card__label">일일 활성 검색자</div></div>
+<div class="stat-card"><div class="stat-card__number">12.8%</div><div class="stat-card__label">쇼핑객 성장 (YoY)</div></div>
 </div>
-</section>
-<!-- Section 4: 도시 계층 분포 -->
-<section id="city-tier-distribution">
-<h2>도시 계층 분포: 신 1선 도시가 주도</h2>
-<p>중국의 '하트랜드'——3-5선 도시——에 마케팅한다면 Kuaishou는 필수입니다. Douyin은 도달하지만, Kuaishou는 전환시킵니다.</p>
-<h3>분석</h3>
-<table>
-<thead>
-<tr>
-<th>이것은 "지켜볼 만한 트렌드"가 아니다. 만들어지고 있는 플레이북이다. 게임 광고주라면 WeChat PC에서 일어나는 일이 크로스 플랫폼 캐주얼 게임에 대한 사고방식과 광고비가 어디로 흘러야 하는지에 미치는 영향을 이해해야 한다.</th>
-<th>계산식을 바꾼 숫자</th>
-<th>Tencent 광고팀이 공유한 PC 미니게임 성과:</th>
-</tr>
-</thead>
+
+<h3>CNY 기간: 사용 폭증</h3>
+<p><strong>2025년 CNY 사이클 (1월 15일 – 2월 4일)</strong>이 콰이쇼우의 진정한 규모를 보여주었습니다:</p>
+<ul>
+<li><strong>일일 활성 사용자</strong>가 2024년同期 대비 지속적으로 높음</li>
+<li><strong>섣달그믐(除夕)</strong>이 피크——가족이 모이고 스크린 타임이 급증하는 날</li>
+<li><strong>하루 두 번 피크</strong>: 12-1시, 18-21시 (섣달그믐에는 야간 서지 22시-1시)</li>
+</ul>
+
+<div class="article-callout article-callout--tip">
+<h4>💡 핵심 인사이트</h4>
+<p>콰이쇼우 사용자는 단순히 스크롤하지 않습니다——<strong>공유합니다</strong>. CNY 2025 동안 동영상 공유가 <strong>64.2% YoY 증가</strong>했습니다. "라오티" 신뢰가 바이럴 도달을 이끕니다.</p>
+</div>
+</div>
+
+<div class="article-section" id="age">
+<h2>🎂 연령 분포: 젊지만 다양한</h2>
+<p>콰이쇼우의 연령 분포는 "젊을수록 좋다"는 고정관념을 거스릅니다. 젊은 사용자가 지배하지만, 플랫폼의 진정한 강점은 <strong>세대 간 매력</strong>입니다.</p>
+
+<table class="article-table">
+<thead><tr><th>연령대</th><th style="color:var(--color-accent)">활성 사용자 비율</th><th>소비력</th></tr></thead>
 <tbody>
-<tr>
-<td><strong>Tier 1 &amp; 신규 Tier 1</strong></td>
-<td>~25%</td>
-<td>📈 Accelerating (fastest growth in 신규 Tier 1)</td>
-</tr>
-<tr>
-<td><strong>지표  |  수치  |  중요한 이유</strong></td>
-<td>~22%</td>
-<td>------  |  ------  |  ------------</td>
-</tr>
-<tr>
-<td><strong>매출 성장  |  전년 대비 +45%  |  PC 사용자 수익화 가속화</strong></td>
-<td>~28%</td>
-<td>사용자 성장  |  전년 대비 +55%  |  사용자 기반이 여전히 급팽창 중</td>
-</tr>
-<tr>
-<td><strong>일일 광고 노출  |  약 4억  |  진정한 광고 생태계</strong></td>
-<td>~25%</td>
-<td>평균 플레이타임(RPG/카드/전략)  |  300분+  |  캐주얼한 2분 세션이 아니다</td>
-</tr>
+<tr><td><strong>18-23세</strong></td><td>~15%</td><td>💰💰💰 가장 높은 성장률 (YoY 지출)</td></tr>
+<tr><td><strong>24-30세</strong></td><td>~25% (최대 세그먼트)</td><td>💰💰 강력, 뷰티/테크 집중</td></tr>
+<tr><td><strong>31-40세</strong></td><td>~28% (최대 세그먼트)</td><td>💰💰💰💰 가장 높은 절대 지출</td></tr>
+<tr><td><strong>41-49세</strong></td><td>~18%</td><td>💰💰 안정적, 가족/건강 집중</td></tr>
+<tr><td><strong>50세+</strong></td><td>~14%</td><td>💰💰💰 강력한 니치 (건강/식품)</td></tr>
 </tbody>
 </table>
-<h3>왜 이것이 중요한가</h3>
-<ul>
-<li><strong>신규-tier cities (tiers 3-5) = ~사용자의 53%</strong>. These are markets where brand competition is lower and price sensitivity is balanced by strong community trust.</li>
-<li><strong>High-tier cities (tiers 1-2) are growing faster</strong>. Kuaishou is successfully penetrating upscale markets—new-tier-1 and tier-2 cities lead YoY user growth.</li>
-<li><strong>Lower-tier users spend more per order on average during festivals</strong>. During CNY 2025, tier-4-5 users' per-capita spending growth matched or exceeded tier-1 users.</li>
-</ul>
-<div class="callout callout--strategy">
-<div class="callout__label">🎯 Targeting Tip</div>
-<p>Kuaishou의 지리적 풋프린트는 중국의 경제 지리를 반영——몇 가지 놀라움과 함께.</p>
+
+<div class="article-callout article-callout--info">
+<h4>📊 데이터 포인트</h4>
+<p>CNY 2025 동안 <strong>18-23세</strong>와 <strong>50세+ 사용자</strong>가 일상 행동 대비 가장 강력한 소비 경향을 보였습니다. 하나의 플랫폼, 두 개의 놀라운 고전환 연령대.</p>
 </div>
-</section>
-<!-- Section 5: Provincial Distribution -->
-<section id="provincial-distribution">
-<h2>지역별 분포: 지역 파워하우스</h2>
-<p>산둥과 허베이가 절대 사용자 수에서 지배하는 한편, 남부·서부 성(광둥, 쓰촨, 저장)이 점유율을 확대 중. 서남·화남으로 확장한다면 Kuaishou의——</p>
-<h3>사용자 점유율 상위 지역(2025년 춘절)</h3>
-<table>
-<thead>
-<tr>
-<th>가능케 한 인프라</th>
-<th>WeChat은 세 가지 의도적인 업그레이드로 데스크톱의 미니게임 경험을 진화시켰다:</th>
-<th>1. 데스크톱 우선 게임 경험</th>
-<th>PC 미니게임이 지원하는 기능:</th>
-</tr>
-</thead>
+</div>
+
+<div class="article-section" id="city-tier">
+<h2>🏙️ 도시 등급 분포: 신타이어 도시 지배</h2>
+<p>여기가 콰이쇼우가 Douyin과 가장 다른 점입니다: 사용자 기반이 <strong>중국의 신타이어 및 하위 도시</strong>(3-5선)에 불균형적으로 집중되어 있습니다.</p>
+
+<table class="article-table">
+<thead><tr><th>도시 등급</th><th style="color:var(--color-accent)">사용자 비율</th><th>성장 추세 (CNY 2025 YoY)</th></tr></thead>
 <tbody>
-<tr>
-<td><strong>조절 가능한 윈도우 크기 (고정 모바일 비율이 아님)
-키보드 및 마우스 매핑 (게임별 설정 가능)
-모바일과 데스크톱 간 지속적 로그인</strong></td>
-<td>8.49%</td>
-<td>-0.09pp</td>
-<td>즉, RPG와 전략 게임 — 정밀한 조작과 큰 화면이 유리한 장르 — 이 갑자기 작동한다. 스마트폰 화면에서 답답했던 카드 게임이 27인치 모니터에서 몰입감을 얻는다.</td>
-</tr>
-<tr>
-<td><strong>2. 크로스 디바이스 세션 지속성</strong></td>
-<td>7.94%</td>
-<td>-0.12pp</td>
-<td>사용자는:</td>
-</tr>
-<tr>
-<td><strong>출퇴근 중 모바일에서 플레이를 시작하고
-사무실에 도착하면 데스크톱에서 이어서 플레이하고
-크로스 디바이스 푸시 알림으로 다시 돌아온다</strong></td>
-<td>7.88%</td>
-<td>+0.12pp</td>
-<td>이러한 멀티 디바이스 재참여 루프가 차일드 리텐션을 80%로 유지한다. 하나의 긴 세션이 아니다. 하루 종일 걸친 여러 터치포인트다.</td>
-</tr>
-<tr>
-<td><strong>3. 마찰 없는 광고→게임 전환</strong></td>
-<td>6.34%</td>
-<td>-0.02pp</td>
-<td>사용자가 미니게임 광고를 본다. 클릭. 게임이 즉시 실행. App Store 리디렉트 없음. 다운로드 대기 없음. 권한 프롬프트 없음.</td>
-</tr>
-<tr>
-<td><strong>이것이 중요한 이유:</strong></td>
-<td>4.90%</td>
-<td>+0.13pp</td>
-<td><strong>전환율이 높다</strong> (인텐트와 플레이 사이에 마찰 없음)
-<strong>광고→설치→플레이가 즉각적</strong> (분이 아닌 초 단위 측정)
-<strong>재참여가 원활</strong> (원클릭 복귀로 이탈 플레이어 타게팅 가능)</td>
-</tr>
-<tr>
-<td><strong>PC 트래픽 생태계</strong></td>
-<td>4.86%</td>
-<td>-0.06pp</td>
-<td>Tencent 광고는 미니게임 프로모션을 위해 세 가지 미디어 카테고리를 개방했다:</td>
-</tr>
-<tr>
-<td><strong>카테고리  |  플랫폼  |  사용자 인텐트</strong></td>
-<td>4.77%</td>
-<td>+0.02pp</td>
-<td>----------  |  --------  |  --------------</td>
-</tr>
-<tr>
-<td><strong>소셜  |  WeChat 데스크톱 클라이언트  |  공유 기반 발견, 친구 추천</strong></td>
-<td>3.81%</td>
-<td>+0.20pp</td>
-<td>엔터테인먼트  |  Tencent Video, 앱스토어, Tencent Mobile Game Assistant, 후야(Huya)  |  게임 인접 오디언스, 이미 '플레이' 모드</td>
-</tr>
+<tr><td><strong>1선 & 신1선</strong></td><td>~25%</td><td>📈 가속화 (신1선에서 가장 빠른 성장)</td></tr>
+<tr><td><strong>2선</strong></td><td>~22%</td><td>📈 강력한 성장</td></tr>
+<tr><td><strong>3선</strong></td><td>~28%</td><td>➡️ 안정 (핵심 사용자 기반)</td></tr>
+<tr><td><strong>4-5선</strong></td><td>~25%</td><td>➡️ 안정 (충성스러운 "라오티" 심장부)</td></tr>
 </tbody>
 </table>
-<h3>성장 리더(소비 지출 전년 대비)</h3>
-<ul>
-<li><strong>Guizhou</strong>—Fastest growth in consumer spending</li>
-<li><strong>Sichuan</strong>—Strong economy + growing digital adoption</li>
-<li><strong>Chongqing</strong>—Municipality with concentrated spending power</li>
-</ul>
-<div class="callout callout--insight">
-<div class="callout__label">1선 및 신1선 도시는 사용자 기반의 최대 비중을 차지하며, 2~5선 도시는 지속적 성장 추세를 보입니다.</div>
-<p>Kuaishou 사용자는 수동적 시청자가 아니라——능동적 참여자입니다. 플랫폼의 커뮤니티 주도 문화('라오티에 경제')는 광고주가 꿈꾸는 참여 지표를 견인합니다.</p>
-</div>
-</section>
-<!-- Section 6: Engagement Metrics -->
-<section id="engagement-metrics">
-<h2>참여 지표: 숫자 너머로</h2>
-<p>명절 기간 중 다음 콘텐츠 카테고리가 가장 높은 참여도를 기록:</p>
-<h3>사용 시간</h3>
-<div class="feature-grid">
-<div class="feature-card">
-<div class="stat-number">120min+</div>
-<div class="stat-label">Daily Users (Fastest Growing Segment)</div>
-</div>
-<div class="feature-card">
-<div class="stat-number">15.6%</div>
-<div class="stat-label">Video Collection Growth (YoY)</div>
-</div>
-<div class="feature-card">
-<div class="stat-number">64.2%</div>
-<div class="stat-label">Video Sharing Growth (YoY)</div>
+
+<div class="article-callout article-callout--tip">
+<h4>🎯 타겟팅 팁</h4>
+<p>중국의 "심장부"——3-5선——을 마케팅한다면, 콰이쇼우는 <strong>선택이 아닌 필수</strong>입니다. Douyin이 도달할 수는 있지만, 콰이쇼우가 <em>전환</em>시킵니다.</p>
 </div>
 </div>
-<h3>콘텐츠 선호(2025년 춘절)</h3>
-<p>Kuaishou 사용자는 콘텐츠에 '좋아요'만 누르지 않습니다——공유합니다. 동영상 공유는 2025년 춘절 중 전년 대비 64.2% 증가, 단순 시청 지표를 크게 앞질렀습니다.</p>
-<table>
-<thead>
-<tr>
-<th>캠페인 설정은 놀랍도록 간단</th>
-<th>Tencent 광고 플랫폼(ad.qq.com)에서:</th>
-<th>1. "WeChat 트래픽"과 "Tencent 플랫폼 및 콘텐츠 미디어 - PC" 체크</th>
-</tr>
-</thead>
+
+<div class="article-section" id="province">
+<h2>🗺️ 지역 분포: 지역 파워하우스</h2>
+<p>콰이쇼우의 지리적 발자국은 중국의 경제 지리를 반영합니다——몇 가지 놀라움과 함께.</p>
+
+<table class="article-table">
+<thead><tr><th>성(省)</th><th style="color:var(--color-accent)">사용자 비율</th><th>YoY 변화</th><th>소비력</th></tr></thead>
 <tbody>
-<tr>
-<td><strong>2. 타겟 OS: Windows 및/또는 Mac</strong></td>
-<td>🔥🔥🔥🔥🔥</td>
-<td>3. 게재 시작</td>
-</tr>
-<tr>
-<td><strong>프로그래매틱 운용을 위한 API 지원도 있다. PC용 특별 크리에이티브 사양은 없다. 기존 미니게임 에셋이 디바이스 간에 그대로 작동한다.</strong></td>
-<td>🔥🔥🔥🔥🔥</td>
-<td>어떤 장르가 PC에서 승리하는가</td>
-</tr>
-<tr>
-<td><strong>데이터는 헤비한 장르를 명확히 가리킨다:</strong></td>
-<td>🔥🔥🔥🔥</td>
-<td><strong>RPG</strong> — 긴 세션, 깊은 수익화, PC 조작이 전투에 유리
-<strong>카드 게임</strong> — 전략적 깊이가 데스크톱에 적합, 컬렉션 관리 용이
-<strong>전략</strong> — 맵 기반 UI, 다중 턴 의사결정이 대형 화면에 최적</td>
-</tr>
-<tr>
-<td><strong>샤오홍슈 인구통계 중국 소셜미디어 소비자 행동 RED 플랫폼 국제 브랜드 마케팅 전략</strong></td>
-<td>🔥🔥🔥🔥</td>
-<td>가벼운 캐주얼 게임도 작동하지만, PC에서의 리텐션과 수익화 우위는 미드코어 타이틀에서 더 두드러진다.</td>
-</tr>
-<tr>
-<td><strong>수익화의 차이</strong></td>
-<td>🔥🔥🔥🔥🔥</td>
-<td>PC 사용자는 세션당 지출이 더 많다. 큰 화면은 인게임 구매 아이템을 더 가치 있게 보이게 한다 (작은 아이템을 찡그려 볼 필요가 없다). 더 중요한 것은, 데스크톱 사용자는 이미 '소비 모드'에 있을 가능성이 높다는 점이다 — 결제 정보가 저장된 PC 앞에 앉아 있는 것이다.</td>
-</tr>
+<tr><td><strong>산둥(山东)</strong></td><td>8.49%</td><td>-0.09pp</td><td>💰💰💰 지출 상위 3</td></tr>
+<tr><td><strong>허베이(河北)</strong></td><td>7.94%</td><td>-0.12pp</td><td>💰💰💰 지출 상위 3</td></tr>
+<tr><td><strong>광둥(广东)</strong></td><td>7.88%</td><td>+0.12pp</td><td>💰💰 강력 (상승 중)</td></tr>
+<tr><td><strong>허난(河南)</strong></td><td>6.34%</td><td>-0.02pp</td><td>💰💰 안정적</td></tr>
+<tr><td><strong>쓰촨(四川)</strong></td><td>4.90%</td><td>+0.13pp</td><td>💰💰💰 가장 빠른 지출 성장</td></tr>
+<tr><td><strong>랴오닝(辽宁)</strong></td><td>4.86%</td><td>-0.06pp</td><td>💰💰💰 지출 상위 3</td></tr>
+<tr><td><strong>장쑤(江苏)</strong></td><td>4.77%</td><td>+0.02pp</td><td>💰💰 강력한 경제</td></tr>
+<tr><td><strong>저장(浙江)</strong></td><td>3.81%</td><td>+0.20pp</td><td>💰💰💰 사용자당 높은 지출</td></tr>
 </tbody>
 </table>
-<h3>'공유' 요인</h3>
-<p>전통문화 콘텐츠(무형문화유산, 민속 풍습)에 참여하는 사용자는 명절 기간 구매 전환율이 2.3배. 문화 = 신뢰 = 매출.</p>
-<div class="callout callout--data">
-<div class="callout__label">📊 Engagement Insight</div>
-<p>주목해야 할 지표: 2025년 춘절 중 약 9,000만 사용자가 구매, 총 지출 전년 대비 16.4% 증가.</p>
+
+<div class="article-callout article-callout--tip">
+<h4>💡 지역 인사이트</h4>
+<p>산둥과 허베이가 절대 사용자 수에서 지배하지만, <strong>남부 및 서부 성(광둥, 쓰촨, 저장)</strong>이 점유율을 높이고 있습니다. 남서부 또는 남중국으로 확장한다면, 콰이쇼우의 사용자 기반이 완벽하게 맞습니다.</p>
 </div>
-</section>
-<!-- Section 7: Consumer Profile -->
-<section id="consumer-profile">
-<h2>소비자 프로필: 9000만 위안 이상 소비자</h2>
-<p>Kuaishou의 쇼핑객들은 그냥 사는 게 아니라——명절을 위해 비축합니다. 구매 의도가 가장 높은 춘절 전 기간(1월 1일~20일)에 광고 캠페인 피크를 맞추세요.</p>
-<h3>구매 카테고리(지출 상위 10)</h3>
-<table>
-<thead>
-<tr>
-<th>중국 밖에서 왜 의미가 있는가</th>
-<th>WeChat 미니게임 모델은 글로벌 크로스 플랫폼 캐주얼 게임이 어떤 모습일지 보여준다:</th>
-<th><strong>설치 없는 게임</strong>이 메시징 생태계 내에서 경량 클라이언트로 작동
-<strong>크로스 디바이스 지속성</strong>이 프리미엄 애드온이 아닌 표준 기능
-<strong>광고 경험</strong>이 클릭→설치가 아닌 즉시 플레이</th>
-</tr>
-</thead>
+</div>
+
+<div class="article-section" id="engagement">
+<h2>⏱️ 참여 지표: 숫자 너머</h2>
+<p>콰이쇼우 사용자는 수동적 시청자가 아닙니다——<strong>적극적 참여자</strong>입니다. 플랫폼의 커뮤니티 중심 문화("라오티 경제")가 광고주가 꿈꾸는 참여 지표를 이끕니다.</p>
+
+<div class="stats-grid">
+<div class="stat-card"><div class="stat-card__number">120분+</div><div class="stat-card__label">1일 사용자 (가장 빠르게 성장하는 세그먼트)</div></div>
+<div class="stat-card"><div class="stat-card__number">15.6%</div><div class="stat-card__label">동영상 수집 성장 (YoY)</div></div>
+<div class="stat-card"><div class="stat-card__number">64.2%</div><div class="stat-card__label">동영상 공유 성장 (YoY)</div></div>
+</div>
+
+<h3>콘텐츠 선호도 (CNY 2025)</h3>
+<table class="article-table">
+<thead><tr><th>콘텐츠 유형</th><th style="color:var(--color-accent)">참여 수준</th><th>사용자 행동</th></tr></thead>
 <tbody>
-<tr>
-<td><strong>글로벌 대안 — 데스크톱 지원과 본격적 수익화를 갖춘 Facebook Instant Games 같은 것 — 은 아직 존재하지 않는다. 하지만 모델은 검증되었다. 4억 일일 노출이 그 증거다.</strong></td>
-<td>23.2%</td>
-<td>핵심 인사이트</td>
-</tr>
-<tr>
-<td><strong>1. <strong>PC 미니게임은 실험이 아닌 현실이다.</strong> 45%의 매출 성장과 55%의 사용자 성장은 이것이 성장 채널임을 보여준다.</strong></td>
-<td>8.2%</td>
-<td>2. <strong>설정은 극히 간단하다.</strong> 두 개의 체크박스와 OS 타게팅뿐. 디바이스 최적화는 플랫폼이 처리한다.</td>
-</tr>
-<tr>
-<td><strong>3. <strong>헤비한 장르가 데스크톱에서 승리한다.</strong> RPG, 카드, 전략 게임이 PC 포맷에서 불균형적으로 큰 혜택을 받는다.</strong></td>
-<td>5.8%</td>
-<td>4. <strong>마찰 없는 광고→플레이가 전환 우위다.</strong> 설치 없음 = 높은 CVR, 더 빠른 플레이 도달.</td>
-</tr>
-<tr>
-<td><strong>다음 단계</strong></td>
-<td>4.9%</td>
-<td>🔥🔥🔥 180+ TGI</td>
-</tr>
-<tr>
-<td><strong>이미 WeChat 미니게임에 참여 중인 게임 광고주에게: PC 트래픽 추가는 낮은 노력으로 높은 상향 효과를 기대할 수 있다. 아직 생태계에 진입하지 않은 광고주에게: 이는 지표상 테스트를 정당화할 수 있는 점점 더 유력한 사용자 획득 채널이다.</strong></td>
-<td>4.0%</td>
-<td>🔥🔥 150+ TGI</td>
-</tr>
-<tr>
-<td><strong>샤오홍슈 인구통계 중국 소셜미디어 소비자 행동 RED 플랫폼 국제 브랜드 마케팅 전략</strong></td>
-<td>4.0%</td>
-<td>기회의 창은 열려 있다. PC 미니게임은 모바일만큼 붐비지 않으며, 타게팅 옵션은 6개월 전보다 정교해졌다. RPG나 전략 타이틀이 있다면, 거기서 시작하라. PC 오디언스가 기다리고 있다.</td>
-</tr>
-<tr>
-<td><strong>📩 <strong>WeChat 미니게임 광고에 대해 상담하고 싶으시다면</strong>, Tuyue Media Gateway로 연락 주십시오. Tencent 생태계에서의 게임 광고주 운영 경험이 풍부합니다. 플랫폼 설정과 캠페인 전략에 대해 상담해 드리겠습니다.</strong></td>
-<td>3.7%</td>
-<td>콰이쇼우 유저는 누구인가</td>
-</tr>
-<tr>
-<td><strong>왜 중요한가</strong></td>
-<td>3.4%</td>
-<td>📈 CNY essential</td>
-</tr>
-<tr>
-<td><strong>Home &amp; Living</strong></td>
-<td>3.3%</td>
-<td>➡️ Stable</td>
-</tr>
-<tr>
-<td><strong>MAU 4억 명 이상 -- 콰이쇼우의 월간 활성 사용자 수. 중국 2위 숏폼 플랫폼</strong></td>
-<td>3.1%</td>
-<td>📈 Gifting season</td>
-</tr>
+<tr><td><strong>단편 드라마</strong></td><td>🔥🔥🔥🔥🔥</td><td>몰아보기, 높은 완료율</td></tr>
+<tr><td><strong>음식 & 요리</strong></td><td>🔥🔥🔥🔥🔥</td><td>CNY 테마, 가족 레시피</td></tr>
+<tr><td><strong>게임</strong></td><td>🔥🔥🔥🔥</td><td>인터랙티브, 라이브 스트리밍</td></tr>
+<tr><td><strong>뷰티 & 스킨케어</strong></td><td>🔥🔥🔥🔥</td><td>튜토리얼 중심, 구매 견인</td></tr>
+<tr><td><strong>전통 문화 "무형유산"</strong></td><td>🔥🔥🔥🔥🔥</td><td>300%+ 검색 성장 (!)</td></tr>
 </tbody>
 </table>
-<h3>높은 TGI 카테고리(춘절 특정 수요)</h3>
-<ul>
-<li><strong>Children's Apparel</strong>—230+ TGI (신규 Year = new clothes for kids)</li>
-<li><strong>Fresh Food</strong>—180+ TGI (CNY feasting)</li>
-<li><strong>Toys / Early Education</strong>—150+ TGI (gifts for kids)</li>
-<li><strong>Snacks / Nuts</strong>—150+ TGI (household sharing)</li>
-<li><strong>Yoga / Fitness Gear</strong>—130+ TGI (신규 Year resolutions)</li>
-</ul>
-<div class="callout callout--strategy">
-<div class="callout__label">🎯 Ad Strategy</div>
-<p>Kuaishou는 동영상 플랫폼만이 아닙니다——검색 엔진입니다. 2025년 춘절 중 4억+ 사용자가 콘텐츠를 검색, 그중 1.4억+가 매일 검색.</p>
+
+<div class="article-callout article-callout--info">
+<h4>📊 참여 인사이트</h4>
+<p><strong>전통 문화 콘텐츠</strong>(무형유산, 민속 풍습)에 참여하는 사용자는 축제 기간 동안 2.3배 높은 구매 전환율을 보입니다. 문화 = 신뢰 = 매출.</p>
 </div>
-</section>
-<!-- Section 8: Search Behavior -->
-<section id="search-behavior">
-<h2>검색 행동: 4억 명 이상의 활성 검색자</h2>
-<p>Douyin과 달리, Kuaishou 사용자는 목적을 가지고 검색합니다. 제품 리뷰, 튜토리얼, 추천을 찾고 있습니다. Kuaishou 검색 광고에 입찰하지 않는다면——</p>
-<h3>그들이 검색하는 것</h3>
-<table>
-<thead>
-<tr>
-<th>Search Category</th>
-<th>User Reach</th>
-<th>Growth Trend</th>
-</tr>
-</thead>
+</div>
+
+<div class="article-section" id="consumer">
+<h2>💳 소비자 프로필: 9,000만+ CNY 쇼핑객</h2>
+<p>주목해야 할 지표: <strong>CNY 2025 동안 거의 9,000만 명이 구매를 했으며</strong>, 총 지출은 YoY 16.4% 증가했습니다.</p>
+
+<table class="article-table">
+<thead><tr><th>카테고리</th><th style="color:var(--color-accent)">지출 비율</th><th>TGI vs 일상</th></tr></thead>
 <tbody>
-<tr>
-<td><strong>1일 평균 사용 시간 120분 이상 -- 단순 스크롤이 아닌 깊은 몰입</strong></td>
-<td>200M+ users</td>
-<td>➡️ Stable</td>
-</tr>
-<tr>
-<td><strong>콰이쇼우(Kuaishou) 인구통계: 4억 명 이상의 유저 베이스 이해하기 (2026)</strong></td>
-<td>High</td>
-<td>📈 Growing</td>
-</tr>
-<tr>
-<td><strong>Lifestyle &amp; Daily Life</strong></td>
-<td>High</td>
-<td>📈 Growing</td>
-</tr>
-<tr>
-<td><strong>Games</strong></td>
-<td>Medium</td>
-<td>📈 Growing</td>
-</tr>
-<tr>
-<td><strong>Stars &amp; Entertainment</strong></td>
-<td>Medium</td>
-<td>➡️ Stable</td>
-</tr>
-<tr>
-<td><strong>Music &amp; Anime</strong></td>
-<td>Medium</td>
-<td>📈 Growing</td>
-</tr>
-<tr>
-<td><strong>Digital &amp; Tech</strong></td>
-<td>Medium</td>
-<td>📈📈 Fastest growing</td>
-</tr>
-<tr>
-<td><strong>Health &amp; Wellness</strong></td>
-<td>Medium</td>
-<td>📈📈 Fastest growing</td>
-</tr>
-<tr>
-<td><strong>Education</strong></td>
-<td>Medium</td>
-<td>📈📈 Fastest growing</td>
-</tr>
+<tr><td><strong>여성 의류</strong></td><td>23.2%</td><td>➡️ 기준선</td></tr>
+<tr><td><strong>모바일/디지털/컴퓨터</strong></td><td>8.2%</td><td>📈 CNY 기간 강세</td></tr>
+<tr><td><strong>남성 의류</strong></td><td>5.8%</td><td>➡️ 안정적</td></tr>
+<tr><td><strong>신선식품</strong></td><td>4.9%</td><td>🔥🔥🔥 180+ TGI</td></tr>
+<tr><td><strong>과자/견과류/특산품</strong></td><td>4.0%</td><td>🔥🔥 150+ TGI</td></tr>
+<tr><td><strong>뷰티 & 스킨케어</strong></td><td>4.0%</td><td>📈 성장 카테고리</td></tr>
+<tr><td><strong>영양 & 건강</strong></td><td>3.7%</td><td>📈 웰빙 트렌드</td></tr>
+<tr><td><strong>주류</strong></td><td>3.4%</td><td>📈 CNY 필수품</td></tr>
+<tr><td><strong>홈 & 리빙</strong></td><td>3.3%</td><td>➡️ 안정적</td></tr>
+<tr><td><strong>금/보석/진주</strong></td><td>3.1%</td><td>📈 선물 시즌</td></tr>
 </tbody>
 </table>
-<h3>광고주를 위한 검색 인사이트</h3>
+
+<div class="article-callout article-callout--warning">
+<h4>⚠️ 광고 전략</h4>
+<p>콰이쇼우 쇼핑객은 단순히 구매하는 것이 아니라 <strong>축제를 위해 비축합니다</strong>. 구매 의도가 가장 높은 <strong>CNY 이전 기간 (1월 1일-1월 20일)</strong>에 광고 캠페인을 피크에 맞추세요. CNY 자체를 기다리지 마세요.</p>
+</div>
+</div>
+
+<div class="article-section" id="search">
+<h2>🔍 검색 행동: 4억+ 활성 검색자</h2>
+<p>콰이쇼우는 단순한 동영상 플랫폼이 아닙니다——<strong>검색 엔진</strong>입니다. CNY 2025 동안 4억 이상의 사용자가 콘텐츠를 검색했으며, 1.4억+가 매일 검색했습니다.</p>
+
+<table class="article-table">
+<thead><tr><th>검색 카테고리</th><th style="color:var(--color-accent)">사용자 도달</th><th>성장 추세</th></tr></thead>
+<tbody>
+<tr><td><strong>TV 프로그램 & 예능</strong></td><td>2억+ 사용자</td><td>➡️ 안정적</td></tr>
+<tr><td><strong>인플루언서 & 크리에이터</strong></td><td>높음</td><td>📈 성장 중</td></tr>
+<tr><td><strong>라이프스타일 & 일상</strong></td><td>높음</td><td>📈 성장 중</td></tr>
+<tr><td><strong>게임</strong></td><td>중간</td><td>📈 성장 중</td></tr>
+<tr><td><strong>연예 & 엔터테인먼트</strong></td><td>중간</td><td>➡️ 안정적</td></tr>
+<tr><td><strong>음악 & 애니메이션</strong></td><td>중간</td><td>📈 성장 중</td></tr>
+<tr><td><strong>디지털 & 테크</strong></td><td>중간</td><td>📈📈 가장 빠른 성장</td></tr>
+<tr><td><strong>건강 & 웰빙</strong></td><td>중간</td><td>📈📈 가장 빠른 성장</td></tr>
+<tr><td><strong>교육</strong></td><td>중간</td><td>📈📈 가장 빠른 성장</td></tr>
+</tbody>
+</table>
+
+<div class="article-callout article-callout--tip">
+<h4>💡 검색 = 기회</h4>
+<p>Douyin에서 검색이 종종 우연적인 반면, 콰이쇼우 사용자는 <strong>목적을 가지고 검색합니다</strong>. 제품 리뷰, 튜토리얼, 추천을 찾고 있습니다. 콰이쇼우 검색 광고에 입찰하지 않는다면, 테이블 위에 돈을 남기고 있는 것입니다.</p>
+</div>
+</div>
+
+<div class="article-section" id="what-it-means">
+<h2>🎯 마케터에게 의미하는 것</h2>
+<p>충분한 데이터——전략을 이야기합시다. 콰이쇼우 인구통계를 바탕으로 한 2026년 추천사항:</p>
+
+<h3>1. 하위 도시를 소홀히 하지 마세요</h3>
+<p>브랜드가 3-5선을 타겟팅한다면, 콰이쇼우는 <strong>가장 효율적인 채널</strong>입니다. CPM이 Douyin보다 낮고, "라오티" 커뮤니티 효과가 더 높은 전환율을 이끕니다.</p>
+
+<h3>2. 연령 스펙트럼의 "양 끝"을 타겟팅하세요</h3>
+<p>24-40이 가장 큰 세그먼트이지만, <strong>18-23세와 50세+ 사용자</strong>가 축제 기간 동안 가장 강력한 소비 경향을 보입니다. 할머니를 무시하지 마세요——할머니도 콰이쇼우에 있고, 건강식품과 신선식품을 구매하고 있습니다.</p>
+
+<h3>3. CNY(및 다른 축제)에 맞춰 캠페인을 타이밍하세요</h3>
+<p>콰이쇼우 사용량은 축제 기간에 피크에 달합니다. <strong>축제 전에 스파이크</strong>(CNY 전 쇼핑)하고 <strong>축제 중에 유지</strong>(콘텐츠 소비)하도록 광고비를 계획하세요.</p>
+
+<h3>4. 검색 광고에 투자하세요</h3>
+<p>4억+ 사용자가 검색하는 콰이쇼우의 검색 광고 인벤토리는 가격이 저평가되어 있습니다. 카테고리 키워드(예: "건성피부용 최고의 스킨케어")에 입찰하고 고의도 트래픽을 타세요.</p>
+
+<h3>5. "라오티" 신뢰 팩터를 활용하세요</h3>
+<p>콰이쇼우 사용자는 팔로우하는 크리에이터의 추천을 신뢰합니다. 일회성 스폰서십보다 <strong>장기 KOL 파트너십</strong>에 투자하세요. 콰이쇼우에서는 진정성이 세련됨을 이깁니다.</p>
+</div>
+
+<div class="article-section" id="takeaways">
+<h2>📋 핵심 내용</h2>
+<div class="article-callout article-callout--info">
+<h4>핵심 포인트</h4>
 <ul>
-<li><strong>Search = High Intent</strong>. Users searching for "TV show reviews" or "product tutorials" are in research mode—prime for targeted ads.</li>
-<li><strong>Emerging Categories</strong>. Health, education, and digital products are seeing the fastest search growth—get in early before competition heats up.</li>
-<li><strong>Traditional Culture Boom</strong>. Searches for "intangible heritage" (traditional crafts, folk customs) grew 300%+ YoY. Brands aligning with cultural pride win.</li>
+<li><strong>4억+ 사용자</strong> — 중국 2위 숏폼 플랫폼, 9,000만+ 구매자 보유</li>
+<li><strong>3-5선 도시 집중</strong> — 브랜드 경쟁이 낮고 커뮤니티 신뢰가 높은 시장</li>
+<li><strong>18-23세 & 50세+</strong> — 축제 기간 가장 강력한 소비 경향</li>
+<li><strong>동영상 공유 64.2% 증가</strong> — "라오티" 신뢰가 바이럴 도달을 이끔</li>
+<li><strong>4억+ 검색자</strong> — 검색 광고 인벤토리가 저평가되어 있음</li>
 </ul>
-<div class="callout callout--insight">
-<div class="callout__label">💡 Search = Opportunity</div>
-<p>데이터는 충분——전략을 말해 봅시다. Kuaishou 인구통계에 기반한 2026년 권장사항:</p>
-<div class="article-hero__author">
-<div class="article-hero__author-avatar">TMG</div>
-<div class="article-hero__author-info">
-<div class="article-hero__author-name">Tuyue Media Gateway</div>
-<div class="article-hero__author-role">유료 미디어 팀 · 상해</div>
 </div>
 </div>
+
+<div class="article-section" id="next-steps">
+<h2>🚀 다음 단계</h2>
+<p>콰이쇼우의 4억+ 사용자에게 도달할 준비가 되셨나요? 중국 숏폼 에코시스템을 탐색하는 것은 국제 팀에게 복잡합니다. 저희가 도와드리겠습니다.</p>
+<div class="article-cta">
+<h3>전문가와 상담하기</h3>
+<p>콰이쇼우 인구통계와 중국 광고에 대해 궁금한 점이 있으신가요? 메시지를 보내주세요. 모든 이메일을 확인하며, 국제 브랜드 캠페인에서 배운 인사이트를 공유해 드리겠습니다. <a href="/ko/contact/" class="btn btn--primary">문의하기 →</a></p>
 </div>
-</section>
-<!-- Section 9: 이것이 의미하는 것 for Marketers -->
-<section id="what-this-means">
-<h2>크리에이터 이코노미</h2>
-<p>브랜드가 3-5선 도시를 타겟팅한다면, Kuaishou는 가장 효율적인 채널입니다. CPM은 Douyin보다 낮고, '라오티에' 커뮤니티 효과가 더 높은 전환율을 견인합니다.</p>
-<h3>1. 하위 도시를 간과하지 마세요</h3>
-<p>24-40세가 최대 세그먼트지만, 18-23세와 50세+가 명절 기간 가장 강한 소비 성향을 보입니다. 할머니를 무시하지 마세요——그녀는 Kuaishou에서 건강식품과 신선식품을 구매합니다.</p>
-<h3>2. 연령 스펙트럼의 '양 끝'을 타겟으로</h3>
-<p>Kuaishou 사용량은 명절에 정점. 광고 예산을 명절 전(춘절 전 쇼핑)에 급증시키고 명절 중(콘텐츠 소비)에 유지하도록 계획하세요.</p>
-<h3>3. 캠페인을 춘절(및 기타 명절)에 맞추기</h3>
-<p>4억+ 사용자가 검색하는 가운데, Kuaishou 검색 광고 인벤토리는 과소평가되어 있습니다. 카테고리 키워드(예: '건성 피부에 좋은 스킨케어')에 입찰하고 고의도 트래픽을 타세요.</p>
-<h3>4. 검색 광고에 투자하기</h3>
-<p>Kuaishou 사용자는 팔로우하는 크리에이터의 추천을 신뢰합니다. 일회성 스폰서십이 아닌 장기 KOL 파트너십에 투자하세요. Kuaishou에서는 진정성이 세련됨을 이깁니다.</p>
-<h3>5. '老铁(라오티에)' 신뢰 요인 활용하기</h3>
-<p>지리적 확장을 한다면, 구이저우, 쓰촨, 충칭을 우선——이 성들은 소비자 지출의 가장 빠른 성장을 보입니다.</p>
-<h3>6. 고성장 지역에서 테스트하기</h3>
-<p>인구통계 분석 후 우리의 견해:</p>
-</section>
-<!-- Section 10: Bottom Line -->
-<section id="bottom-line">
-<h2>결론: Kuaishou가 귀하의 브랜드에 적합한가?</h2>
-<p>Kuaishou는 Douyin이 되려 하지 않습니다——그것이 강점입니다. 혼잡한 숏폼 시장에서 진정한 커뮤니티, 하위 도시 우위, 명절 주도 커머스라는 틈새를 개척했습니다.</p>
-<ul>
-<li><strong>Yes</strong>, if you're targeting tiers 3-5 cities (lower-tier dominance).</li>
-<li><strong>Yes</strong>, if your audience includes 18-23 or 50+ 연령대s (high conversion).</li>
-<li><strong>Yes</strong>, if you're in fresh food, snacks, beauty, or digital products (high-TGI categories).</li>
-<li><strong>Yes</strong>, if you value community trust over polished branding (authenticity wins).</li>
-<li><strong>Maybe</strong>, if you're purely targeting tier-1 urban elites (Douyin might be better).</li>
-</ul>
-<p>2026년에 Kuaishou를 무시하는 것은 4억 사용자——그리고 약 9,000만 명절 쇼핑객을 무시하는 것입니다. 미디어 플랜에 두고 싶지 않은 공백입니다.</p>
-<p>브랜드가 중국 숏폼 환경을 내비게이트하도록 돕습니다——Kuaishou 광고 설정부터 크리에이티브 전략, 성과 최적화까지. 15년+ 유료 미디어 경험으로 각 플랫폼에서 무엇이 통하는지——</p>
-<div class="cta-box">
-<h3>Kuaishou에서 광고를 운영하시나요?</h3>
-<p>중국 플랫폼 인구통계에 혼란스러우신가요? 타겟 오디언스에 맞는 올바른 플랫폼 선택을 도와드립니다.</p>
-<a class="cta-button" href="/ko/contact/">문의하기 →</a>
 </div>
-</section>
+
 </article>
 <!-- Sidebar -->
 <aside class="article-sidebar">
 <nav class="toc">
 <div class="toc__title">이 기사에서</div>
 <ul class="toc__list">
-<li><a class="toc__link" href="#why-kuaishou-demographics-matter">Why 콰이쇼우 인구통계 Matter</a></li>
-<li><a class="toc__link" href="#scale-snapshot">스케일 스냅샷: 4억 명 이상의 사용자</a></li>
-<li><a class="toc__link" href="#age-distribution">연령 분포</a></li>
-<li><a class="toc__link" href="#city-tier-distribution">도시 계층 분포</a></li>
-<li><a class="toc__link" href="#provincial-distribution">성별 분포</a></li>
-<li><a class="toc__link" href="#engagement-metrics">참여 지표</a></li>
-<li><a class="toc__link" href="#consumer-profile">소비자 프로필</a></li>
-<li><a class="toc__link" href="#search-behavior">검색 행동</a></li>
-<li><a class="toc__link" href="#what-this-means">이것이 의미하는 것</a></li>
+<li><a class="toc__link" href="#scale">📈 규모: 4억+ 사용자</a></li>
+<li><a class="toc__link" href="#age">🎂 연령 분포</a></li>
+<li><a class="toc__link" href="#city-tier">🏙️ 도시 등급 분포</a></li>
+<li><a class="toc__link" href="#province">🗺️ 지역 분포</a></li>
+<li><a class="toc__link" href="#engagement">⏱️ 참여 지표</a></li>
+<li><a class="toc__link" href="#consumer">💳 소비자 프로필</a></li>
+<li><a class="toc__link" href="#search">🔍 검색 행동</a></li>
+<li><a class="toc__link" href="#what-it-means">🎯 마케터에게 의미하는 것</a></li>
+<li><a class="toc__link" href="#takeaways">📋 핵심 내용</a></li>
+<li><a class="toc__link" href="#next-steps">🚀 다음 단계</a></li>
 </ul>
 </nav>
 <div class="sidebar-cta">
