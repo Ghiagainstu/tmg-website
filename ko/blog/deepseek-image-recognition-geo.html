@@ -421,6 +421,11 @@
     .article-callout p { margin-bottom:0.5rem; }
     .article-callout ul { margin-bottom:0; padding-left:1.25rem; }
 
+    .stats-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:1rem; margin:1.5rem 0; }
+    .stat-card { background:#111827; border:1px solid #1e2d45; border-radius:0.75rem; padding:1.5rem; text-align:center; }
+    .stat-card__number { font-size:2rem; font-weight:800; color:#c9a84c; line-height:1; margin-bottom:0.5rem; }
+    .stat-card__label { font-size:0.875rem; color:#b3c0d8; }
+
     .sidebar-cta {
       margin-top: var(--space-6); background: var(--color-bg-card);
       border: 1px solid var(--color-border); border-radius: var(--radius-lg);
@@ -800,19 +805,10 @@
 <h2>이것이 GEO를 변화시키는 이유</h2>
 <p>지금까지 GEO는 텍스트에 관한 것이었다. 사용자가 관련 주제를 검색할 때 AI 모델이 브랜드를 추천하도록 콘텐츠를 최적화하는 것이다.</p>
 <p>하지만 DeepSeek의 새로운 기능은 AI 검색이 더 이상 텍스트 전용이 아님을 의미한다. 사용자는 이제 이미지를 업로드하고 DeepSeek에 분석을 요청할 수 있다.</p>
-<div class="feature-grid">
-<div class="feature-card">
-<div class="feature-card__num">~90</div>
-<div class="feature-card__desc">800×800 이미지당 토큰 수 (DeepSeek)</div>
-</div>
-<div class="feature-card">
-<div class="feature-card__num">870-1100</div>
-<div class="feature-card__desc">동일 이미지당 토큰 수 (GPT/Claude)</div>
-</div>
-<div class="feature-card">
-<div class="feature-card__num">10x</div>
-<div class="feature-card__desc">비전 작업에서 GPT/Claude보다 효율적</div>
-</div>
+<div class="stats-grid">
+<div class="stat-card"><div class="stat-card__number">~90</div><div class="stat-card__label">800×800 이미지당 토큰 수 (DeepSeek)</div></div>
+<div class="stat-card"><div class="stat-card__number">870-1100</div><div class="stat-card__label">동일 이미지당 토큰 수 (GPT/Claude)</div></div>
+<div class="stat-card"><div class="stat-card__number">10x</div><div class="stat-card__label">비전 작업에서 GPT/Claude보다 효율적</div></div>
 </div>
 <p>웹사이트, 제품 페이지, 마케팅 자료의 이미지가 이제 GEO 전략의 일부가 된다. DeepSeek는 제품 사진, 인포그래픽, 브랜드 비주얼, 스크린샷을 분석하고 그 이해를 바탕으로 추천에 영향을 미칠 수 있다.</p>
 <div class="feature-grid">
@@ -946,17 +942,17 @@
 <div class="container">
 <div class="related__title">더보기</div>
 <div class="related__grid">
-<a class="related-card" href="/blog/doubao-ads-geo-still-worth-it/">
-<div class="related-card__cat">GEO / AI Search</div>
-<div class="related-card__title">Doubao Added Ads — Is GEO Still Worth It?</div>
+<a class="related-card" href="/ko/blog/doubao-ads-geo-still-worth-it/">
+<div class="related-card__cat">GEO / AI 검색</div>
+<div class="related-card__title">더바오에 광고 추가 — GEO는 아직 가치 있는가?</div>
 </a>
-<a class="related-card" href="/blog/doubao-paid-what-it-means-for-geo/">
-<div class="related-card__cat">GEO / AI Search</div>
-<div class="related-card__title">Doubao Paid — What It Means for GEO Marketing</div>
+<a class="related-card" href="/ko/blog/doubao-paid-what-it-means-for-geo/">
+<div class="related-card__cat">GEO / AI 검색</div>
+<div class="related-card__title">더바오 유료화 — GEO 마케팅에这意味着什么</div>
 </a>
-<a class="related-card" href="/blog/geo-channel-weight-2026/">
-<div class="related-card__cat">GEO / Channel Strategy</div>
-<div class="related-card__title">GEO Channel Weight 2026: Which Platforms Get the Most AI Traffic?</div>
+<a class="related-card" href="/ko/blog/geo-channel-weight-2026/">
+<div class="related-card__cat">GEO / 채널 전략</div>
+<div class="related-card__title">GEO 채널 가중치 2026: 어떤 플랫폼이 가장 많은 AI 트래픽을获得するか?</div>
 </a>
 </div>
 </div>
