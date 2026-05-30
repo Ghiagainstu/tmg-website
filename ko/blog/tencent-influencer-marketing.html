@@ -43,6 +43,35 @@
   .skip-link{position:absolute;top:-100px;left:0;background:var(--color-accent);color:var(--color-bg);padding:8px 16px;z-index:10000;text-decoration:none;transition:top 0.3s;font-weight:600;}
   .skip-link:focus{top:0;}
 
+  .article-table { width:100%; border-collapse:separate; border-spacing:0; border-radius:0.75rem; overflow:hidden; border:1px solid #1e2d45; margin:1.5rem 0; font-size:0.875rem; }
+  .article-table th { background:#0d1220; color:#c9a84c; font-weight:700; padding:1rem 1.25rem; text-align:left; border-bottom:2px solid #1e2d45; }
+  .article-table td { padding:0.75rem 1.25rem; border-bottom:1px solid #1e2d45; color:#b3c0d8; }
+  .article-table tr:last-child td { border-bottom:none; }
+  .article-table tr:hover td { background:rgba(45,107,228,0.05); }
+
+  .article-section { margin-bottom:3rem; }
+  .article-section h2 { font-size:1.5rem; font-weight:700; margin-bottom:1rem; color:#f0f4ff; }
+  .article-section h3 { font-size:1.125rem; font-weight:600; margin-top:1.5rem; margin-bottom:0.75rem; color:#f0f4ff; }
+  .article-section p { margin-bottom:1rem; line-height:1.7; }
+  .article-section ul { margin-bottom:1rem; padding-left:1.5rem; }
+  .article-section li { margin-bottom:0.5rem; line-height:1.6; }
+
+  .article-callout { border-radius:0.75rem; padding:1.5rem; margin:1.5rem 0; border-left:4px solid; }
+  .article-callout--info { background:rgba(45,107,228,0.08); border-color:#2d6be4; }
+  .article-callout--tip { background:rgba(201,168,76,0.08); border-color:#c9a84c; }
+  .article-callout--warning { background:rgba(239,68,68,0.08); border-color:#ef4444; }
+  .article-callout h4 { font-size:1.125rem; font-weight:600; margin-bottom:0.75rem; color:#f0f4ff; }
+  .article-callout p { margin-bottom:0.5rem; }
+  .article-callout ul { margin-bottom:0; padding-left:1.25rem; }
+
+  .article-cta { background:#111827; border:1px solid #1e2d45; border-radius:0.75rem; padding:2rem; text-align:center; margin-top:2rem; }
+  .article-cta h3 { font-size:1.25rem; margin-bottom:0.75rem; }
+
+  .stats-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:1rem; margin:1.5rem 0; }
+  .stat-card { background:#111827; border:1px solid #1e2d45; border-radius:0.75rem; padding:1.5rem; text-align:center; }
+  .stat-card__number { font-size:2rem; font-weight:800; color:#c9a84c; line-height:1; margin-bottom:0.5rem; }
+  .stat-card__label { font-size:0.875rem; color:#b3c0d8; }
+
     :root {
       --color-bg: #080c14;
       --color-bg-alt: #0d1220;
@@ -776,89 +805,175 @@
 <main id="main-content" class="article-body">
   <div class="container">
     <article class="article-content reveal">
-<h2>왜 중요한가</h2>
+
+<div class="article-callout article-callout--info">
+<h4>💡 왜 중요한가</h4>
 <p>대부분의 인플루언서 마케팅 프레임워크는 '인지도'와 '전환'에서 멈춥니다. 인플루언서 콘텐츠를 일회성 미디어 바이로 간주하고 도달률과 클릭만을 측정합니다. 그러나 WeChat의 소셜 생태계에서 콘텐츠는 일회용이 아닙니다. 축적됩니다. 모든 협업이 영구적인 자산을 구축합니다. 크리에이터를 신뢰하는 소비자의 삶 속에 스며드는 브랜드의 존재감이 바로 그것입니다.</p>
-<p>Tencent의 ACT 프레임워크 — <strong>Affinity(喜爱), Conversion(转化), Treasure(品牌资产)</strong> — 는 패러다임 전환을 의미합니다. 인플루언서 트랜잭션에서 콘텐츠 주도의 브랜드 자산 구축으로의 전환입니다.</p>
-<h2 id="act-framework">ACT 프레임워크란?</h2>
-<p>단계  |  초점  |  지표</p>
-<p><strong>A — Affinity(喜爱)</strong>  |  진정한 소비자 애정 구축  |  콘텐츠 참여도, 크리에이터 신뢰도, 브랜드 감성</p>
-<p><strong>C — Conversion(转化)</strong>  |  애정을 행동으로 전환  |  미니 프로그램 구매, 매장 방문, 리드 제너레이션</p>
-<p><strong>T — Treasure(品牌资产)</strong>  |  영구적 브랜드 자산 축적  |  팔로워 성장, 콘텐츠 라이브러리, 프라이빗 도메인</p>
-<p>획기적인 인사이트: <strong>이 세 단계는 선형적이지 않습니다. 순환 구조입니다.</strong> 한 단계에서 생성된 Treasure가 다음 사이클의 Affinity로 다시 피드됩니다. 오늘 시딩된 콘텐츠가 내일의 검색 인텐트를 생성합니다. 한 번의 협업으로 확보한 팔로워가 다음 협업을 증폭시킵니다.</p>
-<h2 id="wechat-2-0">WeChat 프라이빗·퍼블릭 도메인 통합 2.0</h2>
+<p>Tencent의 ACT 프레임워크 — <strong>Affinity(호감), Conversion(전환), Treasure(브랜드 자산)</strong> — 는 패러다임 전환을 의미합니다. 인플루언서 트랜잭션에서 콘텐츠 주도의 브랜드 자산 구축으로의 전환입니다.</p>
+</div>
+
+<div class="article-section" id="act-framework">
+<h2>📐 ACT 프레임워크란?</h2>
+<table class="article-table">
+<thead><tr><th>단계</th><th style="color:var(--color-accent)">초점</th><th>지표</th></tr></thead>
+<tbody>
+<tr><td><strong>A — Affinity(호감)</strong></td><td>진정한 소비자 애정 구축</td><td>콘텐츠 참여도, 크리에이터 신뢰도, 브랜드 감성</td></tr>
+<tr><td><strong>C — Conversion(전환)</strong></td><td>애정을 행동으로 전환</td><td>미니 프로그램 구매, 매장 방문, 리드 제너레이션</td></tr>
+<tr><td><strong>T — Treasure(브랜드 자산)</strong></td><td>영구적 브랜드 자산 축적</td><td>팔로워 성장, 콘텐츠 라이브러리, 프라이빗 도메인</td></tr>
+</tbody>
+</table>
+
+<div class="article-callout article-callout--tip">
+<h4>🔄 획기적인 인사이트</h4>
+<p><strong>이 세 단계는 선형적이지 않습니다. 순환 구조입니다.</strong> 한 단계에서 생성된 Treasure가 다음 사이클의 Affinity로 다시 피드됩니다. 오늘 시딩된 콘텐츠가 내일의 검색 인텐트를 생성합니다. 한 번의 협업으로 확보한 팔로워가 다음 협업을 증폭시킵니다.</p>
+</div>
+</div>
+
+<div class="article-section" id="wechat-2-0">
+<h2>🔗 WeChat 프라이빗·퍼블릭 도메인 통합 2.0</h2>
 <p>WeChat 생태계는 완전히 통합된 커머스 환경으로 진화했습니다.</p>
 <p>2025년은 WeChat Mini Store의 브레이크아웃 해였습니다:</p>
+<div class="article-callout article-callout--info">
+<h4>📊 WeChat 2.0 통합 루프</h4>
 <ul>
-<li>크리에이터가 콘텐츠와 라이브 스트리밍으로 퍼블릭 도메인 발견 촉진
-Mini Store, Mini Programs, 또는 오프라인 매장에서 전환 발생
-팔로워와 구매 이력이 프라이빗 도메인으로 유입(Enterprise WeChat, Communities)
-프라이빗 도메인 참여가 반복 구매와 유기적 공유 창출</li>
+<li>크리에이터가 콘텐츠와 라이브 스트리밍으로 퍼블릭 도메인 발견 촉진</li>
+<li>Mini Store, Mini Programs, 또는 오프라인 매장에서 전환 발생</li>
+<li>팔로워와 구매 이력이 프라이빗 도메인으로 유입(Enterprise WeChat, Communities)</li>
+<li>프라이빗 도메인 참여가 반복 구매와 유기적 공유 창출</li>
 </ul>
-<h2 id="four-pillars">새로운 인플루언서 마케팅 패러다임</h2>
-<h3 id="4">업데이트된 플랫폼의 4대 기둥</h3>
-<ol>
-<li>1. <strong>플랫폼 업그레이드(互选平台升级)</strong></li>
-<li>브랜드 Affinity 점수 기반의 더 스마트한 크리에이터 매칭
-ACT 전체 라이프사이클을 추적하는 통합 분석</li>
-<li>2. <strong>크리에이터 공급 확대(达人供给扩充)</strong></li>
-<li>전 버티컬에 걸친 검증된 크리에이터 풀 성장
-기업 직원 KOC(Key Opinion Consumer) 활성화</li>
-<li>3. <strong>증폭 도구(加热能力建设)</strong></li>
-<li>유기적 크리에이터 콘텐츠의 유료 증폭
-인플루언서 콘텐츠 시청자의 브랜드 광고 리타겟팅</li>
-<li>4. <strong>측정 과학(科学度量)</strong></li>
-<li>ACT 스코어링: Affinity 점수, Conversion 점수, Treasure 점수
-콘텐츠 노출부터 구매까지 풀 퍼널 어트리뷰션</li>
+</div>
+</div>
+
+<div class="article-section" id="four-pillars">
+<h2>🏛️ 새로운 인플루언서 마케팅 패러다임</h2>
+<h3>업데이트된 플랫폼의 4대 기둥</h3>
+
+<div class="article-callout article-callout--info">
+<h4>1️⃣ 플랫폼 업그레이드(互选平台升级)</h4>
+<ul>
+<li>브랜드 Affinity 점수 기반의 더 스마트한 크리에이터 매칭</li>
+<li>ACT 전체 라이프사이클을 추적하는 통합 분석</li>
 </ul>
-<h2 id="creator-brand">크리에이터-브랜드 관계: 트랜잭션에서 공동 창작으로</h2>
+</div>
+
+<div class="article-callout article-callout--tip">
+<h4>2️⃣ 크리에이터 공급 확대(达人供给扩充)</h4>
+<ul>
+<li>전 버티컬에 걸친 검증된 크리에이터 풀 성장</li>
+<li>기업 직원 KOC(Key Opinion Consumer) 활성화</li>
+</ul>
+</div>
+
+<div class="article-callout article-callout--info">
+<h4>3️⃣ 증폭 도구(加热能力建设)</h4>
+<ul>
+<li>유기적 크리에이터 콘텐츠의 유료 증폭</li>
+<li>인플루언서 콘텐츠 시청자의 브랜드 광고 리타겟팅</li>
+</ul>
+</div>
+
+<div class="article-callout article-callout--tip">
+<h4>4️⃣ 측정 과학(科学度量)</h4>
+<ul>
+<li>ACT 스코어링: Affinity 점수, Conversion 점수, Treasure 점수</li>
+<li>콘텐츠 노출부터 구매까지 풀 퍼널 어트리뷰션</li>
+</ul>
+</div>
+</div>
+
+<div class="article-section" id="creator-brand">
+<h2>🤝 크리에이터-브랜드 관계: 트랜잭션에서 공동 창작으로</h2>
+
 <h3>핵심 원칙</h3>
+<div class="article-callout article-callout--info">
+<h4>📋 크리에이터-브랜드 관계 원칙</h4>
 <ul>
-<li><strong>콘텐츠 트랜잭션 < 콘텐츠 심비오시스:</strong> 소셜 미디어 시대에 의미 있는 콘텐츠를 함께 창작하는 브랜드와 크리에이터가 함께 상업적 성공을 이룹니다.
-<strong>소셜 신뢰가 성과를 주도합니다:</strong> WeChat의 소셜 그래프 덕분에 인플루언서 추천은 어떤 플랫폼보다 무게감 있게 작용합니다.
-<strong>재사용이 ROI를 배가합니다:</strong> 크리에이터 콘텐츠는 유료 광고로 증폭하고 프라이빗 도메인 채널에서 재배포해야 합니다.</li>
+<li><strong>콘텐츠 트랜잭션 < 콘텐츠 심비오시스:</strong> 소셜 미디어 시대에 의미 있는 콘텐츠를 함께 창작하는 브랜드와 크리에이터가 함께 상업적 성공을 이룹니다.</li>
+<li><strong>소셜 신뢰가 성과를 주도합니다:</strong> WeChat의 소셜 그래프 덕분에 인플루언서 추천은 어떤 플랫폼보다 무게감 있게 작용합니다.</li>
+<li><strong>재사용이 ROI를 배가합니다:</strong> 크리에이터 콘텐츠는 유료 광고로 증폭하고 프라이빗 도메인 채널에서 재배포해야 합니다.</li>
 </ul>
+</div>
+
 <h3>효과적인 콘텐츠 포맷</h3>
+<div class="article-callout article-callout--tip">
+<h4>📺 효과적인 콘텐츠 포맷</h4>
 <ul>
-<li><strong>크리에이터 숏폼 영상:</strong> 퍼널 상단 발견 및 교육
-<strong>크리에이터 라이브 스트리밍:</strong> 실시간 상호작용 및 즉시 전환
-<strong>기업 가이드 크리에이터(KOS):</strong> 매장 직원의 마이크로 인플루언서 활용
-<strong>크로스 포맷 증폭:</strong> 숏폼 영상 → 유료 광고 → 라이브 스트리밍 → 프라이빗 도메인</li>
+<li><strong>크리에이터 숏폼 영상:</strong> 퍼널 상단 발견 및 교육</li>
+<li><strong>크리에이터 라이브 스트리밍:</strong> 실시간 상호작용 및 즉시 전환</li>
+<li><strong>기업 가이드 크리에이터(KOS):</strong> 매장 직원의 마이크로 인플루언서 활용</li>
+<li><strong>크로스 포맷 증폭:</strong> 숏폼 영상 → 유료 광고 → 라이브 스트리밍 → 프라이빗 도메인</li>
 </ul>
-<h2 id="execution">제안: ACT 실행 방법</h2>
-<ol>
-<li>1. <strong>ROAS만이 아닌 ACT KPI를 설정하세요.</strong></li>
-<li>Affinity: 참여율, 감성 점수, 크리에이터 신뢰 점수
-Conversion: Mini Store 구매, CTR, 컴포넌트 전환율
-Treasure: 팔로워 성장, 반복 구매율, 프라이빗 도메인 규모</li>
-<li>2. <strong>단발성이 아닌 배치로 진행하세요.</strong></li>
-<li>웨이브당 5-10명의 크리에이터 배치로 인플루언서 캠페인 계획
-A 단계 콘텐츠를 C 단계 타겟팅에 활용</li>
-<li>3. <strong>게시만 하지 말고 증폭하세요.</strong></li>
-<li>유기적 도달률만으로는 가치의 많은 부분을 놓칩니다
-최고 성과 크리에이터 콘텐츠의 유료 증폭이 ROI를 배가합니다</li>
-<li>4. <strong>프라이빗 도메인 루프를 닫으세요.</strong></li>
-<li>모든 전환은 Enterprise WeChat 또는 Community로 연결되어야 합니다
-프라이빗 도메인은 곧 'Treasure' — 복리로 증가하는 자산이 됩니다</li>
-<li>5. <strong>직원을 KOS로 활성화하세요.</strong></li>
-<li>매장 직원, 세일즈 담당자, 브랜드 임직원은 아직 활용되지 않은 마이크로 인플루언서입니다
-진정성 있는 직원 콘텐츠는 종종 정제된 브랜드 콘텐츠보다 더 뛰어난 성과를 냅니다</li>
+</div>
+</div>
+
+<div class="article-section" id="execution">
+<h2>🚀 제안: ACT 실행 방법</h2>
+
+<div class="article-callout article-callout--info">
+<h4>1️⃣ ROAS만이 아닌 ACT KPI를 설정하세요</h4>
+<ul>
+<li>Affinity: 참여율, 감성 점수, 크리에이터 신뢰 점수</li>
+<li>Conversion: Mini Store 구매, CTR, 컴포넌트 전환율</li>
+<li>Treasure: 팔로워 성장, 반복 구매율, 프라이빗 도메인 규모</li>
 </ul>
+</div>
+
+<div class="article-callout article-callout--tip">
+<h4>2️⃣ 단발성이 아닌 배치로 진행하세요</h4>
+<ul>
+<li>웨이브당 5-10명의 크리에이터 배치로 인플루언서 캠페인 계획</li>
+<li>A 단계 콘텐츠를 C 단계 타겟팅에 활용</li>
+</ul>
+</div>
+
+<div class="article-callout article-callout--info">
+<h4>3️⃣ 게시만 하지 말고 증폭하세요</h4>
+<ul>
+<li>유기적 도달률만으로는 가치의 많은 부분을 놓칩니다</li>
+<li>최고 성과 크리에이터 콘텐츠의 유료 증폭이 ROI를 배가합니다</li>
+</ul>
+</div>
+
+<div class="article-callout article-callout--tip">
+<h4>4️⃣ 프라이빗 도메인 루프를 닫으세요</h4>
+<ul>
+<li>모든 전환은 Enterprise WeChat 또는 Community로 연결되어야 합니다</li>
+<li>프라이빗 도메인은 곧 'Treasure' — 복리로 증가하는 자산이 됩니다</li>
+</ul>
+</div>
+
+<div class="article-callout article-callout--info">
+<h4>5️⃣ 직원을 KOS로 활성화하세요</h4>
+<ul>
+<li>매장 직원, 세일즈 담당자, 브랜드 임직원은 아직 활용되지 않은 마이크로 인플루언서입니다</li>
+<li>진정성 있는 직원 콘텐츠는 종종 정제된 브랜드 콘텐츠보다 더 뛰어난 성과를 냅니다</li>
+</ul>
+</div>
+</div>
+
+<div class="article-section" id="next-steps">
+<h2>🚀 다음 단계</h2>
 <p><strong>ACT 전략을 구축할 준비가 되셨나요?</strong> 크리에이터 매칭, ACT 측정, 플랫폼 설정을 위해 Tencent Ads 전문가에게 문의하세요.</p>
+<div class="article-cta">
+<h3>전문가와 상담하기</h3>
+<p>Tencent 인플루언서 마케팅에 대해 궁금한 점이 있으신가요? 메시지를 보내주세요. 모든 이메일을 확인하며, 국제 브랜드 캠페인에서 배운 인사이트를 공유해 드리겠습니다. <a href="/ko/contact/" class="btn btn--primary">문의하기 →</a></p>
+</div>
+</div>
+
 </article>
     <!-- Sidebar -->
     <aside class="article-sidebar">
       <nav class="toc">
-        
-    <div class="toc__title">이 기사에서</div>
-    <ul class="toc__list">
-      <li><a class="toc__link" href="#act-framework">ACT 프레임워크란?</a></li>
-      <li><a class="toc__link" href="#wechat-2-0">WeChat 프라이빗·퍼블릭 도메인 통합 2.0</a></li>
-      <li><a class="toc__link" href="#four-pillars">업데이트된 플랫폼의 4대 기둥</a></li>
-      <li><a class="toc__link" href="#creator-brand">크리에이터-브랜드 관계</a></li>
-      <li><a class="toc__link" href="#execution">ACT 실행 방법</a></li>
-    </ul>
-
-      </nav>
+<div class="toc__title">이 기사에서</div>
+<ul class="toc__list">
+<li><a class="toc__link" href="#act-framework">📐 ACT 프레임워크란?</a></li>
+<li><a class="toc__link" href="#wechat-2-0">🔗 WeChat 프라이빗·퍼블릭 도메인 통합 2.0</a></li>
+<li><a class="toc__link" href="#four-pillars">🏛️ 새로운 인플루언서 마케팅 패러다임</a></li>
+<li><a class="toc__link" href="#creator-brand">🤝 크리에이터-브랜드 관계</a></li>
+<li><a class="toc__link" href="#execution">🚀 ACT 실행 방법</a></li>
+<li><a class="toc__link" href="#next-steps">🚀 다음 단계</a></li>
+</ul>
+</nav>
       <div class="sidebar-cta">
         <p>플랫폼 간 어트리뷰션 데이터가 혼란스러우신가요? 귀하의 설정을 감사하고 의미 있는 측정 프레임워크를 구축해 드립니다.</p>
         <a href="/ko/contact/" class="btn btn--primary">문의하기</a>
