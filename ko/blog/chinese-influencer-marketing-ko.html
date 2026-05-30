@@ -43,6 +43,35 @@
   .skip-link{position:absolute;top:-100px;left:0;background:var(--color-accent);color:var(--color-bg);padding:8px 16px;z-index:10000;text-decoration:none;transition:top 0.3s;font-weight:600;}
   .skip-link:focus{top:0;}
 
+  .article-table { width:100%; border-collapse:separate; border-spacing:0; border-radius:0.75rem; overflow:hidden; border:1px solid #1e2d45; margin:1.5rem 0; font-size:0.875rem; }
+  .article-table th { background:#0d1220; color:#c9a84c; font-weight:700; padding:1rem 1.25rem; text-align:left; border-bottom:2px solid #1e2d45; }
+  .article-table td { padding:0.75rem 1.25rem; border-bottom:1px solid #1e2d45; color:#b3c0d8; }
+  .article-table tr:last-child td { border-bottom:none; }
+  .article-table tr:hover td { background:rgba(45,107,228,0.05); }
+
+  .article-section { margin-bottom:3rem; }
+  .article-section h2 { font-size:1.5rem; font-weight:700; margin-bottom:1rem; color:#f0f4ff; }
+  .article-section h3 { font-size:1.125rem; font-weight:600; margin-top:1.5rem; margin-bottom:0.75rem; color:#f0f4ff; }
+  .article-section p { margin-bottom:1rem; line-height:1.7; }
+  .article-section ul { margin-bottom:1rem; padding-left:1.5rem; }
+  .article-section li { margin-bottom:0.5rem; line-height:1.6; }
+
+  .article-callout { border-radius:0.75rem; padding:1.5rem; margin:1.5rem 0; border-left:4px solid; }
+  .article-callout--info { background:rgba(45,107,228,0.08); border-color:#2d6be4; }
+  .article-callout--tip { background:rgba(201,168,76,0.08); border-color:#c9a84c; }
+  .article-callout--warning { background:rgba(239,68,68,0.08); border-color:#ef4444; }
+  .article-callout h4 { font-size:1.125rem; font-weight:600; margin-bottom:0.75rem; color:#f0f4ff; }
+  .article-callout p { margin-bottom:0.5rem; }
+  .article-callout ul { margin-bottom:0; padding-left:1.25rem; }
+
+  .article-cta { background:#111827; border:1px solid #1e2d45; border-radius:0.75rem; padding:2rem; text-align:center; margin-top:2rem; }
+  .article-cta h3 { font-size:1.25rem; margin-bottom:0.75rem; }
+
+  .stats-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:1rem; margin:1.5rem 0; }
+  .stat-card { background:#111827; border:1px solid #1e2d45; border-radius:0.75rem; padding:1.5rem; text-align:center; }
+  .stat-card__number { font-size:2rem; font-weight:800; color:#c9a84c; line-height:1; margin-bottom:0.5rem; }
+  .stat-card__label { font-size:0.875rem; color:#b3c0d8; }
+
     :root {
       --color-bg: #080c14;
       --color-bg-alt: #0d1220;
@@ -780,100 +809,124 @@
   <div class="container">
     <article class="article-content reveal">
 
-<p>WeChat 사용자의 86%가 인플루언서 추천을 신뢰한다. 그 차이는 플랫폼 규모가 아닌 소셜 아키텍처에 있다. 서구 브랜드가 계속 중국을 오해하는 이유를 분석한다.</p>
-<p>중국 AI 광고 기술이 단순한 모방품이라고 생각하는 서구 마케터들에게 경고한다. AIM+는 Performance Max가 아직 하지 못하는 일을 해내고 있다.</p>
-
-<p>서구 마케터들은 인플루언서 마케팅을 미디어 구매처럼 취급한다. WeChat에서는 콘텐츠가 축적된다. 모든 협업이 영구적인 자산을 구축하며, 이곳에서 관계가 전환을 이끄는 엔진이 된다.</p>
-
-
-<p>서구 인플루언서 마케팅의 기준: 도달률과 클릭수. WeChat에서는 관계가 전환 엔진을 구동한다. 서구 마케터들이 절대 복제할 수 없는 소셜 신뢰의 해부학을 분석한다.</p>
-<div class="article-section" id="the-architecture-of-trust">
-
-<p>중국 인플루언서 마케팅이 다른 이유: 소셜 신뢰의 이점</p>
-<p>🎯 이것이 중요한 이유</p>
-<p>서구에서 인플루언서 마케팅은 트랜잭션 회계처럼 보인다: 게시물당 비용을 지불하고, 도달률을 추적하며, ROAS를 계산한다. 완료되면 크리에이터를 목록에서 지운다.</p>
-<p>중국에서 가장 강력한 크리에이터들은 다르게 작동한다. 그들은 WeChat에서 콘텐츠를 축적한다 — 그리고 모든 협업이 희석되지 않고 복합적으로 증가한다. 한 연구에 따르면, WeChat 사용자의 86%가 팔로우하는 크리에이터의 추천을 신뢰한다. 동일한 청중을 대상으로 한 브랜드 광고의 신뢰도는 40%에도 미치지 못한다.</p>
+<div class="article-callout article-callout--info">
+<h4>💡 신뢰 격차</h4>
+<p>2025년 Tencent 소비재 산업 인플루언서 마케팅 서밋에서 Tencent Ads 총지배인 Fan Yijin은任何 글로벌 브랜드 전략가가 멈추게 할 숫자를 제시했습니다: <strong>WeChat 사용자의 86%가 WeChat 크리에이터가 추천하는 제품에 대해 더 높은 신뢰를 표현합니다.</strong> 더 높은 인지도가 아닙니다. 더 높은 회상이 아닙니다. 더 높은 신뢰입니다. 이 86%는 구조적 현실에 의해 뒷받침됩니다 — WeChat은 사람들이 부모와 대화하고, 친구와 저녁을 조율하고, 중국 설날에 빨간 봉투를 보내는 곳입니다.</p>
 </div>
-<div class="article-section" id="what-the-act-framework-actually-describes">
-<h2>이 격차의 원인은 콘텐츠 품질이 아니다. 소셜 아키텍처이다.</h2>
-<p>신뢰 아키텍처: WeChat을 다르게 만드는 것</p>
-<p>구조적인 비대칭성</p>
-<p>서구 플랫폼에서 인플루언서 콘텐츠는 피드에 나타난다 — 그리고 사라진다. Instagram, TikTok, YouTube 모두 알고리즘에 의해 콘텐츠가 거의 즉시 희석된다. 크리에이터는 매일 새로운 콘텐츠를 생산해야 하며, 과거의 협업은 관련성을 잃는다.</p>
-<p>WeChat은 이 모델을 뒤집는다. 크리에이터 콘텐츠는 다음과 같은 곳에 존재한다:</p>
-<p>채널 | 수명 | 신뢰 메커니즘</p>
-<p><strong>공식 계정(OA)</strong> | 기사는 수년간 검색, 공유, 재발견 가능 | 장문 콘텐츠가 깊이를 쌓음</p>
-</div>
-<div class="article-section" id="private-domain-the-piece-western-frameworks-miss">
-<h2><strong>채널(영상)</strong> | 대화 맥락에서 소셜 공유가 생명을 불어넣음 | 대면 추천 패리티</h2>
-<p><strong>커뮤니티</strong> | 크리에이터 주도의 그룹이 지속적인 신뢰의 공간 | 소속감이 시그널을 증폭시킴</p>
-<p><strong>개인 메시지</strong> | 일대일 공유가 최고의 관련성 | 개인적 보증이 전환을 주도</p>
-<p>인플루언서가 상품을 추천하면 그 콘텐츠는 정적이지 않다. 공유를 통해 순환하고, 대화에 포함되며, 궁극적으로 도달률이 기하급수적으로 확장된다. 이러한 구조적 이점은 인스타그램이나 틱톡에는 존재하지 않는다. 유료 미디어를 발동하지 않는 한 말이다.</p>
-</div>
-<div class="article-section" id="what-this-means-for-international-brands">
-<h2>ACT 프레임워크: 유입경로가 아닌 관계의 순환</h2>
-<p>2025년 소비재 업계 인플루언서 마케팅 서밋에서 Tencent는 ACT 프레임워크를 다음과 같이 재정의했다:</p>
-<p>단계 | 의미 | 작동 방식</p>
-<p><strong>A — Affinity (호감)</strong> | 깊이 있는 소비자 애정 구축 | 크리에이터 생태계가 진정한 신뢰를 배양</p>
-<p><strong>C — Conversion (전환)</strong> | 신뢰를 행동으로 전환 | Mini Shop/Mini Program/매장 방문</p>
-<p><strong>T — Treasure (자산)</strong> | 브랜드가 소유한 영구 자산 축적 | 팔로워가 되는 구매자</p>
-<p>중요한 점은: 이는 선형이 아니다. T가 다시 A로 피드백된다. 브랜드의 Mini Shop에서 구매한 고객은 기업 WeChat 연락처가 되어, 다음 크리에이터 협업의 도달력을 증폭시키는 'Treasure'가 된다. 이는 서구 크리에이터 도구가 시도조차 하지 않은 폐쇄 루프이다.</p>
-</div>
-<div class="article-section" id="the-bottom-line">
-<h2>프라이빗 도메인의 심화 분석: 왜 이 한 부분이 모든 것을 변화시키는가</h2>
-<p>서구 마케터들은 공식 계정, 커뮤니티, 기업 WeChat을 의미하는 '프라이빗 도메인'을 듣고 CRM이라고 생각한다. 이는 오해이다.</p>
-<p>CRM은 푸시 알림이다. 프라이빗 도메인은 지속적인 존재이다. 차이점을 보여주는 예시:</p>
-</div>
-<div class="article-section" id="why-this-matters">
-<h2>Douyin에서의 뷰티 브랜드:</h2>
-<div class="callout callout--accent">
 
-<p>WeChat에서의 뷰티 브랜드:</p>
+<div class="article-section" id="architecture-of-trust">
+<h2>🏛️ 신뢰의 아키텍처</h2>
+<p>서구 플랫폼은 콘텐츠 배포를 소셜 관계에서 분리합니다. Instagram은 피드 알고리즘을 구축했습니다. TikTok은 콘텐츠 그래프를 구축했습니다. 둘 다 콘텐츠 최적화——스크롤을 계속하게 만드는 것——을 중심으로 설계되었습니다.</p>
+<p>WeChat의 콘텐츠 추천 엔진은 근본적으로 다른 연료로 작동합니다: <strong>친구의 행동.</strong> WeChat에서 콘텐츠 발견의 상당 부분이 친구 공유와 상호작용에서 비롯됩니다. 친구가 크리에이터의 동영상이나 기사를 전달하면, 콘텐츠는 내장된 보증과 함께 도착합니다. 이것이 Tencent가 <em>스런 베이슈(熟人背书)</em>——문자 그대로 "아는 사람 보증"——라고 부르는 것입니다.</p>
 
+<div class="article-callout article-callout--tip">
+<h4>📊 승수 효과</h4>
+<p>한 크리에이터의 콘텐츠가 사용자에 의해 공유되면原始 조회의数倍에 해당하는 2차 노출을 생성합니다. 모든 공유는 미니 신뢰 거래입니다. WeChat 인플루언서 동영상은 차가운 인상이 아니라——따뜻한 소개입니다. 이 차이는 전환율, 재구매 행동, 판매 후 일어나는 일에서 드러납니다.</p>
 </div>
 </div>
-<div class="article-section" id="key-takeaways">
-<h2>브랜드는 단일 주문 하나로 잃지 않는다. 비대칭적 관계를 구축한다: 브랜드는 누가 구매했는지 알고, 그들은 돌아오며, 그들은 다음 크리에이터 캠페인의 시드를 심는다.</h2>
-<div class="callout callout--accent">
 
-<ol>
+<div class="article-section" id="act-framework">
+<h2>📐 ACT 프레임워크가 실제로描述하는 것</h2>
+<p>Tencent의 ACT 프레임워크 — Affinity(호감), Conversion(전환), Treasure(브랜드 자산) — 는 또 다른 마케팅 퍼널로 오독하기 쉽습니다. 그렇지 않습니다. 대부분의 퍼널은 선형입니다: 인지도 → 고려 → 구매. ACT는 관계 순환입니다.</p>
 
-<li>Tencent의 AI 광고 플랫폼은 Google과 Meta가 아직 해결하지 못한 문제를 풀고 있다. 중국에서 광고하는 서구 브랜드라면 반드시 주목해야 한다.</li>
+<div class="article-callout article-callout--info">
+<h4>A — Affinity (호감, 喜爱)</h4>
+<p>진정한 호감을 구축하세요 — 브랜드 인지도나 회상이 아닙니다. 지식형 크리에이터는 전문성과生活 맥락을 통해 브랜드를 콘텐츠에 엮습니다. 친구 공유 증폭과 결합하면, 브랜드 메시지는 신뢰할 수 있는 소스에 의해預熱된 상태로 도착합니다.</p>
+</div>
 
+<div class="article-callout article-callout--tip">
+<h4>C — Conversion (전환, 转化)</h4>
+<p>맥락을 통해 활성화하세요. WeChat의 커머스 계층에는自行 구매, 선물 커머스(送礼), 그룹 바잉(一起买), 온라인-오프라인 연결이 포함됩니다. 전환 순간은 고립되지 않습니다——소셜 시나리오에 내장됩니다.</p>
+</div>
 
-<li>모방품 신화는 잊어라. Tencent의 AIM+는 Performance Max나 Advantage+가 따라잡을 수 없는 영역에서 AI 광고의 한계를 밀어내고 있으며, 중국 소비자에게 다가가는 방식을 근본적으로 바꾸고 있다.</li>
-</ol>
+<div class="article-callout article-callout--info">
+<h4>T — Treasure (브랜드 자산, 品牌资产)</h4>
+<p>영구적인 관계 자산을 축적하세요. 구매 후, 사용자는 기업 WeChat(企业微信), 브랜드 커뮤니티, 멤버십 시스템으로流入합니다. 하나의 구매가 지속적인双向 소통 채널을 엽니다.</p>
+</div>
 
+<p>Treasure 단계가 바로 Tencent가 인플루언서 마케팅을 <em>셩이 + 쯔찬(生意+资产, 거래 + 자산)</em> 모델이라고 부르는 이유입니다. 하나의 크리에이터 콘텐츠가多시나리오 커머스를 활성화합니다. 하나의 크리에이터 상호작용이 복리로增长하는 리텐션 채널을 엽니다.</p>
+</div>
+
+<div class="article-section" id="private-domain">
+<h2>🔒 프라이빗 도메인: 서구 프레임워크가 놓치는 부분</h2>
+<p>대부분의 글로벌 마케팅 팀은 <em>스위(私域, 프라이빗 도메인)</em> 주위에盲点를 가지고 있습니다. 소유 채널——이메일 목록, 로열티 프로그램, 앱——은 이해합니다. 하지만 WeChat의 프라이빗 도메인은 소셜 관계가 일어나는同一个 앱内에存在하기 때문에 다르게 작동합니다.</p>
+<p>WeChat 브랜드 커뮤니티는 격리된 경험이 아닙니다. 친구 및 가족과의 사용자 대화와 나란히 존재합니다. 브랜드의 기업 WeChat 메시지는 실제同事からの 메시지와 같은 알림 스트림으로 도착합니다. 상업적和个人적 소통 사이의 경계가흐려집니다——소름끼치는 방식이 아니라, 자연스러운 통합 방식으로.</p>
+
+<div class="article-callout article-callout--warning">
+<h4>🔒 구조적 우점</h4>
+<p>이것은 서구 플랫폼에서 구조적으로 불가능합니다. Instagram의 브랜드 DM은 iMessage와 같은 무게를 갖지 않습니다. TikTok은持久적인 메시징 계층이根本没有 없습니다. WeChat의 프라이빗 도메인이 작동하는 이유는 인프라가 이미 진정한 관계를 호스팅하기 때문입니다.</p>
 </div>
 </div>
-<div class="article-section" id="action-checklist">
-<h2>이것이 바로 소셜 신뢰 이점 — 단순히 더 나은 타겟팅이 아닌, 관계의 인프라이다.</h2>
-<div class="callout callout--accent">
 
-<ul class="article-list">
+<div class="article-section" id="what-it-means">
+<h2>🌏 국제 브랜드에게这意味着什么</h2>
+<p>Tencent 서밋 데이터가 표준 인플루언서 플레이북 대신 제안하는 것:</p>
 
+<div class="article-callout article-callout--warning">
+<h4>🚫 크리에이터를 미디어 단위로 취급하지 마세요</h4>
+<p>이중 플랫폼 존재(공식 계정 + 채널/동영상)를 가진 WeChat 크리에이터는 이중 신뢰를携带합니다: 장편 리더십과 단편 personality. 후쉬안(互选) 마켓플레이스는 10개 이상의垂直 분야에서 크리에이터 공급이 YoY 2배 성장했다고 보고했습니다.</p>
+</div>
+
+<div class="article-callout article-callout--info">
+<h4>🔄 공유를 위해设计하세요, 단순한 조회수가 아닌</h4>
+<p>WeChat 그룹에서 전달되는 콘텐츠는 자체 배포 엔진을 생성합니다. "친구에게 이것을 보낼까?" 테스트로 콘텐츠를 구축하세요, "스크롤을 멈출까?"가 아닌.</p>
+</div>
+
+<div class="article-callout article-callout--tip">
+<h4>🗺️ 출시 전에完整的 Treasure 경로를 매핑하세요</h4>
+<p>전환된 사용자가 어디로 가나요? 미니 스토어 → 기업 WeChat → 브랜드 커뮤니티 → 재구매? 아니면 미니 스토어 → 끝? 가장 많은 가치를 추출하는 브랜드는 첫 번째 캠페인 전에 두 번째, 세 번째, 네 번째 단계를设计합니다.</p>
+</div>
+
+<div class="article-callout article-callout--info">
+<h4>📊 측정이 다르게 보일 것을预期하세요</h4>
+<p>Tencent의 Ruyi(如翼) 플랫폼은 이제 전체 ACT 生命周期 전반에 걸쳐 캠페인 전 인사이트에서 캠페인 후 어트리뷰션까지 추적합니다. ROAS만으로는 Treasure 단계 리텐션의 복리 자산 가치를 놓칩니다.</p>
+</div>
+</div>
+
+<div class="article-section" id="bottom-line">
+<h2>💰 결론</h2>
+<p>중국 인플루언서 마케팅은 서구 인플루언서 마케팅의 번역 버전이 아닙니다. 다른 운영 체제 위에 구축되었습니다——알고리즘 주의가 아닌 소셜 신뢰가 핵심 배포 메커니즘인 시스템.</p>
+<p>86% 신뢰 수치는 허영 지표가 아닙니다. 크리에이터, 친구, 브랜드가 같은 소셜 공간을共享하는 에코시스템의 구조적 결과입니다. 인상과 전환을 위해 최적화된 서구 프레임워크는 이를 포착하지 못합니다——설계된 적이 없기 때문입니다.</p>
+</div>
+
+<div class="article-section" id="takeaways">
+<h2>📋 핵심 내용</h2>
+<div class="article-callout article-callout--info">
+<h4>핵심 포인트</h4>
+<ul>
+<li><strong>신뢰는 인프라이지, 결과가 아닙니다.</strong> WeChat의 86% 크리에이터 신뢰율은 구조적 설계——소셜 알고리즘, 친구 공유 배포, 지식 크리에이터 에코시스템——에서 비롯됩니다.</li>
+<li><strong>ACT는 관계 순환이지, 퍼널이 아닙니다.</strong> 호감 → 전환 → Treasure가 호감으로 피드백됩니다.每个 사이클이 브랜드 에쿼티를 복리로增长시킵니다.</li>
+<li><strong>프라이빗 도메인이 차별화 요소입니다.</strong> 기업 WeChat, 브랜드 커뮤니티, 멤버십 시스템이 하나의 구매를 지속적인 관계 채널로 전환합니다.</li>
+<li><strong>크리에이터 공급이 빠르게 확대되고 있습니다.</strong> 크리에이터 수가 YoY 2배 성장하고 후쉬안 플랫폼이 10개 이상의垂直 분야로 확장됨에 따라, 지속적인 파트너십을 위한 인프라가 존재합니다.</li>
+<li><strong>측정 확대가 필요합니다.</strong> ROAS는 C 단계를 포착합니다. Treasure 지표——커뮤니티 성장, 재구매율, 프라이빗 도메인 참여——도同等하게重要합니다.</li>
 </ul>
+</div>
+</div>
 
+<div class="article-section" id="next-steps">
+<h2>🚀 다음 단계</h2>
+<p>ACT 전략을 구축할准备가 되셨나요? TMG는 Tencent 광고 에코시스템을 전문으로 합니다. 후쉬안 플랫폼 설정부터 ACT 전략 설계, 크리에이터 파트너십 관리까지——복잡성을 처리하므로 결과에 집중할 수 있습니다.</p>
+<div class="article-cta">
+<h3>전문가와 상담하기</h3>
+<p>중국 인플루언서 마케팅에 대해 궁금한 점이 있으신가요? 메시지를 보내주세요. 모든 이메일을 확인하며, 국제 브랜드 캠페인에서 배운 인사이트를 공유해 드리겠습니다. <a href="/ko/contact/" class="btn btn--primary">문의하기 →</a></p>
 </div>
 </div>
-<p>서구 크리에이터 도구가 복제할 수 없는 것</p>
+
 </article>
     <!-- Sidebar -->
     <aside class="article-sidebar">
       <nav class="toc">
-        
-    <div class="toc__title">이 기사에서</div>
-    <ul class="toc__list">
-      <li><a class="toc__link" href="#the-architecture-of-trust">신뢰의 아키텍처</a></li>
-      <li><a class="toc__link" href="#what-the-act-framework-actually-describes">이 격차의 원인은 콘텐츠 품질이 아니다. 소셜 아키텍처이다.</a></li>
-      <li><a class="toc__link" href="#private-domain-the-piece-western-frameworks-miss"><strong>채널(영상)</strong> | 대화 맥락에서 소셜 공유가 생명을 불어넣음 | 대면 추천 패리티</a></li>
-      <li><a class="toc__link" href="#what-this-means-for-international-brands">ACT 프레임워크: 유입경로가 아닌 관계의 순환</a></li>
-      <li><a class="toc__link" href="#the-bottom-line">프라이빗 도메인의 심화 분석: 왜 이 한 부분이 모든 것을 변화시키는가</a></li>
-      <li><a class="toc__link" href="#why-this-matters">Douyin에서의 뷰티 브랜드:</a></li>
-      <li><a class="toc__link" href="#key-takeaways">브랜드는 단일 주문 하나로 잃지 않는다. 비대칭적 관계를 구축한다: 브랜드는 누가 구매했는지 알고, 그들은 돌아오며, 그들은 다음 크리에이터 캠페인의 시드를 심는다.</a></li>
-      <li><a class="toc__link" href="#action-checklist">이것이 바로 소셜 신뢰 이점 — 단순히 더 나은 타겟팅이 아닌, 관계의 인프라이다.</a></li>
-    </ul>
-  
-      </nav>
+<div class="toc__title">이 기사에서</div>
+<ul class="toc__list">
+<li><a class="toc__link" href="#architecture-of-trust">🏛️ 신뢰의 아키텍처</a></li>
+<li><a class="toc__link" href="#act-framework">📐 ACT 프레임워크</a></li>
+<li><a class="toc__link" href="#private-domain">🔒 프라이빗 도메인</a></li>
+<li><a class="toc__link" href="#what-it-means">🌏 국제 브랜드에게这意味着什么</a></li>
+<li><a class="toc__link" href="#bottom-line">💰 결론</a></li>
+<li><a class="toc__link" href="#takeaways">📋 핵심 내용</a></li>
+<li><a class="toc__link" href="#next-steps">🚀 다음 단계</a></li>
+</ul>
+</nav>
       <div class="sidebar-cta">
         <p>플랫폼별 에트리벌션 데이터로 혼란하시나요? 당신의 설정을 감사하고 맑은 측정 프레임워크를 만들겠습니다.</p>
         <a href="/ko/contact/" class="btn btn--primary">문의하기</a>
