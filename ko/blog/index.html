@@ -162,7 +162,7 @@
       align-items: center;
     }
     .header__nav-link:hover,
-    .header__nav-link--active { color: var(--color-text-primary); }
+    .header__nav-link.active { color: var(--color-text-primary); }
     .header__nav-link::after {
       content: '';
       position: absolute;
@@ -173,8 +173,7 @@
       background: var(--color-accent);
       transition: width var(--transition-fast);
     }
-    .header__nav-link:hover::after,
-    .header__nav-link--active::after { width: 100%; }
+    .header__nav-link.active::after { width: 100%; }
 
     .header__dropdown { position: relative; }
     .header__dropdown-trigger {
