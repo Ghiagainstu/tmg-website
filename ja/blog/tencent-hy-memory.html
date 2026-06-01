@@ -159,7 +159,11 @@
       transition: color .15s; text-decoration: none !important;
     }
     .header__nav-link:hover { color: var(--color-text-primary); text-decoration: none !important; }
-    .header__nav-link--active { color: var(--color-accent-light); }
+    .header__nav-link--active {
+      color: var(--color-accent-light);
+      border-bottom: 2px solid var(--color-accent);
+      padding-bottom: 2px;
+    }
     .header__cta { display: none; }
     .header__toggle {
       display: none; flex-direction: column; justify-content: center;
