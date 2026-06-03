@@ -159,7 +159,7 @@
       transition: color .15s; text-decoration: none !important;
     }
     .header__nav-link:hover { color: var(--color-text-primary); text-decoration: none !important; }
-    .header__nav-link {
+    .header__nav-link--active {
       color: var(--color-text-primary);
       border-bottom: 2px solid var(--color-accent);
       padding-bottom: 2px;
@@ -847,19 +847,19 @@
           <a href="/ko/faqs/" class="header__nav-link">FAQ</a>
           <div class="header__dropdown">
             <a href="/ko/about/" class="header__nav-link header__dropdown-trigger">
-              About
+              회사 소개
               <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </a>
             <div class="header__dropdown-menu">
               <a href="/ko/why-tmg/" class="header__dropdown-item">TMG를 선택하는 이유</a>
-              <a href="/ko/about/" class="header__dropdown-item">About Us</a>
+              <a href="/ko/about/" class="header__dropdown-item">회사 소개</a>
               <a href="/ko/contact/" class="header__dropdown-item">문의하기</a>
             </div>
           </div>
         </nav>
         <div class="header__lang-wrap">
           <button class="header__lang-btn" onclick="this.parentElement.classList.toggle('active')">
-            <span class="header__lang-flag">🇺🇸</span>English
+            <span class="header__lang-flag">🇰🇷</span>한국어
             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 3.5l3 4 3-4"/></svg>
           </button>
           <div class="header__lang-menu">
@@ -962,19 +962,19 @@
       <div class="related__title">관련 기사</div>
       <div class="related__grid">
         <a href="/ko/blog/xiaohongshu-demographics-who-are-these-350m-users/" class="related-card">
-          <div class="related-card__cat">Xiaohongshu / Consumer Insights</div>
-          <div class="related-card__title">Xiaohongshu Demographics: Who Are These 350M Users?</div>
-          <p class="related-card__desc">A deep dive into the demographics and behavior patterns of Xiaohongshu's massive user base.</p>
+          <div class="related-card__cat">샤오홍슈 / 소비자 인사이트</div>
+          <div class="related-card__title">샤오홍슈 인구통계: 3억 5천만 사용자는 누구인가?</div>
+          <p class="related-card__desc">샤오홍슈의 거대한 사용자 기반의 인구통계와 행동 패턴을 심층 분석합니다.</p>
         </a>
         <a href="/ko/blog/xiaohongshu-consumer-research/" class="related-card">
-          <div class="related-card__cat">Xiaohongshu / Consumer Insights</div>
-          <div class="related-card__title">Xiaohongshu Consumer Research: What Brands Need to Know</div>
-          <p class="related-card__desc">How Chinese consumers use Xiaohongshu to research and discover products before purchase.</p>
+          <div class="related-card__cat">샤오홍슈 / 소비자 인사이트</div>
+          <div class="related-card__title">샤오홍슈 소비자 리서치: 브랜드가 알아야 할 것</div>
+          <p class="related-card__desc">중국 소비자가 구매 전 샤오홍슈를 어떻게 활용하여 제품을 리서치하고 발견하는지.</p>
         </a>
         <a href="/ko/blog/baidu-q1-2026-ai-revenue/" class="related-card">
-          <div class="related-card__cat">China Market Insights</div>
-          <div class="related-card__title">Baidu Q1 2026: AI Now Drives 52% of Revenue</div>
-          <p class="related-card__desc">How China's tech giants are restructuring around AI, and what it means for your ad strategy.</p>
+          <div class="related-card__cat">중국 시장 인사이트</div>
+          <div class="related-card__title">바이두 2026년 1분기: AI가 매출의 52% 차지</div>
+          <p class="related-card__desc">중국 테크 대기업이 AI를 중심으로 어떻게 재편되고 있는지, 그리고 광고 전략에 미치는 영향.</p>
         </a>
       </div>
     </div>

@@ -159,7 +159,7 @@
       transition: color .15s; text-decoration: none !important;
     }
     .header__nav-link:hover { color: var(--color-text-primary); text-decoration: none !important; }
-    .header__nav-link {
+    .header__nav-link--active {
       color: var(--color-text-primary);
       border-bottom: 2px solid var(--color-accent);
       padding-bottom: 2px;
@@ -847,19 +847,19 @@
           <a href="/ja/faqs/" class="header__nav-link">FAQ</a>
           <div class="header__dropdown">
             <a href="/ja/about/" class="header__nav-link header__dropdown-trigger">
-              About
+              会社概要
               <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </a>
             <div class="header__dropdown-menu">
               <a href="/ja/why-tmg/" class="header__dropdown-item">TMGを選ぶ理由</a>
-              <a href="/ja/about/" class="header__dropdown-item">About Us</a>
+              <a href="/ja/about/" class="header__dropdown-item">会社概要</a>
               <a href="/ja/contact/" class="header__dropdown-item">お問い合わせ</a>
             </div>
           </div>
         </nav>
         <div class="header__lang-wrap">
           <button class="header__lang-btn" onclick="this.parentElement.classList.toggle('active')">
-            <span class="header__lang-flag">🇺🇸</span>English
+            <span class="header__lang-flag">🇯🇵</span>日本語
             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 3.5l3 4 3-4"/></svg>
           </button>
           <div class="header__lang-menu">
@@ -962,19 +962,19 @@
       <div class="related__title">関連記事</div>
       <div class="related__grid">
         <a href="/ja/blog/xiaohongshu-demographics-who-are-these-350m-users/" class="related-card">
-          <div class="related-card__cat">Xiaohongshu / Consumer Insights</div>
-          <div class="related-card__title">Xiaohongshu Demographics: Who Are These 350M Users?</div>
-          <p class="related-card__desc">A deep dive into the demographics and behavior patterns of Xiaohongshu's massive user base.</p>
+          <div class="related-card__cat">小紅書 / 消費者インサイト</div>
+          <div class="related-card__title">小紅書デモグラフィー：3億5000万人のユーザーとは？</div>
+          <p class="related-card__desc">小紅書の巨大なユーザーベースのデモグラフィーと行動パターンを深く掘り下げます。</p>
         </a>
         <a href="/ja/blog/xiaohongshu-consumer-research/" class="related-card">
-          <div class="related-card__cat">Xiaohongshu / Consumer Insights</div>
-          <div class="related-card__title">Xiaohongshu Consumer Research: What Brands Need to Know</div>
-          <p class="related-card__desc">How Chinese consumers use Xiaohongshu to research and discover products before purchase.</p>
+          <div class="related-card__cat">小紅書 / 消費者インサイト</div>
+          <div class="related-card__title">小紅書消費者リサーチ：ブランドが知るべきこと</div>
+          <p class="related-card__desc">中国消費者が購入前に小紅書をどのように活用して製品をリサーチし、発見するか。</p>
         </a>
         <a href="/ja/blog/baidu-q1-2026-ai-revenue/" class="related-card">
-          <div class="related-card__cat">China Market Insights</div>
-          <div class="related-card__title">Baidu Q1 2026: AI Now Drives 52% of Revenue</div>
-          <p class="related-card__desc">How China's tech giants are restructuring around AI, and what it means for your ad strategy.</p>
+          <div class="related-card__cat">中国市場インサイト</div>
+          <div class="related-card__title">Baidu 2026年第1四半期：AIが収益の52%を占める</div>
+          <p class="related-card__desc">中国のテックジャイアントがAIを軸にどのように再編されているか、そして広告戦略に何をもたらすか。</p>
         </a>
       </div>
     </div>
