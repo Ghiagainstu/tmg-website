@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P5RQGYPTGP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P5RQGYPTGP');
+</script>
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>텐센트 광고 수익: 10가지 AI 성장 시그널 | TMG</title>
+
+<!-- Favicon -->
+<link href="/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/og-image.png" rel="apple-touch-icon"/>
+<meta content="중국 시장으로의 단일 액세스 포인트. 국제 에이전시가 중국 플랫폼을 쉽게 탐색할 수 있도록 지원합니다." name="description"/>
+<link href="https://www.tuyuesouxin.cn/ko/blog/tencent-ad-revenue-ai-deep-dive-2026/" rel="canonical"/>
+<link href="https://www.tuyuesouxin.cn/ko/blog/tencent-ad-revenue-ai-deep-dive-2026/" hreflang="ko" rel="alternate"/>
+<link href="https://www.tuyuesouxin.cn/blog/tencent-ad-revenue-ai-deep-dive-2026/" hreflang="en" rel="alternate"/>
+<link href="/blog/tencent-ad-revenue-ai-deep-dive-2026/" hreflang="ja" rel="alternate"/>
+<link href="https://www.tuyuesouxin.cn/blog/tencent-ad-revenue-ai-deep-dive-2026/" hreflang="x-default" rel="alternate"/>
+<meta content="Doubao (豆包) Goes Paid: What This Means for GEO in China" property="og:title"/>
+<meta content="중국 시장으로의 단일 액세스 포인트. 국제 에이전시가 중국 플랫폼을 쉽게 탐색할 수 있도록 지원합니다." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://www.tuyuesouxin.cn/ko/blog/tencent-ad-revenue-ai-deep-dive-2026/" property="og:url"/>
+<meta content="https://www.tuyuesouxin.cn/assets/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://www.tuyuesouxin.cn/assets/twitter-card.png" name="twitter:image"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+  
+
+  .skip-link{position:absolute;top:-100px;left:0;background:var(--color-accent);color:var(--color-bg);padding:8px 16px;z-index:10000;text-decoration:none;transition:top 0.3s;font-weight:600;}
+  .skip-link:focus{top:0;}
+
+  .article-table { width:100%; border-collapse:separate; border-spacing:0; border-radius:0.75rem; overflow:hidden; border:1px solid #1e2d45; margin:1.5rem 0; font-size:0.875rem; }
+  .article-table th { background:#0d1220; color:#c9a84c; font-weight:700; padding:1rem 1.25rem; text-align:left; border-bottom:2px solid #1e2d45; }
+  .article-table td { padding:0.75rem 1.25rem; border-bottom:1px solid #1e2d45; color:#b3c0d8; }
+  .article-table tr:last-child td { border-bottom:none; }
+  .article-table tr:hover td { background:rgba(45,107,228,0.05); }
+
+  .article-section { margin-bottom:3rem; }
+  .article-section h2 { font-size:1.5rem; font-weight:700; margin-bottom:1rem; color:#f0f4ff; }
+  .article-section h3 { font-size:1.125rem; font-weight:600; margin-top:1.5rem; margin-bottom:0.75rem; color:#f0f4ff; }
+  .article-section p { margin-bottom:1rem; line-height:1.7; }
+  .article-section ul { margin-bottom:1rem; padding-left:1.5rem; }
+  .article-section li { margin-bottom:0.5rem; line-height:1.6; }
+
+  .article-callout { border-radius:0.75rem; padding:1.5rem; margin:1.5rem 0; border-left:4px solid; }
+  .article-callout--info { background:rgba(45,107,228,0.08); border-color:#2d6be4; }
+  .article-callout--tip { background:rgba(201,168,76,0.08); border-color:#c9a84c; }
+  .article-callout--warning { background:rgba(239,68,68,0.08); border-color:#ef4444; }
+  .article-callout h4 { font-size:1.125rem; font-weight:600; margin-bottom:0.75rem; color:#f0f4ff; }
+  .article-callout p { margin-bottom:0.5rem; }
+  .article-callout ul { margin-bottom:0; padding-left:1.25rem; }
+
+  .article-cta { background:#111827; border:1px solid #1e2d45; border-radius:0.75rem; padding:2rem; text-align:center; margin-top:2rem; }
+  .article-cta h3 { font-size:1.25rem; margin-bottom:0.75rem; }
+
+  .stats-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:1rem; margin:1.5rem 0; }
+  .stat-card { background:#111827; border:1px solid #1e2d45; border-radius:0.75rem; padding:1.5rem; text-align:center; }
+  .stat-card__number { font-size:2rem; font-weight:800; color:#c9a84c; line-height:1; margin-bottom:0.5rem; }
+  .stat-card__label { font-size:0.875rem; color:#b3c0d8; }
+
+    :root {
+      --color-bg: #080c14;
+      --color-bg-alt: #0d1220;
+      --color-bg-card: #111827;
+      --color-text-primary: #f0f4ff;
+      --color-text-secondary: #b3c0d8;
+      --color-text-muted: #8899b5;
+      --color-primary: #2d6be4;
+      --color-primary-hover: #1e55c4;
+      --color-accent: #c9a84c;
+      --color-accent-light: #e8c87a;
+      --color-border: #1e2d45;
+      --color-border-hover: #2d4060;
+      --c-ocean: #c9a84c;
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-size-xs: 0.75rem;
+      --font-size-sm: 0.875rem;
+      --font-size-base: 1rem;
+      --font-size-lg: 1.125rem;
+      --font-size-xl: 1.25rem;
+      --font-size-2xl: 1.5rem;
+      --font-size-3xl: 1.875rem;
+      --font-size-4xl: 2.25rem;
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --transition-fast: 150ms ease;
+      --transition-base: 250ms ease;
+      --radius-sm: 0.375rem;
+      --radius-md: 0.5rem;
+      --radius-lg: 0.75rem;
+      --radius-xl: 1rem;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-family);
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--color-text-secondary);
+      background: var(--color-bg);
+      -webkit-font-smoothing: antialiased;
+      padding-top: 64px;
+    }
+
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--color-bg); }
+    ::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--color-border-hover); }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+    a { color: var(--color-primary); text-decoration: none !important; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Buttons ── */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: var(--space-2); padding: var(--space-3) var(--space-5);
+      font-family: var(--font-family); font-size: var(--font-size-sm);
+      font-weight: 500; text-decoration: none !important; border-radius: var(--radius-md);
+      transition: all var(--transition-base); cursor: pointer; border: none;
+    }
+    .btn--primary {
+      background: linear-gradient(135deg, #c9a84c 0%, #e8c87a 50%, #c9a84c 100%);
+      background-size: 200% 200%; color: #0d1220; font-weight: 600;
+      box-shadow: 0 2px 12px rgba(201,168,76,0.25);
+    }
+    .btn--primary:hover {
+      background-position: right center; box-shadow: 0 4px 20px rgba(201,168,76,0.4);
+      transform: translateY(-1px); text-decoration: none !important;
+    }
+    .btn--secondary {
+      background: transparent; color: var(--color-text-primary);
+      border: 1px solid var(--color-border);
+    }
+    .btn--secondary:hover {
+      border-color: var(--color-border-hover); background: rgba(255,255,255,0.05);
+      text-decoration: none !important;
+    }
+
+    /* ── Header ── */
+    .header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background-color: rgba(8,12,20,.85);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--color-border); padding: 1rem 0;
+      transition: border-color var(--transition-base);
+    }
+    .header::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,.4) 40%, rgba(45,107,228,.4) 60%, transparent);
+      opacity: .6;
+    }
+    .header__inner { display: flex; align-items: center; justify-content: space-between; }
+    .header__logo {
+      display: flex; align-items: center; gap: .5rem;
+      text-decoration: none !important; transition: opacity .15s;
+    }
+    .header__logo:hover { opacity: .85; text-decoration: none !important; }
+    .header__logo-icon { width: 40px; height: 40px; flex-shrink: 0; }
+    .header__logo-text { font-size: 1.125rem; font-weight: 700; color: var(--color-text-primary); letter-spacing: -.02em; }
+    .header__logo-text span { color: var(--color-accent); }
+    .header__nav { display: flex; gap: 2rem; align-items: center; }
+    .header__nav-link {
+      font-size: .875rem; font-weight: 500; color: var(--color-text-secondary);
+      transition: color .15s; text-decoration: none !important;
+      position: relative; display: inline-flex; align-items: center;
+    }
+    .header__nav-link:hover,
+    .header__nav-link.active { color: var(--color-text-primary); }
+    .header__nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--color-accent);
+      transition: width .15s;
+    }
+    .header__nav-link.active::after { width: 100%; }
+    .nav-badge {
+      display: inline-block;
+      margin-left: 5px;
+      padding: 1px 5px;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #080c14;
+      background: var(--color-accent);
+      border-radius: 3px;
+      vertical-align: baseline;
+      white-space: nowrap;
+      animation: badgePulse 2s ease-in-out infinite;
+    }
+    @keyframes badgePulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.65; } }
+    .header__cta { display: none; }
+    .header__toggle {
+      display: none; flex-direction: column; justify-content: center;
+      gap: 4px; background: none; border: none; cursor: pointer; padding: 8px;
+    }
+    .header__toggle span { width: 24px; height: 2px; background: var(--color-text-primary); transition: all .3s; }
+    .header__toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+    .header__toggle.active span:nth-child(2) { opacity: 0; }
+    .header__toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+    @media (min-width: 768px) {
+      .header__toggle { display: none; }
+      .header__cta { display: block; }
+      .header__dropdown { position: relative; }
+      .header__dropdown-trigger { display: flex; align-items: center; gap: 4px; }
+      .header__dropdown-arrow { transition: transform var(--transition-fast); }
+      .header__dropdown:hover .header__dropdown-arrow,
+      .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
+      .header__dropdown-menu {
+        position: absolute; top: calc(100% + 8px); left: 0;
+        background: var(--color-bg-card); border: 1px solid var(--color-border);
+        border-radius: 10px; padding: .5rem 0; min-width: 180px;
+        display: none; opacity: 0; box-shadow: 0 8px 24px rgba(0,0,0,.4); z-index: 200;
+      }
+      .header__dropdown:hover .header__dropdown-menu,
+      .header__dropdown.open .header__dropdown-menu {
+        display: flex; flex-direction: column; opacity: 1;
+        transform: translateY(0);
+      }
+      .header__dropdown-item {
+        font-size: var(--font-size-sm); font-weight: 500;
+        color: var(--color-text-secondary); padding: .625rem 1rem;
+        border-radius: 6px; white-space: nowrap; text-decoration: none !important;
+        transition: background .15s, color .15s;
+      }
+      .header__dropdown-item:hover {
+        background: rgba(201,168,76,.1); color: var(--color-accent); text-decoration: none !important;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .header { position: fixed; top: 0; left: 0; right: 0; z-index: 200; }
+      .header__inner {
+        background: var(--color-bg-card); border-bottom: 1px solid var(--color-border);
+        position: relative; z-index: 201;
+      }
+      .header__toggle { display: flex; }
+      .header__nav {
+        display: none; flex-direction: column; gap: 0;
+        position: absolute; top: 100%; left: 0; right: 0;
+        background: var(--color-bg-card); border-bottom: 1px solid var(--color-border);
+        z-index: 200;
+      }
+      .header__nav.active { display: flex; }
+      .header__nav-link {
+        display: block; width: 100%; padding: 14px 40px 14px 24px;
+        border-bottom: 1px solid var(--color-border); font-size: 1.1rem;
+      }
+      .header__dropdown { position: static; width: 100%; 
+       }
+      .header__dropdown-trigger {
+        display: flex; align-items: center; justify-content: space-between;
+        width: 100%; padding: 14px 40px 14px 24px;
+        border-bottom: 1px solid var(--color-border); font-size: 1.1rem;
+      }
+      .header__dropdown-arrow { transition: transform var(--transition-fast); }
+      .header__dropdown.active .header__dropdown-arrow,
+      .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
+      .header__dropdown-menu { display: none; flex-direction: column; background: rgba(0,0,0,.25); padding: 0; }
+      .header__dropdown.active .header__dropdown-menu,
+      .header__dropdown.open .header__dropdown-menu { display: flex; }
+      .header__dropdown-item {
+        display: block; width: 100%; padding: 12px 40px;
+        font-size: 1rem; color: var(--color-text-secondary);
+        border-bottom: 1px solid rgba(255,255,255,.06);
+      }
+      .header__dropdown-item:hover { background: rgba(201,168,76,.08); color: var(--color-accent); }
+    }
+
+    /* ── Article Layout ── */
+    .article-hero {
+      padding: 100px 0 var(--space-12);
+    }
+    .article-hero .container { max-width: 860px; }
+    .article-meta {
+      display: flex; align-items: center; gap: var(--space-3);
+      flex-wrap: wrap; margin-bottom: var(--space-6);
+    }
+    .article-category {
+      display: inline-block; padding: 4px 12px;
+      background: rgba(201,168,76,.15); border: 1px solid rgba(201,168,76,.3);
+      border-radius: 20px; font-size: var(--font-size-xs); font-weight: 600;
+      color: var(--color-accent); text-transform: uppercase; letter-spacing: .08em;
+    }
+    .article-date {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+    }
+    .article-read-time {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+    }
+
+    .article-hero__author {
+      display: flex; align-items: center; gap: 1rem;
+      margin-top: 2rem; padding-top: 2rem;
+      border-top: 1px solid var(--color-border);
+    }
+    .article-hero__author-avatar {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; color: var(--color-bg); font-size: var(--font-size-base);
+    }
+    .article-hero__author-info { display: flex; flex-direction: column; }
+    .article-hero__author-name {
+      font-weight: 600; color: var(--color-text-primary);
+      font-size: var(--font-size-sm);
+    }
+    .article-hero__author-role {
+      font-size: var(--font-size-xs); color: var(--color-text-muted);
+    }
+
+    .article-hero__title {
+      font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700;
+      color: var(--color-text-primary); line-height: 1.25; margin-bottom: var(--space-6);
+    }
+    .article-hero__title span { color: var(--color-accent); }
+    .article-hero__intro {
+      font-size: var(--font-size-lg); color: var(--color-text-secondary);
+      line-height: 1.75; max-width: 760px;
+    }
+
+    /* ── Article Body ── */
+    .article-body {
+      padding: var(--space-16) 0;
+      background: #000;
+    }
+    .article-body .container {
+      max-width: 860px;
+      display: grid;
+      grid-template-columns: 1fr 260px;
+      gap: var(--space-12);
+      align-items: start;
+    }
+    .article-content h2 {
+      font-size: var(--font-size-2xl); font-weight: 700;
+      color: var(--color-text-primary); margin: var(--space-10) 0 var(--space-4);
+    }
+    .article-content h2:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+    .article-content h3 {
+      font-size: var(--font-size-xl); font-weight: 600;
+      color: var(--color-text-primary); margin: var(--space-8) 0 var(--space-3);
+    }
+    .article-content p { margin-bottom: var(--space-4); color: var(--color-text-secondary); }
+    .article-content strong { color: var(--color-text-primary); font-weight: 600; }
+    .article-content ul, .article-content ol {
+      margin: var(--space-4) 0 var(--space-6) var(--space-6);
+    }
+    .article-content li { margin-bottom: var(--space-2); color: var(--color-text-secondary); }
+    .article-content a { color: var(--color-primary); }
+    .article-content a:hover { text-decoration: underline; }
+
+    /* Feature card grid */
+    .feature-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: var(--space-4); margin: var(--space-6) 0;
+    }
+    .feature-card {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5);
+      transition: border-color var(--transition-base);
+    }
+    .feature-card:hover { border-color: rgba(201,168,76,.4); }
+    .feature-card__num {
+      display: inline-block; width: 28px; height: 28px; line-height: 28px;
+      text-align: center; background: rgba(201,168,76,.15);
+      color: var(--color-accent); font-size: var(--font-size-sm);
+      font-weight: 700; border-radius: 50%; margin-bottom: var(--space-3);
+    }
+    .feature-card__title {
+      font-size: var(--font-size-base); font-weight: 600;
+      color: var(--color-text-primary); margin-bottom: var(--space-2);
+    }
+    .feature-card__desc {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.6;
+    }
+
+    /* Callout / tip box */
+    .callout {
+      background: rgba(45,107,228,.08); border: 1px solid rgba(45,107,228,.2);
+      border-left: 3px solid var(--color-primary);
+      border-radius: var(--radius-md); padding: var(--space-5);
+      margin: var(--space-6) 0;
+    }
+    .callout--accent {
+      background: rgba(201,168,76,.06); border: 1px solid rgba(201,168,76,.2);
+      border-left: 3px solid var(--color-accent);
+    }
+    .callout__label {
+      font-size: var(--font-size-xs); font-weight: 700; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--color-primary); margin-bottom: var(--space-2);
+    }
+    .callout--accent .callout__label { color: var(--color-accent); }
+    .callout p { margin: 0; font-size: var(--font-size-sm); }
+
+    /* Scenario steps */
+    .scenario-list {
+      list-style: none; margin: var(--space-4) 0 var(--space-6); padding: 0;
+    }
+    .scenario-list li {
+      display: flex; gap: var(--space-4); padding: var(--space-4) 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .scenario-list li:last-child { border-bottom: none; }
+    .scenario-list__icon {
+      width: 36px; height: 36px; flex-shrink: 0;
+      background: rgba(201,168,76,.1); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; margin-top: 2px;
+    }
+    .scenario-list__content strong {
+      display: block; font-size: var(--font-size-base); color: var(--color-text-primary);
+      margin-bottom: 2px;
+    }
+    .scenario-list__content span { font-size: var(--font-size-sm); }
+
+    /* ── Sidebar TOC ── */
+    .article-sidebar {
+      position: sticky; top: 88px;
+    }
+    .toc {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5);
+    }
+    .toc__title {
+      font-size: var(--font-size-xs); font-weight: 700; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--color-text-muted); margin-bottom: var(--space-4);
+    }
+    .toc__list { list-style: none; }
+    .toc__list li + li { margin-top: var(--space-2); }
+    .toc__link {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+      text-decoration: none !important; display: block; line-height: 1.4;
+      transition: color var(--transition-fast);
+    }
+    .toc__link:hover { color: var(--color-text-primary); text-decoration: none !important; }
+
+    .sidebar-cta {
+      margin-top: var(--space-6); background: var(--color-bg-card);
+      border: 1px solid var(--color-border); border-radius: var(--radius-lg);
+      padding: var(--space-5); text-align: center;
+    }
+    .sidebar-cta p {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary);
+      margin-bottom: var(--space-4); line-height: 1.5;
+    }
+    .sidebar-cta .btn { width: 100%; justify-content: center; }
+
+    /* ── Related Posts ── */
+    .related {
+      padding: var(--space-12) 0;
+      background: var(--color-bg);
+      border-top: 1px solid var(--color-border);
+    }
+    .related__title {
+      font-size: var(--font-size-2xl); font-weight: 700;
+      color: var(--color-text-primary); margin-bottom: var(--space-8);
+    }
+    .related__grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6);
+    }
+    .related-card {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5);
+      text-decoration: none !important; display: block;
+      transition: border-color var(--transition-base), transform var(--transition-base);
+    }
+    .related-card:hover { border-color: rgba(201,168,76,.4); transform: translateY(-2px); text-decoration: none !important; }
+    .related-card__cat {
+      font-size: var(--font-size-xs); font-weight: 600; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--color-accent); margin-bottom: var(--space-3);
+    }
+    .related-card__title {
+      font-size: var(--font-size-base); font-weight: 600;
+      color: var(--color-text-primary); line-height: 1.4; margin-bottom: var(--space-2);
+    }
+    .related-card__desc {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.5;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      padding: var(--space-10) 0 var(--space-8);
+      background: var(--color-bg);
+      border-top: 1px solid var(--color-border);
+    }
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-8);
+      margin-bottom: var(--space-10);
+    }
+    @media (min-width: 768px) {
+      .footer__grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    .footer__section { text-align: left; }
+    .footer__title {
+      font-size: var(--font-size-base);
+      font-weight: 600;
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-4);
+      position: relative;
+      padding-bottom: var(--space-2);
+    }
+    .footer__title::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 40px; height: 2px;
+      background: linear-gradient(90deg, var(--color-accent), transparent);
+      opacity: 0.8;
+    }
+    .footer__description {
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+    .footer__links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer__links li { margin-bottom: var(--space-3); }
+    .footer__link { text-decoration: none !important; 
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+      transition: color var(--transition-fast);
+      display: inline-block;
+    }
+    .footer__link:hover { color: var(--color-text-primary); transform: translateX(4px); }
+    .footer__link--email { color: var(--color-primary); font-weight: 500; }
+    .footer__license { color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--space-2); }
+    .footer__company-short { color: var(--color-text-muted); font-size: var(--font-size-xs); }
+    .footer__bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-4);
+      padding-top: var(--space-8);
+      border-top: 1px solid var(--color-border);
+    }
+    @media (min-width: 768px) {
+      .footer__bottom { flex-direction: row; justify-content: space-between; }
+    }
+    .footer__copyright { color: var(--color-text-muted); font-size: var(--font-size-sm); margin: 0; }
+    .footer__platforms { display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: center; }
+    .footer__platform-badge {
+      text-decoration: none !important;
+      display: inline-block;
+      padding: var(--space-1) var(--space-3);
+      background-color: rgba(201, 168, 76, 0.1);
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      border-radius: 4px;
+      color: var(--color-text-primary);
+      font-size: var(--font-size-xs);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all var(--transition-fast);
+    }
+    .footer__platform-badge:hover {
+      text-decoration: none !important;
+      background-color: rgba(201, 168, 76, 0.2);
+      border-color: var(--color-accent);
+      transform: translateY(-2px);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .article-body .container { grid-template-columns: 1fr; }
+      .article-sidebar { display: none; }
+    }
+    @media (max-width: 767px) {
+      .article-hero { padding: 90px 0 var(--space-10); background: linear-gradient(180deg, #0a1628 0%, #080c14 100%); }
+      .feature-grid { grid-template-columns: 1fr; }
+      .related__grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── Article Divider ── */
+    hr.article-divider, .article-content hr {
+      border: none; border-top: 1px solid rgba(255,255,255,0.08);
+      margin: var(--space-8) 0;
+    }
+
+    /* ── Scroll Reveal (disabled: content always visible) ── */
+    .reveal {
+      opacity: 1; transform: none;
+      transition: none;
+    }
+    /* reveal--visible disabled */
+  .header__lang-wrap {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      margin-left: 8px;
+    }
+    .header__lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 10px;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--c-accent, #c9a84c);
+      background: transparent;
+      border: 1px solid var(--c-accent, #c9a84c);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background .15s;
+      line-height: 1.4;
+    }
+    .header__lang-btn:hover { background: rgba(201,168,76,.1); }
+    .header__lang-btn svg { transition: transform .15s; }
+    .header__lang-wrap:hover .header__lang-btn svg,
+    .header__lang-wrap.active .header__lang-btn svg { transform: rotate(180deg); }
+    .header__lang-menu {
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      min-width: 140px;
+      background: #111827;
+      border: 1px solid #1e2d45;
+      border-radius: 8px;
+      padding: 4px;
+      display: none;
+      opacity: 0;
+      box-shadow: 0 4px 20px rgba(0,0,0,.4);
+      z-index: 300;
+    }
+    .header__lang-wrap:hover .header__lang-menu,
+    .header__lang-wrap.active .header__lang-menu {
+      display: flex;
+      flex-direction: column;
+      opacity: 1;
+    }
+    .header__lang-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 10px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #a3b1cc;
+      text-decoration: none !important;
+      border-radius: 5px;
+      transition: background .15s, color .15s;
+      white-space: nowrap;
+    }
+    .header__lang-item:hover {
+      background: rgba(201,168,76,.1);
+      color: #e8c87a;
+      text-decoration: none !important;
+    }
+    .header__lang-item--cur {
+      color: #e8c87a;
+      background: rgba(201,168,76,.08);
+    }
+    .header__lang-flag { font-size: 15px; line-height: 1; }
+  
+  @media print{
+    *{box-shadow:none!important;text-shadow:none!important;}
+    body{background:white!important;color:black!important;}
+    .header,.footer,nav,.sidebar,iframe{display:none!important;}
+    main,article,section,.container{max-width:100%!important;margin:0!important;padding:10px!important;}
+    h1,h2,h3,h4,h5,h6{page-break-after:avoid;page-break-inside:avoid;}
+    img{max-width:100%!important;page-break-inside:avoid;}
+    a{color:black!important;text-decoration:underline;}
+    p,blockquote,ul,ol,dl,table{page-break-inside:avoid;}
+    @page{margin:2cm;}
+  }
+  </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tuyue Media Gateway","alternateName":"TMG","url":"https://www.tuyuesouxin.cn/","description":"국제 에이전시를 위한 중국 디지털 광고 통합 인터페이스. 하나의 연결로 모든 플랫폼 대응.","email":"tmg@tuyuesouxin.cn","address":{"@type":"PostalAddress","streetAddress":"599-2F202 Wanzhen Road","addressLocality":"Shanghai","addressRegion":"Shanghai","postalCode":"201824","addressCountry":"CN"},"sameAs":[]}</script>
+
+    <style>
+ 
+<a href="#main-content" class="skip-to-content">본문으로 건너뛰기</a>
+     .skip-to-content {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: var(--color-accent);
+        color: var(--color-bg);
+        padding: 8px 16px;
+        z-index: 10000;
+        transition: top 0.3s;
+      }
+      .skip-to-content:focus {
+        top: 0;
+      }
+    </style>
+  </head>
+<body>
+  <!-- 본문으로 건너뛰기 -->
+  <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
+
+  
+  
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="/ko/" class="header__logo">
+          <svg class="header__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#c9a84c"/>
+                <stop offset="100%" stop-color="#e8c87a"/>
+              </linearGradient>
+              <clipPath id="moonClip">
+                <!-- Full circle -->
+                <circle cx="30" cy="24" r="16"/>
+              </clipPath>
+            </defs>
+            <!-- Crescent Moon: circle minus overlapping circle -->
+            <circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/>
+            <circle cx="37" cy="20" r="13" fill="#080c14"/>
+            <!-- TMG letters inside/near the crescent -->
+            <text x="4" y="32" font-family="Inter, -apple-system, sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-0.8">TMG</text>
+          </svg>
+          <span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
+        </a>
+        <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="header__nav" id="main-nav">
+          <div class="header__dropdown">
+            <a href="/ko/services/" class="header__nav-link header__dropdown-trigger">
+              서비스
+              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="header__dropdown-menu">
+              <a href="/ko/services/" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">전체 서비스</a>
+              <a href="/ko/services/wechat/" class="header__dropdown-item">WeChat 광고</a>
+              <a href="/ko/services/douyin/" class="header__dropdown-item">Douyin 광고</a>
+              <a href="/ko/services/baidu/" class="header__dropdown-item">Baidu SEM</a>
+              <a href="/ko/services/bing/" class="header__dropdown-item">Bing China</a>
+              <a href="/ko/services/xiaohongshu/" class="header__dropdown-item">샤오홍슈(RED)</a>
+              <a href="/ko/services/bilibili/" class="header__dropdown-item">Bilibili 광고</a>
+              <a href="/ko/geo/" class="header__dropdown-item">중국 GEO</a>
+            </div>
+          </div>
+          <a href="/ko/pricing/" class="header__nav-link">요금</a>
+          <a href="/ko/client-stories/" class="header__nav-link">고객 사례</a>
+          <a href="/ko/geo/" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
+          <a href="/ko/blog/" class="header__nav-link active">블로그</a>
+          <a href="/ko/faqs/" class="header__nav-link">FAQ</a>
+          <div class="header__dropdown">
+            <a href="/ko/about/" class="header__nav-link header__dropdown-trigger">
+              회사 소개
+              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="header__dropdown-menu">
+              <a href="/ko/why-tmg/" class="header__dropdown-item">TMG를 선택해야 하는 이유</a>
+              <a href="/ko/about/" class="header__dropdown-item">회사 소개</a>
+              <a href="/ko/contact/" class="header__dropdown-item">문의하기</a>
+            </div>
+          </div>
+        </nav>
+        <div class="header__lang-wrap">
+        <button class="header__lang-btn" onclick="this.parentElement.classList.toggle('active')">
+          <span class="header__lang-flag">🇰🇷</span>한국어
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 3.5l3 4 3-4"/></svg>
+        </button>
+        <div class="header__lang-menu">
+            <a href="/blog/tencent-ad-revenue-ai-deep-dive-2026/" class="header__lang-item"><span class="header__lang-flag">🇺🇸</span>English</a>
+            <a href="/ja/blog/tencent-ad-revenue-ai-deep-dive-2026/" class="header__lang-item"><span class="header__lang-flag">🇯🇵</span>日本語</a>
+          </div>
+      </div>
+        <div class="header__cta">
+          <a href="/ko/contact/" class="btn btn--primary">시작하기</a>
+        </div>
+      </div>
+    </div>
+  </header>
+<!-- Article Hero -->
+<section class="article-hero">
+<div class="container">
+<div class="article-meta">
+<span class="article-category">Tencent / AdTech</span>
+<span class="article-date">2026년 6월 17일</span>
+<span class="article-read-time"></span>
+</div>
+<h1 class="article-hero__title">더바오(豆包) 유료화: 중국 GEO에 어떤 의미인가</h1>
+<p class="article-hero__intro">
+        2026년 5월 초, ByteDance의 Doubao(豆包)가 유료 구독 티어를 발표했습니다. 1.4억+ DAU, 5,000만+ 일일 다운로드를 보유한 중국 최대 AI 어시스턴트의 수익화 선언.
+      </p>
+<div class="article-hero__author">
+<div class="article-hero__author-avatar">TMG</div>
+<div class="article-hero__author-info">
+<div class="article-hero__author-name">Tuyue Media Gateway</div>
+<div class="article-hero__author-role">유료 미디어 팀 · 상해</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Article Body -->
+<main id="main-content" class="article-body">
+<div class="container">
+<article class="article-content reveal">
+<p>---</p>
+<p>title: "텐센트 광고 수익: 2분기 실적으로 읽는 10가지 AI 성장 시그널"</p>
+<p>slug: "tencent-ad-revenue-ai-deep-dive-2026"</p>
+<p>language: ko</p>
+<p>category: "Tencent / AdTech"</p>
+<p>status: draft</p>
+<p>publish_date: "2026-06-17"</p>
+<p>source_data: "广告凶猛——腾讯财报中关于广告部分的十个细节与增量信息 - 36氪 / 卫夕指北"</p>
+<p>source_url: "https://36kr.com/p/3422217541979781"</p>
+<p>blog_url: "https://www.tuyuesouxin.cn/ko/blog/tencent-ad-revenue-ai-deep-dive-2026/"</p>
+<p>online_url: ""</p>
+<p>tags: [Tencent, WeChat, ADQ, AI, AdTech, video-ads, search-ads, Channels, Mini-Program]</p>
+<p>---</p>
+<p># 텐센트 광고 수익: 2분기 실적으로 읽는 10가지 AI 성장 시그널</p>
+<p class="article-byline"><em>원문: 卫夕指北 위시 저 | 2026년 6월 17일</em></p>
+<p>텐센트의 2분기 실적은 강력한 진실을 드러낸다. AI는 비용 센터가 아니라 광고의 수익 엔진이라는 것. 모든 브랜드 광고주가 알아야 할 10가지 핵심 인사이트를 소개한다.</p>
+<h2 id="1-20-11-">1. 광고 수익 20% 성장 — 11분기 연속 두 자릿수 성장</h2>
+<p>텐센트 광고 수익은 전년 대비 20% 증가하며 11분기 연속 두 자릿수 성장을 기록했다. 더욱 인상적인 것은 광고 매출총이익이 전년 대비 24% 성장해 수익 성장을 넘어섰다는 점이다. 광고 사업이 단순히 커지는 것이 아니라 더 효율화되고 있음을 의미한다.</p>
+<h2 id="2-ai-">2. AI가 광고 성과를 직접 향상</h2>
+<p>텐센트의 공식 코멘트에서 확인되었다. AI가 큰 성과를 내고 있다. WeChat의 다양한 제품 에코시스템 전반에서 학습된 '전체 모달 생성형 추천' 시스템이 <strong>광고 클릭률을 15~22%</strong> 향상시키고 있다. 광고주에게 이는 수동 최적화를 줄이면서 더 나은 ROI를 의미한다.</p>
+<h2 id="3-adq-ai-">3. ADQ 스마트 입찰 + 묘사 AI 크리에이티브 스위트</h2>
+<p>알고리즘뿐만 아니라, 텐센트의 애드테크 스택도 크게 성숙해졌다:</p>
+<p>&bull; <strong>ADQ</strong>: (텐센트 광고 구매 플랫폼): 캠페인 유형별 고급 '스마트 입찰' 제공</p>
+<p>&bull; <strong>묘사(妙思)</strong>: AI 기반 광고 크리에이티브 어시스턴트. 광고 비주얼과 카피 생성 및 최적화. 업계에서 높은 평가</p>
+<p>&bull; <strong>묘문(妙问)</strong>: 플랫폼 내 광고주용 AI 어시스턴트</p>
+<p>&bull; <strong>묘파(妙播)</strong>: 커머스용 디지털 휴먼 라이브 방송</p>
+<p>&bull; <strong>여익(如翼)</strong>: 측정 및 어트리뷰션 도구. 곧 업그레이드 예정</p>
+<h2 id="4-wechat-channels-35-">4. WeChat Channels 광고: 35% 도달, 아직 상승 중</h2>
+<p>비디오 채널(Channels) 광고 수익은 <strong>전년 대비 50% 이상</strong> 성장했다. 핵심 세부사항: Channels는 텐센트 총 광고 수익의 <strong>35%</strong>를 차지하게 되었다 — 그리고 이것은 시작에 불과하다.</p>
+<p>왜? Channels의 광고 로드가 아직 <strong>'한 자릿수 저'</strong>인데, 더우인과 콰이شو는 <strong>10~15%</strong>로 운영되고 있기 때문이다. Channels가 콘텐츠 지향적(朋友圈 같은 순수 소셜이 아닌)이므로 이론적 광고 로드 천장은 더우인과 동등할 수 있다. 즉, Channels 광고는 결국 텐센트 총 광고 수익의 <strong>70% 이상</strong>을 차지할 가능성이 있다.</p>
+<h2 id="5-">5. 미니프로그램 에코시스템의 지속 성장</h2>
+<p>&bull; 미니프로그램 GMV: **+18%**</p>
+<p>&bull; 총 거래량: **+20%**</p>
+<p>&bull; 미니게임·단편 드라마 광고 수익: **+50%**</p>
+<p>8년차에도 미니프로그램은 가속화되고 있다. WXG(WeChat 팀)의 벤치 깊이는 주목할 만하다.</p>
+<h2 id="6-wechat-60-">6. WeChat 검색 광고: 조용히 60% 성장</h2>
+<p>더우인과 샤오홍슈가 검색의 주목을 받는 가운데, <strong>WeChat 검색 광고는 전년 대비 약 60%</strong> 성장하며 텐센트에서 가장 빠르게 성장하는 세그먼트 중 하나가 되었다.</p>
+<p>경영진은 "소비자와 광고주의 미니프로그램 검색 결과에 대한 관심이 급증하고 있다"고 설명했다. 핵심 강점: WeChat 검색은 미니프로그램 <em>내부</em> 콘텐츠를 인덱싱할 수 있어, 이전에는 숨겨져 있던 앱 콘텐츠를 발견 가능하게 한다. 이는 기존 검색 엔진과의 큰 차별화 요소다.</p>
+<h2 id="7-4-">7. 텐센트 광고 회복력을 지탱하는 4대 기둥</h2>
+<p>경영진은 4가지 핵심 성장 레버를 공개했다:</p>
+<p>가장 고유한 강점은 <strong>트래픽</strong>과 <strong>광고 로드</strong> — 이들은 AI 최적화뿐 아니라 구조적인 것이다.</p>
+<h2 id="8-">8. 경제 회복 징후</h2>
+<p>결제 세그먼트에서 경영진은 흥미로운 데이터 포인트를 공개했다: "거래 건수는 건강하게 성장하고 있으며, 평균 거래 금액의 하락이 축소되고 있다." 이는 소비자 지출이 안정화되고 있음을 시사하며, 광고주의 ROAS에 좋은 소식이다.</p>
+<h2 id="9-">9. 전략적 유연성: '우등생 모드' 접근법</h2>
+<p>광고 수익화 가속에 대해 질문받았을 때, 경영진은 "현재 성장률에 만족하고 있다. AI 배포 비용이 부담되면 광고 로드를 올릴 수도 있지만, 현재는 그럴 필요가 없다고 본다"고 말했다.</p>
+<p>이 '우등생 채점' 접근법 — 의도적으로 단기 광고 수익을 극대화하지 않는 — 은 텐센트에게 막대한 여력을 준다. Channels의 광고 로드를 올리기로 결정하면, 거의 하룻밤 사이에 수십억 위안의 수익 증가가 가능하다.</p>
+<h2 id="10-ai-">10. 다음 프론티어: AI 제품 내 광고</h2>
+<p>아마도 가장 미래 지향적인 시그널: 텐센트는 위안바오(AI 어시스턴트) 등 <strong>AI 제품 내 광고</strong>를 탐색하고 있다.</p>
+<p>경영진은 말했다: "중국에서 AI 도구에 사용자에게 직접 요금을 부과하는 모델(미국에서 일반적)은 매우 어렵다. 광고 지원 모델이 가능한지 탐색 중이다."</p>
+<p>또한 "서양에서는 수익화가 구독에서 시작되고 퍼포먼스 광고가 따른다. 중국에서는 퍼포먼스 광고에서 시작되고 부가가치 서비스가 따를 것"이라고도 했다.</p>
+<p>즉, 브랜드는 <strong>AI 네이티브 광고 포맷</strong> 준비를 시작해야 한다 — WeChat AI 에이전트, 위안바오 응답, 대화형 커머스 내 광고.</p>
+<h2 id="-">브랜드 광고주에 대한 의미</h2>
+<p>1. <strong>지금 WeChat 검색 투자를 늘려라</strong>: 60% 성장에 낮은 경쟁 — 이 창은 영원하지 않다</p>
+<p>2. <strong>Channels 크리에이티브를 확대하라</strong>: 광고 로드가 한 자릿수에서 더우인 수준으로 증가하기 전에, 초기 광고주가 낮은 CPM의 혜택을 받을 수 있다</p>
+<p>3. <strong>AI 크리에이티브 도구를 도입하라</strong>: 묘사와 ADQ 스마트 입찰은 프로덕션에 충분히 성숙했다</p>
+<p>4. <strong>AI 네이티브 광고에 대비하라</strong>: WeChat AI 에이전트와 위안바오 내에 등장할 포맷의 테스트를 시작하라</p>
+<h2 id="tmg-">TMG의 지원 내용</h2>
+<p>TMG는 중국 AI 기반 광고 에코시스템 전문가 그룹입니다:</p>
+<p>&bull; <strong>WeChat 검색 광고</strong>: 경쟁사가 도착하기 전에 60% 성장 기회를 확보</p>
+<p>&bull; <strong>Channels 광고 전략</strong>: 광고 로드 확대에 앞서 크리에이티브와 타게팅 역량 구축</p>
+<p>&bull; <strong>ADQ 스마트 입찰 최적화</strong>: WeChat 광고 에코시스템 전반에 걸쳐 AI를 활용한 ROI 극대화</p>
+<p>&bull; <strong>AI 크리에이티브 테스트</strong>: 묘사와 플랫폼 네이티브 도구로 고성과 광고 크리에이티브 대량 생산</p>
+<p class="article-byline"><em>텐센트의 광고 엔진은 새로운 AI 기반 황금기에 진입하고 있다. [TMG에 문의](https://www.tuyuesouxin.cn/contact/)하시면 WeChat 광고 전략을 구축해 드립니다.</em></p>
+      </article>
+<!-- Sidebar -->
+<aside class="article-sidebar">
+<nav class="toc">
+          <div class="toc__title">이 글의 목차</div>
+          <ul class="toc__list">
+<li><a href="#1-20-ad-revenue-growth" class="toc__link">20% 성장</a></li>
+<li><a href="#2-ai-is-directly-boosting-ad-performance" class="toc__link">AI 광고 성과</a></li>
+<li><a href="#4-wechat-channels-ads" class="toc__link">Channels 35%</a></li>
+<li><a href="#6-wechat-search-ads" class="toc__link">검색 +60%</a></li>
+<li><a href="#10-the-next-frontier" class="toc__link">AI 제품 광고</a></li>
+          </ul>
+        </nav>
+<div class="sidebar-cta">
+          <p>텐센트 광고 엔진의 AI 황금시대. 준비되셨나요?</p>
+          <a href="/contact/" class="btn btn--primary">Contact TMG</a>
+        </div>
+      </aside>
+</div>
+</main>
+<!-- Related Posts placeholder -->
+<section class="related">
+    <div class="container">
+      <div class="related__title">블로그 더보기</div>
+      <div class="related__grid">
+        <a href="/ko/blog/deepseek-image-recognition-geo/" class="related-card">
+          <div class="related-card__cat">GEO / AI</div>
+          <div class="related-card__title">DeepSeek가 눈을 뜨다: 이미지 인식과 GEO</div>
+          <p class="related-card__desc">DeepSeek가 이미지 인식 모드를 출시. 중국 GEO에서 비주얼 콘텐츠 최적화는 더 이상 옵션이 아닙니다.</p>
+        </a>
+        <a href="/ko/blog/doubao-paid-what-it-means-for-geo/" class="related-card">
+          <div class="related-card__cat">GEO / AI 검색</div>
+          <div class="related-card__title">Doubao 유료화: 중국 GEO에 의미하는 것</div>
+          <p class="related-card__desc">ByteDance의 Doubao가 월 68~500위안 유료 플랜 도입. AI 수익화가 브랜드 발견에 의미하는 것.</p>
+        </a>
+        <a href="/ko/blog/geo-channel-weight-2026/" class="related-card">
+          <div class="related-card__cat">GEO</div>
+          <div class="related-card__title">GEO 채널 웨이트 업데이트 2026</div>
+          <p class="related-card__desc">AI 플랫폼이 어떤 콘텐츠 소스를 더 인용하고 어떤 것을 제외했는지. 2026년 4월 실측 데이터.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__section">
+          <h4 class="footer__title">TMG 소개</h4>
+          <p class="footer__description">
+            중국 1,000억 달러 디지털 광고 시장으로의 단일 액세스 포인트. 국제 에이전시가 중국 플랫폼을 쉽게 탐색할 수 있도록 지원합니다.
+          </p>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">바로가기</h4>
+          <ul class="footer__links">
+            <li><a href="/ko/services/" class="footer__link">서비스</a></li>
+            <li><a href="/ko/pricing/" class="footer__link">요금</a></li>
+            <li><a href="/ko/about/" class="footer__link">회사 소개</a></li>
+            <li><a href="/ko/client-stories/" class="footer__link">고객 사례</a></li>
+            <li><a href="/ko/faqs/" class="footer__link">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">문의하기</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="mailto:tmg@tuyuesouxin.cn" class="footer__link footer__link--email">tmg@tuyuesouxin.cn</a>
+            </li>
+            <li>
+              <a href="#contactQR" class="footer__link">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: text-bottom; margin-right: 4px;">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp (클릭하여 스캔)
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">법적 고지</h4>
+          <ul class="footer__links">
+            <li class="footer__license">사업자 등록 번호: 91310114MADKG4UF0G</li>
+            <li class="footer__company-short">Tuyue Media Gateway</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Tuyue Media Gateway. 모든 권리 보유.</p>
+        <div class="footer__platforms">
+          <a href="https://ad.weixin.qq.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">WeChat</a>
+          <a href="https://www.oceanengine.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Douyin</a>
+          <a href="https://e.baidu.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Baidu</a>
+          <a href="https://www.xiaohongshu.com/brand" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">샤오홍슈(RED)</a>
+          <a href="https://member.bilibili.com/platform/ad" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bilibili</a>
+          <a href="https://ads.microsoft.com/zh-cn" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bing China</a>
+</div>
+      </div>
+    </div>
+  </footer>
+<script>
+  // Mobile Menu & Dropdown Toggle
+  (function () {
+    var toggle = document.querySelector('.header__toggle');
+    var nav = document.querySelector('.header__nav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', function () {
+        const isOpen = toggle.classList.toggle('active');
+        nav.classList.toggle('active', isOpen);
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+    nav.querySelectorAll('.header__dropdown').forEach(function (dropdown) {
+      var trigger = dropdown.querySelector('.header__dropdown-trigger');
+      if (trigger) {
+        trigger.addEventListener('click', function (e) {
+          e.preventDefault();
+          nav.querySelectorAll('.header__dropdown').forEach(function (d) {
+            if (d !== dropdown) d.classList.remove('open');
+          });
+          dropdown.classList.toggle('open');
+        });
+      }
+    });
+    document.addEventListener('click', function (e) {
+      if (!nav.contains(e.target)) {
+        nav.querySelectorAll('.header__dropdown').forEach(function (d) {
+          d.classList.remove('open');
+        });
+      }
+    });
+  })();
+
+  // Scroll Reveal (disabled: content always visible)
+  (function () {
+    // Reveal animation removed - user prefers content always visible
+  })();
+  </script>
+</body>
+</html>
