@@ -1,0 +1,71 @@
+{
+  "slug": "wechat-ai-agent-2026",
+  "template": "baidu-q1-2026-ai-revenue.html",
+  "title": "WeChat AI Agent Is Almost Here: 5 Things Advertisers Need to Know | TMG",
+  "meta_desc": "Tencent is testing a WeChat-native AI Agent. Impact on ad targeting, GEO, and campaign strategy.",
+  "date": "2026-06-06",
+  "date_display": "June 6, 2026",
+  "category": "WeChat / AI",
+  "read_time": "8 min read",
+  "author": "Paid Media Team · Shanghai",
+  "hero_title": "WeChat AI Agent Is Almost Here: <span>5 Things Advertisers Need to Know</span>",
+  "hero_intro": "On June 2, 2026, the Financial Times reported that Tencent is about to launch an AI Agent embedded directly into WeChat.",
+  "excerpt": "Tencent's WeChat-native AI Agent could be the biggest ad platform change since Moments.",
+  "sidebar_text": "WeChat AI Agent is coming. We help brands prepare for the next era of Tencent advertising.",
+  "sidebar_btn": "Talk to Us",
+  "toc_links": [
+    {"id": "what", "text": "What Is WeChat AI Agent"},
+    {"id": "numbers", "text": "The Numbers Behind the Story"},
+    {"id": "impact", "text": "Why This Changes Everything"},
+    {"id": "action", "text": "What You Can Do Now"}
+  ],
+  "related_posts": [
+    {"slug": "618-data-review-2026", "cat": "618 / E-commerce", "title": "618 2026 Data Review", "desc": "Full network sales hit RMB 1.02 trillion."},
+    {"slug": "doubao-goes-paid-what-advertisers-need-to-know", "cat": "ByteDance / AI", "title": "Doubao Goes Paid", "desc": "ByteDance's AI subscription."}
+  ],
+  "article_en": "<p>English article content here...</p>",
+  "ja_i18n": {
+    "title": "微信AIエージェント間もなく登場：広告主が知るべき5つのこと | TMG",
+    "meta_desc": "Tencentがテスト中の微信AIエージェント。広告ターゲティング、GEO、キャンペーン戦略への影響。",
+    "hero_title": "微信AIエージェント間もなく登場：<span>広告主が知るべき5つのこと</span>",
+    "hero_intro": "2026年6月2日、フィナンシャル・タイムズが報じた。",
+    "excerpt": "Tencentがテスト中の微信AIエージェントが間もなく登場。",
+    "category": "WeChat / AI",
+    "date_display": "2026年6月6日",
+    "read_time": "8分で読める",
+    "sidebar_text": "微信AIエージェントが到来します。次世代のTencent広告に備えるお手伝いをします。",
+    "toc_links": [
+      {"id": "what", "text": "微信AIエージェントとは"},
+      {"id": "numbers", "text": "数字で見るストーリー"},
+      {"id": "impact", "text": "広告主への影響"},
+      {"id": "action", "text": "今できること"}
+    ],
+    "related_posts": [
+      {"slug": "618-data-review-2026", "cat": "618 / EC", "title": "618 2026データレビュー", "desc": "全ネット売上1兆218億元。"},
+      {"slug": "doubao-goes-paid-what-advertisers-need-to-know", "cat": "ByteDance / AI", "title": "豆包有料化", "desc": "ByteDanceのAIサブスクリプション。"}
+    ]
+  },
+  "ko_i18n": {
+    "title": "위챗 AI 에이전트 곧 출시: 광고주가 알아야 할 5가지 | TMG",
+    "meta_desc": "텐센트가 테스트 중인 위챗 AI 에이전트. 광고 타겟팅, GEO, 캠페인 전략에 미치는 영향.",
+    "hero_title": "위챗 AI 에이전트 곧 출시: <span>광고주가 알아야 할 5가지</span>",
+    "hero_intro": "2026년 6월 2일, 파이낸셜 타임즈가 보도했다.",
+    "excerpt": "텐센트가 위챗 네이티브 AI 에이전트 테스트 시작.",
+    "category": "위챗 / AI",
+    "date_display": "2026년 6월 6일",
+    "read_time": "8분 읽기",
+    "sidebar_text": "위챗 AI 에이전트가 곧 출시됩니다. 차세대 텐센트 광고 준비를 도와드립니다.",
+    "toc_links": [
+      {"id": "what", "text": "위챗 AI 에이전트란"},
+      {"id": "numbers", "text": "숫자로 보는 이야기"},
+      {"id": "impact", "text": "광고주에 미치는 영향"},
+      {"id": "action", "text": "지금 할 수 있는 것"}
+    ],
+    "related_posts": [
+      {"slug": "618-data-review-2026", "cat": "618 / 이커머스", "title": "618 2026 데이터 리뷰", "desc": "전체 네트워크 매출 1조 218억위안."},
+      {"slug": "doubao-goes-paid-what-advertisers-need-to-know", "cat": "ByteDance / AI", "title": "더우바오 유료화", "desc": "ByteDance의 AI 구독."}
+    ]
+  },
+  "article_ja": "<p>日语正文内容...</p>",
+  "article_ko": "<p>韩语正文内容...</p>"
+}
