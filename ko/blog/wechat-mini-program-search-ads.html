@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P5RQGYPTGP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P5RQGYPTGP');
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080c14">
+  <title>WeChat Mini Program Search Ads: Turning Apps Into Discoverable Assets | TMG</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/assets/og-image.png">
+<meta name="description" content="미니프로그램은 오랫동안 WeChat 내 가장 중요한 전환 자산 중 하나였다. 사용자가 생태계를 떠나지 않도록 가볍고 앱 같은 경험을 만들 수 있다는 점이 강점이었다. 하지만 과제는 발견에 있었다. 직접 링크, QR코드, 소셜 공유 외에는 많은 미니프로그램이 능동적 검색 수요가 ">
+  <link rel="canonical" href="https://www.tuyuesouxin.cn/ko/blog/wechat-mini-program-search-ads/">
+  <link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/ko/blog/wechat-mini-program-search-ads/">
+  <link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/wechat-mini-program-search-ads/">
+  <link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/wechat-mini-program-search-ads/">
+  <link rel="alternate" hreflang="x-default" href="https://www.tuyuesouxin.cn/ko/blog/wechat-mini-program-search-ads/">
+
+<meta property="og:title" content="WeChat Mini Program Search Ads: Turning Apps Into Discoverable Assets | TMG">
+  <meta property="og:description" content="미니프로그램은 오랫동안 WeChat 내 가장 중요한 전환 자산 중 하나였다. 사용자가 생태계를 떠나지 않도록 가볍고 앱 같은 경험을 만들 수 있다는 점이 강점이었다. 하지만 과제는 발견에 있었다. 직접 링크, QR코드, 소셜 공유 외에는 많은 미니프로그램이 능동적 검색 수요가 ">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.tuyuesouxin.cn/ko/blog/wechat-mini-program-search-ads/">
+  <meta property="og:image" content="https://www.tuyuesouxin.cn/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.tuyuesouxin.cn/assets/twitter-card.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <style>
+  
+
+  .skip-link{position:absolute;top:-100px;left:0;background:var(--color-accent);color:var(--color-bg);padding:8px 16px;z-index:10000;text-decoration:none;transition:top 0.3s;font-weight:600;}
+  .skip-link:focus{top:0;}
+
+    :root {
+      --color-bg: #080c14;
+      --color-bg-alt: #0d1220;
+      --color-bg-card: #111827;
+      --color-text-primary: #f0f4ff;
+      --color-text-secondary: #b3c0d8;
+      --color-text-muted: #8899b5;
+      --color-primary: #2d6be4;
+      --color-primary-hover: #1e55c4;
+      --color-accent: #c9a84c;
+      --color-accent-light: #e8c87a;
+      --color-border: #1e2d45;
+      --color-border-hover: #2d4060;
+      --c-ocean: #c9a84c;
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-size-xs: 0.75rem;
+      --font-size-sm: 0.875rem;
+      --font-size-base: 1rem;
+      --font-size-lg: 1.125rem;
+      --font-size-xl: 1.25rem;
+      --font-size-2xl: 1.5rem;
+      --font-size-3xl: 1.875rem;
+      --font-size-4xl: 2.25rem;
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --transition-fast: 150ms ease;
+      --transition-base: 250ms ease;
+      --radius-sm: 0.375rem;
+      --radius-md: 0.5rem;
+      --radius-lg: 0.75rem;
+      --radius-xl: 1rem;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-family);
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--color-text-secondary);
+      background: var(--color-bg);
+      -webkit-font-smoothing: antialiased;
+      padding-top: 64px;
+    }
+
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--color-bg); }
+    ::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--color-border-hover); }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+    a { color: var(--color-primary); text-decoration: none !important; }
+    a:hover { text-decoration: underline; }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: var(--space-2); padding: var(--space-3) var(--space-5);
+      font-family: var(--font-family); font-size: var(--font-size-sm);
+      font-weight: 500; text-decoration: none !important; border-radius: var(--radius-md);
+      transition: all var(--transition-base); cursor: pointer; border: none;
+    }
+    .btn--primary {
+      background: linear-gradient(135deg, #c9a84c 0%, #e8c87a 50%, #c9a84c 100%);
+      background-size: 200% 200%; color: #0d1220; font-weight: 600;
+      box-shadow: 0 2px 12px rgba(201,168,76,0.25);
+    }
+    .btn--primary:hover {
+      background-position: right center; box-shadow: 0 4px 20px rgba(201,168,76,0.4);
+      transform: translateY(-1px); text-decoration: none !important;
+    }
+    .btn--secondary {
+      background: transparent; color: var(--color-text-primary);
+      border: 1px solid var(--color-border);
+    }
+    .btn--secondary:hover {
+      border-color: var(--color-border-hover); background: rgba(255,255,255,0.05);
+      text-decoration: none !important;
+    }
+
+    .header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background-color: rgba(8,12,20,.85);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--color-border); padding: 1rem 0;
+      transition: border-color var(--transition-base);
+    }
+    .header::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,.4) 40%, rgba(45,107,228,.4) 60%, transparent);
+      opacity: .6;
+    }
+    .header__inner { display: flex; align-items: center; justify-content: space-between; }
+    .header__logo {
+      display: flex; align-items: center; gap: .5rem;
+      text-decoration: none !important; transition: opacity .15s;
+    }
+    .header__logo:hover { opacity: .85; text-decoration: none !important; }
+    .header__logo-icon { width: 40px; height: 40px; flex-shrink: 0; }
+    .header__logo-text { font-size: 1.125rem; font-weight: 700; color: var(--color-text-primary); letter-spacing: -.02em; }
+    .header__logo-text span { color: var(--color-accent); }
+    .header__nav { display: flex; gap: 2rem; align-items: center; }
+    .header__nav-link {
+      font-size: .875rem; font-weight: 500; color: var(--color-text-secondary);
+      transition: color .15s; text-decoration: none !important;
+    }
+    .header__nav-link:hover { color: var(--color-text-primary); text-decoration: none !important; }
+    .header__nav-link--active {
+      color: var(--color-text-primary);
+      border-bottom: 2px solid var(--color-accent);
+      padding-bottom: 2px;
+    }
+      padding-bottom: 2px;
+    }
+
+    .nav-badge {
+      display: inline-block; margin-left: 5px; padding: 1px 5px;
+      font-size: 10px; font-weight: 700; line-height: 1;
+      letter-spacing: .04em; text-transform: uppercase;
+      color: #080c14; background: var(--color-accent);
+      border-radius: 3px; vertical-align: baseline; white-space: nowrap;
+      animation: badgePulse 2s ease-in-out infinite;
+    }
+    @keyframes badgePulse { 0%,100%{opacity:1} 50%{opacity:.65} }
+    .header__cta { display: none; }
+    .header__toggle {
+      display: none; flex-direction: column; justify-content: center;
+      gap: 4px; background: none; border: none; cursor: pointer; padding: 8px;
+    }
+    .header__toggle span { width: 24px; height: 2px; background: var(--color-text-primary); transition: all .3s; }
+    .header__toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+    .header__toggle.active span:nth-child(2) { opacity: 0; }
+    .header__toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+    @media (min-width: 768px) {
+      .header__toggle { display: none; }
+  
+    .nav-badge {
+      display: inline-block; margin-left: 5px; padding: 1px 5px;
+      font-size: 10px; font-weight: 700; line-height: 1;
+      letter-spacing: .04em; text-transform: uppercase;
+      color: #080c14; background: var(--color-accent);
+      border-radius: 3px; vertical-align: baseline; white-space: nowrap;
+      animation: badgePulse 2s ease-in-out infinite;
+    }
+    @keyframes badgePulse { 0%,100%{opacity:1} 50%{opacity:.65} }
+    .header__cta { display: block; }
+      .header__dropdown { position: relative; }
+      .header__dropdown-trigger { display: flex; align-items: center; gap: 4px; }
+      .header__dropdown-arrow { transition: transform var(--transition-fast); }
+      .header__dropdown:hover .header__dropdown-arrow,
+      .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
+      .header__dropdown-menu {
+        position: absolute; top: calc(100% + 8px); left: 0;
+        background: var(--color-bg-card); border: 1px solid var(--color-border);
+        border-radius: 10px; padding: .5rem 0; min-width: 180px;
+        display: none; opacity: 0; box-shadow: 0 8px 24px rgba(0,0,0,.4); z-index: 200;
+      }
+      .header__dropdown:hover .header__dropdown-menu,
+      .header__dropdown.open .header__dropdown-menu {
+        display: flex; flex-direction: column; opacity: 1;
+        transform: translateY(0);
+      }
+      .header__dropdown-item {
+        font-size: var(--font-size-sm); font-weight: 500;
+        color: var(--color-text-secondary); padding: .625rem 1rem;
+        border-radius: 6px; white-space: nowrap; text-decoration: none !important;
+        transition: background .15s, color .15s;
+      }
+      .header__dropdown-item:hover {
+        background: rgba(201,168,76,.1); color: var(--color-accent); text-decoration: none !important;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .header { position: fixed; top: 0; left: 0; right: 0; z-index: 200; }
+      .header__inner {
+        background: var(--color-bg-card); border-bottom: 1px solid var(--color-border);
+        position: relative; z-index: 201;
+      }
+      .header__toggle { display: flex; }
+      .header__nav {
+        display: none; flex-direction: column; gap: 0;
+        position: absolute; top: 100%; left: 0; right: 0;
+        background: var(--color-bg-card); border-bottom: 1px solid var(--color-border);
+        z-index: 200;
+      }
+      .header__nav.active { display: flex; }
+      .header__nav-link {
+        display: block; width: 100%; padding: 14px 40px 14px 24px;
+        border-bottom: 1px solid var(--color-border); font-size: 1.1rem;
+      }
+      .header__dropdown { position: static; width: 100%; 
+       }
+      .header__dropdown-trigger {
+        display: flex; align-items: center; justify-content: space-between;
+        width: 100%; padding: 14px 40px 14px 24px;
+        border-bottom: 1px solid var(--color-border); font-size: 1.1rem;
+      }
+      .header__dropdown-arrow { transition: transform var(--transition-fast); }
+      .header__dropdown.active .header__dropdown-arrow,
+      .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
+      .header__dropdown-menu { display: none; flex-direction: column; background: rgba(0,0,0,.25); padding: 0; }
+      .header__dropdown.active .header__dropdown-menu,
+      .header__dropdown.open .header__dropdown-menu { display: flex; }
+      .header__dropdown-item {
+        display: block; width: 100%; padding: 12px 40px;
+        font-size: 1rem; color: var(--color-text-secondary);
+        border-bottom: 1px solid rgba(255,255,255,.06);
+      }
+      .header__dropdown-item:hover { background: rgba(201,168,76,.08); color: var(--color-accent); }
+    }
+
+    .article-hero {
+      padding: 100px 0 var(--space-12);
+    }
+    .article-hero .container { max-width: 860px; }
+    .article-meta {
+      display: flex; align-items: center; gap: var(--space-3);
+      flex-wrap: wrap; margin-bottom: var(--space-6);
+    }
+    .article-category {
+      display: inline-block; padding: 4px 12px;
+      background: rgba(201,168,76,.15); border: 1px solid rgba(201,168,76,.3);
+      border-radius: 20px; font-size: var(--font-size-xs); font-weight: 600;
+      color: var(--color-accent); text-transform: uppercase; letter-spacing: .08em;
+    }
+    .article-date {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+    }
+    .article-read-time {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+    }
+
+    .article-hero__author {
+      display: flex; align-items: center; gap: 1rem;
+      margin-top: 2rem; padding-top: 2rem;
+      border-top: 1px solid var(--color-border);
+    }
+    .article-hero__author-avatar {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; color: var(--color-bg); font-size: var(--font-size-base);
+    }
+    .article-hero__author-info { display: flex; flex-direction: column; }
+    .article-hero__author-name {
+      font-weight: 600; color: var(--color-text-primary);
+      font-size: var(--font-size-sm);
+    }
+    .article-hero__author-role {
+      font-size: var(--font-size-xs); color: var(--color-text-muted);
+    }
+
+    .article-hero__title {
+      font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700;
+      color: var(--color-text-primary); line-height: 1.25; margin-bottom: var(--space-6);
+    }
+    .article-hero__title span { color: var(--color-accent); }
+    .article-hero__intro {
+      font-size: var(--font-size-lg); color: var(--color-text-secondary);
+      line-height: 1.75; max-width: 760px;
+    }
+
+    .article-body {
+      padding: var(--space-16) 0;
+      background: #000;
+    }
+    .article-body .container {
+      max-width: 860px;
+      display: grid;
+      grid-template-columns: 1fr 260px;
+      gap: var(--space-12);
+      align-items: start;
+    }
+    .article-content h2 {
+      font-size: var(--font-size-2xl); font-weight: 700;
+      color: var(--color-text-primary); margin: var(--space-10) 0 var(--space-4);
+      padding-top: var(--space-6);
+    }
+    .article-content h2:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+    .article-content h3 {
+      font-size: var(--font-size-xl); font-weight: 600;
+      color: var(--color-text-primary); margin: var(--space-8) 0 var(--space-3);
+    }
+    .article-content p { margin-bottom: var(--space-4); color: var(--color-text-secondary); }
+    .article-content strong { color: var(--color-text-primary); font-weight: 600; }
+    .article-content ul, .article-content ol {
+      margin: var(--space-4) 0 var(--space-6) var(--space-6);
+    }
+    .article-content li { margin-bottom: var(--space-2); color: var(--color-text-secondary); }
+    .article-content a { color: var(--color-primary); }
+    .article-content a:hover { text-decoration: underline; }
+
+    .feature-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: var(--space-4); margin: var(--space-6) 0;
+    }
+    .feature-card {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5);
+      transition: border-color var(--transition-base);
+    }
+    .feature-card:hover { border-color: rgba(201,168,76,.4); }
+    .feature-card__num {
+      display: inline-block; width: 28px; height: 28px; line-height: 28px;
+      text-align: center; background: rgba(201,168,76,.15);
+      color: var(--color-accent); font-size: var(--font-size-sm);
+      font-weight: 700; border-radius: 50%; margin-bottom: var(--space-3);
+    }
+    .feature-card__title {
+      font-size: var(--font-size-base); font-weight: 600;
+      color: var(--color-text-primary); margin-bottom: var(--space-2);
+    }
+    .feature-card__desc {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.6;
+    }
+
+    .data-card {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-left: 3px solid var(--color-accent);
+      border-radius: var(--radius-md); padding: var(--space-5);
+      margin: var(--space-6) 0;
+    }
+    .data-card__num {
+      font-size: var(--font-size-3xl); font-weight: 700;
+      color: var(--color-accent); line-height: 1.1; margin-bottom: var(--space-1);
+    }
+    .data-card__label {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+      margin-bottom: var(--space-1);
+    }
+    .data-card__change {
+      font-size: var(--font-size-xs); font-weight: 600;
+      color: #22c55e; /* green for positive change */
+    }
+
+    .callout {
+      background: rgba(45,107,228,.08); border: 1px solid rgba(45,107,228,.2);
+      border-left: 3px solid var(--color-primary);
+      border-radius: var(--radius-md); padding: var(--space-5);
+      margin: var(--space-6) 0;
+    }
+    .callout--accent {
+      background: rgba(201,168,76,.06); border: 1px solid rgba(201,168,76,.2);
+      border-left: 3px solid var(--color-accent);
+    }
+    .callout__label {
+      font-size: var(--font-size-xs); font-weight: 700; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--color-primary); margin-bottom: var(--space-2);
+    }
+    .callout--accent .callout__label { color: var(--color-accent); }
+    .callout p { margin: 0; font-size: var(--font-size-sm); }
+
+    /* ── Stats Grid ── */
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--space-4); margin: var(--space-6) 0;
+    }
+    .stat-card {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5); text-align: center;
+      transition: border-color var(--transition-base);
+    }
+    .stat-card:hover { border-color: rgba(201,168,76,.4); }
+    .stat-card__num {
+      font-size: var(--font-size-4xl); font-weight: 700;
+      color: var(--color-accent); line-height: 1.1; margin-bottom: var(--space-2);
+    }
+    .stat-card__label {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+      line-height: 1.4;
+    }
+
+    /* ── Platform Cards ── */
+    .platform-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: var(--space-4); margin: var(--space-6) 0;
+    }
+    .platform-card {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5);
+      transition: border-color var(--transition-base), transform var(--transition-base);
+      position: relative; overflow: hidden;
+    }
+    .platform-card:hover {
+      border-color: rgba(201,168,76,.4);
+      transform: translateY(-2px);
+    }
+    .platform-card__header {
+      display: flex; align-items: center; gap: var(--space-3);
+      margin-bottom: var(--space-4);
+    }
+    .platform-card__icon {
+      width: 40px; height: 40px; border-radius: var(--radius-md);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; font-weight: 700; color: #fff;
+    }
+    .platform-card__name {
+      font-size: var(--font-size-lg); font-weight: 700;
+      color: var(--color-text-primary);
+    }
+    .platform-card__product {
+      font-size: var(--font-size-xs); color: var(--color-text-muted);
+    }
+    .platform-card__strategy {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary);
+      line-height: 1.6; margin-bottom: var(--space-4);
+    }
+    .platform-card__metric {
+      background: rgba(201,168,76,.08); border: 1px solid rgba(201,168,76,.15);
+      border-radius: var(--radius-sm); padding: var(--space-3);
+      font-size: var(--font-size-xs); color: var(--color-accent);
+      font-weight: 600; text-align: center;
+    }
+
+    /* ── Article Table ── */
+    .article-table {
+      width: 100%; border-collapse: collapse;
+      font-size: var(--font-size-sm); margin: var(--space-6) 0;
+    }
+    .article-table th {
+      padding: 12px 16px; border-bottom: 2px solid var(--color-accent);
+      background: rgba(201,168,76,.08); color: var(--color-accent);
+      text-align: left; font-weight: 600; font-size: var(--font-size-xs);
+      text-transform: uppercase; letter-spacing: .05em;
+    }
+    .article-table td {
+      padding: 12px 16px; border-bottom: 1px solid var(--color-border);
+      color: var(--color-text-secondary);
+    }
+    .article-table tr:nth-child(even) td {
+      background: rgba(255,255,255,.02);
+    }
+    .article-table tr:hover td {
+      background: rgba(201,168,76,.04);
+    }
+    .article-table strong { color: var(--color-text-primary); }
+
+    /* ── Callout variants ── */
+    .callout--warning {
+      background: rgba(234,179,8,.06); border: 1px solid rgba(234,179,8,.2);
+      border-left: 3px solid #eab308;
+    }
+    .callout--warning .callout__label { color: #eab308; }
+
+    /* ── Key Takeaway Banner ── */
+    .takeaway-banner {
+      background: linear-gradient(135deg, rgba(201,168,76,.1), rgba(45,107,228,.08));
+      border: 1px solid rgba(201,168,76,.25);
+      border-radius: var(--radius-lg); padding: var(--space-6);
+      margin: var(--space-8) 0; text-align: center;
+    }
+    .takeaway-banner__title {
+      font-size: var(--font-size-xs); font-weight: 700;
+      text-transform: uppercase; letter-spacing: .1em;
+      color: var(--color-accent); margin-bottom: var(--space-3);
+    }
+    .takeaway-banner__text {
+      font-size: var(--font-size-lg); color: var(--color-text-primary);
+      font-weight: 500; line-height: 1.6; max-width: 680px; margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      .platform-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+      .article-table { font-size: var(--font-size-xs); }
+      .article-table th, .article-table td { padding: 8px 10px; }
+    }
+
+    .article-sidebar {
+      position: sticky; top: 88px;
+    }
+    .toc {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5);
+    }
+    .toc__title {
+      font-size: var(--font-size-xs); font-weight: 700; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--color-text-muted); margin-bottom: var(--space-4);
+    }
+    .toc__list { list-style: none; }
+    .toc__list li + li { margin-top: var(--space-2); }
+    .toc__link {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+      text-decoration: none !important; display: block; line-height: 1.4;
+      transition: color var(--transition-fast);
+    }
+    .toc__link:hover { color: var(--color-text-primary); text-decoration: none !important; }
+
+    .sidebar-cta {
+      margin-top: var(--space-6); background: var(--color-bg-card);
+      border: 1px solid var(--color-border); border-radius: var(--radius-lg);
+      padding: var(--space-5); text-align: center;
+    }
+    .sidebar-cta p {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary);
+      margin-bottom: var(--space-4); line-height: 1.5;
+    }
+    .sidebar-cta .btn { width: 100%; justify-content: center; }
+
+    .related {
+      padding: var(--space-12) 0;
+      background: var(--color-bg);
+      border-top: 1px solid var(--color-border);
+    }
+    .related__title {
+      font-size: var(--font-size-2xl); font-weight: 700;
+      color: var(--color-text-primary); margin-bottom: var(--space-8);
+    }
+    .related__grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6);
+    }
+    .related-card {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5);
+      text-decoration: none !important; display: block;
+      transition: border-color var(--transition-base), transform var(--transition-base);
+    }
+    .related-card:hover { border-color: rgba(201,168,76,.4); transform: translateY(-2px); text-decoration: none !important; }
+    .related-card__cat {
+      font-size: var(--font-size-xs); font-weight: 600; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--color-accent); margin-bottom: var(--space-3);
+    }
+    .related-card__title {
+      font-size: var(--font-size-base); font-weight: 600;
+      color: var(--color-text-primary); line-height: 1.4; margin-bottom: var(--space-2);
+    }
+    .related-card__desc {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.5;
+    }
+
+    .footer {
+      padding: var(--space-10) 0 var(--space-8);
+      background: var(--color-bg);
+      border-top: 1px solid var(--color-border);
+    }
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-8);
+      margin-bottom: var(--space-10);
+    }
+    @media (min-width: 768px) {
+      .footer__grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    .footer__section { text-align: left; }
+    .footer__title {
+      font-size: var(--font-size-base);
+      font-weight: 600;
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-4);
+      position: relative;
+      padding-bottom: var(--space-2);
+    }
+    .footer__title::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 40px; height: 2px;
+      background: linear-gradient(90deg, var(--color-accent), transparent);
+      opacity: 0.8;
+    }
+    .footer__description {
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+    .footer__links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer__links li { margin-bottom: var(--space-3); }
+    .footer__link {
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+      transition: color var(--transition-fast);
+      display: inline-block;
+      text-decoration: none !important;
+    }
+    .footer__link:hover { color: var(--color-text-primary); transform: translateX(4px); }
+    .footer__link--email { color: var(--color-primary); font-weight: 500; }
+    .footer__license { color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--space-2); }
+    .footer__company-short { color: var(--color-text-muted); font-size: var(--font-size-xs); }
+    .footer__bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-4);
+      padding-top: var(--space-8);
+      border-top: 1px solid var(--color-border);
+    }
+    @media (min-width: 768px) {
+      .footer__bottom { flex-direction: row; justify-content: space-between; }
+    }
+    .footer__copyright { color: var(--color-text-muted); font-size: var(--font-size-sm); margin: 0; }
+    .footer__platforms { display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: center; }
+    .footer__platform-badge {
+      text-decoration: none !important;
+      display: inline-block;
+      padding: var(--space-1) var(--space-3);
+      background-color: rgba(201, 168, 76, 0.1);
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      border-radius: 4px;
+      color: var(--color-text-primary);
+      font-size: var(--font-size-xs);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all var(--transition-fast);
+    }
+    .footer__platform-badge:hover {
+      text-decoration: none !important;
+      background-color: rgba(201, 168, 76, 0.2);
+      border-color: var(--color-accent);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 900px) {
+      .article-body .container { grid-template-columns: 1fr; }
+      .article-sidebar { display: none; }
+    }
+    @media (max-width: 767px) {
+      .article-hero { padding: 90px 0 var(--space-10); }
+      .feature-grid { grid-template-columns: 1fr; }
+      .related__grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── Scroll Reveal (disabled: content always visible) ── */
+    .reveal {
+      opacity: 1; transform: none;
+      transition: none;
+    }
+    /* reveal--visible disabled */
+
+    /* ── Language Switcher Dropdown ── */
+    .header__lang-wrap {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      margin-left: 8px;
+    }
+    .header__lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 10px;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--c-accent, #c9a84c);
+      background: transparent;
+      border: 1px solid var(--c-accent, #c9a84c);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background .15s;
+      line-height: 1.4;
+    }
+    .header__lang-btn:hover { background: rgba(201,168,76,.1); }
+    .header__lang-btn svg { transition: transform .15s; }
+    .header__lang-wrap:hover .header__lang-btn svg,
+    .header__lang-wrap.active .header__lang-btn svg { transform: rotate(180deg); }
+    .header__lang-menu {
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      min-width: 140px;
+      background: #111827;
+      border: 1px solid #1e2d45;
+      border-radius: 8px;
+      padding: 4px;
+      display: none;
+      opacity: 0;
+      box-shadow: 0 4px 20px rgba(0,0,0,.4);
+      z-index: 300;
+    }
+    .header__lang-wrap:hover .header__lang-menu,
+    .header__lang-wrap.active .header__lang-menu {
+      display: flex;
+      flex-direction: column;
+      opacity: 1;
+    }
+    .header__lang-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 10px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #a3b1cc;
+      text-decoration: none !important;
+      border-radius: 5px;
+      transition: background .15s, color .15s;
+      white-space: nowrap;
+    }
+    .header__lang-item:hover {
+      background: rgba(201,168,76,.1);
+      color: #e8c87a;
+      text-decoration: none !important;
+    }
+    .header__lang-item--cur {
+      color: #e8c87a;
+      background: rgba(201,168,76,.08);
+    }
+    .header__lang-flag { font-size: 15px; line-height: 1; }
+    
+  @media print{
+    *{box-shadow:none!important;text-shadow:none!important;}
+    body{background:white!important;color:black!important;}
+    .header,.footer,nav,.sidebar,iframe{display:none!important;}
+    main,article,section,.container{max-width:100%!important;margin:0!important;padding:10px!important;}
+    h1,h2,h3,h4,h5,h6{page-break-after:avoid;page-break-inside:avoid;}
+    img{max-width:100%!important;page-break-inside:avoid;}
+    a{color:black!important;text-decoration:underline;}
+    p,blockquote,ul,ol,dl,table{page-break-inside:avoid;}
+    @page{margin:2cm;}
+  }
+  </style>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tuyue Media Gateway","alternateName":"TMG","url":"https://www.tuyuesouxin.cn/","description":"The unified media interface for international agencies entering China's digital advertising market. One connection, all platforms.","email":"tmg@tuyuesouxin.cn","address":{"@type":"PostalAddress","streetAddress":"599-2F202 Wanzhen Road","addressLocality":"Shanghai","addressRegion":"Shanghai","postalCode":"201824","addressCountry":"CN"},"sameAs":[]}</script>
+
+    <style>
+      .skip-to-content {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: var(--color-accent);
+        color: var(--color-bg);
+        padding: 8px 16px;
+        z-index: 10000;
+        transition: top 0.3s;
+      }
+      .skip-to-content:focus {
+        top: 0;
+      }
+    </style>
+  </head>
+<body>
+  <!-- Skip to main content -->
+  <a href="#main-content" class="skip-link">메인 콘텐츠로 건너뛰기</a>
+
+  
+  
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="/ko/" class="header__logo">
+          <svg class="header__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#c9a84c"/>
+                <stop offset="100%" stop-color="#e8c87a"/>
+              </linearGradient>
+              <clipPath id="moonClip">
+                <circle cx="30" cy="24" r="16"/>
+              </clipPath>
+            </defs>
+            <circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/>
+            <circle cx="37" cy="20" r="13" fill="#080c14"/>
+            <text x="4" y="32" font-family="Inter, -apple-system, sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-0.8">TMG</text>
+          </svg>
+          <span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
+        </a>
+        <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="header__nav" id="main-nav">
+          <div class="header__dropdown">
+            <a href="/ko/services/" class="header__nav-link header__dropdown-trigger">
+              서비스
+              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="header__dropdown-menu">
+              <a href="/ko/services/" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">전체 서비스</a>
+              <a href="/ko/services/wechat/" class="header__dropdown-item">WeChat 광고</a>
+              <a href="/ko/services/douyin/" class="header__dropdown-item">Douyin 광고</a>
+              <a href="/ko/services/baidu/" class="header__dropdown-item">바이두 SEM</a>
+              <a href="/ko/services/bing/" class="header__dropdown-item">Bing China</a>
+              <a href="/ko/services/xiaohongshu/" class="header__dropdown-item">샤오홍슈</a>
+              <a href="/ko/services/bilibili/" class="header__dropdown-item">Bilibili 광고</a>
+              <a href="/ko/geo/" class="header__dropdown-item">중국 GEO</a>
+            </div>
+          </div>
+          <a href="/ko/pricing/" class="header__nav-link">가격</a>
+          <a href="/ko/client-stories/" class="header__nav-link">고객 사례</a>
+          <a href="/ko/geo/" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
+          <a href="/ko/blog/" class="header__nav-link header__nav-link--active">블로그</a>
+          <a href="/ko/faqs/" class="header__nav-link">FAQ</a>
+          <div class="header__dropdown">
+            <a href="/ko/about/" class="header__nav-link header__dropdown-trigger">
+              회사 소개
+              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="header__dropdown-menu">
+              <a href="/ko/why-tmg/" class="header__dropdown-item">TMG를 선택하는 이유</a>
+              <a href="/ko/about/" class="header__dropdown-item">회사 소개</a>
+              <a href="/ko/contact/" class="header__dropdown-item">문의하기</a>
+            </div>
+          </div>
+        </nav>
+        <div class="header__lang-wrap">
+          <button class="header__lang-btn" onclick="this.parentElement.classList.toggle('active')">
+            <span class="header__lang-flag">🇰🇷</span>한국어
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 3.5l3 4 3-4"/></svg>
+          </button>
+          <div class="header__lang-menu">
+            <a href="/blog/wechat-mini-program-search-ads/" class="header__lang-item"><span class="header__lang-flag">🇺🇸</span>English</a>
+            <a href="/ja/blog/wechat-mini-program-search-ads/" class="header__lang-item"><span class="header__lang-flag">🇯🇵</span>日本語</a>
+          </div>
+        </div>
+<div class="header__cta">
+          <a href="/ko/contact/" class="btn btn--primary">무료 상담</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Article Hero -->
+  <section class="article-hero">
+    <div class="container">
+      <div class="article-meta">
+        <span class="article-category">WeChat / Search Ads</span>
+        <span class="article-date">2026-06-17</span>
+        <span class="article-read-time">8분 읽기</span>
+      </div>
+      <h1 class="article-hero__title">WeChat Mini Program Search Ads: Turning Apps Into Discoverable Assets</h1>
+      <p class="article-hero__intro">바이두 광고에 대해 알아야 할 모든 것: SEM, 정보 피드 광고, 키워드 전략, OCPC, AI 검색 광고.</p>
+
+      <div class="article-hero__author">
+        <div class="article-hero__author-avatar">TMG</div>
+        <div class="article-hero__author-info">
+          <div class="article-hero__author-name">Tuyue Media Gateway</div>
+          <div class="article-hero__author-role">유료 미디어 팀 · 상하이</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Body -->
+  <main id="main-content" class="article-body">
+    <div class="container">
+      <article class="article-content reveal">
+## 숨겨진 앱에서 검색 가능한 목적지로
+
+미니프로그램은 오랫동안 WeChat 내 가장 중요한 전환 자산 중 하나였다. 사용자가 생태계를 떠나지 않도록 가볍고 앱 같은 경험을 만들 수 있다는 점이 강점이었다. 하지만 과제는 발견에 있었다. 직접 링크, QR코드, 소셜 공유 외에는 많은 미니프로그램이 능동적 검색 수요가 아니라 기존 트래픽에 의존했다.
+
+이 구조가 바뀌고 있다. 미니프로그램은 점점 더 검색 가능하고 광고 대상이 되고 있으며, 앱 내 콘텐츠가 WeChat 검색 결과에 노출되고 검색 광고를 통해 프로모션될 수 있게 되었다. 광고주에게 이는 이전까지 숨겨져 있던 앱 경험을 발견 가능하고 의도 기반인 목적지로 전환함을 의미한다.
+
+## 해외 광고주에게 이것이 왜 중요한가
+
+중국에 진출하는 글로벌 브랜드에게 미니프로그램은 기능적인 디지털 매장으로 가장 빠르게 가는 경로인 경우가 많다. 상품 카탈로그, 쿠폰 여정, 예약 흐름, 회원 흐름, 직접 상거래를 구현할 수 있다. 그러나 최근까지는 경험 자체의 풍부함에 비해 발견 층위가 약했다.
+
+검색은 이 문제를 해결한다. 사용자가 제품 카테고리, 브랜드, 사용 사례를 검색하면 미니프로그램이 직접 진입점과 함께 결과에 노출될 수 있다. 이는 발견 비용은 낮추고 자산 가치는 높인다.
+
+TMG 관점: 미니프로그램 검색 광고는 이미 우수한 미니프로그램 경험을 구축했지만 상업적 수익을 온전히 실현하기 위해 적격 트래픽이 더 필요한 브랜드에 특히 가치 있다.
+
+## GMV +18% 시그널이 말하는 것
+
+이 분야에서 가장 중요한 시그널 중 하나는 미니프로그램 GMV가 18% 증가했다는 보도다. 이 수치는 검색 기반 발견이 클릭만 만들어내는 것이 아니라 상업적 결과를 만들어내고 있음을 시사한다.
+
+여러 시사점이 두드러진다.
+
+- 검색을 통해 유입된 사용자는 광범위한 피드 캠페인으로 확보한 사용자보다 의도가 더 명확한 경향이 있다
+- 검색에서 미니프로그램까지의 여정은 짧아 마찰과 이탈을 줄인다
+- 검색 노출이 확대될수록 브랜드는 동일하거나 개선된 확보 비용으로 더 높은 품질의 트래픽을 기대할 수 있다
+
+기획 관점에서 이는 미니프로그램을 백엔드 인프라로만 취급해서는 안 됨을 시사한다. 미니프로그램은 검색 최적화된 가시성을 갖춰야 할 프론트도어 자산이다.
+
+## 표: 미니프로그램 사용 사례와 검색 가치
+
+| 미니프로그램 사용 사례 | 예시 | 검색 발견 가치 |
+|---|---|---|
+| 이커머스 매장 | 상품 탐색과 구매 | 매우 높음: 직접 수익 경로 |
+| 쿠폰·프로모션 허브 | 시즌 캠페인과 혜택 | 높음: 혜택 의도를 전환 |
+| 예약 부킹 | 뷰티, 웰니스, 자동차 | 높음: 서비스 쿼리와 일치 |
+| 회원·로열티 | 포인트, 등급 혜택, 재방문 가치 | 중간: 리텐션 쿼리 지원 |
+| 상품 컨피규레이터 | 커스터마이즈와 번들 | 중간: 고의도 쇼핑객 포착 |
+
+## 미니프로그램의 발견성을 높이는 방법
+
+첫 단계는 미니프로그램이 검색 노출에 대해 기술적 자격을 충족하는지 확인하는 것이다. 여기에는 적절한 카테고리 설정, 설명적 네이밍, 예상 사용자 쿼리를 반영하는 메타데이터가 포함된다.
+
+기본 설정을 넘어 광고주는 다음을 고려해야 한다.
+
+- 미니프로그램 랜딩 페이지를 홈페이지가 아닌 쿼리 의도에 맞춘다
+- 검색 광고로 상품 카테고리, 캠페인, 고가치 진입점을 프로모트한다
+- 빠른 로딩 성과를 확보해 첫 의미 있는 화면 전에 검색 트래픽이 이탈하지 않도록 한다
+- 장바구니 추가, 쿠폰 수령, 예약, 팔로우, 재방문까지 하단 여정을 추적한다
+
+흔한 실수는 미니프로그램 검색 광고를 일반 트래픽 캠페인처럼 다루는 것이다. 사용자는 이미 의도를 보여주고 있으므로 크리에이티브와 랜딩 경험은 인지가 아닌 전환에 맞게 설계해야 한다.
+
+## WeChat 생태계 전반과의 통합
+
+미니프로그램 검색 광고는 다른 WeChat 자산과 연결되었을 때 가장 효과적이다.
+
+- 공식 계정 콘텐츠는 검색 발생 전에 제품 스토리를 사전 전달할 수 있다
+- 채널 영상은 인지를 쌓고 후속 검색 쿼리를 자극할 수 있다
+- 서비스 계정은 미니프로그램을 통해 전환한 사용자를 유지할 수 있다
+- WeChat 검색의 상품 페이지는 광고가 강조하는 메시지를 강화할 수 있다
+
+이 생태계 접근은 검색을 단일 전술이 아닌 강화 루프로 바꾼다. 각 자산은 다음 접점의 성과 확률을 높인다.
+
+## TMG 권장 사항
+
+기존 미니프로그램 인프라를 보유한 광고주에게 검색 광고는 증분 성과를 가장 빠르게 해금하는 방법이 되기 쉽다. 아직 미니프로그램을 구축 중인 광고주에게도 검색 수요 데이터는 어떤 경험을 우선할지에 대한 가이드가 된다.
+
+TMG는 광고주의 미니프로그램 준비도 평가, 검색 캠페인 구조화, 매출·리텐션·재구매 같은 비즈니스 성과로의 데이터 연결을 지원한다.
+
+## CTA
+
+미니프로그램을 검색 발견 가능한 성장 엔진으로 만들고 싶다면 TMG가 도움을 줄 수 있다. TMG에 문의하여 현재 미니프로그램 발자국 평가, 고의도 쿼리 기회 식별, 수요를 측정 가능한 상업 성과로 전환하는 검색 광고 프레임워크 구축을 검토해 보자.
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="article-sidebar">
+        <nav class="toc">
+          <div class="toc__title">이 기사에서</div>
+          <ul class="toc__list">
+            <li><a href="#from-hidden-apps-to-searchable-destinations" class="toc__link">From hidden apps to searchable destinations</a></li>
+            <li><a href="#why-this-matters-for-international-advertisers" class="toc__link">Why this matters for international advertisers</a></li>
+            <li><a href="#what-the-gmv-+18%-signal-tells-us" class="toc__link">What the GMV +18% signal tells us</a></li>
+            <li><a href="#table:-mini-program-use-cases-and-search-value" class="toc__link">Table: Mini Program use cases and search value</a></li>
+            <li><a href="#how-to-make-mini-programs-more-discoverable" class="toc__link">How to make Mini Programs more discoverable</a></li>
+            <li><a href="#integrating-search-ads-with-the-broader-wechat-ecosystem" class="toc__link">Integrating search ads with the broader WeChat ecosystem</a></li>
+            <li><a href="#tmg-recommendation" class="toc__link">TMG recommendation</a></li>
+            <li><a href="#call-to-action" class="toc__link">Call to action</a></li>
+          </ul>
+        </nav>
+        <div class="sidebar-cta">
+          <p>바이두 광고 전문가 가이드를 지원합니다.</p>
+          <a href="/ko/contact/" class="btn btn--primary">무료 상담</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Related Posts -->
+  <section class="related"><div class="container"><div class="related__title">관련 기사</div><div class="related__grid">
+        
+    </div></div></section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__section">
+          <h4 class="footer__title">TMG 소개</h4>
+          <p class="footer__description">
+            중국 1,000억 달러 규모 디지털 광고 시장으로의 단일 접근점. 국제 에이전시가 중국 플랫폼을 쉽게 활용할 수 있도록 지원합니다.
+          </p>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">빠른 링크</h4>
+          <ul class="footer__links">
+            <li><a href="/ko/services/" class="footer__link">서비스</a></li>
+            <li><a href="/ko/pricing/" class="footer__link">가격</a></li>
+            <li><a href="/ko/about/" class="footer__link">회사 소개</a></li>
+            <li><a href="/ko/client-stories/" class="footer__link">고객 사례</a></li>
+            <li><a href="/ko/faqs/" class="footer__link">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">문의하기</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="mailto:tmg@tuyuesouxin.cn" class="footer__link footer__link--email">tmg@tuyuesouxin.cn</a>
+            </li>
+            <li>
+              <a href="#contactQR" class="footer__link">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: text-bottom; margin-right: 4px;">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp (스캔하여 연락)
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">법적 정보</h4>
+          <ul class="footer__links">
+            <li class="footer__license">사업자등록번호: 91310114MADKG4UF0G</li>
+            <li class="footer__company-short">Tuyue Media Gateway</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Tuyue Media Gateway. 무단 전재를 금지합니다.</p>
+        <div class="footer__platforms">
+          <a href="https://ad.weixin.qq.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">WeChat</a>
+          <a href="https://www.oceanengine.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Douyin</a>
+          <a href="https://e.baidu.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Baidu</a>
+          <a href="https://www.xiaohongshu.com/brand" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">샤오홍슈</a>
+          <a href="https://member.bilibili.com/platform/ad" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bilibili</a>
+          <a href="https://ads.microsoft.com/zh-cn" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bing China</a>
+</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    var toggle = document.querySelector('.header__toggle');
+    var nav = document.querySelector('.header__nav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', function () {
+        const isOpen = toggle.classList.toggle('active');
+        nav.classList.toggle('active', isOpen);
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+    nav.querySelectorAll('.header__dropdown').forEach(function (dropdown) {
+      var trigger = dropdown.querySelector('.header__dropdown-trigger');
+      if (trigger) {
+        trigger.addEventListener('click', function (e) {
+          e.preventDefault();
+          nav.querySelectorAll('.header__dropdown').forEach(function (d) {
+            if (d !== dropdown) d.classList.remove('open');
+          });
+          dropdown.classList.toggle('open');
+        });
+      }
+    });
+    document.addEventListener('click', function (e) {
+      if (!nav.contains(e.target)) {
+        nav.querySelectorAll('.header__dropdown').forEach(function (d) {
+          d.classList.remove('open');
+        });
+      }
+    });
+  })();
+
+  // Scroll Reveal (disabled: content always visible)
+  (function () {
+    // Reveal animation removed - user prefers content always visible
+  })();
+  </script>
+</body>
+</html>
