@@ -20,7 +20,7 @@ def convert_md_to_html(md_content):
     return html
 
 def fix_article(slug, lang):
-    obsidian_path = OBSIDIAN / 'Education' / 'CPM, oCPM, eCPM Explained' / f'{lang.upper()}.md'
+    obsidian_path = OBSIDIAN / 'AI-Platform' / 'DeepSeek V4 Cuts Token Prices 75 Percent — What This Means for GEO' / f'{lang.upper()}.md'
     if not obsidian_path.exists():
         print(f'  Obsidian not found: {obsidian_path}')
         return False
@@ -43,7 +43,7 @@ def fix_article(slug, lang):
         return True
     return False
 
-slug = 'cpm-ocpm-ecpm-explained'
+slug = 'deepseek-v4-price-cut-geo'
 for lang in ['ja', 'ko']:
     print(f'Fixing {slug} ({lang})...')
     if fix_article(slug, lang):
