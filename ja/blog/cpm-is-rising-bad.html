@@ -803,124 +803,31 @@
   <main id="main-content" class="article-body">
     <div class="container">
       <article class="article-content reveal">
-
-        <p>
-          CPMが上がる。第一反応：パニック。トラフィックが高くなっている。アルゴリズムが予算を食っている。撤退のタイミングだ。
-        </p>
-        <p>
-          私は両方の立場を経験してきました——インハウス最適化担当として、そして現在TMGでBaidu、Douyin、小紅書、WeChatにまたがるキャンペーンを管理する立場として。真実は：CPMの上昇だけではほとんど何も語らない——
-        </p>
-        <p>
-          実際のキャンペーン事例、CPMを実際に押し上げる3つの要因、そして心配すべきか期待すべきかを判断するクイックフレームワークをお届けします。
-        </p>
-
-        <div class="callout" style="margin-bottom: var(--space-8);">
-          <div class="callout__label">TL;DR</div>
-          <p>CPM + CTR + CVR = 唯一重要なトリオ。CPMが上がってもCTRとCVRも上がっていれば、おめでとうございます—より良いオーディエンスを見つけたということです。CTRが横ばいでCPMが上昇したときこそ、<em>問題</em>があるときです。</p>
-        </div>
-
-        <h2 id="the-case">📊 考えを変えた事例</h2>
-        <p>
-          消費者向けECキャンペーンの初期——オフプラットフォームトラフィック誘導（ソーシャルから外部ストアへ）——最初の1週間はまずまずに見えました：
-        </p>
-
-        <div style="overflow-x: auto; margin: var(--space-6) 0;">
-          <table style="width: 100%; border-collapse: collapse; background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden;">
-            <thead>
-              <tr style="background: rgba(201,168,76,.1);">
-                <th style="padding: var(--space-3) var(--space-4); text-align: left; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Metric</th>
-                <th style="padding: var(--space-3) var(--space-4); text-align: center; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Week 1</th>
-                <th style="padding: var(--space-3) var(--space-4); text-align: center; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Week 2</th>
-                <th style="padding: var(--space-3) var(--space-4); text-align: center; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Change</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr style="border-top: 1px solid var(--color-border);">
-                <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-primary); font-weight: 500;">CPM</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">¥28</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">¥36</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: #ef4444;">+29% 🔴</td>
-              </tr>
-              <tr style="border-top: 1px solid var(--color-border);">
-                <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-primary); font-weight: 500;">CTR</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">1.79%</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">3.10%</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: #22c55e;">+73% 🟢</td>
-              </tr>
-              <tr style="border-top: 1px solid var(--color-border);">
-                <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-primary); font-weight: 500;">CVR</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">2.54%</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">3.79%</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: #22c55e;">+49% 🟢</td>
-              </tr>
-              <tr style="border-top: 1px solid var(--color-border);">
-                <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-primary); font-weight: 500;">CPA</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">¥120</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">¥72</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: #22c55e;">-40% 🟢</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p>
-          ダッシュボードの第一印象：CPMが28元から36元に急上昇。29%の増加です。ここで止めたら、悪いと判断して予算カットを始めるでしょう。
-        </p>
-        <p>
-          しかし他の数字も見てください。CTRはほぼ倍に。CVRも上昇。CPAは120元から72元に低下——獲得単価40%削減。高いCPMは無駄のサインではありませんでした。システムが——
-        </p>
-
-        <div class="callout callout--accent">
-          <div class="callout__label">Why It Happened</div>
-          <p>2つの変更を行いました：(1)動画クリエイティブの冒頭3秒を再構築——離脱率低下、クリックピークを早期化。(2)オーディエンスターゲティングを絞り込み。アルゴリズムが応答して——</p>
-        </div>
-
-        <h2 id="three-reasons">🔍 CPMを押し上げる3つの要因</h2>
-        <p>すべてのCPM上昇が同じではありません。現場で目にする最も一般的な3つのシナリオは以下の通りです：</p>
-
-        <h3>1. 🏟️ 広告主が増え、プールは同じ</h3>
-        <p>古典的な需給バランス。618、ダブル11、またはピークショッピングシーズンの直前、全員が殺到します。入札増加 → CPM上昇。プラットフォームの陰謀ではなく—経済学です。</p>
-
-        <h3>2. 🎯 より良いオーディエンスに届いた</h3>
-        <p>上記の事例です。oCPMモデルが時間とともに学習し、より高意図のユーザーに入札し始めます。それらのユーザーはリーチコストが高い——全員が奪い合っている——しかしはるかに高いレートでコンバージョンします。</p>
-
-        <h3>3. 🪣 オーディエンスプールが小さすぎる</h3>
-        <p>過剰最適化されたターゲティング。オーディエンスを絞りすぎて、システムの探索余地がなくなる。CPMだけが上がり続け、他は何も動かない。CTR改善なし、CVR上昇なし、CPA低下なし——ただの——</p>
-
-        <h2 id="matrix">🧠 CPM-CTR意思決定マトリックス</h2>
-        <p>社内で使っているフレームワークです。4つの組み合わせ、4つの答え：</p>
-
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); margin: var(--space-6) 0;">
-          <div style="background: var(--color-bg-card); border: 1px solid rgba(34,197,94,.3); border-radius: var(--radius-lg); padding: var(--space-5);">
-            <div style="font-size: 1.5rem; margin-bottom: var(--space-2);">📈 CPM (trending up)  📈 CTR (trending up)</div>
-            <div style="font-size: var(--font-size-sm); color: #22c55e; font-weight: 600; margin-bottom: var(--space-2);">Good sign ✅</div>
-            <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin: 0;">より良いクリエイティブ、より良いターゲティング。CPAを監視。CPAが維持または低下すれば、スケールアップ。</p>
-          </div>
-          <div style="background: var(--color-bg-card); border: 1px solid rgba(239,68,68,.3); border-radius: var(--radius-lg); padding: var(--space-5);">
-            <div style="font-size: 1.5rem; margin-bottom: var(--space-2);">📈 CPM (trending up)  📉 CTR →/↓</div>
-            <div style="font-size: var(--font-size-sm); color: #ef4444; font-weight: 600; margin-bottom: var(--space-2);">Bad sign ❌</div>
-            <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin: 0;">同じ（またはより悪い）エンゲージメントにより高いコスト。競合急増またはクリエイティブ疲労。クリエイティブを修正するか一時停止。</p>
-          </div>
-          <div style="background: var(--color-bg-card); border: 1px solid rgba(239,68,68,.3); border-radius: var(--radius-lg); padding: var(--space-5);">
-            <div style="font-size: 1.5rem; margin-bottom: var(--space-2);">📉 CPM ↓  📉 CTR ↓</div>
-            <div style="font-size: var(--font-size-sm); color: #ef4444; font-weight: 600; margin-bottom: var(--space-2);">Mixed ❌</div>
-            <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin: 0;">誰も欲しがらない安いトラフィック。広告が間違った人の前に表示されている。ターゲティングを確認するかクリエイティブを更新。</p>
-          </div>
-          <div style="background: var(--color-bg-card); border: 1px solid rgba(34,197,94,.3); border-radius: var(--radius-lg); padding: var(--space-5);">
-            <div style="font-size: 1.5rem; margin-bottom: var(--space-2);">📉 CPM ↓  📈 CTR (trending up)</div>
-            <div style="font-size: var(--font-size-sm); color: #22c55e; font-weight: 600; margin-bottom: var(--space-2);">Ideal ✅✅</div>
-            <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin: 0;">スイートスポットを見つけた。低競合＋高関連性。予算を倍にして波に乗る。</p>
-          </div>
-        </div>
-
-        <h2 id="takeaway">💡 結論</h2>
-        <p>
-          CPMは単一のデータポイントです。それを唯一のシグナルとして扱うことで、良いキャンペーンが早期に中止されます。
-        </p>
-        <p>実際に重要なのは：<strong>CPM + CTR + CVR → CPA</strong>。最初のリンクではなく、チェーン全体を見てください。CPMが上がってもチェーンの残りが維持または改善されていれば、問題ありません。CPMが上がって他のすべてが横ばいなら、それが本当の警告です。</p>
-        <p>中国市場に参入する国際的なエージェンシーやブランド向けに、Baidu、Douyin、WeChat、小紅書、Bilibili、Bing Chinaで有料メディアを運用しています。キャンペーンを設定するだけでなく、ビジネス目標に実際に合致する課金モデル、トラッキング設定、クリエイティブ戦略を設計します。</p>
-
-      </article>
+<p>CPMが上昇します。最初の反応：パニック。トラフィックがより高価になっています。アルゴリズムが予算を食っています。撤退する時間です。</p>
+<p>私はこの両側面を経験しました——社内オプティマイザーとして、そして現在TMGで百度、抖音、小紅書、WeChat全体のキャンペーンを管理しています。真実は：上昇するCPM単独ではほとんど何も伝えません。全体像が必要です。</p>
+<p>ここに実際のキャンペーン例、CPMを実際に押し上げる3つの要因、そして心配すべきか興奮すべきかを判断するための簡単なフレームワークがあります。</p>
+<p>CPM + CTR + CVR = 唯一重要な三つ組。CPMが上昇し、CTRとCVRも上昇する場合、おめでとう——より良いオーディエンスを見つけました。CPMが上昇する間にCTRが横ばいの場合、それは問題があるときです。</p>
+<h2>📊 私の考えを変えたケース</h2>
+<p>消費者ECキャンペーンの初期段階——プラットフォーム外トラフィック駆動（ソーシャルから外部ストアにユーザーを誘導）——最初の週は decent に見えました：</p>
+<p>ダッシュボードを一見：CPMが28元から36元に急騰。29%の増加です。ここで止まれば、悪いと判断して予算削減を始めるでしょう。</p>
+<p>しかし、他に何が起こったかを見てください。CTRはほぼ2倍になりました。CVRが上昇しました。CPAは120元から72元に低下——獲得あたりコストの40%削減。より高いCPMは浪費の兆候ではありません。システムが本当の買い手が誰かを理解していたのです。</p>
+<p>2つの変更を行いました：（1）ビデオクリエイティブの最初の3秒を再構築——離脱を減らし、より多くのクリックピークをより早く、（2）オーディエンスターゲティングを厳密に。アルゴリズムは、より高価値のトラフィックプールに広告をプッシュすることで応答しました。1,000インプレッションあたりより高価ですが、各インプレッションがはるかに価値あるものになりました。</p>
+<h2>🔍 CPMを押し上げる3つの要因</h2>
+<p>すべての上昇CPMが同じわけではありません。実務で見る最も一般的な3つのシナリオがあります：</p>
+<h3>1. 🏭 広告主増加、プール不変</h3>
+<p>古典的な需給。618、二重11、またはピークショッピングシーズンの直前に、全員が殺到します。より多くの入札→より高いフロアプライス。CPMは上昇しますが、CTR、CVR、CPAは通常改善されません。これは純粋な市場インフレです——唯一の実際のレバーはタイミングまたはプラットフォーム多様化です。</p>
+<h3>2. 🎯 より良いオーディエンスに到達</h3>
+<p>これは上記のケーススタディです。oCPMモデルは時間をかけて学習し、より高意図のユーザーに入札し始めます。これらのユーザーにリーチするコストはより高い——全員が争っています——しかし、より高い率でコンバージョンします。CPM上昇、CTR上昇、CVR上昇、CPA低下。これはあなたが望むバージョンです。</p>
+<h3>3. 🪣 オーディエンスプールが小さすぎる</h3>
+<p>過度に最適化されたターゲティング。オーディエンスを狭めすぎて、システムが探索する余地がなくなりました。CPMは上昇し続けますが、他は動きません。CTR改善なし、CVRリフトなし、CPA低下なし——同じ小さなプールへの高価なリーチだけ。修正：ターゲティングを拡大するか、キャンペーンを中止します。</p>
+<h2>🧠 CPM-CTR意思決定マトリックス</h2>
+<p>社内で使用しているフレームワークがあります。4つの組み合わせ、4つの答え：</p>
+<p>[table]</p>
+<h2>💡 要点</h2>
+<p>CPMは単一のデータポイントです。唯一のシグナルとして扱うことは、良いキャンペーンが早期に killing される方法です。</p>
+<p>実際に重要なのは：<strong>CPM + CTR + CVR → CPA</strong>。チェーン全体を見て、最初のリンクだけを見ないでください。CPMが上昇し、チェーンの残りが維持または改善される場合、良好な状態です。CPMが上昇し、他すべてが横ばいの場合、それが本当の警告です。</p>
+<p>私たちは国際代理店とブランドのために、百度、抖音、WeChat、小紅書、Bilibili、Bing中国全体で有料メディアを運用しています。キャンペーンデータについて第二の意見が必要な場合——または単に技術的な話がしたい場合は——<a href="/ja/contact/">お問い合わせ</a>ください。</p>
+</article>
 
       <!-- Sidebar -->
       <aside class="article-sidebar">
