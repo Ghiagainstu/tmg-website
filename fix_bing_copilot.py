@@ -20,7 +20,7 @@ def convert_md_to_html(md_content):
     return html
 
 def fix_article(slug, lang):
-    obsidian_path = OBSIDIAN / 'GEO' / 'GEO Channel Weight 2026 Test Results' / f'{lang.upper()}.md'
+    obsidian_path = OBSIDIAN / 'BingChina' / 'Bing China Copilot Search Ads- AI-Native Advertising' / f'{lang.upper()}.md'
     if not obsidian_path.exists():
         print(f'  Obsidian not found: {obsidian_path}')
         return False
@@ -43,7 +43,7 @@ def fix_article(slug, lang):
         return True
     return False
 
-slug = 'geo-channel-weight-2026'
+slug = 'bing-china-copilot-search-ads'
 for lang in ['ja', 'ko']:
     print(f'Fixing {slug} ({lang})...')
     if fix_article(slug, lang):
