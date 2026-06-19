@@ -20,7 +20,7 @@ def convert_md_to_html(md_content):
     return html
 
 def fix_article(slug, lang):
-    obsidian_path = OBSIDIAN / 'BingChina' / 'Bing China Local Search Ads- Geo-Targeted Advertising' / f'{lang.upper()}.md'
+    obsidian_path = OBSIDIAN / 'Education' / 'CPM, oCPM, eCPM Explained' / f'{lang.upper()}.md'
     if not obsidian_path.exists():
         print(f'  Obsidian not found: {obsidian_path}')
         return False
@@ -43,7 +43,7 @@ def fix_article(slug, lang):
         return True
     return False
 
-slug = 'bing-china-local-search-ads'
+slug = 'cpm-ocpm-ecpm-explained'
 for lang in ['ja', 'ko']:
     print(f'Fixing {slug} ({lang})...')
     if fix_article(slug, lang):

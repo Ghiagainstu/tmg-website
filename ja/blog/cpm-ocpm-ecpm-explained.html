@@ -803,183 +803,38 @@
   <main id="main-content" class="article-body">
     <div class="container">
       <article class="article-content reveal">
-
-        <p>
-          ダッシュボードにログイン。CPMが上昇中。oCPMは目標に収まっている。そしてバックエンドのどこかで、eCPMが静かに広告が表示されるかどうかを決めている。
-        </p>
-        <p>
-          3つの指標、すべて「CPM」で終わる。しかし広告システム内での役割は全く異なる。これらを整理すれば、間違ったものを最適化することをやめられます。
-        </p>
-
-        <div class="callout" style="margin-bottom: var(--space-8);">
-          <div class="callout__label">The Short Version</div>
-          <p>CPM = 実際に支払う金額。oCPM = システムに支払い意思を伝える方法。eCPM = システムが在庫を評価する方法。</p>
-        </div>
-
-        <h2 id="cpm">💰 CPM — 価格タグ（そして嘘の理由）</h2>
-        <p>
-          CPMはCost Per Mille——千回表示あたりのコスト。どのダッシュボードでも最も目立つ指標で、最初にチェックされるものです。
-        </p>
-        <p>計算式：CPM = 費用 ÷ インプレッション × 1000。100円で10,000インプレッションを購入した場合、CPMは10円です。</p>
-        <p>2種類のCPM：プログラマティック（検索、ソーシャル、OTT）では、CPMは動的—競争、タイミング、在庫に基づいて変動します。従来のディスプレイ広告では、CPMは固定—事前に合意されたレートです。</p>
-        <p>
-          しかしここが厄介なところ。低いCPMが自動的に良いわけではなく、高いCPMが自動的に悪いわけではありません。
-        </p>
-
-        <div class="callout callout--accent">
-          <div class="callout__label">Real Talk</div>
-          <p>すべてのインプレッションには人間が紐づいています。千回表示50元の価値がある人もいれば、5元の人もいる。5元のプールを買っているなら、コンバージョンしない安いトラフィックを得ているだけ。CPMは——</p>
-        </div>
-
-        <h2 id="ocpm">🎯 oCPM — 入札額、コストじゃない</h2>
-        <p>oCPMはOptimized Cost Per Milleの略です。これは指標ではなく—入札モードです。システムに「このコンバージョンイベントに対してこれだけ支払う意思がある」と伝え、システムが自動的に入札を最適化します。</p>
-        <p>仕組み：システムに望ましいアクション（購入、リード、アプリインストール）に対して支払う意思を伝えます。システムはコンバージョンする可能性が最も高いユーザーに広告を表示するために、自動的に入札を調整します。</p>
-        <p>例：購入の目標CPA 100円でoCPM入札を設定します。システムはコンバージョン確率に基づいて入札を調整し—一部のインプレッションには120円、他のインプレッションには80円を入札します。平均CPMは予想より高くなるかもしれませんが、コンバージョン単価は低くなります。</p>
-        <p>
-          だから「最適化（Optimized）」と呼ばれるのです——システムが入札管理の重労働を引き受けます。BaiduではoCPC/oCPM、DouyinのOcean EngineではoCPM、Metaでは「最小単価」戦略——
-        </p>
-
-        <div class="callout">
-          <div class="callout__label">Common Mistake</div>
-          <p>多くの人がoCPMを実際のCPMの目標として扱います。ダッシュボードでCPMがoCPM入札より高いと心配しますが、それは指標の使い方が間違っています。oCPMは入札戦略であり—実際のCPMの目標ではありません。</p>
-        </div>
-
-        <h2 id="ecpm">🧠 eCPM — システムの秘密のランキングスコア</h2>
-        <p>
-          eCPMはEffective Cost Per Milleの略。CPMが表層データ、oCPMが広告主とシステムの対話なら、eCPMはシステム内部のランキングエンジンです。
-        </p>
-        <p>プラットフォームには限られた広告在庫があり、より多くの広告主が表示を望んでいます。システムは各インプレッションから最大の収益を得る必要があります。</p>
-        <p>
-          <strong>簡略化された計算式：</strong>
-        </p>
-
-        <p style="text-align: center; font-size: var(--font-size-lg); padding: var(--space-4); background: var(--color-bg-card); border-radius: var(--radius-md); margin: var(--space-4) 0;">
-          <strong>eCPM = 入札額 × 推定CTR × 推定CVR × 1000</strong>
-        </p>
-
-        <p>
-          システムはユーザーがクリックするかコンバージョンするかを確実には知りません——予測します。その予測はユーザー行動、クリエイティブパフォーマンス、広告関連性の履歴データから構築されます。
-        </p>
-        <p>ここが面白いところ：低い入札が高い入札に勝つことがあります。なぜなら、eCPMが指標だからです。プラットフォームは1,000インプレッションあたりの予想収益を最大化したいと考えています。</p>
-
-        <div style="overflow-x: auto; margin: var(--space-6) 0;">
-          <table style="width: 100%; border-collapse: collapse; background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden;">
-            <thead>
-              <tr style="background: rgba(201,168,76,.1);">
-                <th style="padding: var(--space-3) var(--space-4); text-align: left; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Advertiser</th>
-                <th style="padding: var(--space-3) var(--space-4); text-align: center; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Bid (oCPM)</th>
-                <th style="padding: var(--space-3) var(--space-4); text-align: center; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Est. CTR</th>
-                <th style="padding: var(--space-3) var(--space-4); text-align: center; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Est. CVR</th>
-                <th style="padding: var(--space-3) var(--space-4); text-align: center; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">eCPM</th>
-                <th style="padding: var(--space-3) var(--space-4); text-align: center; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Wins?</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr style="border-top: 1px solid var(--color-border);">
-                <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-primary); font-weight: 500;">Advertiser A</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">¥100</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">2.0%</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">3.0%</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);"><strong>¥60</strong></td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: #22c55e;">✅</td>
-              </tr>
-              <tr style="border-top: 1px solid var(--color-border); background: rgba(239,68,68,.04);">
-                <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-primary); font-weight: 500;">Advertiser B</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">¥150</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">1.0%</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);">1.5%</td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: var(--color-text-secondary);"><strong>¥22.5</strong></td>
-                <td style="padding: var(--space-3) var(--space-4); text-align: center; color: #ef4444;">❌</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p>
-          広告主Aは100元入札でインプレッションを獲得。広告主Bは150元入札で敗北。なぜ？Aのクリエイティブがより良いCTRとCVRを生み出し、より高いeCPMを生成——プラットフォームは収益を重視するからです。
-        </p>
-
-        <div class="callout callout--accent">
-          <div class="callout__label">Translation</div>
-          <p>「入札額が高いのに相手がトラフィックを独占する」は、ほぼ常にクリエイティブ品質の問題です。プラットフォームは入札額を気にしません——表示から期待する収益を気にします。</p>
-        </div>
-
-        <h2 id="together">🔗 3つの関係性</h2>
-        <p>
-          一文でまとめると：
-        </p>
-
-        <div style="text-align: center; padding: var(--space-6); background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-lg); margin: var(--space-6) 0;">
-          <p style="font-size: var(--font-size-lg); font-weight: 600; color: var(--color-text-primary);">広告主がoCPMで入札 → システムがeCPMでランク付け — コストがCPMとして表示されます</p>
-        </div>
-
-        <table style="width: 100%; border-collapse: collapse; background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden; margin: var(--space-6) 0;">
-          <thead>
-            <tr style="background: rgba(201,168,76,.1);">
-              <th style="padding: var(--space-3) var(--space-4); text-align: left; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Metric</th>
-              <th style="padding: var(--space-3) var(--space-4); text-align: left; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Role</th>
-              <th style="padding: var(--space-3) var(--space-4); text-align: left; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Who Owns It</th>
-              <th style="padding: var(--space-3) var(--space-4); text-align: left; font-size: var(--font-size-sm); color: var(--color-text-muted); font-weight: 600;">Fixed or Dynamic?</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="border-top: 1px solid var(--color-border);">
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-primary); font-weight: 500;">CPM</td>
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">トラフィック価格指標</td>
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">Market (result)</td>
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">Dynamic</td>
-            </tr>
-            <tr style="border-top: 1px solid var(--color-border);">
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-primary); font-weight: 500;">oCPM</td>
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">Bidding method</td>
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">Advertiser (input)</td>
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">You set the target</td>
-            </tr>
-            <tr style="border-top: 1px solid var(--color-border);">
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-primary); font-weight: 500;">eCPM</td>
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">Ranking score</td>
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">システム（計算）</td>
-              <td style="padding: var(--space-3) var(--space-4); color: var(--color-text-secondary);">入札ごとに再計算</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h2 id="takeaways">💡 実践的インサイト</h2>
-        <p>
-          この3つの違いを理解することで、ダッシュボードの読み方と最適化のエネルギーをどこに注ぐかが変わります。
-        </p>
-
-        <div class="feature-grid">
-          <div class="feature-card">
-            <div class="feature-card__num">1</div>
-            <div class="feature-card__title">CPMを直接最適化するのを止める</div>
-            <div class="feature-card__desc">CPMは中間指標であり、目標ではありません。CPMが低くてCPAが高いのは、CPMが高くてCPAが低いに比び、より悪い状態です。フィンネルの終点に注目しましょう。</div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card__num">2</div>
-            <div class="feature-card__title">クリエイチブ・イメージがeCPMを実現する</div>
-            <div class="feature-card__desc">CTRとCVRが良くなることでeCPMが高まり、同じ入未でより多くのトラフィックを獲得します。eCPMを改善する最も効果的な手段はクリエイチブ質であり、入未を上げることではありません。</div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card__num">3</div>
-            <div class="feature-card__title">CVRはトラフィックの天井です</div>
-            <div class="feature-card__desc">CTRが高いのにスケールできない場合は、CVRをチェックしましょう。CVRが低いとeCPMが下がり、システムのトラフィック割当てが減られます。メンブランドページまたはオファーをほうほう修正しましょう。</div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card__num">4</div>
-            <div class="feature-card__title">Don't panic when CPM ≠ oCPM</div>
-            <div class="feature-card__desc">実際のCPMはoCPM入未より上下して推移します。これは正常であり、システムが異なるオーディエンスをテストしているだけです。大切なのはCPAがオントラックを保ちているかです。</div>
-          </div>
-        </div>
-
-        <div class="callout callout--accent">
-          <div class="callout__label">One More Thing</div>
-          <p>Baidu（oCPC/oCPM）やOcean Engine（oCPM）などの中国プラットフォームでも同じロジックが適用されます。命名規則は若干異なりますが、入札→ランキング→価格設定のパイプラインは同じです。</p>
-        </div>
-
-        <p>中国市場に参入する国際的なエージェンシーやブランド向けに、Baidu、Douyin、WeChat、小紅書、Bilibili、Bing Chinaで有料メディアを運用しています。<a href="/ja/contact/">お問い合わせ</a>ください。</p>
-
-      </article>
+<p>ダッシュボードにログインします。CPMが上昇しています。oCPMは目標に達しています。そしてバックエンドのどこかで、eCPMが静かにあなたの広告が表示されるかどうかを決定しています。</p>
+<p>3つの指標、すべて「CPM」で終わり、広告システム内で3つの完全に異なる役割を果たします。これらを正しく理解すれば、間違ったものを最適化するのをやめます。</p>
+<p><strong>CPM</strong> = 実際に支払う金額。<strong>oCPM</strong> = システムに支払い意思を伝える方法。<strong>eCPM</strong> = システムが勝者を決定する方法。3つのレイヤー、1つのファネル。</p>
+<h2>💰 CPM——価格タグ（そしてなぜそれが嘘をつくのか）</h2>
+<p>CPMはCost Per Mille——1,000インプレッションあたりのコストを意味します。どのダッシュボードでも最も目立つ指標で、人々が最初にチェックする指標です。</p>
+<p><strong>計算式：</strong> CPM = 支出 ÷ インプレッション × 1000。10,000インプレッションに100元を費やす場合、CPMは10元です。</p>
+<p><strong>2つの種類：</strong> プログラマティック（検索、ソーシャル、OTT）では、CPMは動的です——競争、オーディエンス品質、時間帯によって変動します。ブランド広告では、CPMは通常固定です——特定の配置のレートカードを購入します。</p>
+<p>しかし、ここで複雑になります。低いCPMが自動的に良いわけではなく、高いCPMが自動的に悪いわけでもありません。</p>
+<p>すべてのインプレッションには人間が付属しています。一部の人間は1,000回表示あたり50元の価値があります。一部は5元の価値があります。5元のプールを購入すると、コンバージョンしない安いトラフィックが得られます。CPMは価格しか伝えません——価値については何も述べません。</p>
+<h2>🎯 oCPM——あなたの入札、あなたのコストではない</h2>
+<p>oCPMはOptimized Cost Per Milleを意味します。これは指標ではありません——<strong>入札方法</strong>です。</p>
+<p><strong>仕組み：</strong> システムに望ましいアクション（購入、登録、リード）に対して支払う意思がある金額を伝えます。システムは目標に到達するためにリアルタイムで入札を調整します。</p>
+<p><strong>例：</strong> 購入に対して目標CPA 100元でoCPM入札を設定します。システムは利用可能なすべてのインプレッションを確認し、購入の可能性を推定し、入札額を決定します。ユーザーが買い手のように見える場合、インプレッションを獲得するために150元CPMで入札する可能性があります。ユーザーがコンバージョンしない可能性が高い場合、20元で入札します。平均して、購入あたり100元を支払います。</p>
+<p>これが「最適化」と呼ばれる理由です——システムが入札管理の重い作業を担います。百度ではoCPCまたはoCPMと呼ばれます。抖音のOcean EngineではoCPMです。Metaでは「Lowest Cost」または「Cost Cap」と呼ばれます。名前は異なりますが、論理は同じです。</p>
+<p>多くの人々はoCPMを実際のCPMの目標として扱います。ダッシュボードを監視し、実現CPMがoCPM入札を上回るとパニックになります。しかし、oCPMは入力であり、コスト出力ではありません。実際のCPMは変動する可能性があり、変動します——重要なのはCPAが順調かどうかです。</p>
+<h2>🧠 eCPM——システムの秘密のランキングスコア</h2>
+<p>eCPMはEffective Cost Per Milleを意味します。CPMが表面的なデータで、oCPMが広告主とシステムの会話だとすると、eCPMはシステムの内部ランキングエンジンです。</p>
+<p>プラットフォームは限られた量の広告在庫を持ち、それを望む広告主ははるかに多いです。そのため、誰がこのインプレッションを獲得するかを決定する方法が必要です。答えはeCPMです。</p>
+<p><strong>簡略化された計算式：</strong></p>
+<p><strong>eCPM = 入札 × 推定CTR × 推定CVR × 1000</strong></p>
+<p>システムはユーザーがクリックまたはコンバージョンするかどうかを確実に知ることはできません——予測します。その予測は、ユーザー行動、クリエイティブパフォーマンス、広告関連性に関する履歴データから構築されます。</p>
+<p><strong>ここで興味深くなります：</strong> より低い入札がより高い入札に勝つことができます。なぜなら、eCPMが真のゲートキーパーだからです。</p>
+<p>広告主Aは100元で入札しますが、インプレッションを獲得します。広告主Bは150元で入札しますが、負けます。なぜ？Aのクリエイティブがより良いCTRとCVRを生成し、より高いeCPMを生み出すからです——プラットフォームは入札ではなく収益を重視します。</p>
+<p>これが「私の入札はより高いが、彼らがすべてのトラフィックを獲得する」がほぼ常にクリエイティブ品質の問題である理由です。プラットフォームはあなたがいくら入札するか気にしません——あなたの広告からいくらの収益を期待できるかを気にします。より良いクリエイティブ = より高いeCPM = より多くのトラフィック、同じまたはより低い入札でも。</p>
+<h2>🔗 どう連携するか</h2>
+<p>一文でまとめます：</p>
+<p>[table]</p>
+<h2>💡 実践的な要点</h2>
+<p>これら3つの違いを理解することで、ダッシュボードの読み方と最適化エネルギーの投資先が変わります。</p>
+<p>百度（oCPC/oCPM）やOcean Engine（oCPM）のような中国プラットフォームでも、同じ論理が適用されます。命名規則は少し異なりますが、入札→ランキング→価格設定のパイプラインは同じように機能します。一度理解すれば、あらゆるプラットフォームのオークションシステムを監査できます。</p>
+<p>私たちは国際代理店とブランドのために、百度、抖音、WeChat、小紅書、Bilibili、Bing中国全体で有料メディアを運用しています。キャンペーンデータについて話し合いしたい場合——または単に第二の目が必要な場合は——<a href="/ja/contact/">お問い合わせ</a>ください。</p>
+</article>
 
       <!-- Sidebar -->
       <aside class="article-sidebar">
