@@ -23,7 +23,7 @@ def convert_md_to_html(md_content):
 def fix_article(slug, lang):
     """Fix a single article by reading from Obsidian and updating HTML."""
     # Find Obsidian source
-    obsidian_path = OBSIDIAN / 'Douyin' / "Pangle Ads — ByteDance's In-App Network" / f'{lang.upper()}.md'
+    obsidian_path = OBSIDIAN / 'BingChina' / 'Bing China Performance Max- Automated Campaign Optimization' / f'{lang.upper()}.md'
     if not obsidian_path.exists():
         print(f'  Obsidian not found: {obsidian_path}')
         return False
@@ -54,7 +54,7 @@ def fix_article(slug, lang):
     return False
 
 # Fix the article
-slug = 'pangle-ads'
+slug = 'bing-china-performance-max-2026'
 lang = 'ja'
 print(f'Fixing {slug} ({lang})...')
 if fix_article(slug, lang):
