@@ -670,6 +670,28 @@
     p,blockquote,ul,ol,dl,table{page-break-inside:avoid;}
     @page{margin:2cm;}
   }
+
+    /* ── Article Table ── */
+    .article-table {
+      width: 100%; border-collapse: collapse;
+      font-size: var(--font-size-sm); margin: var(--space-6) 0;
+    }
+    .article-table th {
+      padding: 12px 16px; border-bottom: 2px solid var(--color-accent);
+      background: rgba(201,168,76,.08); color: var(--color-accent);
+      text-align: left; font-weight: 600; font-size: var(--font-size-xs);
+      text-transform: uppercase; letter-spacing: .05em;
+    }
+    .article-table td {
+      padding: 12px 16px; border-bottom: 1px solid var(--color-border);
+      color: var(--color-text-secondary);
+    }
+    .article-table tr:nth-child(even) td {
+      background: rgba(255,255,255,.02);
+    }
+    .article-table tr:hover td {
+      background: rgba(201,168,76,.04);
+    }
   </style>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tuyue Media Gateway","alternateName":"TMG","url":"https://www.tuyuesouxin.cn/","description":"The unified media interface for international agencies entering China's digital advertising market. One connection, all platforms.","email":"tmg@tuyuesouxin.cn","address":{"@type":"PostalAddress","streetAddress":"599-2F202 Wanzhen Road","addressLocality":"Shanghai","addressRegion":"Shanghai","postalCode":"201824","addressCountry":"CN"},"sameAs":[]}</script>
 
@@ -687,7 +709,29 @@
       .skip-to-content:focus {
         top: 0;
       }
-    </style>
+  
+    /* ── Article Table ── */
+    .article-table {
+      width: 100%; border-collapse: collapse;
+      font-size: var(--font-size-sm); margin: var(--space-6) 0;
+    }
+    .article-table th {
+      padding: 12px 16px; border-bottom: 2px solid var(--color-accent);
+      background: rgba(201,168,76,.08); color: var(--color-accent);
+      text-align: left; font-weight: 600; font-size: var(--font-size-xs);
+      text-transform: uppercase; letter-spacing: .05em;
+    }
+    .article-table td {
+      padding: 12px 16px; border-bottom: 1px solid var(--color-border);
+      color: var(--color-text-secondary);
+    }
+    .article-table tr:nth-child(even) td {
+      background: rgba(255,255,255,.02);
+    }
+    .article-table tr:hover td {
+      background: rgba(201,168,76,.04);
+    }
+  </style>
   </head>
 <body>
   <!-- Skip to main content -->
@@ -809,9 +853,21 @@
 <p class="article-byline"><em>原文：36氪 / 降噪NoNoise 劉詩雨 著 | 2026年6月17日</em></p>
 <p>AIスタートアップが明日に実る果実を育てているなら、中国のインターネット大手はすでに今日、最初の収穫を味わっている。</p>
 <h2 id="">巨額投資とその見返り</h2>
+<div class="feature-grid">
+<div class="feature-card"><div class="feature-card__num">1</div><div class="feature-card__title">市場機会</div><div class="feature-card__desc">中国のデジタル広告市場における主要な成長機会とトレンドを把握。</div></div>
+<div class="feature-card"><div class="feature-card__num">2</div><div class="feature-card__title">戦略的アプローチ</div><div class="feature-card__desc">プラットフォーム特性を活かした最適な広告戦略の構築方法。</div></div>
+<div class="feature-card"><div class="feature-card__num">3</div><div class="feature-card__title">実践的アクション</div><div class="feature-card__desc">具体的な実装ステップと成果測定のポイント。</div></div>
+</div>
+
+<table class="article-table"><thead><tr><th>項目</th><th>内容</th><th>重要度</th></tr></thead><tbody>
+<tr><td><strong>主要機能</strong></td><td>プラットフォームの核となる機能と特徴</td><td>高</td></tr>
+<tr><td><strong>ターゲット</strong></td><td>最適なユーザー層と市場機会</td><td>高</td></tr>
+<tr><td><strong>ROI指標</strong></td><td>成果測定のための主要KPI</td><td>中</td></tr>
+</tbody></table>
+
 <p>AIの軍拡競争が始まって以来、中国のテック大手は最前線に立ってきた。2026年第2四半期、阿里巴巴、テンセント、快手、百度の4社はAI関連に合計831.41億元（収益の約17%）を投じた。バイトダンスは2025年のAI資本支出を約200億ドルにする計画と報じられている。</p>
 <p>しかし、巨額の支出の裏側では、各社は精密な戦略を展開している。未来への賭けと同時に、AIへの1円1銭が既存事業の成長を加速させ、AIを業績成長の顕在変数にしているのだ。</p>
-<div class="callout callout--accent"><div class="callout__label">Key Insight</div><p>Understanding this platform is essential for maximizing advertising ROI in China digital landscape.</p></div>
+<div class="callout callout--accent"><div class="callout__label">💡 重要な洞察</div><p>Understanding this platform is essential for maximizing advertising ROI in China digital landscape.</p></div>
 
 <h2 id="ai">AIが大手をより豊かにする仕組み</h2>
 <p>中国のテック大手に対するAIの影響には、顕在的部分と潜在的部分がある。</p>

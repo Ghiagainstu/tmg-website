@@ -671,6 +671,45 @@
     p,blockquote,ul,ol,dl,table{page-break-inside:avoid;}
     @page{margin:2cm;}
   }
+
+    /* ── Article Table ── */
+    .article-table {
+      width: 100%; border-collapse: collapse;
+      font-size: var(--font-size-sm); margin: var(--space-6) 0;
+    }
+    .article-table th {
+      padding: 12px 16px; border-bottom: 2px solid var(--color-accent);
+      background: rgba(201,168,76,.08); color: var(--color-accent);
+      text-align: left; font-weight: 600; font-size: var(--font-size-xs);
+      text-transform: uppercase; letter-spacing: .05em;
+    }
+    .article-table td {
+      padding: 12px 16px; border-bottom: 1px solid var(--color-border);
+      color: var(--color-text-secondary);
+    }
+    .article-table tr:nth-child(even) td {
+      background: rgba(255,255,255,.02);
+    }
+    .article-table tr:hover td {
+      background: rgba(201,168,76,.04);
+    }
+
+    /* ── Key Takeaway Banner ── */
+    .takeaway-banner {
+      background: linear-gradient(135deg, rgba(201,168,76,.1), rgba(45,107,228,.08));
+      border: 1px solid rgba(201,168,76,.25);
+      border-radius: var(--radius-lg); padding: var(--space-6);
+      margin: var(--space-8) 0; text-align: center;
+    }
+    .takeaway-banner__title {
+      font-size: var(--font-size-xs); font-weight: 700;
+      text-transform: uppercase; letter-spacing: .1em;
+      color: var(--color-accent); margin-bottom: var(--space-3);
+    }
+    .takeaway-banner__text {
+      font-size: var(--font-size-lg); color: var(--color-text-primary);
+      font-weight: 500; line-height: 1.6; max-width: 680px; margin: 0 auto;
+    }
   </style>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tuyue Media Gateway","alternateName":"TMG","url":"https://www.tuyuesouxin.cn/","description":"The unified media interface for international agencies entering China's digital advertising market. One connection, all platforms.","email":"tmg@tuyuesouxin.cn","address":{"@type":"PostalAddress","streetAddress":"599-2F202 Wanzhen Road","addressLocality":"Shanghai","addressRegion":"Shanghai","postalCode":"201824","addressCountry":"CN"},"sameAs":[]}</script>
 
@@ -688,7 +727,46 @@
       .skip-to-content:focus {
         top: 0;
       }
-    </style>
+  
+    /* ── Article Table ── */
+    .article-table {
+      width: 100%; border-collapse: collapse;
+      font-size: var(--font-size-sm); margin: var(--space-6) 0;
+    }
+    .article-table th {
+      padding: 12px 16px; border-bottom: 2px solid var(--color-accent);
+      background: rgba(201,168,76,.08); color: var(--color-accent);
+      text-align: left; font-weight: 600; font-size: var(--font-size-xs);
+      text-transform: uppercase; letter-spacing: .05em;
+    }
+    .article-table td {
+      padding: 12px 16px; border-bottom: 1px solid var(--color-border);
+      color: var(--color-text-secondary);
+    }
+    .article-table tr:nth-child(even) td {
+      background: rgba(255,255,255,.02);
+    }
+    .article-table tr:hover td {
+      background: rgba(201,168,76,.04);
+    }
+
+    /* ── Key Takeaway Banner ── */
+    .takeaway-banner {
+      background: linear-gradient(135deg, rgba(201,168,76,.1), rgba(45,107,228,.08));
+      border: 1px solid rgba(201,168,76,.25);
+      border-radius: var(--radius-lg); padding: var(--space-6);
+      margin: var(--space-8) 0; text-align: center;
+    }
+    .takeaway-banner__title {
+      font-size: var(--font-size-xs); font-weight: 700;
+      text-transform: uppercase; letter-spacing: .1em;
+      color: var(--color-accent); margin-bottom: var(--space-3);
+    }
+    .takeaway-banner__text {
+      font-size: var(--font-size-lg); color: var(--color-text-primary);
+      font-weight: 500; line-height: 1.6; max-width: 680px; margin: 0 auto;
+    }
+  </style>
   </head>
 <body>
   <!-- Skip to main content -->
@@ -804,6 +882,12 @@
   <div class="container">
     <article class="article-content reveal">
     <h2 id="why-it-matters">アトリビューションが重要な理由 📊</h2>
+<table class="article-table"><thead><tr><th>項目</th><th>内容</th><th>重要度</th></tr></thead><tbody>
+<tr><td><strong>主要機能</strong></td><td>プラットフォームの核となる機能と特徴</td><td>高</td></tr>
+<tr><td><strong>ターゲット</strong></td><td>最適なユーザー層と市場機会</td><td>高</td></tr>
+<tr><td><strong>ROI指標</strong></td><td>成果測定のための主要KPI</td><td>中</td></tr>
+</tbody></table>
+
 
     <p>私は痛い目を見て学びました。数年前、中国市場に参入する国際スキンケアブランドのキャンペーンを管理していました。Douyin、WeChat、Baiduで広告を展開し、Douyinのデータは素晴らしく見えました——高いコンバージョン率、低いCPA。そこでDouyinに集中し、他のプラットフォームの予算を削減しました。</p>
 
@@ -1063,7 +1147,9 @@
       </div>
     </div>
 
-    <h2 id="conclusion">結論 💡</h2>
+    
+<div class="takeaway-banner"><div class="takeaway-banner__title">重要ポイント</div><p class="takeaway-banner__text">この記事の主要なポイントを理解し、実践的なアクションプランに落とし込みましょう。</p></div>
+<h2 id="conclusion">結論 💡</h2>
 
     <p>アトリビューションは完璧ではありません。完璧なモデルなど存在せず、そう言う人は何かを売りつけようとしています。</p>
 

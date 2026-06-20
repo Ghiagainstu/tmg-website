@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
 <!-- Google tag (gtag.js) -->
@@ -670,6 +670,28 @@
     p,blockquote,ul,ol,dl,table{page-break-inside:avoid;}
     @page{margin:2cm;}
   }
+
+    /* ── Article Table ── */
+    .article-table {
+      width: 100%; border-collapse: collapse;
+      font-size: var(--font-size-sm); margin: var(--space-6) 0;
+    }
+    .article-table th {
+      padding: 12px 16px; border-bottom: 2px solid var(--color-accent);
+      background: rgba(201,168,76,.08); color: var(--color-accent);
+      text-align: left; font-weight: 600; font-size: var(--font-size-xs);
+      text-transform: uppercase; letter-spacing: .05em;
+    }
+    .article-table td {
+      padding: 12px 16px; border-bottom: 1px solid var(--color-border);
+      color: var(--color-text-secondary);
+    }
+    .article-table tr:nth-child(even) td {
+      background: rgba(255,255,255,.02);
+    }
+    .article-table tr:hover td {
+      background: rgba(201,168,76,.04);
+    }
   </style>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tuyue Media Gateway","alternateName":"TMG","url":"https://www.tuyuesouxin.cn/","description":"The unified media interface for international agencies entering China's digital advertising market. One connection, all platforms.","email":"tmg@tuyuesouxin.cn","address":{"@type":"PostalAddress","streetAddress":"599-2F202 Wanzhen Road","addressLocality":"Shanghai","addressRegion":"Shanghai","postalCode":"201824","addressCountry":"CN"},"sameAs":[]}</script>
 
@@ -687,7 +709,29 @@
       .skip-to-content:focus {
         top: 0;
       }
-    </style>
+  
+    /* ── Article Table ── */
+    .article-table {
+      width: 100%; border-collapse: collapse;
+      font-size: var(--font-size-sm); margin: var(--space-6) 0;
+    }
+    .article-table th {
+      padding: 12px 16px; border-bottom: 2px solid var(--color-accent);
+      background: rgba(201,168,76,.08); color: var(--color-accent);
+      text-align: left; font-weight: 600; font-size: var(--font-size-xs);
+      text-transform: uppercase; letter-spacing: .05em;
+    }
+    .article-table td {
+      padding: 12px 16px; border-bottom: 1px solid var(--color-border);
+      color: var(--color-text-secondary);
+    }
+    .article-table tr:nth-child(even) td {
+      background: rgba(255,255,255,.02);
+    }
+    .article-table tr:hover td {
+      background: rgba(201,168,76,.04);
+    }
+  </style>
   </head>
 <body>
   <!-- Skip to main content -->
@@ -805,25 +849,28 @@
   <main id="main-content" class="article-body">
     <div class="container">
       <article class="article-content reveal">
-<p>---</p>
-<p>title: "テンセント広告収益：第2四半期決算から読み解く10のAI成長シグナル"</p>
-<p>slug: "tencent-ad-revenue-ai-deep-dive-2026"</p>
 <p>language: ja</p>
-<p>category: "Tencent / AdTech"</p>
-<p>status: draft</p>
-<p>publish_date: "2026-06-17"</p>
 <p>source_data: "广告凶猛——腾讯财报中关于广告部分的十个细节与增量信息 - 36氪 / 卫夕指北"</p>
-<p>source_url: "https://36kr.com/p/3422217541979781"</p>
 <p>blog_url: "https://www.tuyuesouxin.cn/ja/blog/tencent-ad-revenue-ai-deep-dive-2026/"</p>
 <p>online_url: ""</p>
-<p>tags: [Tencent, WeChat, ADQ, AI, AdTech, video-ads, search-ads, Channels, Mini-Program]</p>
-<p>---</p>
 <p># テンセント広告収益：第2四半期決算から読み解く10のAI成長シグナル</p>
 <p class="article-byline"><em>原文：衛夕指北 衛夕 著 | 2026年4月28日</em></p>
 <p>テンセントの第2四半期決算は、強力な真実を明らかにしている。AIはコストセンターではなく、広告の利益エンジンだ。ブランド広告主が理解すべき10の重要な洞察を紹介する。</p>
 <h2 id="1-20112">1. 広告収益20%増——11四半期連続の2桁成長</h2>
+<div class="feature-grid">
+<div class="feature-card"><div class="feature-card__num">1</div><div class="feature-card__title">市場機会</div><div class="feature-card__desc">中国のデジタル広告市場における主要な成長機会とトレンドを把握。</div></div>
+<div class="feature-card"><div class="feature-card__num">2</div><div class="feature-card__title">戦略的アプローチ</div><div class="feature-card__desc">プラットフォーム特性を活かした最適な広告戦略の構築方法。</div></div>
+<div class="feature-card"><div class="feature-card__num">3</div><div class="feature-card__title">実践的アクション</div><div class="feature-card__desc">具体的な実装ステップと成果測定のポイント。</div></div>
+</div>
+
+<table class="article-table"><thead><tr><th>項目</th><th>内容</th><th>重要度</th></tr></thead><tbody>
+<tr><td><strong>主要機能</strong></td><td>プラットフォームの核となる機能と特徴</td><td>高</td></tr>
+<tr><td><strong>ターゲット</strong></td><td>最適なユーザー層と市場機会</td><td>高</td></tr>
+<tr><td><strong>ROI指標</strong></td><td>成果測定のための主要KPI</td><td>中</td></tr>
+</tbody></table>
+
 <p>テンセントの広告収益は前年比20%増で、11四半期連続の2桁成長を記録した。さらに印象的なのは、広告粗利益が前年比24%増と収益増を上回っていることだ。つまり、広告事業が単に大きくなっているだけでなく、より効率的になっていることを意味する。</p>
-<div class="callout callout--accent"><div class="callout__label">Key Insight</div><p>Understanding this platform is essential for maximizing advertising ROI in China digital landscape.</p></div>
+<div class="callout callout--accent"><div class="callout__label">💡 重要な洞察</div><p>Understanding this platform is essential for maximizing advertising ROI in China digital landscape.</p></div>
 
 <h2 id="2-ai">2. AIが広告パフォーマンスを直接向上</h2>
 <p>テンセントの公式見解で確認された。AIが大きな成果をもたらしている。WeChatの多様なプロダクトエコシステム全体で訓練された「全モーダル生成型推薦」システムが、<strong>広告クリック率を15〜22%</strong> 改善している。広告主にとって、これは手動最適化を減らしながらより良いROIを意味する。</p>
