@@ -21,7 +21,7 @@
     {"id": "action", "text": "What You Can Do Now"}
   ],
   "related_posts": [
-    {"slug": "deepseek-v4-token-prices", "cat": "DeepSeek / AI", "title": "DeepSeek V4: Token Prices Cut 75%", "desc": "What 75% cheaper tokens mean for GEO in China."},
+    {"slug": "deepseek-v4-price-cut-geo", "cat": "DeepSeek / AI", "title": "DeepSeek V4: Token Prices Cut 75%", "desc": "What 75% cheaper tokens mean for GEO in China."},
     {"slug": "doubao-goes-paid-what-advertisers-need-to-know", "cat": "ByteDance / AI", "title": "Doubao Goes Paid", "desc": "ByteDance's AI subscription and its impact on advertisers."},
     {"slug": "618-ai-shopping-search-war-2026", "cat": "618 / AI Commerce", "title": "618 AI Shopping War", "desc": "Doubao leads as four AI assistants compete for the commerce layer."}
   ],
@@ -45,7 +45,7 @@
       {"id": "action", "text": "今できること"}
     ],
     "related_posts": [
-      {"slug": "deepseek-v4-token-prices", "cat": "DeepSeek / AI", "title": "DeepSeek V4：トークン75%削減", "desc": "75%安いトークンが中国GEOに意味すること。"},
+      {"slug": "deepseek-v4-price-cut-geo", "cat": "DeepSeek / AI", "title": "DeepSeek V4：トークン75%削減", "desc": "75%安いトークンが中国GEOに意味すること。"},
       {"slug": "doubao-goes-paid-what-advertisers-need-to-know", "cat": "ByteDance / AI", "title": "豆包有料化", "desc": "ByteDanceのAIサブスクリプションと広告主への影響。"},
       {"slug": "618-ai-shopping-search-war-2026", "cat": "618 / AIコマース", "title": "618 AIショッピング戦争", "desc": "4つのAIアシスタントがコマース層を争奪。"}
     ]
@@ -68,7 +68,7 @@
       {"id": "action", "text": "지금 할 수 있는 것"}
     ],
     "related_posts": [
-      {"slug": "deepseek-v4-token-prices", "cat": "DeepSeek / AI", "title": "DeepSeek V4: 토큰 75% 인하", "desc": "75% 저렴한 토큰이 중국 GEO에 의미하는 것."},
+      {"slug": "deepseek-v4-price-cut-geo", "cat": "DeepSeek / AI", "title": "DeepSeek V4: 토큰 75% 인하", "desc": "75% 저렴한 토큰이 중국 GEO에 의미하는 것."},
       {"slug": "doubao-goes-paid-what-advertisers-need-to-know", "cat": "ByteDance / AI", "title": "더우바오 유료화", "desc": "ByteDance의 AI 구독과 광고주 영향."},
       {"slug": "618-ai-shopping-search-war-2026", "cat": "618 / AI 커머스", "title": "618 AI 쇼핑 전쟁", "desc": "4개 AI 어시스턴트가 커머스 층 경쟁."}
     ]
