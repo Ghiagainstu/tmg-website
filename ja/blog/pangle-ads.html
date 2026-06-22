@@ -673,6 +673,24 @@
     p,blockquote,ul,ol,dl,table{page-break-inside:avoid;}
     @page{margin:2cm;}
   }
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--space-4); margin: var(--space-6) 0;
+    }
+    .stat-card {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5); text-align: center;
+      transition: border-color var(--transition-base);
+    }
+    .stat-card:hover { border-color: rgba(201,168,76,.4); }
+    .stat-card__num {
+      font-size: var(--font-size-4xl); font-weight: 700;
+      color: var(--color-accent); line-height: 1.1; margin-bottom: var(--space-2);
+    }
+    .stat-card__label {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+      line-height: 1.4;
+    }
   </style>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tuyue Media Gateway","alternateName":"TMG","url":"https://www.tuyuesouxin.cn/","description":"The unified media interface for international agencies entering China's digital advertising market. One connection, all platforms.","email":"tmg@tuyuesouxin.cn","address":{"@type":"PostalAddress","streetAddress":"599-2F202 Wanzhen Road","addressLocality":"Shanghai","addressRegion":"Shanghai","postalCode":"201824","addressCountry":"CN"},"sameAs":[]}</script>
 
