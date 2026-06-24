@@ -28,12 +28,132 @@
     },
     {
       "source": "/(services)/(baidu|wechat|douyin|xiaohongshu|bilibili|bing)",
-      "destination": "/$1/$2/",
+      "destination": "/$1/$2/$3/",
       "permanent": true
     },
     {
       "source": "/(.*)/index.html",
       "destination": "/$1/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/tencent-ads-home-furnishing/",
+      "destination": "/ja/blog/tencent-ads-home-furnishing-ja/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/tencent-aimplus/",
+      "destination": "/ja/blog/tencent-aimplus-ja/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/wechat-channels-consumer-electronics/",
+      "destination": "/ja/blog/wechat-channels-consumer-electronics-ja/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/cpm-ocpm-ecpm-explained/",
+      "destination": "/ja/blog/cpm-ocpm-ecpm-explained-ja/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/cpm-is-rising-bad/",
+      "destination": "/ja/blog/cpm-is-rising-bad-ja/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/ocean-engine-local-reach/",
+      "destination": "/ja/blog/ocean-engine-local-reach-ja/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/douyin-enterprise-account/",
+      "destination": "/ja/blog/douyin-enterprise-account-ja/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/china-mobile-internet-spring-2026/",
+      "destination": "/ja/blog/china-mobile-internet-spring-2026-ja/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/ad-billing-models-explained/",
+      "destination": "/ja/blog/ad-billing-models-explained-ja/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/smart-bidding-strategies-explained/",
+      "destination": "/ja/blog/smart-bidding-strategies-explained-ja/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/kuaishou-demographics-who-are-these-400m-users/",
+      "destination": "/ja/blog/kuaishou-demographics-who-are-these-400m-users-ja/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/baidu-demographics-who-are-these-735m-users/",
+      "destination": "/ja/blog/baidu-demographics-who-are-these-735m-users-ja/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/tencent-aimplus/",
+      "destination": "/ko/blog/tencent-aimplus-ko/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/tencent-ads-home-furnishing/",
+      "destination": "/ko/blog/tencent-ads-home-furnishing-ko/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/bilibili-genz-marketing/",
+      "destination": "/ko/blog/bilibili-genz-marketing-ko/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/bilibili-demographics-who-are-these-gen-z-users/",
+      "destination": "/ko/blog/bilibili-demographics-who-are-these-gen-z-users-ko/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/xiaohongshu-consumer-research/",
+      "destination": "/ko/blog/xiaohongshu-consumer-research-ko/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/kuaishou-demographics-who-are-these-400m-users/",
+      "destination": "/ko/blog/kuaishou-demographics-who-are-these-400m-users-ko/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/bing-china-premium-audience-guide/",
+      "destination": "/ko/blog/bing-china-premium-audience-guide-ko/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/ocean-engine-ai-assistant/",
+      "destination": "/ko/blog/ocean-engine-ai-assistant-ko/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/ocean-engine-local-reach/",
+      "destination": "/ko/blog/ocean-engine-local-reach-ko/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/ad-billing-models-explained/",
+      "destination": "/ko/blog/ad-billing-models-explained-ko/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/baidu-demographics-who-are-these-735m-users/",
+      "destination": "/ko/blog/baidu-demographics-who-are-these-735m-users-ko/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/xiaohongshu-demographics-who-are-these-350m-users/",
+      "destination": "/ko/blog/xiaohongshu-demographics-who-are-these-350m-users-ko/",
       "permanent": true
     }
   ],
@@ -47,28 +167,12 @@
       "destination": "/blog/:slug.html"
     },
     {
-      "source": "/ja/blog/:slug(.*(?<!-ja$))",
-      "destination": "/ja/blog/:slug-ja.html"
-    },
-    {
-      "source": "/ja/blog/:slug(.*(?<!-ja$))/",
-      "destination": "/ja/blog/:slug-ja.html"
-    },
-    {
       "source": "/ja/blog/:slug",
       "destination": "/ja/blog/:slug.html"
     },
     {
       "source": "/ja/blog/:slug/",
       "destination": "/ja/blog/:slug.html"
-    },
-    {
-      "source": "/ko/blog/:slug(.*(?<!-ko$))",
-      "destination": "/ko/blog/:slug-ko.html"
-    },
-    {
-      "source": "/ko/blog/:slug(.*(?<!-ko$))/",
-      "destination": "/ko/blog/:slug-ko.html"
     },
     {
       "source": "/ko/blog/:slug",
