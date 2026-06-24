@@ -47,12 +47,28 @@
       "destination": "/blog/:slug.html"
     },
     {
+      "source": "/ja/blog/:slug(.*(?<!-ja$))",
+      "destination": "/ja/blog/:slug-ja.html"
+    },
+    {
+      "source": "/ja/blog/:slug(.*(?<!-ja$))/",
+      "destination": "/ja/blog/:slug-ja.html"
+    },
+    {
       "source": "/ja/blog/:slug",
       "destination": "/ja/blog/:slug.html"
     },
     {
       "source": "/ja/blog/:slug/",
       "destination": "/ja/blog/:slug.html"
+    },
+    {
+      "source": "/ko/blog/:slug(.*(?<!-ko$))",
+      "destination": "/ko/blog/:slug-ko.html"
+    },
+    {
+      "source": "/ko/blog/:slug(.*(?<!-ko$))/",
+      "destination": "/ko/blog/:slug-ko.html"
     },
     {
       "source": "/ko/blog/:slug",
