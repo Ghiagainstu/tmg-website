@@ -597,7 +597,45 @@
     /* ── Responsive ── */
     @media (max-width: 900px) {
       .article-body .container { grid-template-columns: 1fr; }
-      .article-sidebar { display: none; }
+  
+    /* ── Article Table ── */
+    .article-table {
+      width: 100%; border-collapse: collapse;
+      font-size: var(--font-size-sm); margin: var(--space-6) 0;
+    }
+    .article-table th {
+      padding: 12px 16px; border-bottom: 2px solid var(--color-accent);
+      background: rgba(201,168,76,.08); color: var(--color-accent);
+      text-align: left; font-weight: 600; font-size: var(--font-size-xs);
+      text-transform: uppercase; letter-spacing: .05em;
+    }
+    .article-table td {
+      padding: 12px 16px; border-bottom: 1px solid var(--color-border);
+      color: var(--color-text-secondary);
+    }
+    .article-table tr:nth-child(even) td {
+      background: rgba(255,255,255,.02);
+    }
+    .article-table td:first-child {
+      white-space: nowrap;
+    }
+
+    /* ── Takeaway Banner ── */
+    .takeaway-banner {
+      background: linear-gradient(135deg, rgba(201,168,76,.12) 0%, transparent 100%);
+      border: 1px solid rgba(201,168,76,.3); border-left: 4px solid var(--color-accent);
+      border-radius: var(--radius-lg); padding: var(--space-6) var(--space-6);
+      margin: var(--space-8) 0;
+    }
+    .takeaway-banner__title {
+      font-size: var(--font-size-lg); font-weight: 700;
+      color: var(--color-accent); margin-bottom: var(--space-3);
+    }
+    .takeaway-banner__text {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary);
+      line-height: 1.7; margin: 0;
+    }
+    .article-sidebar { display: none; }
     }
     @media (max-width: 767px) {
       .article-hero { padding: 90px 0 var(--space-10); }
@@ -1045,7 +1083,7 @@
 <div class="takeaways">
 
 <div class="callout"><div class="callout__label">TMG Insight</div><p>WeChat's closed-loop ecosystem is unmatched in China. From search discovery to mini-program purchase to private domain retention, every touchpoint happens within WeChat. International brands that master this loop see 4.5x higher conversion than those using external landing pages.</p></div>
-<h2>📌 Key Takeaways</h2>
+<h2 id="key-takeaways">🔑 Key Takeaways</h2>
 
 <table class="article-table"><thead><tr><th>Optimization Tip</th><th>Details</th></tr></thead><tbody>
 <tr><td><strong>Creative quality matters</strong></td><td>refresh regularly, monitor CTR, avoid aesthetic fatigue.</td></tr>
@@ -1063,7 +1101,7 @@
 </div>
 
 
-<div class="takeaway-banner"><div class="takeaway-banner__title">Key Takeaway</div><p class="takeaway-banner__text"><p class="takeaway-banner__text">WeChat Moments ads combine premium brand-safe placement with high viewability. The key to success: creative quality drives engagement, AIGC tools (Miaosi Max) scale production, and the "iron triangle" of bid × eCTR × eCVR determines exposure. Optimize all three dimensions — creative, bidding, and targeting — for maximum performance.</div>
+<div class="takeaway-banner"><div class="takeaway-banner__title">Key Takeaway</div><p class="takeaway-banner__text">WeChat Moments ads combine premium brand-safe placement with high viewability. The key to success: creative quality drives engagement, AIGC tools (Miaosi Max) scale production, and the "iron triangle" of bid × eCTR × eCVR determines exposure. Optimize all three dimensions — creative, bidding, and targeting — for maximum performance.</div>
 
 <div class="callout callout--accent">
 <div class="callout__label">Pro Tip</div>
