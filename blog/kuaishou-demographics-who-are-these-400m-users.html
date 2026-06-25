@@ -421,7 +421,29 @@
     }
 
     /* ── Sidebar TOC ── */
-    .article-sidebar {
+    
+    /* -- Article Table -- */
+    .article-table {
+      width: 100%; border-collapse: collapse;
+      font-size: var(--font-size-sm); margin: var(--space-6) 0;
+    }
+    .article-table th {
+      padding: 12px 16px; border-bottom: 2px solid var(--color-accent);
+      background: rgba(201,168,76,.08); color: var(--color-accent);
+      text-align: left; font-weight: 600; font-size: var(--font-size-xs);
+      text-transform: uppercase; letter-spacing: .05em;
+    }
+    .article-table td {
+      padding: 12px 16px; border-bottom: 1px solid var(--color-border);
+      color: var(--color-text-secondary);
+    }
+    .article-table tr:nth-child(even) td {
+      background: rgba(255,255,255,.02);
+    }
+    .article-table td:first-child {
+      white-space: nowrap;
+    }
+.article-sidebar {
       position: sticky; top: 88px;
     }
     .toc {
@@ -858,17 +880,17 @@
 
   <!-- TOC -->
   <nav class="toc">
-    <h3 style="color:var(--color-text-primary);font-weight:700">Table of Contents</h3>
+    <h3 style="color:var(--color-text-primary);font-weight:700;">Table of Contents</h3>
     <ul>
-      <li><a href="#why-kuaishou-demographics-matter">Why Kuaishou Demographics Matter in 2026</a></li>
-      <li><a href="#scale-snapshot">Scale Snapshot: The 400M+ User Base</a></li>
-      <li><a href="#age-distribution">Age Distribution: Young Yet Diverse</a></li>
-      <li><a href="#city-tier-distribution">City Tier Distribution: New-Tier Cities Dominate</a></li>
-      <li><a href="#provincial-distribution">Provincial Distribution: Regional Powerhouses</a></li>
-      <li><a href="#engagement-metrics">Engagement Metrics: Beyond the Numbers</a></li>
-      <li><a href="#consumer-profile">Consumer Profile: 90M+ CNY Shoppers</a></li>
-      <li><a href="#search-behavior">Search Behavior: 400M+ Active Searchers</a></li>
-      <li><a href="#what-this-means">What This Means for Marketers</a></li>
+      <li><a style="color:#f0f4ff;font-weight:500" href="#why-kuaishou-demographics-matter">Why Kuaishou Demographics Matter in 2026</a></li>
+      <li><a style="color:#f0f4ff;font-weight:500" href="#scale-snapshot">Scale Snapshot: The 400M+ User Base</a></li>
+      <li><a style="color:#f0f4ff;font-weight:500" href="#age-distribution">Age Distribution: Young Yet Diverse</a></li>
+      <li><a style="color:#f0f4ff;font-weight:500" href="#city-tier-distribution">City Tier Distribution: New-Tier Cities Dominate</a></li>
+      <li><a style="color:#f0f4ff;font-weight:500" href="#provincial-distribution">Provincial Distribution: Regional Powerhouses</a></li>
+      <li><a style="color:#f0f4ff;font-weight:500" href="#engagement-metrics">Engagement Metrics: Beyond the Numbers</a></li>
+      <li><a style="color:#f0f4ff;font-weight:500" href="#consumer-profile">Consumer Profile: 90M+ CNY Shoppers</a></li>
+      <li><a style="color:#f0f4ff;font-weight:500" href="#search-behavior">Search Behavior: 400M+ Active Searchers</a></li>
+      <li><a style="color:#f0f4ff;font-weight:500" href="#what-this-means">What This Means for Marketers</a></li>
     </ul>
   </nav>
 
