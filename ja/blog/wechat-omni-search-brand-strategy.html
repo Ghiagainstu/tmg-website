@@ -211,7 +211,7 @@
       .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
       .header__dropdown-menu {
         position: absolute; top: calc(100% + 8px); left: 0;
-        background: var(--color-bg-card); border: 1px solid var(--color-border);
+        background: linear-gradient(135deg, rgba(201,168,76,.08) 0%, var(--color-bg-card) 100%); border: 1px solid rgba(201,168,76,.25);
         border-radius: 10px; padding: .5rem 0; min-width: 180px;
         display: none; opacity: 0; box-shadow: 0 8px 24px rgba(0,0,0,.4); z-index: 200;
       }
@@ -356,7 +356,7 @@
       gap: var(--space-4); margin: var(--space-6) 0;
     }
     .feature-card {
-      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      background: linear-gradient(135deg, rgba(201,168,76,.08) 0%, var(--color-bg-card) 100%); border: 1px solid rgba(201,168,76,.25);
       border-radius: var(--radius-lg); padding: var(--space-5);
       transition: border-color var(--transition-base);
     }
@@ -376,7 +376,7 @@
     }
 
     .data-card {
-      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      background: linear-gradient(135deg, rgba(201,168,76,.08) 0%, var(--color-bg-card) 100%); border: 1px solid rgba(201,168,76,.25);
       border-left: 3px solid var(--color-accent);
       border-radius: var(--radius-md); padding: var(--space-5);
       margin: var(--space-6) 0;
@@ -417,8 +417,8 @@
       gap: var(--space-4); margin: var(--space-6) 0;
     }
     .stat-card {
-      background: var(--color-bg-card); border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg); padding: var(--space-5); text-align: center;
+      background: linear-gradient(135deg, rgba(201,168,76,.08) 0%, var(--color-bg-card) 100%); border: 1px solid rgba(201,168,76,.25);
+      border-radius: var(--radius-lg); padding: var(--space-6) var(--space-4); text-align: center; transition: border-color var(--transition-base), transform var(--transition-base), box-shadow var(--transition-base);
       transition: border-color var(--transition-base);
     }
     .stat-card:hover { border-color: rgba(201,168,76,.4); }
@@ -437,7 +437,7 @@
       gap: var(--space-4); margin: var(--space-6) 0;
     }
     .platform-card {
-      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      background: linear-gradient(135deg, rgba(201,168,76,.08) 0%, var(--color-bg-card) 100%); border: 1px solid rgba(201,168,76,.25);
       border-radius: var(--radius-lg); padding: var(--space-5);
       transition: border-color var(--transition-base), transform var(--transition-base);
       position: relative; overflow: hidden;
@@ -531,7 +531,7 @@
       position: sticky; top: 88px;
     }
     .toc {
-      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      background: linear-gradient(135deg, rgba(201,168,76,.08) 0%, var(--color-bg-card) 100%); border: 1px solid rgba(201,168,76,.25);
       border-radius: var(--radius-lg); padding: var(--space-5);
     }
     .toc__title {
@@ -550,7 +550,7 @@
     .sidebar-cta {
       margin-top: var(--space-6); background: var(--color-bg-card);
       border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg); padding: var(--space-5); text-align: center;
+      border-radius: var(--radius-lg); padding: var(--space-6) var(--space-4); text-align: center; transition: border-color var(--transition-base), transform var(--transition-base), box-shadow var(--transition-base);
     }
     .sidebar-cta p {
       font-size: var(--font-size-sm); color: var(--color-text-secondary);
@@ -571,7 +571,7 @@
       display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6);
     }
     .related-card {
-      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      background: linear-gradient(135deg, rgba(201,168,76,.08) 0%, var(--color-bg-card) 100%); border: 1px solid rgba(201,168,76,.25);
       border-radius: var(--radius-lg); padding: var(--space-5);
       text-decoration: none !important; display: block;
       transition: border-color var(--transition-base), transform var(--transition-base);
