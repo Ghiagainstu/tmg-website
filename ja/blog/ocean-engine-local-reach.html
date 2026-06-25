@@ -419,7 +419,35 @@
     .scenario-list__content span { font-size: var(--font-size-sm); }
 
     /* ── Sidebar TOC ── */
-    .article-sidebar {
+    
+    .article-table {
+      width: 100%; border-collapse: collapse;
+      font-size: var(--font-size-sm); margin: var(--space-6) 0;
+    }
+    .article-table th {
+      padding: 12px 16px; border-bottom: 2px solid var(--color-accent);
+      background: rgba(201,168,76,.08); color: var(--color-accent);
+      text-align: left; font-weight: 600; font-size: var(--font-size-xs);
+      text-transform: uppercase; letter-spacing: .05em;
+    }
+    .article-table td {
+      padding: 12px 16px; border-bottom: 1px solid var(--color-border);
+      color: var(--color-text-secondary);
+    }
+    .article-table tr:nth-child(even) td { background: rgba(255,255,255,.02); }
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--space-5); margin: var(--space-8) 0;
+    }
+    .stat-card {
+      background: linear-gradient(135deg, rgba(201,168,76,.08) 0%, var(--color-bg-card) 100%);
+      border: 1px solid rgba(201,168,76,.25);
+      border-radius: var(--radius-lg); padding: var(--space-6) var(--space-4);
+      text-align: center;
+    }
+    .stat-card__num { font-size: 2.5rem; font-weight: 800; color: var(--color-accent-light); line-height: 1.1; }
+    .stat-card__label { font-size: var(--font-size-sm); color: var(--color-text-secondary); }
+.article-sidebar {
       position: sticky; top: 88px;
     }
     .toc {
@@ -576,7 +604,35 @@
     /* ── Responsive ── */
     @media (max-width: 900px) {
       .article-body .container { grid-template-columns: 1fr; }
-      .article-sidebar { display: none; }
+      
+    .article-table {
+      width: 100%; border-collapse: collapse;
+      font-size: var(--font-size-sm); margin: var(--space-6) 0;
+    }
+    .article-table th {
+      padding: 12px 16px; border-bottom: 2px solid var(--color-accent);
+      background: rgba(201,168,76,.08); color: var(--color-accent);
+      text-align: left; font-weight: 600; font-size: var(--font-size-xs);
+      text-transform: uppercase; letter-spacing: .05em;
+    }
+    .article-table td {
+      padding: 12px 16px; border-bottom: 1px solid var(--color-border);
+      color: var(--color-text-secondary);
+    }
+    .article-table tr:nth-child(even) td { background: rgba(255,255,255,.02); }
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--space-5); margin: var(--space-8) 0;
+    }
+    .stat-card {
+      background: linear-gradient(135deg, rgba(201,168,76,.08) 0%, var(--color-bg-card) 100%);
+      border: 1px solid rgba(201,168,76,.25);
+      border-radius: var(--radius-lg); padding: var(--space-6) var(--space-4);
+      text-align: center;
+    }
+    .stat-card__num { font-size: 2.5rem; font-weight: 800; color: var(--color-accent-light); line-height: 1.1; }
+    .stat-card__label { font-size: var(--font-size-sm); color: var(--color-text-secondary); }
+.article-sidebar { display: none; }
     }
     @media (max-width: 767px) {
       .article-hero { padding: 90px 0 var(--space-10); }
@@ -935,7 +991,7 @@
   <div class="stat-card"><div class="stat-card__num">2.8倍</div><div class="stat-card__label">最適化による<br>ROAS向上</div></div>
   <div class="stat-card"><div class="stat-card__num">35%</div><div class="stat-card__label">従来手法と比較した<br>CPA削減</div></div>
   <div class="stat-card"><div class="stat-card__num">92%</div><div class="stat-card__label">検索広告による<br>ブランド可視性</div></div>
-  <div class="stat-card"><div class="stat-card__num">¥8.5</div><div class="stat-card__label">ブランドキーワード<br>平均CPC</div></div>
+  <div class="stat-card"><div class="stat-card__num">¥8.5<br><span style="font-size:.55em">~$1.21</span></div><div class="stat-card__label">ブランドキーワード<br>平均CPC</div></div>
   <div class="stat-card"><div class="stat-card__num">1.8億+</div><div class="stat-card__label">日次検索<br>クエリ</div></div>
 </div>
 <h2 id="four-values">💪 4つのコア価値</h2>
