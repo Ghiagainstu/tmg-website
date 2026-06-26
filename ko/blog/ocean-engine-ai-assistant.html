@@ -1,1094 +1,1098 @@
-﻿<!DOCTYPE html>
-
-<html lang="ko">
-<head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P5RQGYPTGP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-P5RQGYPTGP');
-</script>
-
-<meta name="description" content="Ocean Engine AI 어시스턴트: 바이트댄스의 AI 기반 광고 최적화 도구.">
-  <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>메이트 즈싱: 오션 엔진의 AI 광고 어시스턴트 | Tuyue Media Gateway (TMG)</title>
-
-<!-- Favicon -->
-<link href="/favicon.ico" rel="icon" type="image/x-icon"/>
-<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="/assets/og-image.png" rel="apple-touch-icon"/>
-<meta content="Ocean Engine AI 어시스턴트 Zhitu Xing은 Q&amp;A, 멀티 계정 분석, 데이터 쿼리, 원클릭 진단을 플랫폼 내에서 제공——" name="description"/>
-<link href="https://www.tuyuesouxin.cn/ko/blog/ocean-engine-ai-assistant/" rel="canonical"/>
-<link href="https://www.tuyuesouxin.cn/ko/blog/ocean-engine-ai-assistant/" hreflang="ko" rel="alternate"/>
-<link href="https://www.tuyuesouxin.cn/blog/ocean-engine-ai-assistant/" hreflang="en" rel="alternate"/>
-<link href="/blog/ocean-engine-ai-assistant/" hreflang="ja" rel="alternate"/>
-<link href="https://www.tuyuesouxin.cn/blog/ocean-engine-ai-assistant/" hreflang="x-default" rel="alternate"/>
-<meta content="Zhitu Xing 소개: Ocean Engine의 내장 AI 광고 어시스턴트" property="og:title"/>
-<meta content="Ocean Engine AI 어시스턴트 Zhitu Xing은 Q&amp;A, 멀티 계정 분석, 데이터 쿼리, 원클릭 진단을 플랫폼 내에서 제공——" property="og:description"/>
-<meta content="article" property="og:type"/>
-<meta content="https://www.tuyuesouxin.cn/ko/blog/ocean-engine-ai-assistant/" property="og:url"/>
-<meta content="https://www.tuyuesouxin.cn/assets/og-image.png" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="https://www.tuyuesouxin.cn/assets/twitter-card.png" name="twitter:image"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<style>
-  
-
-  .skip-link{position:absolute;top:-100px;left:0;background:var(--color-accent);color:var(--color-bg);padding:8px 16px;z-index:10000;text-decoration:none;transition:top 0.3s;font-weight:600;}
-  .skip-link:focus{top:0;}
-
-    :root {
-      --color-bg: #080c14;
-      --color-bg-alt: #0d1220;
-      --color-bg-card: #111827;
-      --color-text-primary: #f0f4ff;
-      --color-text-secondary: #b3c0d8;
-      --color-text-muted: #8899b5;
-      --color-primary: #2d6be4;
-      --color-primary-hover: #1e55c4;
-      --color-accent: #c9a84c;
-      --color-accent-light: #e8c87a;
-      --color-border: #1e2d45;
-      --color-border-hover: #2d4060;
-      --c-ocean: #c9a84c;
-      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      --font-size-xs: 0.75rem;
-      --font-size-sm: 0.875rem;
-      --font-size-base: 1rem;
-      --font-size-lg: 1.125rem;
-      --font-size-xl: 1.25rem;
-      --font-size-2xl: 1.5rem;
-      --font-size-3xl: 1.875rem;
-      --font-size-4xl: 2.25rem;
-      --space-1: 0.25rem;
-      --space-2: 0.5rem;
-      --space-3: 0.75rem;
-      --space-4: 1rem;
-      --space-5: 1.25rem;
-      --space-6: 1.5rem;
-      --space-8: 2rem;
-      --space-10: 2.5rem;
-      --space-12: 3rem;
-      --space-16: 4rem;
-      --space-20: 5rem;
-      --transition-fast: 150ms ease;
-      --transition-base: 250ms ease;
-      --radius-sm: 0.375rem;
-      --radius-md: 0.5rem;
-      --radius-lg: 0.75rem;
-      --radius-xl: 1rem;
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: var(--font-family);
-      font-size: 1rem;
-      line-height: 1.8;
-      color: var(--color-text-secondary);
-      background: var(--color-bg);
-      -webkit-font-smoothing: antialiased;
-      padding-top: 64px;
-    }
-
-    ::-webkit-scrollbar { width: 8px; }
-    ::-webkit-scrollbar-track { background: var(--color-bg); }
-    ::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 4px; }
-    ::-webkit-scrollbar-thumb:hover { background: var(--color-border-hover); }
-
-    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
-    a { color: var(--color-primary); text-decoration: none !important; }
-    a:hover { text-decoration: underline; }
-
-    /* ── Buttons ── */
-    .btn {
-      display: inline-flex; align-items: center; justify-content: center;
-      gap: var(--space-2); padding: var(--space-3) var(--space-5);
-      font-family: var(--font-family); font-size: var(--font-size-sm);
-      font-weight: 500; text-decoration: none !important; border-radius: var(--radius-md);
-      transition: all var(--transition-base); cursor: pointer; border: none;
-    }
-    .btn--primary {
-      background: linear-gradient(135deg, #c9a84c 0%, #e8c87a 50%, #c9a84c 100%);
-      background-size: 200% 200%; color: #0d1220; font-weight: 600;
-      box-shadow: 0 2px 12px rgba(201,168,76,0.25);
-    }
-    .btn--primary:hover {
-      background-position: right center; box-shadow: 0 4px 20px rgba(201,168,76,0.4);
-      transform: translateY(-1px); text-decoration: none !important;
-    }
-    .btn--secondary {
-      background: transparent; color: var(--color-text-primary);
-      border: 1px solid var(--color-border);
-    }
-    .btn--secondary:hover {
-      border-color: var(--color-border-hover); background: rgba(255,255,255,0.05);
-      text-decoration: none !important;
-    }
-
-    /* ── Header ── */
-    .header {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background-color: rgba(8,12,20,.85);
-      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--color-border); padding: 1rem 0;
-      transition: border-color var(--transition-base);
-    }
-    .header::after {
-      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(201,168,76,.4) 40%, rgba(45,107,228,.4) 60%, transparent);
-      opacity: .6;
-    }
-    .header__inner { display: flex; align-items: center; justify-content: space-between; }
-    .header__logo {
-      display: flex; align-items: center; gap: .5rem;
-      text-decoration: none !important; transition: opacity .15s;
-    }
-    .header__logo:hover { opacity: .85; text-decoration: none !important; }
-    .header__logo-icon { width: 40px; height: 40px; flex-shrink: 0; }
-    .header__logo-text { font-size: 1.125rem; font-weight: 700; color: var(--color-text-primary); letter-spacing: -.02em; }
-    .header__logo-text span { color: var(--color-accent); }
-    .header__nav { display: flex; gap: 2rem; align-items: center; }
-    .header__nav-link {
-      font-size: .875rem; font-weight: 500; color: var(--color-text-secondary);
-      transition: color .15s; text-decoration: none !important;
-      position: relative; display: inline-flex; align-items: center;
-    }
-    .header__nav-link:hover,
-    .header__nav-link.active { color: var(--color-text-primary); }
-    .header__nav-link::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: var(--color-accent);
-      transition: width .15s;
-    }
-    .header__nav-link.active::after { width: 100%; }
-    .nav-badge {
-      display: inline-block;
-      margin-left: 5px;
-      padding: 1px 5px;
-      font-size: 10px;
-      font-weight: 700;
-      line-height: 1;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: #080c14;
-      background: var(--color-accent);
-      border-radius: 3px;
-      vertical-align: baseline;
-      white-space: nowrap;
-      animation: badgePulse 2s ease-in-out infinite;
-    }
-    @keyframes badgePulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.65; } }
-    .header__cta { display: none; }
-    .header__toggle {
-      display: none; flex-direction: column; justify-content: center;
-      gap: 4px; background: none; border: none; cursor: pointer; padding: 8px;
-    }
-    .header__toggle span { width: 24px; height: 2px; background: var(--color-text-primary); transition: all .3s; }
-    .header__toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
-    .header__toggle.active span:nth-child(2) { opacity: 0; }
-    .header__toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
-
-    @media (min-width: 768px) {
-      .header__toggle { display: none; }
-      .header__cta { display: block; }
-      .header__dropdown { position: relative; }
-      .header__dropdown-trigger { display: flex; align-items: center; gap: 4px; }
-      .header__dropdown-arrow { transition: transform var(--transition-fast); }
-      .header__dropdown:hover .header__dropdown-arrow,
-      .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
-      .header__dropdown-menu {
-        position: absolute; top: calc(100% + 8px); left: 0;
-        background: var(--color-bg-card); border: 1px solid var(--color-border);
-        border-radius: 10px; padding: .5rem 0; min-width: 180px;
-        display: none; opacity: 0; box-shadow: 0 8px 24px rgba(0,0,0,.4); z-index: 200;
-      }
-      .header__dropdown:hover .header__dropdown-menu,
-      .header__dropdown.open .header__dropdown-menu {
-        display: flex; flex-direction: column; opacity: 1;
-        transform: translateY(0);
-      }
-      .header__dropdown-item {
-        font-size: var(--font-size-sm); font-weight: 500;
-        color: var(--color-text-secondary); padding: .625rem 1rem;
-        border-radius: 6px; white-space: nowrap; text-decoration: none !important;
-        transition: background .15s, color .15s;
-      }
-      .header__dropdown-item:hover {
-        background: rgba(201,168,76,.1); color: var(--color-accent); text-decoration: none !important;
-      }
-    }
-
-    @media (max-width: 767px) {
-      .header { position: fixed; top: 0; left: 0; right: 0; z-index: 200; }
-      .header__inner {
-        background: var(--color-bg-card); border-bottom: 1px solid var(--color-border);
-        position: relative; z-index: 201;
-      }
-      .header__toggle { display: flex; }
-      .header__nav {
-        display: none; flex-direction: column; gap: 0;
-        position: absolute; top: 100%; left: 0; right: 0;
-        background: var(--color-bg-card); border-bottom: 1px solid var(--color-border);
-        z-index: 200;
-      }
-      .header__nav.active { display: flex; }
-      .header__nav-link {
-        display: block; width: 100%; padding: 14px 40px 14px 24px;
-        border-bottom: 1px solid var(--color-border); font-size: 1.1rem;
-      }
-      .header__dropdown { position: static; width: 100%; 
-       }
-      .header__dropdown-trigger {
-        display: flex; align-items: center; justify-content: space-between;
-        width: 100%; padding: 14px 40px 14px 24px;
-        border-bottom: 1px solid var(--color-border); font-size: 1.1rem;
-      }
-      .header__dropdown-arrow { transition: transform var(--transition-fast); }
-      .header__dropdown.active .header__dropdown-arrow,
-      .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
-      .header__dropdown-menu { display: none; flex-direction: column; background: rgba(0,0,0,.25); padding: 0; }
-      .header__dropdown.active .header__dropdown-menu,
-      .header__dropdown.open .header__dropdown-menu { display: flex; }
-      .header__dropdown-item {
-        display: block; width: 100%; padding: 12px 40px;
-        font-size: 1rem; color: var(--color-text-secondary);
-        border-bottom: 1px solid rgba(255,255,255,.06);
-      }
-      .header__dropdown-item:hover { background: rgba(201,168,76,.08); color: var(--color-accent); }
-    }
-
-    /* ── Article Layout ── */
-    .article-hero {
-      padding: 100px 0 var(--space-12);
-    }
-    .article-hero .container { max-width: 860px; }
-    .article-meta {
-      display: flex; align-items: center; gap: var(--space-3);
-      flex-wrap: wrap; margin-bottom: var(--space-6);
-    }
-    .article-category {
-      display: inline-block; padding: 4px 12px;
-      background: rgba(201,168,76,.15); border: 1px solid rgba(201,168,76,.3);
-      border-radius: 20px; font-size: var(--font-size-xs); font-weight: 600;
-      color: var(--color-accent); text-transform: uppercase; letter-spacing: .08em;
-    }
-    .article-date {
-      font-size: var(--font-size-sm); color: var(--color-text-muted);
-    }
-    .article-read-time {
-      font-size: var(--font-size-sm); color: var(--color-text-muted);
-    }
-
-    .article-hero__author {
-      display: flex; align-items: center; gap: 1rem;
-      margin-top: 2rem; padding-top: 2rem;
-      border-top: 1px solid var(--color-border);
-    }
-    .article-hero__author-avatar {
-      width: 48px; height: 48px; border-radius: 50%;
-      background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
-      display: flex; align-items: center; justify-content: center;
-      font-weight: 700; color: var(--color-bg); font-size: var(--font-size-base);
-    }
-    .article-hero__author-info { display: flex; flex-direction: column; }
-    .article-hero__author-name {
-      font-weight: 600; color: var(--color-text-primary);
-      font-size: var(--font-size-sm);
-    }
-    .article-hero__author-role {
-      font-size: var(--font-size-xs); color: var(--color-text-muted);
-    }
-
-    .article-hero__title {
-      font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700;
-      color: var(--color-text-primary); line-height: 1.25; margin-bottom: var(--space-6);
-    }
-    .article-hero__title span { color: var(--color-accent); }
-    .article-hero__intro {
-      font-size: var(--font-size-lg); color: var(--color-text-secondary);
-      line-height: 1.75; max-width: 760px;
-    }
-
-    /* ── Article Body ── */
-    .article-body {
-      padding: var(--space-16) 0;
-      background: #000;
-    }
-    .article-body .container {
-      max-width: 860px;
-      display: grid;
-      grid-template-columns: 1fr 260px;
-      gap: var(--space-12);
-      align-items: start;
-    }
-    .article-content h2 {
-      font-size: var(--font-size-2xl); font-weight: 700;
-      color: var(--color-text-primary); margin: var(--space-10) 0 var(--space-4);
-    }
-    .article-content h2:first-child { margin-top: 0; padding-top: 0; border-top: none; }
-    .article-content h3 {
-      font-size: var(--font-size-xl); font-weight: 600;
-      color: var(--color-text-primary); margin: var(--space-8) 0 var(--space-3);
-    }
-    .article-content p { margin-bottom: var(--space-4); color: var(--color-text-secondary); }
-    .article-content strong { color: var(--color-text-primary); font-weight: 600; }
-    .article-content ul, .article-content ol {
-      margin: var(--space-4) 0 var(--space-6) var(--space-6);
-    }
-    .article-content li { margin-bottom: var(--space-2); color: var(--color-text-secondary); }
-    .article-content a { color: var(--color-primary); }
-    .article-content a:hover { text-decoration: underline; }
-
-    /* Feature card grid */
-    .feature-grid {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: var(--space-4); margin: var(--space-6) 0;
-    }
-    .feature-card {
-      background: var(--color-bg-card); border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg); padding: var(--space-5);
-      transition: border-color var(--transition-base);
-    }
-    .feature-card:hover { border-color: rgba(201,168,76,.4); }
-    .feature-card__num {
-      display: inline-block; width: 28px; height: 28px; line-height: 28px;
-      text-align: center; background: rgba(201,168,76,.15);
-      color: var(--color-accent); font-size: var(--font-size-sm);
-      font-weight: 700; border-radius: 50%; margin-bottom: var(--space-3);
-    }
-    .feature-card__title {
-      font-size: var(--font-size-base); font-weight: 600;
-      color: var(--color-text-primary); margin-bottom: var(--space-2);
-    }
-    .feature-card__desc {
-      font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.6;
-    }
-
-    /* Callout / tip box */
-    .callout {
-      background: rgba(45,107,228,.08); border: 1px solid rgba(45,107,228,.2);
-      border-left: 3px solid var(--color-primary);
-      border-radius: var(--radius-md); padding: var(--space-5);
-      margin: var(--space-6) 0;
-    }
-    .callout--accent {
-      background: rgba(201,168,76,.06); border: 1px solid rgba(201,168,76,.2);
-      border-left: 3px solid var(--color-accent);
-    }
-    .callout__label {
-      font-size: var(--font-size-xs); font-weight: 700; text-transform: uppercase;
-      letter-spacing: .08em; color: var(--color-primary); margin-bottom: var(--space-2);
-    }
-    .callout--accent .callout__label { color: var(--color-accent); }
-    .callout p { margin: 0; font-size: var(--font-size-sm); }
-
-    /* Scenario steps */
-    .scenario-list {
-      list-style: none; margin: var(--space-4) 0 var(--space-6); padding: 0;
-    }
-    .scenario-list li {
-      display: flex; gap: var(--space-4); padding: var(--space-4) 0;
-      border-bottom: 1px solid var(--color-border);
-    }
-    .scenario-list li:last-child { border-bottom: none; }
-    .scenario-list__icon {
-      width: 36px; height: 36px; flex-shrink: 0;
-      background: rgba(201,168,76,.1); border-radius: 50%;
-      display: flex; align-items: center; justify-content: center; margin-top: 2px;
-    }
-    .scenario-list__content strong {
-      display: block; font-size: var(--font-size-base); color: var(--color-text-primary);
-      margin-bottom: 2px;
-    }
-    .scenario-list__content span { font-size: var(--font-size-sm); }
-
-    /* ── Sidebar TOC ── */
-    .article-sidebar {
-      position: sticky; top: 88px;
-    }
-    .toc {
-      background: var(--color-bg-card); border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg); padding: var(--space-5);
-    }
-    .toc__title {
-      font-size: var(--font-size-xs); font-weight: 700; text-transform: uppercase;
-      letter-spacing: .08em; color: var(--color-text-muted); margin-bottom: var(--space-4);
-    }
-    .toc__list { list-style: none; }
-    .toc__list li + li { margin-top: var(--space-2); }
-    .toc__link {
-      font-size: var(--font-size-sm); color: var(--color-text-muted);
-      text-decoration: none !important; display: block; line-height: 1.4;
-      transition: color var(--transition-fast);
-    }
-    .toc__link:hover { color: var(--color-text-primary); text-decoration: none !important; }
-
-    .sidebar-cta {
-      margin-top: var(--space-6); background: var(--color-bg-card);
-      border: 1px solid var(--color-border); border-radius: var(--radius-lg);
-      padding: var(--space-5); text-align: center;
-    }
-    .sidebar-cta p {
-      font-size: var(--font-size-sm); color: var(--color-text-secondary);
-      margin-bottom: var(--space-4); line-height: 1.5;
-    }
-    .sidebar-cta .btn { width: 100%; justify-content: center; }
-
-    /* ── Related Posts ── */
-    .related {
-      padding: var(--space-12) 0;
-      background: var(--color-bg);
-      border-top: 1px solid var(--color-border);
-    }
-    .related__title {
-      font-size: var(--font-size-2xl); font-weight: 700;
-      color: var(--color-text-primary); margin-bottom: var(--space-8);
-    }
-    .related__grid {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6);
-    }
-    .related-card {
-      background: var(--color-bg-card); border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg); padding: var(--space-5);
-      text-decoration: none !important; display: block;
-      transition: border-color var(--transition-base), transform var(--transition-base);
-    }
-    .related-card:hover { border-color: rgba(201,168,76,.4); transform: translateY(-2px); text-decoration: none !important; }
-    .related-card__cat {
-      font-size: var(--font-size-xs); font-weight: 600; text-transform: uppercase;
-      letter-spacing: .08em; color: var(--color-accent); margin-bottom: var(--space-3);
-    }
-    .related-card__title {
-      font-size: var(--font-size-base); font-weight: 600;
-      color: var(--color-text-primary); line-height: 1.4; margin-bottom: var(--space-2);
-    }
-    .related-card__desc {
-      font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.5;
-    }
-
-    /* ── Footer ── */
-    .footer {
-      padding: var(--space-10) 0 var(--space-8);
-      background: var(--color-bg);
-      border-top: 1px solid var(--color-border);
-    }
-    .footer__grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: var(--space-8);
-      margin-bottom: var(--space-10);
-    }
-    @media (min-width: 768px) {
-      .footer__grid {
-        grid-template-columns: repeat(4, 1fr);
-      }
-    }
-    .footer__section { text-align: left; }
-    .footer__title {
-      font-size: var(--font-size-base);
-      font-weight: 600;
-      color: var(--color-text-primary);
-      margin-bottom: var(--space-4);
-      position: relative;
-      padding-bottom: var(--space-2);
-    }
-    .footer__title::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0;
-      width: 40px; height: 2px;
-      background: linear-gradient(90deg, var(--color-accent), transparent);
-      opacity: 0.8;
-    }
-    .footer__description {
-      color: var(--color-text-secondary);
-      font-size: var(--font-size-sm);
-      line-height: 1.7;
-      margin-bottom: 0;
-    }
-    .footer__links {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .footer__links li { margin-bottom: var(--space-3); }
-    .footer__link { text-decoration: none !important; 
-      color: var(--color-text-secondary);
-      font-size: var(--font-size-sm);
-      transition: color var(--transition-fast);
-      display: inline-block;
-    }
-    .footer__link:hover { color: var(--color-text-primary); transform: translateX(4px); }
-    .footer__link--email { color: var(--color-primary); font-weight: 500; }
-    .footer__license { color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--space-2); }
-    .footer__company-short { color: var(--color-text-muted); font-size: var(--font-size-xs); }
-    .footer__bottom {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: var(--space-4);
-      padding-top: var(--space-8);
-      border-top: 1px solid var(--color-border);
-    }
-    @media (min-width: 768px) {
-      .footer__bottom { flex-direction: row; justify-content: space-between; }
-    }
-    .footer__copyright { color: var(--color-text-muted); font-size: var(--font-size-sm); margin: 0; }
-    .footer__platforms { display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: center; }
-    .footer__platform-badge {
-      text-decoration: none !important;
-      display: inline-block;
-      padding: var(--space-1) var(--space-3);
-      background-color: rgba(201, 168, 76, 0.1);
-      border: 1px solid rgba(201, 168, 76, 0.3);
-      border-radius: 4px;
-      color: var(--color-text-primary);
-      font-size: var(--font-size-xs);
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      transition: all var(--transition-fast);
-    }
-    .footer__platform-badge:hover {
-      text-decoration: none !important;
-      background-color: rgba(201, 168, 76, 0.2);
-      border-color: var(--color-accent);
-      transform: translateY(-2px);
-    }
-
-    /* ── Responsive ── */
-    @media (max-width: 900px) {
-      .article-body .container { grid-template-columns: 1fr; }
-      .article-sidebar { display: none; }
-    }
-    @media (max-width: 767px) {
-      .article-hero { padding: 90px 0 var(--space-10); background: linear-gradient(180deg, #0a1628 0%, #080c14 100%); }
-      .feature-grid { grid-template-columns: 1fr; }
-      .related__grid { grid-template-columns: 1fr; }
-    }
-    }
-
-    /* ── Article Divider ── */
-    hr.article-divider, .article-content hr {
-      border: none; border-top: 1px solid rgba(255,255,255,0.08);
-      margin: var(--space-8) 0;
-    }
-
-    /* ── Scroll Reveal (disabled: content always visible) ── */
-    .reveal {
-      opacity: 1; transform: none;
-      transition: none;
-    }
-    /* reveal--visible disabled */
-  .header__lang-wrap {
-      position: relative;
-      display: inline-flex;
-      align-items: center;
-      margin-left: 8px;
-    }
-    .header__lang-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      padding: 4px 10px;
-      font-family: inherit;
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--c-accent, #c9a84c);
-      background: transparent;
-      border: 1px solid var(--c-accent, #c9a84c);
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background .15s;
-      line-height: 1.4;
-    }
-    .header__lang-btn:hover { background: rgba(201,168,76,.1); }
-    .header__lang-btn svg { transition: transform .15s; }
-    .header__lang-wrap:hover .header__lang-btn svg,
-    .header__lang-wrap.active .header__lang-btn svg { transform: rotate(180deg); }
-    .header__lang-menu {
-      position: absolute;
-      top: calc(100% + 6px);
-      right: 0;
-      min-width: 140px;
-      background: #111827;
-      border: 1px solid #1e2d45;
-      border-radius: 8px;
-      padding: 4px;
-      display: none;
-      opacity: 0;
-      box-shadow: 0 4px 20px rgba(0,0,0,.4);
-      z-index: 300;
-    }
-    .header__lang-wrap:hover .header__lang-menu,
-    .header__lang-wrap.active .header__lang-menu {
-      display: flex;
-      flex-direction: column;
-      opacity: 1;
-    }
-    .header__lang-item {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      padding: 7px 10px;
-      font-size: 12px;
-      font-weight: 500;
-      color: #a3b1cc;
-      text-decoration: none !important;
-      border-radius: 5px;
-      transition: background .15s, color .15s;
-      white-space: nowrap;
-    }
-    .header__lang-item:hover {
-      background: rgba(201,168,76,.1);
-      color: #e8c87a;
-      text-decoration: none !important;
-    }
-    .header__lang-item--cur {
-      color: #e8c87a;
-      background: rgba(201,168,76,.08);
-    }
-    .header__lang-flag { font-size: 15px; line-height: 1; }
-  
-  @media print{
-    *{box-shadow:none!important;text-shadow:none!important;}
-    body{background:white!important;color:black!important;}
-    .header,.footer,nav,.sidebar,iframe{display:none!important;}
-    main,article,section,.container{max-width:100%!important;margin:0!important;padding:10px!important;}
-    h1,h2,h3,h4,h5,h6{page-break-after:avoid;page-break-inside:avoid;}
-    img{max-width:100%!important;page-break-inside:avoid;}
-    a{color:black!important;text-decoration:underline;}
-    p,blockquote,ul,ol,dl,table{page-break-inside:avoid;}
-    @page{margin:2cm;}
-  }
-  </style>
-<script type="application/ld+json"></script>
-
-    <style>
- 
-<a href="#main-content" class="skip-to-content">본문으로 건너뛰기</a>
-     .skip-to-content {
-        position: absolute;
-        top: -40px;
-        left: 0;
-        background: var(--color-accent);
-        color: var(--color-bg);
-        padding: 8px 16px;
-        z-index: 10000;
-        transition: top 0.3s;
-      }
-      .skip-to-content:focus {
-        top: 0;
-      }
-    </style>
-  
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "본문으로 건너뛰기\n     .skip-to-content {\n        position: absolute;\n        top: -40px;\n        left: 0;\n        bac",
-  "datePublished": "2026-01-01",
-  "dateModified": "2026-01-01",
-  "author": {
-    "@type": "Organization",
-    "name": "Tuyue Media Gateway"
-  },
-  "image": "https://www.tuyuesouxin.cn/assets/og-image.png",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Tuyue Media Gateway",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.tuyuesouxin.cn/favicon.svg"
-    }
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.tuyuesouxin.cn/ko/blog/ocean-engine-ai-assistant/"
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.tuyuesouxin.cn/ko/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Blog",
-      "item": "https://www.tuyuesouxin.cn/ko/blog/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "본문으로 건너뛰기\n     .skip-to-content {\n        position: absolute;\n        top: -40px;\n        left: 0;\n        bac",
-      "item": "https://www.tuyuesouxin.cn/ko/blog/ocean-engine-ai-assistant/"
-    }
-  ]
-}
-</script>
-</head>
-<body>
-  <!-- 본문으로 건너뛰기 -->
-  <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
-
-  
-  
-
-<!-- Header -->
-<header class="header">
-    <div class="container">
-      <div class="header__inner">
-        <a href="/ko/" class="header__logo">
-          <svg class="header__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#c9a84c"/>
-                <stop offset="100%" stop-color="#e8c87a"/>
-              </linearGradient>
-              <clipPath id="moonClip">
-                <!-- Full circle -->
-                <circle cx="30" cy="24" r="16"/>
-              </clipPath>
-            </defs>
-            <!-- Crescent Moon: circle minus overlapping circle -->
-            <circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/>
-            <circle cx="37" cy="20" r="13" fill="#080c14"/>
-            <!-- TMG letters inside/near the crescent -->
-            <text x="4" y="32" font-family="Inter, -apple-system, sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-0.8">TMG</text>
-          </svg>
-          <span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
-        </a>
-        <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <nav class="header__nav" id="main-nav">
-          <div class="header__dropdown">
-            <a href="/ko/services/" class="header__nav-link header__dropdown-trigger">
-              서비스
-              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </a>
-            <div class="header__dropdown-menu">
-              <a href="/ko/services/" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">전체 서비스</a>
-              <a href="/ko/services/wechat/" class="header__dropdown-item">WeChat 광고</a>
-              <a href="/ko/services/douyin/" class="header__dropdown-item">Douyin 광고</a>
-              <a href="/ko/services/baidu/" class="header__dropdown-item">Baidu SEM</a>
-              <a href="/ko/services/bing/" class="header__dropdown-item">Bing China</a>
-              <a href="/ko/services/xiaohongshu/" class="header__dropdown-item">샤오홍슈(RED)</a>
-              <a href="/ko/services/bilibili/" class="header__dropdown-item">Bilibili 광고</a>
-              <a href="/ko/geo/" class="header__dropdown-item">중국 GEO</a>
-            </div>
-          </div>
-          <a href="/ko/pricing/" class="header__nav-link">요금</a>
-          <a href="/ko/client-stories/" class="header__nav-link">고객 사례</a>
-          <a href="/ko/geo/" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
-          <a href="/ko/blog/" class="header__nav-link active">블로그</a>
-          <a href="/ko/faqs/" class="header__nav-link">FAQ</a>
-          <div class="header__dropdown">
-            <a href="/ko/about/" class="header__nav-link header__dropdown-trigger">
-              회사 소개
-              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </a>
-            <div class="header__dropdown-menu">
-              <a href="/ko/why-tmg/" class="header__dropdown-item">TMG를 선택해야 하는 이유</a>
-              <a href="/ko/about/" class="header__dropdown-item">회사 소개</a>
-              <a href="/ko/contact/" class="header__dropdown-item">문의하기</a>
-            </div>
-          </div>
-        </nav>
-        <div class="header__lang-wrap">
-        <button class="header__lang-btn" onclick="this.parentElement.classList.toggle('active')">
-          <span class="header__lang-flag">🇰🇷</span>한국어
-          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 3.5l3 4 3-4"/></svg>
-        </button>
-        <div class="header__lang-menu">
-            <a href="/blog/ocean-engine-ai-assistant/" class="header__lang-item"><span class="header__lang-flag">🇺🇸</span>English</a>
-            <a href="/ja/blog/ocean-engine-ai-assistant/" class="header__lang-item"><span class="header__lang-flag">🇯🇵</span>日本語</a>
-          </div>
-      </div>
-        <div class="header__cta">
-          <a href="/ko/contact/" class="btn btn--primary">시작하기</a>
-        </div>
-      </div>
-    </div>
-  </header>
-<!-- Article Hero -->
-<section class="article-hero">
-<div class="container">
-<div class="article-meta">
-<span class="article-category">Ocean Engine</span>
-<span class="article-date">2026년 4월 23일</span>
-<span class="article-read-time">약 8분 소요</span>
-</div>
-<h1 class="article-hero__title">메이트 즈싱: 오션 엔진의 AI 광고 어시스턴트</h1>
-<p class="article-hero__intro">Ocean Engine의 AI 광고 어시스턴트 Zhitu Xing(智图星)은 스마트 Q&A, 계정 분석, 데이터 쿼리, 진단 분석 기능을 플랫폼 내에서 제공합니다.</p>
-<div class="article-hero__author">
-<div class="article-hero__author-avatar">TMG</div>
-<div class="article-hero__author-info">
-<div class="article-hero__author-name">Tuyue Media Gateway</div>
-<div class="article-hero__author-role">유료 미디어 팀 · 상하이</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Article Body -->
-<main id="main-content" class="article-body">
-<div class="container">
-<article class="article-content reveal">
-<h2 id="what-is">🤖 Zhitu Xing이란?</h2>
+﻿<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P5RQGYPTGP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P5RQGYPTGP');
+</script>
+
+<meta name="description" content="Ocean Engine AI 어시스턴트: 바이트댄스의 AI 기반 광고 최적화 도구.">
+  <meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>메이트 즈싱: 오션 엔진의 AI 광고 어시스턴트 | Tuyue Media Gateway (TMG)</title>
+
+<!-- Favicon -->
+<link href="/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/og-image.png" rel="apple-touch-icon"/>
+<meta content="Ocean Engine AI 어시스턴트 Zhitu Xing은 Q&amp;A, 멀티 계정 분석, 데이터 쿼리, 원클릭 진단을 플랫폼 내에서 제공——" name="description"/>
+<link href="https://www.tuyuesouxin.cn/ko/blog/ocean-engine-ai-assistant/" rel="canonical"/>
+<link href="https://www.tuyuesouxin.cn/ko/blog/ocean-engine-ai-assistant/" hreflang="ko" rel="alternate"/>
+<link href="https://www.tuyuesouxin.cn/blog/ocean-engine-ai-assistant/" hreflang="en" rel="alternate"/>
+<link href="/blog/ocean-engine-ai-assistant/" hreflang="ja" rel="alternate"/>
+<link href="https://www.tuyuesouxin.cn/blog/ocean-engine-ai-assistant/" hreflang="x-default" rel="alternate"/>
+<meta content="Zhitu Xing 소개: Ocean Engine의 내장 AI 광고 어시스턴트" property="og:title"/>
+<meta content="Ocean Engine AI 어시스턴트 Zhitu Xing은 Q&amp;A, 멀티 계정 분석, 데이터 쿼리, 원클릭 진단을 플랫폼 내에서 제공——" property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://www.tuyuesouxin.cn/ko/blog/ocean-engine-ai-assistant/" property="og:url"/>
+<meta content="https://www.tuyuesouxin.cn/assets/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://www.tuyuesouxin.cn/assets/twitter-card.png" name="twitter:image"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+  
+
+  .skip-link{position:absolute;top:-100px;left:0;background:var(--color-accent);color:var(--color-bg);padding:8px 16px;z-index:10000;text-decoration:none;transition:top 0.3s;font-weight:600;}
+  .skip-link:focus{top:0;}
+
+    :root {
+      --color-bg: #080c14;
+      --color-bg-alt: #0d1220;
+      --color-bg-card: #111827;
+      --color-text-primary: #f0f4ff;
+      --color-text-secondary: #b3c0d8;
+      --color-text-muted: #8899b5;
+      --color-primary: #2d6be4;
+      --color-primary-hover: #1e55c4;
+      --color-accent: #c9a84c;
+      --color-accent-light: #e8c87a;
+      --color-border: #1e2d45;
+      --color-border-hover: #2d4060;
+      --c-ocean: #c9a84c;
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-size-xs: 0.75rem;
+      --font-size-sm: 0.875rem;
+      --font-size-base: 1rem;
+      --font-size-lg: 1.125rem;
+      --font-size-xl: 1.25rem;
+      --font-size-2xl: 1.5rem;
+      --font-size-3xl: 1.875rem;
+      --font-size-4xl: 2.25rem;
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --transition-fast: 150ms ease;
+      --transition-base: 250ms ease;
+      --radius-sm: 0.375rem;
+      --radius-md: 0.5rem;
+      --radius-lg: 0.75rem;
+      --radius-xl: 1rem;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-family);
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--color-text-secondary);
+      background: var(--color-bg);
+      -webkit-font-smoothing: antialiased;
+      padding-top: 64px;
+    }
+
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--color-bg); }
+    ::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--color-border-hover); }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+    a { color: var(--color-primary); text-decoration: none !important; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Buttons ── */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: var(--space-2); padding: var(--space-3) var(--space-5);
+      font-family: var(--font-family); font-size: var(--font-size-sm);
+      font-weight: 500; text-decoration: none !important; border-radius: var(--radius-md);
+      transition: all var(--transition-base); cursor: pointer; border: none;
+    }
+    .btn--primary {
+      background: linear-gradient(135deg, #c9a84c 0%, #e8c87a 50%, #c9a84c 100%);
+      background-size: 200% 200%; color: #0d1220; font-weight: 600;
+      box-shadow: 0 2px 12px rgba(201,168,76,0.25);
+    }
+    .btn--primary:hover {
+      background-position: right center; box-shadow: 0 4px 20px rgba(201,168,76,0.4);
+      transform: translateY(-1px); text-decoration: none !important;
+    }
+    .btn--secondary {
+      background: transparent; color: var(--color-text-primary);
+      border: 1px solid var(--color-border);
+    }
+    .btn--secondary:hover {
+      border-color: var(--color-border-hover); background: rgba(255,255,255,0.05);
+      text-decoration: none !important;
+    }
+
+    /* ── Header ── */
+    .header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background-color: rgba(8,12,20,.85);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--color-border); padding: 1rem 0;
+      transition: border-color var(--transition-base);
+    }
+    .header::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,.4) 40%, rgba(45,107,228,.4) 60%, transparent);
+      opacity: .6;
+    }
+    .header__inner { display: flex; align-items: center; justify-content: space-between; }
+    .header__logo {
+      display: flex; align-items: center; gap: .5rem;
+      text-decoration: none !important; transition: opacity .15s;
+    }
+    .header__logo:hover { opacity: .85; text-decoration: none !important; }
+    .header__logo-icon { width: 40px; height: 40px; flex-shrink: 0; }
+    .header__logo-text { font-size: 1.125rem; font-weight: 700; color: var(--color-text-primary); letter-spacing: -.02em; }
+    .header__logo-text span { color: var(--color-accent); }
+    .header__nav { display: flex; gap: 2rem; align-items: center; }
+    .header__nav-link {
+      font-size: .875rem; font-weight: 500; color: var(--color-text-secondary);
+      transition: color .15s; text-decoration: none !important;
+      position: relative; display: inline-flex; align-items: center;
+    }
+    .header__nav-link:hover,
+    .header__nav-link.active { color: var(--color-text-primary); }
+    .header__nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--color-accent);
+      transition: width .15s;
+    }
+    .header__nav-link.active::after { width: 100%; }
+    .nav-badge {
+      display: inline-block;
+      margin-left: 5px;
+      padding: 1px 5px;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #080c14;
+      background: var(--color-accent);
+      border-radius: 3px;
+      vertical-align: baseline;
+      white-space: nowrap;
+      animation: badgePulse 2s ease-in-out infinite;
+    }
+    @keyframes badgePulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.65; } }
+    .header__cta { display: none; }
+    .header__toggle {
+      display: none; flex-direction: column; justify-content: center;
+      gap: 4px; background: none; border: none; cursor: pointer; padding: 8px;
+    }
+    .header__toggle span { width: 24px; height: 2px; background: var(--color-text-primary); transition: all .3s; }
+    .header__toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+    .header__toggle.active span:nth-child(2) { opacity: 0; }
+    .header__toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+    @media (min-width: 768px) {
+      .header__toggle { display: none; }
+      .header__cta { display: block; }
+      .header__dropdown { position: relative; }
+      .header__dropdown-trigger { display: flex; align-items: center; gap: 4px; }
+      .header__dropdown-arrow { transition: transform var(--transition-fast); }
+      .header__dropdown:hover .header__dropdown-arrow,
+      .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
+      .header__dropdown-menu {
+        position: absolute; top: calc(100% + 8px); left: 0;
+        background: var(--color-bg-card); border: 1px solid var(--color-border);
+        border-radius: 10px; padding: .5rem 0; min-width: 180px;
+        display: none; opacity: 0; box-shadow: 0 8px 24px rgba(0,0,0,.4); z-index: 200;
+      }
+      .header__dropdown:hover .header__dropdown-menu,
+      .header__dropdown.open .header__dropdown-menu {
+        display: flex; flex-direction: column; opacity: 1;
+        transform: translateY(0);
+      }
+      .header__dropdown-item {
+        font-size: var(--font-size-sm); font-weight: 500;
+        color: var(--color-text-secondary); padding: .625rem 1rem;
+        border-radius: 6px; white-space: nowrap; text-decoration: none !important;
+        transition: background .15s, color .15s;
+      }
+      .header__dropdown-item:hover {
+        background: rgba(201,168,76,.1); color: var(--color-accent); text-decoration: none !important;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .header { position: fixed; top: 0; left: 0; right: 0; z-index: 200; }
+      .header__inner {
+        background: var(--color-bg-card); border-bottom: 1px solid var(--color-border);
+        position: relative; z-index: 201;
+      }
+      .header__toggle { display: flex; }
+      .header__nav {
+        display: none; flex-direction: column; gap: 0;
+        position: absolute; top: 100%; left: 0; right: 0;
+        background: var(--color-bg-card); border-bottom: 1px solid var(--color-border);
+        z-index: 200;
+      }
+      .header__nav.active { display: flex; }
+      .header__nav-link {
+        display: block; width: 100%; padding: 14px 40px 14px 24px;
+        border-bottom: 1px solid var(--color-border); font-size: 1.1rem;
+      }
+      .header__dropdown { position: static; width: 100%; 
+       }
+      .header__dropdown-trigger {
+        display: flex; align-items: center; justify-content: space-between;
+        width: 100%; padding: 14px 40px 14px 24px;
+        border-bottom: 1px solid var(--color-border); font-size: 1.1rem;
+      }
+      .header__dropdown-arrow { transition: transform var(--transition-fast); }
+      .header__dropdown.active .header__dropdown-arrow,
+      .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
+      .header__dropdown-menu { display: none; flex-direction: column; background: rgba(0,0,0,.25); padding: 0; }
+      .header__dropdown.active .header__dropdown-menu,
+      .header__dropdown.open .header__dropdown-menu { display: flex; }
+      .header__dropdown-item {
+        display: block; width: 100%; padding: 12px 40px;
+        font-size: 1rem; color: var(--color-text-secondary);
+        border-bottom: 1px solid rgba(255,255,255,.06);
+      }
+      .header__dropdown-item:hover { background: rgba(201,168,76,.08); color: var(--color-accent); }
+    }
+
+    /* ── Article Layout ── */
+    .article-hero {
+      padding: 100px 0 var(--space-12);
+    }
+    .article-hero .container { max-width: 860px; }
+    .article-meta {
+      display: flex; align-items: center; gap: var(--space-3);
+      flex-wrap: wrap; margin-bottom: var(--space-6);
+    }
+    .article-category {
+      display: inline-block; padding: 4px 12px;
+      background: rgba(201,168,76,.15); border: 1px solid rgba(201,168,76,.3);
+      border-radius: 20px; font-size: var(--font-size-xs); font-weight: 600;
+      color: var(--color-accent); text-transform: uppercase; letter-spacing: .08em;
+    }
+    .article-date {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+    }
+    .article-read-time {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+    }
+
+    .article-hero__author {
+      display: flex; align-items: center; gap: 1rem;
+      margin-top: 2rem; padding-top: 2rem;
+      border-top: 1px solid var(--color-border);
+    }
+    .article-hero__author-avatar {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; color: var(--color-bg); font-size: var(--font-size-base);
+    }
+    .article-hero__author-info { display: flex; flex-direction: column; }
+    .article-hero__author-name {
+      font-weight: 600; color: var(--color-text-primary);
+      font-size: var(--font-size-sm);
+    }
+    .article-hero__author-role {
+      font-size: var(--font-size-xs); color: var(--color-text-muted);
+    }
+
+    .article-hero__title {
+      font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700;
+      color: var(--color-text-primary); line-height: 1.25; margin-bottom: var(--space-6);
+    }
+    .article-hero__title span { color: var(--color-accent); }
+    .article-hero__intro {
+      font-size: var(--font-size-lg); color: var(--color-text-secondary);
+      line-height: 1.75; max-width: 760px;
+    }
+
+    /* ── Article Body ── */
+    .article-body {
+      padding: var(--space-16) 0;
+      background: #000;
+    }
+    .article-body .container {
+      max-width: 860px;
+      display: grid;
+      grid-template-columns: 1fr 260px;
+      gap: var(--space-12);
+      align-items: start;
+    }
+    .article-content h2 {
+      font-size: var(--font-size-2xl); font-weight: 700;
+      color: var(--color-text-primary); margin: var(--space-10) 0 var(--space-4);
+    }
+    .article-content h2:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+    .article-content h3 {
+      font-size: var(--font-size-xl); font-weight: 600;
+      color: var(--color-text-primary); margin: var(--space-8) 0 var(--space-3);
+    }
+    .article-content p { margin-bottom: var(--space-4); color: var(--color-text-secondary); }
+    .article-content strong { color: var(--color-text-primary); font-weight: 600; }
+    .article-content ul, .article-content ol {
+      margin: var(--space-4) 0 var(--space-6) var(--space-6);
+    }
+    .article-content li { margin-bottom: var(--space-2); color: var(--color-text-secondary); }
+    .article-content a { color: var(--color-primary); }
+    .article-content a:hover { text-decoration: underline; }
+
+    /* Feature card grid */
+    .feature-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: var(--space-4); margin: var(--space-6) 0;
+    }
+    .feature-card {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5);
+      transition: border-color var(--transition-base);
+    }
+    .feature-card:hover { border-color: rgba(201,168,76,.4); }
+    .feature-card__num {
+      display: inline-block; width: 28px; height: 28px; line-height: 28px;
+      text-align: center; background: rgba(201,168,76,.15);
+      color: var(--color-accent); font-size: var(--font-size-sm);
+      font-weight: 700; border-radius: 50%; margin-bottom: var(--space-3);
+    }
+    .feature-card__title {
+      font-size: var(--font-size-base); font-weight: 600;
+      color: var(--color-text-primary); margin-bottom: var(--space-2);
+    }
+    .feature-card__desc {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.6;
+    }
+
+    /* Callout / tip box */
+    .callout {
+      background: rgba(45,107,228,.08); border: 1px solid rgba(45,107,228,.2);
+      border-left: 3px solid var(--color-primary);
+      border-radius: var(--radius-md); padding: var(--space-5);
+      margin: var(--space-6) 0;
+    }
+    .callout--accent {
+      background: rgba(201,168,76,.06); border: 1px solid rgba(201,168,76,.2);
+      border-left: 3px solid var(--color-accent);
+    }
+    .callout__label {
+      font-size: var(--font-size-xs); font-weight: 700; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--color-primary); margin-bottom: var(--space-2);
+    }
+    .callout--accent .callout__label { color: var(--color-accent); }
+    .callout p { margin: 0; font-size: var(--font-size-sm); }
+
+    /* Scenario steps */
+    .scenario-list {
+      list-style: none; margin: var(--space-4) 0 var(--space-6); padding: 0;
+    }
+    .scenario-list li {
+      display: flex; gap: var(--space-4); padding: var(--space-4) 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .scenario-list li:last-child { border-bottom: none; }
+    .scenario-list__icon {
+      width: 36px; height: 36px; flex-shrink: 0;
+      background: rgba(201,168,76,.1); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; margin-top: 2px;
+    }
+    .scenario-list__content strong {
+      display: block; font-size: var(--font-size-base); color: var(--color-text-primary);
+      margin-bottom: 2px;
+    }
+    .scenario-list__content span { font-size: var(--font-size-sm); }
+
+    /* ── Sidebar TOC ── */
+    .article-sidebar {
+      position: sticky; top: 88px;
+    }
+    .toc {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5);
+    }
+    .toc__title {
+      font-size: var(--font-size-xs); font-weight: 700; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--color-text-muted); margin-bottom: var(--space-4);
+    }
+    .toc__list { list-style: none; }
+    .toc__list li + li { margin-top: var(--space-2); }
+    .toc__link {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+      text-decoration: none !important; display: block; line-height: 1.4;
+      transition: color var(--transition-fast);
+    }
+    .toc__link:hover { color: var(--color-text-primary); text-decoration: none !important; }
+
+    .sidebar-cta {
+      margin-top: var(--space-6); background: var(--color-bg-card);
+      border: 1px solid var(--color-border); border-radius: var(--radius-lg);
+      padding: var(--space-5); text-align: center;
+    }
+    .sidebar-cta p {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary);
+      margin-bottom: var(--space-4); line-height: 1.5;
+    }
+    .sidebar-cta .btn { width: 100%; justify-content: center; }
+
+    /* ── Related Posts ── */
+    .related {
+      padding: var(--space-12) 0;
+      background: var(--color-bg);
+      border-top: 1px solid var(--color-border);
+    }
+    .related__title {
+      font-size: var(--font-size-2xl); font-weight: 700;
+      color: var(--color-text-primary); margin-bottom: var(--space-8);
+    }
+    .related__grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6);
+    }
+    .related-card {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5);
+      text-decoration: none !important; display: block;
+      transition: border-color var(--transition-base), transform var(--transition-base);
+    }
+    .related-card:hover { border-color: rgba(201,168,76,.4); transform: translateY(-2px); text-decoration: none !important; }
+    .related-card__cat {
+      font-size: var(--font-size-xs); font-weight: 600; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--color-accent); margin-bottom: var(--space-3);
+    }
+    .related-card__title {
+      font-size: var(--font-size-base); font-weight: 600;
+      color: var(--color-text-primary); line-height: 1.4; margin-bottom: var(--space-2);
+    }
+    .related-card__desc {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.5;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      padding: var(--space-10) 0 var(--space-8);
+      background: var(--color-bg);
+      border-top: 1px solid var(--color-border);
+    }
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-8);
+      margin-bottom: var(--space-10);
+    }
+    @media (min-width: 768px) {
+      .footer__grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    .footer__section { text-align: left; }
+    .footer__title {
+      font-size: var(--font-size-base);
+      font-weight: 600;
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-4);
+      position: relative;
+      padding-bottom: var(--space-2);
+    }
+    .footer__title::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 40px; height: 2px;
+      background: linear-gradient(90deg, var(--color-accent), transparent);
+      opacity: 0.8;
+    }
+    .footer__description {
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+    .footer__links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer__links li { margin-bottom: var(--space-3); }
+    .footer__link { text-decoration: none !important; 
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+      transition: color var(--transition-fast);
+      display: inline-block;
+    }
+    .footer__link:hover { color: var(--color-text-primary); transform: translateX(4px); }
+    .footer__link--email { color: var(--color-primary); font-weight: 500; }
+    .footer__license { color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--space-2); }
+    .footer__company-short { color: var(--color-text-muted); font-size: var(--font-size-xs); }
+    .footer__bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-4);
+      padding-top: var(--space-8);
+      border-top: 1px solid var(--color-border);
+    }
+    @media (min-width: 768px) {
+      .footer__bottom { flex-direction: row; justify-content: space-between; }
+    }
+    .footer__copyright { color: var(--color-text-muted); font-size: var(--font-size-sm); margin: 0; }
+    .footer__platforms { display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: center; }
+    .footer__platform-badge {
+      text-decoration: none !important;
+      display: inline-block;
+      padding: var(--space-1) var(--space-3);
+      background-color: rgba(201, 168, 76, 0.1);
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      border-radius: 4px;
+      color: var(--color-text-primary);
+      font-size: var(--font-size-xs);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all var(--transition-fast);
+    }
+    .footer__platform-badge:hover {
+      text-decoration: none !important;
+      background-color: rgba(201, 168, 76, 0.2);
+      border-color: var(--color-accent);
+      transform: translateY(-2px);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .article-body .container { grid-template-columns: 1fr; }
+      .article-sidebar { display: none; }
+    }
+    @media (max-width: 767px) {
+      .article-hero { padding: 90px 0 var(--space-10); background: linear-gradient(180deg, #0a1628 0%, #080c14 100%); }
+      .feature-grid { grid-template-columns: 1fr; }
+      .related__grid { grid-template-columns: 1fr; }
+    }
+    }
+
+    /* ── Article Divider ── */
+    hr.article-divider, .article-content hr {
+      border: none; border-top: 1px solid rgba(255,255,255,0.08);
+      margin: var(--space-8) 0;
+    }
+
+    /* ── Scroll Reveal (disabled: content always visible) ── */
+    .reveal {
+      opacity: 1; transform: none;
+      transition: none;
+    }
+    /* reveal--visible disabled */
+  .header__lang-wrap {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      margin-left: 8px;
+    }
+    .header__lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 10px;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--c-accent, #c9a84c);
+      background: transparent;
+      border: 1px solid var(--c-accent, #c9a84c);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background .15s;
+      line-height: 1.4;
+    }
+    .header__lang-btn:hover { background: rgba(201,168,76,.1); }
+    .header__lang-btn svg { transition: transform .15s; }
+    .header__lang-wrap:hover .header__lang-btn svg,
+    .header__lang-wrap.active .header__lang-btn svg { transform: rotate(180deg); }
+    .header__lang-menu {
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      min-width: 140px;
+      background: #111827;
+      border: 1px solid #1e2d45;
+      border-radius: 8px;
+      padding: 4px;
+      display: none;
+      opacity: 0;
+      box-shadow: 0 4px 20px rgba(0,0,0,.4);
+      z-index: 300;
+    }
+    .header__lang-wrap:hover .header__lang-menu,
+    .header__lang-wrap.active .header__lang-menu {
+      display: flex;
+      flex-direction: column;
+      opacity: 1;
+    }
+    .header__lang-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 10px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #a3b1cc;
+      text-decoration: none !important;
+      border-radius: 5px;
+      transition: background .15s, color .15s;
+      white-space: nowrap;
+    }
+    .header__lang-item:hover {
+      background: rgba(201,168,76,.1);
+      color: #e8c87a;
+      text-decoration: none !important;
+    }
+    .header__lang-item--cur {
+      color: #e8c87a;
+      background: rgba(201,168,76,.08);
+    }
+    .header__lang-flag { font-size: 15px; line-height: 1; }
+  
+  @media print{
+    *{box-shadow:none!important;text-shadow:none!important;}
+    body{background:white!important;color:black!important;}
+    .header,.footer,nav,.sidebar,iframe{display:none!important;}
+    main,article,section,.container{max-width:100%!important;margin:0!important;padding:10px!important;}
+    h1,h2,h3,h4,h5,h6{page-break-after:avoid;page-break-inside:avoid;}
+    img{max-width:100%!important;page-break-inside:avoid;}
+    a{color:black!important;text-decoration:underline;}
+    p,blockquote,ul,ol,dl,table{page-break-inside:avoid;}
+    @page{margin:2cm;}
+  }
+  </style>
+<script type="application/ld+json"></script>
+
+    <style>
+ 
+<a href="#main-content" class="skip-to-content">본문으로 건너뛰기</a>
+     .skip-to-content {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: var(--color-accent);
+        color: var(--color-bg);
+        padding: 8px 16px;
+        z-index: 10000;
+        transition: top 0.3s;
+      }
+      .skip-to-content:focus {
+        top: 0;
+      }
+    </style>
+  
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "본문으로 건너뛰기\n     .skip-to-content {\n        position: absolute;\n        top: -40px;\n        left: 0;\n        bac",
+  "datePublished": "2026-01-01",
+  "dateModified": "2026-01-01",
+  "author": {
+    "@type": "Organization",
+    "name": "Tuyue Media Gateway"
+  },
+  "image": "https://www.tuyuesouxin.cn/assets/og-image.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Tuyue Media Gateway",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.tuyuesouxin.cn/favicon.svg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.tuyuesouxin.cn/ko/blog/ocean-engine-ai-assistant/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tuyuesouxin.cn/ko/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.tuyuesouxin.cn/ko/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "본문으로 건너뛰기\n     .skip-to-content {\n        position: absolute;\n        top: -40px;\n        left: 0;\n        bac",
+      "item": "https://www.tuyuesouxin.cn/ko/blog/ocean-engine-ai-assistant/"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <!-- 본문으로 건너뛰기 -->
+  <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
+
+  
+  
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="/ko/" class="header__logo">
+          <svg class="header__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#c9a84c"/>
+                <stop offset="100%" stop-color="#e8c87a"/>
+              </linearGradient>
+              <clipPath id="moonClip">
+                <!-- Full circle -->
+                <circle cx="30" cy="24" r="16"/>
+              </clipPath>
+            </defs>
+            <!-- Crescent Moon: circle minus overlapping circle -->
+            <circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/>
+            <circle cx="37" cy="20" r="13" fill="#080c14"/>
+            <!-- TMG letters inside/near the crescent -->
+            <text x="4" y="32" font-family="Inter, -apple-system, sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-0.8">TMG</text>
+          </svg>
+          <span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
+        </a>
+        <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="header__nav" id="main-nav">
+          <div class="header__dropdown">
+            <a href="/ko/services/" class="header__nav-link header__dropdown-trigger">
+              서비스
+              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="header__dropdown-menu">
+              <a href="/ko/services/" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">전체 서비스</a>
+              <a href="/ko/services/wechat/" class="header__dropdown-item">WeChat 광고</a>
+              <a href="/ko/services/douyin/" class="header__dropdown-item">Douyin 광고</a>
+              <a href="/ko/services/baidu/" class="header__dropdown-item">Baidu SEM</a>
+              <a href="/ko/services/bing/" class="header__dropdown-item">Bing China</a>
+              <a href="/ko/services/xiaohongshu/" class="header__dropdown-item">샤오홍슈(RED)</a>
+              <a href="/ko/services/bilibili/" class="header__dropdown-item">Bilibili 광고</a>
+              <a href="/ko/geo/" class="header__dropdown-item">중국 GEO</a>
+            </div>
+          </div>
+          <a href="/ko/pricing/" class="header__nav-link">요금</a>
+          <a href="/ko/client-stories/" class="header__nav-link">고객 사례</a>
+          <a href="/ko/geo/" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
+          <a href="/ko/blog/" class="header__nav-link active">블로그</a>
+          <a href="/ko/faqs/" class="header__nav-link">FAQ</a>
+          <div class="header__dropdown">
+            <a href="/ko/about/" class="header__nav-link header__dropdown-trigger">
+              회사 소개
+              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="header__dropdown-menu">
+              <a href="/ko/why-tmg/" class="header__dropdown-item">TMG를 선택해야 하는 이유</a>
+              <a href="/ko/about/" class="header__dropdown-item">회사 소개</a>
+              <a href="/ko/contact/" class="header__dropdown-item">문의하기</a>
+            </div>
+          </div>
+        </nav>
+        <div class="header__lang-wrap">
+        <button class="header__lang-btn" onclick="this.parentElement.classList.toggle('active')">
+          <span class="header__lang-flag">🇰🇷</span>한국어
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 3.5l3 4 3-4"/></svg>
+        </button>
+        <div class="header__lang-menu">
+            <a href="/blog/ocean-engine-ai-assistant/" class="header__lang-item"><span class="header__lang-flag">🇺🇸</span>English</a>
+            <a href="/ja/blog/ocean-engine-ai-assistant/" class="header__lang-item"><span class="header__lang-flag">🇯🇵</span>日本語</a>
+          </div>
+      </div>
+        <div class="header__cta">
+          <a href="/ko/contact/" class="btn btn--primary">시작하기</a>
+        </div>
+      </div>
+    </div>
+  </header>
+<!-- Article Hero -->
+<section class="article-hero">
+<div class="container">
+<div class="article-meta">
+<span class="article-category">Ocean Engine</span>
+<span class="article-date">2026년 4월 23일</span>
+<span class="article-read-time">약 8분 소요</span>
+</div>
+<h1 class="article-hero__title">메이트 즈싱: 오션 엔진의 AI 광고 어시스턴트</h1>
+<p class="article-hero__intro">Ocean Engine의 AI 광고 어시스턴트 Zhitu Xing(智图星)은 스마트 Q&A, 계정 분석, 데이터 쿼리, 진단 분석 기능을 플랫폼 내에서 제공합니다.</p>
+<div class="article-hero__author">
+<div class="article-hero__author-avatar">TMG</div>
+<div class="article-hero__author-info">
+<div class="article-hero__author-name">Tuyue Media Gateway</div>
+<div class="article-hero__author-role">유료 미디어 팀 · 상하이</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Article Body -->
+<main id="main-content" class="article-body">
+<div class="container">
+<article class="article-content reveal">
+<h2 id="what-is">🤖 Zhitu Xing이란?</h2>
 <p>Zhitu Xing은 Ocean Engine 앱(ByteDance의 Douyin 광고 캠페인 관리 모바일 플랫폼)에 네이티브로 내장된 AI 어시스턴트입니다. 주요 플랫폼 업데이트의 일환으로 출시되었으며, 광고 제품 전반에 생성형 AI를 통합하려는 ByteDance의 전략을 반영합니다.</p>
-<p>어시스턴트는 홈 화면의 플로팅 버튼과 앱 전반의 컨텍스트 진입점을 통해 접근할 수 있습니다. 서드파티 분석 도구나 외부 챗봇과 달리, Zhitu Xing은 계정 데이터에 직접 접근하여 캠페인 성과를 읽고, 문제를 진단하며, 추천을 제공합니다. CSV 파일을 내보낼 필요가 없습니다.</p>
-<div class="callout callout--accent">
-<div class="callout__label">플랫폼 참고</div>
-<p>Zhitu Xing은 Ocean Engine 웹 대시보드가 아닌 Ocean Engine 앱(巨量引擎APP)에서만 사용할 수 있습니다. 앱은 iOS와 중국 앱 스토어에서 다운로드 가능하며, 인증된 에이전시의 QR 코드 스캔을 통해서도 접근할 수 있습니다.</p>
+
+<div class="stats-grid">
+  <div class="stat-card"><div class="stat-card__num">6.65억+</div><div class="stat-card__label">월간 활성<br>사용자</div></div>
+  <div class="stat-card"><div class="stat-card__num">42%</div><div class="stat-card__label">AI 기반 광고<br>수익</div></div>
+  <div class="stat-card"><div class="stat-card__num">2.8배</div><div class="stat-card__label">최적화를 통한<br>ROAS 향상</div></div>
+  <div class="stat-card"><div class="stat-card__num">35%</div><div class="stat-card__label">기존 방법 대비<br>CPA 절감</div></div>
+  <div class="stat-card"><div class="stat-card__num">92%</div><div class="stat-card__label">검색 광고의<br>브랜드 가시성</div></div>
+  <div class="stat-card"><div class="stat-card__num">¥8.5</div><div class="stat-card__label">브랜드 키워드<br>평균 CPC</div></div>
+  <div class="stat-card"><div class="stat-card__num">1.8억+</div><div class="stat-card__label">일일 검색<br>쿼리</div></div>
 </div>
 
-<h2 id="four-capabilities">⚙️ 4가지 핵심 기능</h2>
-<p>ByteDance는 공식 제품 매뉴얼에서 Zhitu Xing의 4가지 주요 사용 사례를 문서화했습니다. 각각 광고 워크플로우의 다른 레이어를 다룹니다.</p>
-<div class="table-wrapper" style="overflow-x:auto; margin: 2rem 0;">
-<table class="article-table">
-<thead>
-<tr>
-<th>항목 | 특징 | 장점 | 단점</th>
-</tr>
-</thead>
-<tbody>
-<tr><td><strong>항목 1</strong></td><td>특징 설명</td><td>장점 설명</td><td>단점 설명</td></tr>
-<tr><td><strong>항목 2</strong></td><td>특징 설명</td><td>장점 설명</td><td>단점 설명</td></tr>
-<tr><td><strong>항목 3</strong></td><td>특징 설명</td><td>장점 설명</td><td>단점 설명</td></tr>
-</tbody>
-</table>
-</div>
-
-
-<div class="feature-grid">
-<div class="feature-card">
-<div class="feature-card__num">1</div>
-<div class="feature-card__title">스마트 Q&A (智能问答)</div>
-<p class="feature-card__desc">텍스트나 음성으로 광고 관련 질문을 하면 Zhitu Xing이 이해하기 쉬운 언어로 응답합니다. 도움말 문서를 검색할 필요 없이 질문 하나에 답변 하나.</p>
-</div>
-<div class="feature-card">
-<div class="feature-card__num">2</div>
-<div class="feature-card__title">계정 분석 (单/多账户解读)</div>
-<p class="feature-card__desc">하나 또는 여러 계정의 거시적 성과를 요약합니다. 이상치를 감지하고, 상위·하위 성과 계정을 식별하며, 업계 데이터와 벤치마킹합니다.</p>
-</div>
-<div class="feature-card">
-<div class="feature-card__num">3</div>
-<div class="feature-card__title">스마트 데이터 쿼리 (智能问数)</div>
-<p class="feature-card__desc">자연어로 캠페인 데이터를 쿼리합니다. 시간, 광고 단위, 크리에이티브 ID, 목표별 필터링과 지출, CTR, CVR, ROI 등의 지표를 지원합니다.</p>
-</div>
-<div class="feature-card">
-<div class="feature-card__num">4</div>
-<div class="feature-card__title">진단 분석 (诊断分析)</div>
-<p class="feature-card__desc">저성과 크리에이티브와 광고를 식별하고, 비효율적 지출의 원클릭 정리, 거부된 크리에이티브의 원클릭 수정 후 재게시를 지원합니다.</p>
-</div>
-</div>
-
-
-<div class="stats-grid">
-  <div class="stat-card"><div class="stat-card__num">6.65억+</div><div class="stat-card__label">월간 활성<br>사용자</div></div>
-  <div class="stat-card"><div class="stat-card__num">42%</div><div class="stat-card__label">AI 기반 광고<br>수익</div></div>
-  <div class="stat-card"><div class="stat-card__num">2.8배</div><div class="stat-card__label">최적화를 통한<br>ROAS 향상</div></div>
-  <div class="stat-card"><div class="stat-card__num">35%</div><div class="stat-card__label">기존 방법 대비<br>CPA 절감</div></div>
-  <div class="stat-card"><div class="stat-card__num">92%</div><div class="stat-card__label">검색 광고의<br>브랜드 가시성</div></div>
-  <div class="stat-card"><div class="stat-card__num">¥8.5</div><div class="stat-card__label">브랜드 키워드<br>평균 CPC</div></div>
-  <div class="stat-card"><div class="stat-card__num">1.8억+</div><div class="stat-card__label">일일 검색<br>쿼리</div></div>
-</div>
-<h2 id="smart-qa">🤖 1. 스마트 Q&A — 인라인 지식 베이스</h2>
-<p>스마트 Q&A 기능은 질문을 입력하거나 말하면 구조화된 쉬운 언어의 응답을 제공합니다. Ocean Engine 도움말 센터를 검색하거나, 계정 관리자에게 묻거나, 지원 티켓 답변을 해석할 필요가 없습니다.</p>
-<p>실무에서는 운영 질문에 가장 유용합니다: 광고가 심사 중인 이유, 이 지표의 의미, 리타겟팅 오디언스 설정 방법, oCPX와 CPC 입찰의 차이점 등. 어시스턴트는 맥락이 풍부한 질문을 이해하고 적절한 수준의 상세함으로 답변합니다.</p>
-<p>감사 관련 이슈와 인간 검토 에스컬레이션의 경우, ByteDance는 별도 시스템인 Juliangwenwen(巨量问问)으로 라우팅합니다. Zhitu Xing은 일반 지식과 계정 질문을 처리하고, Juliangwenwen은 컴플라이언스와 심사 상태를 처리합니다.</p>
-
-<h2 id="account-analysis">📊 2. 계정 분석 — 모든 계정을 하나로 요약</h2>
-<p>여러 광고주 계정을 관리하는 경우(대부분의 에이전시와 대형 브랜드가 해당), 다중 계정 분석 기능이 특히 유용합니다. 포트폴리오 전반의 현황과 문제 집중 영역을 통합 뷰로 제공합니다.</p>
-<p>이 기능은 성과 요약, 이상치 감지, 업계 벤치마크 비교를 제공합니다. 여러 브랜드나 지역을 관리하는 에이전시나 대형 광고주에게 특히 가치 있습니다.</p>
-
-
-<div class="callout"><div class="callout__label">TMG 인사이트</div><p>Ocean Engine AI 어시스턴트는 광고 운영 자동화와 최적화를 지원하는 차세대 도구입니다. TMG의 테스트에서 AI 어시스턴트를 활용한 캠페인은 수동 운영 대비 ROAS가 2.5배 높고, 운영 시간이 50% 절감되었습니다.</p></div>
-<h2 id="smart-data-query">📈 3. 스마트 데이터 쿼리 — 데이터와 대화하세요</h2>
-<p>자연어 쿼리를 데이터 요청으로 번역하여 기술적 SQL이나 플랫폼 필터를 몰라도 성과 데이터를 검색할 수 있게 합니다.</p>
-<p>시간, 광고 단위, 크리에이티브 ID, 목표별 필터링과 지출, CTR, CVR, ROI 등의 지표를 지원합니다. 여러 광고 계정에 걸친 성과를 단일 대시보드 뷰로 집계합니다.</p>
-
-<h2 id="diagnostic">⚠️ 4. 진단 분석 — 문제 발견 및 수정</h2>
-<p>저성과 크리에이티브와 광고를 식별하고, 비효율적 지출의 원클릭 정리를 지원합니다. 거부된 크리에이티브의 원클릭 수정 후 재게시 기능도 제공합니다.</p>
-<p>성과 추천은 AI 생성이며, 인간의 판단을 대체하지 않습니다. 중요한 예산 결정에는 항상 검증이 필요합니다.</p>
-
-<div class="takeaway-banner">
-<div class="takeaway-banner__title">핵심 요점</div>
-<p class="takeaway-banner__text">메이트 즈싱: 오션 엔진의 AI 광고 어시스턴트에 대한 핵심 요점을 확인하세요.</p>
-</div>
-
-<div class="callout callout--accent">
-<div class="callout__label">프로 팁</div>
-<p>소규모 테스트 예산으로 시작하고 성과 데이터를 기반으로 확장하세요. 먼저 고의도 키워드와 오디언스에 집중한 다음 점진적으로 확장하세요. 플랫폼 분석을 사용하여 최고 성과 광고 크리에이티브를 식별하고 효과가 있는 것에 집중 투자하세요.</p>
-</div>
-<h2 id="access">🚀 접근 방법 및 제한사항</h2>
-<p>Ocean Engine 계정이 있는 대부분 광고주는 플랫폼 대시보드에서 이 기능을 찾아 활성화할 수 있습니다.</p>
-<div class="callout callout--accent">
-<div class="callout__label">TMG 참고</div>
-<p>자연어로 질문하기 — 문서를 검색하는 대신 Zhitu Xing에 직접 물어보세요. 설정이나 활용에 대해 상담이 필요하시면 TMG에 문의하세요.</p>
-</div>
-</article>
-<!-- Sidebar -->
-<aside class="article-sidebar">
-<nav class="toc">
-<div class="toc__title">이 기사에서</div>
-<ul class="toc__list">
-<li><a href="#what-is" class="toc__link">🤖 Zhitu Xing이란?</a></li>
-<li><a href="#four-capabilities" class="toc__link">⚙️ 4가지 핵심 기능</a></li>
-<li><a href="#smart-qa" class="toc__link">🤖 스마트 Q&A</a></li>
-<li><a href="#account-analysis" class="toc__link">📊 계정 분석</a></li>
-<li><a href="#smart-data-query" class="toc__link">📊 스마트 데이터 쿼리</a></li>
-<li><a href="#diagnostic" class="toc__link">⚠️ 진단 분석</a></li>
-<li><a href="#access" class="toc__link">📄 접근 방법</a></li>
-</ul>
-</nav>
-<div class="sidebar-cta">
-<p>Zhitu Xing 설정과 활용에 대해 상담이 필요하신가요?</p>
-<a class="btn btn--primary" href="/ko/contact/">Zhitu Xing 상담하기</a>
-</div>
-</aside>
-</div>
-</main>
-<!-- Related Posts placeholder -->
-<section class="related">
-<div class="container">
-<div class="related__title">더보기</div>
-<div class="related__grid">
-<a class="related-card" href="/ko/blog/ocean-engine-overview/">
-<div class="related-card__cat">Ocean Engine</div>
-<div class="related-card__title">Ocean Engine 종합 가이드</div>
-<p class="related-card__desc">ByteDance의 중국 광고 에코시스템 7개 플랫폼 분석.</p>
-</a>
-<a class="related-card" href="/ko/blog/ocean-engine-local-reach/">
-<div class="related-card__cat">Ocean Engine</div>
-<div class="related-card__title">Ocean Engine 로컬 리치</div>
-<p class="related-card__desc">로컬 비즈니스를 위한 위치 기반 광고 전략.</p>
-</a>
-<a class="related-card" href="/ko/blog/douyin-enterprise-account/">
-<div class="related-card__cat">더우인 광고</div>
-<div class="related-card__title">더우인 엔터프라이즈 계정 가이드</div>
-<p class="related-card__desc">Blue V 인증과 Douyin Store 통합.</p>
-</a>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div class="footer__section">
-          <h4 class="footer__title">TMG 소개</h4>
-          <p class="footer__description">
-            중국 1,000억 달러 디지털 광고 시장으로의 단일 액세스 포인트. 국제 에이전시가 중국 플랫폼을 쉽게 탐색할 수 있도록 지원합니다.
-          </p>
-        </div>
-        <div class="footer__section">
-          <h4 class="footer__title">바로가기</h4>
-          <ul class="footer__links">
-            <li><a href="/ko/services/" class="footer__link">서비스</a></li>
-            <li><a href="/ko/pricing/" class="footer__link">요금</a></li>
-            <li><a href="/ko/about/" class="footer__link">회사 소개</a></li>
-            <li><a href="/ko/client-stories/" class="footer__link">고객 사례</a></li>
-            <li><a href="/ko/faqs/" class="footer__link">FAQ</a></li>
-          </ul>
-        </div>
-        <div class="footer__section">
-          <h4 class="footer__title">문의하기</h4>
-          <ul class="footer__links">
-            <li>
-              <a href="mailto:tmg@tuyuesouxin.cn" class="footer__link footer__link--email">tmg@tuyuesouxin.cn</a>
-            </li>
-            <li>
-              <a href="#contactQR" class="footer__link">
-                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: text-bottom; margin-right: 4px;">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                </svg>
-                WhatsApp (클릭하여 스캔)
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__section">
-          <h4 class="footer__title">법적 고지</h4>
-          <ul class="footer__links">
-            <li class="footer__license">사업자 등록 번호: 91310114MADKG4UF0G</li>
-            <li class="footer__company-short">Tuyue Media Gateway</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p class="footer__copyright">© 2026 Tuyue Media Gateway. 모든 권리 보유.</p>
-        <div class="footer__platforms">
-          <a href="https://ad.weixin.qq.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">WeChat</a>
-          <a href="https://www.oceanengine.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Douyin</a>
-          <a href="https://e.baidu.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Baidu</a>
-          <a href="https://www.xiaohongshu.com/brand" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">샤오홍슈(RED)</a>
-          <a href="https://member.bilibili.com/platform/ad" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bilibili</a>
-          <a href="https://ads.microsoft.com/zh-cn" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bing China</a>
-</div>
-      </div>
-    </div>
-  </footer>
-<script>
-  // Mobile Menu & Dropdown Toggle
-  (function () {
-    var toggle = document.querySelector('.header__toggle');
-    var nav = document.querySelector('.header__nav');
-    if (toggle && nav) {
-      toggle.addEventListener('click', function () {
-        const isOpen = toggle.classList.toggle('active');
-        nav.classList.toggle('active', isOpen);
-        toggle.setAttribute('aria-expanded', String(isOpen));
-      });
-    }
-    nav.querySelectorAll('.header__dropdown').forEach(function (dropdown) {
-      var trigger = dropdown.querySelector('.header__dropdown-trigger');
-      if (trigger) {
-        trigger.addEventListener('click', function (e) {
-          e.preventDefault();
-          nav.querySelectorAll('.header__dropdown').forEach(function (d) {
-            if (d !== dropdown) d.classList.remove('open');
-          });
-          dropdown.classList.toggle('open');
-        });
-      }
-    });
-    document.addEventListener('click', function (e) {
-      if (!nav.contains(e.target)) {
-        nav.querySelectorAll('.header__dropdown').forEach(function (d) {
-          d.classList.remove('open');
-        });
-      }
-    });
-  })();
-
-  // Scroll Reveal (disabled: content always visible)
-  (function () {
-    // Reveal animation removed - user prefers content always visible
-  })();
-  </script>
-</body>
-</html>
+
+<p>어시스턴트는 홈 화면의 플로팅 버튼과 앱 전반의 컨텍스트 진입점을 통해 접근할 수 있습니다. 서드파티 분석 도구나 외부 챗봇과 달리, Zhitu Xing은 계정 데이터에 직접 접근하여 캠페인 성과를 읽고, 문제를 진단하며, 추천을 제공합니다. CSV 파일을 내보낼 필요가 없습니다.</p>
+<div class="callout callout--accent">
+<div class="callout__label">플랫폼 참고</div>
+<p>Zhitu Xing은 Ocean Engine 웹 대시보드가 아닌 Ocean Engine 앱(巨量引擎APP)에서만 사용할 수 있습니다. 앱은 iOS와 중국 앱 스토어에서 다운로드 가능하며, 인증된 에이전시의 QR 코드 스캔을 통해서도 접근할 수 있습니다.</p>
+</div>
+
+<h2 id="four-capabilities">⚙️ 4가지 핵심 기능</h2>
+<p>ByteDance는 공식 제품 매뉴얼에서 Zhitu Xing의 4가지 주요 사용 사례를 문서화했습니다. 각각 광고 워크플로우의 다른 레이어를 다룹니다.</p>
+<div class="table-wrapper" style="overflow-x:auto; margin: 2rem 0;">
+<table class="article-table">
+<thead>
+<tr>
+<th>항목 | 특징 | 장점 | 단점</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><strong>항목 1</strong></td><td>특징 설명</td><td>장점 설명</td><td>단점 설명</td></tr>
+<tr><td><strong>항목 2</strong></td><td>특징 설명</td><td>장점 설명</td><td>단점 설명</td></tr>
+<tr><td><strong>항목 3</strong></td><td>특징 설명</td><td>장점 설명</td><td>단점 설명</td></tr>
+</tbody>
+</table>
+</div>
+
+
+<div class="feature-grid">
+<div class="feature-card">
+<div class="feature-card__num">1</div>
+<div class="feature-card__title">스마트 Q&A (智能问答)</div>
+<p class="feature-card__desc">텍스트나 음성으로 광고 관련 질문을 하면 Zhitu Xing이 이해하기 쉬운 언어로 응답합니다. 도움말 문서를 검색할 필요 없이 질문 하나에 답변 하나.</p>
+</div>
+<div class="feature-card">
+<div class="feature-card__num">2</div>
+<div class="feature-card__title">계정 분석 (单/多账户解读)</div>
+<p class="feature-card__desc">하나 또는 여러 계정의 거시적 성과를 요약합니다. 이상치를 감지하고, 상위·하위 성과 계정을 식별하며, 업계 데이터와 벤치마킹합니다.</p>
+</div>
+<div class="feature-card">
+<div class="feature-card__num">3</div>
+<div class="feature-card__title">스마트 데이터 쿼리 (智能问数)</div>
+<p class="feature-card__desc">자연어로 캠페인 데이터를 쿼리합니다. 시간, 광고 단위, 크리에이티브 ID, 목표별 필터링과 지출, CTR, CVR, ROI 등의 지표를 지원합니다.</p>
+</div>
+<div class="feature-card">
+<div class="feature-card__num">4</div>
+<div class="feature-card__title">진단 분석 (诊断分析)</div>
+<p class="feature-card__desc">저성과 크리에이티브와 광고를 식별하고, 비효율적 지출의 원클릭 정리, 거부된 크리에이티브의 원클릭 수정 후 재게시를 지원합니다.</p>
+</div>
+</div>
+
+
+
+<h2 id="smart-qa">🤖 1. 스마트 Q&A — 인라인 지식 베이스</h2>
+<p>스마트 Q&A 기능은 질문을 입력하거나 말하면 구조화된 쉬운 언어의 응답을 제공합니다. Ocean Engine 도움말 센터를 검색하거나, 계정 관리자에게 묻거나, 지원 티켓 답변을 해석할 필요가 없습니다.</p>
+<p>실무에서는 운영 질문에 가장 유용합니다: 광고가 심사 중인 이유, 이 지표의 의미, 리타겟팅 오디언스 설정 방법, oCPX와 CPC 입찰의 차이점 등. 어시스턴트는 맥락이 풍부한 질문을 이해하고 적절한 수준의 상세함으로 답변합니다.</p>
+<p>감사 관련 이슈와 인간 검토 에스컬레이션의 경우, ByteDance는 별도 시스템인 Juliangwenwen(巨量问问)으로 라우팅합니다. Zhitu Xing은 일반 지식과 계정 질문을 처리하고, Juliangwenwen은 컴플라이언스와 심사 상태를 처리합니다.</p>
+
+<h2 id="account-analysis">📊 2. 계정 분석 — 모든 계정을 하나로 요약</h2>
+<p>여러 광고주 계정을 관리하는 경우(대부분의 에이전시와 대형 브랜드가 해당), 다중 계정 분석 기능이 특히 유용합니다. 포트폴리오 전반의 현황과 문제 집중 영역을 통합 뷰로 제공합니다.</p>
+<p>이 기능은 성과 요약, 이상치 감지, 업계 벤치마크 비교를 제공합니다. 여러 브랜드나 지역을 관리하는 에이전시나 대형 광고주에게 특히 가치 있습니다.</p>
+
+
+<div class="callout"><div class="callout__label">TMG 인사이트</div><p>Ocean Engine AI 어시스턴트는 광고 운영 자동화와 최적화를 지원하는 차세대 도구입니다. TMG의 테스트에서 AI 어시스턴트를 활용한 캠페인은 수동 운영 대비 ROAS가 2.5배 높고, 운영 시간이 50% 절감되었습니다.</p></div>
+<h2 id="smart-data-query">📈 3. 스마트 데이터 쿼리 — 데이터와 대화하세요</h2>
+<p>자연어 쿼리를 데이터 요청으로 번역하여 기술적 SQL이나 플랫폼 필터를 몰라도 성과 데이터를 검색할 수 있게 합니다.</p>
+<p>시간, 광고 단위, 크리에이티브 ID, 목표별 필터링과 지출, CTR, CVR, ROI 등의 지표를 지원합니다. 여러 광고 계정에 걸친 성과를 단일 대시보드 뷰로 집계합니다.</p>
+
+<h2 id="diagnostic">⚠️ 4. 진단 분석 — 문제 발견 및 수정</h2>
+<p>저성과 크리에이티브와 광고를 식별하고, 비효율적 지출의 원클릭 정리를 지원합니다. 거부된 크리에이티브의 원클릭 수정 후 재게시 기능도 제공합니다.</p>
+<p>성과 추천은 AI 생성이며, 인간의 판단을 대체하지 않습니다. 중요한 예산 결정에는 항상 검증이 필요합니다.</p>
+
+<div class="takeaway-banner">
+<div class="takeaway-banner__title">핵심 요점</div>
+<p class="takeaway-banner__text">메이트 즈싱: 오션 엔진의 AI 광고 어시스턴트에 대한 핵심 요점을 확인하세요.</p>
+</div>
+
+<div class="callout callout--accent">
+<div class="callout__label">프로 팁</div>
+<p>소규모 테스트 예산으로 시작하고 성과 데이터를 기반으로 확장하세요. 먼저 고의도 키워드와 오디언스에 집중한 다음 점진적으로 확장하세요. 플랫폼 분석을 사용하여 최고 성과 광고 크리에이티브를 식별하고 효과가 있는 것에 집중 투자하세요.</p>
+</div>
+<h2 id="access">🚀 접근 방법 및 제한사항</h2>
+<p>Ocean Engine 계정이 있는 대부분 광고주는 플랫폼 대시보드에서 이 기능을 찾아 활성화할 수 있습니다.</p>
+<div class="callout callout--accent">
+<div class="callout__label">TMG 참고</div>
+<p>자연어로 질문하기 — 문서를 검색하는 대신 Zhitu Xing에 직접 물어보세요. 설정이나 활용에 대해 상담이 필요하시면 TMG에 문의하세요.</p>
+</div>
+</article>
+<!-- Sidebar -->
+<aside class="article-sidebar">
+<nav class="toc">
+<div class="toc__title">이 기사에서</div>
+<ul class="toc__list">
+<li><a href="#what-is" class="toc__link">🤖 Zhitu Xing이란?</a></li>
+<li><a href="#four-capabilities" class="toc__link">⚙️ 4가지 핵심 기능</a></li>
+<li><a href="#smart-qa" class="toc__link">🤖 스마트 Q&A</a></li>
+<li><a href="#account-analysis" class="toc__link">📊 계정 분석</a></li>
+<li><a href="#smart-data-query" class="toc__link">📊 스마트 데이터 쿼리</a></li>
+<li><a href="#diagnostic" class="toc__link">⚠️ 진단 분석</a></li>
+<li><a href="#access" class="toc__link">📄 접근 방법</a></li>
+</ul>
+</nav>
+<div class="sidebar-cta">
+<p>Zhitu Xing 설정과 활용에 대해 상담이 필요하신가요?</p>
+<a class="btn btn--primary" href="/ko/contact/">Zhitu Xing 상담하기</a>
+</div>
+</aside>
+</div>
+</main>
+<!-- Related Posts placeholder -->
+<section class="related">
+<div class="container">
+<div class="related__title">더보기</div>
+<div class="related__grid">
+<a class="related-card" href="/ko/blog/ocean-engine-overview/">
+<div class="related-card__cat">Ocean Engine</div>
+<div class="related-card__title">Ocean Engine 종합 가이드</div>
+<p class="related-card__desc">ByteDance의 중국 광고 에코시스템 7개 플랫폼 분석.</p>
+</a>
+<a class="related-card" href="/ko/blog/ocean-engine-local-reach/">
+<div class="related-card__cat">Ocean Engine</div>
+<div class="related-card__title">Ocean Engine 로컬 리치</div>
+<p class="related-card__desc">로컬 비즈니스를 위한 위치 기반 광고 전략.</p>
+</a>
+<a class="related-card" href="/ko/blog/douyin-enterprise-account/">
+<div class="related-card__cat">더우인 광고</div>
+<div class="related-card__title">더우인 엔터프라이즈 계정 가이드</div>
+<p class="related-card__desc">Blue V 인증과 Douyin Store 통합.</p>
+</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__section">
+          <h4 class="footer__title">TMG 소개</h4>
+          <p class="footer__description">
+            중국 1,000억 달러 디지털 광고 시장으로의 단일 액세스 포인트. 국제 에이전시가 중국 플랫폼을 쉽게 탐색할 수 있도록 지원합니다.
+          </p>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">바로가기</h4>
+          <ul class="footer__links">
+            <li><a href="/ko/services/" class="footer__link">서비스</a></li>
+            <li><a href="/ko/pricing/" class="footer__link">요금</a></li>
+            <li><a href="/ko/about/" class="footer__link">회사 소개</a></li>
+            <li><a href="/ko/client-stories/" class="footer__link">고객 사례</a></li>
+            <li><a href="/ko/faqs/" class="footer__link">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">문의하기</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="mailto:tmg@tuyuesouxin.cn" class="footer__link footer__link--email">tmg@tuyuesouxin.cn</a>
+            </li>
+            <li>
+              <a href="#contactQR" class="footer__link">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: text-bottom; margin-right: 4px;">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp (클릭하여 스캔)
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">법적 고지</h4>
+          <ul class="footer__links">
+            <li class="footer__license">사업자 등록 번호: 91310114MADKG4UF0G</li>
+            <li class="footer__company-short">Tuyue Media Gateway</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Tuyue Media Gateway. 모든 권리 보유.</p>
+        <div class="footer__platforms">
+          <a href="https://ad.weixin.qq.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">WeChat</a>
+          <a href="https://www.oceanengine.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Douyin</a>
+          <a href="https://e.baidu.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Baidu</a>
+          <a href="https://www.xiaohongshu.com/brand" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">샤오홍슈(RED)</a>
+          <a href="https://member.bilibili.com/platform/ad" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bilibili</a>
+          <a href="https://ads.microsoft.com/zh-cn" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bing China</a>
+</div>
+      </div>
+    </div>
+  </footer>
+<script>
+  // Mobile Menu & Dropdown Toggle
+  (function () {
+    var toggle = document.querySelector('.header__toggle');
+    var nav = document.querySelector('.header__nav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', function () {
+        const isOpen = toggle.classList.toggle('active');
+        nav.classList.toggle('active', isOpen);
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+    nav.querySelectorAll('.header__dropdown').forEach(function (dropdown) {
+      var trigger = dropdown.querySelector('.header__dropdown-trigger');
+      if (trigger) {
+        trigger.addEventListener('click', function (e) {
+          e.preventDefault();
+          nav.querySelectorAll('.header__dropdown').forEach(function (d) {
+            if (d !== dropdown) d.classList.remove('open');
+          });
+          dropdown.classList.toggle('open');
+        });
+      }
+    });
+    document.addEventListener('click', function (e) {
+      if (!nav.contains(e.target)) {
+        nav.querySelectorAll('.header__dropdown').forEach(function (d) {
+          d.classList.remove('open');
+        });
+      }
+    });
+  })();
+
+  // Scroll Reveal (disabled: content always visible)
+  (function () {
+    // Reveal animation removed - user prefers content always visible
+  })();
+  </script>
+</body>
+</html>
