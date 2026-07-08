@@ -52,13 +52,13 @@
       "permanent": true
     },
     {
-      "source": "/ko/blog/tencent-aimplus/",
-      "destination": "/ko/blog/tencent-aimplus-ko/",
+      "source": "/ko/blog/tencent-aimplus-ko/",
+      "destination": "/ko/blog/tencent-aimplus/",
       "permanent": true
     },
     {
-      "source": "/ko/blog/tencent-ads-home-furnishing/",
-      "destination": "/ko/blog/tencent-ads-home-furnishing-ko/",
+      "source": "/ko/blog/tencent-ads-home-furnishing-ko/",
+      "destination": "/ko/blog/tencent-ads-home-furnishing/",
       "permanent": true
     }
   ],
