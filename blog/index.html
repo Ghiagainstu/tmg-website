@@ -438,12 +438,14 @@
       color: var(--color-text-primary); line-height: 1.35;
       margin-bottom: var(--space-3);
       transition: color var(--transition-fast);
-    }
+      display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+      overflow: hidden; min-height: 3em;}
     .post-card:hover .post-card__title { color: var(--color-text-primary); }
     .post-card__excerpt {
       font-size: var(--font-size-sm); color: var(--color-text-secondary);
       line-height: 1.65; margin-bottom: var(--space-5);
-    }
+      display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical;
+      overflow: hidden;}
     .post-card__footer {
       display: flex; align-items: center; justify-content: space-between;
       font-size: var(--font-size-xs); color: var(--color-text-muted);
