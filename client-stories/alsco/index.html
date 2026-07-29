@@ -92,8 +92,7 @@
     .header__logo svg { flex-shrink: 0; }
     .header__logo span { color: var(--color-accent); }
     .header__nav { display: flex; align-items: center; gap: var(--space-1); }
-    .header__nav-link { color: var(--color-text-secondary); text-decoration: none; font-size: var(--font-size-sm); font-weight: 500; padding: 8px 14px; border-radius: 8px; transition: all var(--transition-fast); position: relative; }
-    .header__nav-link:hover { color: var(--color-text-primary); background: rgba(255,255,255,.04); text-decoration: none; }
+    .header__nav-link { color: var(--color-text-secondary); text-decoration: none !important; font-size: var(--font-size-sm); font-weight: 500; transition: color 150ms ease; position: relative; display: inline-flex; align-items: center; }
     .active { color: var(--color-accent); border-bottom: 2px solid var(--color-accent); padding-bottom: 6px; }
     .active:hover { color: var(--color-accent); background: transparent; }
     .header__cta { display: none; }
@@ -264,8 +263,9 @@
     @keyframes badgePulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.65; } }
     .header__toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: var(--space-2); }
     .header__toggle span { display: block; width: 24px; height: 2px; background: var(--color-text-primary); transition: all 250ms ease; }
-    .header__nav-link.active { color: var(--color-accent); border-bottom: 2px solid var(--color-accent); padding-bottom: 6px; }
-    .header__nav-link.active:hover { color: var(--color-accent); background: transparent; }
+    .header__nav-link:hover, .header__nav-link.active { color: var(--color-text-primary); }
+    .header__nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--color-accent); transition: width 150ms ease; }
+    .header__nav-link.active::after { width: 100%; }
     @media (max-width: 767px) { .header__nav, .header__lang-wrap, .header__cta { display: none; } .header__toggle { display: flex; } }
     /* ── Language Switcher ── */
     .header__lang-wrap { position: relative; display: inline-flex; align-items: center; margin-left: 8px; }
