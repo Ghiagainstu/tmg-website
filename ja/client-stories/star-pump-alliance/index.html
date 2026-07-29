@@ -140,6 +140,12 @@
     .stat-card__label { font-size: var(--font-size-sm); color: var(--color-text-secondary); font-weight: 500; }
 
     /* ── お問い合わせ ── */
+    .contact { padding: var(--space-20) 0; }
+    .contact__grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12); }
+    .contact__info { display: flex; flex-direction: column; justify-content: center; }
+    .contact__info > div { display: flex; flex-direction: column; gap: var(--space-6); }
+    .contact__title { font-size: var(--font-size-3xl); font-weight: 700; color: var(--color-text-primary); margin-bottom: var(--space-4); line-height: 1.2; }
+    .contact__description { font-size: var(--font-size-base); color: var(--color-text-secondary); line-height: 1.7; margin-bottom: var(--space-6); }
     .contact__details { display: flex; flex-direction: column; gap: var(--space-4); }
     .contact__detail-item { display: flex; align-items: center; gap: var(--space-3); font-size: var(--font-size-sm); color: var(--color-text-secondary); }
     .contact__detail-icon { flex-shrink: 0; color: var(--color-accent); }
