@@ -1346,7 +1346,30 @@
   </footer>
   
   <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tuyue Media Gateway","alternateName":"TMG","url":"https://www.tuyuesouxin.cn/","description":"The unified media interface for international agencies entering China's digital advertising market. One connection, all platforms.","email":"tmg@tuyuesouxin.cn","address":{"@type":"PostalAddress","streetAddress":"599-2F202 Wanzhen Road","addressLocality":"Shanghai","addressRegion":"Shanghai","postalCode":"201824","addressCountry":"CN"},"sameAs":[]}</script>
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tuyuesouxin.cn/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.tuyuesouxin.cn/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Smart Bidding Strategies: From oCPM to tROI — How to Pick the Right Bid for Every Campaign",
+      "item": "https://www.tuyuesouxin.cn/blog/smart-bidding-strategies-explained/"
+    }
+  ]
+}</script>
   
   <script>
     // ── Mobile nav toggle ──
