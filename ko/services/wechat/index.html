@@ -262,6 +262,14 @@
       font-size: 28px;
       margin-bottom: var(--space-5);
     }
+
+    /* Icon replacements (emoji -> PNG icon set) */
+    .tmg-icon { display: block; object-fit: contain; }
+    .pillar-card__icon .tmg-icon { width: 32px; height: 32px; }
+    .trust__step-icon .tmg-icon { width: 36px; height: 36px; }
+    .b2b__block-title .tmg-icon { width: 28px; height: 28px; flex-shrink: 0; }
+    .contact__detail-icon .tmg-icon { width: 20px; height: 20px; }
+
     .pillar-card__title {
       font-size: var(--font-size-xl);
       font-weight: 600;
@@ -876,7 +884,7 @@
         </div>
         <div class="pillars__grid">
           <div class="pillar-card reveal">
-            <div class="pillar-card__icon">🛡️</div>
+            <div class="pillar-card__icon"><img src="/assets/icons/icon-shield-check.png" alt="" class="tmg-icon" width="32" height="32" decoding="async"></div>
             <h3 class="pillar-card__title">프로페셔널 허브</h3>
             <p class="pillar-card__description">WeChat은 "중국의 LinkedIn"입니다. 공식 계정 독자의 50% 이상이 대학 학위를 보유하고 있습니다 — 경영진 및 의사결정권자와의 직접 연결 통로.</p>
             <div class="pillar-card__stats">
@@ -891,7 +899,7 @@
             </div>
           </div>
           <div class="pillar-card reveal reveal--delay-1">
-            <div class="pillar-card__icon">📈</div>
+            <div class="pillar-card__icon"><img src="/assets/icons/icon-trend-up-chart.png" alt="" class="tmg-icon" width="32" height="32" decoding="async"></div>
             <h3 class="pillar-card__title">비디오의 최전선</h3>
             <p class="pillar-card__description">WeChat 채널(비디오 계정)이 새로운 성장 엔진입니다 — 800M+ 비디오 계정 MAU로 고액 자산가 세그먼트에 도달. 프리미엄 오디언스, 프리미엄 결과.</p>
             <div class="pillar-card__stats">
@@ -906,7 +914,7 @@
             </div>
           </div>
           <div class="pillar-card reveal reveal--delay-2">
-            <div class="pillar-card__icon">💎</div>
+            <div class="pillar-card__icon"><img src="/assets/icons/icon-gem-diamond.png" alt="" class="tmg-icon" width="32" height="32" decoding="async"></div>
             <h3 class="pillar-card__title">거래의 중심</h3>
             <p class="pillar-card__description">미니 프로그램은 WeChat 커머스의 핵심입니다. 600M+ 사용자가 매일 미니 프로그램을 이용합니다 — 앱을 떠나지 않는 원활한 거래.</p>
             <div class="pillar-card__stats">
@@ -921,7 +929,7 @@
             </div>
           </div>
           <div class="pillar-card reveal reveal--delay-1">
-            <div class="pillar-card__icon">🌏</div>
+            <div class="pillar-card__icon"><img src="/assets/icons/icon-globe-coverage.png" alt="" class="tmg-icon" width="32" height="32" decoding="async"></div>
             <h3 class="pillar-card__title">전체 커버리지</h3>
             <p class="pillar-card__description">Tier 1-2 도시 100% 침투 + Tier 3-5 확장 증가. WeChat은 상하이 경영진부터 신흥 시장 소비자까지 모든 사람에게 도달합니다.</p>
             <div class="pillar-card__stats">
@@ -949,17 +957,17 @@
         <div class="trust__content reveal">
           <div class="trust__loop">
             <div class="trust__step">
-              <div class="trust__step-icon">📰</div>
+              <div class="trust__step-icon"><img src="/assets/icons/icon-news-document.png" alt="" class="tmg-icon" width="36" height="36" decoding="async"></div>
               <h4 class="trust__step-title">공식 계정</h4>
               <p class="trust__step-desc">일관된 콘텐츠와 커뮤니티를 통한 구독자 신뢰 구축</p>
             </div>
             <div class="trust__step">
-              <div class="trust__step-icon">🎬</div>
+              <div class="trust__step-icon"><img src="/assets/icons/icon-video-play-frame.png" alt="" class="tmg-icon" width="36" height="36" decoding="async"></div>
               <h4 class="trust__step-title">비디오 계정</h4>
               <p class="trust__step-desc">숏폼 비디오로 새로운 오디언스에 도달한 후 계정으로 교차 연결</p>
             </div>
             <div class="trust__step">
-              <div class="trust__step-icon">💳</div>
+              <div class="trust__step-icon"><img src="/assets/icons/icon-mini-app-card.png" alt="" class="tmg-icon" width="36" height="36" decoding="async"></div>
               <h4 class="trust__step-title">미니 프로그램</h4>
               <p class="trust__step-desc">참여한 팔로워를 WeChat 내에서 거래로 전환</p>
             </div>
@@ -977,7 +985,7 @@
         </div>
         <div class="b2b__content reveal">
           <div>
-            <h3 class="b2b__block-title">🤝 B2B 리드 생성</h3>
+            <h3 class="b2b__block-title"><img src="/assets/icons/icon-handshake-deal.png" alt="" class="tmg-icon" width="28" height="28" decoding="async">B2B 리드 생성</h3>
             <ul class="b2b__list">
               <li class="b2b__item">공식 계정을 통한 의사결정권자 직접 접근</li>
               <li class="b2b__item">전문 오디언스를 위한 문서 내 및 모먼트 광고 배치</li>
@@ -987,7 +995,7 @@
             </ul>
           </div>
           <div>
-            <h3 class="b2b__block-title">💎 럭셔리 & 프리미엄 브랜드</h3>
+            <h3 class="b2b__block-title"><img src="/assets/icons/icon-gem-diamond.png" alt="" class="tmg-icon" width="28" height="28" decoding="async">럭셔리 & 프리미엄 브랜드</h3>
             <ul class="b2b__list">
               <li class="b2b__item">WeChat의 검증된 환경에서 비교할 수 없는 브랜드 신뢰</li>
               <li class="b2b__item">제3자 간섭 없는 소비자 직접 커뮤니케이션</li>

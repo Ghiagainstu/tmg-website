@@ -149,6 +149,14 @@
     .contact__details { display: flex; flex-direction: column; gap: var(--space-4); }
     .contact__detail-item { display: flex; align-items: center; gap: var(--space-3); font-size: var(--font-size-sm); color: var(--color-text-secondary); }
     .contact__detail-icon { flex-shrink: 0; color: var(--color-accent); }
+
+    /* Icon replacements (emoji -> PNG icon set) */
+    .tmg-icon { display: block; object-fit: contain; }
+    .pillar-card__icon .tmg-icon { width: 32px; height: 32px; }
+    .trust__step-icon .tmg-icon { width: 36px; height: 36px; }
+    .b2b__block-title .tmg-icon { width: 28px; height: 28px; flex-shrink: 0; }
+    .contact__detail-icon .tmg-icon { width: 20px; height: 20px; }
+
     .contact__email { color: var(--color-accent); font-size: var(--font-size-lg); font-weight: 600; text-decoration: none; transition: color 150ms ease; }
     .contact__email:hover { color: var(--color-accent-light); }
     .contact__qr {
@@ -458,7 +466,7 @@
             <p class="contact__description">初めてのBaiduキャンペーンを立ち上げる場合でも、複数チャネルに拡大する場合でも、TMGはあなたのブランドに必要なローカル専門知識と実行力を提供します。</p>
             <div class="contact__details">
               <div class="contact__detail-item">
-                <span class="contact__detail-icon">✉</span>
+                <span class="contact__detail-icon"><img src="/assets/icons/icon-envelope-mail.png" alt="" class="tmg-icon" width="20" height="20" decoding="async"></span>
                 <span>tmg@tuyuesouxin.cn</span>
               </div>
             </div>

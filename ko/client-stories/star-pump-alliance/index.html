@@ -150,6 +150,14 @@
     .contact__details { display: flex; flex-direction: column; gap: var(--space-4); }
     .contact__detail-item { display: flex; align-items: center; gap: var(--space-3); font-size: var(--font-size-sm); color: var(--color-text-secondary); }
     .contact__detail-icon { flex-shrink: 0; color: var(--color-accent); }
+
+    /* Icon replacements (emoji -> PNG icon set) */
+    .tmg-icon { display: block; object-fit: contain; }
+    .pillar-card__icon .tmg-icon { width: 32px; height: 32px; }
+    .trust__step-icon .tmg-icon { width: 36px; height: 36px; }
+    .b2b__block-title .tmg-icon { width: 28px; height: 28px; flex-shrink: 0; }
+    .contact__detail-icon .tmg-icon { width: 20px; height: 20px; }
+
     .contact__email { color: var(--color-accent); font-size: var(--font-size-lg); font-weight: 600; text-decoration: none; transition: color 150ms ease; }
     .contact__email:hover { color: var(--color-accent-light); }
     .contact__qr {
@@ -441,7 +449,7 @@
             </div>
 
             <div class="case-study__cta">
-              <p style="color: var(--color-text-secondary); margin-bottom: var(--space-4);">중국에서 B2B 산업 브랜드를 위한 Baidu SEM 전략이 필요하신��요?</p>
+              <p style="color: var(--color-text-secondary); margin-bottom: var(--space-4);">중국에서 B2B 산업 브랜드를 위한 Baidu SEM 전략이 필요하신가요?</p>
               <a href="/#contact/" class="btn btn--primary btn--lg">TMG에 문의하기</a>
             </div>
           </div>
@@ -459,7 +467,7 @@
             <p class="contact__description">첫 Baidu 캠페인을 시작하든 여러 채널로 확장하든, TMG는 브랜드가 필요로 하는 현지 전문성과 실행력을 제공합니다.</p>
             <div class="contact__details">
               <div class="contact__detail-item">
-                <span class="contact__detail-icon">✉</span>
+                <span class="contact__detail-icon"><img src="/assets/icons/icon-envelope-mail.png" alt="" class="tmg-icon" width="20" height="20" decoding="async"></span>
                 <span>tmg@tuyuesouxin.cn</span>
               </div>
             </div>

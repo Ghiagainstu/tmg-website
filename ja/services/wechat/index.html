@@ -260,6 +260,14 @@
       font-size: 28px;
       margin-bottom: var(--space-5);
     }
+
+    /* Icon replacements (emoji -> PNG icon set) */
+    .tmg-icon { display: block; object-fit: contain; }
+    .pillar-card__icon .tmg-icon { width: 32px; height: 32px; }
+    .trust__step-icon .tmg-icon { width: 36px; height: 36px; }
+    .b2b__block-title .tmg-icon { width: 28px; height: 28px; flex-shrink: 0; }
+    .contact__detail-icon .tmg-icon { width: 20px; height: 20px; }
+
     .pillar-card__title {
       font-size: var(--font-size-xl);
       font-weight: 600;
@@ -863,7 +871,7 @@
 </div>
 <div class="pillars__grid">
 <div class="pillar-card reveal">
-<div class="pillar-card__icon">🛡️</div>
+<div class="pillar-card__icon"><img src="/assets/icons/icon-shield-check.png" alt="" class="tmg-icon" width="32" height="32" decoding="async"></div>
 <h3 class="pillar-card__title">プロフェッショナルハブ</h3>
 <p class="pillar-card__description">WeChatは「中国のLinkedIn」です。公式アカウント読者の50%以上が大卒 — C-suite経営陣や意思決定者への直接の接続手段です。</p>
 <div class="pillar-card__stats">
@@ -878,7 +886,7 @@
 </div>
 </div>
 <div class="pillar-card reveal reveal--delay-1">
-<div class="pillar-card__icon">📈</div>
+<div class="pillar-card__icon"><img src="/assets/icons/icon-trend-up-chart.png" alt="" class="tmg-icon" width="32" height="32" decoding="async"></div>
 <h3 class="pillar-card__title">ビデオの最前線</h3>
 <p class="pillar-card__description">WeChat Channels（動画アカウント）は新しい成長エンジンです — 800M+動画アカウントMAUで高資産層にリーチ。プレミアムオーディエンス、プレミアムリザルト。</p>
 <div class="pillar-card__stats">
@@ -893,7 +901,7 @@
 </div>
 </div>
 <div class="pillar-card reveal reveal--delay-2">
-<div class="pillar-card__icon">💎</div>
+<div class="pillar-card__icon"><img src="/assets/icons/icon-gem-diamond.png" alt="" class="tmg-icon" width="32" height="32" decoding="async"></div>
 <h3 class="pillar-card__title">取引の中心</h3>
 <p class="pillar-card__description">ミニプログラムはWeChatコマースの核です。600M+ユーザーが毎日ミニプログラムを利用 — アプリを離れないシームレスな取引。</p>
 <div class="pillar-card__stats">
@@ -908,7 +916,7 @@
 </div>
 </div>
 <div class="pillar-card reveal reveal--delay-1">
-<div class="pillar-card__icon">🌏</div>
+<div class="pillar-card__icon"><img src="/assets/icons/icon-globe-coverage.png" alt="" class="tmg-icon" width="32" height="32" decoding="async"></div>
 <h3 class="pillar-card__title">フルカバー</h3>
 <p class="pillar-card__description">一線・二線都市100%浸透 + 三線〜五線都市への拡大。WeChatは上海の経営層から新興市場消費者まで、全員にリーチします。</p>
 <div class="pillar-card__stats">
@@ -935,17 +943,17 @@
 <div class="trust__content reveal">
 <div class="trust__loop">
 <div class="trust__step">
-<div class="trust__step-icon">📰</div>
+<div class="trust__step-icon"><img src="/assets/icons/icon-news-document.png" alt="" class="tmg-icon" width="36" height="36" decoding="async"></div>
 <h4 class="trust__step-title">Official Account</h4>
 <p class="trust__step-desc">一貫したコンテンツとコミュニティで購読者の信頼を構築</p>
 </div>
 <div class="trust__step">
-<div class="trust__step-icon">🎬</div>
+<div class="trust__step-icon"><img src="/assets/icons/icon-video-play-frame.png" alt="" class="tmg-icon" width="36" height="36" decoding="async"></div>
 <h4 class="trust__step-title">Video Account</h4>
 <p class="trust__step-desc">ショートフォーム動画で新しいオーディエンスにリーチし、アカウントにクロスリンク</p>
 </div>
 <div class="trust__step">
-<div class="trust__step-icon">💳</div>
+<div class="trust__step-icon"><img src="/assets/icons/icon-mini-app-card.png" alt="" class="tmg-icon" width="36" height="36" decoding="async"></div>
 <h4 class="trust__step-title">Mini Program</h4>
 <p class="trust__step-desc">エンゲージしたフォロワーを取引に変換 — WeChat内で完結</p>
 </div>
@@ -962,7 +970,7 @@
 </div>
 <div class="b2b__content reveal">
 <div>
-<h3 class="b2b__block-title">🤝 B2B リードジェネレーション</h3>
+<h3 class="b2b__block-title"><img src="/assets/icons/icon-handshake-deal.png" alt="" class="tmg-icon" width="28" height="28" decoding="async">B2B リードジェネレーション</h3>
 <ul class="b2b__list">
 <li class="b2b__item">公式アカウントを通じた意思決定者への直接アクセス</li>
 <li class="b2b__item">プロフェッショナルオーディエンス向けの記事内＆モーメント広告配置</li>
@@ -972,7 +980,7 @@
 </ul>
 </div>
 <div>
-<h3 class="b2b__block-title">💎 ラグジュアリー & プレミアムブランド</h3>
+<h3 class="b2b__block-title"><img src="/assets/icons/icon-gem-diamond.png" alt="" class="tmg-icon" width="28" height="28" decoding="async">ラグジュアリー & プレミアムブランド</h3>
 <ul class="b2b__list">
 <li class="b2b__item">WeChatの検証済み環境での比類なきブランド信頼</li>
 <li class="b2b__item">第三者の干渉なしのD2Cコミュニケーション</li>
