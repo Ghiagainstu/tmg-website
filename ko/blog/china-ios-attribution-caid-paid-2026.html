@@ -1,0 +1,1227 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P5RQGYPTGP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P5RQGYPTGP');
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080c14">
+  <title>중국은 iOS 어트리뷰션을 다시 만들었다: CAID, PAID, 그리고 광고주가 설정해야 할 것 | TMG</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/assets/og-image.png">
+<meta name="description" content="중국은 SKAdNetwork를 채택하지 않고 기기 파생 ID(CAID·PAID)를 구축했습니다. 광고주가 설정해야 할 것과 피해야 할 실패 양상을 정리합니다.">
+  <link rel="canonical" href="https://www.tuyuesouxin.cn/ko/blog/china-ios-attribution-caid-paid-2026/">
+  <link rel="alternate" hreflang="en" href="https://www.tuyuesouxin.cn/blog/china-ios-attribution-caid-paid-2026/">
+  <link rel="alternate" hreflang="ja" href="https://www.tuyuesouxin.cn/ja/blog/china-ios-attribution-caid-paid-2026/">
+  <link rel="alternate" hreflang="ko" href="https://www.tuyuesouxin.cn/ko/blog/china-ios-attribution-caid-paid-2026/">
+  <link rel="alternate" hreflang="x-default" href="https://www.tuyuesouxin.cn/blog/china-ios-attribution-caid-paid-2026/">
+
+<meta property="og:title" content="중국은 iOS 어트리뷰션을 다시 만들었다: CAID, PAID, 그리고 광고주가 설정해야 할 것 | TMG">
+  <meta property="og:description" content="중국은 SKAdNetwork를 채택하지 않고 기기 파생 ID(CAID·PAID)를 구축했습니다. 광고주가 설정해야 할 것과 피해야 할 실패 양상을 정리합니다.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.tuyuesouxin.cn/ko/blog/china-ios-attribution-caid-paid-2026/">
+  <meta property="og:image" content="https://www.tuyuesouxin.cn/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="중국은 iOS 어트리뷰션을 다시 만들었다: CAID, PAID, 그리고 광고주가 설정해야 할 것 | TMG">
+  <meta name="twitter:description" content="중국은 SKAdNetwork를 채택하지 않고 기기 파생 ID(CAID·PAID)를 구축했습니다. 광고주가 설정해야 할 것과 피해야 할 실패 양상을 정리합니다.">
+  <meta name="twitter:image" content="https://www.tuyuesouxin.cn/assets/twitter-card.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <style>
+  
+
+  .skip-link{position:absolute;top:-100px;left:0;background:var(--color-accent);color:var(--color-bg);padding:8px 16px;z-index:10000;text-decoration:none;transition:top 0.3s;font-weight:600;}
+  .skip-link:focus{top:0;}
+
+    :root {
+      --color-bg: #080c14;
+      --color-bg-alt: #0d1220;
+      --color-bg-card: #111827;
+      --color-text-primary: #f0f4ff;
+      --color-text-secondary: #b3c0d8;
+      --color-text-muted: #8899b5;
+      --color-primary: #2d6be4;
+      --color-primary-hover: #1e55c4;
+      --color-accent: #c9a84c;
+      --color-accent-light: #e8c87a;
+      --color-border: #1e2d45;
+      --color-border-hover: #2d4060;
+      --c-ocean: #c9a84c;
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-size-xs: 0.75rem;
+      --font-size-sm: 0.875rem;
+      --font-size-base: 1rem;
+      --font-size-lg: 1.125rem;
+      --font-size-xl: 1.25rem;
+      --font-size-2xl: 1.5rem;
+      --font-size-3xl: 1.875rem;
+      --font-size-4xl: 2.25rem;
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --transition-fast: 150ms ease;
+      --transition-base: 250ms ease;
+      --radius-sm: 0.375rem;
+      --radius-md: 0.5rem;
+      --radius-lg: 0.75rem;
+      --radius-xl: 1rem;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-family);
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--color-text-secondary);
+      background: var(--color-bg);
+      -webkit-font-smoothing: antialiased;
+      padding-top: 64px;
+    }
+
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--color-bg); }
+    ::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--color-border-hover); }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+    a { color: var(--color-primary); text-decoration: none !important; }
+    a:hover { text-decoration: underline; }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: var(--space-2); padding: var(--space-3) var(--space-5);
+      font-family: var(--font-family); font-size: var(--font-size-sm);
+      font-weight: 500; text-decoration: none !important; border-radius: var(--radius-md);
+      transition: all var(--transition-base); cursor: pointer; border: none;
+    }
+    .btn--primary {
+      background: linear-gradient(135deg, #c9a84c 0%, #e8c87a 50%, #c9a84c 100%);
+      background-size: 200% 200%; color: #0d1220; font-weight: 600;
+      box-shadow: 0 2px 12px rgba(201,168,76,0.25);
+    }
+    .btn--primary:hover {
+      background-position: right center; box-shadow: 0 4px 20px rgba(201,168,76,0.4);
+      transform: translateY(-1px); text-decoration: none !important;
+    }
+    .btn--secondary {
+      background: transparent; color: var(--color-text-primary);
+      border: 1px solid var(--color-border);
+    }
+    .btn--secondary:hover {
+      border-color: var(--color-border-hover); background: rgba(255,255,255,0.05);
+      text-decoration: none !important;
+    }
+
+    .header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background-color: rgba(8,12,20,.85);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--color-border); padding: 1rem 0;
+      transition: border-color var(--transition-base);
+    }
+    .header::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,.4) 40%, rgba(45,107,228,.4) 60%, transparent);
+      opacity: .6;
+    }
+    .header__inner { display: flex; align-items: center; justify-content: space-between; }
+    .header__logo {
+      display: flex; align-items: center; gap: .5rem;
+      text-decoration: none !important; transition: opacity .15s;
+    }
+    .header__logo:hover { opacity: .85; text-decoration: none !important; }
+    .header__logo-icon { width: 40px; height: 40px; flex-shrink: 0; }
+    .header__logo-text { font-size: 1.125rem; font-weight: 700; color: var(--color-text-primary); letter-spacing: -.02em; }
+    .header__logo-text span { color: var(--color-accent); }
+    .header__nav { display: flex; gap: 2rem; align-items: center; }
+    .header__nav-link {
+      font-size: .875rem; font-weight: 500; color: var(--color-text-secondary);
+      transition: color .15s; text-decoration: none !important;
+    }
+    .header__nav-link:hover { color: var(--color-text-primary); text-decoration: none !important; }
+    .header__nav-link--active {
+      color: var(--color-text-primary);
+      border-bottom: 2px solid var(--color-accent);
+      padding-bottom: 2px;
+    }
+      padding-bottom: 2px;
+    }
+
+    .nav-badge {
+      display: inline-block; margin-left: 5px; padding: 1px 5px;
+      font-size: 10px; font-weight: 700; line-height: 1;
+      letter-spacing: .04em; text-transform: uppercase;
+      color: #080c14; background: var(--color-accent);
+      border-radius: 3px; vertical-align: baseline; white-space: nowrap;
+      animation: badgePulse 2s ease-in-out infinite;
+    }
+    @keyframes badgePulse { 0%,100%{opacity:1} 50%{opacity:.65} }
+    .header__cta { display: none; }
+    .header__toggle {
+      display: none; flex-direction: column; justify-content: center;
+      gap: 4px; background: none; border: none; cursor: pointer; padding: 8px;
+    }
+    .header__toggle span { width: 24px; height: 2px; background: var(--color-text-primary); transition: all .3s; }
+    .header__toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+    .header__toggle.active span:nth-child(2) { opacity: 0; }
+    .header__toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+    @media (min-width: 768px) {
+      .header__toggle { display: none; }
+  
+    .nav-badge {
+      display: inline-block; margin-left: 5px; padding: 1px 5px;
+      font-size: 10px; font-weight: 700; line-height: 1;
+      letter-spacing: .04em; text-transform: uppercase;
+      color: #080c14; background: var(--color-accent);
+      border-radius: 3px; vertical-align: baseline; white-space: nowrap;
+      animation: badgePulse 2s ease-in-out infinite;
+    }
+    @keyframes badgePulse { 0%,100%{opacity:1} 50%{opacity:.65} }
+    .header__cta { display: block; }
+      .header__dropdown { position: relative; }
+      .header__dropdown-trigger { display: flex; align-items: center; gap: 4px; }
+      .header__dropdown-arrow { transition: transform var(--transition-fast); }
+      .header__dropdown:hover .header__dropdown-arrow,
+      .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
+      .header__dropdown-menu {
+        position: absolute; top: calc(100% + 8px); left: 0;
+        background: var(--color-bg-card); border: 1px solid var(--color-border);
+        border-radius: 10px; padding: .5rem 0; min-width: 180px;
+        display: none; opacity: 0; box-shadow: 0 8px 24px rgba(0,0,0,.4); z-index: 200;
+      }
+      .header__dropdown:hover .header__dropdown-menu,
+      .header__dropdown.open .header__dropdown-menu {
+        display: flex; flex-direction: column; opacity: 1;
+        transform: translateY(0);
+      }
+      .header__dropdown-item {
+        font-size: var(--font-size-sm); font-weight: 500;
+        color: var(--color-text-secondary); padding: .625rem 1rem;
+        border-radius: 6px; white-space: nowrap; text-decoration: none !important;
+        transition: background .15s, color .15s;
+      }
+      .header__dropdown-item:hover {
+        background: rgba(201,168,76,.1); color: var(--color-accent); text-decoration: none !important;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .header { position: fixed; top: 0; left: 0; right: 0; z-index: 200; }
+      .header__inner {
+        background: var(--color-bg-card); border-bottom: 1px solid var(--color-border);
+        position: relative; z-index: 201;
+      }
+      .header__toggle { display: flex; }
+      .header__nav {
+        display: none; flex-direction: column; gap: 0;
+        position: absolute; top: 100%; left: 0; right: 0;
+        background: var(--color-bg-card); border-bottom: 1px solid var(--color-border);
+        z-index: 200;
+      }
+      .header__nav.active { display: flex; }
+      .header__nav-link {
+        display: block; width: 100%; padding: 14px 40px 14px 24px;
+        border-bottom: 1px solid var(--color-border); font-size: 1.1rem;
+      }
+      .header__dropdown { position: static; width: 100%; 
+       }
+      .header__dropdown-trigger {
+        display: flex; align-items: center; justify-content: space-between;
+        width: 100%; padding: 14px 40px 14px 24px;
+        border-bottom: 1px solid var(--color-border); font-size: 1.1rem;
+      }
+      .header__dropdown-arrow { transition: transform var(--transition-fast); }
+      .header__dropdown.active .header__dropdown-arrow,
+      .header__dropdown.open .header__dropdown-arrow { transform: rotate(180deg); }
+      .header__dropdown-menu { display: none; flex-direction: column; background: rgba(0,0,0,.25); padding: 0; }
+      .header__dropdown.active .header__dropdown-menu,
+      .header__dropdown.open .header__dropdown-menu { display: flex; }
+      .header__dropdown-item {
+        display: block; width: 100%; padding: 12px 40px;
+        font-size: 1rem; color: var(--color-text-secondary);
+        border-bottom: 1px solid rgba(255,255,255,.06);
+      }
+      .header__dropdown-item:hover { background: rgba(201,168,76,.08); color: var(--color-accent); }
+    }
+
+    .article-hero {
+      padding: 100px 0 var(--space-12);
+    }
+    .article-hero .container { max-width: 860px; }
+    .article-meta {
+      display: flex; align-items: center; gap: var(--space-3);
+      flex-wrap: wrap; margin-bottom: var(--space-6);
+    }
+    .article-category {
+      display: inline-block; padding: 4px 12px;
+      background: rgba(201,168,76,.15); border: 1px solid rgba(201,168,76,.3);
+      border-radius: 20px; font-size: var(--font-size-xs); font-weight: 600;
+      color: var(--color-accent); text-transform: uppercase; letter-spacing: .08em;
+    }
+    .article-date {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+    }
+    .article-read-time {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+    }
+
+    .article-hero__author {
+      display: flex; align-items: center; gap: 1rem;
+      margin-top: 2rem; padding-top: 2rem;
+      border-top: 1px solid var(--color-border);
+    }
+    .article-hero__author-avatar {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; color: var(--color-bg); font-size: var(--font-size-base);
+    }
+    .article-hero__author-info { display: flex; flex-direction: column; }
+    .article-hero__author-name {
+      font-weight: 600; color: var(--color-text-primary);
+      font-size: var(--font-size-sm);
+    }
+    .article-hero__author-role {
+      font-size: var(--font-size-xs); color: var(--color-text-muted);
+    }
+
+    .article-hero__title {
+      font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700;
+      color: var(--color-text-primary); line-height: 1.25; margin-bottom: var(--space-6);
+    }
+    .article-hero__title span { color: var(--color-accent); }
+    .article-hero__intro {
+      font-size: var(--font-size-lg); color: var(--color-text-secondary);
+      line-height: 1.75; max-width: 760px;
+    }
+
+    .article-body {
+      padding: var(--space-16) 0;
+      background: #000;
+    }
+    .article-body .container {
+      max-width: 860px;
+      display: grid;
+      grid-template-columns: 1fr 260px;
+      gap: var(--space-12);
+      align-items: start;
+    }
+    .article-content h2 {
+      font-size: var(--font-size-2xl); font-weight: 700;
+      color: var(--color-text-primary); margin: var(--space-10) 0 var(--space-4);
+      padding-top: var(--space-6);
+    }
+    .article-content h2:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+    .article-content h3 {
+      font-size: var(--font-size-xl); font-weight: 600;
+      color: var(--color-text-primary); margin: var(--space-8) 0 var(--space-3);
+    }
+    .article-content p { margin-bottom: var(--space-4); color: var(--color-text-secondary); }
+    .article-content strong { color: var(--color-text-primary); font-weight: 600; }
+    .article-content ul, .article-content ol {
+      margin: var(--space-4) 0 var(--space-6) var(--space-6);
+    }
+    .article-content li { margin-bottom: var(--space-2); color: var(--color-text-secondary); }
+    .article-content a { color: var(--color-primary); }
+    .article-content a:hover { text-decoration: underline; }
+
+    .feature-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: var(--space-4); margin: var(--space-6) 0;
+    }
+    .feature-card {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5);
+      transition: border-color var(--transition-base);
+    }
+    .feature-card:hover { border-color: rgba(201,168,76,.4); }
+    .feature-card__num {
+      display: inline-block; width: 28px; height: 28px; line-height: 28px;
+      text-align: center; background: rgba(201,168,76,.15);
+      color: var(--color-accent); font-size: var(--font-size-sm);
+      font-weight: 700; border-radius: 50%; margin-bottom: var(--space-3);
+    }
+    .feature-card__title {
+      font-size: var(--font-size-base); font-weight: 600;
+      color: var(--color-text-primary); margin-bottom: var(--space-2);
+    }
+    .feature-card__desc {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.6;
+    }
+
+    .data-card {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-left: 3px solid var(--color-accent);
+      border-radius: var(--radius-md); padding: var(--space-5);
+      margin: var(--space-6) 0;
+    }
+    .data-card__num {
+      font-size: var(--font-size-3xl); font-weight: 700;
+      color: var(--color-accent); line-height: 1.1; margin-bottom: var(--space-1);
+    }
+    .data-card__label {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+      margin-bottom: var(--space-1);
+    }
+    .data-card__change {
+      font-size: var(--font-size-xs); font-weight: 600;
+      color: #22c55e; /* green for positive change */
+    }
+
+    .callout {
+      background: rgba(45,107,228,.08); border: 1px solid rgba(45,107,228,.2);
+      border-left: 3px solid var(--color-primary);
+      border-radius: var(--radius-md); padding: var(--space-5);
+      margin: var(--space-6) 0;
+    }
+    .callout--accent {
+      background: rgba(201,168,76,.06); border: 1px solid rgba(201,168,76,.2);
+      border-left: 3px solid var(--color-accent);
+    }
+    .callout__label {
+      font-size: var(--font-size-xs); font-weight: 700; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--color-primary); margin-bottom: var(--space-2);
+    }
+    .callout--accent .callout__label { color: var(--color-accent); }
+    .callout p { margin: 0; font-size: var(--font-size-sm); }
+
+    /* ── Stats Grid ── */
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--space-4); margin: var(--space-6) 0;
+    }
+    .stat-card {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5); text-align: center;
+      transition: border-color var(--transition-base);
+    }
+    .stat-card:hover { border-color: rgba(201,168,76,.4); }
+    .stat-card__num {
+      font-size: var(--font-size-4xl); font-weight: 700;
+      color: var(--color-accent); line-height: 1.1; margin-bottom: var(--space-2);
+    }
+    .stat-card__label {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+      line-height: 1.4;
+    }
+
+    /* ── Platform Cards ── */
+    .platform-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: var(--space-4); margin: var(--space-6) 0;
+    }
+    .platform-card {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5);
+      transition: border-color var(--transition-base), transform var(--transition-base);
+      position: relative; overflow: hidden;
+    }
+    .platform-card:hover {
+      border-color: rgba(201,168,76,.4);
+      transform: translateY(-2px);
+    }
+    .platform-card__header {
+      display: flex; align-items: center; gap: var(--space-3);
+      margin-bottom: var(--space-4);
+    }
+    .platform-card__icon {
+      width: 40px; height: 40px; border-radius: var(--radius-md);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; font-weight: 700; color: #fff;
+    }
+    .platform-card__name {
+      font-size: var(--font-size-lg); font-weight: 700;
+      color: var(--color-text-primary);
+    }
+    .platform-card__product {
+      font-size: var(--font-size-xs); color: var(--color-text-muted);
+    }
+    .platform-card__strategy {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary);
+      line-height: 1.6; margin-bottom: var(--space-4);
+    }
+    .platform-card__metric {
+      background: rgba(201,168,76,.08); border: 1px solid rgba(201,168,76,.15);
+      border-radius: var(--radius-sm); padding: var(--space-3);
+      font-size: var(--font-size-xs); color: var(--color-accent);
+      font-weight: 600; text-align: center;
+    }
+
+    /* ── Article Table ── */
+    .article-table {
+      width: 100%; border-collapse: collapse;
+      font-size: var(--font-size-sm); margin: var(--space-6) 0;
+    }
+    .article-table th {
+      padding: 12px 16px; border-bottom: 2px solid var(--color-accent);
+      background: rgba(201,168,76,.08); color: var(--color-accent);
+      text-align: left; font-weight: 600; font-size: var(--font-size-xs);
+      text-transform: uppercase; letter-spacing: .05em;
+    }
+    .article-table td {
+      padding: 12px 16px; border-bottom: 1px solid var(--color-border);
+      color: var(--color-text-secondary);
+    }
+    .article-table tr:nth-child(even) td {
+      background: rgba(255,255,255,.02);
+    }
+    .article-table tr:hover td {
+      background: rgba(201,168,76,.04);
+    }
+    .article-table strong { color: var(--color-text-primary); }
+
+    /* ── Callout variants ── */
+    .callout--warning {
+      background: rgba(234,179,8,.06); border: 1px solid rgba(234,179,8,.2);
+      border-left: 3px solid #eab308;
+    }
+    .callout--warning .callout__label { color: #eab308; }
+
+    /* ── Key Takeaway Banner ── */
+    .takeaway-banner {
+      background: linear-gradient(135deg, rgba(201,168,76,.1), rgba(45,107,228,.08));
+      border: 1px solid rgba(201,168,76,.25);
+      border-radius: var(--radius-lg); padding: var(--space-6);
+      margin: var(--space-8) 0; text-align: center;
+    }
+    .takeaway-banner__title {
+      font-size: var(--font-size-xs); font-weight: 700;
+      text-transform: uppercase; letter-spacing: .1em;
+      color: var(--color-accent); margin-bottom: var(--space-3);
+    }
+    .takeaway-banner__text {
+      font-size: var(--font-size-lg); color: var(--color-text-primary);
+      font-weight: 500; line-height: 1.6; max-width: 680px; margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      .platform-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+      .article-table { font-size: var(--font-size-xs); }
+      .article-table th, .article-table td { padding: 8px 10px; }
+    }
+
+    .article-sidebar {
+      position: sticky; top: 88px;
+    }
+    .toc {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5);
+    }
+    .toc__title {
+      font-size: var(--font-size-xs); font-weight: 700; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--color-text-muted); margin-bottom: var(--space-4);
+    }
+    .toc__list { list-style: none; }
+    .toc__list li + li { margin-top: var(--space-2); }
+    .toc__link {
+      font-size: var(--font-size-sm); color: var(--color-text-muted);
+      text-decoration: none !important; display: block; line-height: 1.4;
+      transition: color var(--transition-fast);
+    }
+    .toc__link:hover { color: var(--color-text-primary); text-decoration: none !important; }
+
+    .sidebar-cta {
+      margin-top: var(--space-6); background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5); text-align: center;
+    }
+    .sidebar-cta p {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary);
+      margin-bottom: var(--space-4); line-height: 1.5;
+    }
+    .sidebar-cta .btn { width: 100%; justify-content: center; }
+
+    .related {
+      padding: var(--space-12) 0;
+      background: var(--color-bg);
+      border-top: 1px solid var(--color-border);
+    }
+    .related__title {
+      font-size: var(--font-size-2xl); font-weight: 700;
+      color: var(--color-text-primary); margin-bottom: var(--space-8);
+    }
+    .related__grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6);
+    }
+    .related-card {
+      background: var(--color-bg-card); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: var(--space-5);
+      text-decoration: none !important; display: block;
+      transition: border-color var(--transition-base), transform var(--transition-base);
+    }
+    .related-card:hover { border-color: rgba(201,168,76,.4); transform: translateY(-2px); text-decoration: none !important; }
+    .related-card__cat {
+      font-size: var(--font-size-xs); font-weight: 600; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--color-accent); margin-bottom: var(--space-3);
+    }
+    .related-card__title {
+      font-size: var(--font-size-base); font-weight: 600;
+      color: var(--color-text-primary); line-height: 1.4; margin-bottom: var(--space-2);
+    }
+    .related-card__desc {
+      font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.5;
+    }
+
+    .footer {
+      padding: var(--space-10) 0 var(--space-8);
+      background: var(--color-bg);
+      border-top: 1px solid var(--color-border);
+    }
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-8);
+      margin-bottom: var(--space-10);
+    }
+    @media (min-width: 768px) {
+      .footer__grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    .footer__section { text-align: left; }
+    .footer__title {
+      font-size: var(--font-size-base);
+      font-weight: 600;
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-4);
+      position: relative;
+      padding-bottom: var(--space-2);
+    }
+    .footer__title::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 40px; height: 2px;
+      background: linear-gradient(90deg, var(--color-accent), transparent);
+      opacity: 0.8;
+    }
+    .footer__description {
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+    .footer__links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer__links li { margin-bottom: var(--space-3); }
+    .footer__link {
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+      transition: color var(--transition-fast);
+      display: inline-block;
+      text-decoration: none !important;
+    }
+    .footer__link:hover { color: var(--color-text-primary); transform: translateX(4px); }
+    .footer__link--email { color: var(--color-primary); font-weight: 500; }
+    .footer__license { color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--space-2); }
+    .footer__company-short { color: var(--color-text-muted); font-size: var(--font-size-xs); }
+    .footer__bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-4);
+      padding-top: var(--space-8);
+      border-top: 1px solid var(--color-border);
+    }
+    @media (min-width: 768px) {
+      .footer__bottom { flex-direction: row; justify-content: space-between; }
+    }
+    .footer__copyright { color: var(--color-text-muted); font-size: var(--font-size-sm); margin: 0; }
+    .footer__platforms { display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: center; }
+    .footer__platform-badge {
+      text-decoration: none !important;
+      display: inline-block;
+      padding: var(--space-1) var(--space-3);
+      background-color: rgba(201, 168, 76, 0.1);
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      border-radius: 4px;
+      color: var(--color-text-primary);
+      font-size: var(--font-size-xs);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all var(--transition-fast);
+    }
+    .footer__platform-badge:hover {
+      text-decoration: none !important;
+      background-color: rgba(201, 168, 76, 0.2);
+      border-color: var(--color-accent);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 900px) {
+      .article-body .container { grid-template-columns: 1fr; }
+      .article-sidebar { display: none; }
+    }
+    @media (max-width: 767px) {
+      .article-hero { padding: 90px 0 var(--space-10); }
+      .feature-grid { grid-template-columns: 1fr; }
+      .related__grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── Scroll Reveal (disabled: content always visible) ── */
+    .reveal {
+      opacity: 1; transform: none;
+      transition: none;
+    }
+    /* reveal--visible disabled */
+
+    /* ── Language Switcher Dropdown ── */
+    .header__lang-wrap {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      margin-left: 8px;
+    }
+    .header__lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 10px;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--c-accent, #c9a84c);
+      background: transparent;
+      border: 1px solid var(--c-accent, #c9a84c);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background .15s;
+      line-height: 1.4;
+    }
+    .header__lang-btn:hover { background: rgba(201,168,76,.1); }
+    .header__lang-btn svg { transition: transform .15s; }
+    .header__lang-wrap:hover .header__lang-btn svg,
+    .header__lang-wrap.active .header__lang-btn svg { transform: rotate(180deg); }
+    .header__lang-menu {
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      min-width: 140px;
+      background: #111827;
+      border: 1px solid #1e2d45;
+      border-radius: 8px;
+      padding: 4px;
+      display: none;
+      opacity: 0;
+      box-shadow: 0 4px 20px rgba(0,0,0,.4);
+      z-index: 300;
+    }
+    .header__lang-wrap:hover .header__lang-menu,
+    .header__lang-wrap.active .header__lang-menu {
+      display: flex;
+      flex-direction: column;
+      opacity: 1;
+    }
+    .header__lang-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 10px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #a3b1cc;
+      text-decoration: none !important;
+      border-radius: 5px;
+      transition: background .15s, color .15s;
+      white-space: nowrap;
+    }
+    .header__lang-item:hover {
+      background: rgba(201,168,76,.1);
+      color: #e8c87a;
+      text-decoration: none !important;
+    }
+    .header__lang-item--cur {
+      color: #e8c87a;
+      background: rgba(201,168,76,.08);
+    }
+    .header__lang-flag { font-size: 15px; line-height: 1; }
+    
+  @media print{
+    *{box-shadow:none!important;text-shadow:none!important;}
+    body{background:white!important;color:black!important;}
+    .header,.footer,nav,.sidebar,iframe{display:none!important;}
+    main,article,section,.container{max-width:100%!important;margin:0!important;padding:10px!important;}
+    h1,h2,h3,h4,h5,h6{page-break-after:avoid;page-break-inside:avoid;}
+    img{max-width:100%!important;page-break-inside:avoid;}
+    a{color:black!important;text-decoration:underline;}
+    p,blockquote,ul,ol,dl,table{page-break-inside:avoid;}
+    @page{margin:2cm;}
+  }
+  </style>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tuyue Media Gateway","alternateName":"TMG","url":"https://www.tuyuesouxin.cn/","description":"The unified media interface for international agencies entering China's digital advertising market. One connection, all platforms.","email":"tmg@tuyuesouxin.cn","address":{"@type":"PostalAddress","streetAddress":"599-2F202 Wanzhen Road","addressLocality":"Shanghai","addressRegion":"Shanghai","postalCode":"201824","addressCountry":"CN"},"sameAs":[]}</script>
+
+    <style>
+      .skip-to-content {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: var(--color-accent);
+        color: var(--color-bg);
+        padding: 8px 16px;
+        z-index: 10000;
+        transition: top 0.3s;
+      }
+      .skip-to-content:focus {
+        top: 0;
+      }
+    </style>
+  
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "중국은 iOS 어트리뷰션을 다시 만들었다: CAID, PAID, 그리고 광고주가 설정해야 할 것",
+  "description": "중국은 SKAdNetwork를 채택하지 않고 기기 파생 ID(CAID·PAID)를 구축했습니다. 광고주가 설정해야 할 것과 피해야 할 실패 양상을 정리합니다.",
+  "datePublished": "2026-10-10",
+  "dateModified": "2026-10-10",
+  "author": {
+    "@type": "Organization",
+    "name": "Tuyue Media Gateway"
+  },
+  "image": "https://www.tuyuesouxin.cn/assets/og-image.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Tuyue Media Gateway",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.tuyuesouxin.cn/favicon.svg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.tuyuesouxin.cn/ko/blog/china-ios-attribution-caid-paid-2026/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tuyuesouxin.cn/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.tuyuesouxin.cn/ko/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "중국은 iOS 어트리뷰션을 다시 만들었다: CAID, PAID, 그리고 광고주가 설정해야 할 것",
+      "item": "https://www.tuyuesouxin.cn/ko/blog/china-ios-attribution-caid-paid-2026/"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <!-- Skip to main content -->
+  <a href="#main-content" class="skip-link">메인 콘텐츠로 건너뛰기</a>
+
+  
+  
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="/ko/" class="header__logo">
+          <svg class="header__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#c9a84c"/>
+                <stop offset="100%" stop-color="#e8c87a"/>
+              </linearGradient>
+              <clipPath id="moonClip">
+                <circle cx="30" cy="24" r="16"/>
+              </clipPath>
+            </defs>
+            <circle cx="30" cy="24" r="16" fill="url(#moonGrad)"/>
+            <circle cx="37" cy="20" r="13" fill="#080c14"/>
+            <text x="4" y="32" font-family="Inter, -apple-system, sans-serif" font-size="19" font-weight="800" fill="#f0f4ff" letter-spacing="-0.8">TMG</text>
+          </svg>
+          <span class="header__logo-text">Tuyue Media <span>Gateway</span></span>
+        </a>
+        <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="header__nav" id="main-nav">
+          <div class="header__dropdown">
+            <a href="/ko/services/" class="header__nav-link header__dropdown-trigger">
+              서비스
+              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="header__dropdown-menu">
+              <a href="/ko/services/" class="header__dropdown-item" style="font-weight:700; color:var(--color-accent);">전체 서비스</a>
+              <a href="/ko/services/wechat/" class="header__dropdown-item">WeChat 광고</a>
+              <a href="/ko/services/douyin/" class="header__dropdown-item">Douyin 광고</a>
+              <a href="/ko/services/baidu/" class="header__dropdown-item">바이두 SEM</a>
+              <a href="/ko/services/bing/" class="header__dropdown-item">Bing China</a>
+              <a href="/ko/services/xiaohongshu/" class="header__dropdown-item">샤오홍슈</a>
+              <a href="/ko/services/bilibili/" class="header__dropdown-item">Bilibili 광고</a>
+              <a href="/ko/geo/" class="header__dropdown-item">중국 GEO</a>
+            </div>
+          </div>
+          <a href="/ko/pricing/" class="header__nav-link">가격</a>
+          <a href="/ko/client-stories/" class="header__nav-link">고객 사례</a>
+          <a href="/ko/geo/" class="header__nav-link">GEO <span class="nav-badge">NEW</span></a>
+          <a href="/ko/blog/" class="header__nav-link header__nav-link--active">블로그</a>
+          <a href="/ko/faqs/" class="header__nav-link">FAQ</a>
+          <div class="header__dropdown">
+            <a href="/ko/about/" class="header__nav-link header__dropdown-trigger">
+              회사 소개
+              <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="header__dropdown-menu">
+              <a href="/ko/why-tmg/" class="header__dropdown-item">TMG를 선택하는 이유</a>
+              <a href="/ko/about/" class="header__dropdown-item">회사 소개</a>
+              <a href="/ko/contact/" class="header__dropdown-item">문의하기</a>
+            </div>
+          </div>
+        </nav>
+        <div class="header__lang-wrap">
+          <button class="header__lang-btn" onclick="this.parentElement.classList.toggle('active')">
+            <span class="header__lang-flag">🇰🇷</span>한국어
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 3.5l3 4 3-4"/></svg>
+          </button>
+          <div class="header__lang-menu">
+            <a href="/blog/china-ios-attribution-caid-paid-2026/" class="header__lang-item"><span class="header__lang-flag">🇺🇸</span>English</a>
+            <a href="/ja/blog/china-ios-attribution-caid-paid-2026/" class="header__lang-item"><span class="header__lang-flag">🇯🇵</span>日本語</a>
+          </div>
+        </div>
+<div class="header__cta">
+          <a href="/ko/contact/" class="btn btn--primary">무료 상담</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Article Hero -->
+  <section class="article-hero">
+    <div class="container">
+      <div class="article-meta">
+        <span class="article-category">China / 측정 및 어트리뷰션</span>
+        <span class="article-date">2026년 10월 10일</span>
+        <span class="article-read-time">8분 읽기</span>
+      </div>
+      <h1 class="article-hero__title">중국은 iOS 어트리뷰션을 다시 만들었다: CAID, PAID, 그리고 광고주가 설정해야 할 것</h1>
+      <p class="article-hero__intro">ATT가 IDFA 확보율을 추정 20~35%로 낮추면서 iPhone 트래픽의 약 3분의 2가 확정적 크로스앱 식별자를 잃었습니다. Apple의 답은 SKAdNetwork였지만 중국은 이를 채택하지 않았습니다. 대신 시장은 기기 파생 식별자를 구축했습니다. 중국광고협회 아래에서 생성되는 CAID와 바이두·지제도동 등 플랫폼이 구축하는 PAID입니다. 이들은 플랫폼 발급이 아니라 기기 파생이므로, 올바르게 설정된 광고주는 SKAdNetwork만으로는 어트리뷰션할 수 없는 iOS 트래픽에 대해 기기 단위 어트리뷰션 신호를 받을 수 있습니다. 이 글은 각 식별자의 내용, 바이두가 콜백에서 실제로 반환하는 것, 그리고 데이터를 조용히 악화시키는 구체적 설정 실수를 정리합니다.</p>
+
+      <div class="article-hero__author">
+        <div class="article-hero__author-avatar">TMG</div>
+        <div class="article-hero__author-info">
+          <div class="article-hero__author-name">Tuyue Media Gateway</div>
+          <div class="article-hero__author-role">유료 미디어 팀 · 상하이</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Body -->
+  <main id="main-content" class="article-body">
+    <div class="container">
+      <!-- REPLACE: Article body below (keep <article> tag) -->
+<article class="article-content reveal">
+  <h2 id="s1">1. 문제: iPhone 트래픽의 3분의 2에 확정적 ID가 없다</h2>
+<p>Apple이 iOS 14.5에서 App Tracking Transparency를 도입하면서 IDFA는 기본값이 아니게 되었습니다. ATT 이전에는 IDFA 확보율이 90%를 넘었지만, ATT는 이를 명시적 옵트인으로 뒤집었고 업계 옵트인율은 소비자 앱 기준 <strong>20~35%</strong>로 정착했습니다. 게임과 일부 유틸리티 카테고리에서는 더 낮습니다.</p>
+<p>유료 미디어를 운영하는 사람에게 이 산수는 중요합니다. <strong>iPhone 사용자의 약 3분의 2에게는 확정적인 크로스앱 어트리뷰션이 존재하지 않습니다.</strong> 사용자는 광고를 클릭했지만, 그 클릭을 이후 행동에 연결하는 식별자가 없습니다.</p>
+<div class="article-table"><table><thead>
+<tr><th>달라진 점</th><th>ATT 이전</th><th>ATT 이후</th></tr></thead><tbody>
+<tr><td>IDFA 확보율</td><td>기본 90% 초과</td><td>옵트인 20~35%, 카테고리별 차이</td></tr>
+<tr><td>어트리뷰션 유형</td><td>확정적, 사용자 단위</td><td>대부분의 트래픽에서 집계 또는 모델 추정</td></tr>
+<tr><td>리포팅 지연</td><td>실시간</td><td>Apple이 관리하는 타이머에 의한 지연</td></tr>
+<tr><td>사용자 단위 행</td><td>확보 가능</td><td>개인정보 보호 경로에서는 확보 불가</td></tr>
+</tbody>
+</table></div>
+<p>Android는 다른 길을 걸었습니다. Google Play의 리퍼러 API와 서드파티 광고 ID는 대체로 유지되어, 대부분의 볼륨에서 여전히 기기 단위 신호를 쓸 수 있습니다. iOS와 Android 측정의 비대칭성은 모바일 마케팅에서 가장 과소평가된 운영상의 현실 중 하나입니다.</p>
+<h2 id="s2">2. 두 가지 다른 답: SKAdNetwork 대 연합 ID</h2>
+<p>Apple의 답은 <strong>SKAdNetwork</strong>였습니다. 어트리뷰션을 광고주가 아니라 OS가 관리하고, 집계·지연·의도적 노이즈를 동반해 반환합니다. 전환값은 <strong>6비트 정수(0~63)</strong>로 제한되고, 설치당 포스트백 1회, 사용자 식별자는 기기를 떠나지 않습니다. 측정하는 것은 캠페인이지 사람이 아닙니다.</p>
+<p><strong>중국은 그 길을 택하지 않았습니다.</strong> 중국 시장에는 OS가 관리하는 단일 어트리뷰션 API에 해당하는 것이 없습니다. 대신 두 가지 메커니즘이 생겨나 공존합니다.</p>
+<div class="article-table"><table><thead>
+<tr><th></th><th>서구의 기본값</th><th>중국</th></tr></thead><tbody>
+<tr><td>어트리뷰션 주체</td><td>Apple의 SKAdNetwork(OS 관리)</td><td>업계 연합 및 개별 플랫폼</td></tr>
+<tr><td>식별자 유형</td><td>없음(집계만)</td><td>기기 파생 ID: CAID, PAID</td></tr>
+<tr><td>세분성</td><td>캠페인 단위, 집계</td><td>기기 단위, 확정적</td></tr>
+<tr><td>사용자 단위 행</td><td>확보 불가</td><td>수신하는 광고주는 확보 가능</td></tr>
+<tr><td>거버넌스</td><td>Apple</td><td>중국광고협회(CAID), 개별 플랫폼(PAID)</td></tr>
+</tbody>
+</table></div>
+<p>실무적 결과는 큽니다. 중국에서 운영하는 광고주는 원칙적으로 클릭을 이후 전환에 연결하는 <strong>기기 단위 식별자</strong>를 받을 수 있습니다. ATT가 서구 시장에서 빼앗은 것과 같은 것입니다. 이것이 가능한 이유는 식별자가 Apple 발급이 아니라 기기 파라미터에서 파생되기 때문입니다.</p>
+<h2 id="s3">3. CAID: 업계 연합의 식별자</h2>
+<p>CAID는 중국 광고 업계의 집단적 답이며, 중국광고협회 아래에서 생성됩니다. 그 근거는 바이두 개발자 문서에 명시되어 있습니다. <strong>iOS 14부터 IDFA가 관리되기 시작했고 IDFA를 대체할 다른 기기 정보가 존재하지 않았으므로, 기기 정보를 이용해 CAID를 생성하여 IDFA 대체 식별자로 어트리뷰션에 사용한다.</strong></p>
+<p>그 구조는 수신하는 원시 데이터에 나타나므로 이해할 가치가 있습니다.</p>
+<div class="article-table"><table><thead>
+<tr><th>필드</th><th>의미</th></tr></thead><tbody>
+<tr><td>선두 세그먼트</td><td>생성 방식을 나타내는 짧은 숫자 접두사(예: <code>00_</code>)</td></tr>
+<tr><td>코어 식별자</td><td>긴 16진 문자열. 기기에서 도출된 식별자 자체</td></tr>
+<tr><td><code>version</code></td><td>생성에 사용한 알고리즘 버전(예: <code>20260506</code>)</td></tr>
+<tr><td><code>vendor</code></td><td>어느 벤더의 구현이 생성했는지</td></tr>
+</tbody>
+</table></div>
+<p>문서에 제시된 실제 CAID 페이로드는 여러 후보를 동시에 운반하며, 각각에 <code>version</code>과 <code>vendor</code>, 그리고 <code>generateTime</code>이 붙습니다. 이 구조는 의도적이며, 수신 측은 최신 지원 버전을 선택하고 파싱할 수 없으면 폴백할 수 있습니다.</p>
+<h2 id="s4">4. 2026년 CAID 알고리즘 전환</h2>
+<p>여기가 대부분의 광고주가 대응하지 않은 부분이며, 날짜가 명시되어 있습니다.</p>
+<p>중국광고협회에 따르면, <strong>2026년 연차 알고리즘 업데이트</strong>는 <strong>2026년 6월 22일(월)</strong>에 중앙 서버 업그레이드를 시작해 새 알고리즘 버전을 지원하고, <strong>6월 30일(화)</strong>에 정식 전환을 완료할 예정이었습니다.</p>
+<p>함께 제시된 지침은 전환 기간의 운영 지시입니다. 업그레이드 기간에는 <strong>신버전(<code>20260506</code>)을 우선하고 구버전(<code>20250325</code>)을 폴백으로 유지</strong>해 전환을 매끄럽게 합니다. <code>20230330</code> 같은 이전 세대도 추가 폴백으로 페이로드에 나타납니다.</p>
+<p>광고주나 MMP에게 운영상 의미는 구체적입니다. 전환 콜백 파이프라인이 CAID 버전을 하나만 받아들인다면, 매년 전환 때마다 단일 장애점을 안게 됩니다. 올바른 설계는 우선순위가 있는 목록을 받아 플랫폼이 현재 지원하는 버전에 대해 해석하는 것입니다.</p>
+<h2 id="s5">5. PAID: 바이두 자체의 구성물</h2>
+<p>연합 식별자와 별개로, 바이두는 자체 기기 식별자 <strong>PAID</strong>를 유지합니다. 바이두에는 <strong>2023년</strong>부터 존재했고, 지제도동(ByteDance)의 광고 플랫폼에도 나타납니다. 즉 플랫폼 수준의 기법이며 바이두만의 것이 아닙니다.</p>
+<p>PAID는 세 개의 파라미터로 구성되며, 모두 미디어와 광고주 양쪽이 개인정보를 다루지 않고 확보할 수 있습니다.</p>
+<div class="article-table"><table><thead>
+<tr><th>입력</th><th>비고</th></tr></thead><tbody>
+<tr><td>시스템 초기화 시간(Initialization Time)</td><td>기기 단위, 비사적</td></tr>
+<tr><td>시스템 업데이트 시간(Update Time)</td><td>기기 단위, 비사적</td></tr>
+<tr><td>시스템 부팅 시간(Boot Time)</td><td>기기 단위, 비사적</td></tr>
+</tbody>
+</table></div>
+<p>각각을 <strong>MD5로 32자 소문자 문자열로 변환</strong>하고, 셋을 하이픈으로 연결합니다. 결과는 <strong>90자를 넘는</strong> 파라미터가 되며, 바이두가 광고주에게 전달해 어트리뷰션 모니터링과 전환 콜백에 사용됩니다.</p>
+<p>실무적 주의가 두 가지 있습니다. 첫째, 이름은 거짓 친구입니다. <strong>여기서 PAID는 '유료'를 뜻하지 않으며</strong>, 'PAID 어트리뷰션'은 paid attribution이 아닙니다. 정식 전개는 공개되지 않았고, Private Advertising ID나 Private Anonymization ID 같은 해석이 가능합니다. 둘째, <strong>PAID 어트리뷰션은 현재 바이두에 별도 신청이 필요</strong>하며 기본적으로 활성화되어 있지 않습니다.</p>
+<p>감사하는 사람에게 유용한 뒷받침이 있습니다. <strong>바이두 자체의 광고 SDK 개인정보 공개가 수집하는 기기 정보로 단말 재시작 정보, 시스템 업데이트 시간, 시스템 생성 시간을 열거하고 있습니다.</strong> 이는 PAID의 세 입력 그 자체이며, 공개된 개인정보 문서에 공시되어 있습니다. 광고주는 구성 방식을 그대로 믿을 필요가 없습니다.</p>
+<h2 id="s6">6. 바이두가 실제로 반환하는 것</h2>
+<p>바이두의 전환 콜백 문서는 복귀 경로에서 사용 가능한 파라미터를 정의합니다. 어트리뷰션에 중요한 것은 기기 식별자입니다.</p>
+<div class="article-table"><table><thead>
+<tr><th>파라미터</th><th>의미</th></tr></thead><tbody>
+<tr><td><code>idfa</code></td><td>iOS 기기 식별자(원값)</td></tr>
+<tr><td><code>imei</code></td><td>Android 기기 식별자(원값, 해당하는 경우 32자 소문자 MD5)</td></tr>
+<tr><td><code>oaid</code></td><td>Android 기기 식별자(원값)</td></tr>
+<tr><td><code>android_id</code></td><td>Android 기기 식별자(원값, 32자 소문자 MD5)</td></tr>
+<tr><td><code>caid</code></td><td>CAID 페이로드. <code>version</code>과 <code>vendor</code>가 붙은 우선순위 후보 목록</td></tr>
+<tr><td><code>attribution_eshow_score</code></td><td>노출 어트리뷰션을 통제하는 바이두 제공 플래그</td></tr>
+</tbody>
+</table></div>
+<p>이 중 둘은 별도로 주목할 필요가 있습니다.</p>
+<p><strong>CAID는 값이 아니라 목록으로 도착합니다.</strong> 3장에서 보인 대로, 페이로드는 버전과 벤더로 구분된 여러 후보를 운반합니다. <code>caid</code>를 단일 문자열로 읽는 파이프라인은 실패합니다.</p>
+<p><strong><code>attribution_eshow_score</code>는 지표가 아니라 미디어의 권장입니다.</strong> 바이두는 노출 어트리뷰션 전환 콜백 시 이 필드를 자동 발행합니다. <strong>0은 미디어 측이 해당 노출 어트리뷰션 트래픽의 회신을 권장하지 않는다는 뜻이고, 1은 권장한다는 뜻입니다.</strong> 이를 지시로 다루는지 진단 정보로 다루는지가 깨끗한 파이프라인과 노이즈를 최적화에 흘려보내는 파이프라인의 갈림길입니다.</p>
+<p>바이두는 식별자 외에도 다수의 선택 파라미터를 지원합니다. 예를 들어 도서명, 열람 장수, 숏드라마 극장 ID 등이며, 플랫폼이 복귀 경로에서 얼마나 많은 맥락을 운반할 수 있는지를 보여줍니다.</p>
+<h2 id="s7">7. 서명과 콜백</h2>
+<p>플랫폼이 콜백을 받아들이게 하려면 그것이 자신의 것임을 증명해야 합니다. 바이두 문서는 서명 방식을 명시합니다. <strong>치환 후 콜백 URL에서 마지막 서명 파라미터를 제외한 것</strong>을 취해 <code>akey</code>를 덧붙이고 MD5합니다.</p>
+<p>메커니즘은 단순하지만 실패 양상은 단순하지 않습니다. 반복적으로 나타나는 세 가지를 듭니다.</p>
+<ol>
+<li><strong>잘못된 문자열에 서명.</strong> 서명은 매크로 치환 이후, 서명 파라미터 추가 이전에 계산해야 합니다. 템플릿 URL, 또는 플레이스홀더 서명을 포함한 URL에 서명하면 인가 실패로 보이는 불일치가 생깁니다.</li>
+<li><strong>매크로 치환 순서.</strong> 치환값 자체가 URL 구조를 바꾸는 문자를 포함하면, 서명 대상 문자열과 전송 문자열이 어긋납니다.</li>
+<li><strong><code>caid</code>를 스칼라로 읽기.</strong> 앞서 말한 대로 우선순위 목록입니다.</li>
+</ol>
+<h2 id="s8">8. 글로벌 브랜드에 대한 의미</h2>
+<p>전략적 요점은 <strong>중국의 iOS 측정 문제가 서구의 해법과 전혀 닮지 않은 방식으로 해결되었다</strong>는 것이며, 여기에는 계획상 세 가지 결과가 따릅니다.</p>
+<p><strong>중국에서의 iOS 전환 데이터는 본국 시장보다 나을 수 있습니다.</strong> CAID와 PAID는 플랫폼 발급이 아니라 기기 파생이므로, 올바르게 설정된 파이프라인은 SKAdNetwork만으로는 어트리뷰션할 수 없는 iOS 트래픽에 대해 기기 단위 어트리뷰션 신호를 받을 수 있습니다. 실제로 받을 수 있는지는 전적으로 콜백 설정에 달려 있습니다.</p>
+<p><strong>식별자는 플랫폼 간 호환되지 않습니다.</strong> CAID는 버전 일정을 가진 업계 연합 관리이고, PAID는 플랫폼 구축이며 별도 신청이 필요합니다. 단일한 '중국 iOS ID'가 존재한다고 가정한 브랜드는 통합 사양을 잘못 잡습니다.</p>
+<p><strong>CAID 연차 버전 전환은 정기적인 운영 이벤트입니다.</strong> 공표된 일정에 따라 발생하며, 올바른 대응(우선순위 목록을 받고 최신 지원 버전을 우선하며 구버전을 폴백으로 유지)은 달력 알림이 아니라 파이프라인에 구현되어 있어야 합니다.</p>
+<h2 id="s9">9. 흔한 실패 양상</h2>
+<div class="article-table"><table><thead>
+<tr><th>증상</th><th>추정 원인</th></tr></thead><tbody>
+<tr><td>콜백에 CAID가 전혀 나타나지 않음</td><td>파이프라인이 <code>caid</code>를 단일 문자열로 읽어 배열을 버림</td></tr>
+<tr><td>6월 하순 이후 iOS 전환이 감소한 것처럼 보임</td><td>연차 전환 중 폐기된 CAID 버전에 고정됨</td></tr>
+<tr><td>콜백이 인가 오류로 거부됨</td><td>템플릿 URL 또는 서명 파라미터를 포함한 URL에 서명함</td></tr>
+<tr><td>노출 어트리뷰션 전환이 리포트를 부풀림</td><td><code>attribution_eshow_score</code>를 지표로 취급하고 권장 플래그로 취급하지 않음</td></tr>
+<tr><td>PAID가 데이터에 나타나지 않음</td><td>바이두에 별도 신청이 완료되지 않음</td></tr>
+<tr><td>리포트에서 iOS와 Android 성과가 불일치해 보임</td><td>iOS 신호는 ATT 동의와 식별자 설정에 의존, Android는 ATT 영향 없음</td></tr>
+</tbody>
+</table></div>
+<h2 id="s10">10. 실행 계획</h2>
+<div class="article-table"><table><thead>
+<tr><th>우선순위</th><th>실행</th><th>이유</th></tr></thead><tbody>
+<tr><td>P0</td><td>전환 콜백 파이프라인이 <code>caid</code>를 <code>version</code>·<code>vendor</code>가 붙은 배열로 받는지 감사</td><td>CAID는 설계상 우선순위 후보 목록으로 도착</td></tr>
+<tr><td>P0</td><td>현재 해석하는 CAID 버전을 확인하고, 최신 지원 버전을 우선하며 폴백을 갖는지 점검</td><td>연차 알고리즘 전환은 날짜가 있는 정기 이벤트</td></tr>
+<tr><td>P0</td><td>콜백 서명이 치환 후 URL에서 서명 파라미터를 제외한 것에 <code>akey</code>를 덧붙여 계산되는지 검증</td><td>콜백 거부의 가장 흔한 원인</td></tr>
+<tr><td>P1</td><td>자사 계정에서 PAID 어트리뷰션이 활성인지 확인하고, 대상이면 바이두에 별도 신청</td><td>PAID는 기본적으로 활성화되어 있지 않음</td></tr>
+<tr><td>P1</td><td><code>attribution_eshow_score</code>를 수집해 노출 어트리뷰션 회신을 필터링</td><td>성과 지표가 아니라 미디어 권장 플래그</td></tr>
+<tr><td>P1</td><td>플랫폼별로 받는 식별자(바이두와 지제도동은 CAID, 신청 완료 시 PAID)를 문서화</td><td>식별자는 플랫폼 간 호환되지 않음</td></tr>
+<tr><td>P2</td><td>ATT 동의 현실에 비추어 iOS와 Android 리포팅 기대치를 재조정</td><td>iOS의 확정적 신호는 동의 의존, Android는 ATT 영향 없음</td></tr>
+<tr><td>P2</td><td>정기 데이터 품질 점검에 CAID 버전 모니터링을 추가</td><td>버전 불일치는 오류 없이 데이터를 조용히 악화시킴</td></tr>
+</tbody>
+</table></div>
+<h2 id="s11">11. 핵심 요점</h2>
+<ul>
+<li><strong>ATT는 IDFA 확보율을 추정 20~35%로 낮추어</strong> iPhone 트래픽의 약 3분의 2에서 확정적 크로스앱 식별자를 제거했습니다.</li>
+<li><strong>Apple의 답은 SKAdNetwork</strong> — 집계·지연·설치당 6비트 전환값 1개(0~63)·사용자 단위 데이터 없음.</li>
+<li><strong>중국은 SKAdNetwork를 채택하지 않았습니다.</strong> 대신 기기 파생 식별자를 구축했습니다. <strong>CAID</strong>(중국광고협회 아래에서 생성)와 <strong>PAID</strong>(바이두·지제도동 등 플랫폼이 구축)입니다.</li>
+<li><strong>바이두 문서는 근거를 직접 서술합니다.</strong> iOS 14부터 IDFA가 관리되고 이를 대체할 다른 기기 정보가 존재하지 않았으므로, 기기 정보를 이용해 CAID를 생성해 IDFA 대체 식별자로 어트리뷰션에 사용한다.</li>
+<li><strong>2026년 CAID 알고리즘 업데이트</strong>는 <strong>2026년 6월 22일</strong> 시작되는 중앙 서버 업그레이드와 <strong>6월 30일</strong> 정식 전환 완료가 예정되어 있었습니다. 전환기 지침은 버전 <code>20260506</code>을 우선하고 <code>20250325</code>를 폴백으로 유지하는 것입니다.</li>
+<li><strong>PAID는 세 개의 비사적 기기 시각</strong>(시스템 초기화 시간·시스템 업데이트 시간·시스템 부팅 시간)에서 구성되며, 각각을 32자 소문자로 MD5화해 하이픈으로 연결한 90자 초과 파라미터입니다.</li>
+<li><strong>PAID는 '유료'를 뜻하지 않습니다.</strong> 정식 전개는 공개되지 않았습니다. <strong>PAID 어트리뷰션은 바이두에 별도 신청이 필요</strong>하며 기본적으로 활성화되어 있지 않습니다.</li>
+<li><strong>PAID의 입력은 바이두 자체의 SDK 개인정보 공개에 나타납니다.</strong> 단말 재시작 정보·시스템 업데이트 시간·시스템 생성 시간을 수집 기기 정보로 열거하고 있습니다.</li>
+<li><strong>바이두의 콜백은 <code>caid</code>를 우선순위 목록으로 반환하며</strong> <code>version</code>과 <code>vendor</code>를 동반합니다. <code>idfa</code>·<code>imei</code>·<code>oaid</code>·<code>android_id</code>에 더해, <strong><code>attribution_eshow_score</code></strong>(0은 미디어 측이 해당 노출 어트리뷰션 트래픽의 회신을 권장하지 않는다는 뜻, 1은 권장한다는 뜻)도 반환합니다.</li>
+<li><strong>콜백 서명은</strong> 치환 후 URL에서 서명 파라미터를 제외한 것에 <code>akey</code>를 덧붙여 MD5로 계산합니다.</li>
+<li><strong>운영상 위험은 메커니즘이 아니라 유지보수에 있습니다.</strong> <code>caid</code>를 스칼라로 읽거나 단일 알고리즘 버전에 고정한 파이프라인은 매년 전환에서 조용히 실패합니다.</li>
+<li><strong>이 글은 기술 문서 요약이며 법률·컴플라이언스 자문이 아닙니다.</strong> 식별자 요건과 플랫폼 규칙은 바뀝니다. 운영 파이프라인을 변경하기 전에 플랫폼과 자사 MMP에 현행 사양을 확인하십시오.</li>
+</ul>
+<h2 id="s12">출처</h2>
+<ul>
+<li>바이두 OCPX 개발자 문서(CAID 생성 및 전환 콜백 파라미터): <a href="https://dev2.baidu.com/content?sceneType=0&pageId=101213&nodeId=663&subhead=" target="_blank" rel="noopener">https://dev2.baidu.com/content?sceneType=0&pageId=101213&nodeId=663&subhead=</a></li>
+<li>바이두 iOS PAID 어트리뷰션 솔루션 문서(2023-11-09): <a href="https://ocpx-devcenter.bj.bcebos.com/IOS%20归因文档/百度IOS%20PAID归因解决方案_20231109.pdf" target="_blank" rel="noopener">https://ocpx-devcenter.bj.bcebos.com/IOS%20归因文档/百度IOS%20PAID归因解决方案_20231109.pdf</a></li>
+<li>바이두 광고 SDK 기기 정보 수집 공개: <a href="https://api.rmbr.cn/page/user-privacy" target="_blank" rel="noopener">https://api.rmbr.cn/page/user-privacy</a></li>
+<li>바이두 iOS 위치정보 SDK, App Store 대상 IDFA 신고 가이드: <a href="https://lbs.baidu.com/faq/api?title=ios-locsdk/guide/addition-func/appstore-notice" target="_blank" rel="noopener">https://lbs.baidu.com/faq/api?title=ios-locsdk/guide/addition-func/appstore-notice</a></li>
+<li>Singular, Server-to-Server 기기 데이터 취득 가이드(IDFV·IDFA·ATT 상태): <a href="https://support.singular.net/hc/en-us/articles/30848622982299-Server-to-Server-Retrieving-Device-Data-Guide" target="_blank" rel="noopener">https://support.singular.net/hc/en-us/articles/30848622982299-Server-to-Server-Retrieving-Device-Data-Guide</a></li>
+<li>ATT 이후 iOS 어트리뷰션 분석(옵트인율과 SKAdNetwork 전환값 제한): <a href="https://blog.openutm.app/ios-attribution-2026/" target="_blank" rel="noopener">https://blog.openutm.app/ios-attribution-2026/</a></li>
+</ul>
+</article>
+
+      <!-- Sidebar -->
+      <aside class="article-sidebar">
+        <nav class="toc">
+          <div class="toc__title">이 기사에서</div>
+          <ul class="toc__list">
+  <ul class="toc__list">
+  <li><a href="#s1" class="toc__link">📉 1. 문제: iPhone 트래픽의 3분의 2에 확정적 ID가 없다</a></li>
+  <li><a href="#s2" class="toc__link">🔀 2. 두 가지 다른 답: SKAdNetwork 대 연합 ID</a></li>
+  <li><a href="#s3" class="toc__link">🆔 3. CAID: 업계 연합의 식별자</a></li>
+  <li><a href="#s4" class="toc__link">📅 4. 2026년 CAID 알고리즘 전환</a></li>
+  <li><a href="#s5" class="toc__link">🧮 5. PAID: 바이두 자체의 구성물</a></li>
+  <li><a href="#s6" class="toc__link">📡 6. 바이두가 실제로 반환하는 것</a></li>
+  <li><a href="#s7" class="toc__link">🔑 7. 서명과 콜백</a></li>
+  <li><a href="#s8" class="toc__link">🌍 8. 글로벌 브랜드에 대한 의미</a></li>
+  <li><a href="#s9" class="toc__link">⚠️ 9. 흔한 실패 양상</a></li>
+  <li><a href="#s10" class="toc__link">🎯 10. 실행 계획</a></li>
+  <li><a href="#s11" class="toc__link">📌 11. 핵심 요점</a></li>
+  <li><a href="#s12" class="toc__link">📚 출처</a></li>
+</ul>
+</ul>
+        </nav>
+        <div class="sidebar-cta">
+          <p>TMG는 중국 광고 플랫폼에서의 iOS 전환 추적 설정과 감사를 글로벌 브랜드에 제공합니다.</p>
+          <a href="/ko/contact/" class="btn btn--primary">무료 상담</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Related Posts -->
+    <section class="related"><div class="container"><div class="related__title">관련 기사</div><div class="related__grid">
+        <a href="/ko/blog/attribution-models-guide/" class="related-card"><div class="related-card__cat">유료 미디어 전략</div><div class="related-card__title">유료 미디어의 기여 모델: 캠페인 데이터가 거짓말하는 이유</div></a>
+<a href="/ko/blog/xiaohongshu-search-omni-attribution/" class="related-card"><div class="related-card__cat">Xiaohongshu / Search Ads</div><div class="related-card__title">샤오홍슈 옴니 어트리뷰션: 검색 영향 측정</div></a>
+<a href="/ko/blog/baidu-search-privacy-compliance-2026/" class="related-card"><div class="related-card__cat">Baidu / Search Ads</div><div class="related-card__title">바이두 검색 프라이버시 준수: 광고주가 알아야 할 것</div></a>
+    </div></div></section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__section">
+          <h4 class="footer__title">TMG 소개</h4>
+          <p class="footer__description">
+            중국 1,000억 달러 규모 디지털 광고 시장으로의 단일 접근점. 국제 에이전시가 중국 플랫폼을 쉽게 활용할 수 있도록 지원합니다.
+          </p>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">빠른 링크</h4>
+          <ul class="footer__links">
+            <li><a href="/ko/services/" class="footer__link">서비스</a></li>
+            <li><a href="/ko/pricing/" class="footer__link">가격</a></li>
+            <li><a href="/ko/about/" class="footer__link">회사 소개</a></li>
+            <li><a href="/ko/client-stories/" class="footer__link">고객 사례</a></li>
+            <li><a href="/ko/faqs/" class="footer__link">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">문의하기</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="mailto:tmg@tuyuesouxin.cn" class="footer__link footer__link--email">tmg@tuyuesouxin.cn</a>
+            </li>
+            <li>
+              <a href="#contactQR" class="footer__link">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: text-bottom; margin-right: 4px;">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp (스캔하여 연락)
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">법적 정보</h4>
+          <ul class="footer__links">
+            <li class="footer__license">사업자등록번호: 91310114MADKG4UF0G</li>
+            <li class="footer__company-short">Tuyue Media Gateway</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Tuyue Media Gateway. 무단 전재를 금지합니다.</p>
+        <div class="footer__platforms">
+          <a href="https://ad.weixin.qq.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">WeChat</a>
+          <a href="https://www.oceanengine.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Douyin</a>
+          <a href="https://e.baidu.com" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Baidu</a>
+          <a href="https://www.xiaohongshu.com/brand" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">샤오홍슈</a>
+          <a href="https://member.bilibili.com/platform/ad" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bilibili</a>
+          <a href="https://ads.microsoft.com/zh-cn" target="_blank" rel="nofollow noopener noreferrer" class="footer__platform-badge">Bing China</a>
+</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    var toggle = document.querySelector('.header__toggle');
+    var nav = document.querySelector('.header__nav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', function () {
+        const isOpen = toggle.classList.toggle('active');
+        nav.classList.toggle('active', isOpen);
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+    nav.querySelectorAll('.header__dropdown').forEach(function (dropdown) {
+      var trigger = dropdown.querySelector('.header__dropdown-trigger');
+      if (trigger) {
+        trigger.addEventListener('click', function (e) {
+          e.preventDefault();
+          nav.querySelectorAll('.header__dropdown').forEach(function (d) {
+            if (d !== dropdown) d.classList.remove('open');
+          });
+          dropdown.classList.toggle('open');
+        });
+      }
+    });
+    document.addEventListener('click', function (e) {
+      if (!nav.contains(e.target)) {
+        nav.querySelectorAll('.header__dropdown').forEach(function (d) {
+          d.classList.remove('open');
+        });
+      }
+    });
+  })();
+
+  // Scroll Reveal (disabled: content always visible)
+  (function () {
+    // Reveal animation removed - user prefers content always visible
+  })();
+  </script>
+</body>
+</html>
