@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" role="img" aria-label="Tuyue Media Gateway mark">
+  <title>Tuyue Media Gateway — mark only, recentred for app icon use</title>
+  <defs>
+    <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#e8c87a"/>
+    </linearGradient>
+    <mask id="crescent">
+      <circle cx="16" cy="16" r="14" fill="#fff"/>
+      <circle cx="22.4" cy="12.4" r="11.4" fill="#000"/>
+    </mask>
+  </defs>
+  <circle cx="16" cy="16" r="14" fill="url(#moonGrad)" mask="url(#crescent)"/>
+</svg>

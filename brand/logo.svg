@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" role="img" aria-label="Tuyue Media Gateway">
+  <title>Tuyue Media Gateway — primary lockup for dark backgrounds</title>
+  <defs>
+    <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#e8c87a"/>
+    </linearGradient>
+    <mask id="crescent">
+      <circle cx="30" cy="24" r="16" fill="#fff"/>
+      <circle cx="37" cy="20" r="13" fill="#000"/>
+    </mask>
+  </defs>
+  <circle cx="30" cy="24" r="16" fill="url(#moonGrad)" mask="url(#crescent)"/>
+  <text x="4" y="32" font-family="Inter, sans-serif" font-size="19" font-weight="800"
+        fill="#f0f4ff" letter-spacing="-.8">TMG</text>
+</svg>
