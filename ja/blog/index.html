@@ -390,7 +390,7 @@
       gap: var(--space-6);
     }
     .post-card {
-      display: block; text-decoration: none;
+      display: flex; flex-direction: column; text-decoration: none;
       background: var(--color-bg-card); border: 1px solid var(--color-border);
       border-radius: 14px; padding: var(--space-6);
       transition: border-color var(--transition-base), transform var(--transition-base);
@@ -451,8 +451,7 @@
     .post-card__footer {
       display: flex; align-items: center; justify-content: flex-start;
       gap: var(--space-3); flex-wrap: wrap;
-      font-size: var(--font-size-xs); color: var(--color-text-muted);
-    }
+      font-size: var(--font-size-xs); color: var(--color-text-muted); margin-top: auto; }
     .post-card__arrow { color: var(--color-accent); font-weight: 600; margin-left: auto; }
 
     /* ── Features Preview ── */
