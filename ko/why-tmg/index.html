@@ -56,7 +56,7 @@
       --font-size-xl: 1.25rem; --font-size-2xl: 1.5rem; --font-size-3xl: 1.875rem; --font-size-4xl: 2.25rem; --font-size-5xl: 3rem;
       --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem; --space-5: 1.25rem;
       --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem; --space-20: 5rem;
-    }
+    --transition-fast: 150ms ease; }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     /* Custom Scrollbar */
@@ -166,7 +166,7 @@
     .footer::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 300px; height: 2px; background: linear-gradient(90deg, transparent, var(--color-accent), transparent); opacity: 0.6; }
     .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: var(--space-8); margin-bottom: var(--space-8); }
     .footer__section { }
-    .footer__title { font-size: var(--font-size-sm); font-weight: 600; color: var(--color-text); margin-bottom: var(--space-4); text-transform: uppercase; letter-spacing: 0.05em; position: relative; padding-bottom: var(--space-2); }
+    .footer__title { font-size: var(--font-size-sm); font-weight: 600; color: var(--color-text-primary); margin-bottom: var(--space-4); text-transform: uppercase; letter-spacing: 0.05em; position: relative; padding-bottom: var(--space-2); }
     .footer__title::after { content: ''; position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background: linear-gradient(90deg, var(--color-accent), transparent); opacity: 0.8; }
     .footer__description { font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.6; }
     .footer__links { list-style: none; padding: 0; margin: 0; }
