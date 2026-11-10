@@ -28,7 +28,7 @@
     },
     {
       "source": "/(services)/(baidu|wechat|douyin|xiaohongshu|bilibili|bing)",
-      "destination": "/$1/$2/$3/",
+      "destination": "/$1/$2/",
       "permanent": true
     },
     {
