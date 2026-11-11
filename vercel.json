@@ -60,6 +60,11 @@
       "source": "/ko/blog/tencent-ads-home-furnishing-ko/",
       "destination": "/ko/blog/tencent-ads-home-furnishing/",
       "permanent": true
+    },
+    {
+      "source": "/ko/blog/wechat-moments-ads-ko/",
+      "destination": "/ko/blog/wechat-moments-ads/",
+      "permanent": true
     }
   ],
   "rewrites": [
